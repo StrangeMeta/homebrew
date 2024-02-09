@@ -764,4 +764,239 @@ at least 500 gp</set>
             <set name = "isRitual">false</set>
         </setters>
     </element>
+    <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY">
+    <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION</requirements>
+        <supports>Bard, Cleric, Druid, Earth, Paladin, Range, Tamer</supports>
+        <description>
+            <p>You touch a willing creature, causing blue-green veins of adamantine to thread through its skin, making it tougher than steel and as flexible as silk. For the duration, the target’s AC can’t be less than 20, regardless of what kind of armour it’s wearing (shields confer their AC bonus as normal) and it has resistance to acid, bludgeoning, piercing, and slashing damage.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the minimum AC increases by 1 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">5</set>
+            <set name = "school">Biomancy</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 hour</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a hunk of adamantine worth at least 300 gp</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION">
+    <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY</requirements>
+        <supports>Bard, Cleric, Druid, Earth, Paladin, Range, Tamer</supports>
+        <description>
+            <p>You touch a willing creature, causing blue-green veins of adamantine to thread through its skin, making it tougher than steel and as flexible as silk. For the duration, the target’s AC can’t be less than 20, regardless of what kind of armour it’s wearing (shields confer their AC bonus as normal) and it has resistance to acid, bludgeoning, piercing, and slashing damage.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the minimum AC increases by 1 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">5</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 hour</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a hunk of adamantine worth at least 300 gp</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY">
+    <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION</requirements>
+        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
+            <p class = "indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name = "keywords">psychic</set>
+            <set name = "level">0</set>
+            <set name = "school">Biomancy</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">60 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION">
+    <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY</requirements>
+        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
+            <p class = "indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name = "keywords">psychic</set>
+            <set name = "level">0</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">60 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Protection" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PROTECTION">
+        <supports>Bard, Cleric, Druid, Earth, Paladin, Ranger, Tamer</supports>
+        <description>
+            <p>You trace a warding sigil in the air, sending it to slowly circle a willing creature you can see for the next hour. Immediately before the target next takes damage, except psychic damage, the ward triggers. Until the end of the target’s next turn, it has resistance to all damage excluding psychic, including the triggering damage. The warding sigil then disappears, and the spell ends on the target.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, you may target one additional creature for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">resistance</set>
+            <set name = "level">2</set>
+            <set name = "school">Abjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 hour</set>
+            <set name = "range">30 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a miniature silver shield worth 10 gp, which the spell consumes</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Raiko's Rending Rage" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_RAIKOS_RENDING_RAGE">
+        <supports>Air, Fire, Ranger, Wizard</supports>
+        <description>
+            <p>You imbue yourself with the swift rage of a tempest, turning your movement into a storm of thunder and lightning. Until the end of the turn, you gain 40 feet of additional movement, your movement doesn’t provoke opportunity attacks, and you can make up to four melee weapon attacks (no action required), though each must be against a different target. On a hit, these attacks deal an additional 2d4 lightning damage.</p>
+            <p class = "indent">At the end of the turn, a thunderous boom follows in your wake that can be heard 2,500 feet away. Each creature you attacked with this spell must make a Constitution saving throw. On a failure, a creature takes 2d4 thunder damage and is knocked prone. On a success, a creature takes half as much damage and is not knocked prone.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the lightning and thunder damage each increase by 1d4 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name = "keywords">lightning, prone, thunder</set>
+            <set name = "level">5</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a piece of fulgurite</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Redirect Lightning" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_REDIRECT_LIGHTNING">
+        <supports>Air, Druid, Fire, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You attempt to capture and redirect lightning. Make an Arcana check using your spellcasting ability, with a DC equal to half the lightning damage dealt. On a failure, you have resistance to lightning damage until the end of the turn. On a success, the spell’s area stops at you if it is a line, you have immunity to lightning damage until the end of the turn, and you can reflect the lightning back at the caster as though it originated from you, turning the caster into a target.</p>
+        </description>
+        <setters>
+            <set name = "keywords">resistance, immunity</set>
+            <set name = "level">2</set>
+            <set name = "school">Abjuration</set>
+            <set name = "time">1 reaction, which you take when you are targeted by a spell ot attack that deals lightning damage with and attack roll or in a line</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">false</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Reinforce" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_REINFORCE">
+        <supports>Cleric, Druid, Earth, Tamer</supports>
+        <description>
+            <p>You place your hand on one Large or smaller creature, imbuing it with the resilience and fortitude of stone. That target gains 1d6 temporary hit points. These temporary hit points disappear if you cast the spell again.</p>
+            <p class = "indent">The temporary hit points granted by this spell increase by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">0</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a spherical pebble</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Repulsing Palm" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_REPULSING_PALM">
+        <supports>Air, Bard, Cleric, Paladin, Ranger, Wizard</supports>
+        <description>
+            <p>You send a shockwave of force through your strike, barreling into a target. Make an unarmed strike or melee attack with a weapon you’re holding against one creature within your reach. On a hit, the target suffers the attack’s normal effects, and if the target is Large or smaller, you can choose to push it up to 30 feet directly away from you. If the target would collide with another creature, it stops moving and both it and the creature take 2d8 bludgeoning damage and fall prone.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 2nd level or higher, the damage upon collision increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name = "keywords">bludgeoning, prone</set>
+            <set name = "level">1</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">false</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Riptide" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_RIPTIDE">
+        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>Choose one creature you can see within range that is in at least 2 feet of water and choose a direction. Turbulent currents wrap around the creature. For the duration, the target must make a Strength saving throw at the start of each of its turns. On a failure, it is dragged 30 feet in the direction you chose, and its swimming speed is reduced to 0 feet until the start of its next turn. On a success, the creature can move normally until the start of its next turn.</p>
+            <p class = "indent">As a bonus action on your turn, you can change the direction of the underwater currents. The spell ends early if the creature is ever out of the spell’s range or is no longer in water at least 2 feet deep.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">2</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">300 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Rock Tomb" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ROCK_TOMB">
+        <supports>Bard, Druid, Earth</supports>
+        <description>
+            <p>You conjure a tomb of earth, attempting to encase a Large or smaller creature you can see within range inside of it, which occupies the same space as the creature until the spell ends. If the target is unwilling, it can make a Dexterity saving throw. On a success, it avoids being encased and is pushed to an unoccupied space within 5 feet of the tomb. The tomb provides total cover for targets on the other side of it, and any creature encased within is blinded and restrained. The tomb is an object with AC 16, 50 hit points, immunity to poison and psychic damage, and vulnerability to thunder damage. Reducing the tomb to 0 hit points destroys it and ends the spell.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the AC of the tomb increases 1 and its hit points increase by 10 for each slot level above 4th. In addition, when cast this spell using a spell slot of 6th level or higher, it can target a Huge creature, and when cast using a spell slot of 8th or 9th level, it can target a Gargantuan creature.</p>
+        </description>
+        <setters>
+            <set name = "keywords">blinded, restrained</set>
+            <set name = "level">4</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">60 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a pebble</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
 </elements>

@@ -16,7 +16,7 @@
             <ul class = "unstyled">
                 <li><strong>Skill Proficiencies: </strong>Acrobatics, Nature</li>
                 <li><strong>Languages: </strong>One of your choice (Primordial recommended)</li>
-                <li><strong>Equipment: </strong>A set of travellers clothes, a healers kit, and a pouch containing 15 GP.</li>
+                <li><strong>Equipment: </strong>A set of travellers clothes, a healers kit, and a pouch containing 15 gp.</li>
             </ul>
             <div element = "ID_RGTTYR_BACKGROUND_FEATURE_ELEMENTAL_ADEPT"/>
             <div element = "ID_RGTTYR_BACKGROUND_FEATURE_PRIMORDIAL_SENSE"/>
