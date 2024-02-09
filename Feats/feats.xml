@@ -423,7 +423,16 @@
             <p class = "indent">You can only have one of these modifications active at a time. The modification lasts until you use this feat again.</p>
             <p>*Bludgeoning, piercing, or slashing (choose when you make this modification)</p>
         </description>
-        <sheet display = "true"/>
+        <sheet display = "true">
+            <description>
+                <p>With one hour of work, you can tinker with your prosthesis. You may add one of the following enhancements until you use this feature again.</p>
+                <div class = "indent">Blast (1d6 thunder, 20 ft)</div>
+                <div class = "indent">Hookshot (30 ft)</div>
+                <div class = "indent">Integrated (any)</div>
+                <div class = "indent">Melee (1d8*, 5 ft)</div>
+                <div class = "indent">Mobility (climb or swim, 30ft)</div>
+            </description>
+        </sheet>
         <rules>
         </rules>
     </element>
@@ -436,16 +445,12 @@
                 <li>You deal one extra die of damage when you hit a target using a prosthesis’ Blast, Launch, or Melee property.</li>
             </ul>
         </description>
-        <sheet display = "true"/>
-        <sheet>
-            <description>Test</description>
+        <sheet display = "true">
             <description>
                 <p>You are a master of wielding prostheses in battle, granting you the following benefits:</p>
-                <ul>
-                    <li>The range of attacks you make using a prosthesis’ Blast or Launch property increases by 10 feet.</li>
-                    <li>The reach of any melee attacks you make using prostheses with the Melee property increases by 5 feet.</li>
-                    <li>You deal one extra die of damage when you hit a target using a prosthesis’ Blast, Launch, or Melee property.</li>
-                </ul>
+                <p class = "indent">The range of attacks you make using a prosthesis’ Blast or Launch property increases by 10 feet.</p>
+                <p class = "indent">The reach of any melee attacks you make using prostheses with the Melee property increases by 5 feet.</p>
+                <p class = "indent">You deal one extra die of damage when you hit a target using a prosthesis’ Blast, Launch, or Melee property.</p>
             </description>
         </sheet>
         <rules>
