@@ -119,8 +119,8 @@
         <rules>
             <select type = "Feat Feature" name = "Spellcasting Ability, Elemental Initiate" supports = "Elemental Initiate spellcasting"/>
             <select type = "Feat Feature" name = "Damage Resistance, Elemental Initiate" supports = "Elemental Initiate Air"/>
-            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Abjuration)"/>
-            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Abjuration)"/>
+            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Air)"/>
+            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Air)"/>
         </rules>
     </element>
     <element name = "Earth" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_EARTH">
@@ -135,8 +135,8 @@
         <rules>
             <select type = "Feat Feature" name = "Spellcasting Ability, Elemental Initiate" supports = "Elemental Initiate spellcasting"/>
             <select type = "Feat Feature" name = "Damage Resistance, Elemental Initiate" supports = "Elemental Initiate Earth"/>
-            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Divination)"/>
-            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Divination)"/>
+            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Earth)"/>
+            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Earth)"/>
         </rules>
     </element>
     <element name = "Fire" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_FIRE">
@@ -151,8 +151,8 @@
         <rules>
             <select type = "Feat Feature" name = "Spellcasting Ability, Elemental Initiate" supports = "Elemental Initiate spellcasting"/>
             <select type = "Feat Feature" name = "Damage Resistance, Elemental Initiate" supports = "Elemental Initiate Fire"/>
-            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Evocation)"/>
-            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Evocation)"/>
+            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Fire)"/>
+            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Fire)"/>
         </rules>
     </element>
     <element name = "Water" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WATER">
@@ -167,8 +167,8 @@
         <rules>
             <select type = "Feat Feature" name = "Spellcasting Ability, Elemental Initiate" supports = "Elemental Initiate spellcasting"/>
             <select type = "Feat Feature" name = "Damage Resistance, Elemental Initiate" supports = "Elemental Initiate Water"/>
-            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Enchantment)"/>
-            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Enchantment)"/>
+            <select type = "Spell" name = "Cantrip, Elemental Initiate" supports = "0, (Water)"/>
+            <select type = "Spell" name = "Spell, Elemental Initiate" supports = "1, (Water)"/>
         </rules>
     </element>
     <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE">
