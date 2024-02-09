@@ -181,6 +181,39 @@
             <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
         </sheet>
     </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE_2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE_3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE_2</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE_4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_INTELLIGENCE_3</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
     <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM">
         <compendium display = "false"/>
         <supports>Elemental Initiate spellcasting</supports>
@@ -191,8 +224,74 @@
             <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
         </sheet>
     </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM_2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM_3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM_2</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM_4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_WISDOM_3</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
     <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA">
         <compendium display = "false"/>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA_2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA_3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA_2</requirements>
+        <supports>Elemental Initiate spellcasting</supports>
+        <description>
+            <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
+        </description>
+        <sheet>
+            <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
+        </sheet>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA_4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_CHARISMA_3</requirements>
         <supports>Elemental Initiate spellcasting</supports>
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
@@ -260,5 +359,96 @@
         <sheet>
             <description>As a reaction, you gain resistance to Cold damage until the start of your next turn.</description>
         </sheet>
+    </element>
+    <element name = "Elemental Initiate" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE</requirements>
+        <description>
+            <p>You have acquired a portion of a bender’s connection to an element. Choose one of the four elements from the bender’s Elemental Affinity feature: air, earth, fire, or water. You gain the following benefits:</p>
+            <ul class = "unstyled">
+                <li>You learn one cantrip and one 1st-level spell from the chosen element’s spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Your spellcasting ability for this feat’s spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</li>
+                <li>When you take this feat, choose one damage type associated with the element you chose. When you take damage of that type, you can use a reaction to gain resistance to that damage type, including the triggering damage, until the start of your next turn.</li>
+            </ul>
+            <p>You can select this feat multiple times.</p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <select type = "Feat Feature" name = "Bending Element, Elemental Initiate" supports = "Elemental Initiate"/>
+        </rules>
+    </element>
+    <element name = "Elemental Initiate" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_2</requirements>
+        <description>
+            <p>You have acquired a portion of a bender’s connection to an element. Choose one of the four elements from the bender’s Elemental Affinity feature: air, earth, fire, or water. You gain the following benefits:</p>
+            <ul class = "unstyled">
+                <li>You learn one cantrip and one 1st-level spell from the chosen element’s spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Your spellcasting ability for this feat’s spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</li>
+                <li>When you take this feat, choose one damage type associated with the element you chose. When you take damage of that type, you can use a reaction to gain resistance to that damage type, including the triggering damage, until the start of your next turn.</li>
+            </ul>
+            <p>You can select this feat multiple times.</p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <select type = "Feat Feature" name = "Bending Element, Elemental Initiate" supports = "Elemental Initiate"/>
+        </rules>
+    </element>
+    <element name = "Elemental Initiate" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_ELEMENTAL_INITIATE_3</requirements>
+        <description>
+            <p>You have acquired a portion of a bender’s connection to an element. Choose one of the four elements from the bender’s Elemental Affinity feature: air, earth, fire, or water. You gain the following benefits:</p>
+            <ul class = "unstyled">
+                <li>You learn one cantrip and one 1st-level spell from the chosen element’s spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Your spellcasting ability for this feat’s spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</li>
+                <li>When you take this feat, choose one damage type associated with the element you chose. When you take damage of that type, you can use a reaction to gain resistance to that damage type, including the triggering damage, until the start of your next turn.</li>
+            </ul>
+            <p>You can select this feat multiple times.</p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <select type = "Feat Feature" name = "Bending Element, Elemental Initiate" supports = "Elemental Initiate"/>
+        </rules>
+    </element>
+
+    <element name = "Prosthesis Adept" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_PROSTHESIS_ADEPT">
+        <description>
+            <p>You can tinker with your prosthesis, manipulating its function, over the course of an hour. Doing so enhances it by adding one of the following properties:</p>
+            <ul>
+                <li>Blast (1d6 thunder, 20 ft)</li>
+                <li>Hookshot (30 ft)</li>
+                <li>Integrated (any)</li>
+                <li>Launch (1d6*, 30 ft)</li>
+                <li>Melee (1d8*, 5 ft)</li>
+                <li>Mobility (climb or swim, 30ft)</li>
+            </ul>
+            <p class = "indent">You can only have one of these modifications active at a time. The modification lasts until you use this feat again.</p>
+            <p>*Bludgeoning, piercing, or slashing (choose when you make this modification)</p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+        </rules>
+    </element>
+    <element name = "Prosthesis Fighting" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_PROSTHESIS_FIGHTING">
+        <description>
+            <p>You are a master of wielding prostheses in battle, granting you the following benefits:</p>
+            <ul>
+                <li>The range of attacks you make using a prosthesis’ Blast or Launch property increases by 10 feet.</li>
+                <li>The reach of any melee attacks you make using prostheses with the Melee property increases by 5 feet.</li>
+                <li>You deal one extra die of damage when you hit a target using a prosthesis’ Blast, Launch, or Melee property.</li>
+            </ul>
+        </description>
+        <sheet display = "true"/>
+        <sheet>
+            <description>Test</description>
+            <description>
+                <p>You are a master of wielding prostheses in battle, granting you the following benefits:</p>
+                <ul>
+                    <li>The range of attacks you make using a prosthesis’ Blast or Launch property increases by 10 feet.</li>
+                    <li>The reach of any melee attacks you make using prostheses with the Melee property increases by 5 feet.</li>
+                    <li>You deal one extra die of damage when you hit a target using a prosthesis’ Blast, Launch, or Melee property.</li>
+                </ul>
+            </description>
+        </sheet>
+        <rules>
+        </rules>
     </element>
 </elements>

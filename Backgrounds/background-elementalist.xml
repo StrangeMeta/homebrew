@@ -16,10 +16,10 @@
             <ul class = "unstyled">
                 <li><strong>Skill Proficiencies: </strong>Acrobatics, Nature</li>
                 <li><strong>Languages: </strong>One of your choice (Primordial recommended)</li>
-                <li><strong>Equipment: </strong>A set of travellers clothes, a healers kit, and a pouch containing 15 GP</li>
+                <li><strong>Equipment: </strong>A set of travellers clothes, a healers kit, and a pouch containing 15 GP.</li>
             </ul>
-                <div element = "ID_RGTTYR_BACKGROUND_FEATURE_ELEMENTAL_ADEPT"/>
-                <div element = "ID_RGTTYR_BACKGROUND_FEATURE_PRIMORDIAL_SENSE"/>
+            <div element = "ID_RGTTYR_BACKGROUND_FEATURE_ELEMENTAL_ADEPT"/>
+            <div element = "ID_RGTTYR_BACKGROUND_FEATURE_PRIMORDIAL_SENSE"/>
             <h5>Suggested Characteristics</h5>
             <p>Elementalists can manifest magic through motion and are in tune with the natural world. The manner in which you obtained your powers may impact how you have grown as a person. Those who trained to wield the elements devoted years to their cause and are often extremely serious and dour, while those innately born with the skill often take it for granted. Such elementalists are often cocky and egotistical, but no harm can come from flaunting the gifts you have been given, surely?</p>
         </description>
