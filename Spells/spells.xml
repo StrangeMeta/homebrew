@@ -1,0 +1,118 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <element name = "Acid Rain" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ACID_RAIN">
+        <supports>Earth, Druid, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>With a gentle patter, corrosive raindrops build to an acidic deluge in a 20-foot-radius, 60-foot-tall cylinder, centred on a point within range. When the rain begins, each creature in the area must make a Dexterity saving throw, taking 4d6 acid damage on failure or half as much damage on a success. For the duration, a creature must also make this saving throw when it enters the spell’s area for the first time on its turn or ends its turn there.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">acid</set>
+            <set name = "level">3</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 mintute</set>
+            <set name = "range">90 feet (20-foot-radius, 60-foot-tall cylinder)</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a drop of acid</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Bakuryo’s Blessèd Blizzard" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_BAKURYOS_BLESSES_BLIZZARD">
+        <supports>Cleric, Druid, Paladin, Warlock, Water, Wizard</supports>
+        <description>
+            <p>You invoke the tenets of the heavenly dragon, Bakuryo, rewarding those who struggle and punishing the dishonourable. A freezing storm radiates from you in an aura with a 20-foot radius, covering allies in icy armour and freezing foes. The aura lasts for the duration, and it moves with you, centred on you.</p>
+            <p class = "indent">When you cast this spell, and when a creature you can see enters the area for the first time on its turn, you must decide whether you wish to bless the creature. If you do so, the creature gains a +2 bonus to its AC while in the aura. Once you bless a creature, it remains blessed until the spell ends.</p>
+            <p class = "indent">If you choose not to bless the creature, it must make a Constitution saving throw. On a failure, it takes 4d8 cold damage and its speed is reduced to 0 feet while in the aura. On a success, it takes half as much damage and its speed is halved while in the aura.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">cold</set>
+            <set name = "level">5</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 mintute</set>
+            <set name = "range">Self (20-foot-radius)</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a snowflake made of mithral, worth
+at least 500 gp</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Blinding Radiance" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_BLINDING RADIANCE">
+        <supports>Cleric, Paladin, Sorcerer, Warlock</supports>
+        <description>
+            <p>Bright light erupts from your form and dazzles those around you. For the duration, you emit bright light in a 50-foot radius and dim light for an additional 50 feet. Each creature that moves within 10 feet of you for the first time on its turn or that starts its turn there must make a Constitution saving throw. On a failure, a creature takes 3d10 radiant damage and is blinded until the start of its next turn. On a success, a creature takes half as much damage and isn’t blinded.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name = "keywords">radiant</set>
+            <set name = "level">4</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 mintute</set>
+            <set name = "range">Self (10-foot-radius sphere)</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a strip of magnesium</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Bloodweave" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_BLOODWEAVE">
+        <supports>Bard, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>You attempt to seize control of the blood inside a Humanoid you can see with range. The target must make a Constitution saving throw. On a failed save, you can force that creature to use its reaction to move up to its speed in a direction you choose, and then use its action on its next turn to do one of the following: fall prone, drop what it is holding, or make one weapon attack against a creature you choose within its reach or range. At the end of that creature’s compelled action, your command over its body fades. Creatures that have a challenge rating or level of 5 or higher automatically succeed on the Constitution saving throw to resist this effect.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the challenge rating or level of creatures that automatically succeed on this saving throw increases by 3 for each slot level above 2nd. When you cast this spell using a spell slot of 5th level or higher, it can target any creature with blood, not only Humanoids.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/t>
+            <set name = "level">2</set>
+            <set name = "school">Enchantment</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">1 round</set>
+            <set name = "range">60 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Cage of Frozen Tears" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_CAGE_OF_FRAZEN_TEARS">
+        <supports>Druis, Ranger, Warlock, Water</supports>
+        <description>
+            <p>You imbue a 20-foot-radius circle of ground you touch with an icey trap. The trap is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it. When you cast the spell, choose a trigger:</p>
+            <ul>
+                <li>When a creature of a type you specify enters the area or reaches its centre.</li>
+                <li>When any creature other than ones you designate to not trigger it enters the area or reaches its centre.</li>
+                <li>When you use your reaction to trigger it.</li>
+            </ul>
+            <p class = "indent">When the trap is triggered, frosty spikes erupt from the ground, stabbing and trapping creatures within the area in a painful embrace. Each creature in the area when the trap is triggered must make a Dexterity saving throw. On a failure, a creature takes 2d8 piercing damage and 2d8 cold damage and is restrained for 1 minute. On a success, a creature takes half as much damage and is not restrained. A creature can use its action to make a Strength check against your spell save DC, freeing itself or a trapped creature within its reach on a success. </p>
+            <p class = "indent">A creature that starts its turn restrained by the ice sees horrifying visions of its past reflected in the ice and must succeed on a Wisdom saving throw or become frightened of the reflections that surround it until the start of its next turn. While frightened in this way, the creature can’t attempt the Strength check to free itself. A creature that ends its turn restrained by the ice takes 2d8 cold damage.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the cold damage increases by 1d8 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name = "keywords">cold, restrained, frightened</set>
+            <set name = "level">4</set>
+            <set name = "school">Abjuration</set>
+            <set name = "time">1 minute</set>
+            <set name = "duration">24 hours</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">tru</set>
+            <set name = "materialComponent">a snowflake</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+</elements>
