@@ -80,7 +80,7 @@
             </div>
         </description>
         <rules>
-            <select type = "Feat" name = "Feat (Elementalist)" />
+            <select type = "Feat" name = "Feat (Elementalist)" supports = "ID_RGTTYR_FEAT_ELEMENTAL_FIGHTING|ID_RGTTYR_FEAT_ELEMENTAL_INITIATE"/>
         </rules>
         <sheet alt = "Elemental Adept"/>
     </element>
