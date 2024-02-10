@@ -39,13 +39,12 @@
             <set name = "hasVerbalComponent">true</set>
             <set name = "hasSomaticComponent">true</set>
             <set name = "hasMaterialComponent">true</set>
-            <set name = "materialComponent">a snowflake made of mithral, worth
-at least 500 gp</set>
+            <set name = "materialComponent">a snowflake made of mithral, worth at least 500 gp</set>
             <set name = "isConcentration">true</set>
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Blinding Radiance" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_BLINDING RADIANCE">
+    <element name = "Blinding Radiance" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_BLINDING_RADIANCE">
         <supports>Cleric, Paladin, Sorcerer, Warlock</supports>
         <description>
             <p>Bright light erupts from your form and dazzles those around you. For the duration, you emit bright light in a 50-foot radius and dim light for an additional 50 feet. Each creature that moves within 10 feet of you for the first time on its turn or that starts its turn there must make a Constitution saving throw. On a failure, a creature takes 3d10 radiant damage and is blinded until the start of its next turn. On a success, a creature takes half as much damage and isn’t blinded.</p>
@@ -1306,6 +1305,189 @@ at least 500 gp</set>
             <set name = "hasMaterialComponent">false</set>
             <set name = "materialComponent"/>
             <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "The Bends" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_THE_BENDS_BIOMANCY">
+        <requirements>!ID_RGTTYR_SPELL_THE_BENDS_TRANSMUTATION</requirements>
+        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw. On a failed save, the target takes 5d8 poison damage and is poisoned for 1 minute. On a successful save, the targettakes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to d10s.</p>
+            <p class = "indent">The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">poison</set>
+            <set name = "level">3</set>
+            <set name = "school">Biomancy</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">90 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "The Bends" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_THE_BENDS_TRANSMUTATION">
+        <requirements>!ID_RGTTYR_SPELL_THE_BENDS_BIOMANCY</requirements>
+        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
+        <description>
+            <p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw. On a failed save, the target takes 5d8 poison damage and is poisoned for 1 minute. On a successful save, the targettakes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to d10s.</p>
+            <p class = "indent">The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">poison</set>
+            <set name = "level">3</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">90 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Wanyudo's Fury" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_WANYUDOS_FURY">
+        <supports>Fire, Ranger, Sorcerer</supports>
+        <description>
+            <p>With a series of looping cartwheels and magic-enhanced flips, you move up to 30 feet in a straight line, your hands and feet spewing jets of flame. This movement does not provoke opportunity attacks. Each creature within 5 feet of you while you move must make a Dexterity saving throw, taking 4d6 fire damage on a failed saving throw or half as much damage on successful one.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the distance you can move increases by 10 feet and the damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">fire</set>
+            <set name = "level">2</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">false</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Water Whip" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_WATER_WHIP">
+        <supports>Druid, Sorcerer, Water, Wizard</supports>
+        <description>
+            <p>Choose a source of water that you can see within range that has a volume of at least 4 pints. Make a melee spell attack against a creature within 30 feet of the source of water. On a hit, the target takes 1d6 slashing damage and, if the creature is Large or smaller, you can force it to make a Strength saving throw, pulling it up to 10 feet towards the source of water on a failure.</p>
+            <p class = "indent">The spell’s damage increases by 1d6 and the distance it can pull a target increases by 5 feet when you reach 5th level (2d6 and 15 feet), 11th level (3d6 and 20 feet), and 17th level (4d6 and 25 feet).</p>
+        </description>
+        <setters>
+            <set name = "keywords">slashing</set>
+            <set name = "level">0</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">60 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Water Wyrm" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_WATER_WYRM">
+        <supports>Druid, Ranger, Sorcerer, Water, Wizard</supports>
+        <description>
+            <p>You conjure a thrashing wyrm of frothing water that moves with you, wielding it as an extension of your body for the duration. When you conjure the wyrm and as a bonus action on your subsequent turns, you can cause one of the following effects with it:</p>
+            <ul>
+                <li><strong>Ice Fang. </strong>The wyrm grows frozen fangs—jagged icicles that it uses to bite a creature or object within 20 feet of you. Make a melee spell attack against the target. On a hit, it takes 2d6 piercing damage and 1d6 cold damage.</li>
+                <li><strong>Engulf. </strong>The wyrm leaves your side, surging toward a creature within 40 feet of you and attempting to engulf it in a torrent of water. The target must succeed on a Strength saving throw or be restrained. While restraining a creature in this way, the only effect you can use with the wyrm is Ice Fang, targeting the restrained creature regardless of range. A creature can use its action to make a Strength check against your spell save DC, freeing itself or a creature within its reach from the wyrm on a success. When the wyrm stops restraining a creature, the spell ends.</li>
+                <li>The wyrm assumes a defensive formation around you. Until the start of your next turn, ranged attacks that hit you have their damage reduced by 1d6 plus your spellcasting ability modifier</li>
+            </ul>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the cold damage from the Ice Fang option and the damage reduction of the Weird Water option increase by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">cold, piercing, restrained</set>
+            <set name = "level">3</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a dried tadpole</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "White Water Wall" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_WHITE_WATER_WALL">
+        <supports>Druid, Sorcerer, Water, Wizard</supports>
+        <description>
+            <p>You create a wall of raging, turbulent water filled with debris. You can make the wall up to 60 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 5 feet thick. The wall is opaque and ranged attacks can’t pass through the wall.</p>
+            <p class = "indent">If the wall cuts through a creature’s space when it appears, the creature must succeed on a Strength saving throw or be entrained in the water. A Huge or larger creature automatically succeeds on this saving throw. A Large or smaller creature that willingly enters the water’s space is also entrained by it. An entrained creature can’t breathe and has a speed of 0 feet.</p>
+            <p class = "indent">The first time a creature enters the wall and at the start of an entrained creature’s turn, it takes 3d10 bludgeoning damage as it is battered by the turbulent flow and debris. An entrained creature that uses its action to make a Strength check against your spell save DC and succeeds exits the wall prone within 5 feet of its current location.</p>
+            <p class = "indent"><strong>White Water Whip. </strong>As a bonus action on your turn, you can cause a tendril of white water to grab at a creature within 10 feet of the wall. That creature must succeed on a Strength saving throw or take 3d10 slashing damage and be pulled into the wall where it becomes entrained by it.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you use a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th. When you use a spell slot of 7th level or higher to cast this spell, the wall’s maximum length also increases by 30 feet, its thickness increases by 5 feet, and the size of creature that automatically succeeds on the Strength saving throw increases by one for each two slot levels above 5th (to Huge at 7th level and Gargantuan at 9th level).</p>
+        </description>
+        <setters>
+            <set name = "keywords">slashing</set>
+            <set name = "level">5</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">120 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a perfectly round pebble</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Wind Drake" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_WIND_DRAKE">
+        <supports>Air, Druid, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You conjure a tempestuous drake of spiralling wind that moves with you, wielding it as an extension of your body for the duration. When you conjure the drake and as a bonus action on your subsequent turns, you can cause one of the following effects with it:</p>
+            <p class = "indent"><strong>Thunder Strike. </strong>The drake slams into a creature or object within 20 feet of you with a deafening boom. Make a melee spell attack against the target. On a hit, the target takes 1d6 thunder damage.</p>
+            <p class = "indent"><strong>Vortex Grapple. </strong>The drake billows towards a Large or smaller creature within 20 feet of you, attempting to encase it in a vortex of air. The target must succeed on a Dexterity saving throw or be restrained for the duration, or until you use another effect of the wind drake. A target can use an action to repeat this saving throw, escaping the drake on a success and ending the spell.</p>
+            <p class = "indent"><strong>Windstrider. </strong>The drake forms a whirling eddy at your feet, increasing your speed by 10 feet, and preventing your movement from provoking opportunity attacks. This effect lasts until the start of your next turn.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 2nd level or higher, the damage from the Thunder Strike option increases by 1d6, and the Windstrider option’s bonus to your speed increases by 10 feet, for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name = "keywords">restrained, thunder</set>
+            <set name = "level">1</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a dandelion seedhead</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Wind Strike" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_WIND_STRIKE">
+        <supports>Air, Paladin, Ranger, Wizard</supports>
+        <description>
+            <p>With a blast of air, you leap up to 30 feet before making one unarmed strike or melee attack with a weapon you are holding. You can make two attacks if you have the Extra Attack class feature. On a hit, a target takes additional thunder damage equal to 1d8 + your spellcasting ability modifier.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the distance you can leap increases by 15 feet and the attacks deal an additional 1d8 thunder damage on a hit for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">thunder</set>
+            <set name = "level">2</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">false</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
             <set name = "isRitual">false</set>
         </setters>
     </element>
