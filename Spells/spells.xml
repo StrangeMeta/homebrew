@@ -999,4 +999,314 @@ at least 500 gp</set>
             <set name = "isRitual">false</set>
         </setters>
     </element>
+    <element name = "See Future Death" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SEE_FUTURE_DEATH">
+        <supports>Bard, Cleric Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You peer into the divergent potentials of the future, your attention drawn to moments of your own harm. For the duration, any critical hits you suffer become normal hits and opportunity attacks against you have disadvantage. In addition, when an attacker hits you with an attack or you fail a Strength or Dexterity saving throw, you can use your reaction to roll a d4 and add the result to your AC against that attack or to the result of the saving throw, potentially turning a hit into a miss or a failure into a success.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases to 10 minutes (3rd level), 1 hour (5th level), 8 hours (7th level), or 24 hours (9th level). When you cast this spell using a spell slot of 2nd level or higher, the size of the die you can roll to add to your AC or saving throw increases to 1d6 (2nd level), 1d8 (4th level), 1d10 (6th level), or 1d12 (8th level).</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">1</set>
+            <set name = "school">Divination</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">1 minute</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">false</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a piece of broken mirror</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Shielding Word" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SHIELDING_WORD">
+        <supports>Bard, Cleric, Earth, Paladin, Sorcerer, Tamer</supports>
+        <description>
+            <p>With a word, you coat a creature in a shimmering shield that absorbs the energy of incoming blows. The creature gains 15 temporary hit points the instant before it takes the triggering damage. These hit points last until the start of the creature’s next turn.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, you may choose to either increase the range of the spell by 30 feet or increase the number of temporary hit points gained by 5, for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">2</set>
+            <set name = "school">Abjuration</set>
+            <set name = "time">1 reaction, which you take when a creature within range that you can see is hit by an attack from an attacker you can see or fails a Strength or Dexterity saving throw</set>
+            <set name = "duration">1 round</set>
+            <set name = "range">30 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">false</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Skin of Steel" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL_BIOMANCY">
+        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STEEL_TRANSMUTATION</requirements>
+        <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
+        <description>
+            <p>You reinforce a willing creature’s skin with the tenacity and strength of steel. For the spell’s duration, the target’s AC can’t be lower than 19, regardless of what armour it’s wearing (shields confer their bonus to AC as normal), and, at the start of each of the target’s turns, it gains 3d6 temporary hit points.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the temporary hit points increase by 1d6 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">4</set>
+            <set name = "school">Biomancy</set>
+            <set name = "time">1 minute</set>
+            <set name = "duration">10 minutes</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a steel figurine</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Skin of Steel" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL_TRANSMUTATION">
+        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STEEL_BIOMANCY</requirements>
+        <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
+        <description>
+            <p>You reinforce a willing creature’s skin with the tenacity and strength of steel. For the spell’s duration, the target’s AC can’t be lower than 19, regardless of what armour it’s wearing (shields confer their bonus to AC as normal), and, at the start of each of the target’s turns, it gains 3d6 temporary hit points.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the temporary hit points increase by 1d6 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">4</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 minute</set>
+            <set name = "duration">10 minutes</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a steel figurine</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Skin of Stone" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE_BIOMANCY">
+        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STONE_TRANSMUTATION</requirements>
+        <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
+        <description>
+            <p>At your touch, the skin of a willing creature hardens with stone-like fortification. Its speed is reduced by 5 feet and, when you cast this spell and at the start of each of the target’s turns, it gains temporary hit points equal to 1d4 plus your spellcasting modifier. When the spell ends, the target loses any remaining temporary hit points granted by this spell.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">2</set>
+            <set name = "school">Biomancy</set>
+            <set name = "time">1 minute</set>
+            <set name = "duration">1 minute</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a carved stone figurine</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Skin of Stone" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE_TRANSMUTATION">
+        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STONE_BIOMANCY</requirements>
+        <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
+        <description>
+            <p>At your touch, the skin of a willing creature hardens with stone-like fortification. Its speed is reduced by 5 feet and, when you cast this spell and at the start of each of the target’s turns, it gains temporary hit points equal to 1d4 plus your spellcasting modifier. When the spell ends, the target loses any remaining temporary hit points granted by this spell.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">2</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 minute</set>
+            <set name = "duration">1 minute</set>
+            <set name = "range">Touch</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a carved stone figurine</set>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Slatestorm" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SLATESTORM">
+        <supports>Druid, Earth, Ranger, Wizard</supports>
+        <description>
+            <p>Razor-sharp shards of slate flit about you in a lacerating whirlwind until the spell ends. Each creature that starts its turn within 5 feet of you or enters a space within 5 feet of you for the first time on its turn takes 3d8 slashing damage. As an action, you can cause slate to fire out from you in a 15-foot cone. Each creature in the area must make a Dexterity saving throw, taking 3d8 slashing damage on a failure, or half as much damage on a success.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name = "keywords">slashing</set>
+            <set name = "level">4</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">false</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a thin piece of slate</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Smokescreen" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SMOKESCREEN">
+        <supports>Air, Druid, Sorcerer, Tamer, Wizard</supports>
+        <description>
+            <p>You spew a thick cloud of dense black smoke that forms a 5-foot-diameter, 10-foot-high cylinder centred on you that lasts until the start of your next turn. The smoke heavily obscures its area. When you cast the spell, you can choose whether the cloud remains in the location where you cast it or if it moves with you, centred on you.</p>
+            <p class = "indent">When you reach higher levels, the size of the cloud you can create with this spell increases. When you reach 5th level, the cloud has a maximum diameter and height of 15 feet; at 11th level this increases to 25 feet; and at 17th level this increases to 40 feet. You choose how big the cloud is in each dimension up to this maximum each time that you cast it.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">0</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 round</set>
+            <set name = "range">Self (5-foot-radius, 10-foot-high cylinder)</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a puffball mushroom</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Snakebite" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SNAKEBITE">
+        <supports>Druid, Earth, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You conjure a sinuous, fanged snake of shifting dirt and sliding sand that moves with you, wielding it like an extension of your body for the duration. When you conjure the snake and as a bonus action on your subsequent turns, you can cause one of the following effects with it:</p>
+            <ul>
+                <li><strong>Earthroot. </strong>The snake coils around you or a willing creature of your choice within 30 feet of you as a fortification of earth. Until the start of your next turn, the affected creature automatically succeeds on ability checks and saving throws to avoid being moved against its will or knocked prone.</li>
+                <li><strong>Tetanus Tooth. </strong>The snake turns into a long, jagged tooth, stabbing at a creature within 20 feet of you. Make a melee spell attack against the target. On a hit, it takes 1d6 piercing damage and 1d6 poison damage and must succeed on a Constitution saving throw or be poisoned until the end of your next turn.</li>
+                <li><strong>Sandstorm. </strong>The snake disintegrates into a cloud of fine particles, surging towards a creature within 30 feet of you. The target must succeed on a Constitution saving throw or be blinded until the start of your next turn.</li>
+            </ul>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the poison damage from the Tetanus Tooth option increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name = "keywords">blinded, piercing, poison, prone</set>
+            <set name = "level">2</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 1 minute</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">some sand</set>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Soften Descent" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SOFTEN_DESCENT">
+        <supports>Air, Bard, Druid, Sorcerer, Tamer, Wizard</supports>
+        <description>
+            <p>With a gesture, you cause an updraft in the air, slowing your descent. You ignore the first 30 feet when calculating falling damage.</p>
+            <p class = "indent">This spell ignores an additional 30 feet of falling damage when you reach 5th level (60 feet), 11th level (90 feet), and 17th level (120 feet).</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">0</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 reaction, which you take when you are about to hit a surface after falling</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">false</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Spark" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SPARK">
+        <supports>Fire, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>A spark of bright light arcs from you to a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 lightning damage. On a critical hit, the target is also blinded until the end of its next turn.</p>
+            <p class = "indent">The spell creates more than one spark when you reach higher levels: two sparks at 5th level, three sparks at 11th level, and four sparks at 17th level. You can direct the sparks at the same target or at different ones. Make a separate attack roll for each spark.</p>
+        </description>
+        <setters>
+            <set name = "keywords">blinded, lightning</set>
+            <set name = "level">0</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">60 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Sundering Sky" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SUNDERING_SKY">
+        <supports>Air, Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>With a flourish and a rush of air, you leap up to 60 feet to an unoccupied space you can see, landing with a thunderous boom that can be heard 600 feet away. Each creature within 10 feet of the space from which you jumped must make a Strength saving throw or be pushed 10 feet away from that space and knocked prone. Each creature within 20 feet of where you land must make a Dexterity saving throw, taking 5d10 thunder damage on a failure or half as much damage on a success.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the distance you can leap increases by 30 feet and the damage increases by 1d10 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name = "keywords">thunder</set>
+            <set name = "level">4</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Switcheroo" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SWITCHEROO">
+        <supports>Air, Bard, Cleric, Sorcerer, Tamer, Warlock, Wizard</supports>
+        <description>
+            <p>You attempt to switch places with a Large or smaller target within range that you can see. The target must succeed on a Charisma saving throw or instantly teleport to your space whilst you teleport to the one it previously occupied.</p>
+            <p class = "indent">A creature automatically succeeds on this saving throw if there is not enough space to accommodate either of the teleporting creatures. A willing creature may choose to fail the saving throw.</p>
+            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the range of this spell increases by 30 feet for each slot level above 3rd. The maximum size of creature you can target increases to Huge when cast at 6th level or higher, and to Gargantuan when cast at 9th level.</p>
+        </description>
+        <setters>
+            <set name = "keywords"/>
+            <set name = "level">3</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">90 feet</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">false</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
+    <element name = "Tempestuous Transformation" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_TEMPESTUOUS_TRANSFORMATION">
+        <supports>Air, Druid, Sorcerer</supports>
+        <description>
+            <p>You endow yourself with the shapeless fluidity of the wind. Until the spell ends, you can’t cast spells, and you gain the following benefits:</p>
+            <ul>
+            <li>You gain a flying speed of 40 feet.</li>
+            <li>You can move through gaps as small as 1 inch wide without squeezing, your movement doesn’t provoke opportunity attacks.</li>
+            <li>You have resistance to bludgeoning, lightning, piercing, slashing, and thunder damage.</li>
+            <li>When you cast the spell and as a bonus action on your subsequent turns for the duration, you can force one creature you can see within 30 feet of you to make a Dexterity saving throw, as a stormy blast extends from you toward it. The target takes 2d8 lightning damage and 2d8 thunder damage on a failed save, or half as much damage on a successful one.</li>
+            </ul>
+            <p class = "indent">When this spell ends, you must succeed on a DC 15 Constitution saving throw or gain 1 point of exhaustion.</p>
+        </description>
+        <setters>
+            <set name = "keywords">lightning, resistance, thunder</set>
+            <set name = "level">4</set>
+            <set name = "school">Transmutation</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Concentration, up to 10 minutes</set>
+            <set name = "range">Self</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+            <set name = "materialComponent"/>
+            <set name = "isConcentration">true</set>
+            <set name = "isRitual">false</set>
+        </setters>
+    </element>
 </elements>
