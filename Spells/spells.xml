@@ -347,7 +347,7 @@
         </setters>
     </element>
     <element name = "Endoleech" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ENDOLEECH_BIOMANCY">
-    <requirements>!ID_RGTTYR_SPELL_ENDOLEECH_EVOCATION</requirements>
+        <requirements>!ID_RGTTYR_SPELL_ENDOLEECH_EVOCATION</requirements>
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You touch a creature, absorbing the energy from its body and bolstering your metabolism. Make a melee spell attack against a creature you can reach. On a hit, the target takes 5d6 cold damage and can’t take reactions until the end of its next turn. In addition, until the end of its next turn, its speed is reduced by 15 feet and your speed is increased by 15 feet.</p>
@@ -369,7 +369,7 @@
         </setters>
     </element>
     <element name = "Endoleech" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ENDOLEECH_EVOCATION">
-    <requirements>!ID_RGTTYR_SPELL_ENDOLEECH_BIOMANCY</requirements>
+        <requirements>!ID_RGTTYR_SPELL_ENDOLEECH_BIOMANCY</requirements>
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You touch a creature, absorbing the energy from its body and bolstering your metabolism. Make a melee spell attack against a creature you can reach. On a hit, the target takes 5d6 cold damage and can’t take reactions until the end of its next turn. In addition, until the end of its next turn, its speed is reduced by 15 feet and your speed is increased by 15 feet.</p>
@@ -456,7 +456,7 @@
         </setters>
     </element>
     <element name = "Feverskin" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_FEVERSKIN_BIOMANCY">
-    <requirements>!ID_RGTTYR_SPELL_FEVERSKIN_EVOCATION</requirements>
+        <requirements>!ID_RGTTYR_SPELL_FEVERSKIN_EVOCATION</requirements>
         <supports>Cleric, Druid, Fire, Sorcerer, Tamer, Warlock, Wizard</supports>
         <description>
             <p>You eat a chilli pepper, your metabolism increases, and your skin begins to burn to the touch. Make a melee spell attack against a creature within your reach. On a hit, the target takes 6d6 fire damage. Until the spell ends, you can use an action on each of your subsequent turns to make this attack again.</p>
@@ -479,7 +479,7 @@
         </setters>
     </element>
     <element name = "Feverskin" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_FEVERSKIN_EVOCATION">
-    <requirements>!ID_RGTTYR_SPELL_FEVERSKIN_BIOMANCY</requirements>
+        <requirements>!ID_RGTTYR_SPELL_FEVERSKIN_BIOMANCY</requirements>
         <supports>Cleric, Druid, Fire, Sorcerer, Tamer, Warlock, Wizard</supports>
         <description>
             <p>You eat a chilli pepper, your metabolism increases, and your skin begins to burn to the touch. Make a melee spell attack against a creature within your reach. On a hit, the target takes 6d6 fire damage. Until the spell ends, you can use an action on each of your subsequent turns to make this attack again.</p>
@@ -764,7 +764,7 @@
         </setters>
     </element>
     <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY">
-    <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION</requirements>
+        <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION</requirements>
         <supports>Bard, Cleric, Druid, Earth, Paladin, Range, Tamer</supports>
         <description>
             <p>You touch a willing creature, causing blue-green veins of adamantine to thread through its skin, making it tougher than steel and as flexible as silk. For the duration, the target’s AC can’t be less than 20, regardless of what kind of armour it’s wearing (shields confer their AC bonus as normal) and it has resistance to acid, bludgeoning, piercing, and slashing damage.</p>
@@ -786,7 +786,7 @@
         </setters>
     </element>
     <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION">
-    <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY</requirements>
+        <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY</requirements>
         <supports>Bard, Cleric, Druid, Earth, Paladin, Range, Tamer</supports>
         <description>
             <p>You touch a willing creature, causing blue-green veins of adamantine to thread through its skin, making it tougher than steel and as flexible as silk. For the duration, the target’s AC can’t be less than 20, regardless of what kind of armour it’s wearing (shields confer their AC bonus as normal) and it has resistance to acid, bludgeoning, piercing, and slashing damage.</p>
@@ -808,7 +808,7 @@
         </setters>
     </element>
     <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY">
-    <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION</requirements>
+        <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION</requirements>
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
@@ -830,7 +830,7 @@
         </setters>
     </element>
     <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION">
-    <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY</requirements>
+        <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY</requirements>
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
