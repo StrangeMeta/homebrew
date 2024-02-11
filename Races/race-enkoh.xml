@@ -9,7 +9,7 @@
         </update>
     </info> -->
 
-    <element name = "Enkoh" type = "Race" source = "Ryok's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ENKOH">
+    <element name = "Enkoh" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ENKOH">
         <description>
             <p class = "flavour">“There’s magic in this world that goes beyond flashes, bangs, and jets of flame. An earthy magic of food, structure, and fellowship. It’s the magic of a thousand mundane hands raising a city from velvet snow. A magic woven by walking into the cruellest, biting blizzard and welcoming it as your home. These people understand that magic. The mightest yokai and grandest kaiju might be able to survive here, for a time, but only the enkoh can thrive.”</p>
             <p class = "flavour">-Ryoko</p>
@@ -29,20 +29,20 @@
                 <span class = "feature">Age. </span>An enkoh reaches maturity at 15 years of age and can live up to 80 years.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
                 <span class = "feature">Thick Fur. </span>You have resistance to cold damage.<br/>
-                <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriatefor your character.<br/>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
                 <span class = "feature">Subrace. </span>There are two primary variants among the enkoh: hulking and springtail. On the whole, enkoh see little value in in the anthropological labels placed upon them by other races, living together in equality and peace. Choose one of these subraces.<br/>
                 <div element = "ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING"/>
                 <div element = "ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL"/>
             </p>
         </description>
-        <sheet display = "false"/>
+        <sheet display = "true"/>
         <rules>
             <stat name = "intelligence" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Enkoh)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <stat name = "innate speed" value = "30" bonus = "base"/>
             <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
 
-            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <select type = "Language" name = "Language (Enkoh)" supports = "Standard||Exotic"/>
 
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_THICK_FUR"/>
@@ -52,10 +52,10 @@
 
     <element name = "Thick Fur" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_THICK_FUR">
         <description>
-            <p>You have resistance to cold damage</p>
+            <p>You have resistance to cold damage.</p>
         </description>
         <sheet>
-            <description>You have resistance to cold damage</description>
+            <description>You have resistance to cold damage.</description>
         </sheet>
         <rules>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
@@ -119,9 +119,10 @@
                 <span class = "feature">Sturdy Tail. </span>Your tail can support your weight and balance. When you make an ability check or saving throw to avoid being forcibly moved, you can use your reaction to curl your tail around an object within 5 feet of you that is attached to the ground or another sturdy surface. If you do so, you have advantage on that check or save.<br/>
             </p>
         </description>
-        <sheet display = "false"/>
+        <sheet display = "true"/>
         <rules>
             <stat name = "dexterity" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Size" id = "ID_SIZE_SMALL"/>
             <stat name = "innate:speed" value = "35" bonus = "base"/>
             <stat name = "speed:climb" value = "speed" bonus = "base"/>
 
@@ -147,7 +148,7 @@
             <description>You gain proficiency in your choice of two of the following skills: Acrobatics, Animal Handling, Nature, Performance, or Survival.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" name = "Skill Proficiency (Springtail Enkoh)" supports = "Skill, Springtail Enkoh Skillful"/>
+            <select type = "Proficiency" name = "Skill Proficiency (Springtail Enkoh)" number = "2" supports = "Skill, Springtail Enkoh Skillful"/>
         </rules>
     </element>
     <!-- Skills for Skillful -->

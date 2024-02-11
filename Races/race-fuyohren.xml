@@ -1,0 +1,130 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <!-- <info>
+        <name>Fuyohren</name>
+        <description></description>
+        <author>Ryoko's Guide to the Yokai Realms</author>
+        <update version = "0.0.1">
+            <file name = "race-fuyohren.xml" url = ""/>
+        </update>
+    </info> -->
+
+    <element name = "Fuyohren" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_FUYOHREN">
+        <description>
+            <p class = "flavour">Even in tales of triumph, her stories left me with an aching melancholy—a yearning for meadows, lakes, and young grass trembling in a spring breeze. That is what it means to be fuyohren.</p>
+            <p>Born and nurtured on gentle flowing rivers and tranquil ponds, the fuyohren are sentient, mobile plants innately harmonious with the natural world. Fuyohren societies nestle within ecosystems effortlessly, acting in synchronicity with the ebb and flow of the world around them. A society might exist on the same plot of land for millenia, yet remain undetectable to outsiders who pass through, with nary a tree uprooted or stone upturned to indicate the fuyohren’s presence.</p>
+
+            <h4>Seasonal Divination</h4>
+            <p>Bound to nature, the fuyohren bear an imprint of the world at the time of their birth. So-called “winter warriors” are fuyohren born in the bitter, colder months, and are believed to bear an aggressive, steely disposition. Fuyohren born in spring are blessed with a childlike, optimistic disposition, while summer fuyohren are typically charismatic, and autumnal fuyohren said to be wise. Whether these stereotypes are true or merely a product of a cultural myth manifesting itself in the way fuyohren are raised is unknown.</p>
+
+            <h4>Kaiju Callers</h4>
+            <p>Kaiju are feared and worshipped by the fuyohren for their power to obliterate swathes of an environment through their presence alone. Many fuyohren cultural traditions include dances, festivals, and ceremonies which aim to placate such behemoths. Bolder fuyohren may actively seek rampaging kaiju, drawing them away from societies and fragile ecosystems and into the untamed wilderness, usually at the cost of their own lives. Bakuryo and other kaiju that do not interfere with the natural world are revered by the fuyohren, while Raiko and other chaotic beings of wanton destructive force are hated and feared.</p>
+
+            <h4>FUYOHREN TRAITS</h4>
+            <p>As a fuyohren, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Dexterity score increases by 2, and your Wisdom increases by 1.<br/>
+                <span class = "feature">Age. </span>Young fuyohren are raised on the water until they reach adolescence and learn to walk upright. They reach adulthood at around 18 years old and have been known to live to 150.<br/>
+                <span class = "feature">Size. </span>You are Medium. Grown fuyohren can reach 6 feet tall.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 35 feet.<br/>
+                <span class = "feature">Creature Type. </span>You are a Plant.<br/>
+                <span class = "feature">Fluid Motion. </span>You have advantage on saving throws you make to avoid or end the restrained, paralysed, or petrified condition on yourself.<br/>
+                <span class = "feature">Graceful Step. </span>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.<br/>
+                <span class = "feature">Water Magic. </span>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:<br/>
+                <ul>
+                    <li>The water gains the magical properties of holy water.</li>
+                    <li>The water becomes a simple antidote that ends the poisoned condition when drunk by one creature.</li>
+                    <li>The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.</li>
+                    <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
+                </ul>
+                <span class = "feature">Nature Warden. </span>You gain proficiency in your choice of one of the following skills: Acrobatics, Animal Handling, Nature, Survival, or Performance.<br/>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "dexterity" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Fuyohren)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
+            <stat name = "innate speed" value = "35" bonus = "base"/>
+
+            <grant type = "Creature Type" id = "ID_INTERNAL_RACIAL_TRAIT_TYPE_PLANT"/>
+
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_FLUID_MOTION"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_GRACEFUL_STEP"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_WATER_MAGIC"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_NATURE_WARDEN"/>
+
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <select type = "Language" name = "Language (Fuyohren)" supports = "Standard||Exotic"/>
+
+        </rules>
+    </element>
+
+    <element name = "Fluid Motion" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_FLUID_MOTION">
+        <description>
+            <p>You have advantage on saving throws you make to avoid or end the restrained, paralysed, or petrified condition on yourself.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws you make to avoid or end the restrained, paralysed, or petrified condition on yourself.</description>
+        </sheet>
+    </element>
+    <element name = "Graceful Step" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_GRACEFUL_STEP">
+        <description>
+            <p>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</p>
+        </description>
+        <sheet>
+            <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</description>
+        </sheet>
+    </element>
+    <element name = "Water Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_WATER_MAGIC">
+            <description>
+                <p>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:</p>
+                <ul>
+                    <li>The water gains the magical properties of holy water.</li>
+                    <li>The water becomes a simple antidote that ends the poisoned condition when drunk by one creature.</li>
+                    <li>The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.</li>
+                    <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
+                </ul>
+            </description>
+        <sheet usage = "{{proficieny}}/Long Rest">
+            <description>
+                <p>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:</p>
+                <ul>
+                    <li>The water gains the magical properties of holy water.</li>
+                    <li>The water becomes a simple antidote that ends the poisoned condition when drunk by one creature.</li>
+                    <li>The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.</li>
+                    <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
+                </ul>
+            </description>
+        </sheet>
+    </element>
+    <element name = "Nature Warden" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_NATURE_WARDEN">
+        <description>
+            <p>You gain proficiency in your choice of one of the following skills: Acrobatics, Animal Handling, Nature, Survival, or Performance.</p>
+        </description>
+        <sheet>
+            <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</description>
+        </sheet>
+        <rules>
+            <select type = "Proficiency" name = "Skill Proficiency (Fuyohren)" supports = "Skill, Fuyohren Nature Warden"/>
+        </rules>
+    </element>
+    <!-- Skills for Nature Warden -->
+    <append id = "ID_PROFICIENCY_SKILL_ACROBATICS">
+        <supports>Fuyohren Nature Warden</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_ANIMALHANDLING">
+        <supports>Fuyohren Nature Warden</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_NATURE">
+        <supports>Fuyohren Nature Warden</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_SURVIVAL">
+        <supports>Fuyohren Nature Warden</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_PERFORMANCE">
+        <supports>Fuyohren Nature Warden</supports>
+    </append>
+</elements>
