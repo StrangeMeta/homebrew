@@ -58,7 +58,7 @@
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_HANAMORI_RUGGED"/>
 
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
-            <select type = "Language" name = "Language (Fuyohren)" supports = "Standard||Exotic"/>
+            <select type = "Language" name = "Language (Hanamori)" supports = "Standard||Exotic"/>
 
         </rules>
     </element>

@@ -1,0 +1,132 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <!-- <info>
+        <name>Haniwa</name>
+        <description></description>
+        <author>Ryoko's Guide to the Yokai Realms</author>
+        <update version = "0.0.1">
+            <file name = "race-haniwa.xml" url = ""/>
+        </update>
+    </info> -->
+
+    <element name = "Haniwa" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_Haniwa">
+        <description>
+            <p class = "flavour">“I am the decider! I am the dying breath of the lost world. I will not forsake the traditions of old.”</p>
+            <p>Hewn from clay as sentient guardians for the tombs of ancient rulers, haniwa were vessels created to bear the souls of loyal warriors, their spirits housed within undying clay bodies to act as vigilant sentries to hallowed ground. As the centuries waned, the haniwa spirits were thought to have passed from the world, leaving their clay shells behind, empty vessels standing in the cool darkness of forgotten tombs. However, the magic of the haniwa endured. Thought to be long dormant, over the last century, the haniwa began to reawaken, emerging into a new world, displaced by millenia from their origin.</p>
+
+            <h4>Finding Purpose</h4>
+            <p>Most haniwa, newly reborn, have no memory of their former selves or original task, their hallowed grounds long since plundered or buried beneath the soil of an ever shifting realm. As such, haniwa often become wanderers, seeking purpose and fortune in an alien world. It isn’t uncommon to see haniwa finding meaning through devotion to a cause, practice, or order, often finding work as clerics, paladins, and monks. The few haniwa that retain some memory of their past life now find themselves serving a grander purpose than protector of a tomb; they are guardians to the memory of a world no one else remembers. These haniwa are the final stewards of an ancient dynasty, a living record of its culture, wisdom, traditions, and way of life.</p>
+
+            <h4>HANIWA TRAITS</h4>
+            <p>As a haniwa, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Constitution score increases by 2, and your Wisdom increases by 1.<br/>
+                <span class = "feature">Age. </span>Haniwa are fully formed, magical clay Constructs. They do not grow and do not show any signs of deterioration due to age. However, haniwa are not immortal. Additionally, you can’t be magically aged.<br/>
+                <span class = "feature">Size. </span>You are Medium or Small. You choose the size when you select this race.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
+                <span class = "feature">Creature Type. </span>You are a Construct.<br/>
+                <span class = "feature">Clay Companion. </span>Over the course of a long rest, you can fashion a quasi-sentient, clay companion. Your companion can take whatever shape you wish, but must use the giant weasel, hawk, mastiff, or mule stat block. Its creature type is Construct, and it also gains your Soul Shell trait. Your clay companion understands you and obeys your commands. It disintegrates into shapeless clay when it is reduced to 0 hit points or when you use this feature again.<br/>
+                <span class = "feature">Grave Guardian. </span>You are blessed with innate magic of protection and consecration. You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.<br/>
+                <p class = "indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+                <span class = "feature">Soul Shell. </span>Your soul has possessed a Construct, imparting the following benefits:<br/>
+                <ul>
+                    <li>You don't need to eat, drink, or breathe.</li>
+                    <li>You have advantage on saving throws you make against disease and to avoid or end the poisoned condition on yourself.</li>
+                    <li>You can receive the benefits of spells that restore hit points that don’t usually affect Constructs, like cure wounds and healing word.</li>
+                </ul>
+                <span class = "feature">Spirit Ward. </span>Your weapon attacks are considered magical for the purpose of overcoming resistances and immunities.<br/>
+                <span class = "feature">Tombkeeper. </span>You gain proficiency in the Religion and Perception skills.<br/>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "constitution" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Fuyohren)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Racial Trait" name = "Size (Haniwa)" supports = "ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM"/>
+            <stat name = "innate speed" value = "30" bonus = "base"/>
+
+            <grant type = "Creature Type" id = "ID_INTERNAL_RACIAL_TRAIT_TYPE_CONSTRUCT"/>
+
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_SOUL_SHELL"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_SPIRIT_WARD"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_TOMBKEEPER"/>
+
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <select type = "Language" name = "Language (Haniwa)" supports = "Standard||Exotic"/>
+
+        </rules>
+    </element>
+
+    <element name = "Clay Companion" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION">
+        <description>
+            <p>Over the course of a long rest, you can fashion a quasi-sentient, clay companion. Your companion can take whatever shape you wish, but must use the giant weasel, hawk, mastiff, or mule stat block. Its creature type is Construct, and it also gains your Soul Shell trait. Your clay companion understands you and obeys your commands. It disintegrates into shapeless clay when it is reduced to 0 hit points or when you use this feature again.</p>
+        </description>
+        <sheet>
+            <description>Over the course of a long rest, you can fashion a quasi-sentient, clay companion. Your companion can take whatever shape you wish, but must use the giant weasel, hawk, mastiff, or mule stat block. Its creature type is Construct, and it also gains your Soul Shell trait. Your clay companion understands you and obeys your commands. It disintegrates into shapeless clay when it is reduced to 0 hit points or when you use this feature again.</description>
+        </sheet>
+        <!-- Maybe create special familiar?? Would use be similar to ranger's primal companion. -->
+    </element>
+    <element name = "Grave Guardian" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN">
+        <description>
+            <p>You are blessed with innate magic of protection and consecration. You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+        </description>
+        <sheet>
+            <description>You are blessed with innate magic of protection and consecration. You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</description>
+        </sheet>
+        <rules>
+            <select type = "Proficiency" name = "Skill Proficiency (Hanamori)" supports = "Skill, Hanamori Gaze of Death"/>
+        </rules>
+    </element>
+    <element name = "Essence Capture" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANAMORI_ESSENCE_CAPTURE">
+            <description>
+                <p>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:</p>
+                <ul>
+                    <li>You replace your Strength, Dexterity, Intelligence, Wisdom, or Charisma ability score with the same ability score of the creature that died.</li>
+                    <li>You gain one special sense of your choice, except truesight, that the creature possessed, out to the same range.</li>
+                    <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
+                    <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
+                </ul>
+            </description>
+        <sheet usage = "1/Long Rest">
+            <description>
+                <p>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:</p>
+                <ul>
+                    <li>You replace your Strength, Dexterity, Intelligence, Wisdom, or Charisma ability score with the same ability score of the creature that died.</li>
+                    <li>You gain one special sense of your choice, except truesight, that the creature possessed, out to the same range.</li>
+                    <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
+                    <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
+                </ul>
+            </description>
+        </sheet>
+    </element>
+    <!-- Skills for Gaze of Death -->
+    <append id = "ID_PROFICIENCY_SKILL_INTIMIDATION">
+        <supports>Hanamori Gaze of Death</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_MEDICINE">
+        <supports>Hanamori Gaze of Death</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_NATURE">
+        <supports>Hanamori Gaze of Death</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_SURVIVAL">
+        <supports>Hanamori Gaze of Death</supports>
+    </append>
+    <element name = "Rugged" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANAMORI_RUGGED">
+        <description>
+            <p>Your tough, lignified exterior is a natural barrier to cuts and abrasions. When you aren’t wearing armour, your AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.</p>
+        </description>
+        <sheet>
+            <description>Your tough, lignified exterior is a natural barrier to cuts and abrasions. When you aren’t wearing armour, your AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.</description>
+        </sheet>
+        <rules>
+            <stat name = "hanamori:natural barrier" value = "12" bonus = "base"/>
+            <stat name = "hanamori:natural barrier" value = "constitution:modifier" bonus = "ability"/>
+            <stat name = "ac:calculation" value = "hanamori:natural barrier" bonus = "calculation" alt = "Natural Barrier (Hanamori)"/>
+        </rules>
+    </element>
+</elements>
