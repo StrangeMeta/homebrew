@@ -68,8 +68,117 @@
         <sheet>
             <description>Over the course of a long rest, you can fashion a quasi-sentient, clay companion. Your companion can take whatever shape you wish, but must use the giant weasel, hawk, mastiff, or mule stat block. Its creature type is Construct, and it also gains your Soul Shell trait. Your clay companion understands you and obeys your commands. It disintegrates into shapeless clay when it is reduced to 0 hit points or when you use this feature again.</description>
         </sheet>
-        <!-- Maybe create special familiar?? Would use be similar to ranger's primal companion. -->
+        <rules>
+            <select type = "Companion" name = "Clay Companion" supports = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_WEASEL|ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_HAWK|ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MASTIFF|ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MULE"/>
+        </rules>
     </element>
+    <!-- Companion Soul Shell trait -->
+    <element name = "Soul Shell" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL">
+        <description>
+            <p>Your soul has possessed a Construct, imparting the following benefits:</p>
+            <ul>
+                <li>You don't need to eat, drink, or breathe.</li>
+                <li>You have advantage on saving throws you make against disease and to avoid or end the poisoned condition on yourself.</li>
+                <li>You can receive the benefits of spells that restore hit points that don’t usually affect Constructs, like cure wounds and healing word.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>
+                <p>Your soul has possessed a Construct, imparting the following benefits:</p>
+                <ul>
+                    <li>You don't need to eat, drink, or breathe.</li>
+                    <li>You have advantage on saving throws you make against disease and to avoid or end the poisoned condition on yourself.</li>
+                    <li>You can receive the benefits of spells that restore hit points that don’t usually affect Constructs, like cure wounds and healing word.</li>
+                </ul>
+            </description>
+        </sheet>
+    </element>
+    <!-- Companions for Grave Guardian -->
+    <element name = "Giant Weasel" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_WEASEL">
+        <setters>
+            <set name="size">Medium</set>
+			<set name="type">Construct</set>
+			<set name="alignment">unaligned</set>
+			<set name="ac">13</set>
+			<set name="hp">9 (2d9)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">11</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">5</set>
+			<set name="senses">darkvision 60 ft., passive Perception 13</set>
+			<set name="languages">understands you and obeys your commands.</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WEASEL_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_GIANT_WEASEL_BITE</set>
+        </setters>
+    </element>
+    <element name = "Hawk" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_HAWK">
+        <setters>
+            <set name="size">Tiny</set>
+			<set name="type">Construct</set>
+			<set name="alignment">unaligned</set>
+			<set name="ac">13</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">10 ft, fly 60ft.</set>
+			<set name="strength">5</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">8</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">6</set>
+			<set name="senses">passive Perception 13</set>
+			<set name="languages">understands you and obeys your commands.</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_HAWK_KEEN_SIGHT, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_HAWK_TALONS</set>
+        </setters>
+    </element>
+    <element name = "Mastiff" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MASTIFF">
+        <setters>
+            <set name="size">Medium</set>
+			<set name="type">Construct</set>
+			<set name="alignment">unaligned</set>
+			<set name="ac">12</set>
+			<set name="hp">5 (1d8+1)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">13</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="senses">passive Perception 11</set>
+			<set name="languages">understands you and obeys your commands.</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_MASTIFF_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_MASTIFF_BITE</set>
+        </setters>
+    </element>
+    <element name = "Mule" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MULE">
+        <setters>
+            <set name="size">Medium</set>
+			<set name="type">Construct</set>
+			<set name="alignment">unaligned</set>
+			<set name="ac">10</set>
+			<set name="hp">11 (2d8+2)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">5</set>
+			<set name="senses">passive Perception 10</set>
+			<set name="languages">understands you and obeys your commands.</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_MULE_BEAST_OF_BURDEN, ID_WOTC_PHB_COMPANION_TRAIT_MULE_SURE_FOOTED, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_MULE_HOOVES</set>
+        </setters>
+    </element>
+
     <element name = "Grave Guardian" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN">
         <description>
             <p>You are blessed with innate magic of protection and consecration. You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
@@ -78,44 +187,80 @@
             <description>You are blessed with innate magic of protection and consecration. You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" name = "Skill Proficiency (Hanamori)" supports = "Skill, Hanamori Gaze of Death"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_EARTHEN_UPPERCUT"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_SANCTUARY"/>
+            <select type = "Racial Trait" name = "Spellcasting Ability (Grave Guardian)" supports = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN_WISDOM|ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN_CHARISMA"/>
         </rules>
     </element>
-    <element name = "Essence Capture" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANAMORI_ESSENCE_CAPTURE">
+    <!-- Spellcasting options for Grave Guardian -->
+    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN_INTELLIGENCE">
+        <compendium display = "false"/>
+        <description>
+            <p>You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+        </description>
+        <sheet>
+            <description>You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</description>
+        </sheet>
+    </element>
+    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN_WISDOM">
+        <compendium display = "false"/>
+        <description>
+            <p>You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+        </description>
+        <sheet>
+            <description>You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</description>
+        </sheet>
+    </element>
+    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN_CHARISMA">
+        <compendium display = "false"/>
+        <description>
+            <p>You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+        </description>
+        <sheet>
+            <description>You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</description>
+        </sheet>
+    </element>
+
+    <element name = "Soul Shell" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_SOUL_SHELL">
             <description>
-                <p>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:</p>
+                <p>Your soul has possessed a Construct, imparting the following benefits:</p>
                 <ul>
-                    <li>You replace your Strength, Dexterity, Intelligence, Wisdom, or Charisma ability score with the same ability score of the creature that died.</li>
-                    <li>You gain one special sense of your choice, except truesight, that the creature possessed, out to the same range.</li>
-                    <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
-                    <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
+                    <li>You don't need to eat, drink, or breathe.</li>
+                    <li>You have advantage on saving throws you make against disease and to avoid or end the poisoned condition on yourself.</li>
+                    <li>You can receive the benefits of spells that restore hit points that don’t usually affect Constructs, like cure wounds and healing word.</li>
                 </ul>
             </description>
-        <sheet usage = "1/Long Rest">
+        <sheet>
             <description>
-                <p>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:</p>
+                <p>Your soul has possessed a Construct, imparting the following benefits:</p>
                 <ul>
-                    <li>You replace your Strength, Dexterity, Intelligence, Wisdom, or Charisma ability score with the same ability score of the creature that died.</li>
-                    <li>You gain one special sense of your choice, except truesight, that the creature possessed, out to the same range.</li>
-                    <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
-                    <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
+                    <li>You don't need to eat, drink, or breathe.</li>
+                    <li>You have advantage on saving throws you make against disease and to avoid or end the poisoned condition on yourself.</li>
+                    <li>You can receive the benefits of spells that restore hit points that don’t usually affect Constructs, like cure wounds and healing word.</li>
                 </ul>
             </description>
         </sheet>
     </element>
-    <!-- Skills for Gaze of Death -->
-    <append id = "ID_PROFICIENCY_SKILL_INTIMIDATION">
-        <supports>Hanamori Gaze of Death</supports>
-    </append>
-    <append id = "ID_PROFICIENCY_SKILL_MEDICINE">
-        <supports>Hanamori Gaze of Death</supports>
-    </append>
-    <append id = "ID_PROFICIENCY_SKILL_NATURE">
-        <supports>Hanamori Gaze of Death</supports>
-    </append>
-    <append id = "ID_PROFICIENCY_SKILL_SURVIVAL">
-        <supports>Hanamori Gaze of Death</supports>
-    </append>
+    <element name = "Spirit Ward" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_SPIRIT_WARD">
+        <description>
+            <p>Your weapon attacks are considered magical for the purpose of overcoming resistances and immunities.</p>
+        </description>
+        <sheet>
+            <description>Your weapon attacks are considered magical for the purpose of overcoming resistances and immunities.</description>
+        
+        </sheet>
+    </element>
+    <element name = "Tombkeeper" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_TOMBKEEPER">
+        <description>
+            <p>You gain proficiency in the Religion and Perception skills.</p>
+        </description>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+        </rules>
+    </element>
     <element name = "Rugged" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANAMORI_RUGGED">
         <description>
             <p>Your tough, lignified exterior is a natural barrier to cuts and abrasions. When you aren’t wearing armour, your AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.</p>
