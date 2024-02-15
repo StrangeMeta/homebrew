@@ -8,7 +8,7 @@
 			<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/ryokos-guide-to-the-yokai-realms.index"/>
 		</update>
 	</info>
-	<files>			
+	<files>
 		<!-- races -->
 		<file name = "race-enkoh.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Races/race-enkoh.xml"/>
 		<file name = "race-fuyohren.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Races/race-fuyohren.xml"/>
@@ -23,7 +23,7 @@
 
 		<!-- archetypes -->
 
-		<!-- backgrounds -->		
+		<!-- backgrounds -->
 		<file name = "background-elementalist.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Backgrounds/background-elementalist.xml"/>
 		<file name = "background-hanabi-engineer.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Backgrounds/background-hanabi-engineer.xml"/>
 
