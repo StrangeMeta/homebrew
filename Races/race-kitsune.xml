@@ -20,7 +20,7 @@
             <p>Long lives, innate curiosity, and a restless drive to understand others lead ancient kitsune to be revered for their wisdom and knowledge. Many act as wandering counsellors and justicars, drawing on a millennium of experience to right the wrongs of the world according to their own perspective. Others focus on a particular branch of research, gaining and spreading knowledge as they travel, or plying their trade as merchants. Such kitsune are able to observe the ebb and flow of supply and demand across generations, wielding their experience and long lives as tools in the acquisition of incredible wealth.</p>
 
             <h4>KITSUNE TRAITS</h4>
-            <p>As akitsune, you have the following traits:</p>
+            <p>As a kitsune, you have the following traits:</p>
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Charisma score increases by 2, and your Dexterity increases by 1.<br/>
                 <span class = "feature">Age. </span>Kitsune mature at the same rate as humans, reaching adulthood at around 20. They can go on to live up to a millennium.<br/>
@@ -40,7 +40,7 @@
         <rules>
             <stat name = "charisma" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <stat name = "dexterity" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Fuyohren)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Kitsune)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
             <stat name = "innate speed" value = "35" bonus = "base"/>
 
@@ -54,7 +54,7 @@
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_SHAPESHIFTER"/>
 
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
-            <grant type = "language" id = "ID_LANGUAGE_KITSUNE" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type = "language" id = "ID_RGTTYR_LANGUAGE_KITSUNE" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <select type = "Language" name = "Language (Kitsune)" supports = "Standard||Exotic"/>
 
         </rules>
@@ -141,7 +141,7 @@
         </sheet>
     </element>
 
-    <element name = "Kitsune" type = "Language" source = "Ryoko's Guide to the Yokai Realms" id = "ID_LANGUAGE_KITSUNE">
+    <element name = "Kitsune" type = "Language" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_LANGUAGE_KITSUNE">
         <supports>Exotic</supports>
         <description>
             <p></p>

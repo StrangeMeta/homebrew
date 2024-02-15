@@ -42,7 +42,7 @@
         <rules>
             <stat name = "strength" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <stat name = "constitution" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Fuyohren)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Isetsu)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
             <stat name = "innate speed" value = "30" bonus = "base"/>
 
