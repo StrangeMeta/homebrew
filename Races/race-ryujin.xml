@@ -1,13 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
-    <!-- <info>
+    <info>
         <name>Ryujin</name>
         <description></description>
         <author>Ryoko's Guide to the Yokai Realms</author>
         <update version = "0.0.1">
-            <file name = "race-ryujin.xml" url = ""/>
+            <file name = "race-ryujin.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Races/race-ryujin.xml"/>
         </update>
-    </info> -->
+    </info>
 
     <element name = "Ryujin" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_RYUJIN">
         <description>
@@ -194,9 +194,15 @@
         <sheet>
             <description>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</description>
         </sheet>
-    </element>
-    <!-- Use id from Koi Dragon Colour to decide what class and spellcasting ability -->
-    
+        <rules>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Sorcerer)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_RED"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Druid)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_GOLD"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Warlock)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_BLACK"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Wizard)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_SILVER"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Cleric)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_WHITE"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Bard)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_BLUE"/>
+        </rules>
+    </element>    
     <element name = "Sunblessed" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED">
         <description>
             <p>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the charmed, frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</p>

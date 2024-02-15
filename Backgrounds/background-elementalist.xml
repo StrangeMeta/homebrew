@@ -5,7 +5,7 @@
         <description>Elementalist Background</description>
         <author url = "//Link to RGTTYR">Loot Tavern</author>
         <update version = "0.0.1">
-            <file name = "background-elementalist.xml" url = "//?git link"/>
+            <file name = "background-elementalist.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Backgrounds/background-elementalist.xml"/>
         </update>
     </info>
     

@@ -1,13 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
-    <!-- <info>
+    <info>
         <name>Isetsu</name>
         <description></description>
         <author>Ryoko's Guide to the Yokai Realms</author>
         <update version = "0.0.1">
-            <file name = "race-isetsu.xml" url = ""/>
+            <file name = "race-isetsu.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Races/race-isetsu.xml"/>
         </update>
-    </info> -->
+    </info>
 
     <element name = "Isetsu" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ISETSU">
         <description>

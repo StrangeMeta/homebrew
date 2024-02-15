@@ -1,13 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
-    <!-- <info>
+    <info>
         <name>Nishikin</name>
         <description></description>
         <author>Ryoko's Guide to the Yokai Realms</author>
         <update version = "0.0.1">
-            <file name = "race-nishikin.xml" url = ""/>
+            <file name = "race-nishikin.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Races/race-nishikin.xml"/>
         </update>
-    </info> -->
+    </info>
 
     <element name = "Nishikin" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_NISHIKIN">
         <description>
@@ -202,9 +202,7 @@
         <description>
             <p>When you reach 7th level, or when you undergo a significant moment of personal achievement or loss (at the GM’s discretion), you can choose to metamorphose into a ryujin. Your level, class, and other game statistics remain the same, aside from your race. You replace your racial traits from this race with those of the ryujin, and your ryujin colour is the same as your nishikin primary colouration. This transformation is one-way and can’t be reversed by any means short of a wish spell.</p>
         </description>
-        <sheet>
-            <description>When you reach 7th level, or when you undergo a significant moment of personal achievement or loss (at the GM’s discretion), you can choose to metamorphose into a ryujin. Your level, class, and other game statistics remain the same, aside from your race. You replace your racial traits from this race with those of the ryujin, and your ryujin colour is the same as your nishikin primary colouration. This transformation is one-way and can’t be reversed by any means short of a wish spell.</description>
-        </sheet>
+        <sheet display = "false"/>
         <rules>
             <select type = "Racial Trait" name = "Metamorphosis (Level 7+, or at GM's discretion)" supports = "Nishikin Transformation" optional = "true"/>
         </rules>
@@ -216,8 +214,6 @@
         <description>
             <p>You have transformed into a ryujin.</p>
         </description>
-        <sheet>
-            <description>YOu have transformed into a ryujin.</description>
-        </sheet>
+        <sheet display = "false"/>
     </element>
 </elements>
