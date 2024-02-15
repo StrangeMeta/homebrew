@@ -50,12 +50,18 @@
 
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_AMPHIBIOUS"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_MOONBLESSED" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR"/>
-            <grant type = "Grants" id = "ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_SLIPPERY"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_SLUMBERING_DRAGON"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Grants" id = "ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_SLIPPERY" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_SLUMBERING_DRAGON" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS"/>
+
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_CLOUDSTEP" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_CLOUDSTEP" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_HEARTENING_BREATH" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_INNATE_MAGIC" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
 
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <grant type = "language" id = "ID_MM_LANGUAGE_AQUAN" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
@@ -67,7 +73,7 @@
         <description>
             <p>You can breather in both air and water.</p>
         </description>
-        <sheet usage = "1/Long Rest">
+        <sheet>
             <description>You can breather in both air and water.</description>
         </sheet>
     </element>
@@ -77,14 +83,6 @@
         </description>
         <sheet usage = "1/Long Rest">
             <description>While bathed in moonlight, you can use a bonus action to spend a number of your Hit Dice equal to your proficiency bonus. Roll those dice and add your Constitution modifier; you regain hit points equal to the total. If this healing restores your hit points to maximum, any surplus healing is gained as temporary hit points. Once you use this trait, you can’t do so again until you finish a long rest.</description>
-        </sheet>
-    </element>
-    <element name = "Sunblessed" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED">
-        <description>
-            <p>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the charmed, frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</p>
-        </description>
-        <sheet>
-            <description>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the charmed, frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</description>
         </sheet>
     </element>
     <element name = "Nishikin Colour" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR">

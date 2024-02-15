@@ -1,0 +1,208 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <!-- <info>
+        <name>Ryujin</name>
+        <description></description>
+        <author>Ryoko's Guide to the Yokai Realms</author>
+        <update version = "0.0.1">
+            <file name = "race-ryujin.xml" url = ""/>
+        </update>
+    </info> -->
+
+    <element name = "Ryujin" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_RYUJIN">
+        <description>
+            <p class = "flavour">To be filled in.</p>
+            <p>Ryujin are closely related to nishikins, having transformed from the aquatic fish-folk into a new, draconic form. Although such a metamorphosis is seen as transcendent and incredible by many outside races, Ryujin are not revered or elevated above their nishikin family in their own society; in instances where they live together, they live harmoniously. Ryujin are dragons, but distinct from other varieties of so-called “dragonborn”. The slumbering draconic energy that dwells within the nishkins has fully manifested as the ryujin’s form, and their heartening breath allows them to share that power with those around them.</p>
+
+            <h4>An Individual Story</h4>
+            <p>The history of the ryujin is shrouded in mystery, largely because so few ryujin care to record it. Nishikins keep meticulous records of their own peoples, including ryujin who live with them, but of the ryujin who leave, little is known. Curious wanderers, ryujin have no cities, libraries, palaces, or temples; those who leave nishikin communities seek to forge their own destinies, rather than standing on the shoulders of their ancestors or kin. A pair of ryujin may travel together for a time, form a close connection, and raise a family of nishikin children, but they typically part ways once the young are old enough to set out on their own adventure. A servant to their whims and the hands of fate, the story of no two ryujin is the same.</p>
+
+            <h4>A Transformed Soul</h4>
+            <p>Every ryujin came to be through a moment of tremendous physical and psychological change. The metamorphosis from nishikin to ryujin is often incited by great tragedy or upon the acquisition of an incredible, lifelong goal, and as such, the life of a ryujin is often shaped by a search for new meanings, perspectives, and opportunity. For many, this means a path of joyful travel and exploration, but for others, it may mean the start of a family, or adopting a position of counsel among their nishikin kinsfolk. Ryujin are widely noted as being significantly more relaxed than their nishikin counterparts, willing to pause and watch the world go by, unburdened by the nishikins’ ceaseless pursuit of growth and change.</p>
+
+            <h4>RYUJIN TRAITS</h4>
+            <p>As a ryujin, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Dexterity, Constitution, and Wisdom scores each increase by 1.<br/>
+                <span class = "feature">Age. </span>Ryujin are transformed nishikins, and they emerge from the metamorphosis fully formed. This transformation does not impact their longevity; they typically live for around two centuries.<br/>
+                <span class = "feature">Size. </span>You are Medium. Fully grown ryujin stand over 6 feet tall.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
+                <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
+                <span class = "feature">Amphibious</span>You can breather in both air and water.<br/>
+                <span class = "feature">Cloudstep. </span>As a bonus action, you can conjure a small cloud under your feet. You gain a fly speed equal to your walking speed for the next 10 minutes, but moving through the air in this way counts as difficult terrain. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
+                <span class = "feature">Koi Dragon Colour. </span>The colour of your scales is the same as the primary colouration you had as a nishikin. Your colour also impacts the effects of your Heartening Breath and Innate Magic traits.<br/>
+                <span class = "feature">Heartening Breath. </span>You can use your action to exhale a warming, spiralling burst of magical energy in a 30-foot cone. You and a number of creatures of your choice in that area up to your proficiency bonus can add 1d4 to attack rolls and to ability checks and saving throws that use the ability associated with your primary colouration for 1 minute, or until you lose concentration (as if concentrating on a spell). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+                <span class = "feature">Innate Magic. </span>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.<br/>
+                <span class = "feature">Sunblessed. </span>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the charmed, frightened, paralysed, or stunned condition on yourself, or against being put to sleep.<br/>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and Aquan.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "dexterity" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "constitution" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Ryujin)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
+            <stat name = "innate speed" value = "30" bonus = "base"/>
+            <stat name = "speed:swim" value = "speed" bonus = "base"/>
+
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_AMPHIBIOUS"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_CLOUDSTEP"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_HEARTENING_BREATH"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_INNATE_MAGIC"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED"/>
+
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type = "language" id = "ID_MM_LANGUAGE_AQUAN" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+
+        </rules>
+    </element>
+
+    <element name = "Amphibious" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_AMPHIBIOUS">
+        <description>
+            <p>You can breather in both air and water.</p>
+        </description>
+        <sheet>
+            <description>You can breather in both air and water.</description>
+        </sheet>
+    </element>    
+    <element name = "Cloudstep" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_CLOUDSTEP">
+        <description>
+            <p>As a bonus action, you can conjure a small cloud under your feet. You gain a fly speed equal to your walking speed for the next 10 minutes, but moving through the air in this way counts as difficult terrain. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage = "1/Long Rest">
+            <description>As a bonus action, you can conjure a small cloud under your feet. You gain a fly speed equal to your walking speed for the next 10 minutes, but moving through the air in this way counts as difficult terrain. Once you use this trait, you can’t do so again until you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name = "Koi Dragon Colour" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR">
+        <description>
+            <p>The colour of your scales is the same as the primary colouration you had as a nishikin. Your colour also impacts the effects of your Heartening Breath and Innate Magic traits.</p>
+        </description>
+        <sheet>
+            <description>The colour of your scales is the same as the primary colouration you had as a nishikin. Your colour also impacts the effects of your Heartening Breath and Innate Magic traits.</description>
+        </sheet>
+        <rules>
+            <select type = "Racial Trait" supports = "Koi Dragon Colouring"/>
+        </rules>
+    </element>
+    <!-- Colouring options for Koi Dragon Colouring -->
+    <element name = "Red" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_RED">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "ryujin-colour" value = "Red"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Strength"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Sorcerer"/>
+        </rules>
+    </element>
+    <element name = "Gold" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_GOLD">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "ryujin-colour" value = "Gold"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Dexterity"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Druid"/>
+        </rules>
+    </element>
+    <element name = "Black" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_BLACK">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "ryujin-colour" value = "Black"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Constitution"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Warlock"/>
+        </rules>
+    </element>
+    <element name = "Silver" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_SILVER">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "ryujin-colour" value = "Silver"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Intelligence"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Wizard"/>
+        </rules>
+    </element>
+    <element name = "White" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_WHITE">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "ryujin-colour" value = "White"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Wisdom"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Cleric"/>
+        </rules>
+    </element>
+    <element name = "Blue" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_BLUE">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "ryujin-colour" value = "Blue"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Charisma"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Bard"/>
+        </rules>
+    </element>
+    
+    <element name = "Heartening Breath" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_HEARTENING_BREATH">
+        <description>
+            <p>You can use your action to exhale a warming, spiralling burst of magical energy in a 30-foot cone. You and a number of creatures of your choice in that area up to your proficiency bonus can add 1d4 to attack rolls and to ability checks and saving throws that use their {{ryujin-colour:ability}} for 1 minute, or until you lose concentration (as if concentrating on a spell). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>You can use your action to exhale a warming, spiralling burst of magical energy in a 30-foot cone. You and a number of creatures of your choice in that area up to your proficiency bonus can add 1d4 to attack rolls and to ability checks and saving throws that use their {{ryujin-colour:ability}} for 1 minute, or until you lose concentration (as if concentrating on a spell). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name = "Innate Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_INNATE_MAGIC">
+        <description>
+            <p>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</p>
+        </description>
+        <sheet>
+            <description>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</description>
+        </sheet>
+    </element>
+    <!-- Use id from Koi Dragon Colour to decide what class and spellcasting ability -->
+    
+    <element name = "Sunblessed" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED">
+        <description>
+            <p>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the charmed, frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</p>
+        </description>
+        <sheet>
+            <description>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the charmed, frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</description>
+        </sheet>
+    </element>
+</elements>
