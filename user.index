@@ -1,0 +1,14 @@
+﻿<?xml version = "1.0" encoding = "utf-8"?>
+<index>
+	<info>
+		<name>User</name>
+		<description>Homebrew Content.</description>
+		<author>StrangeMeta and others</author>
+		<update version = "0.0.1">
+			<file name="user.index"/>
+		</update>
+	</info>
+	<files>
+		<file name="ryokos-guide-to-the-yokai-realms.index" url="https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/ryokos-guide-to-the-yokai-realms.index" />
+	</files>
+</index>
