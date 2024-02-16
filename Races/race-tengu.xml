@@ -29,9 +29,9 @@
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
                 <span class = "feature">Lethal Masters. </span>You have proficiency with one simple or martial weapon of your choice.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
+            </p>
                 <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU"/>
                 <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
-            </p>
         </description>
         <sheet display = "true"/>
         <rules>
@@ -50,18 +50,26 @@
             <select type = "Race Variant" name = "Tengu Variant" supports = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU|ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
         </rules>
     </element>
+    <element name = "Lethal Masters" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realm" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_LETHAL_MASTERS">
+        <description>
+            <p>You have proficiency with one simple or martial weapon of your choice.</p>
+        </description>
+        <rules>
+            <select type = "Proficiency" supports = "Weapon"/>
+        </rules>
+    </element>
     <!-- Tengu subraces -->
     <element name = "Hanataku Tengu" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU">
         <supports>Tengu</supports>
         <description>
             <p>Less ferocious and impulsive than the karasu, hanataka are widely regarded as the “higher” lineage of tengu. With the patience and tenacity of a flowing river, they live, train, and meditate in the towering trees of their mountain home. Hanataka tengu are swiftly provoked by vanity and are quick to humble the arrogant and foolish. To those who show respect, however, elder hanataka tengu make sage counsellors and guides, imparting the wisdom of age and yokai magic. Legend tells that the great warriors of old honed their swiftness of blade and sharpness of mind under the guidance of hanataka masters.</p>
-
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Charisma score increases by 1.<br/>
                 <span class = "feature">Master of Craft. </span>You are proficient with one kind of artisan’s tools of your choice. When you make a Crafting check using this tool, you can add 1d4 to the result of the check.<br/>
                 <span class = "feature">Nature Guardian. </span>You gain proficiency in one of the following skills of your choice: Arcana, Nature, Religion, Stealth, or Survival.<br/>
                 <span class = "feature">Shadow Caster. </span>You learn the prestidigitation and thaumaturgy cantrips. In addition, you can cast them without components while you are in dim light or darkness. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).<br/>
                 <span class = "feature">Whirlwind Onslaught. </span>After you take the Attack action on your turn, you can use your bonus action on that turn to cast a cantrip with a casting time of one action or make a number of melee attacks equal to half your proficiency bonus (rounded up). Each of these attacks must target a different creature. Once you use this trait, you can’t do so again until you finish a short or long rest.<br/>
+            </p>
         </description>
         <sheet display = "true"/>
         <rules>
@@ -131,7 +139,7 @@
         </sheet>
     </element>
 
-    <element name = "Karasu Tengu" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU">
+    <element name = "Karasu Tengu" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_TENGU_KARASU">
         <supports>Tengu</supports>
         <description>
             <p>Deceptive and witty, cunning and dangerous, karasu tengu are tricksters at heart. They take great joy in pranks, be they simple or elaborate, and cackle gleefully at the humbling of others. Karasu have many avian qualities, including vestigial, feathered wings and powerful, snapping beaks. As bursting with life as their forest homes, and as volatile and passionate as the tempestuous winds, the friendship of a karasu is one of staunch trust and joy. Those who insult them, however, find karasu grudges run long, deep, and deadly.</p>
@@ -141,9 +149,9 @@
                 <span class = "feature">Fortified Mind. </span>You have resistance to psychic damage.<br/>
                 <span class = "feature">Prankster. </span>You gain proficiency in the Deception and Stealth skills.<br/>
                 <span class = "feature">Psychic Battery. </span>When you take the Attack action on your turn, you can replace one of your attacks with a dizzying psychic assault against a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or suffer the effects of the confusion spell until the end of its next turn. Once you use this trait, you can’t do so again until you finish a short or long rest.<br/>
-                <div element = "ID_PHB_SPELL_CONFUSION"/>
                 <span class = "feature">Skyrider. </span>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall.<br/>
             </p>
+            <div element = "ID_PHB_SPELL_CONFUSION"/>
         </description>
         <sheet display = "true"/>
         <rules>
