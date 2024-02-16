@@ -32,7 +32,7 @@
             <stat name = "strength" value = "1"/>
         </rules>
     </element>
-    <element name = "Constitution" type = "Feat Feature" source "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_CONSTITUTION">
+    <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_CONSTITUTION">
         <description>
         <p>Your Constitution score increases by 1.</p>
         </description>
