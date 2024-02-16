@@ -5,7 +5,7 @@
         <description></description>
         <author>Ryoko's Guide to the Yokai Realms</author>
         <update version = "0.0.1">
-            <file name = "race-fuyohren.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Races/race-fuyohren.xml"/>
+            <file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-fuyohren.xml"/>
         </update>
     </info>
 
