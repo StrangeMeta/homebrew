@@ -190,7 +190,7 @@
             <p>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</p>
         </description>
         <sheet>
-            <description>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</description>
+            <description>You learn one cantrip from the {{ryujin-colour:class}} spell list. Your spellcasting ability for this cantrip is {{ryujin-colour:ability}}.</description>
         </sheet>
         <rules>
             <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Sorcerer)" requirements = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_RED"/>

@@ -115,6 +115,7 @@
         </rules>
     </element>
     <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_INTELLIGENCE">
+        <compendium display = "false"/>
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
@@ -123,6 +124,7 @@
         </sheet>
     </element>
     <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_WISDOM">
+        <compendium display = "false"/>
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
@@ -131,6 +133,7 @@
         </sheet>
     </element>
     <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_CHARISMA">
+        <compendium display = "false"/>
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
