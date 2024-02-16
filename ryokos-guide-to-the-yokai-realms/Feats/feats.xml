@@ -8,6 +8,75 @@
     </info>
 
     <!-- Feats -->
+    <element name = "Boon of Ashura" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA">
+        <description>
+            <p>Be it through gift, theft, or serendipitous chance of wild magic, you have come to possess a fragment of the power of Ashura, the mighty three-headed demon god of passion and fury. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+                <li>You can take one additional reaction in a round, but you can only take one reaction on a turn. You can take an additional reaction in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>You can take one additional reaction in a round, but you can only take one reaction on a turn.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Boon of Ashura" supports = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_STRENGTH|ID_RGTTYR_FEAT_BOON_OF_ASHURA_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_STRENGTH">
+        <description>
+        <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Constitution" type = "Feat Feature" source "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_CONSTITUTION">
+        <description>
+        <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Boon of the Jorogumo" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_JOROGUMO">
+        <description>
+            <p>The jorogumo is a shapeshifting, arachnoid yokai that lives among Humanoids, seducing and devouring its victims. You possess a fragment of its frightening power, granting you the following benefits:</p>
+            <ul>
+                <li>You have proficiency in the Deception and Persuasion skills.</li>
+                <li>You have a climbing speed equal to your walking speed. In addition, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free, and you ignore difficult terrain caused by webbing.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have a climbing speed equal to your walking speed. In addition, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free, and you ignore difficult terrain caused by webbing.</description>
+        </sheet>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_PERSUASION"/>
+
+            <grant type = "speed:climb" value = "speed" bonus = "base"/>
+        </rules>
+    </element>
+
+    <element name = "Boon of the Komainu" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_KOMAINU">
+        <description>
+            <p>The stone-skinned komainu sit vigilantly at shrines across the realm, guarding that which is sacred from pillage and plunder. You have come to possess a fragment of these lion-dog yokai’s power, granting you the following benefits:</p>
+            <ul>
+                <li>As an action, you can ignite a glowing mane of radiant energy around your neck, which lasts until you dismiss it as a bonus action or you fall unconscious. While your mane is ignited, you shed dim light in a 10-foot radius, and a creature you are grappling takes 2d4 radiant damage at the start of its turn.</li>
+                <li>As a bonus action, you can harden your body to stone. Until the start of your next turn, you gain a +2 bonus to AC and Constitution saving throws while you aren’t wearing heavy armour, and you have disadvantage on Dexterity saving throws. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As an action, you can ignite a glowing mane of radiant energy around your neck, which lasts until you dismiss it as a bonus action or you fall unconscious. While your mane is ignited, you shed dim light in a 10-foot radius, and a creature you are grappling takes 2d4 radiant damage at the start of its turn.</description>
+        </sheet>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>As a bonus action, you can harden your body to stone. Until the start of your next turn, you gain a +2 bonus to AC and Constitution saving throws while you aren’t wearing heavy armour, and you have disadvantage on Dexterity saving throws. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+        </sheet>
+    </element>
+
     <element name = "Elemental Fighting" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_FIGHTING">
         <description>
             <p>You have studied the meticulous movements and magical arts of element bending to the extent that you can channel crude but potent blasts of elemental energy through your body. When you select this feat, choose one damage type from among acid, cold, fire, lightning, poison, and thunder. When you make an unarmed strike, you can choose for the strike to deal damage of that type equal to 1d8 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
@@ -90,7 +159,6 @@
             </description>
         </sheet>
     </element>
-
 
     <element name = "Elemental Initiate" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE">
         <description>
@@ -436,6 +504,7 @@
         <rules>
         </rules>
     </element>
+
     <element name = "Prosthesis Fighting" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_PROSTHESIS_FIGHTING">
         <description>
             <p>You are a master of wielding prostheses in battle, granting you the following benefits:</p>
