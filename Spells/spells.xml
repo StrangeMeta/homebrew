@@ -1,5 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Spells from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "spells.xml" url = "<!-- https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Spells/spells.xml -->"/>
+        </update>
+    </info>
+
+    <!-- Spells -->
     <element name = "Acid Rain" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ACID_RAIN">
         <supports>Earth, Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>

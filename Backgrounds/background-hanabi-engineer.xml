@@ -2,10 +2,8 @@
 <elements>
     <info>
         <name>Hanabi Engineer</name>
-        <description>Hanabi Engineer Background</description>
-        <author url = "//Link to RGTTYR">Loot Tavern</author>
         <update version = "0.0.1">
-            <file name = "background-hanabi-engineer.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Backgrounds/background-hanabi-engineer.xml"/>
+            <file name = "background-hanabi-engineer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Backgrounds/background-hanabi-engineer.xml"/>
         </update>
     </info>
     

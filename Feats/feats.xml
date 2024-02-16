@@ -3,7 +3,7 @@
     <info>
         <name>Feats from Ryoko's Guide to the Yokai Realms</name>
         <update version = "0.0.1">
-            <file name = "feats.xml" url = "https://github.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/blob/main/Feats/feats.xml"/>
+            <file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Feats/feats.xml"/>
         </update>
     </info>
 

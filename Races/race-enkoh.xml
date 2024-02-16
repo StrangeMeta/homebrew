@@ -2,8 +2,6 @@
 <elements>
     <info>
         <name>Enkoh</name>
-        <description></description>
-        <author>Ryoko's Guide to the Yokai Realms</author>
         <update version = "0.0.1">
             <file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-enkoh.xml"/>
         </update>
