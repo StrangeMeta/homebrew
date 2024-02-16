@@ -32,9 +32,9 @@
                 <span class = "feature">Powerful Build. </span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
                 <span class = "feature">Subrace. </span> Oniborne exist in many forms. The most striking difference between oniborne types is their colour: red, blue, or green. Choose one of these subraces.<br/>
-                <div element id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED"/>
-                <div element id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE"/>
-                <div element id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN"/>
+                <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED"/>
+                <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE"/>
+                <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN"/>
             </p>
         </description>
         <sheet display = "true"/>
@@ -51,12 +51,12 @@
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <select type = "Language" name = "Language (Oniborne)" supports = "Standard||Exotic"/>
 
-            <select type = "Racial Variant" name = "Oniborne Variant" supports = "Oniborne"/>
+            <select type = "Race Variant" name = "Oniborne Variant" supports = "Oniborne"/>
 
         </rules>
     </element>
     <!-- Subraces for Oniborne. -->
-    <element name = "Red Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RACE_VARIANT_ONIBORNE_RED">
+    <element name = "Red Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED">
         <supports>Oniborne</supports>
         <description>
             <p>Red oniborne are great storytellers, taking delight in fireside tales of deadly beasts, fiery passions, and ancient marvels of the world. The most sociable of the three oniborne heritages, many red oniborne journey the world sharing time-worn tales of adventure while forging their own.</p>
@@ -87,7 +87,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_PROFICIENCY_INTIMIDATION"/>
+            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_INTIMIDATION"/>
         </rules>
     </element>
     <element name = "Magical Scavenger" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_MAGICAL_SCAVENGER">
@@ -116,7 +116,7 @@
             <select type = "Racial Trait" name = "Spellcasting (Weeping Magic)" supports = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_WISDOM|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_CHARISMA"/>
         </rules>
     </element>
-    <element name = "Intelligence" type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_INTELLIGENCE">
+    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_INTELLIGENCE">
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
@@ -124,7 +124,7 @@
             <description>Intelligence is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Wisdom" type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_WISDOM">
+    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_WISDOM">
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
@@ -132,7 +132,7 @@
             <description>Wisdom is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Charisma" type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_CHARISMA">
+    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_CHARISMA">
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
@@ -141,7 +141,7 @@
         </sheet>
     </element>
 
-    <element name = "Blue Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RACE_VARIANT_ONIBORNE_BLUE">
+    <element name = "Blue Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE">
         <supports>Oniborne</supports>
         <description>
             <p>The magic of the blue oniborne is subtle and primal, a singing river of energy that ripples through the body. It can be relayed through physical contact, a healing stream imparted by a gentle touch, or a crushing wave that surges through their biting jaws.</p>
@@ -169,7 +169,7 @@
         <description>
             <p>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
         </description>
-        <sheet usage = "{{proficiency/Long Rest}}">
+        <sheet usage = "{{proficiency}}/Long Rest">
             <description>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
         </sheet>
     </element>
@@ -187,7 +187,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_PROFICIENCY_DECEPTION"/>
+            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION"/>
         </rules>
     </element>
     <element name = "Savage Bite" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_SAVAGE_BITE">
@@ -199,7 +199,7 @@
         </sheet>
     </element>
 
-    <element name = "Green Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RACE_VARIANT_ONIBORNE_GREEN">
+    <element name = "Green Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR-RACE_VARIANT_ONIBORNE_GREEN">
         <supports>Oniborne</supports>
         <description>
             <p>Preferring warm, arid climates, green oniborne are typically a nomadic people. They chase the gentle warmth of an eternal summer, ever migrating as they wander between orchards, pastures, and oases on a time-worn path passed down across the generations.</p>
@@ -228,7 +228,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_PROFICIENCY_PERFORMANCE"/>
+            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_PERFORMANCE"/>
         </rules>
     </element>
     <element name = "Fierce Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC">
@@ -245,7 +245,7 @@
             <select type = "Racial Trait" name = "Spellcasting (Fierce Magic)" supports = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_WISDOM|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_CHARISMA"/>
         </rules>
     </element>
-    <element name = "Intelligence" type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_INTELLIGENCE">
+    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_INTELLIGENCE">
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
@@ -253,7 +253,7 @@
             <description>Intelligence is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Wisdom" type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_WISDOM">
+    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_WISDOM">
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
@@ -261,7 +261,7 @@
             <description>Wisdom is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Charisma" type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_CHARISMA">
+    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_CHARISMA">
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>

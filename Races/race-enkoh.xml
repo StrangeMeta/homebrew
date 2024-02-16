@@ -61,7 +61,7 @@
     </element>
 
     <!-- Subraces -->
-    <element name = "Hulking" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RACE_VARIANT_ENKOH_HULKING">
+    <element name = "Hulking" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING">
         <supports>Enkoh</supports>
         <description>
             <p>Every bit as rugged, resolute, and unflinching as the frigid mountains they call home, hulking enkoh are known for their fierce, calculating minds and explosive physical strength. Rarely do hulking enkoh act swiftly; they prefer to assess, analyse, and contemplate before choosing a path. However, when moved to action, the mountains move with them.</p>
@@ -103,7 +103,7 @@
         </sheet>
     </element>
 
-    <element name = "Springtail" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RACE_VARIANT_ENKOH_SPRINGTAIL">
+    <element name = "Springtail" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL">
         <supports>Enkoh</supports>
         <description>
             <p>Vibrant, dynamic, and swift, springtail enkoh are the more sociable of their race. Their bonds of fellowship extend to the environment around them; they are masters of taming beasts of land and sky for both work and companionship. Rarely sitting still, springtails walk, speak, and trust quickly.</p>
