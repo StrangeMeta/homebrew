@@ -5,7 +5,7 @@
 		<description>Homebrew content.</description>
 		<author>Strange_Meta and others.</author>
 		<update version = "0.0.1">
-			<file name = "hombrew.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/homebrew.index"/>
+			<file name = "homebrew.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/homebrew.index"/>
 		</update>
 	</info>
 	<files>
