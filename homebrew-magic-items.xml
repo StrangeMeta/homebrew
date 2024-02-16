@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name = "Phoenician Glider" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_PHOENICIAN_GLIDER">
+		<description>
+			<p>This wood and canvas glider transforms into a phoenix when thrown. It will travel 1d20+5 to the nearest 5 feat. Any creature in its path must make a Dexterity saving throw(DC: 10 + PB) or take 1d10+Con damage. Or half damage on a failed save. If the roll to throw is 1, the glider breaks on impact and must be repaired using 10GP of Canvas and wood.</p>
+		</description>
+		<setters>
+			<set name = "category">Wondrous Items</set>
+			<set name = "type">Wondrous Item</set>
+			<set name = "rarity">Rare</set>
+			<set name = "slot">misc</set>
+		</setters>
+	</element>
+	<element name = "Royal Canesword" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_ROYAL_CANESWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			<p>Royal Canesword
+
+This canesword was presented to his Majesty High Arcohn Leidathus The 3rd over 150 years before Zephiri fell to the Omma. It was a gift from the northern Trade Federation in recognition of Zephiri's continuing favourable trade terms with them.</p>
+
+<p>When attuned to this item you may as a bonus channel the noble power of those who have born the sword before. A number of times equal to your proficiency bonus per long rest you may summon a past wielder who enters initiative until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Weapons</set>
+			<set name = "type" addition = "rapier">Weapon</set>
+			<set name = "rarity">Uncommon</set>
+			<set name = "attunement">true</set>
+			<set name = "weapon">Rapier</set>
+			<set name = "name-format">Royal Canesword</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "slashing">1d8</set>
+		</setters>
+	</element>
+</elements>

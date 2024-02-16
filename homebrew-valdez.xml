@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="VALDEZ" type="Item" source="Homebrew" id="HOMEBREW_FIRE_IMMUNITY">
+		<description>
+			<p>You are immune to fire damage</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+		</rules>
+	</element>
+	<element name="Valdezinator" type="Item" source="Homebrew" id="HOMEBREW_VALDEZINATOR">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+		<p>If you have proficiency with the valdezinator, you can add your proficiency bonus to any ability checks you make to play music with the instrument. Leo can use valdezinator as a spellcasting focus.</p>
+    		</description>
+   		<setters>
+	  		<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">30</set>
+  	   		<set name="weight" lb="6">6 lbs.</set>
+  			<set name="slot">onehand</set>
+  			<set name="type">Tool</set>
+  			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_VALDEZINATOR</set>
+  		</setters>
+	</element>
+	<element name="Magical Toolbelt" type="Item" source="Homebrew" id="HOMEBREW_MAGICAL_TOOLBELT">
+		<description>
+			<p>This magical toolbelt fills the roll of many toolsets. It can accomplish the tasks of:</p>
+			<p class="indent">Alchemist's Supplies</p>
+			<p class="indent">Calligrapher's Supplies</p>
+			<p class="indent">Carpenter's Tools</p>
+			<p class="indent">Cartographer's Tools</p>
+			<p class="indent">Cooks Utensils</p>
+			<p class="indent">Glassblower's Tools</p>
+			<p class="indent">Jeweler's Tools</p>
+			<p class="indent">Leatherworker's Tools</p>
+			<p class="indent">Mason's Tools</p>
+			<p class="indent">Navigator's Tools</p>
+			<p class="indent">Smith's Tools</p>
+			<p class="indent">Tinker's Tools</p>
+			<p class="indent">Woodcarver's Tools</p>
+			<p>It can also produce breath mints.</p>
+			<p>Requires attunement by an artificer</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="type">Magic Toolbelt</set>
+			<set name="attunement" addition="by a artificer">true</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS UNTENSILS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS</set>
+		</setters>
+	</element>
+</elements>

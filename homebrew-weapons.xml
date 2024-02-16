@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Katropis" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_KATROPIS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<description>
+			<p>A dagger which is cold to the touch. It deals 1d6 piercing damage + 1d4 cold damage + your charisma modifier. You also have a +3 bonus to attack and damage rolls made with this magic weapon. You gain the ability to cast the Scrying spell proficiency bonus times per long rest.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls you make with this magic weapon. When you hit with it, the target takes an extra 1d4 cold damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">3</set>
+			<set name="name-format">Katropis</set>
+			<set name="damage" type="piercing">1d6</set>
+		</setters>
+	</element>
+	<element name="Spatha" type="Weapon" source="Homebrew" id="ID_HOMEBREW_SPATHA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_CATEGORY_VERSATILE</supports>
+		<description>
+			<p>A long sword similar to a gladius, however it was primarily used by cavalry due to it's longer blade.</p>
+			<div element="ID_HOMEBREW_SPATHA_SPECIAL" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="versatile">1d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE</set>
+		</setters>
+	</element>
+	<element name="Special (Spatha)" type="Weapon Property" source="Homebrew" id="ID_HOMEBREW_SPATHA_SPECIAL">
+        	<description>
+        	    <p>A spatha requires two hands to wield when you aren’t mounted.</p>
+        	</description>
+	</element>
+	<element name="Weapon Proficiency (Spatha)" type="Proficiency" source="Homebrew" id="ID_HOMEBREW_WEAPON_PROFICIENCY_SPATHA">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_HOMEBREW_SPATHA_SPECIAL,  ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+	<element name="Dragonbone Spear" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_DRAGONBONE_SPEAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<description>
+			<p>This ancient spear ancient spear was gifted by Mars, and has a +2 to attack rolls and damage. Alternatively, it you can use an action to snap the tip off in the ground summoning a skeleton. It is loyal to you and other descendants of Mars.</p>
+			<p>Link for stat block: https://www.dndbeyond.com/monsters/17015-skeleton</p>
+			<p>The spear has 3 charges, and it regains 1d3 expended charges daily at dusk.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Spear</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">Dragonbone Spear</set>
+		</setters>
+	</element>
+	<element name = "Throwing Cards" type = "Weapon" source = "Homebrew" id = "ID_HOMEBREW_THROWING_CARDS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p>A pack of 52 steel playing cards with razor sharp edges.</p>
+			<p>If you have proficiency with playing cards you can add your proficiency bonus to attack and damage rolls made with them.</p>
+			<p>You also have advantage on Dexterity(Sleight of Hand) checks made to conceal them.</p>
+			<div element="ID_HOMEBREW_THROWING_CARDS_SPECIAL" />
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency="gp">110</set>
+			<set name = "slot">onehand</set>
+			<set name = "range">20/60</set>
+			<set name = "damage" type="slashing">1d4</set>
+			<set name = "proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET</set>
+		</setters>
+	</element>
+	<element name="Special (Throwing Cards)" type="Weapon Property" source="Homebrew" id="ID_HOMEBREW_THROWING_CARDS_SPECIAL">
+        	<description>
+        	    <p>Whenever you make an attack with a throwing card using the attack action, you may make a free attack with another card as long as you hit. You don't add your proficiency bonus to the damage of the second attack.</p>
+        	</description>
+	</element>
+	<element name = "Rope Dart" type = "Weapon" source = "Homebrew" id = "ID_HOMEBREW_ROPE_DART">
+	<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p>Description</p>
+			<div element = "ID_HOMEBREW_ROPE_DART_SPECIAL"/>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">15</set>
+			<set name = "slot">twohand</set>
+			<set name = "damage" type = "piercing">1d6</set>
+		</setters>
+	</element>
+	<element name = "Special (Rope Dart)" type = "Weapon Property" source = "Homebrew" id = "ID_HOMEBREW_ROPE_DART_SPECIAL">
+		<description>
+			<p>When you hit an attack with this weapon, you may make another attack with the blank on the other end for 1d4 bludgeoning damage. You may not add your proficiency bonus to this attack.</p>
+		</description>
+	</element>
+	<element name = "Flail" type = "Weapon" source = "Homebrew" id = "ID_HOMEBREW_FLAIL">
+	<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDEONING</supports>
+		<description>
+			<p>A spiked ball on the end of a short chain.</p>
+			<p>Proficiency with this weapon allows a wielder to ignore the benefits of a shield when they attack.</p>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">15</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "bludgeoning">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL</set>
+		</setters>
+	</element>
+	<element name="Ceitan Scale Sling Stones" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_WEAPON_PROPERTY_SLING_AMMUNITION_CEITAN_SCALE_STONES">
+		<description>
+			<p>Sling stones made from the scales of a fallen Ceitan. they have an additional +20/+20 ot the range of any attack made using them from a sling. They are destroyed after an attack is made, they can be recovered if the attack is a critical hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Golden Fate Stones" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_WEAPON_PROPERTY_SLING_AMMUNITION_GOLDEN_FATE_STONES">
+		<description>
+			<p>Golden stones that can be thrown or used with a sling. They deal an additional 1d4 damage as they explode into shrapnel upon contact with the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Shadow Fate Stones" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_WEAPON_PROPERTY_SLING_AMMUNITION_SHADOW_FATE_STONES">
+		<description>
+			<p>Black stones that can be thrown or used with a sling. All creatures within 5 feet of the target must make a DC(14) Dex save or take 1d6 Bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>

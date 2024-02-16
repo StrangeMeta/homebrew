@@ -1,0 +1,46 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<element name="Cartomancer" type="Feat" source="Persaean Basin" id="ID_PERSAEAN_BASIN_FEAT_CARTOMANCER">
+		<prerequisite>4th Level; Sorcerer, Warlock, or Wizard Class</prerequisite>
+		<requirements>([level:4],(ID_WOTC_PHB_CLASS_SORCERER||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB_CLASS_WARLOCK))</requirements>
+		<description>
+			<p><em>Prerequisite: 4th Level; Sorcerer, Warlock, or Wizard Class</em></p>
+			<p>You have learned to channel your magic through a deck of playing cards, granting you these benefits:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Card Focus.</strong> You can use a deck of cards as your spellcasting focus. When you use the deck as a focus to cast a spell that deals damage, roll a d4. You gain a bonus to one damage roll of the spell equal to the number rolled. This bonus applies to one creature of your choice that you can see damaged by the spell; you can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Card Tricks.</strong> You learn the <i>prestidigitation</i> cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use <i>prestidigitation</i> in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Hidden Ace.</strong> When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal to your proficiency bonus. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.</li>
+			</ul>
+		</description>
+		<sheet alt="Card Focus" usage="{{proficiency}}/Long Rest">
+			<description>You can use a deck of cards as your spellcasting focus. When you use the deck as a focus to cast a spell that deals damage, roll a d4. You gain a bonus to one damage roll of the spell equal to the number rolled. This bonus applies to one creature of your choice that you can see damaged by the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Feat Feature" id="ID_PERSAEAN_BASIN_FEAT_CARTOMANCER_CARD_TRICKS" />
+			<grant type="Feat Feature" id="ID_PERSAEAN_BASIN_FEAT_CARTOMANCER_HIDDEN_ACE" />
+		</rules>
+	</element>
+
+	<element name="Card Tricks" type="Feat Feature" source="Persaean Basin" id="ID_PERSAEAN_BASIN_FEAT_CARTOMANCER_CARD_TRICKS">
+		<compendium display="false" />
+		<description>
+			<p>You learn the <i>prestidigitation</i> cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use <i>prestidigitation</i> in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.</p>
+		</description>
+		<sheet>
+			<description>You can use prestidigitation to create illusions that duplicate the effects of stage magic. When you use prestidigitation in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+		</rules>
+	</element>
+
+	<element name="Hidden Ace" type="Feat Feature" source="Persaean Basin" id="ID_PERSAEAN_BASIN_FEAT_CARTOMANCER_HIDDEN_ACE">
+		<compendium display="false" />
+		<description>
+			<p>When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal to your proficiency bonus. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.</p>
+		</description>
+		<sheet>
+			<description>When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal to {{proficiency}}. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.</description>
+		</sheet>
+	</element>
+</elements>

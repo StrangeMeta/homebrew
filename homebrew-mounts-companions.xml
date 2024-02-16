@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Arion" type="Item" source="Homebrew" id="HOMEBREW_ARION">
+		<description>
+			<p><strong><em>Speed.</em></strong> 60 ft.<br/><strong><em>Carrying Capacity.</em></strong> 540 lb.</p>
+
+			<ul class="unstyled">
+				<li><strong>Speed.</strong> ~768 mph, top speed: 800 mph</li>
+				<li><strong>AC.</strong> 15</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+			<set name="name-format">Arion</set>
+		</setters>
+	</element>
+	<element name="The Argo II" type="Item" source="Homebrew" id="HOMEBREW_ARGO_II">
+		<supports>Airborne</supports>
+		<description>
+			<ul class="unstyled">
+				<li><strong>Speed.</strong> 8 mph</li>
+				<li><strong>Crew.</strong> 1 Artificer</li>
+				<li><strong>Passengers.</strong> 20</li>
+				<li><strong>Cargo (tons).</strong> 1</li>
+				<li><strong>AC.</strong> 13</li>
+				<li><strong>HP.</strong> 500</li>
+				<li><strong>Damage Threshold.</strong> —</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element>
+	<element name="Phantom Steed" type="Companion" source="Homebrew" id="ID_HOMEBREW_COMPANION_PHANTOM_STEED">
+		<description />
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">7</set>
+			<set name="ac">10</set>
+			<set name="hp">13 (2d10+2)</set>
+			<set name="speed">100 ft.</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Large</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/4</set>
+			<set name="actions">ID_HOMEBREW_COMPANION_ACTION_PHANTOM_STEED_HOOVES</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="10" />
+			<stat name="companion:hp:max" value="13" bonus="base" />
+			<stat name="companion:speed" value="100" bonus="base" />
+		</rules>
+	</element>
+	<element name="Hooves" type="Companion Action" source="Player’s Handbook" id="ID_HOMEBREW_COMPANION_ACTION_PHANTOM_STEED_HOOVES">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.</description>
+		</sheet>
+	</element>
+</elements>

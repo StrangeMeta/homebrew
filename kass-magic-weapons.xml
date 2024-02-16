@@ -1,0 +1,62 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<element name = "Stave of Desert Winds" type = "Magic Item" source = "Persaean Basin" id = "PERSAEAN_BASIN_STAVE_OF_DESERT_WINDS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p>This staff is enchanted to be unnaturally light. Once per attack action, when you hit with it, you may make one additional attack (this bonus attack does not benefit from your proficiency bonus).</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Weapons</set>
+			<set name = "type" addition = "quarterstaff">Weapon</set>
+			<set name = "rarity">Common</set>
+			<set name = "attunement">false</set>
+			<set name = "weapon">Quarterstaff</set>
+			<set name = "name-format">Stave of Desert Winds</set>
+			<set name = "cost" currency = "gp">40</set>
+			<set name = "weight" lb = "1">1 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "bludgeoning">1d6</set>
+		</setters>
+	</element>
+	<element name = "Shotel of the Stars" type = "Magic Item" source = "Persaean Basin" id = "PERSAEAN_BASIN_SHOTEL_OF_THE_STARS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_SPECIAL</supports>
+		<description>
+			<p>This shotel has been blessed byt Nivara, and was once wielded by a NIghsguard of her city. It deals maximum damage on any hit between sunset and sunrise.</p>
+			<div element = "PERSAEAN_BASIN_SHOTEL_SPECIAL"/>
+		</description>
+		<setters>
+			<set name = "category">Magic Weapons</set>
+			<set name = "type" addition = "shotel">Weapon</set>
+			<set name = "rarity">Uncommon</set>
+			<set name = "attunement">false</set>
+			<set name = "weapon">Shotel</set>
+			<set name = "name-format">Shotel of the Stars</set>
+			<set name = "cost" currency = "gp">55</set>
+			<set name = "weight" lb = "3">3 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "slashing">1d8</set>
+		</setters>
+	</element>
+	<element name = "Spring-Loaded Katar" type = "Magic Item" source = "Persaean Basin" id = "PERSAEAN_BASIN_SPRING_LOADED_KATAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p>This ornate katar is able to magically fire and recall its blade, allowing it to be used from range.</p>
+			<p></p>
+			<p>It has a normal range of 10ft, and a long range of 30ft.</p>
+			<div element = "PERSAEAN_BASIN_KATAR_SPECIAL"/>
+		</description>
+		<setters>
+			<set name = "category">Magic Weapons</set>
+			<set name = "type" addition = "katar">Weapon</set>
+			<set name = "rarity">Common</set>
+			<set name = "attunement">false</set>
+			<set name = "weapon">Katar</set>
+			<set name = "name-format">Spring-Loaded Katar</set>
+			<set name = "cost" currency = "gp">15</set>
+			<set name = "weight" lb = "4">4 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "range">10/30</set>
+			<set name = "damage" type = "piercing">1d6</set>
+		</setters>
+	</element>
+</elements>

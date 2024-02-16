@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<!--Feats-->
+	<element name="Sling Mastery" type="Feat" source="Homebrew" id="ID_HOMEBREW_SLING_MASTERY">
+		<prerequisite>4th level, proficiency with martial weapons</prerequisite>
+		<requirements>[level:4], ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</requirements>
+		<description>
+			<p>Increase your dexterity by 1, to a maximum of 20.</p>
+			<p>The sling is a tricky weapon to use, but you have spent countless hours mastering it. You gain the following benefits:</p>
+			<ul>
+				<li>You gain a +1 bonus to attack rolls you make with the weapon.</li>
+				<li>Your hours of experience with a sling allow you to fire stones with greater force than most. Your damage for a sling increases to 2d4. Additionally, slings have their normal and long ranged doubled.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When using a sling, you gain +1 to attack rolls with that weapon.
+			Your hours of experience with a sling allow you to fire stones with greater force than most. Your damage for a sling increases to 2d4. Additionally, slings have their normal and long ranged doubled.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Sling Mastery" />
+			<stat name="sling:attack" value="1" />
+		</rules>
+	</element>
+
+	<!--Fighting Styles-->
+	<element name="Two-Weapon Fighting" type="Class Feature" source="Homebrew" id="ID_HOMEBREW_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Ranger</supports>
+		<description>
+			<p>As a bonus action, if you have access to the extra attack feature, you may make an additional attack with your off-hand weapon for every additional attack you would be able to make with your attack action.</p>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description>If you have access to the extra attack feature, you may make an additional attack for each attack you could make with your attack action. When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+		</sheet>
+	</element>
+</elements>

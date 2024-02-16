@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Cursed Metals" type="Item" source="Homebrew" id="HOMEBREW_CURSED_METALS">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Sometimes your connection to Pluto manifests by summoning precious metals and gemstones to the ground near you. These are perfectly harmless to you but should someone else pick them up, they will be cursed.</p>
+			<table>
+				<thead>
+					<tr><td>d100</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>01</td><td>Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.</td></tr>
+				<tr><td>02-10</td><td>A chunk of gold appears near you.</td></tr>
+				<tr><td>11-20</td><td>A chunk of silver appears near you.</td></tr>
+				<tr><td>21-30</td><td>A large ruby appears near you.</td></tr>
+				<tr><td>31-40</td><td>A large diamond appears near you.</td></tr>
+				<tr><td>41-50</td><td>A large topaz appears near you.</td></tr>
+				<tr><td>51-60</td><td>A large sapphire appears near you.</td></tr>
+				<tr><td>61-70</td><td>A large amethyst geode appears near you.</td></tr>
+				<tr><td>71-80</td><td>A medium opal appears near you.</td></tr>
+				<tr><td>81-90</td><td>Several lumps of silver and gold appear near you.</td></tr>
+				<tr><td>91-100</td><td>Several random gemstones appear near you</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+</elements>

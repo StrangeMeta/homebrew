@@ -1,0 +1,133 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<element name = "Jambiya" type = "Weapon" source = "Persaean Basin" id = "PERSAEN_BASIN_JAMBIYA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>A short wide flat dagger, that is intricately inscribed.</p>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">3</set>
+			<set name = "weight" lb = "1">1 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "piercing">1d6</set>
+		</setters>
+	</element>
+	<element name = "Takoba" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_TAKOBA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p>A long pointed sword with a rectangular crossguard.</p>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">12</set>
+			<set name = "weight" lb = "2">2 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "slashing">1d6</set>
+			<set name = "versatile">1d8</set>
+		</setters>
+	</element>
+	<element name = "Shotel" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_SHOTEL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_SPECIAL</supports>
+		<description>
+			<p>An elegant curved blade with a flaired handle.</p>
+			<div element = "PERSAEAN_BASIN_SHOTEL_SPECIAL"/>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">25</set>
+			<set name = "weight" lb = "3">3 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "slashing">1d8</set>
+		</setters>
+	</element>
+	<element name = "Special (Shotel)" type = "Weapon Property" source = "Persaean Basin" id = "PERSAEAN_BASIN_SHOTEL_SPECIAL">
+		<description>
+			<p>You can forgo the damage on hit and reduce the target's AC by 2 (doesn't stack with itself).</p>
+		</description>
+	</element>
+	<element name = "Kpinga" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_KPINGA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>Also known as a hammer sword, this is a complex, multi-bladed weapon.</p>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">8</set>
+			<set name = "weight" lb = "2">2 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "piercing/slashing (your choice)">1d6</set>
+		</setters>
+	</element>
+	<element name = "Bola" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_BOLA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p>Weighted rope that is attatched at one end.</p>
+			<div element = "PERSAEAN_BASIN_BOLA_SPECIAL"/>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">2</set>
+			<set name = "weight" lb = "2">2 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name="range">15/45</set>
+			<set name="damage">—</set>
+		</setters>
+	</element>
+	<element name = "Bola (Special)" type = "Weapon Property" source = "Persaean Basin" id = "PERSAEAN_BASIN_BOLA_SPECIAL">
+		<description>
+			<p>Target's movement is set to 0 untill they succeed a DC 12 DEXTERITY check. If an affected creatuer tries to move, they immediately fall prone</p>
+		</description>
+	</element>
+	<element name = "Tabarzin" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_TABARZIN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p>A crescent-headed long axe.</p>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">20</set>
+			<set name = "weight" lb = "6">6 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "slashing">1d10</set>
+			<set name = "versatile">1d12</set>
+		</setters>
+	</element>
+	<element name = "Prong Sword" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_PRONG_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>A twin-pointed sword that can be used for disarming enemies.</p>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">40</set>
+			<set name = "weight" lb = "6">6 lb.</set>
+			<set name = "slot">twohand</set>
+			<set name = "damage" type = "slashing">1d10</set>
+		</setters>
+	</element>
+	<element name = "Prong Sword (Special)" type = "Weapon Property" source = "Persaean Basin" id = "PERSAEAN_BASIN_PRONG_SWORD_SPECIAL">
+		<description>
+			<p>You can forgo damage on a hit to force an enemy to drop their weapon on the ground in front of them</p>
+		</description>
+	</element>
+	<element name = "Katar" type = "Weapon" source = "Persaean Basin" id = "PERSAEAN_BASIN_KATAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p>A dagger with a grip that is designed to be held while punching.</p>
+			<div element = "PERSAEAN_BASIN_KATAR_SPECIAL"/>
+		</description>
+		<setters>
+			<set name = "category">Weapons</set>
+			<set name = "cost" currency = "gp">8</set>
+			<set name = "weight" lb = "2">2 lb.</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "piercing">1d6</set>
+		</setters>
+	</element>
+	<element name = "Katar (Special)" type = "Weapon Property" source = "Persaean Basin" id = "PERSAEAN_BASIN_KATAR_SPECIAL">
+		<description>
+			<p>If an attack with this weapon scores a critical hit, the target has disadvantage on their next attack, ability check or saving throw</p>
+		</description>
+	</element>
+</elements>

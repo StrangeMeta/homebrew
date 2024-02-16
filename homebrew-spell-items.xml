@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<element name="Mage Armour" type="Armor" source="Homebrew" id="ID_HOMEBREW_MAGE_ARMOUR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>An equippable version of the Mage Armour spell.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">13 + Dex modifier</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+</elements>
