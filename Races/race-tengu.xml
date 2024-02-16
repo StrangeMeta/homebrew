@@ -163,7 +163,7 @@
         </rules>
     </element>
 
-    <element name = "Fortified Mind" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realm" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_FORTIFIED_MIND">
+    <element name = "Fortified Mind" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_FORTIFIED_MIND">
         <description>
             <p>You have resistance to psychic damage.</p>
         </description>
@@ -174,7 +174,7 @@
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC"/>
         </rules>
     </element>
-    <element name = "Prankster" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realm" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_PRANKSTER">
+    <element name = "Prankster" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_PRANKSTER">
         <description>
             <p>You gain proficiency in the Deception and Stealth skills.</p>
         </description>
@@ -188,7 +188,7 @@
             <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>
-    <element name = "Psychic Battery" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realm" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_PSYCHIC_BATTERY">
+    <element name = "Psychic Battery" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_PSYCHIC_BATTERY">
         <description>
             <p>When you take the Attack action on your turn, you can replace one of your attacks with a dizzying psychic assault against a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or suffer the effects of the confusion spell until the end of its next turn. Once you use this trait, you can’t do so again until you finish a short or long rest.</p>
             <div element = "ID_PHB_SPELL_CONFUSION"/>
@@ -197,7 +197,7 @@
             <description>When you take the Attack action on your turn, you can replace one of your attacks with a dizzying psychic assault against a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or suffer the effects of the confusion spell until the end of its next turn.</description>
         </sheet>
     </element>
-    <element name = "Skyrider" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realm" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_SKYRIDER">
+    <element name = "Skyrider" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_SKYRIDER">
         <description>
             <p>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall.</p>
         </description>
