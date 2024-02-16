@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<file name = "ryokos-guide-to-the-yokai-realms\index" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/ryokos-guide-to-the-yokai-realms.index"/>
+		<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/ryokos-guide-to-the-yokai-realms.index"/>
 
 		<!-- races -->
 		<file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-enkoh.xml"/>
