@@ -1,0 +1,116 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Lion Turtle</name>
+        <update version = "0.0.1">
+            <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-ryujin.xml"/>
+        </update>
+    </info>
+
+    <element name = "Lion Turtle" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_LION_TURTLE">
+        <description>
+            <p class = "flavour">I still remember the sight; a newborn ryōkido pup, cradled in her grandmother’s arms, her patterned shell gleaming in the first, nervous rays of dawn. The matriarch stared and stared at the life in her arms, telepathically reaching into a mind too young for higher thought or language. There were no words, just a tenderness that she poured from herself into the child. I felt it wash over the room, a mystical connection from elder to infant. No words, only a feeling, repeated over and over.</p>
+            <p class = "flavour">I understood what it meant. The feeling said, "You are loved".</p>
+            <p>Nestled deep within wizened, dry thorn forests, the most ancient settlements in the realm persist, unbroken by scouring winds, blistering sun, or the relentless march of time. Here live the ryōkido, colloquially known as “lion turtles”, a race of telepathic beings that call this inhospitable expanse home. All ryōkido share fierce claws and squat, feline faces, but every ryōkido shell is unique, as distinctive as a fingerprint. Each heavy carapace bears an identifying arrangement of colourful, textured patterns, with some hereditary markings idiosyncratic to one’s village and clan.</p>
+
+            <h4>Telepathic Connection</h4>
+            <p>Ryōkido carry telepathic power and are capable of sharing thoughts and feelings from soul to soul. This ability to connect with other creatures fosters an incredible empathy in ryōkido; they are united through triumph, joy, and pain, and are troubled greatly by the suffering of others.</p>
+            <p class = "indent">Each ryōkido village has a miko, a female shaman who acts as a guardian of the clans’ collective memory. A dying ryōkido can telepathically surrender their mind in totality, pouring every memory, passion, and thought into the mind of another. The miko’s job is to receive this final gift: a lifetime of experience, perspective, and wisdom from the dying. In this way, knowledge is never lost, and the village is forever guided by the collective wisdom of those who came before them.</p>
+
+            <h4>Ties of Family</h4>
+            <p>Ryōkido have a long, living history, borne on a stream of shared memory and experience. They find great value in family and community, raising pups as a village, and viewing those they surround themselves with as extensions of themselves. To the ryōkido, every friend is family, every family a village, every village a legion. When moved to action, a single ryōkido walks as an army.</p>
+
+            <h4>LION TURTLE TRAITS</h4>
+            <p>As a ryōkido, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Strength, Wisdom, and Charisma scores each increase by 1.<br/>
+                <span class = "feature">Age. </span>Ryōkido grow extremely slowly. They are considered young until they reach the age of 80, and go on to live for up to 600 years.<br/>
+                <span class = "feature">Size. </span>You are Medium.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
+                <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
+                <span class = "feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.<br/>
+                <span class = "feature">Heavy Shell. </span>You have advantage on ability checks and saving throws you make to avoid being knocked prone. In addition, when you stand up from being prone, you must use your bonus action, in addition to the amount of movement you spend.<br/>
+                <span class = "feature">Lionheart. </span>You gain proficiency in your choice of one of the following skills: Acrobatics, Athletics, Insight, or Intimidation.<br/>
+                <span class = "feature">Slashing Claws. </span>You can use your claws to make unarmed strikes. When you hit with them, the strike deals slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br/>
+                <span class = "feature">Telepathic Bond. </span>As an action, you can form a telepathic bond with a willing creature you can see within 100 feet of you. For 1 hour, you and that creature can communicate telepathically with each other, even if you don’t share a language. If that creature doesn’t speak any language, the two of you can still communicate rudimentary ideas, images, and feelings. The connection ends early if you use this trait again to bond with a different creature, or if you and the creature are ever more than 100 feet apart.<br/>
+                <span class = "feature">Tough Shell. </span>While you aren’t wearing armour, your base AC is 13 + your Dexterity modifier. You can use a shield and still get this benefit.<br/>
+            </p>
+            <p class = "indent">In addition, when you fall, you can use a reaction to angle your body and cushion the impact through your shell. When you do, you can subtract up to 100 feet from the fall when calculating falling damage. Once you use this reaction, you can’t do so again until you finish a long rest, as your shell recovers from the impact.</p>
+            <p>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "strength" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "charisma" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Lion Turtle)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
+            <stat name = "innate speed" value = "30" bonus = "base"/>
+
+            <grant type = "Creature Type" id = "ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID"/>
+
+            <grant type = "Vision" id = "ID_VISION_DARKVISION"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_HEAVY_SHELL"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_LIONHEART"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_SLASHING_CLAWS"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_TELEPATHIC_BOND"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_TOUGH_SHELL"/>
+
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <select type = "Language" name = "Language (Kitsune)" supports = "Standard||Exotic"/>
+
+        </rules>
+    </element>
+
+    <element name = "Heavy Shell" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_HEAVY_SHELL">
+        <description>
+            <p>You have advantage on ability checks and saving throws you make to avoid being knocked prone. In addition, when you stand up from being prone, you must use your bonus action, in addition to the amount of movement you spend.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on ability checks and saving throws you make to avoid being knocked prone. In addition, when you stand up from being prone, you must use your bonus action, in addition to the amount of movement you spend.</description>
+        </sheet>
+    </element>
+    <element name = "Lionheart" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_LIONHEART">
+        <description>
+            <p>You gain proficiency in your choice of one of the following skills: Acrobatics, Athletics, Insight, or Intimidation.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in your choice of one of the following skills: Acrobatics, Athletics, Insight, or Intimidation.</description>
+        </sheet>
+        <rules>
+            <select type = "proficiency" supports = "ID_SKILL_PROFICIENCY_ACROBATICS|ID_SKILL_PROFICIENCY_ATHLETICS|ID_SKILL_PROFICIENCY_INSIGHT|ID_SKILL_PROFICIENCY_INTIMIDATION"/>
+        </rules>
+    </element>
+    <element name = "Slashing Claws" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_SLASHING_CLAWS">
+        <description>
+            <p>You can use your claws to make unarmed strikes. When you hit with them, the strike deals slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>You can use your claws to make unarmed strikes. When you hit with them, the strike deals slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+    <element name = "Telepathic Bond" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_TELEPATHIC_BOND">
+        <description>
+            <p>As an action, you can form a telepathic bond with a willing creature you can see within 100 feet of you. For 1 hour, you and that creature can communicate telepathically with each other, even if you don’t share a language. If that creature doesn’t speak any language, the two of you can still communicate rudimentary ideas, images, and feelings. The connection ends early if you use this trait again to bond with a different creature, or if you and the creature are ever more than 100 feet apart.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can form a telepathic bond with a willing creature you can see within 100 feet of you. For 1 hour, you and that creature can communicate telepathically with each other, even if you don’t share a language. If that creature doesn’t speak any language, the two of you can still communicate rudimentary ideas, images, and feelings. The connection ends early if you use this trait again to bond with a different creature, or if you and the creature are ever more than 100 feet apart.</description>
+        </sheet>
+    </element>
+    <element name = "Tough Shell" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_TOUGH_SHELL">
+        <description>
+            <p>While you aren’t wearing armour, your base AC is 13 + your Dexterity modifier. You can use a shield and still get this benefit.</p>
+            <p class = "indent">In addition, when you fall, you can use a reaction to angle your body and cushion the impact through your shell. When you do, you can subtract up to 100 feet from the fall when calculating falling damage. Once you use this reaction, you can’t do so again until you finish a long rest, as your shell recovers from the impact.</p>
+        </description>
+        <sheet usage = "1/Long Rest">
+            <description>When you fall, you can use a reaction to angle your body and cushion the impact through your shell. When you do, you can subtract up to 100 feet from the fall when calculating falling damage. Once you use this reaction, you can’t do so again until you finish a long rest, as your shell recovers from the impact.</description>
+        </sheet>
+        <rules>
+            <stat name = "lion turtle:tough shell" value = "13" bonus = "base"/>
+            <stat name = "lion turtle:tough shell" value = "dexterity" bonus = "base"/>
+            <stat name = "ac:calculation" value = "lion turtle:tough shell" bonus = "calculation" alt = "Tough Shell (Lion Turtle)"/>
+        </rules>
+    </element>
+</elements>
