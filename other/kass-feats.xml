@@ -1,5 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Kass Feats</name>
+        <update version = "0.0.1">
+            <file name = "kass-feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-feats.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name="Cartomancer" type="Feat" source="Persaean Basin" id="ID_PERSAEAN_BASIN_FEAT_CARTOMANCER">
 		<prerequisite>4th Level; Sorcerer, Warlock, or Wizard Class</prerequisite>
 		<requirements>([level:4],(ID_WOTC_PHB_CLASS_SORCERER||ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB_CLASS_WARLOCK))</requirements>

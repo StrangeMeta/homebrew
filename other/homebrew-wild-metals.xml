@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Wild Metals</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-wild-metals.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-wild-metals.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name="Cursed Metals" type="Item" source="Homebrew" id="HOMEBREW_CURSED_METALS">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>

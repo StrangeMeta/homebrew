@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Valdez</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-valdez.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-valdez.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name="VALDEZ" type="Item" source="Homebrew" id="HOMEBREW_FIRE_IMMUNITY">
 		<description>
 			<p>You are immune to fire damage</p>

@@ -1,5 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Spell Effects</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-spell-effects.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-spell-effects.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name="Mage Armour" type="Armor" source="Homebrew" id="ID_HOMEBREW_MAGE_ARMOUR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
 		<description>

@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Magic Items</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-magic-items.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name = "Phoenician Glider" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_PHOENICIAN_GLIDER">
 		<description>
 			<p>This wood and canvas glider transforms into a phoenix when thrown. It will travel 1d20+5 to the nearest 5 feat. Any creature in its path must make a Dexterity saving throw(DC: 10 + PB) or take 1d10+Con damage. Or half damage on a failed save. If the roll to throw is 1, the glider breaks on impact and must be repaired using 10GP of Canvas and wood.</p>

@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Mounts/Companions</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-mounts-companions.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-mounts-companions.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name="Arion" type="Item" source="Homebrew" id="HOMEBREW_ARION">
 		<description>
 			<p><strong><em>Speed.</em></strong> 60 ft.<br/><strong><em>Carrying Capacity.</em></strong> 540 lb.</p>

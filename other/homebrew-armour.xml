@@ -1,5 +1,12 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Armour</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-armour.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-armour.xml"/>
+        </update>
+    </info>
+	
 	<element name="Mage Armour" type="Armor" source="Homebrew" id="ID_HOMEBREW_MAGE_ARMOUR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
 		<description>

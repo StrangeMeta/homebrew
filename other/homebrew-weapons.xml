@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Homebrew Weapons</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-weapons.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name="Katropis" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_KATROPIS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
 		<description>

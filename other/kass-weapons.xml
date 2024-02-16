@@ -1,5 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
+    <info>
+        <name>Kass Weapons</name>
+        <update version = "0.0.1">
+            <file name = "kass-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-weapons.xml"/>
+        </update>
+    </info>
+	
+	<elements>
 	<element name = "Jambiya" type = "Weapon" source = "Persaean Basin" id = "PERSAEN_BASIN_JAMBIYA">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
