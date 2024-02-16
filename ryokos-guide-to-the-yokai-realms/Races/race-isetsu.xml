@@ -3,7 +3,7 @@
     <info>
         <name>Isetsu</name>
         <update version = "0.0.1">
-            <file name = "race-isetsu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-isetsu.xml"/>
+            <file name = "race-isetsu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-isetsu.xml"/>
         </update>
     </info>
 

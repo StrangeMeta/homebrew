@@ -3,7 +3,7 @@
     <info>
         <name>Haniwa</name>
         <update version = "0.0.1">
-            <file name = "race-haniwa.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-haniwa.xml"/>
+            <file name = "race-haniwa.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-haniwa.xml"/>
         </update>
     </info>
 

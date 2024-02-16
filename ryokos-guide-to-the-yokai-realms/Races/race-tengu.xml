@@ -3,7 +3,7 @@
     <info>
         <name>Tengu</name>
         <update version = "0.0.1">
-            <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-tengu.xml"/>
+            <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
         </update>
     </info>
 

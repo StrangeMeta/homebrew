@@ -3,7 +3,7 @@
     <info>
         <name>Fuyohren</name>
         <update version = "0.0.1">
-            <file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-fuyohren.xml"/>
+            <file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-fuyohren.xml"/>
         </update>
     </info>
 

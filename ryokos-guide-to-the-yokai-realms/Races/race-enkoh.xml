@@ -3,7 +3,7 @@
     <info>
         <name>Enkoh</name>
         <update version = "0.0.1">
-            <file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-enkoh.xml"/>
+            <file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-enkoh.xml"/>
         </update>
     </info>
 

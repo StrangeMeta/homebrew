@@ -3,7 +3,7 @@
     <info>
         <name>Kitsune</name>
         <update version = "0.0.1">
-            <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-kitsune.xml"/>
+            <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-kitsune.xml"/>
         </update>
     </info>
 

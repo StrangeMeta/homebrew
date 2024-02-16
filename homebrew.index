@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<index>
+	<info>
+		<name>Homebrew</name>
+		<description>Homebrew content.</description>
+		<author>Strange_Meta and others.</author>
+		<update version = "0.0.1">
+			<file name = "hombrew.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/homebrew.index"/>
+		</update>
+	</info>
+	<files>
+		<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/ryokos-guide-to-the-yokai-realms.index"/>
+		<file name = "other.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/other.index"/>
+	</files>
+</index>

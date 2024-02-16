@@ -3,7 +3,7 @@
     <info>
         <name>Hanabi Engineer</name>
         <update version = "0.0.1">
-            <file name = "background-hanabi-engineer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Backgrounds/background-hanabi-engineer.xml"/>
+            <file name = "background-hanabi-engineer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-hanabi-engineer.xml"/>
         </update>
     </info>
     

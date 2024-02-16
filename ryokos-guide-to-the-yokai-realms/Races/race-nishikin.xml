@@ -3,7 +3,7 @@
     <info>
         <name>Nishikin</name>
         <update version = "0.0.1">
-            <file name = "race-nishikin.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-nishikin.xml"/>
+            <file name = "race-nishikin.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-nishikin.xml"/>
         </update>
     </info>
 
