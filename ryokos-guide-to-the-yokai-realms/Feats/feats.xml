@@ -23,7 +23,7 @@
             <select type = "Feat Feature" name = "Boon of Ashura" supports = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_STRENGTH|ID_RGTTYR_FEAT_BOON_OF_ASHURA_CONSTITUTION"/>
         </rules>
     </element>
-    <element name = "Strength" type = "Feat Feature" source "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_STRENGTH">
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_STRENGTH">
         <description>
         <p>Your Strength score increases by 1.</p>
         </description>
