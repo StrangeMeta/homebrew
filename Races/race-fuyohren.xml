@@ -106,7 +106,8 @@
             <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" name = "Skill Proficiency (Fuyohren)" supports = "Skill, Fuyohren Nature Warden"/>
+            <select type = "Proficiency" name = "Skill Proficiency (Fuyohren)" supports = "Skill, Fuyohren Nature Warden" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>
     <!-- Skills for Nature Warden -->

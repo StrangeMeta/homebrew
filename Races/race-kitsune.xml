@@ -116,10 +116,10 @@
             <description>You have proficiency in the Deception and Stealth skills.</description>
         </sheet>
         <rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type = "Proficiency" name = "Customized Skill Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_STEALTH" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type = "Proficiency" name = "Customized Skill Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
         </rules>
     </element>
     <element name = "Language of Motion" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_LANGUAGE_OF_MOTION">

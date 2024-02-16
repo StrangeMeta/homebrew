@@ -255,10 +255,10 @@
             <p>You gain proficiency in the Religion and Perception skills.</p>
         </description>
         <rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_RELIGION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type = "Proficiency" name = "Customized Skill Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_PERCEPTION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type = "Proficiency" name = "Customized Skill Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
         </rules>
     </element>
     <element name = "Rugged" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANAMORI_RUGGED">

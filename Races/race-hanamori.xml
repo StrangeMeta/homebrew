@@ -99,7 +99,8 @@
             <description>You gain proficiency in your choice of one of the following skills: Intimidation, Medicine, Nature, or Survival.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" name = "Skill Proficiency (Hanamori)" supports = "Skill, Hanamori Gaze of Death"/>
+            <select type = "Proficiency" name = "Skill Proficiency (Hanamori)" supports = "Skill, Hanamori Gaze of Death" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>
     <!-- Skills for Gaze of Death -->

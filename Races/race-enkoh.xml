@@ -146,7 +146,8 @@
             <description>You gain proficiency in your choice of two of the following skills: Acrobatics, Animal Handling, Nature, Performance, or Survival.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" name = "Skill Proficiency (Springtail Enkoh)" number = "2" supports = "Skill, Springtail Enkoh Skillful"/>
+            <select type = "Proficiency" name = "Skill Proficiency (Springtail Enkoh)" number = "2" supports = "Skill, Springtail Enkoh Skillful" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>
     <!-- Skills for Skillful -->

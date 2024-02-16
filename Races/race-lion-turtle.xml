@@ -3,7 +3,7 @@
     <info>
         <name>Lion Turtle</name>
         <update version = "0.0.1">
-            <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-ryujin.xml"/>
+            <file name = "race-lion-turtle.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-ryujin.xml"/>
         </update>
     </info>
 
@@ -59,7 +59,7 @@
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_TOUGH_SHELL"/>
 
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
-            <select type = "Language" name = "Language (Kitsune)" supports = "Standard||Exotic"/>
+            <select type = "Language" name = "Language (Lion Turtle)" supports = "Standard||Exotic"/>
 
         </rules>
     </element>
@@ -80,7 +80,8 @@
             <description>You gain proficiency in your choice of one of the following skills: Acrobatics, Athletics, Insight, or Intimidation.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" supports = "ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+            <select type = "Proficiency" supports = "ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>
     <element name = "Slashing Claws" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_LION_TURTLE_SLASHING_CLAWS">
