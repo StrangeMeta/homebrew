@@ -1,0 +1,84 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Hanabi Engineer</name>
+        <update version = "0.0.1">
+            <file name = "background-hanabi-engineer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Backgrounds/background-hanabi-engineer.xml"/>
+        </update>
+    </info>
+    
+    <element name = "Hanabi Engineer" type = "Background" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_BACKGROUND_HANABI_ENGINEER">
+        <description>
+            <p>Behind every great adventurer is a greater engineer—a source of incredible prostheses, gleaming armour, and deadly magic items. You are an expert of your craft, a virtuoso of assembly and artifice, buoyed ever onward by restless, intellectual curiosity and love of the job. As an associate of the College of Hanabi, a school of pyrotechnicians, alchemists, and inventors, you likely began work as an apprentice for a skilled craftsperson to a town or as a weapons manufacturer for a powerful clan. Your talents may have led you to travel, discovering exotic components from which you crafted unique wares for adventurers much like yourself. In a world of warriors, monsters, and magic, your technological prowess is always in high demand.</p>
+            <ul class = "unstyled">
+                <li><strong>Skill Proficiencies: </strong>History, Sleight of Hand</li>
+                <li><strong>Tool Proficiencies: </strong>One of your choice (Tinker's Tools recommended)</li>
+                <li><strong>Equipment: </strong>A set of travellers clothes, a set of atisan's tools (one of your choice), firecrackers, and a smokebomb.</li>
+            </ul>
+            <div element = "ID_RGTTYR_BACKGROUND_FEATURE_PROSTHESES_ENGINEER"/>
+            <h5>Hanabi Apprentice</h5>
+            <p>As an associate of the college of hanabi, you have access to a large network of tinkerers, merchants, and manufacturers. You know the right technical jargon to seamlessly integrate with other inventors, and you can count on the support of the college for information and lodgings in communities where it has a strong presence. Alumni of the college might be able to procure “top shelf” components and magic items unavailable to those outside the clique, or they may put you in touch with affluent merchants or tribes interested in purchasing your wares.</p>
+            <h5>Suggested Characteristics</h5>
+            <p>Being a hanabi engineer requires a mind simultaneously capable of bombastic imagination and intense focus. You see opportunity in every obstacle and delight in solving problems in the most overengineered fashion possible. Your enthusiasm for your work is inspiring, but long, isolated years of meticulous training and craft may have left you a little lacking in social situations. Alas, there is no machine that can make you better at dealing with people… yet. </p>
+        </description>
+        <setters>
+            <set name = "short">History, Sleight of Hand, Tool Proficiency</set>
+        </setters>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_HISTORY"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
+            <select type = "Proficiency" name = "Tool Proficiency (Hanabi Engineer)" supports = "Artisan tools"/>
+            <grant type = "Background Feature" id = "ID_RGTTYR_BACKGROUND_FEATURE_PROSTHESES_ENGINEER"/>
+            <select type = "List" name = "Personality Trait" number = "2">
+                <item id = "1">Excessive verbosity is prized among my idiosyncrasies.</item>
+                <item id = "2">I tend to get extremely excitable when discussing my passions.</item>
+                <item id = "3">I love to blow stuff up.</item>
+                <item id = "4">I am swiftly irritated by philistines who fail to appreciate my artistry.</item>
+                <item id = "5">I articulate every word with wild gestures and movements. </item>
+                <item id = "6">I sleep hanging upside down; the rush of blood to my head often sparks great ideas.</item>
+            </select>
+            <select type = "List" name = "Ideal">
+                <item id = "1">Ambition. I strive to be recognised as the best in the world at what I do.</item>
+                <item id = "2">Altruism. I aim to make the world a better place using my gifts.</item>
+                <item id = "3">Money. I intend to amass great wealth on the back of my talents. </item>
+                <item id = "4">Teacher. I live to pass down knowledge, and I take great delight in teaching others all that I know.</item>
+                <item id = "5">Progress. I aspire to wake up every day a little better than I was the day before.</item>
+                <item id = "6">Chore Aversion. I am willing to work extremely hard to find a way to be lazy. If it takes a week to make a tool that handles a boring job that would have taken me 10 minutes, so be it.</item>
+            </select>
+            <select type = "List" name = "Bond">
+                <item id = "1">I am deeply attached to my tools, giving them names and talking to them as I work.</item>
+                <item id = "2">I count several famous inventors and merchants among my close friends.</item>
+                <item id = "3">I blew up my first workshop at the age of nine and have gone through several more over the years. Numerous landlords have bounties on my head.</item>
+                <item id = "4">I have dear friends who count on me for their prostheses and gear. I devote countless hours to caring for them at no charge.</item>
+                <item id = "5">A rival engineer once stole an invention of mine and claimed credit. I will never forgive them and secretly seek revenge.</item>
+                <item id = "6">I am under contract from a noble to produce an immensely complex and powerful item, reporting regular updates on its construction to them.</item>
+            </select>
+            <select type = "List" name = "Flaw">
+                <item id = "1">If anything I create is less than perfect, I throw it away in disgust.</item>
+                <item id = "2">I often forget to charge for my work. The joy of creating is all I need.</item>
+                <item id = "3">My eagerness to explosively solve my problems sometimes gets me into more trouble than it’s worth.</item>
+                <item id = "4">I put my trust wholeheartedly in technology, dismissing any potential magical or social solution to a problem.</item>
+                <item id = "5">I get anxious when plans go awry, making it a struggle to adapt on the go.</item>
+                <item id = "6">I spend every penny I earn immediately; there always seems to be something new to buy.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name = "Feature: Protheses Engineer" type = "Background Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_BACKGROUND_FEATURE_PROSTHESES_ENGINEER">
+        <supports>Background Feature</supports>
+        <requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+        <description>
+            <p>You have dedicated years honing your craft. Choose a feat from among Prosthesis Adept or Prosthesis Fighting.</p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_FEAT_PROSTHESIS_ADEPT"/>
+            </div>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_FEAT_PROSTHESIS_FIGHTING"/>
+            </div>
+        </description>
+        <rules>
+            <select type = "Feat" name = "Feat (Hanabi Engineer)" supports = "ID_RGTTYR_FEAT_PROSTHESIS_ADEPT|ID_RGTTYR_FEAT_PROSTHESIS_FIGHTING"/>
+        </rules>
+        <sheet alt = "Elemental Adept"/>
+    </element>
+</elements>

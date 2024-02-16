@@ -1,0 +1,287 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Oniborne</name>
+        <update version = "0.0.1">
+            <file name = "race-oniborne.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Races/race-oniborne.xml"/>
+        </update>
+    </info>
+
+    <element name = "Oniborne" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ONIBORNE">
+        <description>
+            <p class = "flavour">On an exterior wall, above a dingy tavern door, rotten from rain and time, a sign was plastered: “NO ONI”.</p>
+            <p class = "flavour">I hesitated, turning to Yaboku, who met my eyes with a smile.</p>
+            <p class = "flavour">“I’m not allowed through this door,” he chuckled, “But I can make my own.” His hand curled into a fist and, with a single blow, the tavern wall burst open, the sign falling to the mud at his feet.</p>
+            <p class = "flavour">-Ryoko's Diary</p>
+            <p>Oniborne (OH-nee-bawn) are descendants of yokai, vessels of impetuous, simmering power that manifests across generations. Saturated in magic, oniborne innately command primal, supernatural forces. In moments of high emotion, instinctive spellcasting is common. An oniborne’s retort may physically scold the body of a foe, flesh might reknit under their palms in moments of compassion, or they may physically shrink when gripped with terror.</p>
+
+            <h4>Children of Darkness</h4>
+            <p>The life of an oniborne is one plagued by fear and suspicion. Being descendants of the oni, grotesque and dangerous yokai, many other humanoids view oniborne as savage, ugly, violent, and cruel—more akin to demons than their fey ancestors. These are ancient stereotypes, passed from parent to child in bedtime tales of terror. All oniborne, be they virtuous or villainous, suffer under this crude prejudice.</p>
+
+            <h4>A Deeper Experience</h4>
+            <p>Oniborne reverberate with magic in a way unlike any other race. In the legendary words of Khal Oni: “We simply feel more”. Be it the blood rage of warfare or the serene tranquillity of meditation, oniborne revel in the full gamut of life’s experiences. For this reason, many oniborne are drawn to thrilling, high-risk lifestyles, often becoming big game hunters, soldiers of fortune, or travelling performers.</p>
+            
+            <h4>ONIBORNE TRAITS</h4>
+            <p>As an oniborne, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Constitution score increases by 2.<br/>
+                <span class = "feature">Age. </span>Oniborne reach maturity at around 21 years of age and have long lives, often living up to 400 years.<br/>
+                <span class = "feature">Size. </span>You are Medium. An oniborne stands between 5 and 7 feet tall.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
+                <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
+                <span class = "feature">Powerful Build. </span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
+                <span class = "feature">Subrace. </span> Oniborne exist in many forms. The most striking difference between oniborne types is their colour: red, blue, or green. Choose one of these subraces.<br/>
+            </p>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED"/>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE"/>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN"/>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "constitution" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Oniborne)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
+            <stat name = "innate speed" value = "30" bonus = "base"/>
+
+            <grant type = "Creature Type" id = "ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID"/>
+            
+            <grant type = "Grants" id = "ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER"/>
+            
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <select type = "Language" name = "Language (Oniborne)" supports = "Standard||Exotic"/>
+
+            <select type = "Race Variant" name = "Oniborne Variant" supports = "Oniborne"/>
+
+        </rules>
+    </element>
+    <!-- Subraces for Oniborne. -->
+    <element name = "Red Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED">
+        <supports>Oniborne</supports>
+        <description>
+            <p>Red oniborne are great storytellers, taking delight in fireside tales of deadly beasts, fiery passions, and ancient marvels of the world. The most sociable of the three oniborne heritages, many red oniborne journey the world sharing time-worn tales of adventure while forging their own.</p>
+            <p class = "indent">On the cusp of adulthood, red oniborne leave their troop to undertake the Rite of the Hunt. They venture into the wilderness armed with nothing more than their wits in a quest to slay a dangerous foe and craft a weapon from its body. The rite remains an essential foundation of red oniborne culture across their lives. The more deadly the prey, the greater the respect an oniborne gains. It is not uncommon to see troop elders proudly clad in pelts and wielding weapons hewn from the remains of chromatic dragons and other vanquished terrors.</p>
+
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Wisdom score increases by 1.<br/>
+                <span class = "feature">Daunting Stature. </span>You have proficiency in the Intimidation skill.<br/>
+                <span class = "feature">Magical Scavenger. </span>You gain proficiency with one type of artisan’s tools of your choice. In addition, you can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.<br/>
+            </p>
+            <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
+            <p>
+                <span class = "feature">Weeping Magic. </span>You know the prestidigitation cantrip.<br/>
+                <p>Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            </p>
+            <p class = "indent">Tears form at the corner of your eyes when you cast a spell using this trait.</p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_DAUNTING_STATURE"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_MAGICAL_SCAVENGER"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC"/>
+        </rules>
+    </element>
+
+    <element name = "Daunting Stature" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_DAUNTING_STATURE">
+        <description>
+            <p>You have proficiency in the Intimidation skill.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_INTIMIDATION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+        </rules>
+    </element>
+    <element name = "Magical Scavenger" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_MAGICAL_SCAVENGER">
+        <description>
+            <p>You gain proficiency with one type of artisan’s tools of your choice. In addition, you can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</p>
+            <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
+        </description>
+        <sheet>
+            <description>You can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon. When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</description>
+        </sheet>
+        <rules>
+            <select type = "Proficiency" name = "Oniborne (Magical Scavenger)" supports = "Artisan tools"/>
+        </rules>
+    </element>
+    <element name = "Weeping Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC">
+        <description>
+            <p>You know the prestidigitation cantrip.</p>
+            <p>Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p class = "indent">Tears form at the corner of your eyes when you cast a spell using this trait.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_PRESTIDIGITATION"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_CURE_WOUNDS" level = "3"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_ENHANCE_ABILITY" level = "5"/>
+            <select type = "Racial Trait" name = "Spellcasting (Weeping Magic)" supports = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_WISDOM|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_CHARISMA"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_INTELLIGENCE">
+        <description>
+            <p>Intelligence is your spellcasting modifier for this ability.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_WISDOM">
+        <description>
+            <p>Wisdom is your spellcasting modifier for this ability.</p>
+        </description>
+        <sheet>
+            <description>Wisdom is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_CHARISMA">
+        <description>
+            <p>Charisma is your spellcasting modifier for this ability.</p>
+        </description>
+        <sheet>
+            <description>Charisma is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+
+    <element name = "Blue Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE">
+        <supports>Oniborne</supports>
+        <description>
+            <p>The magic of the blue oniborne is subtle and primal, a singing river of energy that ripples through the body. It can be relayed through physical contact, a healing stream imparted by a gentle touch, or a crushing wave that surges through their biting jaws.</p>
+            <p class = "indent">Solitary by nature, most blue oniborne choose to remain with the troop across their lives, a peaceful existence of isolation and independence. The few blue oniborne blessed with an adventurous spirit are unlikely to find kin in the wider world. They must journey without the guidance of their troop, every path an unmapped wilderness.</p>
+
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Strength score increases by 1.<br/>
+                <span class = "feature">Compassionate Heart. </span>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+                <span class = "feature">Crunching Maw. </span>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br/>
+                <span class = "feature">Great Deceiver. </span>You have proficiency in the Deception skill.<br/>
+                <span class = "feature">Savage Bite. </span>As a reaction when you take damage from a creature within 5 feet of you, you can magically enlarge your jaw and lash out with a vicious bite. Make an unarmed strike using your Crunching Maw against that creature. This attack scores a critical hit on a roll of 18-20 on the d20. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "strength" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_COMPASSIONATE_HEART"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_CRUNCHING_MAW"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_GREAT_DECEIVER"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_SAVAGE_BITE"/>
+        </rules>
+    </element>
+
+    <element name = "Compassionate Heart" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_COMPASSIONATE_HEART">
+        <description>
+            <p>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name = "Crunching Maw" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_CRUNCHING_MAW">
+        <description>
+            <p>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+    <element name = "Great Deceiver" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_GREAT_DECEIVER">
+        <description>
+            <p>You have proficiency in the Deception skill.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+        </rules>
+    </element>
+    <element name = "Savage Bite" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_SAVAGE_BITE">
+        <description>
+            <p>As a reaction when you take damage from a creature within 5 feet of you, you can magically enlarge your jaw and lash out with a vicious bite. Make an unarmed strike using your Crunching Maw against that creature. This attack scores a critical hit on a roll of 18-20 on the d20. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>As a reaction when you take damage from a creature within 5 feet of you, you can magically enlarge your jaw and lash out with a vicious bite. Make an unarmed strike using your Crunching Maw against that creature. This attack scores a critical hit on a roll of 18-20 on the d20. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name = "Green Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN">
+        <supports>Oniborne</supports>
+        <description>
+            <p>Preferring warm, arid climates, green oniborne are typically a nomadic people. They chase the gentle warmth of an eternal summer, ever migrating as they wander between orchards, pastures, and oases on a time-worn path passed down across the generations.</p>
+            <p class = "indent">Widely renowned as great orators, green oniborne speak in hammering rhythm, a staccato avalanche of stories, ideas, and possibilities. Their spellcasting is equally animated; green oniborne are the most overtly magical among their cousins. The air fizzes as they gesture and articulate, their eyes shimmer with light, and their words sparkle with magical inflection.</p>
+
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Charisma score increases by 1.<br/>
+                <span class = "feature">Captivating Quality. </span>You have proficiency in the Performance skill.<br/>
+                <span class = "feature">Fierce Magic. </span>You know the thaumaturgy cantrip. Starting at 3rd level, you can cast hellish rebuke with this trait. Starting at 5th level, you can also cast enlarge/reduce with this trait. Once you cast hellish rebuke or enlarge/reduce with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).<br/>
+            </p>
+            <p class = "indent">The space immediately around you grows warm and humid when you cast a spell using this trait. </p>
+            <p>
+                <span class = "feature">Ghastly Visage. </span>After you take the Attack action on your turn, you can use a bonus action to try and magically frighten a creature within 5 feet of you. That creature must make a Wisdom saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or be frightened of you for 1 minute. If the target ends its turn more than 30 feet away from you, it can repeat this saving throw, ending the effect on a success. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "charisma" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_CAPTIVATING_QUALITY"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_GHASTLY_VISAGE"/>
+        </rules>
+    </element>
+
+    <element name = "Captivating Quality" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_CAPTIVATING_QUALITY">
+        <description>
+            <p>You have proficiency in the Performance skill.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_PERFORMANCE" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+        </rules>
+    </element>
+    <element name = "Fierce Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC">
+        <description>
+            <p>You know the thaumaturgy cantrip. Starting at 3rd level, you can cast hellish rebuke with this trait. Starting at 5th level, you can also cast enlarge/reduce with this trait. Once you cast hellish rebuke or enlarge/reduce with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+        </description>
+        <sheet>
+            <description>You know the thaumaturgy cantrip. Starting at 3rd level, you can cast hellish rebuke with this trait. Starting at 5th level, you can also cast enlarge/reduce with this trait. Once you cast hellish rebuke or enlarge/reduce with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</description>
+        </sheet>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_THAUMATURGY"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_HELLISH_REBUKE" level = "3"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_ENLARGE_REDUCE" level = "5"/>
+            <select type = "Racial Trait" name = "Spellcasting (Fierce Magic)" supports = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_WISDOM|ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_CHARISMA"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_INTELLIGENCE">
+        <description>
+            <p>Intelligence is your spellcasting modifier for this ability.</p>
+        </description>
+        <sheet>
+            <description>Intelligence is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_WISDOM">
+        <description>
+            <p>Wisdom is your spellcasting modifier for this ability.</p>
+        </description>
+        <sheet>
+            <description>Wisdom is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_CHARISMA">
+        <description>
+            <p>Charisma is your spellcasting modifier for this ability.</p>
+        </description>
+        <sheet>
+            <description>Charisma is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+    <element name = "Ghastly Visage" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_GHASTLY_VISAGE">
+        <description>
+            <p>After you take the Attack action on your turn, you can use a bonus action to try and magically frighten a creature within 5 feet of you. That creature must make a Wisdom saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or be frightened of you for 1 minute. If the target ends its turn more than 30 feet away from you, it can repeat this saving throw, ending the effect on a success. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>After you take the Attack action on your turn, you can use a bonus action to try and magically frighten a creature within 5 feet of you. That creature must make a Wisdom saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or be frightened of you for 1 minute. If the target ends its turn more than 30 feet away from you, it can repeat this saving throw, ending the effect on a success.</description>
+        </sheet>
+    </element>
+</elements>

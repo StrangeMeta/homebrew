@@ -1,0 +1,93 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Elementalist</name>
+        <update version = "0.0.1">
+            <file name = "background-elementalist.xml" url = "https://raw.githubusercontent.com/StrangeMeta/ryokos-guide-to-the-yokai-realms/main/Backgrounds/background-elementalist.xml"/>
+        </update>
+    </info>
+    
+    <element name = "Elementalist" type = "Background" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_BACKGROUND_ELEMENTALIST">
+        <description>
+            <p>From the soil beneath your feet to the clouds that roam the sky, every aspect of the natural world holds magic, and so do you. For some, it takes decades of exhausting study to earn this connection. Others, perhaps those with a wisp of yokai magic, are born able to connect with the natural forces around them, influencing the elements as effortlessly as breathing.</p>
+            <p class = "indent">Whether intentionally or subconsciously, elementalists enhance their performance in ordinary jobs with supernatural touches. A miner attuned to earth might have an uncanny ability to extract geodes without damaging them, while a gondolier with water affinity can steer their vessel without using an oar. A fire-attuned smith can forge without bellows, while an air elementalist sailor might effortlessly steer into the most favourable winds at sea. Typically, an elementalist is the pride of their community, their power to predict and influence the weather is an essential resource in farming and nomadic societies.</p>
+            <ul class = "unstyled">
+                <li><strong>Skill Proficiencies: </strong>Acrobatics, Nature</li>
+                <li><strong>Languages: </strong>One of your choice (Primordial recommended)</li>
+                <li><strong>Equipment: </strong>A set of travellers clothes, a healers kit, and a pouch containing 15 gp.</li>
+            </ul>
+            <div element = "ID_RGTTYR_BACKGROUND_FEATURE_ELEMENTAL_ADEPT"/>
+            <div element = "ID_RGTTYR_BACKGROUND_FEATURE_PRIMORDIAL_SENSE"/>
+            <h5>Suggested Characteristics</h5>
+            <p>Elementalists can manifest magic through motion and are in tune with the natural world. The manner in which you obtained your powers may impact how you have grown as a person. Those who trained to wield the elements devoted years to their cause and are often extremely serious and dour, while those innately born with the skill often take it for granted. Such elementalists are often cocky and egotistical, but no harm can come from flaunting the gifts you have been given, surely?</p>
+        </description>
+        <setters>
+            <set name = "short">Athletics, Nature, Language</set>
+        </setters>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_ACROBATICS"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_NATURE"/>
+            <select type = "Language" name = "Language (Elementalist)" supports = "Standard||Exotic"/>
+            <grant type = "Background Feature" id = "ID_RGTTYR_BACKGROUND_FEATURE_ELEMENTAL_ADEPT"/>
+            <grant type = "Background Feature" id = "ID_RGTTYR_BACKGROUND_FEATURE_PRIMORDIAL_SENSE"/>
+            <select type = "List" name = "Personality Trait" number = "2">
+                <item id = "1">I am the life of the party! I love showing off my skills and power and do so at every opportunity to rapturous applause, of course.</item>
+                <item id = "2">I push myself endlessly. A moment not spent training is a moment wasted, and I allow myself little time for relaxation or friendship.</item>
+                <item id = "3">I have vivid dreams and occasionally perform elemental magic while asleep.</item>
+                <item id = "4">I am fascinated by magic of all kinds. I often let my curiosity get the best of me and ask endless questions of magic users and beings.</item>
+                <item id = "5">I wear my emotions on my sleeves. Whether I’m happy or sad, everyone will know about it.</item>
+                <item id = "6">My body is a temple. I am extremely particular about what I eat and drink, and I have lengthy, intricate morning ablutions.</item>
+            </select>
+            <select type = "List" name = "Ideal">
+                <item id = "1">Perfection. I want to be the best version of me I can be. I will accept nothing less of myself and expect the same of others.</item>
+                <item id = "2">Pacificism. I always seek a nonviolent solution and only fight when I see no other choice.</item>
+                <item id = "3">Community. I want to use my power to help others. I seek a meaningful role in the world where I can do my part.</item>
+                <item id = "4">Teacher. The lessons I’ve learned have been painful—a long road of broken bones and bloodied fists. I want to share the wisdom I’ve gained with others so the struggle was not in vain.</item>
+                <item id = "5">Student. There is so much to discover in the world; I will never stop exploring and growing.</item>
+                <item id = "6">Aggression. I worked hard for the power I have damn right I want to use it. I throw myself into challenges and dangerous situations. If you think you can beat me, bring it on.</item>
+            </select>
+            <select type = "List" name = "Bond">
+                <item id = "1">There is no law I won’t break to protect those I care about.</item>
+                <item id = "2">Although I do care for others, my duty is to myself. I come first in my book.</item>
+                <item id = "3">The teacher who taught me the secrets of element bending remains a trusted friend and confidant. I make great efforts to keep in touch; they are family to me.</item>
+                <item id = "4">I stole a treatise on bending and studied in secret. Now the people I took it from are looking for me.</item>
+                <item id = "5">I struggle to feel like I belong. I pursue power in the hope it will keep me useful to those around me.</item>
+                <item id = "6">I once lost control of my power and grievously wounded an innocent. I am still searching for a way to make it up to them.</item>
+            </select>
+            <select type = "List" name = "Flaw">
+                <item id = "1">I push myself too hard. Sometimes I leave myself weak and vulnerable in the pursuit of strength.</item>
+                <item id = "2">I am not subtle. I am loud, flashy, and eager to fight.</item>
+                <item id = "3">I am afraid of my own power. I second-guess myself and doubt my ability to wield it responsibly.</item>
+                <item id = "4">Despite wielding elemental powers of earth, I don’t like sand. It’s coarse and rough and irritating, and it gets everywhere.</item>
+                <item id = "5">I am noble to a fault, always play fair, and am seen as predictable and naive.</item>
+                <item id = "6">I am forever changing my mind and struggle to focus on a single thing.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name = "Feature: Elemental Adept" type = "Background Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_BACKGROUND_FEATURE_ELEMENTAL_ADEPT">
+        <supports>Background Feature</supports>
+        <requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+        <description>
+            <p>You have studied the arts of the element benders, learning how to harness primordial forces through motion. Choose a feat from among Elemental Fighting or Elemental Initiate.</p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_FEAT_ELEMENTAL_FIGHTING"/>
+            </div>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_FEAT_ELEMENTAL_INITIATE"/>
+            </div>
+        </description>
+        <rules>
+            <select type = "Feat" name = "Feat (Elementalist)" supports = "ID_RGTTYR_FEAT_ELEMENTAL_FIGHTING|ID_RGTTYR_FEAT_ELEMENTAL_INITIATE"/>
+        </rules>
+        <sheet alt = "Elemental Adept"/>
+    </element>
+
+    <element name = "Feature: Primordial Sense" type = "Background Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_BACKGROUND_FEATURE_PRIMORDIAL_SENSE">
+        <supports>Background Feature</supports>
+        <description>
+            <p>You can use an action to attune to your environment and accurately predict what the weather will be at your location for the next 24 hours. After using this feature to predict the weather, you can perform a 10 minute ritual to influence it. If you do, there is a 50 percent chance the weather will change over the next 24 hours to match a condition you specify from among foggy, overcast, raining, snowing, sunny, or windy. Your influence over the weather is limited: you can’t conjure any weather effects that would cause harm to plants and animals, and if the source of the weather is anything other than natural (such as from a magically conjured storm), you cannot influence it. Once you perform this ritual, you can’t do so again until the next dawn.</p>
+        </description>
+        <sheet alt = "Primordial Sense"/>
+    </element>
+</elements>
