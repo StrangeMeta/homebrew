@@ -25,7 +25,9 @@
                 <span class = "feature">Creature Type. </span>You are a Construct.<br/>
                 <span class = "feature">Clay Companion. </span>Over the course of a long rest, you can fashion a quasi-sentient, clay companion. Your companion can take whatever shape you wish, but must use the giant weasel, hawk, mastiff, or mule stat block. Its creature type is Construct, and it also gains your Soul Shell trait. Your clay companion understands you and obeys your commands. It disintegrates into shapeless clay when it is reduced to 0 hit points or when you use this feature again.<br/>
                 <span class = "feature">Grave Guardian. </span>You are blessed with innate magic of protection and consecration. You can cast the earthen uppercut and sanctuary spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.<br/>
-                <p class = "indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            </p>
+            <p class = "indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p>
                 <span class = "feature">Soul Shell. </span>Your soul has possessed a Construct, imparting the following benefits:<br/>
                 <ul>
                     <li>You don't need to eat, drink, or breathe.</li>

@@ -29,9 +29,9 @@
                 <span class = "feature">Thick Fur. </span>You have resistance to cold damage.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
                 <span class = "feature">Subrace. </span>There are two primary variants among the enkoh: hulking and springtail. On the whole, enkoh see little value in in the anthropological labels placed upon them by other races, living together in equality and peace. Choose one of these subraces.<br/>
-                <div element = "ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING"/>
-                <div element = "ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL"/>
             </p>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING"/>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL"/>
         </description>
         <sheet display = "true"/>
         <rules>

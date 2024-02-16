@@ -32,10 +32,10 @@
                 <span class = "feature">Powerful Build. </span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
                 <span class = "feature">Subrace. </span> Oniborne exist in many forms. The most striking difference between oniborne types is their colour: red, blue, or green. Choose one of these subraces.<br/>
-                <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED"/>
-                <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE"/>
-                <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN"/>
             </p>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_RED"/>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_BLUE"/>
+            <div element = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN"/>
         </description>
         <sheet display = "true"/>
         <rules>
@@ -66,11 +66,13 @@
                 <span class = "feature">Ability Score Increase. </span>Your Wisdom score increases by 1.<br/>
                 <span class = "feature">Daunting Stature. </span>You have proficiency in the Intimidation skill.<br/>
                 <span class = "feature">Magical Scavenger. </span>You gain proficiency with one type of artisan’s tools of your choice. In addition, you can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.<br/>
-                <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
+            </p>
+            <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
+            <p>
                 <span class = "feature">Weeping Magic. </span>You know the prestidigitation cantrip.<br/>
                 <p>Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
-                <p class = "indent">Tears form at the corner of your eyes when you cast a spell using this trait.</p>
             </p>
+            <p class = "indent">Tears form at the corner of your eyes when you cast a spell using this trait.</p>
         </description>
         <sheet display = "true"/>
         <rules>
@@ -199,7 +201,7 @@
         </sheet>
     </element>
 
-    <element name = "Green Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR-RACE_VARIANT_ONIBORNE_GREEN">
+    <element name = "Green Oniborne" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_ONIBORNE_GREEN">
         <supports>Oniborne</supports>
         <description>
             <p>Preferring warm, arid climates, green oniborne are typically a nomadic people. They chase the gentle warmth of an eternal summer, ever migrating as they wander between orchards, pastures, and oases on a time-worn path passed down across the generations.</p>
@@ -209,7 +211,9 @@
                 <span class = "feature">Ability Score Increase. </span>Your Charisma score increases by 1.<br/>
                 <span class = "feature">Captivating Quality. </span>You have proficiency in the Performance skill.<br/>
                 <span class = "feature">Fierce Magic. </span>You know the thaumaturgy cantrip. Starting at 3rd level, you can cast hellish rebuke with this trait. Starting at 5th level, you can also cast enlarge/reduce with this trait. Once you cast hellish rebuke or enlarge/reduce with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).<br/>
-                <p class = "indent">The space immediately around you grows warm and humid when you cast a spell using this trait. </p>
+            </p>
+            <p class = "indent">The space immediately around you grows warm and humid when you cast a spell using this trait. </p>
+            <p>
                 <span class = "feature">Ghastly Visage. </span>After you take the Attack action on your turn, you can use a bonus action to try and magically frighten a creature within 5 feet of you. That creature must make a Wisdom saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or be frightened of you for 1 minute. If the target ends its turn more than 30 feet away from you, it can repeat this saving throw, ending the effect on a success. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
             </p>
         </description>
