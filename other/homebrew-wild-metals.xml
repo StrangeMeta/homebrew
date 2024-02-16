@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<element name="Cursed Metals" type="Item" source="Homebrew" id="HOMEBREW_CURSED_METALS">
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>

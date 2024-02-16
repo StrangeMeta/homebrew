@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<element name="Mage Armour" type="Armor" source="Homebrew" id="ID_HOMEBREW_MAGE_ARMOUR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
 		<description>

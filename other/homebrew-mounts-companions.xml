@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<element name="Arion" type="Item" source="Homebrew" id="HOMEBREW_ARION">
 		<description>
 			<p><strong><em>Speed.</em></strong> 60 ft.<br/><strong><em>Carrying Capacity.</em></strong> 540 lb.</p>

@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<element name="VALDEZ" type="Item" source="Homebrew" id="HOMEBREW_FIRE_IMMUNITY">
 		<description>
 			<p>You are immune to fire damage</p>

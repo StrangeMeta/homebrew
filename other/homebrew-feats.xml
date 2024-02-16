@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<!--Feats-->
 	<element name="Sling Mastery" type="Feat" source="Homebrew" id="ID_HOMEBREW_SLING_MASTERY">
 		<prerequisite>4th level, proficiency with martial weapons</prerequisite>

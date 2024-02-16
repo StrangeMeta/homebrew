@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<element name = "Stave of Desert Winds" type = "Magic Item" source = "Persaean Basin" id = "PERSAEAN_BASIN_STAVE_OF_DESERT_WINDS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
 		<description>

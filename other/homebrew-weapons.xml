@@ -7,7 +7,6 @@
         </update>
     </info>
 	
-	<elements>
 	<element name="Katropis" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_KATROPIS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
 		<description>
