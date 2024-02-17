@@ -57,7 +57,7 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION"/>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_PERSUASION"/>
 
-            <grant type = "speed:climb" value = "speed" bonus = "base"/>
+            <stat name = "speed:climb" value = "speed" bonus = "base"/>
         </rules>
     </element>
 
@@ -70,10 +70,7 @@
             </ul>
         </description>
         <sheet>
-            <description>As an action, you can ignite a glowing mane of radiant energy around your neck, which lasts until you dismiss it as a bonus action or you fall unconscious. While your mane is ignited, you shed dim light in a 10-foot radius, and a creature you are grappling takes 2d4 radiant damage at the start of its turn.</description>
-        </sheet>
-        <sheet usage = "{{proficiency}}/Long Rest">
-            <description>As a bonus action, you can harden your body to stone. Until the start of your next turn, you gain a +2 bonus to AC and Constitution saving throws while you aren’t wearing heavy armour, and you have disadvantage on Dexterity saving throws. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+            <description>As an action, you can ignite a glowing mane of radiant energy around your neck, which lasts until you dismiss it as a bonus action or you fall unconscious. While your mane is ignited, you shed dim light in a 10-foot radius, and a creature you are grappling takes 2d4 radiant damage at the start of its turn. As a bonus action, you can harden your body to stone. Until the start of your next turn, you gain a +2 bonus to AC and Constitution saving throws while you aren’t wearing heavy armour, and you have disadvantage on Dexterity saving throws. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
         </sheet>
     </element>
 

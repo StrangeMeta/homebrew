@@ -77,6 +77,17 @@
     <element name = "Koi Dragon Colour" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR">
         <description>
             <p>The colour of your scales is the same as the primary colouration you had as a nishikin. Your colour also impacts the effects of your Heartening Breath and Innate Magic traits.</p>
+            <table>
+                <thread>
+                    <tr><td class = "col-10">Colour</td><td class = "col-10">Ability Score</td><td class = "col-10">Associated Class</td></tr>
+                </thread>
+                <tr><td>Red</td><td>Strength</td><td>Sorcerer</td></tr>
+                <tr><td>Gold</td><td>Dexterity</td><td>Druid</td></tr>
+                <tr><td>Black</td><td>Constitution</td><td>Warlock</td></tr>
+                <tr><td>Silver</td><td>Intelligence</td><td>Wizard</td></tr>
+                <tr><td>White</td><td>Wisdom</td><td>Cleric</td></tr>
+                <tr><td>Blue</td><td>Charisma</td><td>Bard</td></tr>
+            </table>
         </description>
         <sheet>
             <description>The colour of your scales is the same as the primary colouration you had as a nishikin. Your colour also impacts the effects of your Heartening Breath and Innate Magic traits.</description>
@@ -90,10 +101,10 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
         </description>
         <sheet>
-            <description>Intelligence is your spellcasting ability for these spells.</description>
+            <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
         </sheet>
         <rules>
             <stat inline = "true" name = "ryujin-colour" value = "Red"/>
@@ -105,10 +116,10 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
         </description>
         <sheet>
-            <description>Intelligence is your spellcasting ability for these spells.</description>
+            <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
         </sheet>
         <rules>
             <stat inline = "true" name = "ryujin-colour" value = "Gold"/>
@@ -120,10 +131,10 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
         </description>
         <sheet>
-            <description>Intelligence is your spellcasting ability for these spells.</description>
+            <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
         </sheet>
         <rules>
             <stat inline = "true" name = "ryujin-colour" value = "Black"/>
@@ -135,10 +146,10 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
         </description>
         <sheet>
-            <description>Intelligence is your spellcasting ability for these spells.</description>
+            <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
         </sheet>
         <rules>
             <stat inline = "true" name = "ryujin-colour" value = "Silver"/>
@@ -150,10 +161,10 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
         </description>
         <sheet>
-            <description>Intelligence is your spellcasting ability for these spells.</description>
+            <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
         </sheet>
         <rules>
             <stat inline = "true" name = "ryujin-colour" value = "White"/>
@@ -165,10 +176,10 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
+            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
         </description>
         <sheet>
-            <description>Intelligence is your spellcasting ability for these spells.</description>
+            <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
         </sheet>
         <rules>
             <stat inline = "true" name = "ryujin-colour" value = "Blue"/>
