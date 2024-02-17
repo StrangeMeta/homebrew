@@ -77,7 +77,7 @@
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_MASTER_OF_CRAFT"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_NATURE_GUARDIAN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIR_TENGU_HANATAKU_WHIRLWIND_ONSLAUGHT"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_WHIRLWIND_ONSLAUGHT"/>
         </rules>
     </element>
 
@@ -139,6 +139,14 @@
         </description>
         <sheet>
             <description>Charisma is your spellcasting modifier for this ability.</description>
+        </sheet>
+    </element>
+    <element name = "Whirlwind Onslaught" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_WHIRLWIND_ONSLAUGHT">
+        <description>
+            <p>After you take the Attack action on your turn, you can use your bonus action on that turn to cast a cantrip with a casting time of one action or make a number of melee attacks equal to half your proficiency bonus (rounded up). Each of these attacks must target a different creature. Once you use this trait, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage = "1/Short Rest">
+            <description>After you take the Attack action on your turn, you can use your bonus action on that turn to cast a cantrip with a casting time of one action or make a number of melee attacks equal to half your proficiency bonus (rounded up). Each of these attacks must target a different creature.</description>
         </sheet>
     </element>
 

@@ -89,91 +89,91 @@
         </sheet>
     </element>
 
-    <element name = "Boon of the Ōmukade" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE">
+    <element name = "Boon of the Ōmukade" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE">
         <description>
-            <p>The ōmukade is a dragon hunter—a colossal centipede yokai with a resilient carapace and resistance to the elements. Your connection to the ōmukade grants you the following benefits:</p>
+            <p>The ōmukade is a dragon hunter—a colossal centipede yokai with a resilient carapace and resistance to the elements. Your connection to the Omukade grants you the following benefits:</p>
             <ul>
                 <li>Increase your Constitution score by 1, to a maximum of 20.</li>
                 <li>Choose one damage type from among acid, cold, fire, lightning, poison, and thunder when you select this feat. You gain resistance to the chosen damage type. In addition, when you take damage of that type, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 damage of that type. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
             </ul>
         </description>
         <sheet usage = "{{proficiency}}/Long Rest">
-            <description>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
+            <description>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
         </sheet>
         <rules>
             <stat name = "constitution" value = "1"/>
-            <select type = "Feat Feature" name = "Boon of the Ōmukade" supports = "Ōmukade Element"/>
+            <select type = "Feat Feature" name = "Boon of the Ōmukade" supports = "Omukade Element"/>
         </rules>
     </element>
-    <element name = "Acid" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_ACID">
-        <supports>Ōmukade Element</supports>
+    <element name = "Acid" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_ACID">
+        <supports>Omukade Element</supports>
         <compendium display = "false"/>
         <description>
-            <p>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "true" name = "Ōmukade-element" value = "Acid"/>
+            <stat inline = "true" name = "Omukade-element" value = "Acid"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID"/>
         </rules>
     </element>
-    <element name = "Cold" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_COLD">
-        <supports>Ōmukade Element</supports>
+    <element name = "Cold" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_COLD">
+        <supports>Omukade Element</supports>
         <compendium display = "false"/>
         <description>
-            <p>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "true" name = "Ōmukade-element" value = "Cold"/>
+            <stat inline = "true" name = "Omukade-element" value = "Cold"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
         </rules>
     </element>
-    <element name = "Fire" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_FIRE">
-        <supports>Ōmukade Element</supports>
+    <element name = "Fire" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_FIRE">
+        <supports>Omukade Element</supports>
         <compendium display = "false"/>
         <description>
-            <p>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "true" name = "Ōmukade-element" value = "Fire"/>
+            <stat inline = "true" name = "Omukade-element" value = "Fire"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
         </rules>
     </element>
-    <element name = "Lightning" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_LIGHTNING">
-        <supports>Ōmukade Element</supports>
+    <element name = "Lightning" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_LIGHTNING">
+        <supports>Omukade Element</supports>
         <compendium display = "false"/>
         <description>
-            <p>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "true" name = "Ōmukade-element" value = "Lightning"/>
+            <stat inline = "true" name = "Omukade-element" value = "Lightning"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"/>
         </rules>
     </element>
-    <element name = "Poison" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_POISON">
-        <supports>Ōmukade Element</supports>
+    <element name = "Poison" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_POISON">
+        <supports>Omukade Element</supports>
         <compendium display = "false"/>
         <description>
-            <p>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "true" name = "Ōmukade-element" value = "Poison"/>
+            <stat inline = "true" name = "Omukade-element" value = "Poison"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/>
         </rules>
     </element>
-    <element name = "Thunder" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_THUNDER">
-        <supports>Ōmukade Element</supports>
+    <element name = "Thunder" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_THUNDER">
+        <supports>Omukade Element</supports>
         <compendium display = "false"/>
         <description>
-            <p>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "true" name = "Ōmukade-element" value = "Thunder"/>
+            <stat inline = "true" name = "Omukade-element" value = "Thunder"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER"/>
         </rules>
     </element>
