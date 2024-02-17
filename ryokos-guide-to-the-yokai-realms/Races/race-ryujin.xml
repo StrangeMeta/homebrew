@@ -101,7 +101,7 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
+            <p>Your primary colouring is red, your associated ability score is strength, and your associated class is sorcerer.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
@@ -116,7 +116,7 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
+            <p>Your primary colouring is gold, your associated ability score is dexterity, and your associated class is druid.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
@@ -131,7 +131,7 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
+            <p>Your primary colouring is black, your associated ability score is constitution, and your associated class is warlock.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
@@ -146,7 +146,7 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
+            <p>Your primary colouring is silver, your associated ability score is intelligence, and your associated class is wizard.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
@@ -161,7 +161,7 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
+            <p>Your primary colouring is white, your associated ability score is wisdom, and your associated class is cleric.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>
@@ -176,7 +176,7 @@
         <supports>Koi Dragon Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</p>
+            <p>Your primary colouring is blue, your associated ability score is charisma, and your associated class is bard.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{ryujin-colour}}, your associated ability score is {{ryujin-colour:ability}}, and your associated class is {{ryujin-colour:class}}.</description>

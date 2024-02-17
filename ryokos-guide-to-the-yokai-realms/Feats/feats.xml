@@ -74,6 +74,113 @@
         </sheet>
     </element>
 
+    <element name = "Boon of the Nue" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_NUE">
+        <description>
+            <p>The nue is a fierce, chimeric hunter, rumoured to be the first yokai. Its power is chaotic, and a spark of that chaos resides in you. Your connection to the nue grants you the following benefits:</p>
+            <ul>
+                <li>At the start of your turn, you can roll a d6. If the result on the die is even, you gain a bonus to the next attack roll, ability check, or saving throw you make before the end of this turn. If the result is odd, you take the result on the die as poison damage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</li>
+                <li>As a bonus action, you can grant yourself a flying speed equal to your walking speed until the end of your turn. You fall if you end your turn in the air with nothing holding you aloft. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>At the start of your turn, you can roll a d6. If the result on the die is even, you gain a bonus to the next attack roll, ability check, or saving throw you make before the end of this turn. If the result is odd, you take the result on the die as poison damage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest. As a bonus action, you can grant yourself a flying speed equal to your walking speed until the end of your turn. You fall if you end your turn in the air with nothing holding you aloft. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name = "Boon of the Ōmukade" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE">
+        <description>
+            <p>The ōmukade is a dragon hunter—a colossal centipede yokai with a resilient carapace and resistance to the elements. Your connection to the ōmukade grants you the following benefits:</p>
+            <ul>
+                <li>Increase your Constitution score by 1, to a maximum of 20.</li>
+                <li>Choose one damage type from among acid, cold, fire, lightning, poison, and thunder when you select this feat. You gain resistance to the chosen damage type. In addition, when you take damage of that type, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 damage of that type. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>You have resistance to {{Ōmukade-element}} damage. In addition, when you take {{Ōmukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Ōmukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
+        </sheet>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+            <select type = "Feat Feature" name = "Boon of the Ōmukade" supports = "Ōmukade Element"/>
+        </rules>
+    </element>
+    <element name = "Acid" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_ACID">
+        <supports>Ōmukade Element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "Ōmukade-element" value = "Acid"/>
+        </rules>
+    </element>
+    <element name = "Cold" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_COLD">
+        <supports>Ōmukade Element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "Ōmukade-element" value = "Cold"/>
+        </rules>
+    </element>
+    <element name = "Fire" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_FIRE">
+        <supports>Ōmukade Element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "Ōmukade-element" value = "Fire"/>
+        </rules>
+    </element>
+    <element name = "Lightning" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_LIGHTNING">
+        <supports>Ōmukade Element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "Ōmukade-element" value = "Lightning"/>
+        </rules>
+    </element>
+    <element name = "Poison" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_POISON">
+        <supports>Ōmukade Element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "Ōmukade-element" value = "Poison"/>
+        </rules>
+    </element>
+    <element name = "Thunder" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_ŌMUKADE_THUNDER">
+        <supports>Ōmukade Element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "Ōmukade-element" value = "Thunder"/>
+        </rules>
+    </element>
+
+    <element name = "Boon of the Wanyudo" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_WANYUDO">
+        <description>
+            <p>Frenzied, fanatical, and blisteringly fast, the wanyudo is a fiendish yokai that takes the form of a large, flaming wheel. Your connection to it grants you the following benefits:</p>
+            <ul>
+                <li>Your speed increases by 10 feet.</li>
+                <li>When you are prone, standing up costs you only 5 feet of movement.</li>
+                <li>If you move at least 10 feet in a straight line towards a creature and are within reach of it, you can immediately use a bonus action to attempt a charging slam against that creature. Make a Strength (Athletics) check, contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). Whoever loses the contest falls prone. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your speed increases by 10 feet. If you move at least 10 feet in a straight line towards a creature and are within reach of it, you can immediately use a bonus action to attempt a charging slam against that creature. Make a Strength (Athletics) check, contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). Whoever loses the contest falls prone. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
+        </sheet>
+        <rules>
+            <stat name = "innate:speed" value = "10"/>
+        </rules>
+    </element>
+
     <element name = "Elemental Fighting" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_ELEMENTAL_FIGHTING">
         <description>
             <p>You have studied the meticulous movements and magical arts of element bending to the extent that you can channel crude but potent blasts of elemental energy through your body. When you select this feat, choose one damage type from among acid, cold, fire, lightning, poison, and thunder. When you make an unarmed strike, you can choose for the strike to deal damage of that type equal to 1d8 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>

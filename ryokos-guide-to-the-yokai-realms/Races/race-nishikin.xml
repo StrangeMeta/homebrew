@@ -110,7 +110,7 @@
         <supports>Nishikin Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</p>
+            <p>Your primary colouring is red, your associated ability score is strength.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</description>
@@ -124,7 +124,7 @@
         <supports>Nishikin Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</p>
+            <p>Your primary colouring is gold, your associated ability score is dexterity.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</description>
@@ -138,7 +138,7 @@
         <supports>Nishikin Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</p>
+            <p>Your primary colouring is black, your associated ability score is constitution.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</description>
@@ -152,7 +152,7 @@
         <supports>Nishikin Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</p>
+            <p>Your primary colouring is siilver, your associated ability score is intelligence.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</description>
@@ -166,7 +166,7 @@
         <supports>Nishikin Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</p>
+            <p>Your primary colouring is white, your associated ability score is wisdom.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</description>
@@ -180,7 +180,7 @@
         <supports>Nishikin Colouring</supports>
         <compendium display = "false"/>
         <description>
-            <p>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</p>
+            <p>Your primary colouring is blue, your associated ability score is charisma.</p>
         </description>
         <sheet>
             <description>Your primary colouring is {{nishikin-colour}}, your associated ability score is {{nishikin-colour:ability}}.</description>
