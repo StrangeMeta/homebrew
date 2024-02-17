@@ -24,8 +24,9 @@
         </rules>
     </element>
     <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_STRENGTH">
+        <compendium display = "false"/>
         <description>
-        <p>Your Strength score increases by 1.</p>
+            <p>Your Strength score increases by 1.</p>
         </description>
         <sheet display = "false"/>
         <rules>
@@ -33,8 +34,9 @@
         </rules>
     </element>
     <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_ASHURA_CONSTITUTION">
+        <compendium display = "false"/>
         <description>
-        <p>Your Constitution score increases by 1.</p>
+            <p>Your Constitution score increases by 1.</p>
         </description>
         <sheet display = "false"/>
         <rules>
@@ -111,7 +113,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "Ōmukade-element" value = "Acid"/>
+            <stat inline = "true" name = "Ōmukade-element" value = "Acid"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID"/>
         </rules>
     </element>
@@ -123,7 +125,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "Ōmukade-element" value = "Cold"/>
+            <stat inline = "true" name = "Ōmukade-element" value = "Cold"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
         </rules>
     </element>
@@ -135,7 +137,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "Ōmukade-element" value = "Fire"/>
+            <stat inline = "true" name = "Ōmukade-element" value = "Fire"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
         </rules>
     </element>
@@ -147,7 +149,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "Ōmukade-element" value = "Lightning"/>
+            <stat inline = "true" name = "Ōmukade-element" value = "Lightning"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"/>
         </rules>
     </element>
@@ -159,7 +161,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "Ōmukade-element" value = "Poison"/>
+            <stat inline = "true" name = "Ōmukade-element" value = "Poison"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/>
         </rules>
     </element>
@@ -171,7 +173,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <stat inline = "Ōmukade-element" value = "Thunder"/>
+            <stat inline = "true" name = "Ōmukade-element" value = "Thunder"/>
             <grant type = "Condition" id = "ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER"/>
         </rules>
     </element>
