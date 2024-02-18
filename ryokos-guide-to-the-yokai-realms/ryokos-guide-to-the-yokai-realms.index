@@ -23,11 +23,11 @@
 		<file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
 
 		<!-- classes -->
-		<file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
-		<file name = "class-tamer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-tamer.xml"/>
+		<!-- <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
+		<file name = "class-tamer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-tamer.xml"/> -->
 
 		<!-- archetypes -->
-		<file name = "barbarian-kaiju.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/barbarian-kaiju.xml"/>
+		<!-- <file name = "barbarian-kaiju.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/barbarian-kaiju.xml"/>
 		<file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
 		<file name = "bard-masks.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-masks.xml"/>
 		<file name = "bender-ferocity.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-ferocity.xml"/>
@@ -44,20 +44,20 @@
 		<file name = "sorcerer-spirit-caller.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/sorcerer-spirit-caller.xml"/>
 		<file name = "tamer-sensei.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/tamer-sensei.xml"/>
 		<file name = "warlock-shinigami.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/warlock-shinigami.xml"/>
-		<file name = "wizard-shinobi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/wizard-shinobi.xml"/>
+		<file name = "wizard-shinobi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/wizard-shinobi.xml"/> -->
 
 		<!-- backgrounds -->
 		<file name = "background-elementalist.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-elementalist.xml"/>
 		<file name = "background-hanabi-engineer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-hanabi-engineer.xml"/>
 
 		<!-- items -->
-		<file name = "items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/items.xml"/>
-		<file name = "magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/magic-items.xml"/>
+		<!-- <file name = "items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/items.xml"/>
+		<file name = "magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/magic-items.xml"/> -->
 
 		<!-- misc -->
-		<file name = "familiars.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Familiars/familiars.xml"/>
+		<!-- <file name = "familiars.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Familiars/familiars.xml"/> -->
 		<file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats.xml"/>
-		<file name = "racial-feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/racial-feats.xml"/>
+		<!-- <file name = "racial-feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/racial-feats.xml"/> -->
 		<file name = "spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Spells/spells.xml"/>
 		<file name = "optional-features.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Optional%20Features/optional-features.xml"/>
 	</files>
