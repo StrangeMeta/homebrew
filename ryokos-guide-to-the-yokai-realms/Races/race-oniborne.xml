@@ -120,6 +120,7 @@
         </rules>
     </element>
     <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_INTELLIGENCE">
+        <compendium display = "false"/>
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
@@ -128,6 +129,7 @@
         </sheet>
     </element>
     <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_WISDOM">
+        <compendium display = "false"/>
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
@@ -136,6 +138,7 @@
         </sheet>
     </element>
     <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC_CHARISMA">
+        <compendium display = "false"/>
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
@@ -253,6 +256,7 @@
         </rules>
     </element>
     <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_INTELLIGENCE">
+        <compendium display = "false"/>
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
@@ -269,6 +273,7 @@
         </sheet>
     </element>
     <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_FIERCE_MAGIC_CHARISMA">
+        <compendium display = "false"/>
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
@@ -277,6 +282,7 @@
         </sheet>
     </element>
     <element name = "Ghastly Visage" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_GREEN_GHASTLY_VISAGE">
+        <compendium display = "false"/>
         <description>
             <p>After you take the Attack action on your turn, you can use a bonus action to try and magically frighten a creature within 5 feet of you. That creature must make a Wisdom saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or be frightened of you for 1 minute. If the target ends its turn more than 30 feet away from you, it can repeat this saving throw, ending the effect on a success. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
         </description>
