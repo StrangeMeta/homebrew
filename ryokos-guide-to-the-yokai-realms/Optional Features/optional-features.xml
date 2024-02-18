@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Optional Features</name>
+		<description>Optional Class Features introduced in Ryoko's Guide to the Yokai Realms</description>
+		<author>Loot Tavern</author>
+		<update version="0.0.1">
+			<file name="optional-features.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/OptionalFeatures/optional-features.xml"/>
+		</update>
+	</info>
+
+    <element name = "Improved Extra Attack: Barbarian" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK">
+        <description>
+            <p><i>5th-Level Barbarian Feature</i></p>
+            <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
+            <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class = "indent">When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</p>
+        </description>
+        <sheet>
+            <description level = "7">When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK" requirements = "[level:barbarian:5]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK" requirements = "[level:barbarian:7]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK" requirements = "[level:barbarian:5]"/>
+        </rules>
+    </element>
+    <element name = "Barbarian, LV05: Improved Extra Attack" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_OCF_BARBARIAN_IMPROVED_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p><i>You can equip this item to enable it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK"/>
+            </div>
+        </description>
+        <setters>
+            <set name = "category">Optional Class Features</set>
+            <set name = "keywords">fifth level, 5th level, Improved Extra Attack</set>
+            <set name = "slot">misc</set>
+            <set name = "inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK" requirements = "[level:barbarian:5]"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "2" level = "5" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</p>
+        </description>
+        <sheet display = "false">
+            <description>When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</description>
+        </sheet>
+    </element>
+    <element name = "Improved Extra Attack: Bender" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK">
+        <description>
+            <p><i>5th-Level Bender Feature</i></p>
+            <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
+            <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class = "indent">When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</p>
+        </description>
+        <sheet>
+            <description level = "7">When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_BENDER_EXTRA_ATTACK" requirements = "[level:bender:5]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK" requirements = "[level:bender:7]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK" requirements = "[level:bender:5]"/>
+        </rules>
+    </element>
+    <element name = "Bender, LV05: Improved Extra Attack" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_OCF_BENDER_IMPROVED_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p><i>You can equip this item to enable it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK"/>
+            </div>
+        </description>
+        <setters>
+            <set name = "category">Optional Class Features</set>
+            <set name = "keywords">fifth level, 5th level, Improved Extra Attack</set>
+            <set name = "slot">misc</set>
+            <set name = "inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK" requirements = "[level:bender:5]"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "2" level = "5" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</p>
+        </description>
+        <sheet display = "false">
+            <description>When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</description>
+        </sheet>
+    </element>
+    <element name = "Improved Extra Attack: Fighter" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK">
+        <description>
+            <p><i>5th-Level Fighter Feature</i></p>
+            <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
+            <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks you can make increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+            <p class = "indent">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
+        </description>
+        <sheet>
+            <description level = "7">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_EXTRA_ATTACK" requirements = "[level:fighter:5]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK" requirements = "[level:fighter:7]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK" requirements = "[level:fighter:5]"/>
+        </rules>
+    </element>
+    <element name = "Fighter, LV05: Improved Extra Attack" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_OCF_FIGHTER_IMPROVED_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p><i>You can equip this item to enable it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK"/>
+            </div>
+        </description>
+        <setters>
+            <set name = "category">Optional Class Features</set>
+            <set name = "keywords">fifth level, 5th level, Improved Extra Attack</set>
+            <set name = "slot">misc</set>
+            <set name = "inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK" requirements = "[level:fighter:5]"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class = "indent">The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+        </description>
+        <sheet>
+			<description level = "5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level = "11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level = "20">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+        </sheet>
+        <rules>
+			<stat name = "extra attack:count" value = "2" level = "5" bonus = "extra attack"/>
+			<stat name = "extra attack:count" value = "3" level = "11" bonus = "extra attack"/>
+			<stat name = "extra attack:count" value = "4" level = "20" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
+        </description>
+        <sheet display = "false">
+            <description>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
+        </sheet>
+    </element>
+    <element name = "Improved Extra Attack: Monk" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK">
+        <description>
+            <p><i>5th-Level Monk Feature</i></p>
+            <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
+            <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class = "indent">When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</p>
+        </description>
+        <sheet>
+            <description level = "7">When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EXTRA_ATTACK" requirements = "[level:monk:5]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK" requirements = "[level:monk:7]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK" requirements = "[level:monk:5]"/>
+        </rules>
+    </element>
+    <element name = "Monk, LV05: Improved Extra Attack" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_OCF_MONK_IMPROVED_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p><i>You can equip this item to enable it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK"/>
+            </div>
+        </description>
+        <setters>
+            <set name = "category">Optional Class Features</set>
+            <set name = "keywords">fifth level, 5th level, Improved Extra Attack</set>
+            <set name = "slot">misc</set>
+            <set name = "inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK" requirements = "[level:monk:5]"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "2" level = "5" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</p>
+        </description>
+        <sheet display = "false">
+            <description>When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</description>
+        </sheet>
+    </element>
+    <element name = "Improved Extra Attack: Paladin" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK">
+        <description>
+            <p><i>5th-Level Paladin Feature</i></p>
+            <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
+            <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class = "indent">When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</p>
+        </description>
+        <sheet>
+            <description level = "7">When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK" requirements = "[level:paladin:5]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK" requirements = "[level:paladin:7]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK" requirements = "[level:paladin:5]"/>
+        </rules>
+    </element>
+    <element name = "Paladin, LV05: Improved Extra Attack" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_OCF_PALADIN_IMPROVED_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p><i>You can equip this item to enable it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK"/>
+            </div>
+        </description>
+        <setters>
+            <set name = "category">Optional Class Features</set>
+            <set name = "keywords">fifth level, 5th level, Improved Extra Attack</set>
+            <set name = "slot">misc</set>
+            <set name = "inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK" requirements = "[level:paladin:5]"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "2" level = "5" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</p>
+        </description>
+        <sheet display = "false">
+            <description>When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</description>
+        </sheet>
+    </element>
+    <element name = "Improved Extra Attack: Ranger" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK">
+        <description>
+            <p><i>5th-Level Ranger Feature</i></p>
+            <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
+            <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class = "indent">When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</p>
+        </description>
+        <sheet>
+            <description level = "7">When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_EXTRA_ATTACK" requirements = "[level:ranger:5]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK" requirements = "[level:ranger:7]"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK" requirements = "[level:ranger:5]"/>
+        </rules>
+    </element>
+    <element name = "Ranger, LV05: Improved Extra Attack" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_OCF_RANGER_IMPROVED_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p><i>You can equip this item to enable it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK"/>
+            </div>
+        </description>
+        <setters>
+            <set name = "category">Optional Class Features</set>
+            <set name = "keywords">fifth level, 5th level, Improved Extra Attack</set>
+            <set name = "slot">misc</set>
+            <set name = "inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK" requirements = "[level:ranger:5]"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK_EXTRA_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "2" level = "5" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</p>
+        </description>
+        <sheet display = "false">
+            <description>When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</description>
+        </sheet>
+    </element>
+</elements>

@@ -106,8 +106,8 @@
         </rules>
     </element>
     <element name = "Acid" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_ACID">
-        <supports>Omukade Element</supports>
         <compendium display = "false"/>
+        <supports>Omukade Element</supports>
         <description>
             <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
@@ -118,8 +118,8 @@
         </rules>
     </element>
     <element name = "Cold" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_COLD">
-        <supports>Omukade Element</supports>
         <compendium display = "false"/>
+        <supports>Omukade Element</supports>
         <description>
             <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
@@ -130,8 +130,8 @@
         </rules>
     </element>
     <element name = "Fire" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_FIRE">
-        <supports>Omukade Element</supports>
         <compendium display = "false"/>
+        <supports>Omukade Element</supports>
         <description>
             <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
@@ -142,8 +142,8 @@
         </rules>
     </element>
     <element name = "Lightning" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_LIGHTNING">
-        <supports>Omukade Element</supports>
         <compendium display = "false"/>
+        <supports>Omukade Element</supports>
         <description>
             <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
@@ -154,8 +154,8 @@
         </rules>
     </element>
     <element name = "Poison" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_POISON">
-        <supports>Omukade Element</supports>
         <compendium display = "false"/>
+        <supports>Omukade Element</supports>
         <description>
             <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
@@ -166,8 +166,8 @@
         </rules>
     </element>
     <element name = "Thunder" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_BOON_OF_THE_OMUKADE_THUNDER">
-        <supports>Omukade Element</supports>
         <compendium display = "false"/>
+        <supports>Omukade Element</supports>
         <description>
             <p>You have resistance to {{Omukade-element}} damage. In addition, when you take {{Omukade-element}} damage, you can use a reaction to absorb it. When you do, the first damage roll you make within the next minute deals an extra 1d8 {{Omukade-element}} damage. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
         </description>
@@ -192,6 +192,218 @@
         </sheet>
         <rules>
             <stat name = "innate speed" value = "10"/>
+        </rules>
+    </element>
+
+    <element name = "Cantrip Combatant" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT">
+        <description>
+            <p>You have mastered the art of combining weapon strikes and spellcasting, granting you the following benefits:</p>
+            <ul>
+                <li>Increase one ability score of your choice, to a maximum of 20.</li>
+                <li>When you use an action to cast a cantrip that includes a weapon attack, you can make one weapon attack as a bonus action on that turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you use an action to cast a cantrip that includes a weapon attack, you can make one weapon attack as a bonus action on that turn.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Cantrip Combatant" supports = "Cantrip Combatant"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Strength" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_STRENGTH">
+        <compendium display = "false"/>
+        <supports>Cantrip Combatant</supports>
+        <description>
+            <p>Increase your Strength score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Dexterity" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>Cantrip Combatant</supports>
+        <description>
+            <p>Increase your Dexterity score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Constitution" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_CONSTITUTION">
+        <compendium display = "false"/>
+        <supports>Cantrip Combatant</supports>
+        <description>
+            <p>Increase your Constitution score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Intelligence" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_INTELLIGENCE">
+        <compendium display = "false"/>
+        <supports>Cantrip Combatant</supports>
+        <description>
+            <p>Increase your Intelligence score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "intelligence" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Wisdom" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_WISDOM">
+        <compendium display = "false"/>
+        <supports>Cantrip Combatant</supports>
+        <description>
+            <p>Increase your Wisdom score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Charisma" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_CHARISMA">
+        <compendium display = "false"/>
+        <supports>Cantrip Combatant</supports>
+        <description>
+            <p>Increase your Charisma score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Combo Striker" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER">
+        <description>
+            <p>You are practised in the art of collaborative combat and combination strikes, granting you the following benefits:</p>
+            <ul>
+                <li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+                <li>You can initiate or collaborate in a combo attack*, even if you have already initiated or collaborated in one since your last long rest. Once you use this benefit, you can’t use it again until you finish a long rest.</li>
+                <li>When you initiate a combo attack, one willing creature of your choice that you can see can collaborate in that combo without preventing them from collaborating in another combo attack before they finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you initiate a combo attack, one willing creature of your choice that you can see can collaborate in that combo without preventing them from collaborating in another combo attack before they finish a long rest. You can initiate or collaborate in a combo attack*, even if you have already initiated or collaborated in one since your last long rest. Once you use this benefit, you can’t use it again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Combo Striker" supports = "Combo Striker"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Strength" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_STRENGTH">
+        <compendium display = "false"/>
+        <supports>Combo Striker</supports>
+        <description>
+            <p>Increase your Strength score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Dexterity" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>Combo Striker</supports>
+        <description>
+            <p>Increase your Dexterity score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Constitution" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_CONSTITUTION">
+        <compendium display = "false"/>
+        <supports>Combo Striker</supports>
+        <description>
+            <p>Increase your Constitution score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Intelligence" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_INTELLIGENCE">
+        <compendium display = "false"/>
+        <supports>Combo Striker</supports>
+        <description>
+            <p>Increase your Intelligence score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "intelligence" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Wisdom" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_WISDOM">
+        <compendium display = "false"/>
+        <supports>Combo Striker</supports>
+        <description>
+            <p>Increase your Wisdom score by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+        </rules>
+    </element>
+    <element type = "Feat Feature" name = "Charisma" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_CHARISMA">
+    <compendium display = "false"/>
+        <supports>Combo Striker</supports>
+        <description>
+            <p>Increase your Charisma score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+    
+    <element name = "Dedicated Comabatant" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_DEDICATED_COMABATANT">
+        <description>
+            <p>Not implemented yet.</p>
+            <p>Your fervent commitment to combat training puts your weapon mastery on par with the most dedicated of specialists. You can calculate your martial level as equal to your character level, no matter your class.</p>
+        </description>
+        <sheet>
+            <description>Your martial level is calculated as equal to your character level, no matter your class</description>
+        </sheet>
+    </element>
+
+    <element name = "Double Throw" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_DOUBLE_THROW">
+        <description>
+            <p>You have developed special techniques to throw several weapons at once, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>Once on each of your turns when you make a ranged weapon attack using a weapon that has both the Light and Thrown properties, and you don’t have disadvantage on the attack roll, you can choose to throw two weapons with a single flick of the wrist. If you do, make a separate attack roll with disadvantage for each weapon. These attacks can be against different targets.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you make a ranged weapon attack using a weapon that has both the Light and Thrown properties, and you don’t have disadvantage on the attack roll, you can choose to throw two weapons with a single flick of the wrist. If you do, make a separate attack roll with disadvantage for each weapon. These attacks can be against different targets.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Double Throw" supports = "Double Throw"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_DOUBLE_THROW_STRENGTH">
+        <compendium display = "false"/>
+        <supports>Double Throw</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_DOUBLE_THROW_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>Double Throw</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
         </rules>
     </element>
 
@@ -592,6 +804,299 @@
         <sheet display = "true"/>
         <rules>
             <select type = "Feat Feature" name = "Bending Element, Elemental Initiate" supports = "Elemental Initiate"/>
+        </rules>
+    </element>
+
+    <element name=  "Extra Attack Tactician" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN">
+        <prerequisite>Improved Extra Attack Feature</prerequisite>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK</requirements>
+        <description>
+            <p>You have studied the fighting styles of others and learned to mimic their techniques, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>Choose one class from among barbarian, bender, fighter, monk, paladin, and ranger. You can use the 7th-level benefit of the Improved Extra Attack feature from that class a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest. You can only benefit from one Improved Extra Attack feature per turn (choose when you make your first attack).</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>Once per turn, you may use one of the following Improved Extra Attack features in place of your own:</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Extra Attack Tactician" supports = "ASI Extra Attack Tactician"/>
+            <select type = "Feat Feature" name = "Class Extra Attack, Extra Attack Tactician" supports = "Extra Attack Tactician"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH">
+        <compendium display = "false"/>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH2</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH3</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH5">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_STRENGTH4</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY2</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY3</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY5">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_DEXTERITY4</requirements>
+        <supports>ASI Extra Attack Tactician</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <!-- Extra Attack grants -->
+    <element name = "Barbarian" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_BARBARIAN">
+            <compendium display = "false"/>
+            <supports>Extra Attack Tactician</supports>
+            <description>
+                <div element = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK"/>
+            </description>
+            <sheet display = "false">
+                <description>When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</description>
+            </sheet>
+            <rules>
+                <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK"/>
+            </rules>
+    </element>
+    <element name = "Bender" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_BENDER">
+            <compendium display = "false"/>
+            <supports>Extra Attack Tactician</supports>
+            <description>
+                <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK"/>
+            </description>
+            <sheet display = "false">
+                <description>When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</description>
+            </sheet>
+            <rules>
+                <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK"/>
+            </rules>
+    </element>
+    <element name = "Fighter" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_FIGHTER">
+            <compendium display = "false"/>
+            <supports>Extra Attack Tactician</supports>
+            <description>
+                <div element = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK"/>
+            </description>
+            <sheet display = "false">
+                <description>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
+            </sheet>
+            <rules>
+                <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK"/>
+            </rules>
+    </element>
+    <element name = "Monk" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_MONK_BARBARIAN">
+            <compendium display = "false"/>
+            <supports>Extra Attack Tactician</supports>
+            <description>
+                <div element = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK"/>
+            </description>
+            <sheet display = "false">
+                <description>When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</description>
+            </sheet>
+            <rules>
+                <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK"/>
+            </rules>
+    </element>
+    <element name = "Paladin" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_PALADIN">
+            <compendium display = "false"/>
+            <supports>Extra Attack Tactician</supports>
+            <description>
+                <div element = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK"/>
+            </description>
+            <sheet display = "false">
+                <description>When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</description>
+            </sheet>
+            <rules>
+                <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK"/>
+            </rules>
+    </element>
+    <element name = "Ranger" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN_RANGER">
+            <compendium display = "false"/>
+            <supports>Extra Attack Tactician</supports>
+            <description>
+                <div element = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK"/>
+            </description>
+            <sheet display = "false">
+                <description>When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</description>
+            </sheet>
+            <rules>
+                <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK"/>
+            </rules>
+    </element>
+    <!-- Multiple Selections for Extra Attack Tactician -->
+    <element name=  "Extra Attack Tactician" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN2">
+        <compendium display = "false"/>
+        <prerequisite>Improved Extra Attack Feature</prerequisite>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN, (ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK)</requirements>
+        <description>
+            <p>You have studied the fighting styles of others and learned to mimic their techniques, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>Choose one class from among barbarian, bender, fighter, monk, paladin, and ranger. You can use the 7th-level benefit of the Improved Extra Attack feature from that class a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest. You can only benefit from one Improved Extra Attack feature per turn (choose when you make your first attack).</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>Once per turn, you may use one of the following Improved Extra Attack features in place of your own:</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Extra Attack Tactician" supports = "ASI Extra Attack Tactician"/>
+            <select type = "Feat Feature" name = "Class Extra Attack, Extra Attack Tactician" supports = "Extra Attack Tactician"/>
+        </rules>
+    </element>
+    <element name=  "Extra Attack Tactician" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN3">
+        <compendium display = "false"/>
+        <prerequisite>Improved Extra Attack Feature</prerequisite>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN2, (ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK)</requirements>
+        <description>
+            <p>You have studied the fighting styles of others and learned to mimic their techniques, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>Choose one class from among barbarian, bender, fighter, monk, paladin, and ranger. You can use the 7th-level benefit of the Improved Extra Attack feature from that class a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest. You can only benefit from one Improved Extra Attack feature per turn (choose when you make your first attack).</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>Once per turn, you may use one of the following Improved Extra Attack features in place of your own:</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Extra Attack Tactician" supports = "ASI Extra Attack Tactician"/>
+            <select type = "Feat Feature" name = "Class Extra Attack, Extra Attack Tactician" supports = "Extra Attack Tactician"/>
+        </rules>
+    </element>
+    <element name=  "Extra Attack Tactician" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN4">
+        <compendium display = "false"/>
+        <prerequisite>Improved Extra Attack Feature</prerequisite>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN3, (ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK)</requirements>
+        <description>
+            <p>You have studied the fighting styles of others and learned to mimic their techniques, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>Choose one class from among barbarian, bender, fighter, monk, paladin, and ranger. You can use the 7th-level benefit of the Improved Extra Attack feature from that class a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest. You can only benefit from one Improved Extra Attack feature per turn (choose when you make your first attack).</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>Once per turn, you may use one of the following Improved Extra Attack features in place of your own:</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Extra Attack Tactician" supports = "ASI Extra Attack Tactician"/>
+            <select type = "Feat Feature" name = "Class Extra Attack, Extra Attack Tactician" supports = "Extra Attack Tactician"/>
+        </rules>
+    </element>
+    <element name=  "Extra Attack Tactician" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN5">
+        <compendium display = "false"/>
+        <prerequisite>Improved Extra Attack Feature</prerequisite>
+        <requirements>ID_RGTTYR_FEAT_EXTRA_ATTACK_TACTICIAN4, (ID_RGTTYR_CLASS_FEATURE_BARBARIAN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_PALADIN_IMPROVED_EXTRA_ATTACK|ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK)</requirements>
+        <description>
+            <p>You have studied the fighting styles of others and learned to mimic their techniques, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>Choose one class from among barbarian, bender, fighter, monk, paladin, and ranger. You can use the 7th-level benefit of the Improved Extra Attack feature from that class a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest. You can only benefit from one Improved Extra Attack feature per turn (choose when you make your first attack).</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>Once per turn, you may use one of the following Improved Extra Attack features in place of your own:</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Extra Attack Tactician" supports = "ASI Extra Attack Tactician"/>
+            <select type = "Feat Feature" name = "Class Extra Attack, Extra Attack Tactician" supports = "Extra Attack Tactician"/>
         </rules>
     </element>
 
