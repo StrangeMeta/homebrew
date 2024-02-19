@@ -1100,6 +1100,255 @@
         </rules>
     </element>
 
+    <element name = "Focused Discipline" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE">
+        <prerequisite>Not a multiclass character</prerequisite>
+        <description>
+            <p>Your diligence and focused training has granted you the following benefits:</p>
+            <ul>
+                <li>Choose one skill proficiency granted to you by your class. Your proficiency bonus is doubled for ability checks made using that skill.</li>
+                <li>Choose one saving throw proficiency granted to you by your class. Whenever you make that saving throw, you can treat a d20 roll of 9 or lower as a 10.</li>
+            </ul>
+            <p class = "indent">If you lose this feat because you do not meet its prerequisite, you gain the Multidisciplinary feat instead.</p>
+            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select expertise in any skill that you have proficiency in, not just the ones you chose within your class. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
+            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Feat Feature" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES" requirements = "!ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type = "Feat" id = "ID_RGTTYR_FEAT_MULTIDISCIPLINARY"/>
+        </rules>
+    </element>
+    <element name = "Focused Discipline Features" type = "Feat Features" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES">
+        <compendium display = "false"/>
+        <description>
+            <p>{{class}}</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Skill, Focused Discipline" supports = "Focused Discipline Skills"/>
+            <select type = "Proficiency" name = "Saving Throw, Focused Discipline" supports = "Rogue"/>
+        </rules>
+    </element>
+    <!-- Skill proficiencies for Focused Expertise -->
+    <element name = "Skill Expertise (Acrobatics)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_ACROBATICS">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Acrobatics check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "acrobatics:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Animal Handling)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_ANIMALHANDLING">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_ANIMALHANDLING</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Animal Handling check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "animal handling:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Arcana)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_ARCANA">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Arcana check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "arcana:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Athletics)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_ATHLETICS">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Athletics check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "athletics:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Deception)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_DECEPTION">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Deception check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "deception:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (History)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_HISTORY">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_HISTORY</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any History check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "history:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Insight)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_INSIGHT">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Insight check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "insight:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Intimidation)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_INTIMIDATION">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Intimidation check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "intimidation:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Investigation)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_INVESTIGATION">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Investigation check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "investigation:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Medicine)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_MEDICINE">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_MEDICINE</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Medicine check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "medicine:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Nature)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_NATURE">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Nature check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "nature:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Perception)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_PERCPETION">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Perception check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "perception:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Performance)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_PERFORMANCE">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Performance check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "performance:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Persuasion)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_PERSUASION">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Persuasion check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "persuasion:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Religion)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_RELIGION">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Religion check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "religion:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Sleight of Hand)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_SLEIGHT_OF_HAND">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Sleight of Hand check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "sleight of hand:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Stealth)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_STEALTH">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Stealth check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "stealth:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+    <element name = "Skill Expertise (Survival)" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES_SURVIVAL">
+        <compendium display = "false"/>
+        <requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
+        <supports>Focused Discipline Skills</supports>
+        <description>
+            <p>Your proficiency bonus is doubled for any Survival check you make</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "survival:proficiency" value = "proficiency" bonus = "double"/>
+        </rules>
+    </element>
+
     <element name = "Prosthesis Adept" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_PROSTHESIS_ADEPT">
         <description>
             <p>You can tinker with your prosthesis, manipulating its function, over the course of an hour. Doing so enhances it by adding one of the following properties:</p>
@@ -1146,6 +1395,26 @@
             </description>
         </sheet>
         <rules>
+        </rules>
+    </element>
+
+    <element name = "Multidisciplinary" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
+        <prerequisite>You are a multiclass character</prerequisite>
+        <requirements>ID_INTERNAL_GRANT_MULTICLASS</requirements>
+        <description>
+            <p>You are adept at pulling from different disciplines to employ a variety of tactics both in battle and outside it. When you take this feat, and each time you gain your 1st level in a new class, choose one of the following benefits:</p>
+            <ul>
+                <li>You gain proficiency in one skill and one type of artisan’s tools of your choice.</li>
+                <li>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</li>
+            </ul>
+            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select any saving throw proficiency, not just the ones limited by your multiclassing. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
+            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Skill"/>
+            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Artisan tools"/>
+            <select type = "Proficiency" name = "Saving Throw, Multidisciplinary"  number = "6" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
         </rules>
     </element>
 </elements>
