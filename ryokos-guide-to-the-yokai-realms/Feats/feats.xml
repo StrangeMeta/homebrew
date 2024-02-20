@@ -1121,10 +1121,17 @@
     <element name = "Focused Discipline Features" type = "Feat Features" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FOCUSED_DISCIPLINE_FEATURES">
         <compendium display = "false"/>
         <description>
-            <p>{{class}}</p>
+            <p>Your diligence and focused training has granted you the following benefits:</p>
+            <ul>
+                <li>Choose one skill proficiency granted to you by your class. Your proficiency bonus is doubled for ability checks made using that skill.</li>
+                <li>Choose one saving throw proficiency granted to you by your class. Whenever you make that saving throw, you can treat a d20 roll of 9 or lower as a 10.</li>
+            </ul>
+            <p class = "indent">If you lose this feat because you do not meet its prerequisite, you gain the Multidisciplinary feat instead.</p>
+            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select expertise in any skill that you have proficiency in, not just the ones you chose within your class. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
+            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can treat a d20 roll of 9 or lower as a 10 Whenever you make a saving throw for the ability you chose.</description>
         </sheet>
         <rules>
             <select type = "Feat Feature" name = "Skill, Focused Discipline" supports = "Focused Discipline Skills"/>
@@ -1349,6 +1356,230 @@
         </rules>
     </element>
 
+    <element name = "Kaiju Hunter" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_KAIJU_HUNTER">
+        <description>
+            <p>You are practised in the ways of fighting colossal creatures, granting you the following benefits:</p>
+            <ul>
+                <li>Mounting a creature costs you only 5 feet of movement, rather than half your speed.</li>
+                <li>You can brace* yourself by spending only 5 feet of movement, instead of half your speed.</li>
+                <li>You have advantage on ability checks to identify vulnerable areas.</li>
+                <li>You ignore the difficult terrain caused by moving on a creature more than two sizes larger than you.</li>
+                <li>Immediately after a creature you can see that is at least one size larger than you hits or misses you with a melee attack roll, you can use your reaction to make a weapon attack against that creature.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Mounting a creature costs you only 5 feet of movement, rather than half your speed. You can brace* yourself by spending only 5 feet of movement, instead of half your speed. You have advantage on ability checks to identify vulnerable areas. You ignore the difficult terrain caused by moving on a creature more than two sizes larger than you. Immediately after a creature you can see that is at least one size larger than you hits or misses you with a melee attack roll, you can use your reaction to make a weapon attack against that creature.</description>
+        </sheet>
+    </element>
+
+    <element name = "Kusarigama Master" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_KUSARIGAMA_MASTER">
+        <prerequisite>Proficiency with a kusarigama</prerequisite>
+        <requirements>ID_RGTTYR_ITEM_KUSARIGAMA</requirements>
+        <description>
+            <p>You have mastered the use of the kusarigama, learning additional techniques to trip and harass your foes. You add your ability modifier to the attack roll made with a kusarigama’s counterweight. In addition, when you make this attack against a Medium or smaller target, you can choose to deal no damage. If you do, the target makes a Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice), contested by your attack roll. If it fails the contest, choose one of the following effects:</p>
+            <ul>
+                <li>The target is disarmed of one object it is holding of your choice, which is pulled towards you and falls at your feet.</li>
+                <li>The target is knocked prone.</li>
+                <li>The target is pulled 5 feet towards you. If that leaves it within your reach, it’s grappled by you if you have a free hand.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have mastered the use of the kusarigama, learning additional techniques to trip and harass your foes. You add your ability modifier to the attack roll made with a kusarigama’s counterweight. In addition, when you make this attack against a Medium or smaller target, you can choose to deal no damage. If you do, the target makes a Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice), contested by your attack roll. If it fails the contest, choose one of the following effects: The target is disarmed of one object it is holding of your choice, which is pulled towards you and falls at your feet. The target is knocked prone. The target is pulled 5 feet towards you. If that leaves it within your reach, it’s grappled by you if you have a free hand.</description>
+        </sheet>
+    </element>
+
+    <element name = "Magic of the Blade" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE">
+        <description>
+            <p>You have the power to synchronise magic and swordplay, granting you the following benefits:</p>
+            <ul>
+                <li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+                <li>You learn two cantrips that include a weapon as their material component.</li>
+            </ul>
+            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select any cantrip, not just the ones with a weapon as their material component. Unfortunately, I was not able to get this to work without haing to edit the original spells or having to come back to add to this feat if any new spells were available, so I have chosen to leave it like this. Please only select the appropriate spells that you should be able to pick from.</i></p>
+            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
+        </description>
+        <rules>
+            <select type = "Feat Feature" name = "ASI, Magic of the Blade" supports = "Magic of the Blade"/>
+            <select type = "Spell" name = "Magic of the Blade" supports = "0" number = "2"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE_STRENGTH">
+        <compendium display = "false"/>
+        <supports>Magic of the Blade</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>Magic of the Blade</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE_CONSTITUTION">
+        <compendium display = "false"/>
+        <supports>MAgic of the Blade</supports>
+        <description>
+            <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE_INTELLIGENCE">
+        <compendium display = "false"/>
+        <supports>Magic of the Blade</supports>
+        <description>
+            <p>Your Intelligence score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "intelligence" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE_WISDOM">
+        <compendium display = "false"/>
+        <supports>Magic of the Blade</supports>
+        <description>
+            <p>Your Wisdom score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "wisodm" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MAGIC_OF_THE_BLADE_Charisma">
+        <compendium display = "false"/>
+        <supports>Magic of the Blade</supports>
+        <description>
+            <p>Your Charisma score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+    
+    <element name = "Martial Initiate" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE">
+        <description>
+            <p>You have studied extensively in the art of combat, honing your skill with a favoured weapon. You gain the following benefits:</p>
+            <ul>
+                <li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+                <li><i>Not implemented: </i>You learn two tier 1 advanced techniques of your choice from any technique tree.* You must meet the prerequisites for those techniques to learn them.</li>
+            </ul>
+        </description>
+        <rules>
+            <select type = "Feat Feature" supports = "Martial Initiate"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE_STRENGTH">
+        <compendium display = "false"/>
+        <supports>Martial Initiate</supports>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>Martial Initiate</supports>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE_CONSTITUTION">
+        <compendium display = "false"/>
+        <supports>Martial Initiate</supports>
+        <description>
+            <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE_INTELLIGENCE">
+        <compendium display = "false"/>
+        <supports>Martial Initiate</supports>
+        <description>
+            <p>Your Intelligence score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "intelligence" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE_WISDOM">
+        <compendium display = "false"/>
+        <supports>Martial Initiate</supports>
+        <description>
+            <p>Your Wisdom score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE_CHARISMA">
+        <compendium display = "false"/>
+        <supports>Martial Initiate</supports>
+        <description>
+            <p>Your Charisma score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+    
+    <element name = "Multidisciplinary" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
+        <prerequisite>You are a multiclass character</prerequisite>
+        <requirements>ID_INTERNAL_GRANT_MULTICLASS</requirements>
+        <description>
+            <p>You are adept at pulling from different disciplines to employ a variety of tactics both in battle and outside it. When you take this feat, and each time you gain your 1st level in a new class, choose one of the following benefits:</p>
+            <ul>
+                <li>You gain proficiency in one skill and one type of artisan’s tools of your choice.</li>
+                <li>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</li>
+            </ul>
+            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select any saving throw proficiency, not just the ones limited by your multiclassing. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
+            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Skill"/>
+            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Artisan tools"/>
+            <select type = "Proficiency" name = "Saving Throw, Multidisciplinary"  number = "6" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+        </rules>
+    </element>
+
+    <element name = "Nunchaku Master" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_NUNCHAKU_MASTER">
+        <prerequisite>Proficiency with nunchaku</prerequisite>
+        <requirements>ID_RGTTYR_ITEM_NUNCHAKU</requirements>
+        <description>
+            <p>Your virtuosity with nunchaku allows you to strike with incredible speed. When you take the Attack action and attack with a nunchaku, you can use a bonus action to make one additional nunchaku attack. This attack uses the same ability modifier as the primary attack and the weapon’s damage die for this attack is a d4.</p>
+        </description>
+        <sheet>
+            <description>Your virtuosity with nunchaku allows you to strike with incredible speed. When you take the Attack action and attack with a nunchaku, you can use a bonus action to make one additional nunchaku attack. This attack uses the same ability modifier as the primary attack and the weapon’s damage die for this attack is a d4.</description>
+        </sheet>
+    </element>
+
     <element name = "Prosthesis Adept" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_PROSTHESIS_ADEPT">
         <description>
             <p>You can tinker with your prosthesis, manipulating its function, over the course of an hour. Doing so enhances it by adding one of the following properties:</p>
@@ -1398,23 +1629,17 @@
         </rules>
     </element>
 
-    <element name = "Multidisciplinary" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
-        <prerequisite>You are a multiclass character</prerequisite>
-        <requirements>ID_INTERNAL_GRANT_MULTICLASS</requirements>
+    <element name = "Prosthesis Master" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_PROSTHESIS_MASTER">
+        <prerequisite>8th level</prerequisite>
+        <requirements>[level:8]</requirements>
         <description>
-            <p>You are adept at pulling from different disciplines to employ a variety of tactics both in battle and outside it. When you take this feat, and each time you gain your 1st level in a new class, choose one of the following benefits:</p>
-            <ul>
-                <li>You gain proficiency in one skill and one type of artisan’s tools of your choice.</li>
-                <li>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</li>
-            </ul>
-            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select any saving throw proficiency, not just the ones limited by your multiclassing. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
-            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
+            <p>You have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</p>
         </description>
-        <sheet display = "false"/>
+        <sheet>
+            <description>ou have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</description>
+        </sheet>
         <rules>
-            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Skill"/>
-            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Artisan tools"/>
-            <select type = "Proficiency" name = "Saving Throw, Multidisciplinary"  number = "6" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+            <select type = "Item" name = "Prosthesis Master"/>
         </rules>
     </element>
 </elements>

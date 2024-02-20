@@ -1,0 +1,80 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Feats from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats.xml"/>
+        </update>
+    </info>
+
+    <element name = "Kusarigama" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_KUSARIGAMA">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
+        <description>
+            <p>Kusarigama are martial melee weapons consisting of a sickle attached to a heavy counterweight by a metal chain. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Versatile (1d6) property. They also have the Special: Counterweight property.</p>
+            <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA"/>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">10</set>
+            <set name = "weight" lb = "2">-</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "slashing">1d4</set>
+            <set name = "versatile">1d6</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_KUSARIGAMA</set>
+        </setters>
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA" requirements = "ID_WOTC_PHB_CLASS_MONK|ID_WOTC_PHB_MULTICLASS_MONK"/>
+        </rules>
+    </element>
+    <element name = "Special (Kusarigama)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA">
+        <compendium display = "false"/>
+        <description>
+            <p class = "indent"><strong>Special: Counterweight. </strong>While wielding a kusarigama with two hands, you can use a bonus action to attack with its counterweight. This attack has a reach of 10 feet and deals 1d4 bludgeoning damage on a hit. You don’t add your ability modifier to the damage of this attack, unless that modifier is negative.</p>
+        </description>
+    </element>
+    <element name = "Weapon Proficency (Kusarigama)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA"/>
+        </rules>
+    </append>
+
+    <element name = "Nunchaku" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_NUNCHAKU">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINSESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
+        <description>
+            <p>Nunchaku are martial melee weapons composed of two hard batons connected to one another by a short chain or tether. They deal 1d6 bludgeoning damage on a hit, count as monk weapons, and have the Finesse, Versatile (1d8), and Special: Flourish properties.</p>
+            <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU"/>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">10</set>
+            <set name = "weight" lb = "2">-</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "slashing">1d6</set>
+            <set name = "versatile">1d8</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_NUNCHAKU</set>
+        </setters>
+    </element>
+    <element name = "Special (Nunchaku)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU">
+        <compendium display = "false"/>
+        <description>
+            <p class = "indent"><strong>Special: Flourish. </strong>When you are wielding the nunchaku in two hands and take the Attack action on your turn, you can attempt to flourish with the weapon immediately before you make your first attack. To flourish, make a DC 13 Dexterity check, adding your proficiency bonus if you are proficient with nunchaku. On a success, you gain a +2 bonus to the first attack roll you make this turn. On a failure, you deal bludgeoning damage to yourself equal to your proficiency bonus and gain no bonus from your flourishes this turn.</p>
+        </description>
+    </element>
+    <element name = "Weapon Proficency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_NUNCHAKU">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINSESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_NUNCHAKU"/>
+        </rules>
+    </append>
+
+    <element name = "Weapon Property (Scourge)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
+        <compendium display = "false"/>
+    </element>
+</elements>

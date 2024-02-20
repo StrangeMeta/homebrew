@@ -51,8 +51,8 @@
 		<file name = "background-hanabi-engineer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-hanabi-engineer.xml"/>
 
 		<!-- items -->
-		<!-- <file name = "items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/items.xml"/>
-		<file name = "magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/magic-items.xml"/> -->
+		<file name = "items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/items.xml"/>
+		<!-- <file name = "magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/magic-items.xml"/> -->
 
 		<!-- misc -->
 		<!-- <file name = "familiars.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Familiars/familiars.xml"/> -->
