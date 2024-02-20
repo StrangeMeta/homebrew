@@ -1638,8 +1638,5 @@
         <sheet>
             <description>ou have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</description>
         </sheet>
-        <rules>
-            <select type = "Item" name = "Prosthesis Master"/>
-        </rules>
     </element>
 </elements>
