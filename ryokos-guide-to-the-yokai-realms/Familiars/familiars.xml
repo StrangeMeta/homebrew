@@ -1,0 +1,66 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <element name = "Bancho-Gama" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_BANCHO_GAMA">
+        <supports>Yokai Familiar</supports>
+		<description>
+            <p>A bancho-gama’s respect is hard-earned, and its obedience even more so. In nature and in partnerships, these toad-like creatures prefer to be the ones in positions of authority, collecting ‘lackeys’ that they can boss around for their benefit. Their remarkable agility and skill in combat make them desirable companions for adventurers… but many find that those traits are not worth enduring the bancho-gama’s domineering behaviour. It takes a truly exceptional tamer to convince a bancho-gama to work together as equals, and many will gawk at the sight of these stubborn creatures receiving orders from another. Do you have what it takes?</p>
+            <p class = "indent">If any of the bancho-gama’s traits or actions require a saving throw, it is always against the bancho-gama’s save DC, as calculated below.</p>
+            <p class = "indent"><strong>Save DC</strong> = 8 + {{proficiency}} + {{bancho-gama:cha:modifier}}</p>
+        </description>
+        <setters>
+            <set name="size">Tiny</set>
+			<set name="type">Monstrosity</set>
+			<set name="alignment">Lawful Neutral</set>
+			<set name="ac">12</set>
+			<set name="hp">3 (1d4+1)</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">10</set>
+			<stat inline = "true" name = "bancho-gama:str:value" value = "10"/>
+			<stat inline = "true" name = "bancho-gama:str:modifier" value = "0"/>
+			<set name="dexterity">15</set>
+			<stat inline = "true" name = "bancho-gama:dex:value" value = "15"/>
+			<stat inline = "true" name = "bancho-gama:dex:modifier" value = "2"/>
+			<set name="constitution">13</set>
+			<stat inline = "true" name = "bancho-gama:con:value" value = "13"/>
+			<stat inline = "true" name = "bancho-gama:con:modifier" value = "1"/>
+			<set name="intelligence">8</set>
+			<stat inline = "true" name = "bancho-gama:int:value" value = "8"/>
+			<stat inline = "true" name = "bancho-gama:int:modifier" value = "-1"/>
+			<set name="wisdom">10</set>
+			<stat inline = "true" name = "bancho-gama:wis:value" value = "10"/>
+			<stat inline = "true" name = "bancho-gama:wis:modifier" value = "0"/>
+			<set name="charisma">14</set>
+			<stat inline = "true" name = "bancho-gama:cha:value" value = "14"/>
+			<stat inline = "true" name = "bancho-gama:cha:modifier" value = "2"/>
+			<set name="senses">passive Perception 10</set>
+			<set name="languages">Common</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_RGTTYR_COMPANION_TRAIT_BANCHO-GAMA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_BANCHO-GAMA_STANDING_LEAP, ID_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_STANDING_LEAP</set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_MASTIFF_BITE</set>
+        </setters>
+    </element>
+    <element name = "Amphibious" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_AMPHIBIOUS">
+        <description>
+            <p>The bancho-gama can breathe air and water.</p>
+        </description>
+		<sheet>
+			<description>The bancho-gama can breathe air and water.</description>
+		</sheet>
+    </element>
+    <element name = "Standing Leap" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_STANDING_LEAP">
+        <description>
+            <p>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</p>
+        </description>
+		<sheet>
+			<description>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</description>
+		</sheet>
+    </element>
+    <element name = "Superiority Complex" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_SUPERIORITY_COMPLEX">
+        <description>
+            <p>The bancho-gama can’t take the Help action.</p>
+        </description>
+		<sheet>
+			<description>The bancho-gama can’t take the Help action.</description>
+		</sheet>
+    </element>
+</elements>

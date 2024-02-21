@@ -1636,7 +1636,39 @@
             <p>You have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</p>
         </description>
         <sheet>
-            <description>ou have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</description>
+            <description>You have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</description>
         </sheet>
+    </element>
+
+    <element name = "Spirit Bonded" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED">
+        <description>
+            <p>You have formed a friendship with a spirit, who wishes to act as your familiar.</p>
+            <p class = "indent">You learn the find familiar spell and can cast it without components or a spell slot. When you cast it in this way, your familiar ignores the restriction that prevents it from attacking. After you cast the spell with this feat, you can’t do so again until you finish a long rest.</p>
+            <p class = "indent">When you select this feat, choose one of the following familiar forms: bancho-gama, betobeto-kun, ko-inari, kawawappa, or ochimusha-kozo*. You can summon your familiar in the chosen form or one of those listed in the spell’s description. When you summon your familiar in the chosen form, it gains temporary hit points equal to your level, and the 1st-level improvement on its Improvement Tree. When you reach 5th level, these temporary hit points are doubled, and you can also grant it one of the 3rd-level improvements on its Improvement Tree.</p>
+        </description>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_FIND_FAMILIAR"/>
+            <select type = "Feat Feature" name = "Familiar/Yokai" supports = "Familiar Choice"/>
+        </rules>
+    </element>
+    <element name = "Familiar" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED_FAMILIAR">
+        <compendium display = "false"/>
+        <supports>Familiar Choice</supports>
+        <description>
+            <p>You may choose one of the normal familiars from the Find Familiar spell.</p>
+        </description>
+        <rules>
+            <select type = "Companion" name = "Spirit Bonded Companion" supports = "Familiar"/>
+        </rules>
+    </element>
+    <element name = "Yokai" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED_YOKAI">
+        <compendium display = "false"/>
+        <supports>Familiar Choice</supports>
+        <description>
+            <p>You may choose one of the alternate familiars from the Ryoko's Guide to the Yokai Realms sourcebook.</p>
+        </description>
+        <rules>
+            <select type = "Companion" name = "Spirit Bonded Companion" supports = "Yokai Familiar"/>
+        </rules>
     </element>
 </elements>
