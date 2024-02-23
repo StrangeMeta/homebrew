@@ -1671,7 +1671,7 @@
             <p>You may choose one of the alternate familiars from the Ryoko's Guide to the Yokai Realms sourcebook.</p>
         </description>
         <rules>
-            <select type = "Companion" name = "Spirit Bonded Companion" supports = "Yokai Familiar"/>
+            <select type = "Companion Feature" name = "Spirit Bonded Companion" supports = "Yokai Familiar"/>
         </rules>
     </element>
 </elements>
