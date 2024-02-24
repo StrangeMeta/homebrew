@@ -1640,38 +1640,506 @@
         </sheet>
     </element>
 
-    <element name = "Spirit Bonded" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED">
-        <description>
-            <p>You have formed a friendship with a spirit, who wishes to act as your familiar.</p>
-            <p class = "indent">You learn the find familiar spell and can cast it without components or a spell slot. When you cast it in this way, your familiar ignores the restriction that prevents it from attacking. After you cast the spell with this feat, you can’t do so again until you finish a long rest.</p>
-            <p class = "indent">When you select this feat, choose one of the following familiar forms: bancho-gama, betobeto-kun, ko-inari, kawawappa, or ochimusha-kozo*. You can summon your familiar in the chosen form or one of those listed in the spell’s description. When you summon your familiar in the chosen form, it gains temporary hit points equal to your level, and the 1st-level improvement on its Improvement Tree. When you reach 5th level, these temporary hit points are doubled, and you can also grant it one of the 3rd-level improvements on its Improvement Tree.</p>
+	<element name = "Spirit Bonded" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED">
+		<description>
+			<p>You have formed a friendship with a spirit, who wishes to act as your familiar.</p>
+			<p class = "indent">You learn the find familiar spell and can cast it without components or a spell slot. When you cast it in this way, your familiar ignores the restriction that prevents it from attacking. After you cast the spell with this feat, you can’t do so again until you finish a long rest.</p>
+			<p class = "indent">When you select this feat, choose one of the following familiar forms: bancho-gama, betobeto-kun, ko-inari, kawawappa, or ochimusha-kozo*. You can summon your familiar in the chosen form or one of those listed in the spell’s description. When you summon your familiar in the chosen form, it gains temporary hit points equal to your level, and the 1st-level improvement on its Improvement Tree. When you reach 5th level, these temporary hit points are doubled, and you can also grant it one of the 3rd-level improvements on its Improvement Tree.</p>
+			<div class = "reference">
+				<div element = "ID_PHB_SPELL_FIND_FAMILIAR" />
+			</div>
+		</description>
+		<sheet usage = "1/Long Rest">
+			<description>You can cast the find familiar spell without components or a spell slot. When you cast it in this way, your familiar ignores the restriction that prevents it from attacking and it gains {{spirit bonded:temp hp}} temporary hit points.</description>
+		</sheet>
+		<rules>
+			<stat name = "spirit bonded:temp hp:base" value = "level" />
+			<stat name = "spirit bonded:temp hp:base" value = "level" level = "5" />
+			<stat name = "spirit bonded:temp hp" value = "spirit bonded:temp hp:base" bonus = "base" />
+			<select type = "Feat Feature" name = "Familiar Type (Spirit Bonded)" supports = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_SPELL_FAMILIAR|ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_YOKAI_FAMILIAR"/> <!-- decided to keep the split between the normal familiars and yokai, to make it simpler with additional features later -->
+		</rules>
+	</element>
+	<element name = "Spell Familiar" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_SPELL_FAMILIAR">
+		<compendium display = "false"/>
+		<description>
+			<p>You can choose a familiar from the ones listed in the <i>find familiar</i> spell.</p>
+			<div class = "reference">
+				<div element = "ID_PHB_SPELL_FIND_FAMILIAR" />
+			</div>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Familiar (Spirit Bonded)" supports = "Familiar" />
+		</rules>
+	</element>
+	<element name = "Yokai Familiar" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_YOKAI_FAMILIAR">
+		<compendium display = "false"/>
+		<description>
+			<p>You can choose one of the following familiars: bancho-gama, betobeto-kun, ko-inari, kawawappa, or ochimusha-kozo.</p>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Feat Feature" name = "Familiar (Spirit Bonded)" supports = "Yokai Familiar"/>
+		</rules>
+	</element>
+
+	<!-- Bancho-Gama -->
+	<element name = "Bancho-Gama" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA">
+		<compendium display = "false"/>
+		<supports>Yokai Familiar</supports>
+		<description>
+			<div class = "reference">
+				<div element = "ID_RGTTYR_INFORMATION_BANCHOGAMA"/>
+			</div>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<select type = "Companion" name = "Bancho-Gama (Spirit Bonded)" supports = "Spirit Bonded Bancho-Gama" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BANCHOGAMA" requirements = "![level:5]"/>
+			<select type = "Feat Feature" name = "Bancho-Gama (Spirit Bonded)" supports = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA_SHINOBI|ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING" level = "5"/>
+		</rules>
+	</element>
+	<element name = "Shinobi I" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA_SHINOBI">
+		<compendium display = "false"/>
+		<description>
+			<p>The bancho-gama learns techniques to sneak up on its enemies. It gains proficiency in the Stealth skill, as well as climbing and swimming speeds equal to its walking speed.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<select type = "Companion" name = "Bancho-Gama (Spirit Bonded)" supports = "Spirit Bonded Bancho-Gama" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BANCHOGAMA_SHINOBI"/>
+		</rules>
+	</element>
+	<element name = "Tongue Swing" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING">
+		<compendium display = "false"/>
+		<description>
+			<p>As a bonus action, the bancho-gama can extend its tongue, affix it to a point on a surface within 30 feet of itself, and move to that point. The bancho-gama’s tongue detaches after it moves, and it falls if it’s not standing on a surface capable of supporting it.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<select type = "Companion" name = "Bancho-Gama (Spirit Bonded)" supports = "Spirit Bonded Bancho-Gama" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING"/>
+		</rules>
+	</element>
+
+	<!-- Base Bancho-Gama -->
+	<element name = "Bancho-Gama" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BANCHOGAMA">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Bancho-Gama</supports>
+		<requirements>![level:5]</requirements>
+		<setters>
+			<set name = "size">Small</set>
+			<set name = "type">Monstrosity</set>
+			<set name = "alignment">Lawful Neutral</set>
+			<set name = "ac">12</set>
+			<set name = "hp">4 (1d6 + 1)</set>
+			<set name = "speed">30 ft.</set>
+			<set name = "strength">10</set>
+			<set name = "dexterity">15</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">8</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">14</set>
+			<set name = "skills">Intimidation +4</set>
+			<set name = "senses">passive Perception 10</set>
+			<set name = "languages">Common</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_STANDING_LEAP, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_SUPERIORITY_COMPLEX, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_GROWTH</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER</set>
+		</setters>
+		<rules>
+			<stat name = "ac" value = "12"/>
+			<stat name = "companion:hp:max" value = "4" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Amphibious" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_AMPHIBIOUS">
+		<compendium display = "false"/>
+		<description>
+			<p>The bancho-gama can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The bancho-gama can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name = "Standing Leap" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_STANDING_LEAP">
+		<compendium display = "false"/>
+		<description>
+			<p>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</p>
+		</description>
+		<sheet>
+			<description>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</description>
+		</sheet>
+	</element>
+	<element name = "Superiority Complex" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_SUPERIORITY_COMPLEX">
+		<compendium display = "false"/>
+		<description>
+			<p>The bancho-gama can’t take the Help action.</p>
+		</description>
+		<sheet>
+			<description>The bancho-gama can’t take the Help action.</description>
+		</sheet>
+	</element>
+	<element name = "Growth I" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_GROWTH">
+		<compendium display = "false"/>
+		<description>
+			<p>The bancho-gama’s size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice).</p>
+		</description>
+		<sheet>
+			<description>The bancho-gama’s size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice).</description>
+		</sheet>
+	</element>
+	<element name = "Dagger" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER">
+		<compendium display = "false"/>
+		<description>
+			<p>Melee or Ranged Weapon Attack: +4 to hit, reach 5ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee or Ranged Weapon Attack: +4 to hit, reach 5ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+
+	<!-- 5th level Bancho-Gama Variants -->
+	<element name = "Bancho-Gama" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BANCHOGAMA_SHINOBI">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Bancho-Gama</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA_SHINOBI</requirements>
+		<setters>
+			<set name = "size">Small</set>
+			<set name = "type">Monstrosity</set>
+			<set name = "alignment">Lawful Neutral</set>
+			<set name = "ac">12</set>
+			<set name = "hp">4 (1d6 + 1)</set>
+			<set name = "speed">30 ft.</set>
+			<set name = "strength">10</set>
+			<set name = "dexterity">15</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">8</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">14</set>
+			<set name = "skills">Intimidation +4, Stealth +4</set>
+			<set name = "senses">passive Perception 10</set>
+			<set name = "languages">Common</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_STANDING_LEAP, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_SUPERIORITY_COMPLEX, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_GROWTH, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_SHINOBI</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER</set>
+		</setters>
+		<rules>
+			<stat name = "ac" value = "12"/>
+			<stat name = "companion:hp:max" value = "4" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:speed:climb" value = "companion:speed" bonus = "base"/>
+			<stat name = "companion:speed:swim" value = "companion:speed" bonus = "base"/>
+			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Shinobi I" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_SHINOBI">
+		<compendium display = "false"/>
+		<description>
+			<p>The bancho-gama learns techniques to sneak up on its enemies. It gains proficiency in the Stealth skill, as well as climbing and swimming speeds equal to its walking speed.</p>
+		</description>
+		<sheet>
+			<description>The bancho-gama learns techniques to sneak up on its enemies. It gains proficiency in the Stealth skill, as well as climbing and swimming speeds equal to its walking speed.</description>
+		</sheet>
+	</element>
+	<element name = "Bancho-Gama" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Bancho-Gama</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING</requirements>
+		<setters>
+			<set name = "size">Small</set>
+			<set name = "type">Monstrosity</set>
+			<set name = "alignment">Lawful Neutral</set>
+			<set name = "ac">12</set>
+			<set name = "hp">4 (1d6 + 1)</set>
+			<set name = "speed">30 ft.</set>
+			<set name = "strength">10</set>
+			<set name = "dexterity">15</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">8</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">14</set>
+			<set name = "skills">Intimidation +4</set>
+			<set name = "senses">passive Perception 10</set>
+			<set name = "languages">Common</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_STANDING_LEAP, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_SUPERIORITY_COMPLEX, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BANCHOGAMA_GROWTH</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER, ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING</set>
+		</setters>
+		<rules>
+			<stat name = "ac" value = "12"/>
+			<stat name = "companion:hp:max" value = "4" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Tongue Swing" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING">
+		<compendium display = "false"/>
+		<description>
+			<p>As a bonus action, the bancho-gama can extend its tongue, affix it to a point on a surface within 30 feet of itself, and move to that point. The bancho-gama’s tongue detaches after it moves, and it falls if it’s not standing on a surface capable of supporting it.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, the bancho-gama can extend its tongue, affix it to a point on a surface within 30 feet of itself, and move to that point. The bancho-gama’s tongue detaches after it moves, and it falls if it’s not standing on a surface capable of supporting it.</description>
+		</sheet>
+	</element>
+
+	<element name = "Bancho-Gama" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_BANCHOGAMA">
+		<description>
+			<p style = "margin-bottom:-5px"><em>Tiny Monstrosity, Lawful Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 3 (1d4+1)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>15 (+2)</td><td>13 (+1)</td><td>8 (-1)</td><td>10 (+0)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Intimidation +4</li>
+				<li><strong>Senses</strong> passive Perception 10</li>
+				<li><strong>Languages</strong> Common</li>
+				<li><strong>Challenge</strong> 1/8</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Amphibious.</em></strong> The bancho-gama can breathe air and water.</li>
+				<p></p>
+				<li><strong><em>Standing Leap.</em></strong> The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</li>
+				<p></p>
+				<li><strong><em>Superiority Complex</em></strong> The bancho-gama can’t take the Help action.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Dagger.</em></strong> Melee or Ranged Weapon Attack: +4 to hit, reach 5ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<!-- Betobeto-Kun -->
+	<element name = "Betobeto-Kun" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN">
+		<compendium display = "false"/>
+		<supports>Yokai Familiar</supports>
+		<description>
+			<div class = "reference">
+				<div element = "ID_RGTTYR_INFORMATION_BETOBETOKUN" /> <!-- we generally use Information type element to create nice-looking stat-blocks that can be referenced within the elements, you can find it at the end of the file -->
+			</div>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Betobeto-kun (Spirit Bonded)" supports = "Spirit Bonded Betobeto-kun" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BETOBETOKUN" requirements = "![level:5]"/> <!-- grants the base Yokai, then once you gain 5th level removes it -->
+			<select type = "Feat Feature" name = "Betobeto-Kun Trait (Spirit Bonded)" supports = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR|ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH" level = "5" /> <!-- allows the selection of the new Trait, but actually serves as a way to select new version of Yokai -->
+		</rules>
+	</element>
+	<element name = "Shadow Armor I" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR">
+		<compendium display = "false"/>
+		<description>
+			<p>While in dim light or darkness and not wearing any armour, the betobeto-kun gains a +2 bonus to AC.</p>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Betobeto-kun (Spirit Bonded)" supports = "Spirit Bonded Betobeto-kun" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR" />
+		</rules>
+	</element>
+	<element name = "Shadow Stealth I" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH">
+		<compendium display = "false"/>
+		<description>
+			<p>While in dim light or darkness, the betobeto-kun can take the Hide action as a bonus action.</p>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Betobeto-kun (Spirit Bonded)" supports = "Spirit Bonded Betobeto-kun" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH" />
+		</rules>
+	</element>
+
+	<!-- Base Betobeto-Kun -->
+	<element name = "Betobeto-Kun" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BETOBETOKUN">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Betobeto-kun</supports>
+		<requirements>![level:5]</requirements> <!-- this shouldn't be needed, but i'm pretty sure there can be bugs if you don't force such a requirements, so better to be safe than sorry -->
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">Chaotic Neutral</set>
+			<set name = "ac">12</set>
+			<set name = "hp">3 (1d4+1)</set>
+			<set name = "speed">30 ft.</set>
+			<set name = "strength">18</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">7</set>
+			<set name = "wisdom">11</set>
+			<set name = "charisma">14</set>
+			<set name = "skills">Stealth +4</set>
+			<set name = "conditionImmunities">frightened</set>
+			<set name = "senses">darkvision 60ft., passive Perception 10</set>
+			<set name = "languages">understands Common but can't speak</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_IMPATIENT, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_JUMPSCARE_1</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN</set>
+		</setters>
+		<rules>
+			<stat name = "ac" value = "12"/>
+			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Impatient" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_IMPATIENT">
+		<compendium display = "false"/>
+		<description>
+            <p>The betobeto-kun can't take the ready action.</p>
+		</description>
+		<sheet>
+			<description>The betobeto-kun can't take the ready action.</description>
+		</sheet>
+	</element>
+	<element name = "Jumpscare" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_JUMPSCARE_1">
+		<compendium display = "false"/>
+		<description>
+            <p>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw.</p>
+			<p class = "indent">In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 2d6 temporary hit points, which last for 1 minute. When the betobeto-kun’s tamer reaches 5th level, these temporary hit points increase to 3d6.</p>
+		</description>
+		<sheet>
+			<description>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw. &#13;
+			In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 2d6 temporary hit points, which last for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name = "Frighten" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN">
+		<compendium display = "false"/>
+		<description>
+			<p>The betobeto-kun attempts to scare a creature within 5 feet of it by making a sudden movement and a loud noise. The creature must succeed on a DC 12 Wisdom saving throw or take 4 (1d8) psychic damage. If the creature rolls a 1 on the saving throw and fails it, it’s also frightened of the betobeto-kun until the end of the betobeto-kun’s next turn.</p>
+		</description>
+		<sheet>
+			<description>The betobeto-kun attempts to scare a creature within 5 feet of it by making a sudden movement and a loud noise. The creature must succeed on a DC 12 Wisdom saving throw or take 4 (1d8) psychic damage. If the creature rolls a 1 on the saving throw and fails it, it’s also frightened of the betobeto-kun until the end of the betobeto-kun’s next turn.</description>
+		</sheet>
+	</element>
+
+	<!-- 5th level Betobeto-Kun Variants -->
+	<element name = "Jumpscare" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_JUMPSCARE_2"> <!-- second version of Jumpscare with level 5 buff applied -->
+		<compendium display = "false"/>
+		<description>
+            <p>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw.</p>
+			<p class = "indent">In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 2d6 temporary hit points, which last for 1 minute. When the betobeto-kun’s tamer reaches 5th level, these temporary hit points increase to 3d6.</p>
+		</description>
+		<sheet>
+			<description>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw. &#13;
+			In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 3d6 temporary hit points, which last for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name = "Betobeto-Kun" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Betobeto-kun</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR</requirements>
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">Chaotic Neutral</set>
+			<set name = "ac">12</set>
+			<set name = "hp">3 (1d4+1)</set>
+			<set name = "speed">30 ft.</set>
+			<set name = "strength">18</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">7</set>
+			<set name = "wisdom">11</set>
+			<set name = "charisma">14</set>
+			<set name = "skills">Stealth +4</set>
+			<set name = "conditionImmunities">frightened</set>
+			<set name = "senses">darkvision 60ft., passive Perception 10</set>
+			<set name = "languages">understands Common but can't speak</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_IMPATIENT, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_JUMPSCARE_2, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN</set>
+		</setters>
+		<rules>
+			<stat name = "ac" value = "12"/>
+			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Shadow Armor I" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_SHADOW_ARMOR">
+		<compendium display = "false"/>
+		<description>
+            <p>While in dim light or darkness and not wearing any armour, the betobeto-kun gains a +2 bonus to AC.</p>
         </description>
-        <sheet>
-            <description>You have formed a friendship with a spirit, who wishes to act as your familiar. You learn the find familiar spell and can cast it without components or a spell slot. When you cast it in this way, your familiar ignores the restriction that prevents it from attacking. After you cast the spell with this feat, you can’t do so again until you finish a long rest. When you select this feat, choose one of the following familiar forms: bancho-gama, betobeto-kun, ko-inari, kawawappa, or ochimusha-kozo*. You can summon your familiar in the chosen form or one of those listed in the spell’s description. When you summon your familiar in the chosen form, it gains temporary hit points equal to your level, and the 1st-level improvement on its Improvement Tree. When you reach 5th level, these temporary hit points are doubled, and you can also grant it one of the 3rd-level improvements on its Improvement Tree.</description>
-        </sheet>
-        <rules>
-            <grant type = "Spell" id = "ID_PHB_SPELL_FIND_FAMILIAR"/>
-            <select type = "Feat Feature" name = "Familiar/Yokai" supports = "Familiar Choice"/>
-        </rules>
+		<sheet>
+			<description>While in dim light or darkness and not wearing any armour, the betobeto-kun gains a +2 bonus to AC.</description>
+		</sheet>
     </element>
-    <element name = "Familiar" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED_FAMILIAR">
-        <compendium display = "false"/>
-        <supports>Familiar Choice</supports>
-        <description>
-            <p>You may choose one of the normal familiars from the Find Familiar spell.</p>
+
+	<element name = "Betobeto-Kun" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Betobeto-kun</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH</requirements>
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">Chaotic Neutral</set>
+			<set name = "ac">12</set>
+			<set name = "hp">3 (1d4+1)</set>
+			<set name = "speed">30 ft.</set>
+			<set name = "strength">18</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">7</set>
+			<set name = "wisdom">11</set>
+			<set name = "charisma">14</set>
+			<set name = "skills">Stealth +4</set>
+			<set name = "conditionImmunities">frightened</set>
+			<set name = "senses">darkvision 60ft., passive Perception 10</set>
+			<set name = "languages">understands Common but can't speak</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_IMPATIENT, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_JUMPSCARE_2, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN</set>
+		</setters>
+		<rules>
+			<stat name = "ac" value = "12"/>
+			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Shadow Stealth I" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_BETOBETOKUN_SHADOW_STEALTH">
+		<compendium display = "false"/>
+		<description>
+            <p>While in dim light or darkness, the betobeto-kun can take the Hide action as a bonus action.</p>
         </description>
-        <rules>
-            <select type = "Companion" name = "Spirit Bonded Companion" supports = "Familiar"/>
-        </rules>
+		<sheet>
+			<description>While in dim light or darkness, the betobeto-kun can take the Hide action as a bonus action.</description>
+		</sheet>
     </element>
-    <element name = "Yokai" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_SPIRIT_BONDED_YOKAI">
-        <compendium display = "false"/>
-        <supports>Familiar Choice</supports>
-        <description>
-            <p>You may choose one of the alternate familiars from the Ryoko's Guide to the Yokai Realms sourcebook.</p>
-        </description>
-        <rules>
-            <select type = "Companion Feature" name = "Spirit Bonded Companion" supports = "Yokai Familiar"/>
-        </rules>
-    </element>
+
+	<element name = "Betobeto-Kun" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_BETOBETOKUN">
+		<description>
+			<p style = "margin-bottom:-5px"><em>Tiny Fey, Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 3 (1d4+1)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>8 (-1)</td><td>14 (+2)</td><td>13 (+1)</td><td>7 (-2)</td><td>11 (+0)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Stealth +4</li>
+				<li><strong>Condition Immunities</strong> frightened</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> understands Common but can't speak</li>
+				<li><strong>Challenge</strong> 1/8</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Impatient.</em></strong> The betobeto-kun can't take the ready action.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Frighten.</em></strong> The betobeto-kun attempts to scare a creature within 5 feet of it by making a sudden movement and a loud noise. The creature must succeed on a DC 12 Wisdom saving throw or take 4 (1d8) psychic damage. If the creature rolls a 1 on the saving throw and fails it, it’s also frightened of the betobeto-kun until the end of the betobeto-kun’s next turn.</li>
+			</ul>
+		</description>
+	</element>
 </elements>
