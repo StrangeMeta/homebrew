@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Homebrew Magic Items</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "homebrew-magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-magic-items.xml"/>
         </update>
     </info>
@@ -36,6 +36,41 @@ This canesword was presented to his Majesty High Arcohn Leidathus The 3rd over 1
 			<set name = "name-format">Royal Canesword</set>
 			<set name = "slot">onehand</set>
 			<set name = "damage" type = "slashing">1d8</set>
+		</setters>
+	</element>
+	<element name = "Frost-Bitten Longsword" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_FROST_BITTTEN_LONGSWORD">
+		<description>
+			<p>Frost-Bitten Longsword
+
+This longsword steams continuously as it rapidly cools the air around its mirror-polished blade. When you hit an attack with this weapon, you deal 1d4 Cold Damage in addition to your usual damage. This increases to 1d8 on a Critical Hit.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Weapons</set>
+			<set name = "type" addition = "longsword">Weapon</set>
+			<set name = "rarity">Uncommon</set>
+			<set name = "attunement">false</set>
+			<set name = "weapon">Longsword</set>
+			<set name = "name-format">Frost-Bitten Longsword</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "slashing">1d8</set>
+			<set name = "versatile">1d10</set>
+		</setters>
+	</element>
+	<element name = "Blink Kunai" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_BLINK_KUNAI">
+		<description>
+			<p>Blink Kunai
+
+This throwing knife comes in sets of five, and seems to have edges so sharply honed that it is unclear where they end and the surrounding air begins. Each knife deals damage as a thrown dagger, and contains one charge (1/long rest), which can be expended as a bonus action to teleport the wielder to its location. This teleportation is limited to a range of 90ft, and must target a knife in direct line of sight.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Weapons</set>
+			<set name = "type" addition = "dagger">Weapon</set>
+			<set name = "rarity">Uncommon</set>
+			<set name = "attunement">false</set>
+			<set name = "weapon">Dagger</set>
+			<set name = "name-format">Blink Kunai</set>
+			<set name = "slot">onehand</set>
+			<set name = "damage" type = "piercing">1d4</set>
 		</setters>
 	</element>
 </elements>
