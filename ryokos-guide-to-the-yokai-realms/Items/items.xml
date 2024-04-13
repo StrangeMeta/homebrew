@@ -53,7 +53,7 @@
 	</element>
 
     <element name = "Nunchaku" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_NUNCHAKU">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINSESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
         <description>
             <p>Nunchaku are martial melee weapons composed of two hard batons connected to one another by a short chain or tether. They deal 1d6 bludgeoning damage on a hit, count as monk weapons, and have the Finesse, Versatile (1d8), and Special: Flourish properties.</p>
             <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU"/>
@@ -76,7 +76,7 @@
     </element>
     <element name = "Weapon Proficency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_NUNCHAKU">
         <compendium display = "false"/>
-        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINSESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -84,9 +84,44 @@
         </rules>
     </append>
 
-    <element name = "Weapon Property (Scourge)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
+    <element name = "Tessen" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_TESSEN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+        <description>
+            <p>Tessen are martial melee weapons consisting of folding fans reinforced with wood or metal. The edges contain razor-sharp blades, but they can also be used as bludgeoning weapons when closed. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Adaptable (bludgeoning), Finesse, and Light properties. They also have the Special: Fan Shield property.</p>
+            <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN"/>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">2</set>
+            <set name = "weight" lb = "1">-</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "bludgeoning, slashing">1d4</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_TESSEN</set>
+        </setters>
+    </element>
+    <element name = "Special (Tessen)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN">
+        <compendium display = "false"/>
+        <description>
+            <p class = "indent"><strong>Special: Fan Shield</strong>When you are hit by an attack made with a projectile that weighs less than 2 pounds, such as a thrown dagger, dart, arrow, or bullet, while holding this weapon, you can use your reaction to open the tessen and attempt to deflect the projectile. You gain a +2 bonus to AC against the triggering attack, potentially causing it to miss.</p>
+        </description>
+    </element>
+    <element name = "Weapon Proficiency (Tessen)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_TESSEN">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_TESSEN"/>
+        </rules>
+    </append>
+
+    <element name = "adaptable" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE">
         <compendium display = "false"/>
     </element>
+    <element name = "scourge" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
+        <compendium display = "false"/>
+    </element>
+
     <element name = "Kensei Weapon (Nunchaku)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_NUNCHAKU">
 		<compendium display = "false" />
 		<supports>Kensei Weapon, Melee</supports>

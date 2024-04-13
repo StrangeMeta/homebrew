@@ -187,7 +187,7 @@
                 <li>If you move at least 10 feet in a straight line towards a creature and are within reach of it, you can immediately use a bonus action to attempt a charging slam against that creature. Make a Strength (Athletics) check, contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). Whoever loses the contest falls prone. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet usage = "{{proficiency}}/Short Rest">
             <description>Your speed increases by 10 feet. If you move at least 10 feet in a straight line towards a creature and are within reach of it, you can immediately use a bonus action to attempt a charging slam against that creature. Make a Strength (Athletics) check, contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). Whoever loses the contest falls prone. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
         </sheet>
         <rules>
@@ -1471,6 +1471,8 @@
     </element>
     
     <element name = "Martial Initiate" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MARTIAL_INITIATE">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
         <description>
             <p>You have studied extensively in the art of combat, honing your skill with a favoured weapon. You gain the following benefits:</p>
             <ul>
@@ -1645,7 +1647,8 @@
 			<p>You have formed a friendship with a spirit, who wishes to act as your familiar.</p>
 			<p class = "indent">You learn the find familiar spell and can cast it without components or a spell slot. When you cast it in this way, your familiar ignores the restriction that prevents it from attacking. After you cast the spell with this feat, you can’t do so again until you finish a long rest.</p>
 			<p class = "indent">When you select this feat, choose one of the following familiar forms: bancho-gama, betobeto-kun, ko-inari, kawawappa, or ochimusha-kozo*. You can summon your familiar in the chosen form or one of those listed in the spell’s description. When you summon your familiar in the chosen form, it gains temporary hit points equal to your level, and the 1st-level improvement on its Improvement Tree. When you reach 5th level, these temporary hit points are doubled, and you can also grant it one of the 3rd-level improvements on its Improvement Tree.</p>
-			<div class = "reference">
+			<br/><p class = "indent">Ochimusha-kozo not yet released.</p>
+            <div class = "reference">
 				<div element = "ID_PHB_SPELL_FIND_FAMILIAR" />
 			</div>
 		</description>
@@ -1745,7 +1748,7 @@
 			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER</set>
 		</setters>
 		<rules>
-			<stat name = "ac" value = "12"/>
+			<stat name = "companion:ac" value = "12"/>
 			<stat name = "companion:hp:max" value = "4" bonus = "base"/>
 			<stat name = "companion:speed" value = "30" bonus = "base"/>
 			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
@@ -1823,7 +1826,7 @@
 			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER</set>
 		</setters>
 		<rules>
-			<stat name = "ac" value = "12"/>
+			<stat name = "companion:ac" value = "12"/>
 			<stat name = "companion:hp:max" value = "4" bonus = "base"/>
 			<stat name = "companion:speed" value = "30" bonus = "base"/>
 			<stat name = "companion:speed:climb" value = "companion:speed" bonus = "base"/>
@@ -1866,7 +1869,7 @@
 			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_DAGGER, ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BANCHOGAMA_TONGUE_SWING</set>
 		</setters>
 		<rules>
-			<stat name = "ac" value = "12"/>
+			<stat name = "companion:ac" value = "12"/>
 			<stat name = "companion:hp:max" value = "4" bonus = "base"/>
 			<stat name = "companion:speed" value = "30" bonus = "base"/>
 			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
@@ -1979,7 +1982,7 @@
 			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN</set>
 		</setters>
 		<rules>
-			<stat name = "ac" value = "12"/>
+			<stat name = "companion:ac" value = "12"/>
 			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
 			<stat name = "companion:speed" value = "30" bonus = "base"/>
 			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
@@ -2054,7 +2057,7 @@
 			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN</set>
 		</setters>
 		<rules>
-			<stat name = "ac" value = "12"/>
+			<stat name = "companion:ac" value = "12"/>
 			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
 			<stat name = "companion:speed" value = "30" bonus = "base"/>
 			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
@@ -2096,7 +2099,7 @@
 			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_BETOBETOKUN_FRIGHTEN</set>
 		</setters>
 		<rules>
-			<stat name = "ac" value = "12"/>
+			<stat name = "companion:ac" value = "12"/>
 			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
 			<stat name = "companion:speed" value = "30" bonus = "base"/>
 			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
@@ -2142,4 +2145,306 @@
 			</ul>
 		</description>
 	</element>
+
+    <!-- Kawawappa -->
+	<element name = "Kawawappa" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA">
+		<compendium display = "false"/>
+		<supports>Yokai Familiar</supports>
+		<description>
+			<div class = "reference">
+				<div element = "ID_RGTTYR_INFORMATION_KAWAWAPPA" /> <!-- we generally use Information type element to create nice-looking stat-blocks that can be referenced within the elements, you can find it at the end of the file -->
+			</div>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Kawawappa (Spirit Bonded)" supports = "Spirit Bonded Kawawappa" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA" requirements = "![level:5]"/> <!-- grants the base Yokai, then once you gain 5th level removes it -->
+			<select type = "Feat Feature" name = "Kawawappa Trait (Spirit Bonded)" supports = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT|ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA_SHELL" level = "5" /> <!-- allows the selection of the new Trait, but actually serves as a way to select new version of Yokai -->
+		</rules>
+	</element>
+	<element name = "Underwater Combatant" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT">
+		<compendium display = "false"/>
+		<description>
+			<p>While underwater, the kawawappa gain the following benefits:</p>
+            <ul>
+                <li>It has advantage on ability checks made to grapple creatures or to avoid or escape being grappled.</li>
+                <li>It can take the Dash or Disengage action as a bonus action.</li>
+            </ul>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Kawawappa (Spirit Bonded)" supports = "Spirit Bonded Kawawappa" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT" />
+		</rules>
+	</element>
+	<element name = "Shell I" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA_SHELL">
+		<compendium display = "false"/>
+		<description>
+			<p>As an action, the kawawappa can withdraw into its shell. Until it emerges, it gains a +2 bonus to AC and other creatures can’t benefit from advantage on attack rolls against it. While in its shell, the kawawappa is prone, its speed is reduced to 0 feet and can’t increase, it has disadvantage on Dexterity saving throws, and it can’t take actions or reactions other than a bonus action to emerge from its shell.</p>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<select type = "Companion" name = "Kawawappa (Spirit Bonded)" supports = "Spirit Bonded Kawawappa" default = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA_SHELL" />
+		</rules>
+	</element>
+
+	<!-- Base Kawawappa -->
+	<element name = "Kawawappa" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Kawawappa</supports>
+		<requirements>![level:5]</requirements> <!-- this shouldn't be needed, but i'm pretty sure there can be bugs if you don't force such a requirements, so better to be safe than sorry -->
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">Neutral Good</set>
+			<set name = "ac">13 (natural armour)</set>
+			<set name = "hp">3 (1d4+1)</set>
+			<set name = "speed">30 ft., swim 30 ft.</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">8</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">8</set>
+			<set name = "senses">darkvision 60ft., passive Perception 10</set>
+			<set name = "languages">Common</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_WATER_BOWL, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_VERSATILE</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_KAWAWAPPA_CLAW</set>
+		</setters>
+		<rules>
+			<stat name = "companion:ac" value = "13"/>
+			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+            <stat name = "companion:speed:swim" value = "30" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Amphibious" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_AMPHIBIOUS">
+		<compendium display = "false"/>
+		<description>
+            <p>The kawawappa can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The kawawappa can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name = "Water Bowl" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_WATER_BOWL">
+		<compendium display = "false"/>
+		<description>
+            <p>When the kawawappa is knocked prone, it must succeed on a DC 11 Dexterity saving throw or spill some of the water it keeps in its head, which disorients the kawawappa and gives it disadvantage on the next attack roll it makes before the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>When the kawawappa is knocked prone, it must succeed on a DC 11 Dexterity saving throw or spill some of the water it keeps in its head, which disorients the kawawappa and gives it disadvantage on the next attack roll it makes before the end of its next turn.</description>
+		</sheet>
+	</element>
+	<element name = "Versatile I" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_VERSATILE">
+		<compendium display = "false"/>
+		<description>
+            <p>The kawawappa gains proficiency in its tamer’s choice of one weapon, one skill, and one type of artisan’s tools.</p>
+		</description>
+		<sheet>
+			<description>The kawawappa gains proficiency in its tamer’s choice of one weapon, one skill, and one type of artisan’s tools.</description>
+		</sheet>
+	</element>
+	<element name = "Claw" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_KAWAWAPPA_CLAW">
+		<compendium display = "false"/>
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+
+	<!-- 5th level Betobeto-Kun Variants -->
+	<element name = "Kawawappa" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Kawawappa</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT</requirements>
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">Neutral Good</set>
+			<set name = "ac">13 (natural armour)</set>
+			<set name = "hp">3 (1d4+1)</set>
+			<set name = "speed">30 ft., swim 30 ft.</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">8</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">8</set>
+			<set name = "senses">darkvision 60ft., passive Perception 10</set>
+			<set name = "languages">Common</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_WATER_BOWL, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_VERSATILE, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_KAWAWAPPA_CLAW</set>
+		</setters>
+		<rules>
+			<stat name = "companion:ac" value = "13"/>
+			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+            <stat name = "companion:speed:swim" value = "30" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Underwater Combatant" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT">
+		<compendium display = "false"/>
+		<description>
+			<p>While underwater, the kawawappa gain the following benefits:</p>
+            <ul>
+                <li>It has advantage on ability checks made to grapple creatures or to avoid or escape being grappled.</li>
+                <li>It can take the Dash or Disengage action as a bonus action.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>While underwater, the kawawappa gain the following benefits: It has advantage on ability checks made to grapple creatures or to avoid or escape being grappled. It can take the Dash or Disengage action as a bonus action.</description>
+		</sheet>
+    </element>
+
+	<element name = "Kawawappa" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA_SHELL">
+		<compendium display = "false"/>
+		<supports>Spirit Bonded Kawawappa</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SPIRIT_BONDED_KAWAWAPPA_SHELL</requirements>
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">Neutral Good</set>
+			<set name = "ac">13 (natural armour)</set>
+			<set name = "hp">3 (1d4+1)</set>
+			<set name = "speed">30 ft., swim 30 ft.</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">8</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">8</set>
+			<set name = "senses">darkvision 60ft., passive Perception 10</set>
+			<set name = "languages">Common</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_WATER_BOWL, ID_RGTTYR_COMPANION_TRAIT_SPIRIT_BONDED_KAWAWAPPA_VERSATILE</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_KAWAWAPPA_CLAW, ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_KAWAWAPPA_SHELL</set>
+		</setters>
+		<rules>
+			<stat name = "companion:ac" value = "13"/>
+			<stat name = "companion:hp:max" value = "3" bonus = "base"/>
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+            <stat name = "companion:speed:swim" value = "30" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "Shell" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_SPIRIT_BONDED_KAWAWAPPA_SHELL">
+		<compendium display = "false"/>
+		<description>
+			<p>As an action, the kawawappa can withdraw into its shell. Until it emerges, it gains a +2 bonus to AC and other creatures can’t benefit from advantage on attack rolls against it. While in its shell, the kawawappa is prone, its speed is reduced to 0 feet and can’t increase, it has disadvantage on Dexterity saving throws, and it can’t take actions or reactions other than a bonus action to emerge from its shell.</p>
+		</description>
+		<sheet>
+			<description>As an action, the kawawappa can withdraw into its shell. Until it emerges, it gains a +2 bonus to AC and other creatures can’t benefit from advantage on attack rolls against it. While in its shell, the kawawappa is prone, its speed is reduced to 0 feet and can’t increase, it has disadvantage on Dexterity saving throws, and it can’t take actions or reactions other than a bonus action to emerge from its shell.</description>
+		</sheet>
+    </element>
+
+	<element name = "Kawawappa" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KAWAWAPPA">
+		<description>
+			<p style = "margin-bottom:-5px"><em>Tiny Fey, Neutral Good</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 13</li>
+				<li><strong>Hit Points</strong> 3 (1d4+1)</li>
+				<li><strong>Speed</strong> 30 ft., swim 30ft.</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>14 (+2)</td><td>13 (+1)</td><td>8 (-1)</td><td>10 (+0)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> Common</li>
+				<li><strong>Challenge</strong> 1/8</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Amphibious.</em></strong> The kawawappa can breathe air and water.</li>
+                <p></p>
+                <li><strong><em>Water Bowl.</em></strong> When the kawawappa is knocked prone, it must succeed on a DC 11 Dexterity saving throw or spill some of the water it keeps in its head, which disorients the kawawappa and gives it disadvantage on the next attack roll it makes before the end of its next turn.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</li>
+			</ul>
+		</description>
+	</element>
+
+
+    <element name = "Tengu Training" type = "Feat" source  = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_TENGU_TRAINING">
+        <description>
+            <p>The tutelage of a hanataka tengu, or countless hours of careful study of hanataka treatise on combat, has granted you the following benefits:</p>    
+            <ul>
+                <li>Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</li>
+                <li>You gain proficiency with one Finesse weapon of your choice.</li>
+                <li>As a reaction when a creature misses you with a melee attack while you are holding a Finesse weapon, you can make one weapon attack with that weapon against the creature. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "{{proficiency}}/Long Rest">
+            <description>As a reaction when a creature misses you with a melee attack while you are holding a Finesse weapon, you can make one weapon attack with that weapon against the creature.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Tengu Training (Ability Score Increase)" supports = "ID_RGTTYR_FEAT_TENGU_TRAINING_DEXTERITY|ID_RGTTYR_FEAT_TENGU_TRAINING_WISDOM"/>
+            <select type = "Proficiency" name = "Tengu Training (Finesse Weapon Proficiency)" supports = "ID_INTERNAL_WEAPON_PROPERTY_FINESSE"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_TENGU_TRAINING_DEXTERITY">
+        <compendium display = "false"/>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_TENGU_TRAINING_WISDOM">
+        <compendium display = "false"/>
+        <description>
+            <p>Your Wisdom score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Tessen Master" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_TESSEN_MASTER">
+        <prerequisite>Proficiency with a tessen</prerequisite>
+        <requirements>ID_RGTTYR_PROFICIENCY_TESSEN</requirements>
+        <description>
+            <p>You have learned to manipulate the tessen in new ways, using its pointed spokes as weapons and tossing it at your foes from a distance. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>For you, a tessen has the Adaptable (Piercing) and Thrown properties, with a short range of 20 feet and a long range of 60 feet.</li>
+                <li>While wielding a tessen, you gain a special reaction that you can take once during each round. This reaction can only be used to attempt to deflect a projectile with the tessen’s Special: Fan Shield property, and you can’t use it on the same turn that you take another reaction.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>For you, a tessen has the Adaptable (Piercing) and Thrown properties, with a short range of 20 feet and a long range of 60 feet. While wielding a tessen, you gain a special reaction that you can take once during each round. This reaction can only be used to attempt to deflect a projectile with the tessen’s Special: Fan Shield property, and you can’t use it on the same turn that you take another reaction.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Tessen Master" source = "Ryoko's Guide to the Yokai Realms" supports = "ID_RGTTYR_FEAT_TESSEN_MASTER_STRENGTH|ID_RGTTYR_FEAT_TESSEN_MASTER_DEXTERITY"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_TESSEN_MASTER_STRENGTH">
+        <compendium display = "false"/>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_TESSEN_MASTER_DEXTERITY">
+        <compendium display = "false"/>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
 </elements>
