@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tengu</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
         </update>
     </info>
@@ -50,7 +50,7 @@
             <select type = "Race Variant" name = "Tengu Variant" supports = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU|ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
         </rules>
     </element>
-    <element name = "Lethal Masters" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realm" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_LETHAL_MASTERS">
+    <element name = "Lethal Masters" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_LETHAL_MASTERS">
         <description>
             <p>You have proficiency with one simple or martial weapon of your choice.</p>
         </description>
