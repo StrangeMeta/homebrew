@@ -4,7 +4,7 @@
 		<name>Other</name>
 		<description>Unorganised homebrew content.</description>
 		<author>Strange_Meta and others.</author>
-		<update version = "0.0.1">
+		<update version = "0.0.2">
 			<file name = "other.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/other.index"/>
 		</update>
 	</info>
@@ -15,7 +15,6 @@
 		<file name = "homebrew-magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-magic-items.xml"/>
 		<file name = "homebrew-mounts-companions.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-mounts-companions.xml"/>
 		<file name = "homebrew-spell-effects.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-spell-effects.xml"/>
-		<file name = "homebrew-spell-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-spell-items.xml"/>
 		<file name = "homebrew-valdez.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-valdez.xml"/>
 		<file name = "homebrew-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-weapons.xml"/>
 		<file name = "homebrew-wild-metals.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-wild-metals.xml"/>
