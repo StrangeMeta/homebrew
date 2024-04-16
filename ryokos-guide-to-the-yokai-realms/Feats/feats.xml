@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Feats from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.1.1">
+        <update version = "0.1.2">
             <file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats.xml"/>
         </update>
     </info>
@@ -1551,25 +1551,301 @@
         </rules>
     </element>
     
-    <element name = "Multidisciplinary" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
-        <prerequisite>You are a multiclass character</prerequisite>
-        <requirements>ID_INTERNAL_GRANT_MULTICLASS</requirements>
-        <description>
-            <p>You are adept at pulling from different disciplines to employ a variety of tactics both in battle and outside it. When you take this feat, and each time you gain your 1st level in a new class, choose one of the following benefits:</p>
-            <ul>
-                <li>You gain proficiency in one skill and one type of artisan’s tools of your choice.</li>
-                <li>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</li>
-            </ul>
-            <p class = "indent"><br/><br/><i>Note: This feat will allow you to select any saving throw proficiency, not just the ones limited by your multiclassing. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
-            <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
-        </description>
-        <sheet display = "false"/>
-        <rules>
-            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Skill"/>
-            <select type = "Proficiency" name = "Skill/Tool, Multidisciplinary" supports = "Artisan tools"/>
-            <select type = "Proficiency" name = "Saving Throw, Multidisciplinary"  number = "6" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
-        </rules>
+    <element name  =  "Multidisciplinary" type  =  "Feat" source  =  "Ryoko's Guide to the Yokai Realms" id  =  "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
+		<prerequisite>You are a multiclass character</prerequisite>
+		<requirements>ID_INTERNAL_GRANT_MULTICLASS</requirements>
+		<description>
+		    <p>You are adept at pulling from different disciplines to employ a variety of tactics both in battle and outside it. When you take this feat, and each time you gain your 1st level in a new class, choose one of the following benefits:</p>
+		    <ul>
+				<li>You gain proficiency in one skill and one type of artisan’s tools of your choice.</li>
+				<li>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</li>
+		    </ul>
+		</description>
+		<sheet alt  =  "Multidisciplinary Feat"/>
+		<rules>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Artificer)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_ERLW_MULTICLASS_ARTIFICER|ID_WOTC_TCOE_MULTICLASS_ARTIFICER"/>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Barbarian)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_BARBARIAN"/>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Bard)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_BARD"/>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Cleric)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_CLERIC"/>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Druid)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_DRUID"/>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Fighter)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Monk)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_MONK"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Paladin)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_PALADIN"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Ranger)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_RANGER"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Rogue)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_ROGUE"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Sorcerer)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Warlock)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Wizard)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_WIZARD"/>
+			<!-- insert Tamer multiclass related select here -->
+		</rules>
+    </element>	
+	<element name = "Skill/Tool, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SKILLTOOL_MULTIDISCIPLINARY">
+		<supports>Multidisciplinary</supports>
+		<compendium display = "false" />
+		<description>
+			<p>You gain proficiency in one skill and one type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>    
+			<select type = "Proficiency" name = "Skill, Multidisciplinary" supports = "Skill"/>
+		    <select type = "Proficiency" name = "Tool, Multidisciplinary" supports = "Artisan tools"/>
+		</rules>
     </element>
+	<element name = "Skill/Tool, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SKILLTOOL_MULTIDISCIPLINARY_2">
+		<supports>Multidisciplinary</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SKILLTOOL_MULTIDISCIPLINARY</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You gain proficiency in one skill and one type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>    
+			<select type = "Proficiency" name = "Skill, Multidisciplinary 2" supports = "Skill"/>
+		    <select type = "Proficiency" name = "Tool, Multidisciplinary 2" supports = "Artisan tools"/>
+		</rules>
+    </element>
+	<element name = "Skill/Tool, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SKILLTOOL_MULTIDISCIPLINARY_3">
+		<supports>Multidisciplinary</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SKILLTOOL_MULTIDISCIPLINARY_2</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You gain proficiency in one skill and one type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>    
+			<select type = "Proficiency" name = "Skill, Multidisciplinary 3" supports = "Skill"/>
+		    <select type = "Proficiency" name = "Tool, Multidisciplinary 3" supports = "Artisan tools"/>
+		</rules>
+    </element>
+	<element name = "Saving Throw, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SAVING_THROW_MULTIDISCIPLINARY">
+		<supports>Multidisciplinary</supports>
+		<compendium display = "false" />
+		<description>
+			<p>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<select type = "Feat Feature" name = "Chosen Multiclass" supports = "Chosen Multiclass"/>
+		</rules>
+	</element>
+	<element name = "Saving Throw, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SAVING_THROW_MULTIDISCIPLINARY_2">
+		<supports>Multidisciplinary</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SAVING_THROW_MULTIDISCIPLINARY</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<select type = "Feat Feature" name = "Chosen Multiclass 2" supports = "Chosen Multiclass"/>
+		</rules>
+	</element>
+	<element name = "Saving Throw, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SAVING_THROW_MULTIDISCIPLINARY_3">
+		<supports>Multidisciplinary</supports>
+		<requirements>ID_RGTTYR_FEAT_FEATURE_SAVING_THROW_MULTIDISCIPLINARY_2</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<select type = "Feat Feature" name = "Chosen Multiclass 3" supports = "Chosen Multiclass"/>
+		</rules>
+	</element>
+
+	<element name = "Artificer multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_ARTIFICER_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_ERLW_MULTICLASS_ARTIFICER|ID_WOTC_TCOE_MULTICLASS_ARTIFICER</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Artificer.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_HALF"/>
+		</rules>
+	</element>
+	<element name = "Barbarian multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_BARBARIAN_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_BARBARIAN</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Barbarian.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF"/>
+		</rules>
+	</element>
+	<element name = "Bard multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_BARD_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_BARD</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Bard.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
+		</rules>
+	</element>
+	<element name = "Cleric multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_CLERIC_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_CLERIC</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Cleric.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF|ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF"/>
+		</rules>
+	</element>
+	<element name = "Druid multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_DRUID_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_DRUID</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Druid.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_HALF|ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF"/>
+		</rules>
+	</element>
+	<element name = "Fighter multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_FIGHTER_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_FIGHTER</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Fighter.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF"/>
+		</rules>
+	</element>
+	<element name = "Monk multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_MONK_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_MONK</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Monk.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_HALF|ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF"/>
+		</rules>
+	</element>
+	<element name = "Paladin multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_PALADIN_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_PALADIN</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Paladin.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
+		</rules>
+	</element>
+	<element name = "Ranger multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_RANGER_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_RANGER</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Ranger.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_HALF|ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF"/>
+		</rules>
+	</element>
+	<element name = "Rogue multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_ROGUE_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_ROGUE</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Rogue.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_HALF|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_HALF"/>
+		</rules>
+	</element>
+	<element name = "Sorcerer multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SORCERER_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_SORCERER</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Sorcerer.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
+		</rules>
+	</element>
+	<element name = "Warlock multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_WARLOCK_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_WARLOCK</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Warlock.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
+		</rules>
+	</element>
+	<element name = "Wizard multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_WIZARD_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_WOTC_PHB_MULTICLASS_WIZARD</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Wizard.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_HALF|ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF"/>
+		</rules>
+	</element>
+	<!-- these are needed since you add only half proficiency bonus-->
+	<element name = "Saving Throw Half Proficiency (Strength)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<rules>
+			<stat name = "strength:save:misc" value = "proficiency:half" alt = "Proficiency" />
+		</rules>
+	</element>
+	<element name = "Saving Throw Half Proficiency (Dexterity)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_HALF">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
+		<rules>
+			<stat name = "dexterity:save:misc" value = "proficiency:half" alt = "Proficiency" />
+		</rules>
+	</element>
+	<element name = "Saving Throw Half Proficiency (Constitution)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
+		<rules>
+			<stat name = "constitution:save:misc" value = "proficiency:half" alt = "Proficiency" />
+		</rules>
+	</element>
+	<element name = "Saving Throw Half Proficiency (Intelligence)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_HALF">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<rules>
+			<stat name = "intelligence:save:misc" value = "proficiency:half" alt = "Proficiency" />
+		</rules>
+	</element>
+	<element name = "Saving Throw Half Proficiency (Wisdom)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
+		<rules>
+			<stat name = "wisdom:save:misc" value = "proficiency:half" alt = "Proficiency" />
+		</rules>
+	</element>
+	<element name = "Saving Throw Half Proficiency (Charisma)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<rules>
+			<stat name = "charisma:save:misc" value = "proficiency:half" alt = "Proficiency" />
+		</rules>
+	</element>
 
     <element name = "Nunchaku Master" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_NUNCHAKU_MASTER">
         <prerequisite>Proficiency with nunchaku</prerequisite>
