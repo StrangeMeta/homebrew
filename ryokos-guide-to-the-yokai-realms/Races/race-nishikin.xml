@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Nishikin</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-nishikin.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-nishikin.xml"/>
         </update>
     </info>
@@ -48,7 +48,7 @@
 
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_AMPHIBIOUS"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_MOONBLESSED" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR"/>
             <grant type = "Grants" id = "ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_SLIPPERY" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_SLUMBERING_DRAGON" requirements = "!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
@@ -56,7 +56,6 @@
 
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_CLOUDSTEP" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_CLOUDSTEP" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_HEARTENING_BREATH" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_INNATE_MAGIC" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_RYUJIN_SUNBLESSED" requirements = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN"/>
@@ -118,6 +117,10 @@
         <rules>
             <stat inline = "true" name = "nishikin-colour" value = "Red"/>
             <stat inline = "true" name = "nishikin-colour:ability" value = "Strength"/>
+            
+            <stat inline = "true" name = "ryujin-colour" value = "Red"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Strength"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Sorcerer"/>
         </rules>
     </element>
     <element name = "Gold" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_GOLD">
@@ -132,6 +135,10 @@
         <rules>
             <stat inline = "true" name = "nishikin-colour" value = "Gold"/>
             <stat inline = "true" name = "nishikin-colour:ability" value = "Dexterity"/>
+            
+            <stat inline = "true" name = "ryujin-colour" value = "Gold"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Dexterity"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Druid"/>
         </rules>
     </element>
     <element name = "Black" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_BLACK">
@@ -146,6 +153,10 @@
         <rules>
             <stat inline = "true" name = "nishikin-colour" value = "Black"/>
             <stat inline = "true" name = "nishikin-colour:ability" value = "Constitution"/>
+            
+            <stat inline = "true" name = "ryujin-colour" value = "Black"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Constitution"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Warlock"/>
         </rules>
     </element>
     <element name = "Silver" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_SILVER">
@@ -160,6 +171,10 @@
         <rules>
             <stat inline = "true" name = "nishikin-colour" value = "Silver"/>
             <stat inline = "true" name = "nishikin-colour:ability" value = "Intelligence"/>
+            
+            <stat inline = "true" name = "ryujin-colour" value = "Silver"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Intelligence"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Wizard"/>
         </rules>
     </element>
     <element name = "White" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_WHITE">
@@ -174,6 +189,10 @@
         <rules>
             <stat inline = "true" name = "nishikin-colour" value = "White"/>
             <stat inline = "true" name = "nishikin-colour:ability" value = "Wisdom"/>
+            
+            <stat inline = "true" name = "ryujin-colour" value = "White"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Wisdom"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Cleric"/>
         </rules>
     </element>
     <element name = "Blue" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_BLUE">
@@ -188,6 +207,10 @@
         <rules>
             <stat inline = "true" name = "nishikin-colour" value = "Blue"/>
             <stat inline = "true" name = "nishikin-colour:ability" value = "Charisma"/>
+            
+            <stat inline = "true" name = "ryujin-colour" value = "Blue"/>
+            <stat inline = "true" name = "ryujin-colour:ability" value = "Charisma"/>
+            <stat inline = "true" name = "ryujin-colour:class" value = "Bard"/>
         </rules>
     </element>
 

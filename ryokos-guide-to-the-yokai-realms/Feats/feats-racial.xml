@@ -1,0 +1,94 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Racial feats from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "feats-racial.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats-racial.xml"/>
+        </update>
+    </info>
+
+    <!-- Racial Feats -->
+    <element name = "Adaptive Colouring" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING">
+        <prerequisite>Nishikin or Ryujin</prerequisite>
+        <requirements>ID_RGTTYR_RACE_NISHIKIN|ID_RGTTYR_RACE_RYUJIN</requirements>
+        <description>
+            <p>You are able to shift your colouration, a rare ability possessed by few of your kin, granting you the following benefits:</p>
+            <ul>
+                <li>You have advantage on Stealth checks to avoid being seen.</li>
+                <li>Choose one colour from your Nishikin Colour or Koi Dragon Colour trait when you select this feat. When you use your Slumbering Dragon or Heartening Breath trait, you can choose to empower ability checks, attack rolls, and saving throws associated with either your primary colouration or the one you chose with this feat.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>You have advantage on Stealth checks to avoid being seen.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Adaptive Colouring" supports = "Adaptive Colours"/>
+        </rules>
+    </element>
+    <element name = "Red" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING_RED">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_RED, !ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_RED</requirements>
+        <supports>Adaptive Colours</supports>
+        <description>
+            <p>You can shift your colour to red to empower attack rolls, ability checks, and saving throws that use your strength modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can shift your colour to red to empower attack rolls, ability checks, and saving throws that use your strength modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
+        </sheet>
+    </element>
+    <element name = "Gold" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING_GOLD">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_GOLD, !ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_GOLD</requirements>
+        <supports>Adaptive Colours</supports>
+        <description>
+            <p>You can shift your colour to gold to empower attack rolls, ability checks, and saving throws that use your dexterity modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can shift your colour to gold to empower attack rolls, ability checks, and saving throws that use your dexterity modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
+        </sheet>
+    </element>
+    <element name = "Black" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING_BLACK">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_BLACK, !ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_BLACK</requirements>
+        <supports>Adaptive Colours</supports>
+        <description>
+            <p>You can shift your colour to black to empower attack rolls, ability checks, and saving throws that use your constitution modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can shift your colour to black to empower attack rolls, ability checks, and saving throws that use your constitution modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
+        </sheet>
+    </element>
+    <element name = "Silver" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING_SILVER">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_SILVER, !ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_SILVER</requirements>
+        <supports>Adaptive Colours</supports>
+        <description>
+            <p>You can shift your colour to silver to empower attack rolls, ability checks, and saving throws that use your intelligence modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can shift your colour to silver to empower attack rolls, ability checks, and saving throws that use your intelligence modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
+        </sheet>
+    </element>
+    <element name = "White" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING_WHITE">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_WHITE, !ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_WHITE</requirements>
+        <supports>Adaptive Colours</supports>
+        <description>
+            <p>You can shift your colour to white to empower attack rolls, ability checks, and saving throws that use your wisdom modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can shift your colour to white to empower attack rolls, ability checks, and saving throws that use your wisdom modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
+        </sheet>
+    </element>
+    <element name = "Blue" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING_BLUE">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_NISHIKIN_COLOUR_BLUE, !ID_RGTTYR_RACIAL_TRAIT_RYUJIN_KOI_DRAGON_COLOUR_BLUE</requirements>
+        <supports>Adaptive Colours</supports>
+        <description>
+            <p>You can shift your colour to blue to empower attack rolls, ability checks, and saving throws that use your charisma modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can shift your colour to blue to empower attack rolls, ability checks, and saving throws that use your charisma modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
+        </sheet>
+    </element>
+</elements>
