@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Racial feats from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.3">
+        <update version = "0.0.4">
             <file name = "feats-racial.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats-racial.xml"/>
         </update>
     </info>
@@ -247,7 +247,7 @@
         </rules>
     </element>
 
-    <element name = "Hanamori Physiology" type = "Feat" source = "Ryoko's Guide to the Yokau Realms" id = "ID_RGTTYR_RACIAL_FEAT_HANAMORI_PHYSIOLOGY">
+    <element name = "Hanamori Physiology" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_HANAMORI_PHYSIOLOGY">
         <prerequisite>Hanamori</prerequisite>
         <requirements>ID_RGTTYR_RACE_HANAMORI</requirements>
         <description>
@@ -903,7 +903,9 @@
         <description>
             <p>The yokai magic that flows through your veins lets you draw on a wider pool of magic than is typical to most hanataka. You learn two cantrips of your choice from the druid or sorcerer spell list. You can cast them without components while in dim light or darkness. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
-        <sheet display = "false"/>
+        <sheet>
+            <description>The yokai magic that flows through your veins lets you draw on a wider pool of magic than is typical to most hanataka. You learn two cantrips of your choice from the druid or sorcerer spell list. You can cast them without components while in dim light or darkness.</description>
+        </sheet>
         <rules>
             <select type = "Feat Feature" name = "Spellcasting Abilty (Shadowmage)" supports = "Shadowmage"/>
             <select type = "Spell" name = "Cantrip (Shadowmage)" supports = "0, (Druid||Sorcerer)" number = "2"/>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tengu</name>
-        <update version = "0.0.3">
+        <update version = "0.0.4">
             <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
         </update>
     </info>
@@ -98,9 +98,25 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <select type = "Proficiency" name = "Tengu (Nature Guardian)" supports = "ID_SKILL_PROFICIENCY_ARCANA|ID_SKILL_PROFICIENCY_NATURE|ID_SKILL_PROFICIENCY_RELIGION|ID_SKILL_PROFICIENCY_STEALTH|ID_SKILL_PROFICIENCY_SURVIVAL"/>
+            <select type = "Proficiency" name = "Skill Proficiency (Nature Guardian)" supports = "Skill, Hanataka Tengu Nature Guardian" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>
+    <append id = "ID_PROFICIENCY_SKILL_ARCANA">
+        <supports>Hanataka Tengu Nature Guardian</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_NATURE">
+        <supports>Hanataka Tengu Nature Guardian</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_RELIGION">
+        <supports>Hanataka Tengu Nature Guardian</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_STEALTH">
+        <supports>Hanataka Tengu Nature Guardian</supports>
+    </append>
+    <append id = "ID_PROFICIENCY_SKILL_SURVIVAL">
+        <supports>Hanataka Tengu Nature Guardian</supports>
+    </append>
     <element name = "Shadow Caster" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER">
         <description>
             <p>You learn the prestidigitation and thaumaturgy cantrips. In addition, you can cast them without components while you are in dim light or darkness. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
