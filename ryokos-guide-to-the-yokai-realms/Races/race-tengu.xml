@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tengu</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
         </update>
     </info>
@@ -30,7 +30,7 @@
                 <span class = "feature">Lethal Masters. </span>You have proficiency with one simple or martial weapon of your choice.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
             </p>
-                <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU"/>
+                <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA"/>
                 <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
         </description>
         <sheet display = "true"/>
@@ -47,7 +47,7 @@
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <select type = "Language" name = "Language (Tengu)" supports = "Standard||Exotic"/>
 
-            <select type = "Race Variant" name = "Tengu Variant" supports = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU|ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
+            <select type = "Race Variant" name = "Tengu Variant" supports = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA|ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
         </rules>
     </element>
     <element name = "Lethal Masters" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_LETHAL_MASTERS">
@@ -59,7 +59,7 @@
         </rules>
     </element>
     <!-- Tengu subraces -->
-    <element name = "Hanataku Tengu" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKU">
+    <element name = "Hanataka Tengu" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA">
         <supports>Tengu</supports>
         <description>
             <p>Less ferocious and impulsive than the karasu, hanataka are widely regarded as the “higher” lineage of tengu. With the patience and tenacity of a flowing river, they live, train, and meditate in the towering trees of their mountain home. Hanataka tengu are swiftly provoked by vanity and are quick to humble the arrogant and foolish. To those who show respect, however, elder hanataka tengu make sage counsellors and guides, imparting the wisdom of age and yokai magic. Legend tells that the great warriors of old honed their swiftness of blade and sharpness of mind under the guidance of hanataka masters.</p>
@@ -74,14 +74,14 @@
         <sheet display = "true"/>
         <rules>
             <stat name = "charisma" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_MASTER_OF_CRAFT"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_NATURE_GUARDIAN"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_WHIRLWIND_ONSLAUGHT"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_MASTER_OF_CRAFT"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_NATURE_GUARDIAN"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_WHIRLWIND_ONSLAUGHT"/>
         </rules>
     </element>
 
-    <element name = "Master of Craft" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_MASTER_OF_CRAFT">
+    <element name = "Master of Craft" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_MASTER_OF_CRAFT">
         <description>
             <p>You are proficient with one kind of artisan’s tools of your choice. When you make a Crafting check using this tool, you can add 1d4 to the result of the check.</p>
         </description>
@@ -89,10 +89,10 @@
             <description>You are proficient with one kind of artisan’s tools of your choice. When you make a Crafting check using this tool, you can add 1d4 to the result of the check.</description>
         </sheet>
         <rules>
-            <select type = "Proficiency" name = "Tool Proficiency (Hanataku)" supports = "Artisan tools"/>
+            <select type = "Proficiency" name = "Tool Proficiency (Hanataka)" supports = "Artisan tools"/>
         </rules>
     </element>
-    <element name = "Nature Guardian" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_NATURE_GUARDIAN">
+    <element name = "Nature Guardian" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_NATURE_GUARDIAN">
         <description>
             <p>You gain proficiency in one of the following skills of your choice: Arcana, Nature, Religion, Stealth, or Survival.</p>
         </description>
@@ -101,7 +101,7 @@
             <select type = "Proficiency" name = "Tengu (Nature Guardian)" supports = "ID_SKILL_PROFICIENCY_ARCANA|ID_SKILL_PROFICIENCY_NATURE|ID_SKILL_PROFICIENCY_RELIGION|ID_SKILL_PROFICIENCY_STEALTH|ID_SKILL_PROFICIENCY_SURVIVAL"/>
         </rules>
     </element>
-    <element name = "Shadow Caster" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER">
+    <element name = "Shadow Caster" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER">
         <description>
             <p>You learn the prestidigitation and thaumaturgy cantrips. In addition, you can cast them without components while you are in dim light or darkness. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
@@ -111,10 +111,10 @@
         <rules>
             <grant type = "Spell" id = "ID_PHB_SPELL_PRESTIDIGITATION"/>
             <grant type = "Spell" id = "ID_PHB_SPELL_THAUMATURGY"/>
-            <select type = "Racial Trait" name = "Spellcasting (Shadow Caster)" supports = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_WISDOM|ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_CHARISMA"/>
+            <select type = "Racial Trait" name = "Spellcasting (Shadow Caster)" supports = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER_WISDOM|ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER_CHARISMA"/>
         </rules>
     </element>
-    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_INTELLIGENCE">
+    <element name = "Intelligence" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER_INTELLIGENCE">
         <compendium display = "false"/>
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
@@ -123,7 +123,7 @@
             <description>Intelligence is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_WISDOM">
+    <element name = "Wisdom" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER_WISDOM">
         <compendium display = "false"/>
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
@@ -132,7 +132,7 @@
             <description>Wisdom is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_SHADOW_CASTER_CHARISMA">
+    <element name = "Charisma" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_SHADOW_CASTER_CHARISMA">
         <compendium display = "false"/>
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
@@ -141,7 +141,7 @@
             <description>Charisma is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
-    <element name = "Whirlwind Onslaught" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKU_WHIRLWIND_ONSLAUGHT">
+    <element name = "Whirlwind Onslaught" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_HANATAKA_WHIRLWIND_ONSLAUGHT">
         <description>
             <p>After you take the Attack action on your turn, you can use your bonus action on that turn to cast a cantrip with a casting time of one action or make a number of melee attacks equal to half your proficiency bonus (rounded up). Each of these attacks must target a different creature. Once you use this trait, you can’t do so again until you finish a short or long rest.</p>
         </description>

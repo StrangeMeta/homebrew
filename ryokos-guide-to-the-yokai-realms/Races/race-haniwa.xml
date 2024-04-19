@@ -2,12 +2,12 @@
 <elements>
     <info>
         <name>Haniwa</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-haniwa.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-haniwa.xml"/>
         </update>
     </info>
 
-    <element name = "Haniwa" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_Haniwa">
+    <element name = "Haniwa" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_HANIWA">
         <description>
             <p class = "flavour">“I am the decider! I am the dying breath of the lost world. I will not forsake the traditions of old.”</p>
             <p>Hewn from clay as sentient guardians for the tombs of ancient rulers, haniwa were vessels created to bear the souls of loyal warriors, their spirits housed within undying clay bodies to act as vigilant sentries to hallowed ground. As the centuries waned, the haniwa spirits were thought to have passed from the world, leaving their clay shells behind, empty vessels standing in the cool darkness of forgotten tombs. However, the magic of the haniwa endured. Thought to be long dormant, over the last century, the haniwa began to reawaken, emerging into a new world, displaced by millenia from their origin.</p>
@@ -69,7 +69,7 @@
             <description>Over the course of a long rest, you can fashion a quasi-sentient, clay companion. Your companion can take whatever shape you wish, but must use the giant weasel, hawk, mastiff, or mule stat block. Its creature type is Construct, and it also gains your Soul Shell trait. Your clay companion understands you and obeys your commands. It disintegrates into shapeless clay when it is reduced to 0 hit points or when you use this feature again.</description>
         </sheet>
         <rules>
-            <select type = "Companion" name = "Clay Companion" supports = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_WEASEL|ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_HAWK|ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MASTIFF|ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MULE"/>
+            <select type = "Companion" name = "Clay Companion" supports = "Clay Companions"/>
         </rules>
     </element>
     <!-- Companion Soul Shell trait -->
@@ -95,88 +95,120 @@
     </element>
     <!-- Companions for Grave Guardian -->
     <element name = "Giant Weasel" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_WEASEL">
+        <supports>Clay Companions</supports>
         <setters>
-            <set name="size">Medium</set>
-			<set name="type">Construct</set>
-			<set name="alignment">unaligned</set>
-			<set name="ac">13</set>
-			<set name="hp">9 (2d9)</set>
-			<set name="speed">40 ft.</set>
-			<set name="strength">11</set>
-			<set name="dexterity">16</set>
-			<set name="constitution">10</set>
-			<set name="intelligence">4</set>
-			<set name="wisdom">12</set>
-			<set name="charisma">5</set>
-			<set name="senses">darkvision 60 ft., passive Perception 13</set>
-			<set name="languages">understands you and obeys your commands.</set>
-			<set name="challenge">1/8</set>
-			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WEASEL_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
-			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_GIANT_WEASEL_BITE</set>
+            <set name = "size">Medium</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">13</set>
+			<set name = "hp">9 (2d9)</set>
+			<set name = "speed">40 ft.</set>
+			<set name = "strength">11</set>
+			<set name = "dexterity">16</set>
+			<set name = "constitution">10</set>
+			<set name = "intelligence">4</set>
+			<set name = "wisdom">12</set>
+			<set name = "charisma">5</set>
+            <set name = "skills">Perception +3, Stealth +5</set>
+			<set name = "senses">darkvision 60 ft., passive Perception 13</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WEASEL_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_WOTC_PHB_COMPANION_ACTION_GIANT_WEASEL_BITE</set>
         </setters>
+        <rules>
+            <stat name = "companion:ac" value = "13"/>
+            <stat name = "companion:hp:max" value = "9" bonus = "base"/>
+            <stat name = "companion:speed" value = "40" bonus = "base"/>
+            <stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base"/>
+            <stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+        </rules>
     </element>
     <element name = "Hawk" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_HAWK">
+        <supports>Clay Companions</supports>
         <setters>
-            <set name="size">Tiny</set>
-			<set name="type">Construct</set>
-			<set name="alignment">unaligned</set>
-			<set name="ac">13</set>
-			<set name="hp">1 (1d4-1)</set>
-			<set name="speed">10 ft, fly 60ft.</set>
-			<set name="strength">5</set>
-			<set name="dexterity">16</set>
-			<set name="constitution">8</set>
-			<set name="intelligence">2</set>
-			<set name="wisdom">14</set>
-			<set name="charisma">6</set>
-			<set name="senses">passive Perception 13</set>
-			<set name="languages">understands you and obeys your commands.</set>
-			<set name="challenge">0</set>
-			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_HAWK_KEEN_SIGHT, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
-			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_HAWK_TALONS</set>
+            <set name = "size">Tiny</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">13</set>
+			<set name = "hp">1 (1d4-1)</set>
+			<set name = "speed">10 ft, fly 60ft.</set>
+			<set name = "strength">5</set>
+			<set name = "dexterity">16</set>
+			<set name = "constitution">8</set>
+			<set name = "intelligence">2</set>
+			<set name = "wisdom">14</set>
+			<set name = "charisma">6</set>
+            <set name = "skills">Perception +4</set>
+			<set name = "senses">passive Perception 13</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">0</set>
+			<set name = "traits">ID_WOTC_PHB_COMPANION_TRAIT_HAWK_KEEN_SIGHT, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_WOTC_PHB_COMPANION_ACTION_HAWK_TALONS</set>
         </setters>
+        <rules>
+            <stat name = "companion:ac" value = "13"/>
+            <stat name = "companion:hp:max" value = "1" bonus = "base"/>
+            <stat name = "companion:speed" value = "10" bonus = "base"/>
+            <stat name = "companion:speed:fly" value = "60" bonus = "base"/>
+            <stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base"/>
+        </rules>
     </element>
     <element name = "Mastiff" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MASTIFF">
+        <supports>Clay Companions</supports>
         <setters>
-            <set name="size">Medium</set>
-			<set name="type">Construct</set>
-			<set name="alignment">unaligned</set>
-			<set name="ac">12</set>
-			<set name="hp">5 (1d8+1)</set>
-			<set name="speed">40 ft.</set>
-			<set name="strength">13</set>
-			<set name="dexterity">14</set>
-			<set name="constitution">12</set>
-			<set name="intelligence">3</set>
-			<set name="wisdom">12</set>
-			<set name="charisma">7</set>
-			<set name="senses">passive Perception 11</set>
-			<set name="languages">understands you and obeys your commands.</set>
-			<set name="challenge">1/8</set>
-			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_MASTIFF_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
-			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_MASTIFF_BITE</set>
+            <set name = "size">Medium</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">12</set>
+			<set name = "hp">5 (1d8+1)</set>
+			<set name = "speed">40 ft.</set>
+			<set name = "strength">13</set>
+			<set name = "dexterity">14</set>
+			<set name = "constitution">12</set>
+			<set name = "intelligence">3</set>
+			<set name = "wisdom">12</set>
+			<set name = "charisma">7</set>
+            <set name = "skills">Perception +3</set>
+			<set name = "senses">passive Perception 11</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_WOTC_PHB_COMPANION_TRAIT_MASTIFF_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_WOTC_PHB_COMPANION_ACTION_MASTIFF_BITE</set>
         </setters>
+        <rules>
+            <stat name = "companion:ac" value = "12"/>
+            <stat name = "companion:hp:max" value = "5" bonus = "base"/>
+            <stat name = "companion:speed" value = "40" bonus = "base"/>
+            <stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base"/>
+        </rules>
     </element>
     <element name = "Mule" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_MULE">
+        <supports>Clay Companions</supports>
         <setters>
-            <set name="size">Medium</set>
-			<set name="type">Construct</set>
-			<set name="alignment">unaligned</set>
-			<set name="ac">10</set>
-			<set name="hp">11 (2d8+2)</set>
-			<set name="speed">40 ft.</set>
-			<set name="strength">14</set>
-			<set name="dexterity">10</set>
-			<set name="constitution">13</set>
-			<set name="intelligence">2</set>
-			<set name="wisdom">10</set>
-			<set name="charisma">5</set>
-			<set name="senses">passive Perception 10</set>
-			<set name="languages">understands you and obeys your commands.</set>
-			<set name="challenge">1/8</set>
-			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_MULE_BEAST_OF_BURDEN, ID_WOTC_PHB_COMPANION_TRAIT_MULE_SURE_FOOTED, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
-			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_MULE_HOOVES</set>
+            <set name = "size">Medium</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">10</set>
+			<set name = "hp">11 (2d8+2)</set>
+			<set name = "speed">40 ft.</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">10</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">2</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">5</set>
+			<set name = "senses">passive Perception 10</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1/8</set>
+			<set name = "traits">ID_WOTC_PHB_COMPANION_TRAIT_MULE_BEAST_OF_BURDEN, ID_WOTC_PHB_COMPANION_TRAIT_MULE_SURE_FOOTED, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_WOTC_PHB_COMPANION_ACTION_MULE_HOOVES</set>
         </setters>
+        <rules>
+            <stat name = "companion:ac" value = "10"/>
+            <stat name = "companion:hp:max" value = "11" bonus = "base"/>
+            <stat name = "companion:speed" value = "40" bonus = "base"/>
+        </rules>
     </element>
 
     <element name = "Grave Guardian" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_GRAVE_GUARDIAN">

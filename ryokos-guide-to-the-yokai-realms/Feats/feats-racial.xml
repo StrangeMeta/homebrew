@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Racial feats from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "feats-racial.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats-racial.xml"/>
         </update>
     </info>
@@ -90,5 +90,840 @@
         <sheet display = "true">
             <description>You can shift your colour to blue to empower attack rolls, ability checks, and saving throws that use your charisma modifier using your Slumbering Dragon (Nishikin) or Heartening Breath (Ryujin) features.</description>
         </sheet>
+    </element>
+
+    <element name = "Draconic Fury" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY">
+        <prerequisite>Ryujin</prerequisite>
+        <requirements>ID_RGTTYR_RACE_RYUJIN|ID_RGTTYR_RACE_NISHIKIN,ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN</requirements>
+        <description>
+            <p>You have learned to channel your draconic energy into a damaging breath weapon, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Constitution score by 1, to a maximum of 20.</li>
+                <li>When you select this feat, choose one damage type from among acid, cold, fire, lightning, poison, and thunder. When you use your Heartening Breath trait, you can choose to expel a 15-foot cone of destructive energy instead. Each creature in the area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus), taking 1d8 damage of the type you chose on a failed save, or half as much damage on a successful one. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>When you use your Heartening Breath trait, you can choose to expel a 15-foot cone of destructive energy instead. Each creature in the area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus), taking 1d8 {{draconic-fury}} damage on a failed save, or half as much damage on a successful one. This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</description>
+        </sheet>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+            <select type = "Feat Feature" name = "Damage Type (Draconic Fury)" supports = "Draconic Fury"/>
+        </rules>
+    </element>
+    <element name = "Acid" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY_ACID">
+        <compendium display = "false"/>
+        <supports>Draconic Fury</supports>
+        <description>
+            <p>Your Heartning Breath can deal acid damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "draconic-fury" value = "acid"/>
+        </rules>
+    </element>
+    <element name = "Cold" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY_COLD">
+        <compendium display = "false"/>
+        <supports>Draconic Fury</supports>
+        <description>
+            <p>Your Heartning Breath can deal cold damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "draconic-fury" value = "cold"/>
+        </rules>
+    </element>
+    <element name = "Fire" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY_FIRE">
+        <compendium display = "false"/>
+        <supports>Draconic Fury</supports>
+        <description>
+            <p>Your Heartning Breath can deal fire damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "draconic-fury" value = "fire"/>
+        </rules>
+    </element>
+    <element name = "Lightning" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY_LIGHTNING">
+        <compendium display = "false"/>
+        <supports>Draconic Fury</supports>
+        <description>
+            <p>Your Heartning Breath can deal lightning damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "draconic-fury" value = "lightning"/>
+        </rules>
+    </element>
+    <element name = "Poison" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY_POISON">
+        <compendium display = "false"/>
+        <supports>Draconic Fury</supports>
+        <description>
+            <p>Your Heartning Breath can deal poison damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "draconic-fury" value = "poison"/>
+        </rules>
+    </element>
+    <element name = "Thunder" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY_THUNDER">
+        <compendium display = "false"/>
+        <supports>Draconic Fury</supports>
+        <description>
+            <p>Your Heartning Breath can deal thunder damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "draconic-fury" value = "thunder"/>
+        </rules>
+    </element>
+
+    <element name = "Enkoh's Might" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ENKOHS_MIGHT">
+        <prerequisite>Enkoh (Hulking)</prerequisite>
+        <requirements>ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING</requirements>
+        <description>
+            <p>You possess explosive strength, impressive even compared to your hulking kin, granting you the following benefits:</p>
+            <ul>
+                <li>Your Strength score increases by 1, to a maximum of 20.</li>
+                <li>As a bonus action, you can attempt to shove a creature no more than one size larger than you within your reach. Make a Strength (Athletics) check, contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). If you win the contest, you either knock the target prone or push it up to 15 feet away. You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "{{proficiency}}/Long Rest">
+            <description>As a bonus action, you can attempt to shove a creature no more than one size larger than you within your reach. Make a Strength (Athletics) check, contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). If you win the contest, you either knock the target prone or push it up to 15 feet away.</description>
+        </sheet>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Gift of the Lion Turtle" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_GIFT_OF_THE_LION_TURTLE">
+        <prerequisite>Lion Turtle</prerequisite>
+        <requirements>ID_RGTTYR_RACE_LION_TURTLE</requirements>
+        <description>
+            <p>Some lion turtles, such as yourself, are blessed with unusual command over their telepathic abilities. Your mastery of this power grants you the following benefits:</p>
+            <ul>
+                <li>Increase your Wisdom score by 1, to a maximum of 20.</li>
+                <li>You can cast the detect thoughts and suggestion spells without expending a spell slot. Once you cast detect thoughts or suggestion with this feat, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this feat (choose when you select this feat).</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>You can cast the detect thoughts and suggestion spells without expending a spell slot. Once you cast detect thoughts or suggestion with this feat, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Your spellcasting ability is {{lion-turtle-gift}} for these spells when you cast them with this feat.</description>
+        </sheet>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+            <select type = "Feat Feature" name = "Spellcasting Ability (Gift of the Lion Turtle)" supports = "Gift of the Lion Turtle"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_GIFT_OF_THE_LION_TURTLE_INTELLIGENCE">
+        <compendium display = "false"/>
+        <supports>Gift of the Lion Turtle</supports>
+        <description>
+            <p>Intelligence is your spellcasting ability when you cast these spells with this feat.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "lion-turtle-gift" value = "Intelligence"/>
+        </rules>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_GIFT_OF_THE_LION_TURTLE_WISDOM">
+        <compendium display = "false"/>
+        <supports>Gift of the Lion Turtle</supports>
+        <description>
+            <p>Wisdom is your spellcasting ability when you cast these spells with this feat.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "lion-turtle-gift" value = "Wisdom"/>
+        </rules>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_GIFT_OF_THE_LION_TURTLE_CHARISMA">
+        <compendium display = "false"/>
+        <supports>Gift of the Lion Turtle</supports>
+        <description>
+            <p>Charisma is your spellcasting ability when you cast these spells with this feat.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat inline = "true" name = "lion-turtle-gift" value = "Charisma"/>
+        </rules>
+    </element>
+
+    <element name = "Hanamori Physiology" type = "Feat" source = "Ryoko's Guide to the Yokau Realms" id = "ID_RGTTYR_RACIAL_FEAT_HANAMORI_PHYSIOLOGY">
+        <prerequisite>Hanamori</prerequisite>
+        <requirements>ID_RGTTYR_RACE_HANAMORI</requirements>
+        <description>
+            <p>Your hyperactive hanamori physiology causes your body to adapt to changes in the environment instantly, granting you the following benefits:</p>
+            <ul>
+                <li>You have advantage on saving throws to avoid exhaustion brought about by the environment, such as extreme heat or cold.</li>
+                <li>When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to that damage type, including against the triggering damage, until the end of your next turn. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>You have advantage on saving throws to avoid exhaustion brought about by the environment, such as extreme heat or cold. When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to that damage type, including against the triggering damage, until the end of your next turn. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name = "Haniwa Soulbinding" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING">
+        <prerequisite>Haniwa</prerequisite>
+        <requirements>ID_RGTTYR_RACE_HANIWA</requirements>
+        <description>
+            <p>Your innate creation magic is potent enough that you can pour more of your essence into your clay companion. When you create a companion, it can use one of the following stat blocks instead of one listed in the Clay Companion trait: black bear, giant goat, giant octopus, or warhorse.</p>
+            <div class = "indent">Once you reach 5th level, you can create Clay Companions that use the dire wolf, giant spider, and giant toad stat blocks.</div>
+        </description>
+        <sheet display = "true">
+            <description>When you use your Clay Companion feature, you can choose from the following creatures in addition to the one listed in the Clay Companion feature: black bear, giant goat, giant octopus or warhorse. When you reach 5th level, yoyu may also choose the following forms: dire wolf, giant spider, and giant toad.</description>
+        </sheet>
+    </element>
+    <!-- New companion options available through Haniwa Soulbinding feat. -->
+    <element name = "Black Bear" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_BLACK_BEAR">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING</requirements>
+        <setters>
+            <set name = "size">Medium</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">11</set>
+			<set name = "hp">19 (3d8 + 6)</set>
+			<set name = "speed">40 ft., climb 30ft.</set>
+			<set name = "strength">15</set>
+			<set name = "dexterity">10</set>
+			<set name = "constitution">14</set>
+			<set name = "intelligence">2</set>
+			<set name = "wisdom">12</set>
+			<set name = "charisma">7</set>
+			<set name = "senses">passive Perception 13</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1/2</set>
+			<set name = "traits">ID_WOTC_PHB_COMPANION_TRAIT_BLACK_BEAR_KEEN_SMELL, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_WOTC_PHB_COMPANION_ACTION_BLACK_BEAR_MULTIATTACK, ID_WOTC_PHB_COMPANION_ACTION_BLACK_BEAR_BITE, ID_WOTC_PHB_COMPANION_ACTION_BLACK_BEAR_CLAWS</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "11"/>
+            <stat name = "companion:hp:max" value = "19" bonus = "base"/>
+            <stat name = "companion:speed" value = "40" bonus = "base"/>
+            <stat name = "companion:speed:climb" value = "30" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Giant Goat" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_GOAT">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING</requirements>
+        <setters>
+            <set name = "size">Large</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">11</set>
+			<set name = "hp">19 (3d10 + 3)</set>
+			<set name = "speed">40 ft.</set>
+			<set name = "strength">17</set>
+			<set name = "dexterity">11</set>
+			<set name = "constitution">12</set>
+			<set name = "intelligence">3</set>
+			<set name = "wisdom">12</set>
+			<set name = "charisma">6</set>
+			<set name = "senses">passive Perception 11</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1/2</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_GIANT_GOAT_CHARGE, ID_RGTTYR_COMPANION_TRAIT_GIANT_GOAT_SURE_FOOTED, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_GIANT_GOAT_RAM</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "11"/>
+            <stat name = "companion:hp:max" value = "19" bonus = "base"/>
+            <stat name = "companion:speed" value = "40" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Charge" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_GOAT_CHARGE">
+        <compendium display = "false"/>
+        <description>
+            <p>If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</p>
+        </description>
+        <sheet>
+            <description>If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
+        </sheet>
+    </element>
+    <element name = "Sure Footed" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_GOAT_SURE_FOOTED">
+        <compendium display = "false"/>
+        <description>
+            <p>The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.</p>
+        </description>
+        <sheet>
+            <description>The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.</description>
+        </sheet>
+    </element>
+    <element name = "Ram" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_GOAT_RAM">
+        <compendium display = "false"/>
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d4 + 3) bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d4 + 3) bludgeoning damage.</description>
+        </sheet>
+    </element>
+    <element name = "Giant Octopus" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_OCTOPUS">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING</requirements>
+        <setters>
+            <set name = "size">Large</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">11</set>
+			<set name = "hp">52 (8d10 + 8)</set>
+            <set name = "proficiency">4</set>
+			<set name = "speed">10 ft., swim 60ft.</set>
+			<set name = "strength">17</set>
+			<set name = "dexterity">13</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">4</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">4</set>
+            <set name = "skills">Perception +4, Stealth +5</set>
+			<set name = "senses">Darkvision 60 ft., passive Perception 14</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_GIANT_OCTOPUS_HOLD_BREATH, ID_RGTTYR_COMPANION_TRAIT_GIANT_OCTOPUS_UNDERWATER_CAMOUFLAGE, ID_RGTTYR_COMPANION_TRAIT_GIANT_OCTOPUS_WATER_BREATHING, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_GIANT_OCTOPUS_TENTACLES, ID_RGTTYR_COMPANION_ACTION_GIANT_OCTOPUS_INK_CLOUD</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "11"/>
+            <stat name = "companion:hp:max" value = "52" bonus = "base"/>
+            <stat name = "companion:speed" value = "10" bonus = "base"/>
+            <stat name = "companion:speed:swim" value = "60" bonus = "base"/>
+            <stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base" />
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base" />
+        </rules>
+    </element>
+    <element name = "Hold Breath" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_OCTOPUS_HOLD_BREATH">
+        <compendium display = "false"/>
+        <description>
+            <p>While out of water, the octopus can hold its breath for 1 hour.</p>
+        </description>
+        <sheet>
+            <description>While out of water, the octopus can hold its breath for 1 hour.</description>
+        </sheet>
+    </element>
+    <element name = "Underwater Camouflage" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_OCTOPUS_UNDERWATER_CAMOUFLAGE">
+        <compendium display = "false"/>
+        <description>
+            <p>The octopus has advantage on Dexterity (Stealth) checks made while underwater.</p>
+        </description>
+        <sheet>
+            <description>The octopus has advantage on Dexterity (Stealth) checks made while underwater.</description>
+        </sheet>
+    </element>
+    <element name = "Water Breathing" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_OCTOPUS_WATER_BREATHING">
+        <compendium display = "false"/>
+        <description>
+            <p>The octopus can breathe only underwater.</p>
+        </description>
+        <sheet>
+            <description>The octopus can breathe only underwater.</description>
+        </sheet>
+    </element>
+    <element name = "Tentacles" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_OCTOPUS_TENTACLES">
+        <compendium display = "false"/>
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.</description>
+        </sheet>
+    </element>
+    <element name = "Ink Cloud (Recharges after a Short or Long Rest)" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_OCTOPUS_INK_CLOUD">
+        <compendium display = "false"/>
+        <description>
+            <p>A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name = "Warhorse" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_WARHORSE">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING</requirements>
+        <setters>
+            <set name = "size">Large</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">11</set>
+			<set name = "hp">19 (3d10 + 3)</set>
+			<set name = "speed">60 ft.</set>
+			<set name = "strength">18</set>
+			<set name = "dexterity">12</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">2</set>
+			<set name = "wisdom">12</set>
+			<set name = "charisma">7</set>
+			<set name = "senses">passive Perception 11</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1/2</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_WARHORSE_TRAMPLING_CHARGE, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_WARHORSE_HOOVES</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "11"/>
+            <stat name = "companion:hp:max" value = "19" bonus = "base"/>
+            <stat name = "companion:speed" value = "60" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Trampling Charge" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_WARHORSE_TRAMPLING_CHARGE">
+        <compendium display = "false"/>
+        <description>
+            <p>If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name = "Hooves" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_WARHORSE_HOOVES">
+        <compendium display = "false"/>
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: (2d6 + 4) bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: (2d6 + 4) bludgeoning damage.</description>
+        </sheet>
+    </element>
+    <element name = "Dire Wolf" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_DIRE_WOLF">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING, [level:5]</requirements>
+        <setters>
+            <set name = "size">Large</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">14</set>
+			<set name = "hp">37 (5d10 + 5)</set>
+			<set name = "speed">50 ft.</set>
+			<set name = "strength">17</set>
+			<set name = "dexterity">15</set>
+			<set name = "constitution">15</set>
+			<set name = "intelligence">3</set>
+			<set name = "wisdom">12</set>
+			<set name = "charisma">7</set>
+            <set name = "skills">Perception +3, Stealth +4</set>
+			<set name = "senses">passive Perception 13</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_DIRE_WOLF_KEEN_HEARING_AND_SMELL, ID_RGTTYR_COMPANION_TRAIT_DIRE_WOLF_PACK_TACTICS, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_DIRE_WOLF_BITE</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "14"/>
+            <stat name = "companion:hp:max" value = "37" bonus = "base"/>
+            <stat name = "companion:speed" value = "50" bonus = "base"/>
+			<stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Keen Hearing and Smell" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_DIRE_WOLF_KEEN_HEARING_AND_SMELL">
+        <compendium display = "false"/>
+        <description>
+            <p>The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+        </description>
+        <sheet>
+            <description>The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
+        </sheet>
+    </element>
+    <element name = "Pack Tactics" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_DIRE_WOLF_PACK_TACTICS">
+        <compendium display = "false"/>
+        <description>
+            <p>The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated.</p>
+        </description>
+        <sheet>
+            <description>The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated.</description>
+        </sheet>
+    </element>
+    <element name = "Bite" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_DIRE_WOLF_BITE">
+        <compendium display = "false"/>
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
+        </sheet>
+    </element>
+    <element name = "Giant Spider" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_SPIDER">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING, [level:5]</requirements>
+        <setters>
+            <set name = "size">Large</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">14</set>
+			<set name = "hp">26 (4d10 + 4)</set>
+            <set name = "proficiency">4</set>
+			<set name = "speed">30 ft., climb 30ft.</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">16</set>
+			<set name = "constitution">12</set>
+			<set name = "intelligence">2</set>
+			<set name = "wisdom">11</set>
+			<set name = "charisma">4</set>
+            <set name = "skills">Stealth +7</set>
+			<set name = "senses">Blindsight 10ft, Darkvision 60 ft., passive Perception 10</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_GIANT_SPIDER_SPIDER_CLIMB, ID_RGTTYR_COMPANION_TRAIT_GIANT_SPIDER_WEB_SENSE, ID_RGTTYR_COMPANION_TRAIT_GIANT_SPIDER_WEB_WALKER, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_GIANT_SPIDER_BITE, ID_RGTTYR_COMPANION_ACTION_GIANT_SPIDER_WEB</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "14"/>
+            <stat name = "companion:hp:max" value = "26" bonus = "base"/>
+            <stat name = "companion:speed" value = "30" bonus = "base"/>
+            <stat name = "companion:speed:climb" value = "30" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Spider Climb" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_SPIDER_SPIDER_CLIMB">
+        <compendium display = "false"/>
+        <description>
+            <p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name = "Web Sense" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_SPIDER_WEB_SENSE">
+        <compendium display = "false"/>
+        <description>
+            <p>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name = "Web Walker" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_SPIDER_WEB_WALKER">
+        <compendium display = "false"/>
+        <description>
+            <p>The spider ignores movement restrictions caused by webbing.</p>
+        </description>
+        <sheet>
+            <description>The spider ignores movement restrictions caused by webbing.</description>
+        </sheet>
+    </element>
+    <element name = "Bite" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_SPIDER_BITE">
+        <compendium display = "false"/>
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: (1d8 + 3) piercing damage plus (2d8)poison damage. The target must make a DC 11 Constitution saving throw, taking the poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: (1d8 + 3) piercing damage plus (2d8)poison damage. The target must make a DC 11 Constitution saving throw, taking the poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</description>
+        </sheet>
+    </element>
+    <element name = "Web (Recharge 5-6)" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_SPIDER_WEB">
+        <compendium display = "false"/>
+        <description>
+            <p>Ranged Weapon Attack: +5 to hit, reach 30/60 ft., one creature. The target is restrained by webbing As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +5 to hit, reach 30/60 ft., one creature. The target is restrained by webbing As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name = "Giant Toad" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_HANIWA_CLAY_COMPANION_GIANT_TOAD">
+        <supports>Clay Companions</supports>
+        <requirements>ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING, [level:5]</requirements>
+        <setters>
+            <set name = "size">Large</set>
+			<set name = "type">Construct</set>
+			<set name = "alignment">unaligned</set>
+			<set name = "ac">11</set>
+			<set name = "hp">39 (6d10 + 6)</set>
+			<set name = "speed">20 ft., swim 40ft.</set>
+			<set name = "strength">15</set>
+			<set name = "dexterity">13</set>
+			<set name = "constitution">13</set>
+			<set name = "intelligence">2</set>
+			<set name = "wisdom">10</set>
+			<set name = "charisma">3</set>
+			<set name = "senses">Darkvision 30ft, passive Perception 10</set>
+			<set name = "languages">understands you and obeys your commands.</set>
+			<set name = "challenge">1</set>
+			<set name = "traits">ID_RGTTYR_COMPANION_TRAIT_GIANT_TOAD_AMPHIBIOUS, ID_RGTTYR_COMPANION_TRAIT_GIANT_TOAD_STANDING_LEAP, ID_RGTTYR_COMPANION_TRAIT_CLAY_COMPANION_SOUL_SHELL</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_GIANT_TOAD_BITE, ID_RGTTYR_COMPANION_ACTION_GIANT_TOAD_SWALLOW</set>
+        </setters>
+        <rules>
+            <stat name = "companion:ac" value = "11"/>
+            <stat name = "companion:hp:max" value = "39" bonus = "base"/>
+            <stat name = "companion:speed" value = "20" bonus = "base"/>
+            <stat name = "companion:speed:swim" value = "40" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Amphibious" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_TOAD_AMPHIBIOUS">
+        <compendium display = "false"/>
+        <description>
+            <p>The toad can breathe air and water.</p>
+        </description>
+        <sheet>
+            <description>The toad can breathe air and water.</description>
+        </sheet>
+    </element>
+    <element name = "Standing Leap" type = "Companion Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_TRAIT_GIANT_TOAD_STANDING_LEAP">
+        <compendium display = "false"/>
+        <description>
+            <p>The toad's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start.</p>
+        </description>
+        <sheet>
+            <description>The toad's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start.</description>
+        </sheet>
+    </element>
+    <element name = "Bite" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_TOAD_BITE">
+        <compendium display = "false"/>
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d10 + 2) piercing damage plus (1d10)poison damage. The target is grappled (escape dc 13) Until this grapple ends, the target is restrained, and the toad can't bite another target.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d10 + 2) piercing damage plus (1d10)poison damage. The target is grappled (escape dc 13) Until this grapple ends, the target is restrained, and the toad can't bite another target.</description>
+        </sheet>
+    </element>
+    <element name = "Swallow" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_GIANT_TOAD_SWALLOW">
+        <compendium display = "false"/>
+        <description>
+            <p>The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.</p>
+            <p>If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d10 + 2) piercing damage plus (1d10)poison damage. The target is grappled (escape dc 13) Until this grapple ends, the target is restrained, and the toad can't bite another target.</description>
+            <description>If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</description>
+        </sheet>
+    </element>
+    <!-- End of new companion options for Haniwa Soulbinding feat. -->
+
+    <element name = "Isetsu Magic" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC">
+        <prerequisite>Isetsu</prerequisite>
+        <requirements>ID_RGTTYR_RACE_ISETSU</requirements>
+        <description>
+            <p>Your connection with the ocean allows you to wield a measure of water magic, granting you the following benefits:</p>
+            <ul>
+                <li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+                <li>You learn the water whip cantrip.</li>
+                <li>You can cast the riptide and water breathing spells without expending a spell slot. Once you cast riptide or water breathing with this feat, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</li>
+            </ul>
+            <p class = "indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this feat (choose when you select this feat).</p>
+        </description>
+        <sheet>
+            <description>You know the Water Whip cantrip. You can cast the riptide and water breathing spells without expending a spell slot. Once you cast riptide or water breathing with this feat, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
+        </sheet>
+        <rules>
+            <select type = "Feat Feature" name = "Ability Score Increase (Isetsu Magic)" supports = "ASI Isetsu Magic"/>
+        </rules>
+    </element>
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC_STRENGTH">
+        <compendium display = "false"/>
+        <supports>ASI Isetsu Magic</supports>
+        <description>
+            <p>Increase your strength score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "strength" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC_DEXTERITY">
+        <compendium display = "false"/>
+        <supports>ASI Isetsu Magic</supports>
+        <description>
+            <p>Increase your dexterity score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC_CONSTITUTION">
+        <compendium display = "false"/>
+        <supports>ASI Isetsu Magic</supports>
+        <description>
+            <p>Increase your constitution score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC_INTELLIGENCE">
+        <compendium display = "false"/>
+        <supports>ASI Isetsu Magic</supports>
+        <description>
+            <p>Increase your intelligence score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "intelligence" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC_WISDOM">
+        <compendium display = "false"/>
+        <supports>ASI Isetsu Magic</supports>
+        <description>
+            <p>Increase your wisdom score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC_CHARISMA">
+        <compendium display = "false"/>
+        <supports>ASI Isetsu Magic</supports>
+        <description>
+            <p>Increase your charisma score by 1, to a maximum of 20.</p>
+        </description>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Karasu Trickery" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_KARASU_TRICKERY">
+        <prerequisite>Tengu (Karasu)</prerequisite>
+        <requirements>ID_RGTTYR_RACE_VARIANT_TENGU_KARASU</requirements>
+        <description>
+            <p>You are a virtuoso of mischief and trickery even among karasu, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Charisma score by 1, to a maximum of 20.</li>
+                <li>Whenever you and at least one other creature you can see make an ability check or saving throw at the same time, such as rolling for initiative, a contested check, or a saving throw against an area of effect, you can swap your result on the d20 for the other creature’s. You receive their result, and they receive yours. Once you use this benefit, you can’t do so again until you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "1/Short Rest">
+            <description>Whenever you and at least one other creature you can see make an ability check or saving throw at the same time, such as rolling for initiative, a contested check, or a saving throw against an area of effect, you can swap your result on the d20 for the other creature’s. You receive their result, and they receive yours.</description>
+        </sheet>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Kitsune's Blessing" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_KITSUNES_BLESSING">
+        <prerequisite>Kitsune</prerequisite>
+        <requirements>ID_RGTTYR_RACE_KITSUNE</requirements>
+        <description>
+            <p>You possess natural magic beyond that of a typical kitsune. You gain the following benefits:</p>
+            <ul>
+                <li>You can cast spells while transformed using your Shapeshifter trait.</li>
+                <li>While transformed using your Shapeshifter trait, you can use your fox’s bite to make unarmed strikes, using Strength or Dexterity for your attack and damage rolls. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength or Dexterity modifier (your choice).</li>
+                <li>You gain the Multiattack action. While transformed using your Shapeshifter trait, you can use an action to make a number of unarmed strikes equal to half your proficiency bonus (rounded up).</li>
+                <li>While transformed using your Shapeshifter trait, your AC equals 12 + your Dexterity modifier.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>You can cast spells while transformed using your Shapeshifter trait. While transformed using your Shapeshifter trait, you can use your fox’s bite to make unarmed strikes, using Strength or Dexterity for your attack and damage rolls. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength or Dexterity modifier (your choice). You gain the Multiattack action. While transformed using your Shapeshifter trait, you can use an action to make a number of unarmed strikes equal to half your proficiency bonus (rounded up). While transformed using your Shapeshifter trait, your AC equals 12 + your Dexterity modifier.</description>
+        </sheet>
+    </element>
+
+    <element name = "Oni Regeneration" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ONI_REGENERATION">
+        <prerequisite>Oniborne</prerequisite>
+        <requirements>ID_RGTTYR_RACE_ONIBORNE</requirements>
+        <description>
+            <p>The incredible fortitude and longevity of your ancestors flows through you, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Constitution score by 1, to a maximum of 20.</li>
+                <li>As a reaction when you take damage, you can spend a number of your Hit Dice up to your proficiency bonus to heal yourself. Roll the dice, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1). You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "{{proficiency}}/Long Rest">
+            <description>As a reaction when you take damage, you can spend a number of your Hit Dice up to your proficiency bonus to heal yourself. Roll the dice, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).</description>
+        </sheet>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Seasonal Determinism" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SEASONAL_DETERMINISM">
+        <prerequisite>Fuyohren</prerequisite>
+        <requirements>ID_RGTTYR_RACE_FUYOHREN</requirements>
+        <description>
+            <p>The state of the world at the moment of your birth left an indelible imprint on your body. Choose one of the seasons within which you were born; you gain the associated benefits:</p>
+            <p class = "indent"><strong>Spring. </strong>Your Dexterity score increases by 1, to a maximum of 20. In addition, your speed increases by 5 feet, and you can use a bonus action to prepare yourself to move in a dextrous flourish. When you do, the next attack roll made against you before the start of your next turn has disadvantage.</p>
+            <p class = "indent"><strong>Summer. </strong>Your Charisma score increases by 1, to a maximum of 20. In addition, you can use a bonus action to give yourself advantage on the next attack roll or ability check you make before the start of your next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+            <p class = "indent"><strong>Autumn. </strong>Your Wisdom score increases by 1, to a maximum of 20. In addition, you have darkvision out to 30 feet, and you can take the Hide action as a bonus action while in dim light or darkness. If you already have darkvision, its range increases by 30 feet.</p>
+            <p class = "indent"><strong>Winter. </strong>Your Constitution score increases by 1, to a maximum of 20. In addition, when you create a magical vial of water with your Water Magic trait, you can choose the following option as an effect:</p>
+            <ul>
+                <li>The water freezes and crackles with evocation magic. As an action, you can make a ranged attack against a creature or object within 20 feet of you, treating the vial as an improvised weapon. On a hit, the vial shatters, and the target takes 1d8 cold damage and must succeed on a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or have its speed reduced by 10 feet until the end of its next turn.</li>
+            </ul>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select name = "Seasonal Determinism" type = "Feat Feature" supports = "Seasonal Determinism"/>
+        </rules>
+    </element>
+    <element name = "Spring" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SEASONAL_DETERMINISM_SPRING">
+        <compendium display = "false"/>
+        <supports>Seasonal Determinism</supports>
+        <description>
+            <p>Your Dexterity score increases by 1, to a maximum of 20. In addition, your speed increases by 5 feet, and you can use a bonus action to prepare yourself to move in a dextrous flourish. When you do, the next attack roll made against you before the start of your next turn has disadvantage.</p>
+        </description>
+        <sheet>
+            <description>Your speed increases by 5 feet, and you can use a bonus action to prepare yourself to move in a dextrous flourish. When you do, the next attack roll made against you before the start of your next turn has disadvantage.</description>
+        </sheet>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+            <stat name = "innate speed" value = "5"/>
+        </rules>
+    </element>
+    <element name = "Summer" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SEASONAL_DETERMINISM_SUMMER">
+        <compendium display = "false"/>
+        <supports>Seasonal Determinism</supports>
+        <description>
+            <p>Your Charisma score increases by 1, to a maximum of 20. In addition, you can use a bonus action to give yourself advantage on the next attack roll or ability check you make before the start of your next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>You can use a bonus action to give yourself advantage on the next attack roll or ability check you make before the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "charisma" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Autumn" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SEASONAL_DETERMINISM_AUTUMN">
+        <compendium display = "false"/>
+        <supports>Seasonal Determinism</supports>
+        <description>
+            <p>Your Wisdom score increases by 1, to a maximum of 20. In addition, you have darkvision out to 30 feet, and you can take the Hide action as a bonus action while in dim light or darkness. If you already have darkvision, its range increases by 30 feet.</p>
+        </description>
+        <sheet>
+            <description>You have darkvision out to 30 feet, and you can take the Hide action as a bonus action while in dim light or darkness. If you already have darkvision, its range increases by 30 feet.</description>
+        </sheet>
+        <rules>
+            <stat name = "wisdom" value = "1"/>
+            <grant type = "Vision" id = "ID_VISION_LESSER_DARKVISION"/>
+            <stat name = "darkvision:range" value = "0" bonus = "base"/>
+            <stat name = "darkvision:range" value = "30" bonus = "Seasonal Determinism (Autumn)"/>
+        </rules>
+    </element>
+    <element name = "Winter" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SEASONAL_DETERMINISM_WINTER">
+        <compendium display = "false"/>
+        <supports>Seasonal Determinism</supports>
+        <description>
+            <p>Your Constitution score increases by 1, to a maximum of 20. In addition, when you create a magical vial of water with your Water Magic trait, you can choose the following option as an effect:</p>
+            <ul>
+                <li>The water freezes and crackles with evocation magic. As an action, you can make a ranged attack against a creature or object within 20 feet of you, treating the vial as an improvised weapon. On a hit, the vial shatters, and the target takes 1d8 cold damage and must succeed on a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or have its speed reduced by 10 feet until the end of its next turn.</li>
+            </ul>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>When you create a magical vial of water with your Water Magic trait, you can choose the following option as an effect: The water freezes and crackles with evocation magic. As an action, you can make a ranged attack against a creature or object within 20 feet of you, treating the vial as an improvised weapon. On a hit, the vial shatters, and the target takes 1d8 cold damage and must succeed on a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or have its speed reduced by 10 feet until the end of its next turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "constitution" value = "1"/>
+        </rules>
+    </element>
+
+    <element name = "Shadowmage" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SHADOWMAGE">
+        <prerequisite>Tengu (Hanataka)</prerequisite>
+        <requirements>ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA</requirements>
+        <description>
+            <p>The yokai magic that flows through your veins lets you draw on a wider pool of magic than is typical to most hanataka. You learn two cantrips of your choice from the druid or sorcerer spell list. You can cast them without components while in dim light or darkness. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Spell" name = "Cantrip (Shadowmage)" supports = "0, (Druid||Sorcerer)" number = "2"/>
+        </rules>
+    </element>
+
+    <element name = "Springtail Agility" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SPRINGTAIL_AGILITY">
+        <prerequisite>Enkoh (Springtail)</prerequisite>
+        <requirements>ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL</requirements>
+        <description>
+            <p>You are uncommonly agile and dexterous, even relative to your springtail kin, granting you the following benefits:</p>
+            <ul>
+                <li>Your Dexterity score increases by 1, to a maximum of 20.</li>
+                <li>As a bonus action, you can leap a number of feet equal to five times your proficiency bonus. This leap doesn’t cost you any movement but your speed must be greater than 0 feet, and it does not provoke opportunity attacks. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "{{proficiency}}/Long Rest">
+            <description>As a bonus action, you can leap a number of feet equal to five times your proficiency bonus. This leap doesn’t cost you any movement but your speed must be greater than 0 feet, and it does not provoke opportunity attacks.</description>
+        </sheet>
+        <rules>
+            <stat name = "dexterity" value = "1"/>
+        </rules>
     </element>
 </elements>

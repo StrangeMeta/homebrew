@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Fuyohren</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-fuyohren.xml"/>
         </update>
     </info>
@@ -86,7 +86,7 @@
                     <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
                 </ul>
             </description>
-        <sheet usage = "{{proficieny}}/Long Rest">
+        <sheet usage = "{{proficiency}}/Long Rest">
             <description>
                 <p>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:</p>
                 <ul>
