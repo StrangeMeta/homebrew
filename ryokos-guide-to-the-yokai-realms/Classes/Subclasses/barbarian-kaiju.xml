@@ -14,20 +14,20 @@
             <p class = "flavour">“Be it man, beast, or earth itself, everything trembles before me.”</p>
             <p>The Path of the Kaiju is one of sheer destructive force. Some warriors of this kind are fueled by a relentless hatred of a kaiju, perhaps one that destroyed their home or ravaged their continent. In such cases, an individual’s burning obsession is a source of incredible strength, manifesting as an aspect of the kaiju’s own power in moments of blind rage. Other barbarians might worship kaiju for their strength and grandeur, calling on their aid in battle, embodying the might and fury of a colossus as they charge into the fray.</p>
             <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU"/>
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_APEX_HUNTER"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_KAIJU_FORCE"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_TRANSFORMATION_OF_THE_KAIJU"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_CHAOS_THRESHOLD"/> -->
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_APEX_HUNTER"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_KAIJU_FORCE"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_TRANSFORMATION_OF_THE_KAIJU"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_CHAOS_THRESHOLD"/>
         </description>
         <sheet display = "false">
             <description>The Path of the Kaiju is one of sheer destructive force.</description>
         </sheet>
         <rules>
             <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU" level = "3"/>
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_APEX_HUNTER" level = "3"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_KAIJU_FORCE" level = "6"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_TRANSFORMATION_OF_THE_KAIJU" level = "10"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_CHAOS_THRESHOLD" level = "14"/> -->
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_APEX_HUNTER" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_KAIJU_FORCE" level = "6"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_TRANSFORMATION_OF_THE_KAIJU" level = "10"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_CHAOS_THRESHOLD" level = "14"/>
         </rules>
     </element>
     <element name = "Aspect of the Kaiju" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU">
@@ -127,5 +127,111 @@
         <sheet>
             <description>You can use your Constitution modifier in place of your Strength modifier for the attack and damage rolls of your unarmed strikes and weapon attacks. These strikes are still considered Strength-based attack rolls for the purposes of your other barbarian features. While using your Kaiju Force feature, you and everything you are wearing and carrying grows still further. Provided there is room, your size increases by one category, from Large to Huge, for example. While in this form, your reach increases by 5 feet, and your weapon attacks deal an extra 1d4 damage on a hit.</description>
         </sheet>
+    </element>
+    <element name = "The Armoured Kabuto" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO">
+        <supports>Kaiju Transformations</supports>
+        <compendium display = "false"/>
+        <description>
+            <p><strong>At 3rd level. </strong>While raging, if you move at least 15 feet straight towards a target and then immediately hit it with a weapon attack, the target takes an extra 9 (2d8) bludgeoning damage from the attack.</p>
+            <br></br>
+            <br></br>
+            <p><strong>At 10th level. </strong>While raging, you sprout large, insectoid wings. You have a flying speed equal to your walking speed, and your movement doesn’t provoke opportunity attacks.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO1" requirements = "![level:10]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO2" requirements = "[level:10]"/>
+        </rules>
+    </element>
+    <element name = "The Armoured Kabuto" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO1">
+        <compendium display = "false"/>
+        <sheet>
+            <description>While raging, if you move at least 15 feet straight towards a target and then immediately hit it with a weapon attack, the target takes an extra 9 (2d8) bludgeoning damage from the attack.</description>
+        </sheet>
+    </element>
+    <element name = "The Armoured Kabuto" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO2">
+        <compendium display = "false"/>
+        <sheet>
+            <description>While raging, if you move at least 15 feet straight towards a target and then immediately hit it with a weapon attack, the target takes an extra 9 (2d8) bludgeoning damage from the attack. While raging, you sprout large, insectoid wings. You have a flying speed equal to your walking speed, and your movement doesn’t provoke opportunity attacks.</description>
+        </sheet>
+    </element>
+    <element name = "The Infinite Tempest" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST">
+        <supports>Kaiju Transformations</supports>
+        <compendium display = "false"/>
+        <description>
+            <p><strong>At 3rd level. </strong>The first time each turn while raging that you hit a target with a melee attack roll, you deal 3 (1d6) lightning damage to each creature of your choice within 10 feet of the target as lightning spirals out from the point of impact.</p>
+            <br></br>
+            <br></br>
+            <p><strong>At 10th level. </strong>While raging, you crackle with lighting and your blows land with booming claps of thunder. In this form, you have resistance to lightning and thunder damage, and you can use a bonus action to move in a straight line up to 30 feet, passing through other creatures without provoking opportunity attacks. Each creature you pass through in this way must succeed on a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or take 1d8 lightning damage.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST1" requirements = "![level:10]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST2" requirements = "[level:10]"/>
+        </rules>
+    </element>
+    <element name = "The Infinite Tempest" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST1">
+        <compendium display = "false"/>
+        <sheet>
+            <description>The first time each turn while raging that you hit a target with a melee attack roll, you deal 3 (1d6) lightning damage to each creature of your choice within 10 feet of the target as lightning spirals out from the point of impact.</description>
+        </sheet>
+    </element>
+    <element name = "The Infinite Tempest" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST2">
+        <compendium display = "false"/>
+        <sheet>
+            <description>The first time each turn while raging that you hit a target with a melee attack roll, you deal 3 (1d6) lightning damage to each creature of your choice within 10 feet of the target as lightning spirals out from the point of impact. While raging, you crackle with lighting and your blows land with booming claps of thunder. In this form, you have resistance to lightning and thunder damage, and you can use a bonus action to move in a straight line up to 30 feet, passing through other creatures without provoking opportunity attacks. Each creature you pass through in this way must succeed on a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or take 1d8 lightning damage.</description>
+        </sheet>
+    </element>
+    <element name = "Apex Hunter" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_APEX_HUNTER">
+        <description>
+            <p>You gain proficiency in the Medicine and Survival skills. If you already have this proficiency, you gain proficiency in another skill of your choice. Additionally, you can take the Brace action*, stand up from prone, or mount a creature using only 5 feet of movement.</p>
+            <div element = "ID_RGTTYR_ACTION_BRACE"/>
+        </description>
+        <sheet display = "true">
+            <description>You can take the Brace action, stand up from prone, or mount a creature using only 5 feet of movement.</description>
+        </sheet>
+        <rules>
+            <select type = "Proficiency" supports = "Skill" default = "ID_PROFICIENCY_SKILL_MEDICINE"/>
+            <select type = "Proficiency" supports = "Skill" default = "ID_PROFICIENCY_SKILL_SURVIVAL"/>
+        </rules>
+    </element>
+    <element name = "Kaiju Force" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_KAIJU_FORCE">
+        <description>
+            <p>When you enter your rage, you can choose for you and everything you are wearing and carrying to double in size in all dimensions if there is room, and your weight is multiplied by eight. This growth lasts until your rage ends and increases your size by one category, from Medium to Large, for example. While in this form, you can add your Constitution modifier to all Strength checks and Strength saving throws, and your weapon attacks deal an extra 1d4 damage on a hit.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you enter your rage, you can choose for you and everything you are wearing and carrying to double in size in all dimensions if there is room, and your weight is multiplied by eight. This growth lasts until your rage ends and increases your size by one category, from Medium to Large, for example. While in this form, you can add your Constitution modifier to all Strength checks and Strength saving throws, and your weapon attacks deal an extra 1d4 damage on a hit.</description>
+        </sheet>
+    </element>
+    <element name = "Transformation of the Kaiju" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_TRANSFORMATION_OF_THE_KAIJU">
+        <description>
+            <p>You gain the power to transform into a vassal of a kaiju when you rage. This kaiju is the same as the one you draw power from with your Aspect of the Kaiju feature.</p>
+            <ul>
+                <li><strong>The Ascendent Dragon. </strong>While raging, you and any objects you are wearing or carrying assume a pseudo-liquid form. In this form, you have resistance to fire damage, you are immune to the grappled and restrained conditions, you gain a swimming speed of 60 feet, you can move through other creatures’ spaces and through gaps as small as 1 inch wide without squeezing (but you can’t stop there), and you gain the benefits of half cover while submerged in water.</li>
+                <li><strong>The Eternal Leviathon. </strong>While raging, you adopt a translucent, ghastly form. In this form, you have resistance to cold and necrotic damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. If you are inside an object when your rage ends, you are shunted to the nearest unoccupied space and take 5 force damage for every 5 feet travelled.</li>
+                <li><strong>The Titan Earth. </strong>While using your Kaiju Force feature, you and everything you are wearing and carrying grows still further. Provided there is room, your size increases by one category, from Large to Huge, for example. While in this form, your reach increases by 5 feet, and your weapon attacks deal an extra 1d4 damage on a hit.</li>
+                <li><strong>The Armoured Kabuto. </strong>While raging, you sprout large, insectoid wings. You have a flying speed equal to your walking speed, and your movement doesn’t provoke opportunity attacks.</li>
+                <li><strong>The Infinite Tempest. </strong>While raging, you crackle with lighting and your blows land with booming claps of thunder. In this form, you have resistance to lightning and thunder damage, and you can use a bonus action to move in a straight line up to 30 feet, passing through other creatures without provoking opportunity attacks. Each creature you pass through in this way must succeed on a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or take 1d8 lightning damage.</li>
+            </ul>
+        </description>
+        <sheet display = "false"/>
+    </element>
+    <element name = "Chaos Threshold" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_CHAOS_THRESHOLD">
+        <description>
+            <p>While you are raging and have hit points equal to less than half your hit point maximum, your speed increases by 10 feet and you can make one weapon attack as a bonus action. Furthermore, if you fail a saving throw, you can expend one use of your rage to succeed instead. You can use this feature to succeed on a saving throw a number of times equal to half your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet display = "true" usage = "{{chaos threshold:usage}}/Long Rest">
+            <description>While you are raging and have hit points equal to less than half your hit point maximum, your speed increases by 10 feet and you can make one weapon attack as a bonus action. Furthermore, if you fail a saving throw, you can expend one use of your rage to succeed instead. You can use this feature to succeed on a saving throw a number of times equal to half your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name = "chaos threshold:usage" value = "1" bonus = "base"/>
+            <stat name = "chaos threshold:usage" value = "constitution:modifier:half" bonus = "base"/>
+        </rules>
+    </element>
+
+    <element name = "Brace" type = "Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ACTION_BRACE">
+        <description>
+            <p>You can brace yourself using surfaces or objects in your immediate vicinity by spending an amount of movement equal to half your speed. When you do so, you are braced until the start of your next turn: your speed is 0 feet, and you have advantage on ability checks and saving throws you make to avoid being moved against your will. This condition ends when you move away from the surface or object you used to brace yourself, or when you become incapacitated. You can’t brace yourself on a creature unless that creature is Gargantuan. If you are braced on a creature, the first attack roll you make against that creature before the start of your next turn has advantage.</p>
+        </description>
     </element>
 </elements>
