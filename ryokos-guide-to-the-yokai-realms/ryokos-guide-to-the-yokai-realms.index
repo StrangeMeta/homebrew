@@ -4,7 +4,7 @@
 		<name>Ryoko's Guide to the Yokai Realms</name>
 		<description>Content from the Ryoko's Guide to the Yokai Realms book by Loot Tavern.</description>
 		<author>Loot Tavern</author>
-		<update version = "0.0.2">
+		<update version = "0.0.3">
 			<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/ryokos-guide-to-the-yokai-realms.index"/>
 		</update>
 	</info>
@@ -27,8 +27,8 @@
 		<file name = "class-tamer.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-tamer.xml"/> -->
 
 		<!-- archetypes -->
-		<!-- <file name = "barbarian-kaiju.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/barbarian-kaiju.xml"/>
-		<file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
+		<file name = "barbarian-kaiju.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/barbarian-kaiju.xml"/>
+		<!-- <file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
 		<file name = "bard-masks.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-masks.xml"/>
 		<file name = "bender-ferocity.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-ferocity.xml"/>
 		<file name = "bender-fortification.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-fortification.xml"/>
