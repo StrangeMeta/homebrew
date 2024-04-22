@@ -1,0 +1,207 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>College of Hanabi, Bard subclass from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
+        </update>
+    </info>
+
+    <!-- College of Hanabi -->
+    <element name = "College of Hanabi" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_COLLEGE_OF_HANABI">
+        <supports>Bard College</supports>
+        <description>
+            <p class = "flavour">“Yes, these days the College of Hanabi is all arcanotech gizmos and magiflash whatsits, but hanabi—fireworks—is where it all started! Now then, the first question to consider is how important is your hearing?”</p>
+            <p>Since time immemorial, the College of Hanabi has produced the finest firework artisans. From craftspeople in workshops to conductors who orchestrate thousands of explosions in an intricate performance, bards from this college are celebrated throughout the Yokai Realms. They are more than simple artificers; they imbue each spark with a story, each explosion with emotion, and create an ephemeral tapestry of light and sound whose message moulds the mind of all who witness it.</p>
+            <p class = "indent">Whether or not you attended the college itself or learnt the art from a backstreet alchemist is moot: you are an entertainer who uses bright colours and loud bangs as a medium. Perhaps you travelled with a carnival, bringing joy to a new town each evening. Maybe you are a fresh college graduate, seeking to conduct performances in the courts of the high and mighty. Or perhaps you were employed in the Silk Purse’s quarries, but turned mundane blasting operations into fantastical varicoloured displays, much to the chagrin of your foreman. Naysayers be damned, fireworks are a feast for the eyes and besides, the explosions aren’t that loud anymore. Maybe you should get that checked out…</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_BURGEONING_INVENTOR"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_MASTER_OF_ILLUMINATIONS"/>
+        </description>
+        <sheet display = "false">
+            <description>Since time immemorial, the College of Hanabi has produced the finest firework artisans.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_BURGEONING_INVENTOR" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY" level = "6"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_MASTER_OF_ILLUMINATIONS" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Burgeoning Inventor" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_BURGEONING_INVENTOR">
+        <description>
+            <p>Your forays into the art of firework creation has granted you the skills of a journeyman craftsperson and experience wielding projectile weapons. You gain proficiency with the alchemist’s supplies, one other set of artisan’s tools of your choice, and all magitech firearms. You can use a set of alchemist’s supplies as a spellcasting focus for your bard spells.</p>
+            <p class = "indent">In addition, when you make an ability check using a tool you have proficiency with, you can expend one use of Bardic Inspiration. Roll your Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail.</p>
+        </description>
+        <sheet>
+            <description>You can use a set of alchemist’s supplies as a spellcasting focus for your bard spells. In addition, when you make an ability check using a tool you have proficiency with, you can expend one use of Bardic Inspiration. Roll your Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail.</description>
+        </sheet>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+            <select type = "Proficiency" name = "Artisan Tool Proficiency (Burgeoning Inventor)" supports = "Artisan tools"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS"/>
+        </rules>
+    </element>
+    <element name = "Pyrotechnics" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS">
+        <description>
+            <p>During a long rest, you can create a number of small, magical pyrotechnics equal to your Charisma modifier (minimum one). When you use one of the effects below, you expend one pyrotechnic. You can activate no more than one pyrotechnic per turn. Saving throws are always against your bard spell save DC.</p>
+            <ul>
+                <li><strong>Kodama Candle. </strong>As a reaction when you are targeted by an attack from a creature you can see within 15 feet of you, you can cause this pyrotechnic to emit a burst of light, imposing disadvantage on the triggering attack roll. Creatures that don’t rely on sight are immune to this effect. In addition, the creature must succeed on a Constitution saving throw or be blinded until the end of its next turn.</li>
+                <li><strong>Screaming Nue. </strong>As an action, you can throw this pyrotechnic to a point within 60 feet of you, where it creates smoke and lights in the form of a screaming nue’s head for the next minute. Each creature other than you within 30 feet of the point that can hear or see the effect must succeed on a Wisdom saving throw or be frightened of it. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself and becoming immune to the effect of any Screaming Nue for the next 24 hours on a success.</li>
+                <li><strong>Raiju's Rupture. </strong>As an action, you can throw this pyrotechnic to a point within 60 feet of you, where it explodes, creating a thundering boom that can be heard for 500 feet. Each creature within 10 feet of the pyrotechnic must make a Dexterity saving throw. On a failure, a creature is deafened and takes a number of d6s of thunder damage equal to your proficiency bonus. On a success, a creature takes half as much damage and isn’t deafened.</li>
+                <li><strong>Wanyudo Wheel. </strong>As a bonus action, you can light this pyrotechnic, which propels you through the air. Until the end of your turn, you gain a flying speed equal to 30 plus ten times your proficiency bonus. This movement does not provoke opportunity attacks.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "{{pyrotechnics:usage}}/Long Rest">
+            <description>When you use one of the effects below, you expend one pyrotechnic. You can activate no more than one pyrotechnic per turn. Saving throws are always against your bard spell save DC.</description>
+        </sheet>
+        <rules>
+            <stat name = "pyrotechnics:usage" value = "1" bonus = "base"/>
+            <stat name = "pyrotechnics:usage" value = "charisma:modifier" bonus = "base"/>
+
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_KODAMA_CANDLE" requirements = "![level:14]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_SCREAMING_NUE" requirements = "![level:14]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_RAIJUS_RAPTURE" requirements = "![level:14]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_WANYUDO_WHEEL" requirements = "![level:14]"/>
+            
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_KODAMA_CANDLE_ENHANCED" requirements = "[level:14]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_SCREAMING_NUE_ENHANCED" requirements = "[level:14]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_RAIJUS_RAPTURE_ENHANCED" requirements = "[level:14]"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_WANYUDO_WHEEL_ENHANCED" requirements = "[level:14]"/>
+        </rules>
+    </element>
+    <element name = "Kodama Candle" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_KODAMA_CANDLE">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As a reaction when you are targeted by an attack from a creature you can see within 15 feet of you, you can cause this pyrotechnic to emit a burst of light, imposing disadvantage on the triggering attack roll. Creatures that don’t rely on sight are immune to this effect. In addition, the creature must succeed on a Constitution saving throw or be blinded until the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Screaming Nue" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_SCREAMING_NUE">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As an action, you can throw this pyrotechnic to a point within 60 feet of you, where it creates smoke and lights in the form of a screaming nue’s head for the next minute. Each creature other than you within 30 feet of the point that can hear or see the effect must succeed on a Wisdom saving throw or be frightened of it. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself and becoming immune to the effect of any Screaming Nue for the next 24 hours on a success.</description>
+        </sheet>
+    </element>
+    <element name = "Raiju's Rapture" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_RAIJUS_RAPTURE">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As an action, you can throw this pyrotechnic to a point within 60 feet of you, where it explodes, creating a thundering boom that can be heard for 500 feet. Each creature within 10 feet of the pyrotechnic must make a Dexterity saving throw. On a failure, a creature is deafened and takes a number of d6s of thunder damage equal to your proficiency bonus. On a success, a creature takes half as much damage and isn’t deafened.</description>
+        </sheet>
+    </element>
+    <element name = "Wanyudo Wheel" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_WANYUDO_WHEEL">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As a bonus action, you can light this pyrotechnic, which propels you through the air. Until the end of your turn, you gain a flying speed equal to 30 plus ten times your proficiency bonus. This movement does not provoke opportunity attacks.</description>
+        </sheet>
+    </element>
+    <element name = "Firework Display" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY">
+        <description>
+            <p>Your expertise with fireworks lets you craft moving stories capable of influencing peoples’ emotions and outlook.</p>
+            <p class = "indent">Over the course of 1 minute, you can use 10 gp of fireworks to create an enrapturing display of sporadic bright lights and noise audible for 1,000 feet. You must use your action each round to imbue the light and smoke with your bardic magic, causing an enthralling story to manifest; if you fail to do this, the display ends with no effect.</p>
+            <p class = "indent">At the end of the display, you can choose a number of creatures that witnessed it equal to your Charisma modifier (minimum one). Each creature must succeed on a Wisdom saving throw against your bard spell save DC or be subject to the effect of the message with which you chose to imbue the display for the next 24 hours. Creatures that do not witness the whole display or that are immune to the charmed condition automatically succeed on this saving throw. Choose one of the following messages:</p>
+            <ul>
+                <li><strong>Anger. </strong>The message is one of injustice and exploitation, fomenting anger in those that watch it. With a mere spark, riots may ensue. Affected creatures are addled by their anger and prone to violence; Deception checks against them have advantage.</li>
+                <li><strong>Fear. </strong>The world is a dangerous place, and to step outside one’s home is to invite disaster. People are unlikely to leave their home, let alone interfere in others matters, after watching this performance. Intimidation checks have advantage against an affected creature. In addition, the first time the target sees a creature it can’t identify or with whom it is not acquainted, it must make a Wisdom saving throw against your bard spell save DC. On a failure, the affected creature is frightened of that creature until the unknown creature reveals itself to be non-threatening, or is out of sight. While frightened, an affected target can repeat the saving throw at the end of each of its turns, ending the condition on itself and becoming immune to being frightened by this effect for that creature for the duration.</li>
+                <li><strong>Generosity. </strong>The act of giving and gratitude is epitomised as the paradigm of virtue. Observers are more likely to help others after seeing this display. Affected creatures are charmed by you. While charmed, these creatures help you where possible without large risks, and speak highly of your performance. The creature ceases to be charmed if you or your companions do anything harmful to it.</li>
+                <li><strong>Peace. </strong>The story shows the utopia that awaits the world if all act with kindness and goodwill. Feelings of resentment are quelled and acts of violence are less likely after a community sees this display. Affected creatures are subject to the calm emotions spell.</li>
+            </ul>
+            <p class = "indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet display = "true" usage = "1/Short Rest">
+            <description>Over the course of 1 minute, you can use 10 gp of fireworks to create an enrapturing display of sporadic bright lights and noise audible for 1,000 feet. You must use your action each round to imbue the light and smoke with your bardic magic, causing an enthralling story to manifest; if you fail to do this, the display ends with no effect. At the end of the display, you can choose a number of creatures that witnessed it equal to your Charisma modifier (minimum one). Each creature must succeed on a Wisdom saving throw against your bard spell save DC or be subject to the effect of the message with which you chose to imbue the display for the next 24 hours. Creatures that do not witness the whole display or that are immune to the charmed condition automatically succeed on this saving throw. Choose one of the following messages:</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_ANGER"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_FEAR"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_GENEROSITY"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_PEACE"/>
+        </rules>
+    </element>
+    <element name = "Anger" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_ANGER">
+        <compendium display = "false"/>
+        <description>
+            <p>The message is one of injustice and exploitation, fomenting anger in those that watch it. With a mere spark, riots may ensue. Affected creatures are addled by their anger and prone to violence; Deception checks against them have advantage.</p>
+        </description>
+        <sheet display = "true">
+            <description>The message is one of injustice and exploitation, fomenting anger in those that watch it. With a mere spark, riots may ensue. Affected creatures are addled by their anger and prone to violence; Deception checks against them have advantage.</description>
+        </sheet>
+    </element>
+    <element name = "Fear" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_FEAR">
+        <compendium display = "false"/>
+        <description>
+            <p>The world is a dangerous place, and to step outside one’s home is to invite disaster. People are unlikely to leave their home, let alone interfere in others matters, after watching this performance. Intimidation checks have advantage against an affected creature. In addition, the first time the target sees a creature it can’t identify or with whom it is not acquainted, it must make a Wisdom saving throw against your bard spell save DC. On a failure, the affected creature is frightened of that creature until the unknown creature reveals itself to be non-threatening, or is out of sight. While frightened, an affected target can repeat the saving throw at the end of each of its turns, ending the condition on itself and becoming immune to being frightened by this effect for that creature for the duration.</p>
+        </description>
+        <sheet display = "true">
+            <description>The world is a dangerous place, and to step outside one’s home is to invite disaster. People are unlikely to leave their home, let alone interfere in others matters, after watching this performance. Intimidation checks have advantage against an affected creature. In addition, the first time the target sees a creature it can’t identify or with whom it is not acquainted, it must make a Wisdom saving throw against your bard spell save DC. On a failure, the affected creature is frightened of that creature until the unknown creature reveals itself to be non-threatening, or is out of sight. While frightened, an affected target can repeat the saving throw at the end of each of its turns, ending the condition on itself and becoming immune to being frightened by this effect for that creature for the duration.</description>
+        </sheet>
+    </element>
+    <element name = "Generosity" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_GENEROSITY">
+        <compendium display = "false"/>
+        <description>
+            <p>The act of giving and gratitude is epitomised as the paradigm of virtue. Observers are more likely to help others after seeing this display. Affected creatures are charmed by you. While charmed, these creatures help you where possible without large risks, and speak highly of your performance. The creature ceases to be charmed if you or your companions do anything harmful to it.</p>
+        </description>
+        <sheet display = "true">
+            <description>The act of giving and gratitude is epitomised as the paradigm of virtue. Observers are more likely to help others after seeing this display. Affected creatures are charmed by you. While charmed, these creatures help you where possible without large risks, and speak highly of your performance. The creature ceases to be charmed if you or your companions do anything harmful to it.</description>
+        </sheet>
+    </element>
+    <element name = "Peace" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_FIREWORK_DISPLAY_PEACE">
+        <compendium display = "false"/>
+        <description>
+            <p>The story shows the utopia that awaits the world if all act with kindness and goodwill. Feelings of resentment are quelled and acts of violence are less likely after a community sees this display. Affected creatures are subject to the calm emotions spell.</p>
+        </description>
+        <sheet display = "true">
+            <description>The story shows the utopia that awaits the world if all act with kindness and goodwill. Feelings of resentment are quelled and acts of violence are less likely after a community sees this display. Affected creatures are subject to the calm emotions spell.</description>
+        </sheet>
+    </element>
+    <element name = "Master of Illuminations" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_MASTER_OF_ILLUMINATIONS">
+        <description>
+            <p>Your mastery of the art of hanabi can be seen in even your merest spark. Your Firework Display feature can affect up to three times as many creatures and your Pyrotechnics are enhanced in the following ways:</p>
+            <ul>
+                <li><strong>Kodama Candle. </strong>The range increases to 30 feet and the pyrotechnic sheds bright light in a 30-foot radius until the start of your next turn, causing all attacks against you to have disadvantage. Creatures that don’t rely on sight are immune to this effect.</li>
+                <li><strong>Screaming Nue. </strong>The radius of the effect increases to 40 feet and creatures that fail the saving throw also take a number of d8s of psychic damage equal to half your proficiency bonus (rounded down). Creatures that succeed on the saving throw take half as much damage and aren’t otherwise affected.</li>
+                <li><strong>Raiju's Rapture. </strong>The radius of the explosion increases to 20 feet and the damage dice increase to d8s.</li>
+                <li><strong>Wanyudo Wheel. </strong>The flying speed granted lasts until the end of your next turn. Your movement does not provoke opportunity attacks for the duration.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>Your mastery of the art of hanabi can be seen in even your merest spark. Your Firework Display feature can affect up to three times as many creatures and your Pyrotechnics are enhanced.</description>
+        </sheet>
+    </element>
+    <element name = "Kodama Candle" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_KODAMA_CANDLE_ENHANCED">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As a reaction when you are targeted by an attack from a creature you can see within 30 feet of you, you can cause this pyrotechnic to emit a burst of light, shedding bright light in a 30-foot radius until the start of your next turn, causing all attacks against you to have disadvantage. Creatures that don’t rely on sight are immune to this effect. In addition, the creature must succeed on a Constitution saving throw or be blinded until the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Screaming Nue" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_SCREAMING_NUE_ENHANCED">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As an action, you can throw this pyrotechnic to a point within 60 feet of you, where it creates smoke and lights in the form of a screaming nue’s head for the next minute. Each creature other than you within 40 feet of the point that can hear or see the effect must succeed on a Wisdom saving throw or be frightened of it and take a number of d8s of spychic damage equal to half your proficiency bonus (rounded down). Creatures that succeed on the saving throw take half as much damage and aren't otherwise affected. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself and becoming immune to the effect of any Screaming Nue for the next 24 hours on a success.</description>
+        </sheet>
+    </element>
+    <element name = "Raiju's Rapture" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_RAIJUS_RAPTURE_ENHANCED">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As an action, you can throw this pyrotechnic to a point within 60 feet of you, where it explodes, creating a thundering boom that can be heard for 500 feet. Each creature within 20 feet of the pyrotechnic must make a Dexterity saving throw. On a failure, a creature is deafened and takes a number of d8s of thunder damage equal to your proficiency bonus. On a success, a creature takes half as much damage and isn’t deafened.</description>
+        </sheet>
+    </element>
+    <element name = "Wanyudo Wheel" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_COLLEGE_OF_HANABI_PYROTECHNICS_WANYUDO_WHEEL_ENHANCED">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>As a bonus action, you can light this pyrotechnic, which propels you through the air. Until the end of your next turn, you gain a flying speed equal to 30 plus ten times your proficiency bonus. Your movement does not provoke opportunity attacks for the duration.</description>
+        </sheet>
+    </element>
+
+    <element name = "Weapon Proficiency (Magitech Firearms)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS">
+        <sheet alt = "Magitech Firearms"/>
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_TESSEN"/>
+        </rules>
+    </element>
+    <append id = "ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS"/>
+        </rules>
+    </append>
+</elements>
