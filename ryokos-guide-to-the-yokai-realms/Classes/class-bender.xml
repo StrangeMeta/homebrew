@@ -68,8 +68,8 @@
                 <tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
                 <tr><td>20th</td><td class="left">Discipline Feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
             </table>
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING"/> -->
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY"/> -->
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING"/>
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY"/>
             <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES"/> -->
             <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO"/> -->
             <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE"/> -->
@@ -99,8 +99,8 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
             <select type = "Proficiency" name = "Skill Proficiencies, Bender" supports = "ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_STEALTH" number = "2" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
 
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING" level = "1"/> -->
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY" level = "1"/> -->
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING" level = "1"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY" level = "1"/>
             <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES" level = "1"/> -->
             <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO" level = "2"/> -->
             <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE" level = "3"/> -->
@@ -119,5 +119,363 @@
                 <grant type = "Grants" id = "ID_INTERNAL_GRANT_MUTLICLASS"/>
             </rules>
         </multiclass>
+    </element>
+    <element name = "Spellcasting" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING">
+        <description>
+            <p><em>1st-level bender feature</em></p>
+            <p>As a bender of elements, you use the motions of your corporeal form to coax the Weave into manipulating the primordial forces.</p>
+            <h5>CANTRIPS</h5>
+            <p>You know two cantrips of your choice from your bender spell list (see Elemental Affinity). At higher levels, you learn additional cantrips of your choice, as shown in the Cantrips Known column of the Bender table. Your Elemental Affinity feature also allows you to learn more cantrips at higher levels.</p>
+            <h5>PREPARING AND CASTING SPELLS</h5>
+            <p>The Bender table shows how many spell slots you have to cast your bender spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class = "indent">You prepare the repertoire of bender spells that are available for you to cast, choosing from your bender spell list (see Elemental Affinity). When you do so, choose a number of these spells equal to your bender spellcasting ability modifier + half your bender level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+            <p class = "indent">For example, if you are a 5th-level bender, you have four 1st-level and two 2nd-level spell slots. With a spellcasting ability of 14, your repertoire of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell thunderwave, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your repertoire of prepared spells.</p>
+            <p class = "indent">You can change your repertoire of prepared spells when you finish a long rest. Preparing a new repertoire of bender spells requires time spent practising their movements and gestures: at least 1 minute per spell level for each spell in your repertoire.</p>
+            <h5>SPELLCASTING ABILITY</h5>
+            <p>When you gain your first level in this class, you choose which spellcasting ability you use for your bender spells from Intelligence, Wisdom, and Charisma. You use this ability whenever a bender spell refers to your spellcasting ability. In addition, you use this ability’s modifier when setting the saving throw DC for a bender spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC </strong>= 8 + your proficiency bonus + your spellcasting ability modifier</p>
+                <p><strong>Spell attack modifier </strong>= your proficiency bonus + your spellcasting ability modifier</p>
+            </center>
+            <h5>RITUAL CASTING</h5>
+            <p>You can cast a bender spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
+            <h5>SPELLCASTING FOCUS</h5>
+            <p>You can use your free hand as a spellcasting focus for your bender spells. This free hand can be used for both the somatic and material components for a spell, provided the material component has no cost and isn’t consumed by the casting.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Class Feature" name = "Spellcasting Ability (Bender)" supports = "Bender Spellcasting Ability"/>
+        </rules>
+    </element>
+    <element name = "Intelligence" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING_INTELLIGENCE">
+        <compendium display = "false"/>
+        <requirements>[int:13]</requirements>
+        <supports>Bender Spellcasting Ability</supports>
+        <description>
+            <p>Intelligence is your spellcasting ability for your bender spells.</p>
+        </description>
+        <sheet display = "false"/>
+        <spellcasting name = "Bender" ability = "Intelligence" prepare = "true">
+            <list known = "true">Bender</list>
+        </spellcasting>
+        <rules>
+            <grant type = "Grants" id = "ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements = "ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type = "Grants" id = "ID_INTERNAL_RITUAL_CASTING"/>
+
+            <stat name = "bender:spellcasting:slots:1" value = "2" level = "1"/>
+            <stat name = "bender:spellcasting:slots:1" value = "1" level = "3"/>
+            <stat name = "bender:spellcasting:slots:1" value = "1" level = "5"/>
+            <stat name = "bender:spellcasting:slots:2" value = "2" level = "5"/>
+            <stat name = "bender:spellcasting:slots:2" value = "1" level = "7"/>
+            <stat name = "bender:spellcasting:slots:3" value = "2" level = "9"/>
+            <stat name = "bender:spellcasting:slots:3" value = "1" level = "11"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "13"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "15"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "17"/>
+            <stat name = "bender:spellcasting:slots:5" value = "1" level = "17"/>
+            <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
+            <stat name = "bender:spellcasting:prepare" value = "intelligence:modifier"/>
+            <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Wisdom" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING_WISDOM">
+        <compendium display = "false"/>
+        <requirements>[wis:13]</requirements>
+        <supports>Bender Spellcasting Ability</supports>
+        <description>
+            <p>Wisdom is your spellcasting ability for your bender spells.</p>
+        </description>
+        <sheet display = "false"/>
+        <spellcasting name = "Bender" ability = "Wisdom" prepare = "true">
+            <list known = "true">Bender</list>
+        </spellcasting>
+        <rules>
+            <grant type = "Grants" id = "ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements = "ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type = "Grants" id = "ID_INTERNAL_RITUAL_CASTING"/>
+
+            <stat name = "bender:spellcasting:slots:1" value = "2" level = "1"/>
+            <stat name = "bender:spellcasting:slots:1" value = "1" level = "3"/>
+            <stat name = "bender:spellcasting:slots:1" value = "1" level = "5"/>
+            <stat name = "bender:spellcasting:slots:2" value = "2" level = "5"/>
+            <stat name = "bender:spellcasting:slots:2" value = "1" level = "7"/>
+            <stat name = "bender:spellcasting:slots:3" value = "2" level = "9"/>
+            <stat name = "bender:spellcasting:slots:3" value = "1" level = "11"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "13"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "15"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "17"/>
+            <stat name = "bender:spellcasting:slots:5" value = "1" level = "17"/>
+            <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
+            <stat name = "bender:spellcasting:prepare" value = "wisdom:modifier"/>
+            <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Charisma" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING_CHARISMA">
+        <compendium display = "false"/>
+        <requirements>[cha:13]</requirements>
+        <supports>Bender Spellcasting Ability</supports>
+        <description>
+            <p>Charisma is your spellcasting ability for your bender spells.</p>
+        </description>
+        <sheet display = "false"/>
+        <spellcasting name = "Bender" ability = "Charisma" prepare = "true">
+            <list known = "true">Bender</list>
+        </spellcasting>
+        <rules>
+            <grant type = "Grants" id = "ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements = "ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type = "Grants" id = "ID_INTERNAL_RITUAL_CASTING"/>
+
+            <stat name = "bender:spellcasting:slots:1" value = "2" level = "1"/>
+            <stat name = "bender:spellcasting:slots:1" value = "1" level = "3"/>
+            <stat name = "bender:spellcasting:slots:1" value = "1" level = "5"/>
+            <stat name = "bender:spellcasting:slots:2" value = "2" level = "5"/>
+            <stat name = "bender:spellcasting:slots:2" value = "1" level = "7"/>
+            <stat name = "bender:spellcasting:slots:3" value = "2" level = "9"/>
+            <stat name = "bender:spellcasting:slots:3" value = "1" level = "11"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "13"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "15"/>
+            <stat name = "bender:spellcasting:slots:4" value = "1" level = "17"/>
+            <stat name = "bender:spellcasting:slots:5" value = "1" level = "17"/>
+            <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
+            <stat name = "bender:spellcasting:prepare" value = "charisma:modifier"/>
+            <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
+            <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Elemental Affinity" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY">
+        <description>
+            <p>You find attunement with one of the four elements. Choose one of the following: air, earth, fire, or water. The spells associated with that element are added to your bender spell list.</p>
+            <p class = "indent">Each element is associated with one or two damage types:</p>
+            <ul>
+                <li><strong>Air: </strong>Thunder.</li>
+                <li><strong>Earth: </strong>Acid and poison.</li>
+                <li><strong>Fire: </strong>Fire and lightning.</li>
+                <li><strong>Water: </strong>Cold.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>You have found attunement with the following elements:</description>
+        </sheet>
+        <rules>
+            <select type = "Class Feature" name = "Elemental Affinity (1)" supports = "Elements"/>
+            <select type = "Class Feature" name = "Elemental Affinity (2)" supports = "Elements" requirements = "[level:6]"/>
+            <select type = "Class Feature" name = "Elemental Affinity (3)" supports = "Elements" requirements = "[level:10]"/>
+            <select type = "Class Feature" name = "Elemental Affinity (4)" supports = "Elements" requirements = "[level:14]"/>
+        </rules>
+    </element>
+    <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR">
+        <compendium display = "false"/>
+        <supports>Elements</supports>
+        <description>
+            <p>The spells associated with air have been added to your spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Air affinity: {{affinity:air}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Air</extend>
+		</spellcasting>
+        <rules>
+            <stat name = "affinity:air" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with air has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:air" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with air has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:air" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with air has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:air" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH">
+        <compendium display = "false"/>
+        <supports>Elements</supports>
+        <description>
+            <p>The spells associated with earth have been added to your spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Earth affinity: {{affinity:earth}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Earth</extend>
+        </spellcasting>
+        <rules>
+            <stat name = "affinity:earth" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with earth has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:earth" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with earth has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:earth" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH3</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with earth has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:earth" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE">
+        <compendium display = "false"/>
+        <supports>Elements</supports>
+        <description>
+            <p>The spells associated with fire have been added to your spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Fire affinity: {{affinity:fire}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Fire</extend>
+        </spellcasting>
+        <rules>
+            <stat name = "affinity:fire" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with fire has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:fire" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with fire has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:fire" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE3</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with fire has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:fire" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER">
+        <compendium display = "false"/>
+        <supports>Elements</supports>
+        <description>
+            <p>The spells associated with water have been added to your spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Water affinity: {{affinity:water}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Water</extend>
+        </spellcasting>
+        <rules>
+            <stat name = "affinity:water" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with water has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:water" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER3">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with water has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:water" value = "1"/>
+        </rules>
+    </element>
+    <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER4">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER3</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with water has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:water" value = "1"/>
+        </rules>
     </element>
 </elements>
