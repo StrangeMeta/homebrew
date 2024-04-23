@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Racial feats from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.4">
+        <update version = "0.0.5">
             <file name = "feats-racial.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats-racial.xml"/>
         </update>
     </info>
@@ -10,7 +10,7 @@
     <!-- Racial Feats -->
     <element name = "Adaptive Colouring" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ADAPTIVE_COLOURING">
         <prerequisite>Nishikin or Ryujin</prerequisite>
-        <requirements>ID_RGTTYR_RACE_NISHIKIN|ID_RGTTYR_RACE_RYUJIN</requirements>
+        <requirements>ID_RGTTYR_RACE_NISHIKIN|ID_RGTTYR_RACE_RYUJIN|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>You are able to shift your colouration, a rare ability possessed by few of your kin, granting you the following benefits:</p>
             <ul>
@@ -94,7 +94,7 @@
 
     <element name = "Draconic Fury" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_DRACONIC_FURY">
         <prerequisite>Ryujin</prerequisite>
-        <requirements>ID_RGTTYR_RACE_RYUJIN|ID_RGTTYR_RACE_NISHIKIN,ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN</requirements>
+        <requirements>ID_RGTTYR_RACE_RYUJIN|ID_RGTTYR_RACE_NISHIKIN,ID_RGTTYR_RACIAL_TRAIT_NISHIKIN_DRACONIC_METAMORPHOSIS_RYUJIN|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>You have learned to channel your draconic energy into a damaging breath weapon, granting you the following benefits:</p>
             <ul>
@@ -179,7 +179,7 @@
 
     <element name = "Enkoh's Might" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ENKOHS_MIGHT">
         <prerequisite>Enkoh (Hulking)</prerequisite>
-        <requirements>ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING</requirements>
+        <requirements>ID_RGTTYR_RACE_VARIANT_ENKOH_HULKING|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>You possess explosive strength, impressive even compared to your hulking kin, granting you the following benefits:</p>
             <ul>
@@ -197,7 +197,7 @@
 
     <element name = "Gift of the Lion Turtle" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_GIFT_OF_THE_LION_TURTLE">
         <prerequisite>Lion Turtle</prerequisite>
-        <requirements>ID_RGTTYR_RACE_LION_TURTLE</requirements>
+        <requirements>ID_RGTTYR_RACE_LION_TURTLE|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>Some lion turtles, such as yourself, are blessed with unusual command over their telepathic abilities. Your mastery of this power grants you the following benefits:</p>
             <ul>
@@ -249,7 +249,7 @@
 
     <element name = "Hanamori Physiology" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_HANAMORI_PHYSIOLOGY">
         <prerequisite>Hanamori</prerequisite>
-        <requirements>ID_RGTTYR_RACE_HANAMORI</requirements>
+        <requirements>ID_RGTTYR_RACE_HANAMORI|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>Your hyperactive hanamori physiology causes your body to adapt to changes in the environment instantly, granting you the following benefits:</p>
             <ul>
@@ -264,7 +264,7 @@
 
     <element name = "Haniwa Soulbinding" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_HANIWA_SOULBINDING">
         <prerequisite>Haniwa</prerequisite>
-        <requirements>ID_RGTTYR_RACE_HANIWA</requirements>
+        <requirements>ID_RGTTYR_RACE_HANIWA|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>Your innate creation magic is potent enough that you can pour more of your essence into your clay companion. When you create a companion, it can use one of the following stat blocks instead of one listed in the Clay Companion trait: black bear, giant goat, giant octopus, or warhorse.</p>
             <div class = "indent">Once you reach 5th level, you can create Clay Companions that use the dire wolf, giant spider, and giant toad stat blocks.</div>
@@ -688,7 +688,7 @@
 
     <element name = "Isetsu Magic" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ISETSU_MAGIC">
         <prerequisite>Isetsu</prerequisite>
-        <requirements>ID_RGTTYR_RACE_ISETSU</requirements>
+        <requirements>ID_RGTTYR_RACE_ISETSU|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>Your connection with the ocean allows you to wield a measure of water magic, granting you the following benefits:</p>
             <ul>
@@ -768,7 +768,7 @@
 
     <element name = "Karasu Trickery" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_KARASU_TRICKERY">
         <prerequisite>Tengu (Karasu)</prerequisite>
-        <requirements>ID_RGTTYR_RACE_VARIANT_TENGU_KARASU</requirements>
+        <requirements>ID_RGTTYR_RACE_VARIANT_TENGU_KARASU|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>You are a virtuoso of mischief and trickery even among karasu, granting you the following benefits:</p>
             <ul>
@@ -786,7 +786,7 @@
 
     <element name = "Kitsune's Blessing" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_KITSUNES_BLESSING">
         <prerequisite>Kitsune</prerequisite>
-        <requirements>ID_RGTTYR_RACE_KITSUNE</requirements>
+        <requirements>ID_RGTTYR_RACE_KITSUNE|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>You possess natural magic beyond that of a typical kitsune. You gain the following benefits:</p>
             <ul>
@@ -803,7 +803,7 @@
 
     <element name = "Oni Regeneration" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_ONI_REGENERATION">
         <prerequisite>Oniborne</prerequisite>
-        <requirements>ID_RGTTYR_RACE_ONIBORNE</requirements>
+        <requirements>ID_RGTTYR_RACE_ONIBORNE|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>The incredible fortitude and longevity of your ancestors flows through you, granting you the following benefits:</p>
             <ul>
@@ -821,7 +821,7 @@
 
     <element name = "Seasonal Determinism" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SEASONAL_DETERMINISM">
         <prerequisite>Fuyohren</prerequisite>
-        <requirements>ID_RGTTYR_RACE_FUYOHREN</requirements>
+        <requirements>ID_RGTTYR_RACE_FUYOHREN|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>The state of the world at the moment of your birth left an indelible imprint on your body. Choose one of the seasons within which you were born; you gain the associated benefits:</p>
             <p class = "indent"><strong>Spring. </strong>Your Dexterity score increases by 1, to a maximum of 20. In addition, your speed increases by 5 feet, and you can use a bonus action to prepare yourself to move in a dextrous flourish. When you do, the next attack roll made against you before the start of your next turn has disadvantage.</p>
@@ -899,7 +899,7 @@
 
     <element name = "Shadowmage" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SHADOWMAGE">
         <prerequisite>Tengu (Hanataka)</prerequisite>
-        <requirements>ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA</requirements>
+        <requirements>ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>The yokai magic that flows through your veins lets you draw on a wider pool of magic than is typical to most hanataka. You learn two cantrips of your choice from the druid or sorcerer spell list. You can cast them without components while in dim light or darkness. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
@@ -935,7 +935,7 @@
 
     <element name = "Springtail Agility" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_FEAT_SPRINGTAIL_AGILITY">
         <prerequisite>Enkoh (Springtail)</prerequisite>
-        <requirements>ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL</requirements>
+        <requirements>ID_RGTTYR_RACE_VARIANT_ENKOH_SPRINGTAIL|ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE</requirements>
         <description>
             <p>You are uncommonly agile and dexterous, even relative to your springtail kin, granting you the following benefits:</p>
             <ul>

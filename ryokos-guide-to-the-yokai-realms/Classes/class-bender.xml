@@ -116,7 +116,7 @@
                 <set name = "multiclass proficiencies">simple weapons</set>
             </setters>
             <rules>
-                <grant type = "Grants" id = "ID_INTERNAL_GRANT_MUTLICLASS"/>
+                <grant type = "Grants" id = "ID_INTERNAL_GRANT_MULTICLASS"/>
             </rules>
         </multiclass>
     </element>
@@ -149,7 +149,7 @@
     </element>
     <element name = "Intelligence" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING_INTELLIGENCE">
         <compendium display = "false"/>
-        <requirements>[int:13]</requirements>
+        <requirements>ID_RGTTYR_CLASS_BENDER|[int:13]</requirements>
         <supports>Bender Spellcasting Ability</supports>
         <description>
             <p>Intelligence is your spellcasting ability for your bender spells.</p>
@@ -183,7 +183,7 @@
     </element>
     <element name = "Wisdom" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING_WISDOM">
         <compendium display = "false"/>
-        <requirements>[wis:13]</requirements>
+        <requirements>ID_RGTTYR_CLASS_BENDER|[wis:13]</requirements>
         <supports>Bender Spellcasting Ability</supports>
         <description>
             <p>Wisdom is your spellcasting ability for your bender spells.</p>
@@ -217,7 +217,7 @@
     </element>
     <element name = "Charisma" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING_CHARISMA">
         <compendium display = "false"/>
-        <requirements>[cha:13]</requirements>
+        <requirements>ID_RGTTYR_CLASS_BENDER|[cha:13]</requirements>
         <supports>Bender Spellcasting Ability</supports>
         <description>
             <p>Charisma is your spellcasting ability for your bender spells.</p>
@@ -259,20 +259,25 @@
                 <li><strong>Fire: </strong>Fire and lightning.</li>
                 <li><strong>Water: </strong>Cold.</li>
             </ul>
+            <p class = "indent"><strong>At Higher Levels. </strong>At 6th, 10th, and 14th levels, you choose one of the four elements to gain affinity with, either a new element or one you’ve chosen before. This has some immediate effects and interacts with some subclass features.</p>
+            <ul>
+                <li><strong>New Elemental Affinity. </strong>If you choose a new element with which to gain affinity, you add its spells to your bender spell list and you learn one cantrip of your choice from the new element’s list. This cantrip doesn’t count against the number of cantrips you know.</li>
+                <li><strong>Repeated Elemental Affinity. </strong>If you choose an element for which you already had affinity, spells that you cast from that spell list are cast one level higher than the level of spell slot you expend. This effect stacks; if you choose to gain affinity with the same element four times, your spells from that element’s list are cast three levels higher than the spell slot you expend.</li>
+            </ul>
         </description>
         <sheet display = "true">
-            <description>You have found attunement with the following elements:</description>
+            <description>If an element you have attuned has an affinity of 2 or greater, spells you cast from that spell list are cast one level higher than the spell slot you expended. This effect stacks; if you choose to gain affinity with the same element four times, your spells from that element’s list are cast three levels higher than the spell slot you expend. You have found attunement with the following elements:</description>
         </sheet>
         <rules>
-            <select type = "Class Feature" name = "Elemental Affinity (1)" supports = "Elements"/>
-            <select type = "Class Feature" name = "Elemental Affinity (2)" supports = "Elements" requirements = "[level:6]"/>
-            <select type = "Class Feature" name = "Elemental Affinity (3)" supports = "Elements" requirements = "[level:10]"/>
-            <select type = "Class Feature" name = "Elemental Affinity (4)" supports = "Elements" requirements = "[level:14]"/>
+            <select type = "Class Feature" name = "Elemental Affinity (1)" supports = "ElementsWeak"/>
+            <select type = "Class Feature" name = "Elemental Affinity (2)" supports = "(Elements||ElementsStrong)" level = "6"/>
+            <select type = "Class Feature" name = "Elemental Affinity (3)" supports = "(Elements||ElementsStrong)" level = "10"/>
+            <select type = "Class Feature" name = "Elemental Affinity (4)" supports = "(Elements||ElementsStrong)" level = "14"/>
         </rules>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR">
         <compendium display = "false"/>
-        <supports>Elements</supports>
+        <supports>ElementsWeak</supports>
         <description>
             <p>The spells associated with air have been added to your spell list.</p>
         </description>
@@ -284,6 +289,24 @@
 		</spellcasting>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+        </rules>
+    </element>
+    <element name =  "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR</requirements>
+        <supports>ElementsStrong</supports>
+        <description>
+            <p>The spells associated with air have been added to your spell list. You also learn one cantrip of your choice from the air spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Air affinity: {{affinity:air}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Air</extend>
+		</spellcasting>
+        <rules>
+            <stat name = "affinity:air" value = "1"/>
+            <select type = "Spell" name = "Cantrip, Air" supports = "Air, 0" spellcasting = "Bender"/>
         </rules>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2">
@@ -298,9 +321,21 @@
             <stat name = "affinity:air" value = "1"/>
         </rules>
     </element>
+    <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with air has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:air" value = "1"/>
+        </rules>
+    </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3">
         <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2</requirements>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP2</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with air has increased.</p>
@@ -324,7 +359,7 @@
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH">
         <compendium display = "false"/>
-        <supports>Elements</supports>
+        <supports>ElementsWeak</supports>
         <description>
             <p>The spells associated with earth have been added to your spell list.</p>
         </description>
@@ -336,6 +371,24 @@
         </spellcasting>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+        </rules>
+    </element>
+    <element name =  "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH</requirements>
+        <supports>ElementsStrong</supports>
+        <description>
+            <p>The spells associated with earth have been added to your spell list. You also learn one cantrip of your choice from the earth spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Earth affinity: {{affinity:earth}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Earth</extend>
+		</spellcasting>
+        <rules>
+            <stat name = "affinity:earth" value = "1"/>
+            <select type = "Spell" name = "Cantrip, Earth" supports = "Earth, 0" spellcasting = "Bender"/>
         </rules>
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2">
@@ -350,9 +403,21 @@
             <stat name = "affinity:earth" value = "1"/>
         </rules>
     </element>
+    <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with earth has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:earth" value = "1"/>
+        </rules>
+    </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH3">
         <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2</requirements>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP2</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with earth has increased.</p>
@@ -376,7 +441,7 @@
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE">
         <compendium display = "false"/>
-        <supports>Elements</supports>
+        <supports>ElementsWeak</supports>
         <description>
             <p>The spells associated with fire have been added to your spell list.</p>
         </description>
@@ -388,6 +453,24 @@
         </spellcasting>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+        </rules>
+    </element>
+    <element name =  "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE</requirements>
+        <supports>ElementsStrong</supports>
+        <description>
+            <p>The spells associated with fire have been added to your spell list. You also learn one cantrip of your choice from the fire spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Fire affinity: {{affinity:fire}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Fire</extend>
+		</spellcasting>
+        <rules>
+            <stat name = "affinity:fire" value = "1"/>
+            <select type = "Spell" name = "Cantrip, Fire" supports = "Fire, 0" spellcasting = "Bender"/>
         </rules>
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2">
@@ -402,9 +485,21 @@
             <stat name = "affinity:fire" value = "1"/>
         </rules>
     </element>
+    <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with fire has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:fire" value = "1"/>
+        </rules>
+    </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE3">
         <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2</requirements>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP2</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with fire has increased.</p>
@@ -428,7 +523,7 @@
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER">
         <compendium display = "false"/>
-        <supports>Elements</supports>
+        <supports>ElementsWeak</supports>
         <description>
             <p>The spells associated with water have been added to your spell list.</p>
         </description>
@@ -440,6 +535,24 @@
         </spellcasting>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+        </rules>
+    </element>
+    <element name =  "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP">
+        <compendium display = "false"/>
+        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER</requirements>
+        <supports>ElementsStrong</supports>
+        <description>
+            <p>The spells associated with water have been added to your spell list. You also learn one cantrip of your choice from the water spell list.</p>
+        </description>
+        <sheet display = "true">
+            <description>Water affinity: {{affinity:water}}</description>
+        </sheet>
+        <spellcasting name = "Bender" extend = "true">
+            <extend>Water</extend>
+		</spellcasting>
+        <rules>
+            <stat name = "affinity:water" value = "1"/>
+            <select type = "Spell" name = "Cantrip, Water" supports = "Water, 0" spellcasting = "Bender"/>
         </rules>
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2">
@@ -454,9 +567,21 @@
             <stat name = "affinity:water" value = "1"/>
         </rules>
     </element>
+    <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP2">
+        <compendium display = "false"/>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP</requirements>
+        <supports>Elements</supports>
+        <description>
+            <p>Your affinity with water has increased.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "affinity:water" value = "1"/>
+        </rules>
+    </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER3">
         <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2</requirements>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP2</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with water has increased.</p>
@@ -477,5 +602,18 @@
         <rules>
             <stat name = "affinity:water" value = "1"/>
         </rules>
+    </element>
+    <element name = "Elemental Strikes" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES">
+        <description>
+            <p>You have learnt to unite magic with movement, giving you a unique and deadly combat style. When you take the Attack action, you can make melee or ranged spell attacks called elemental strikes as one or more of your attacks. The strike deals damage of a type with which you have affinity (your choice when you make the attack).</p>
+            <ul>
+                <li><strong>Melee. </strong>A melee elemental strike has a reach of 10 feet and deals damage equal to 1d6 plus your bender spellcasting ability modifier on a hit.</li>
+                <li><strong>Ranged. </strong>A ranged elemental strike has a range of 60 feet and deals damage equal to 1d4 plus your bender spellcasting ability modifier on a hit.</li>
+            </ul>
+            <p class = "indent">Any magic items that confer a bonus to the attack and damage rolls of your unarmed strikes confer the same bonus to your elemental strikes.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you take the Attack action, you can make melee or ranged spell attacks called elemental strikes as one or more of your attacks. The strike deals damage of a type with which you have affinity (your choice when you make the attack). A melee elemental strike has a reach of 10 feet and deals damage equal to 1d6 plus your bender spellcasting ability modifier on a hit. A ranged elemental strike has a range of 60 feet and deals damage equal to 1d4 plus your bender spellcasting ability modifier on a hit.</description>
+        </sheet>
     </element>
 </elements>
