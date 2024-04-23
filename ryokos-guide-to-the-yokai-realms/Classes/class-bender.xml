@@ -70,9 +70,9 @@
             </table>
             <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING"/>
             <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY"/>
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES"/> -->
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO"/> -->
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE"/> -->
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES"/>
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO"/>
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE"/>
             <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT"/> -->
             <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK"/> -->
             <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM"/> -->
@@ -101,9 +101,9 @@
 
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_SPELLCASTING" level = "1"/>
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY" level = "1"/>
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES" level = "1"/> -->
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO" level = "2"/> -->
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE" level = "3"/> -->
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES" level = "1"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO" level = "2"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE" level = "3"/>
             <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT" level = "4"/> -->
             <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK" level = "5"/> -->
             <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM" level = "11"/> -->
@@ -282,13 +282,14 @@
             <p>The spells associated with air have been added to your spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Air affinity: {{affinity:air}}</description>
+            <description>Air affinity: {{affinity:air}}, spells from this spell list are cast {{affinity:air:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Air</extend>
 		</spellcasting>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+            <stat name = "affinity:air:spellslot" value = "0" bonus = "base"/>
         </rules>
     </element>
     <element name =  "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP">
@@ -299,13 +300,14 @@
             <p>The spells associated with air have been added to your spell list. You also learn one cantrip of your choice from the air spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Air affinity: {{affinity:air}}</description>
+            <description>Air affinity: {{affinity:air}}, spells from this spell list are cast {{affinity:air:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Air</extend>
 		</spellcasting>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+            <stat name = "affinity:air:spellslot" value = "0" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Air" supports = "Air, 0" spellcasting = "Bender"/>
         </rules>
     </element>
@@ -319,6 +321,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+            <stat name = "affinity:air:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP2">
@@ -331,6 +334,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+            <stat name = "affinity:air:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3">
@@ -343,6 +347,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+            <stat name = "affinity:air:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR4">
@@ -355,6 +360,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:air" value = "1"/>
+            <stat name = "affinity:air:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH">
@@ -364,13 +370,14 @@
             <p>The spells associated with earth have been added to your spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Earth affinity: {{affinity:earth}}</description>
+            <description>Earth affinity: {{affinity:earth}}, spells from this spell list are cast {{affinity:earth:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Earth</extend>
         </spellcasting>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+            <stat name = "affinity:earth:spellslot" value = "0" bonus = "base"/>
         </rules>
     </element>
     <element name =  "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP">
@@ -381,13 +388,14 @@
             <p>The spells associated with earth have been added to your spell list. You also learn one cantrip of your choice from the earth spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Earth affinity: {{affinity:earth}}</description>
+            <description>Earth affinity: {{affinity:earth}}, spells from this spell list are cast {{affinity:earth:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Earth</extend>
 		</spellcasting>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+            <stat name = "affinity:earth:spellslot" value = "0" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Earth" supports = "Earth, 0" spellcasting = "Bender"/>
         </rules>
     </element>
@@ -401,6 +409,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+            <stat name = "affinity:earth:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP2">
@@ -413,6 +422,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+            <stat name = "affinity:earth:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH3">
@@ -425,6 +435,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+            <stat name = "affinity:earth:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH4">
@@ -437,6 +448,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
+            <stat name = "affinity:earth:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE">
@@ -446,13 +458,14 @@
             <p>The spells associated with fire have been added to your spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Fire affinity: {{affinity:fire}}</description>
+            <description>Fire affinity: {{affinity:fire}}, spells from this spell list are cast {{affinity:fire:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Fire</extend>
         </spellcasting>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+            <stat name = "affinity:fire:spellslot" value = "0" bonus = "base"/>
         </rules>
     </element>
     <element name =  "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP">
@@ -463,13 +476,14 @@
             <p>The spells associated with fire have been added to your spell list. You also learn one cantrip of your choice from the fire spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Fire affinity: {{affinity:fire}}</description>
+            <description>Fire affinity: {{affinity:fire}}, spells from this spell list are cast {{affinity:fire:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Fire</extend>
 		</spellcasting>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+            <stat name = "affinity:fire:spellslot" value = "0" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Fire" supports = "Fire, 0" spellcasting = "Bender"/>
         </rules>
     </element>
@@ -483,6 +497,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+            <stat name = "affinity:fire:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP2">
@@ -495,6 +510,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+            <stat name = "affinity:fire:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE3">
@@ -507,6 +523,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+            <stat name = "affinity:fire:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE4">
@@ -519,6 +536,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
+            <stat name = "affinity:fire:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER">
@@ -528,13 +546,14 @@
             <p>The spells associated with water have been added to your spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Water affinity: {{affinity:water}}</description>
+            <description>Water affinity: {{affinity:water}}, spells from this spell list are cast {{affinity:water:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Water</extend>
         </spellcasting>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+            <stat name = "affinity:water:spellslot" value = "0" bonus = "base"/>
         </rules>
     </element>
     <element name =  "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP">
@@ -545,13 +564,14 @@
             <p>The spells associated with water have been added to your spell list. You also learn one cantrip of your choice from the water spell list.</p>
         </description>
         <sheet display = "true">
-            <description>Water affinity: {{affinity:water}}</description>
+            <description>Water affinity: {{affinity:water}}, spells from this spell list are cast {{affinity:water:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
             <extend>Water</extend>
 		</spellcasting>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+            <stat name = "affinity:water:spellslot" value = "0" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Water" supports = "Water, 0" spellcasting = "Bender"/>
         </rules>
     </element>
@@ -565,6 +585,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+            <stat name = "affinity:water:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP2">
@@ -577,6 +598,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+            <stat name = "affinity:water:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER3">
@@ -589,6 +611,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+            <stat name = "affinity:water:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER4">
@@ -601,6 +624,7 @@
         <sheet display = "false"/>
         <rules>
             <stat name = "affinity:water" value = "1"/>
+            <stat name = "affinity:water:spellslot" value = "1"/>
         </rules>
     </element>
     <element name = "Elemental Strikes" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES">
@@ -610,10 +634,34 @@
                 <li><strong>Melee. </strong>A melee elemental strike has a reach of 10 feet and deals damage equal to 1d6 plus your bender spellcasting ability modifier on a hit.</li>
                 <li><strong>Ranged. </strong>A ranged elemental strike has a range of 60 feet and deals damage equal to 1d4 plus your bender spellcasting ability modifier on a hit.</li>
             </ul>
+            <p class = "indent"><strong>At Higher Levels. </strong>This attack’s damage increases by one damage die (1d6 for a melee attack or 1d4 for a ranged attack) when you reach 6th (2d6 or 2d4), 10th (3d6 or 3d4), and 14th (4d6 or 4d4) level in this class.</p>
             <p class = "indent">Any magic items that confer a bonus to the attack and damage rolls of your unarmed strikes confer the same bonus to your elemental strikes.</p>
         </description>
         <sheet display = "true">
-            <description>When you take the Attack action, you can make melee or ranged spell attacks called elemental strikes as one or more of your attacks. The strike deals damage of a type with which you have affinity (your choice when you make the attack). A melee elemental strike has a reach of 10 feet and deals damage equal to 1d6 plus your bender spellcasting ability modifier on a hit. A ranged elemental strike has a range of 60 feet and deals damage equal to 1d4 plus your bender spellcasting ability modifier on a hit.</description>
+            <description>When you take the Attack action, you can make melee or ranged spell attacks called elemental strikes as one or more of your attacks. The strike deals damage of a type with which you have affinity (your choice when you make the attack). A melee elemental strike has a reach of 10 feet and deals damage equal to {{elemental strikes:dice}}d6 plus your bender spellcasting ability modifier on a hit. A ranged elemental strike has a range of 60 feet and deals damage equal to {{elemental strikes:dice}}d4 plus your bender spellcasting ability modifier on a hit. Any magic items that confer a bonus to the attack and damage rolls of your unarmed strikes confer the same bonus to your elemental strikes.</description>
         </sheet>
+        <rules>
+            <stat name = "elemental strikes:dice" value = "1"/>
+            <stat name = "elemental strikes:dice" value = "1" level = "6"/>
+            <stat name = "elemental strikes:dice" value = "1" level = "10"/>
+            <stat name = "elemental strikes:dice" value = "1" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Elemental Combo" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO">
+        <description>
+            <p>Your strikes manifest elemental energy, which you can unleash at the peak of your combination. After you take the Attack action on your turn, you can make one Elemental Strike attack as a bonus action that turn. You do not add your ability modifier to the damage from this attack.</p>
+        </description>
+        <sheet>
+            <description>After you take the Attack action on your turn, you can make one Elemental Strike attack as a bonus action that turn. You do not add your ability modifier to the damage from this attack.</description>
+        </sheet>
+    </element>
+    <element name = "Bender Discipline" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE">
+        <description>
+            <p>You choose an aspect of how nature manifests which you embody in your manipulation of the elements. Your discipline choice grants you features at 3rd level and again at 7th, 15th, and 20th level.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Archetype Feature" name = "Bender Discipline" supports = "Bender Discipline"/>
+        </rules>
     </element>
 </elements>
