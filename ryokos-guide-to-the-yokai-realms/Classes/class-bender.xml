@@ -44,9 +44,9 @@
 			<p class="indent">If you forgo this starting equipment, as well as the items offered by your background, you start with 5d4 x 10 gp to buy your equipment.</p>
             <h5>THE BENDER</h5>
             <table class = "class-features">
-                <thread>
+                <thead>
                     <tr><td class="col-5">Level</td><td class="col-30 left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
-                </thread>
+                </thead>
                 <tr><td> 1st</td><td class="left">Spellcasting, Elemental Affinity (1), Elemental Strikes</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
                 <tr><td> 2nd</td><td class="left">Elemental Combo</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
                 <tr><td> 3rd</td><td class="left">Bender Discipline</td><td>2</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
@@ -73,10 +73,10 @@
             <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES"/>
             <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO"/>
             <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE"/>
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT"/> -->
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK"/> -->
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM"/> -->
-            <!-- <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR"/> -->
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT"/>
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK"/>
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM"/>
+            <div element = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR"/>
         </description>
         <setters>
             <set name = "short">Whether a bender chooses to study all the elements or to master just one, the primordial forces of nature are theirs to command.</set>
@@ -87,12 +87,12 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-            <!-- Chakram -->
-            <!-- Nunchaku -->
-            <!-- Shortswords -->
-            <!-- Shruiken -->
-            <!-- Starknives -->
-            <!-- Twin blades -->
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
+            <!-- <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_STARKNIVES"/> -->
+            <!-- <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWIN_BLADES"/> -->
             <select type = "Proficiency" name = "Artisan Tool/Musical Intrument, Bender" supports = "(Artisan tools||Musical Instrument)" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
 
             <grant type = "Proficiency" id = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
@@ -104,10 +104,10 @@
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_STRIKES" level = "1"/>
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_COMBO" level = "2"/>
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE" level = "3"/>
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT" level = "4"/> -->
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK" level = "5"/> -->
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM" level = "11"/> -->
-            <!-- <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR" level = "18"/> -->
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT" level = "4"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK" level = "5"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM" level = "11"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR" level = "18"/>
         </rules>
         <multiclass id = "ID_RGTTYR_MULTICLASS_BENDER">
             <prerequisite>Intelligence 13 or Wisdom 13 or Charisma 13</prerequisite>
@@ -176,6 +176,7 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "intelligence:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
+            <stat name = "bender:spellcasting:modifier" value = "intelligence:modifier"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
@@ -210,6 +211,7 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "wisdom:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
+            <stat name = "bender:spellcasting:modifier" value = "wisdom:modifier"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
@@ -244,6 +246,7 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "charisma:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
+            <stat name = "bender:spellcasting:modifier" value = "charisma:modifier"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
@@ -269,15 +272,15 @@
             <description>If an element you have attuned has an affinity of 2 or greater, spells you cast from that spell list are cast one level higher than the spell slot you expended. This effect stacks; if you choose to gain affinity with the same element four times, your spells from that element’s list are cast three levels higher than the spell slot you expend. You have found attunement with the following elements:</description>
         </sheet>
         <rules>
-            <select type = "Class Feature" name = "Elemental Affinity (1)" supports = "ElementsWeak"/>
-            <select type = "Class Feature" name = "Elemental Affinity (2)" supports = "(Elements||ElementsStrong)" level = "6"/>
-            <select type = "Class Feature" name = "Elemental Affinity (3)" supports = "(Elements||ElementsStrong)" level = "10"/>
-            <select type = "Class Feature" name = "Elemental Affinity (4)" supports = "(Elements||ElementsStrong)" level = "14"/>
+            <select type = "Class Feature" name = "Elemental Affinity (1)" supports = "Elements"/>
+            <select type = "Class Feature" name = "Elemental Affinity (2)" supports = "Elements" level = "6"/>
+            <select type = "Class Feature" name = "Elemental Affinity (3)" supports = "Elements" level = "10"/>
+            <select type = "Class Feature" name = "Elemental Affinity (4)" supports = "Elements" level = "14"/>
         </rules>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR">
         <compendium display = "false"/>
-        <supports>ElementsWeak</supports>
+        <supports>Elements</supports>
         <description>
             <p>The spells associated with air have been added to your spell list.</p>
         </description>
@@ -290,26 +293,20 @@
         <rules>
             <stat name = "affinity:air" value = "1"/>
             <stat name = "affinity:air:spellslot" value = "0" bonus = "base"/>
+
+            <grant type = "Grants" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_AIR_BASE" requirements = "!(ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE)"/>
+            <select type = "Spell" name = "Cantrip, Air" supports = "Air, 0" spellcasting = "Bender" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE"/>
         </rules>
     </element>
-    <element name =  "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP">
+    <element name = "Grants Base Air Without Cantrip" type = "Grants" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_AIR_BASE">
         <compendium display = "false"/>
-        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR</requirements>
-        <supports>ElementsStrong</supports>
-        <description>
-            <p>The spells associated with air have been added to your spell list. You also learn one cantrip of your choice from the air spell list.</p>
-        </description>
-        <sheet display = "true">
-            <description>Air affinity: {{affinity:air}}, spells from this spell list are cast {{affinity:air:spellslot}} level(s) higher than the spell slot expended.</description>
-        </sheet>
-        <spellcasting name = "Bender" extend = "true">
-            <extend>Air</extend>
-		</spellcasting>
         <rules>
-            <stat name = "affinity:air" value = "1"/>
-            <stat name = "affinity:air:spellslot" value = "0" bonus = "base"/>
-            <select type = "Spell" name = "Cantrip, Air" supports = "Air, 0" spellcasting = "Bender"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE"/>
         </rules>
+    </element>
+    <element name=  "Base Air Without Cantrip" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE">
+        <compendium display = "false"/>
+        <sheet display = "false"/>
     </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2">
         <compendium display = "false"/>
@@ -324,22 +321,9 @@
             <stat name = "affinity:air:spellslot" value = "1"/>
         </rules>
     </element>
-    <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP2">
-        <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP</requirements>
-        <supports>Elements</supports>
-        <description>
-            <p>Your affinity with air has increased.</p>
-        </description>
-        <sheet display = "false"/>
-        <rules>
-            <stat name = "affinity:air" value = "1"/>
-            <stat name = "affinity:air:spellslot" value = "1"/>
-        </rules>
-    </element>
     <element name = "Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3">
         <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_CANTRIP2</requirements>
+        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with air has increased.</p>
@@ -365,7 +349,7 @@
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH">
         <compendium display = "false"/>
-        <supports>ElementsWeak</supports>
+        <supports>Elements</supports>
         <description>
             <p>The spells associated with earth have been added to your spell list.</p>
         </description>
@@ -378,43 +362,24 @@
         <rules>
             <stat name = "affinity:earth" value = "1"/>
             <stat name = "affinity:earth:spellslot" value = "0" bonus = "base"/>
+
+            <grant type = "Grants" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_EARTH_BASE" requirements = "!(ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE)"/>
+            <select type = "Spell" name = "Cantrip, Earth" supports = "Earth, 0" spellcasting = "Bender" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE"/>
         </rules>
     </element>
-    <element name =  "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP">
+    <element name = "Grants Base Earth Without Cantrip" type = "Grants" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_EARTH_BASE">
         <compendium display = "false"/>
-        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH</requirements>
-        <supports>ElementsStrong</supports>
-        <description>
-            <p>The spells associated with earth have been added to your spell list. You also learn one cantrip of your choice from the earth spell list.</p>
-        </description>
-        <sheet display = "true">
-            <description>Earth affinity: {{affinity:earth}}, spells from this spell list are cast {{affinity:earth:spellslot}} level(s) higher than the spell slot expended.</description>
-        </sheet>
-        <spellcasting name = "Bender" extend = "true">
-            <extend>Earth</extend>
-		</spellcasting>
         <rules>
-            <stat name = "affinity:earth" value = "1"/>
-            <stat name = "affinity:earth:spellslot" value = "0" bonus = "base"/>
-            <select type = "Spell" name = "Cantrip, Earth" supports = "Earth, 0" spellcasting = "Bender"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE"/>
         </rules>
+    </element>
+    <element name=  "Base Earth Without Cantrip" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE">
+        <compendium display = "false"/>
+        <sheet display = "false"/>
     </element>
     <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2">
         <compendium display = "false"/>
         <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH</requirements>
-        <supports>Elements</supports>
-        <description>
-            <p>Your affinity with earth has increased.</p>
-        </description>
-        <sheet display = "false"/>
-        <rules>
-            <stat name = "affinity:earth" value = "1"/>
-            <stat name = "affinity:earth:spellslot" value = "1"/>
-        </rules>
-    </element>
-    <element name = "Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP2">
-        <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_CANTRIP</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with earth has increased.</p>
@@ -453,7 +418,7 @@
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE">
         <compendium display = "false"/>
-        <supports>ElementsWeak</supports>
+        <supports>Elements</supports>
         <description>
             <p>The spells associated with fire have been added to your spell list.</p>
         </description>
@@ -466,43 +431,24 @@
         <rules>
             <stat name = "affinity:fire" value = "1"/>
             <stat name = "affinity:fire:spellslot" value = "0" bonus = "base"/>
+
+            <grant type = "Grants" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_FIRE_BASE" requirements = "!(ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE)"/>
+            <select type = "Spell" name = "Cantrip, Fire" supports = "Fire, 0" spellcasting = "Bender" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE"/>
         </rules>
     </element>
-    <element name =  "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP">
+    <element name = "Grants Base Fire Without Cantrip" type = "Grants" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_FIRE_BASE">
         <compendium display = "false"/>
-        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE</requirements>
-        <supports>ElementsStrong</supports>
-        <description>
-            <p>The spells associated with fire have been added to your spell list. You also learn one cantrip of your choice from the fire spell list.</p>
-        </description>
-        <sheet display = "true">
-            <description>Fire affinity: {{affinity:fire}}, spells from this spell list are cast {{affinity:fire:spellslot}} level(s) higher than the spell slot expended.</description>
-        </sheet>
-        <spellcasting name = "Bender" extend = "true">
-            <extend>Fire</extend>
-		</spellcasting>
         <rules>
-            <stat name = "affinity:fire" value = "1"/>
-            <stat name = "affinity:fire:spellslot" value = "0" bonus = "base"/>
-            <select type = "Spell" name = "Cantrip, Fire" supports = "Fire, 0" spellcasting = "Bender"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE"/>
         </rules>
+    </element>
+    <element name=  "Base Fire Without Cantrip" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE">
+        <compendium display = "false"/>
+        <sheet display = "false"/>
     </element>
     <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2">
         <compendium display = "false"/>
         <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE</requirements>
-        <supports>Elements</supports>
-        <description>
-            <p>Your affinity with fire has increased.</p>
-        </description>
-        <sheet display = "false"/>
-        <rules>
-            <stat name = "affinity:fire" value = "1"/>
-            <stat name = "affinity:fire:spellslot" value = "1"/>
-        </rules>
-    </element>
-    <element name = "Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP2">
-        <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_CANTRIP</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with fire has increased.</p>
@@ -541,7 +487,7 @@
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER">
         <compendium display = "false"/>
-        <supports>ElementsWeak</supports>
+        <supports>Elements</supports>
         <description>
             <p>The spells associated with water have been added to your spell list.</p>
         </description>
@@ -554,43 +500,24 @@
         <rules>
             <stat name = "affinity:water" value = "1"/>
             <stat name = "affinity:water:spellslot" value = "0" bonus = "base"/>
+
+            <grant type = "Grants" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_WATER_BASE" requirements = "!(ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE)"/>
+            <select type = "Spell" name = "Cantrip, Water" supports = "Water, 0" spellcasting = "Bender" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH_BASE|ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE_BASE"/>
         </rules>
     </element>
-    <element name =  "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP">
+    <element name = "Grants Base Water Without Cantrip" type = "Grants" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_GRANTS_ELEMENTAL_AFFINITY_WATER_BASE">
         <compendium display = "false"/>
-        <requirements>!ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER</requirements>
-        <supports>ElementsStrong</supports>
-        <description>
-            <p>The spells associated with water have been added to your spell list. You also learn one cantrip of your choice from the water spell list.</p>
-        </description>
-        <sheet display = "true">
-            <description>Water affinity: {{affinity:water}}, spells from this spell list are cast {{affinity:water:spellslot}} level(s) higher than the spell slot expended.</description>
-        </sheet>
-        <spellcasting name = "Bender" extend = "true">
-            <extend>Water</extend>
-		</spellcasting>
         <rules>
-            <stat name = "affinity:water" value = "1"/>
-            <stat name = "affinity:water:spellslot" value = "0" bonus = "base"/>
-            <select type = "Spell" name = "Cantrip, Water" supports = "Water, 0" spellcasting = "Bender"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE"/>
         </rules>
+    </element>
+    <element name=  "Base Water Without Cantrip" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_BASE">
+        <compendium display = "false"/>
+        <sheet display = "false"/>
     </element>
     <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2">
         <compendium display = "false"/>
         <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER</requirements>
-        <supports>Elements</supports>
-        <description>
-            <p>Your affinity with water has increased.</p>
-        </description>
-        <sheet display = "false"/>
-        <rules>
-            <stat name = "affinity:water" value = "1"/>
-            <stat name = "affinity:water:spellslot" value = "1"/>
-        </rules>
-    </element>
-    <element name = "Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP2">
-        <compendium display = "false"/>
-        <requirements>ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER_CANTRIP</requirements>
         <supports>Elements</supports>
         <description>
             <p>Your affinity with water has increased.</p>
@@ -663,5 +590,255 @@
         <rules>
             <select type = "Archetype Feature" name = "Bender Discipline" supports = "Bender Discipline"/>
         </rules>
+    </element>
+    <element name = "Ability Score Improvement" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT">
+        <compendium display = "false"/>
+        <description>
+            <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Class Feature" name = "Ability Score Improvement" supports = "Improvement Option, Bender, 4" level = "4"/>
+            <select type = "Class Feature" name = "Ability Score Improvement" supports = "Improvement Option, Bender, 8" level = "8"/>
+            <select type = "Class Feature" name = "Ability Score Improvement" supports = "Improvement Option, Bender, 10" level = "10"/>
+            <select type = "Class Feature" name = "Ability Score Improvement" supports = "Improvement Option, Bender, 12" level = "12"/>
+            <select type = "Class Feature" name = "Ability Score Improvement" supports = "Improvement Option, Bender, 16" level = "16"/>
+            <select type = "Class Feature" name = "Ability Score Improvement" supports = "Improvement Option, Bender, 19" level = "19"/>
+        </rules>
+    </element>
+    <element name = "Extra Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_EXTRA_ATTACK">
+        <description>
+            <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "2" bonus = "extra attack"/>
+        </rules>
+    </element>
+    <element name = "Primordial Form" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM">
+        <description>
+            <p>As a bonus action, you embody aspects of a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 1st-level spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</p>
+            <ul>
+                <li><strong>Air: Untouchable. </strong>You have resistance to nonmagical bludgeoning, slashing, and piercing damage.</li>
+                <li><strong>Earth: Solid. </strong>You gain a +2 bonus to your AC.</li>
+                <li><strong>Fire: Alight. </strong>At the end of your turn, creatures of your choice within 10 feet of you take fire damage equal to your bender spellcasting ability modifier.</li>
+                <li><strong>Water: Fluid. </strong>You gain a pool of vitality equal to five times your bender level. At the end of each of your turns for the duration, you can cause up to three creatures of your choice within 10 feet of you to regain 5 hit points (no action required), expending an equal amount of vitality from your pool to do so.</li>
+            </ul>
+            <p class = "indent">After you use this feature, you can’t do so again until you finish a long rest.</p>
+            <p class = "indent">Starting at 17th level, while in your primordial form, you can cast spells of 2nd level or lower without expending a spell slot.</p>
+        </description>
+        <sheet display = "true" usage = "1/Long Rest">
+            <description level = "11">As a bonus action, you embody aspects of a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 1st-level spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</description>
+            <description level = "17">As a bonus action, you embody aspects of a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 2nd-level or lower spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_AIR" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_EARTH" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_FIRE" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_WATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
+
+            <stat name = "primordial form:fluid" value = "55" bonus = "base"/>
+
+            <stat name = "primordial form:fluid" value = "5" level = "12"/>
+            <stat name = "primordial form:fluid" value = "5" level = "13"/>
+            <stat name = "primordial form:fluid" value = "5" level = "14"/>
+            <stat name = "primordial form:fluid" value = "5" level = "15"/>
+            <stat name = "primordial form:fluid" value = "5" level = "16"/>
+            <stat name = "primordial form:fluid" value = "5" level = "17"/>
+            <stat name = "primordial form:fluid" value = "5" level = "18"/>
+            <stat name = "primordial form:fluid" value = "5" level = "19"/>
+            <stat name = "primordial form:fluid" value = "5" level = "20"/>
+        </rules>
+    </element>
+    <element name = "Primordial Form: Air" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_AIR">
+        <compendium display = "false"/>
+        <sheet alt = "Air">
+            <description>Untouchable: You have resistance to nonmagical bludgeoning, slashing, and piercing damage.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Form: Earth" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_EARTH">
+        <compendium display = "false"/>
+        <sheet alt = "Earth">
+            <description>Solid: You gain a +2 bonus to your AC.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Form: Fire" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_FIRE">
+        <compendium display = "false"/>
+        <sheet alt = "Fire">
+            <description>Alight: At the end of your turn, creatures of your choice within 10 feet of you take {{bender:spellcasting:modifier}} fire damage.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Form: Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_WATER">
+        <compendium display = "false"/>
+        <sheet alt = "Water" usage = "{{primordial form:fluid}}">
+            <description>Fluid: You gain a pool of vitality equal to five times your bender level. At the end of each of your turns for the duration, you can cause up to three creatures of your choice within 10 feet of you to regain 5 hit points (no action required), expending an equal amount of vitality from your pool to do so.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR">
+        <description>
+            <p>As an action, you become a primordial incarnation of your mortal form. You gain 50 temporary hit points as well as benefits based on your Elemental Affinities, which last for 10 minutes. After you enter this state using this feature, you can’t do so again until you finish a long rest.</p>
+            <h5>Primordial Avatar, Air Benefits</h5>
+            <table class = "primordial-avatar-air">
+                <thead>
+                    <tr><td class = "col-5">Air Affinities</td><td class = "col-15">Benefits</td></tr>
+                </thead>
+                <tr><td>1</td><td>Your speed increases by 15 feet. You gain a flying speed of 60 feet.</td></tr>
+                <tr><td>2</td><td>You are immune to thunder damage and the grappled and restrained conditions.</td></tr>
+                <tr><td>3</td><td>Once on each of your turns, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated.</td></tr>
+                <tr><td>4</td><td>Your speed increases by 15 feet (30 feet total). You are under the effects of the freedom of movement spell.</td></tr>
+            </table>
+            <h5>Primordial Avatar, Earth Benefits</h5>
+            <table class = "primordial-avatar-earth">
+                <thead>
+                    <tr><td class = "col-5">Earth Affinities</td><td class = "col-15">Benefits</td></tr>
+                </thead>
+                <tr><td>1</td><td>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier.</td></tr>
+                <tr><td>2</td><td>You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone.</td></tr>
+                <tr><td>3</td><td>You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</td></tr>
+                <tr><td>4</td><td>You are under the effects of the skin of steel spell.</td></tr>
+            </table>
+            <h5>Primordial Avatar, Fire Benefits</h5>
+            <table class = "primordial-avatar-fire">
+                <thead>
+                    <tr><td class = "col-5">Fire Affinities</td><td class = "col-15">Benefits</td></tr>
+                </thead>
+                <tr><td>1</td><td>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit).</td></tr>
+                <tr><td>2</td><td>You are immune to fire damage.</td></tr>
+                <tr><td>3</td><td>You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</td></tr>
+                <tr><td>4</td><td>You are under the effects of the fire shield spell (warm shield only).</td></tr>
+            </table>
+            <h5>Primordial Avatar, Water Benefits</h5>
+            <table class = "primordial-avatar-water">
+                <thead>
+                    <tr><td class = "col-5">Water Affinities</td><td class = "col-15">Benefits</td></tr>
+                </thead>
+                <tr><td>1</td><td>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required).</td></tr>
+                <tr><td>2</td><td>You are immune to cold damage.</td></tr>
+                <tr><td>3</td><td>When a creature you can see within 30 feet of you succeeds on a saving throw or an attack roll, you can force the creature to reroll the d20 and use the lower roll (no action required). After you do so, you can’t do so again until the start of your next turn.</td></tr>
+                <tr><td>4</td><td>You are under the effects of the true seeing spell.</td></tr>
+            </table>
+        </description>
+        <sheet display = "true" usage = "1/Long Rest">
+            <description>As an action, you become a primordial incarnation of your mortal form. You gain 50 temporary hit points as well as benefits based on your Elemental Affinities, which last for 10 minutes.</description>
+        </sheet>
+        <rules>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR1" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR2" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR3" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR3"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR4" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR4"/>
+
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH1" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH2" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH2, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH3"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH3" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH3, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH4"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH4" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH4"/>
+
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE1" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE2" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE2, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE3"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE3" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE3, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE4"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE4" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE4"/>
+
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER1" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER2" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER2, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER3"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER3" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER3, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER4"/>
+            <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER4" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER4"/>
+        </rules>
+    </element>
+    <element name = "Primordial Avatar: Air1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR1">
+        <compendium display = "false"/>
+        <sheet alt = "Air Benefits">
+            <description>Your speed increases by 15 ft. You gain a flying speed of 60 feet.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Air2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR2">
+        <compendium display = "false"/>
+        <sheet alt = "Air Benefits">
+            <description>Your speed increases by 15 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Air3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR3">
+        <compendium display = "false"/>
+        <sheet alt = "Air Benefits">
+            <description>Your speed increases by 15 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions. Once on each of your turns, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Air4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR4">
+        <compendium display = "false"/>
+        <sheet alt = "Air Benefits">
+            <description>Your speed increases by 30 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions. Once on each of your turns, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated. You are under the effects of the freedom of movement spell.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Earth1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH1">
+        <compendium display = "false"/>
+        <sheet alt = "Earth Benefits">
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Earth2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH2">
+        <compendium display = "false"/>
+        <sheet alt = "Earth Benefits">
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Earth3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH3">
+        <compendium display = "false"/>
+        <sheet alt = "Earth Benefits">
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone. You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Earth4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH4">
+        <compendium display = "false"/>
+        <sheet alt = "Earth Benefits">
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone. You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the skin of steel spell.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Fire1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE1">
+        <compendium display = "false"/>
+        <sheet alt = "Fire Benefits">
+            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit).</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Fire2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE2">
+        <compendium display = "false"/>
+        <sheet alt = "Fire Benefits">
+            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Fire3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE3">
+        <compendium display = "false"/>
+        <sheet alt = "Fire Benefits">
+            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage. You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Fire4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE4">
+        <compendium display = "false"/>
+        <sheet alt = "Fire Benefits">
+            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage. You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the fire shield spell (warm shield only).</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Water1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER1">
+        <compendium display = "false"/>
+        <sheet alt = "Water Benefits">
+            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required).</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Water2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER2">
+        <compendium display = "false"/>
+        <sheet alt = "Water Benefits">
+            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Water3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER3">
+        <compendium display = "false"/>
+        <sheet alt = "Water Benefits">
+            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or an attack roll, you can force the creature to reroll the d20 and use the lower roll (no action required). After you do so, you can’t do so again until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Avatar: Water4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER4">
+        <compendium display = "false"/>
+        <sheet alt = "Water Benefits">
+            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or an attack roll, you can force the creature to reroll the d20 and use the lower roll (no action required). After you do so, you can’t do so again until the start of your next turn. You are under the effects of the true seeing spell.</description>
+        </sheet>
     </element>
 </elements>

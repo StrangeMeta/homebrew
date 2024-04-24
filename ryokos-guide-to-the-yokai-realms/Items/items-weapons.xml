@@ -1,11 +1,57 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <elements>
     <info>
-        <name>Feats from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.3">
-            <file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats.xml"/>
+        <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.4">
+            <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
+
+    <element name = "Chakram" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_CHAKRAM">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description>
+            <p>Chakrams are martial melee weapons, consisting of a circular blade with a sharp outer edge. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Finesse, Light, Thrown (range 30/90), and Thrown Versatility (1d6) properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">10</set>
+            <set name = "weight" lb = "1">-</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">30/90</set>
+            <set name = "damage" type = "slashing">1d4</set>
+            <set name = "versatile">1d6</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Chakram)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Chakram)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_CHAKRAM">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM" />
+		</rules>
+	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
+        </rules>
+    </append>
 
     <element name = "Kusarigama" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_KUSARIGAMA">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
@@ -20,11 +66,8 @@
             <set name = "slot">onehand</set>
             <set name = "damage" type = "slashing">1d4</set>
             <set name = "versatile">1d6</set>
-            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_KUSARIGAMA</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA</set>
         </setters>
-        <rules>
-            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA" requirements = "ID_WOTC_PHB_CLASS_MONK|ID_WOTC_PHB_MULTICLASS_MONK"/>
-        </rules>
     </element>
     <element name = "Special (Kusarigama)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA">
         <compendium display = "false"/>
@@ -32,13 +75,13 @@
             <p class = "indent"><strong>Special: Counterweight. </strong>While wielding a kusarigama with two hands, you can use a bonus action to attack with its counterweight. This attack has a reach of 10 feet and deals 1d4 bludgeoning damage on a hit. You don’t add your ability modifier to the damage of this attack, unless that modifier is negative.</p>
         </description>
     </element>
-    <element name = "Weapon Proficency (Kusarigama)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA">
+    <element name = "Weapon Proficency (Kusarigama)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
-            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA"/>
         </rules>
     </append>
     <element name = "Kensei Weapon (Kusarigama)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_KUSARIGAMA">
@@ -48,9 +91,19 @@
 			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
         </description>
 		<rules>
-			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA" />
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA" />
 		</rules>
 	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA"/>
+        </rules>
+    </append>
 
     <element name = "Nunchaku" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_NUNCHAKU">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
@@ -65,7 +118,7 @@
             <set name = "slot">onehand</set>
             <set name = "damage" type = "slashing">1d6</set>
             <set name = "versatile">1d8</set>
-            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_NUNCHAKU</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU</set>
         </setters>
     </element>
     <element name = "Special (Nunchaku)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU">
@@ -74,13 +127,13 @@
             <p class = "indent"><strong>Special: Flourish. </strong>When you are wielding the nunchaku in two hands and take the Attack action on your turn, you can attempt to flourish with the weapon immediately before you make your first attack. To flourish, make a DC 13 Dexterity check, adding your proficiency bonus if you are proficient with nunchaku. On a success, you gain a +2 bonus to the first attack roll you make this turn. On a failure, you deal bludgeoning damage to yourself equal to your proficiency bonus and gain no bonus from your flourishes this turn.</p>
         </description>
     </element>
-    <element name = "Weapon Proficency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_NUNCHAKU">
+    <element name = "Weapon Proficency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
-            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_NUNCHAKU"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
         </rules>
     </append>
     <element name = "Kensei Weapon (Nunchaku)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_NUNCHAKU">
@@ -90,9 +143,64 @@
 			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
         </description>
 		<rules>
-			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_KUSARIGAMA" />
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA" />
 		</rules>
 	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
+        </rules>
+    </append>
+
+    <element name = "Shruiken" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_SHRUIKEN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Shuriken, also known as throwing stars, are martial ranged weapons—several sharp spikes or blades set in a circular pattern, usually around a central ring. They deal 1d4 piercing damage on a hit, count as monk weapons, and have the Finesse, Light, and Thrown (range 20/60) properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "sp">1</set>
+            <set name = "weight" lb = "1/4">-</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">20/60</set>
+            <set name = "damage" type = "piercing">1d4</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Shruiken)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Shruiken)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_SHRUIKEN">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN" />
+		</rules>
+	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
+        </rules>
+    </append>
 
     <element name = "Tessen" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_TESSEN">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
@@ -106,7 +214,7 @@
             <set name = "weight" lb = "1">-</set>
             <set name = "slot">onehand</set>
             <set name = "damage" type = "bludgeoning, slashing">1d4</set>
-            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_TESSEN</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN</set>
         </setters>
     </element>
     <element name = "Special (Tessen)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN">
@@ -115,13 +223,13 @@
             <p class = "indent"><strong>Special: Fan Shield</strong>When you are hit by an attack made with a projectile that weighs less than 2 pounds, such as a thrown dagger, dart, arrow, or bullet, while holding this weapon, you can use your reaction to open the tessen and attempt to deflect the projectile. You gain a +2 bonus to AC against the triggering attack, potentially causing it to miss.</p>
         </description>
     </element>
-    <element name = "Weapon Proficiency (Tessen)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_TESSEN">
+    <element name = "Weapon Proficiency (Tessen)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
-            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_TESSEN"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
         </rules>
     </append>
     <element name = "Kensei Weapon (Tessen)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_TESSEN">
@@ -131,9 +239,19 @@
 			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
         </description>
 		<rules>
-			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_TESSEN"/>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
 		</rules>
 	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
+        </rules>
+    </append>
 
     <element name = "Adaptable" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE">
         <compendium display = "false"/>
@@ -141,5 +259,7 @@
     <element name = "Scourge" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
         <compendium display = "false"/>
     </element>
-
+    <element name = "Thrown Versatility" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE"/>
+        <compendium display = "false"/>
+    </element>
 </elements>
