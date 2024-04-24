@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Disciple of Ferocity, Bender subclass from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "bender-ferocity.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-ferocity.xml"/>
         </update>
     </info>
@@ -14,22 +14,22 @@
             <p>Disciples of Ferocity traverse battlefields as a whirlwind of blades, fists, and elemental fury. Whether it be with the deadly patience of a stalking predator or the reckless abandon of a raging barbarian, these benders rely on an unflinching offence as the solution to that which stands in their way. They are students of devastation; armed and armoured, their movements embodying the destructive forces of nature: desolating wildfires, wrenching tornadoes, surging tsunamis, and rending earthquakes.</p>
             <p class = "indent">How did you come to follow such a path? Perhaps you were a mercenary exposed to primordial influences. Maybe you were a sailor, using wind and water to shorten sea voyages and protect your crew from pirates and raiders. Conversely, you may be an acolyte of pacifism, unleashing your destructive potential when fear overrides your better judgement. The choice is yours and the elements are your weapons.</p>
             <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_BONUS_FEROCITY_SPELLS"/>
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY"/> -->
-            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY"/> -->
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY"/>
         </description>
         <sheet display = "false">
             <description>Disciples of Ferocity traverse battlefields as a whirlwind of blades, fists, and elemental fury.</description>
         </sheet>
         <rules>
             <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_BONUS_FEROCITY_SPELLS" level = "3"/>
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES" level = "3"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT" level = "3"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE" level = "7"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY" level = "15"/> -->
-            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY" level = "20"/> -->
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE" level = "7"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY" level = "15"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY" level = "20"/>
         </rules>
     </element>
     <element name = "Bonus Ferocity Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_BONUS_FEROCITY_SPELLS">
@@ -37,7 +37,7 @@
             <p>The following spells are added to your bender spell list. They always take the form of an element associated with your Elemental Affinity. For example, a guardian of faith may take the form of a giant stalagmite projecting spears of rock (earth affinity), or a storm cloud letting loose booms of thunder (air affinity).</p>
             <table class = "ferocity-spells">
                 <thead>
-                    <tr><td class = "col-5"></td><td class = "col-10 left"></td></tr>
+                    <tr><td class = "col-5">Bender Level</td><td class = "col-10 left">Spells</td></tr>
                 </thead>
                 <tr><td>3rd</td><td>magic missile*</td></tr>
                 <tr><td>5th</td><td>magic weapon</td></tr>
@@ -49,12 +49,58 @@
             <p>**You move to a Border-Elemental Plane associated with your Elemental Affinity.</p>
         </description>
         <sheet display = "false"/>
-        <spellcasting name = "Bender" extend = "true">
-            <extends level = "3">ID_PHB_SPELL_MAGIC_MISSILE</extends>
-            <extends level = "5">ID_PHB_SPELL_MAGIC_WEAPON</extends>
-            <extends level = "9">ID_PHB_SPELL_BLINK</extends>
-            <extends level = "13">ID_PHB_SPELL_GUARDIAN_OF_FAITH</extends>
-            <extends level = "17">ID_PHB_SPELL_BIGBYS_HAND</extends>
-        </spellcasting>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_MAGIC_MISSILE" spellcasting = "Bender" level = "3" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_MAGIC_WEAPON" spellcasting = "Bender" level = "5" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_BLINK" spellcasting = "Bender" level = "9" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting = "Bender" level = "13" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_BIGBYS_HAND" spellcasting = "Bender" level = "17" prepared = "false"/>
+        </rules>
+    </element>
+    <element name = "Martial Proficiencies" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES">
+        <description>
+            <p>You gain proficiency with all martial weapons and can use any weapon you are proficient with as a spellcasting focus for your bender spells.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can use any weapon you are proficient with as a spellcasting focus for your bender spells.</description>
+        </sheet>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+        </rules>
+    </element>
+    <element name = "Elemental Conduit" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT">
+        <description>
+            <p>You have learnt to channel elemental energy beyond your fist to the weapons you wield. You can use your bender spellcasting ability instead of Strength or Dexterity for weapon attack and damage rolls.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can use your bender spellcasting ability instead of Strength or Dexterity for weapon attack and damage rolls.</description>
+        </sheet>
+    </element>
+    <element name = "Destructive Nature" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE">
+        <description>
+            <p>When you hit a creature with an attack, you can expend a spell slot to deal additional damage of a type associated with your Elemental Affinity. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 6d8.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you hit a creature with an attack, you can expend a spell slot to deal additional damage of a type associated with your Elemental Affinity. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 6d8.</description>
+        </sheet>
+    </element>
+    <element name = "Elemental Ferocity" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY">
+        <description>
+            <p>When you are in your Primordial Form or Primordial Avatar state, the damage of your Elemental Combo feature increases to 6d6 for a melee attack and 6d4 for a ranged attack.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you are in your Primordial Form or Primordial Avatar state, the damage of your Elemental Combo feature increases to 6d6 for a melee attack and 6d4 for a ranged attack.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Battery" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY">
+        <description>
+            <p>You can attack three times whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can attack three times whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name = "extra attack:count" value = "3" bonus = "extra attack"/>
+        </rules>
     </element>
 </elements>

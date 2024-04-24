@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Bender class from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
         </update>
     </info>
@@ -288,7 +288,7 @@
             <description>Air affinity: {{affinity:air}}, spells from this spell list are cast {{affinity:air:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
-            <extend>Air</extend>
+            <extend known = "true">Air</extend>
 		</spellcasting>
         <rules>
             <stat name = "affinity:air" value = "1"/>
@@ -357,7 +357,7 @@
             <description>Earth affinity: {{affinity:earth}}, spells from this spell list are cast {{affinity:earth:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
-            <extend>Earth</extend>
+            <extend known = "true">Earth</extend>
         </spellcasting>
         <rules>
             <stat name = "affinity:earth" value = "1"/>
@@ -426,7 +426,7 @@
             <description>Fire affinity: {{affinity:fire}}, spells from this spell list are cast {{affinity:fire:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
-            <extend>Fire</extend>
+            <extend known = "true">Fire</extend>
         </spellcasting>
         <rules>
             <stat name = "affinity:fire" value = "1"/>
@@ -495,7 +495,7 @@
             <description>Water affinity: {{affinity:water}}, spells from this spell list are cast {{affinity:water:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
-            <extend>Water</extend>
+            <extend known = "true">Water</extend>
         </spellcasting>
         <rules>
             <stat name = "affinity:water" value = "1"/>
@@ -588,7 +588,7 @@
         </description>
         <sheet display = "false"/>
         <rules>
-            <select type = "Archetype Feature" name = "Bender Discipline" supports = "Bender Discipline"/>
+            <select type = "Archetype" name = "Bender Discipline" supports = "Bender Discipline"/>
         </rules>
     </element>
     <element name = "Ability Score Improvement" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_ABILITY_SCORE_IMPROVEMENT">

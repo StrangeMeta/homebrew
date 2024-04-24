@@ -2,13 +2,13 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
 
     <element name = "Chakram" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_CHAKRAM">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D6</supports>
         <description>
             <p>Chakrams are martial melee weapons, consisting of a circular blade with a sharp outer edge. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Finesse, Light, Thrown (range 30/90), and Thrown Versatility (1d6) properties.</p>
         </description>
@@ -19,7 +19,6 @@
             <set name = "slot">onehand</set>
             <set name = "range">30/90</set>
             <set name = "damage" type = "slashing">1d4</set>
-            <set name = "versatile">1d6</set>
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</set>
         </setters>
     </element>
@@ -203,7 +202,7 @@
     </append>
 
     <element name = "Tessen" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_TESSEN">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN</supports>
         <description>
             <p>Tessen are martial melee weapons consisting of folding fans reinforced with wood or metal. The edges contain razor-sharp blades, but they can also be used as bludgeoning weapons when closed. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Adaptable (bludgeoning), Finesse, and Light properties. They also have the Special: Fan Shield property.</p>
             <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN"/>
@@ -213,7 +212,7 @@
             <set name = "cost" currency = "gp">2</set>
             <set name = "weight" lb = "1">-</set>
             <set name = "slot">onehand</set>
-            <set name = "damage" type = "bludgeoning, slashing">1d4</set>
+            <set name = "damage" type = "slashing">1d4</set>
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN</set>
         </setters>
     </element>
@@ -254,12 +253,44 @@
     </append>
 
     <element name = "Adaptable" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE">
+        <description>
+            <p>This weapon can be used with differing techniques, allowing it to deal different types of damage. A second damage type appears with the damage, when a creature makes a weapon attack with this weapon, it can choose to deal the weapon’s alternative damage type.</p>
+        </description>
+    </element>
+    <element name = "Adaptable (Bludgeoning)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE_BLUDGEONING">
         <compendium display = "false"/>
     </element>
+    <element name = "Adaptable (Piercing)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE_PIERCING">
+        <compendium display = "false"/>
+    </element>
+    <element name = "Adaptable (Slashing)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE_SLASHING">
+        <compendium display = "false"/>
+    </element>
+
     <element name = "Scourge" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
+        <description>
+            <p>This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it. Like the Reach property, the Scourge property extends your effective attack radius, but through a length of flexible material rather than a long stiff material. To reflect this difference, the whips’ Reach property has been replaced with Scourge.</p>
+        </description>
+    </element>
+
+    <element name = "Thrown Versatility" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE">
+        <description>
+            <p>This weapon is better used for thrown ranged weapon attacks than for melee weapon attacks. A damage value in parentheses appears with the property—the damage when the weapon is used to make a ranged weapon attack.</p>
+        </description>
+    </element>
+    <element name = "Thrown Versatility (d4)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D4">
         <compendium display = "false"/>
     </element>
-    <element name = "Thrown Versatility" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE">
+    <element name = "Thrown Versatility (d6)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D6">
+        <compendium display = "false"/>
+    </element>
+    <element name = "Thrown Versatility (d8)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D8">
+        <compendium display = "false"/>
+    </element>
+    <element name = "Thrown Versatility (d10)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D10">
+        <compendium display = "false"/>
+    </element>
+    <element name = "Thrown Versatility (d12)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D12">
         <compendium display = "false"/>
     </element>
 </elements>

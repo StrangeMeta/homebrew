@@ -2,13 +2,13 @@
 <elements>
     <info>
         <name>College of Hanabi, Bard subclass from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
         </update>
     </info>
 
     <!-- College of Masks -->
-    <element name = "College of Masks" type = "Archetype" source = "Ryoko's guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_COLLEGE_OF_MASKS">
+    <element name = "College of Masks" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_COLLEGE_OF_MASKS">
         <supports>Bard College</supports>
         <description>
             <p class = "flavour">“This mask doesn’t give you power, little girl. This isn’t simple addition! Wearing a mask is an act of transformation. You disappear in its shadow; you become something new—something incredible. That is, of course, if you dare.”</p>
