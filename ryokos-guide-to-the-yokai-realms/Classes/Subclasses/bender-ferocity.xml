@@ -1,0 +1,60 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Disciple of Ferocity, Bender subclass from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "bender-ferocity.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-ferocity.xml"/>
+        </update>
+    </info>
+
+    <!-- Disciple of Ferocity -->
+    <element name = "Disciple of Ferocity" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_DISCIPLE_OF_FEROCITY">
+        <supports>Bender Discipline</supports>
+        <description>
+            <p>Disciples of Ferocity traverse battlefields as a whirlwind of blades, fists, and elemental fury. Whether it be with the deadly patience of a stalking predator or the reckless abandon of a raging barbarian, these benders rely on an unflinching offence as the solution to that which stands in their way. They are students of devastation; armed and armoured, their movements embodying the destructive forces of nature: desolating wildfires, wrenching tornadoes, surging tsunamis, and rending earthquakes.</p>
+            <p class = "indent">How did you come to follow such a path? Perhaps you were a mercenary exposed to primordial influences. Maybe you were a sailor, using wind and water to shorten sea voyages and protect your crew from pirates and raiders. Conversely, you may be an acolyte of pacifism, unleashing your destructive potential when fear overrides your better judgement. The choice is yours and the elements are your weapons.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_BONUS_FEROCITY_SPELLS"/>
+            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES"/> -->
+            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT"/> -->
+            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE"/> -->
+            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY"/> -->
+            <!-- <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY"/> -->
+        </description>
+        <sheet display = "false">
+            <description>Disciples of Ferocity traverse battlefields as a whirlwind of blades, fists, and elemental fury.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_BONUS_FEROCITY_SPELLS" level = "3"/>
+            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_MARTIAL_PROFICIENCIES" level = "3"/> -->
+            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_CONDUIT" level = "3"/> -->
+            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_DESTRUCTIVE_NATURE" level = "7"/> -->
+            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_ELEMENTAL_FEROCITY" level = "15"/> -->
+            <!-- <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_PRIMORDIAL_BATTERY" level = "20"/> -->
+        </rules>
+    </element>
+    <element name = "Bonus Ferocity Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FEROCITY_BONUS_FEROCITY_SPELLS">
+        <description>
+            <p>The following spells are added to your bender spell list. They always take the form of an element associated with your Elemental Affinity. For example, a guardian of faith may take the form of a giant stalagmite projecting spears of rock (earth affinity), or a storm cloud letting loose booms of thunder (air affinity).</p>
+            <table class = "ferocity-spells">
+                <thead>
+                    <tr><td class = "col-5"></td><td class = "col-10 left"></td></tr>
+                </thead>
+                <tr><td>3rd</td><td>magic missile*</td></tr>
+                <tr><td>5th</td><td>magic weapon</td></tr>
+                <tr><td>9th</td><td>blink**</td></tr>
+                <tr><td>13th</td><td>guardian of faith*</td></tr>
+                <tr><td>17th</td><td>bigby's hand*</td></tr>
+            </table>
+            <p>*The damage type is one for which you have affinity instead of what is specified (you choose when you cast the spell).</p>
+            <p>**You move to a Border-Elemental Plane associated with your Elemental Affinity.</p>
+        </description>
+        <sheet display = "false"/>
+        <spellcasting name = "Bender" extend = "true">
+            <extends level = "3">ID_PHB_SPELL_MAGIC_MISSILE</extends>
+            <extends level = "5">ID_PHB_SPELL_MAGIC_WEAPON</extends>
+            <extends level = "9">ID_PHB_SPELL_BLINK</extends>
+            <extends level = "13">ID_PHB_SPELL_GUARDIAN_OF_FAITH</extends>
+            <extends level = "17">ID_PHB_SPELL_BIGBYS_HAND</extends>
+        </spellcasting>
+    </element>
+</elements>
