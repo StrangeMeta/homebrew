@@ -2,8 +2,8 @@
 <elements>
     <info>
         <name>College of Hanabi, Bard subclass from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.2">
-            <file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
+        <update version = "0.0.3">
+            <file name = "bard-masks.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-masks.xml"/>
         </update>
     </info>
 
