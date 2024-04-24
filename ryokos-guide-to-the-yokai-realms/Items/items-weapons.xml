@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.4">
+        <update version = "0.0.1">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
