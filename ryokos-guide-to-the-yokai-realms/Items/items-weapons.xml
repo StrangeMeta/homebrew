@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.3">
+        <update version = "0.0.4">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
@@ -15,7 +15,7 @@
         <setters>
             <set name = "category">Weapons</set>
             <set name = "cost" currency = "gp">10</set>
-            <set name = "weight" lb = "1">-</set>
+            <set name = "weight" lb = "1">1 lb.</set>
             <set name = "slot">onehand</set>
             <set name = "range">30/90</set>
             <set name = "damage" type = "slashing">1d4</set>
@@ -51,6 +51,40 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
         </rules>
     </append>
+    
+    <element name = "Claw" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_CLAW">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ATTACHED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description>
+            <p>Claws are simple, bladed melee weapons worn as gloves that deal 1d6 slashing damage on a hit and have the Attached and Light properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">5</set>
+            <set name = "weight" lb = "2">2 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "slashing">1d6</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Claw)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW">
+        <compendium display = "false"/>
+        <supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ATTACHED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Claw)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_CLAW">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW" />
+		</rules>
+	</element>
 
     <element name = "Kusarigama" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_KUSARIGAMA">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
@@ -61,7 +95,7 @@
         <setters>
             <set name = "category">Weapons</set>
             <set name = "cost" currency = "gp">10</set>
-            <set name = "weight" lb = "2">-</set>
+            <set name = "weight" lb = "2">2 lb.</set>
             <set name = "slot">onehand</set>
             <set name = "damage" type = "slashing">1d4</set>
             <set name = "versatile">1d6</set>
@@ -103,6 +137,50 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA"/>
         </rules>
     </append>
+    
+    <element name = "Meteor Hammer" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_METEOR_HAMMER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
+        <description>
+            <p>Meteor hammers are martial melee weapons that consist of a length of chain or rope attached to a weight at one or both ends. They deal 1d4 bludgeoning damage on a hit, count as monk weapons, and have the Finesse, Reach, and Scourge properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">2</set>
+            <set name = "weight" lb = "3">3 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "bludgeoning">1d4</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Meteor Hammer)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Meteor Hammer)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_METEOR_HAMMER">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER" />
+		</rules>
+	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER"/>
+        </rules>
+    </append>
 
     <element name = "Nunchaku" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_NUNCHAKU">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
@@ -113,7 +191,7 @@
         <setters>
             <set name = "category">Weapons</set>
             <set name = "cost" currency = "gp">10</set>
-            <set name = "weight" lb = "2">-</set>
+            <set name = "weight" lb = "2">2 lb.</set>
             <set name = "slot">onehand</set>
             <set name = "damage" type = "slashing">1d6</set>
             <set name = "versatile">1d8</set>
@@ -155,6 +233,135 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
         </rules>
     </append>
+    
+    <element name = "Odzutsu" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_ODZUTSU">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_ODZUTSU</supports>
+        <description>
+            <p>Ōdzutsu are martial ranged weapons consisting of handheld cannons, traditionally made of forged iron or cast bronze. They deal 2d10 bludgeoning damage on a hit, and have the Ammunition (range 150/600), Two25 lb.handed, and Special: Long Reload properties.</p>
+            <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_ODZUTSU"/>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">150</set>
+            <set name = "weight" lb = "25">25 lb.</set>
+            <set name = "slot">twohand</set>
+            <set name = "damage" type = "bludgeoning">2d10</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU</set>
+        </setters>
+    </element>
+    <element name = "Special (Odzutsu)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_ODZUTSU">
+        <compendium display = "false"/>
+        <description>
+            <p class = "indent"><strong>Special: Long Reload. </strong>After an attack is made using this weapon, it must be reloaded. Due to the weight and size of this weapon and its ammunition, reloading the weapon takes two actions, which don’t need to be taken consecutively.</p>
+        </description>
+    </element>
+    <element name = "Weapon Proficency (Odzutsu)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_ODZUTSU</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Odzutsu)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_ODZUTSU">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU" />
+		</rules>
+	</element>
+    
+    <element name = "Rope Dart" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_ROPE_DART">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
+        <description>
+            <p>Rope darts are martial melee weapons that consist of a length of chain or rope attached to a sharp dart at one end. They deal 1d4 piercing damage on a hit, count as monk weapons, and have the Finesse, Reach, and Scourge properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">2</set>
+            <set name = "weight" lb = "3">3 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "piercing">1d4</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Rope Dart)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Rope Dart)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_ROPE_DART">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART" />
+		</rules>
+	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART"/>
+        </rules>
+    </append>
+    
+    <element name = "Sai" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_SAI">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
+        <description>
+            <p>Sai are martial melee weapons consisting of three sharp, metal prongs, with the longer one at the centre and a smaller one on each side. They deal 1d4 piercing damage, count as monk weapons, and have the Finesse, Light, and Parry properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">5</set>
+            <set name = "weight" lb = "1">1 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "piercing">1d4</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Sai)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Sai)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_SAI">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI" />
+		</rules>
+	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI"/>
+        </rules>
+    </append>
 
     <element name = "Shruiken" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_SHRUIKEN">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
@@ -164,7 +371,7 @@
         <setters>
             <set name = "category">Weapons</set>
             <set name = "cost" currency = "sp">1</set>
-            <set name = "weight" lb = "1/4">-</set>
+            <set name = "weight" lb = "0.25">0.25 lb.</set>
             <set name = "slot">onehand</set>
             <set name = "range">20/60</set>
             <set name = "damage" type = "piercing">1d4</set>
@@ -204,13 +411,13 @@
     <element name = "Tessen" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_TESSEN">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN</supports>
         <description>
-            <p>Tessen are martial melee weapons consisting of folding fans reinforced with wood or metal. The edges contain razor-sharp blades, but they can also be used as bludgeoning weapons when closed. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Adaptable (bludgeoning), Finesse, and Light properties. They also have the Special: Fan Shield property.</p>
+            <p>Tessen are martial melee weapons consisting of folding fans reinforced with wood or metal. The edges contain razor1 lb.sharp blades, but they can also be used as bludgeoning weapons when closed. They deal 1d4 slashing damage on a hit, count as monk weapons, and have the Adaptable (bludgeoning), Finesse, and Light properties. They also have the Special: Fan Shield property.</p>
             <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TESSEN"/>
         </description>
         <setters>
             <set name = "category">Weapons</set>
             <set name = "cost" currency = "gp">2</set>
-            <set name = "weight" lb = "1">-</set>
+            <set name = "weight" lb = "1">1 lb.</set>
             <set name = "slot">onehand</set>
             <set name = "damage" type = "slashing">1d4</set>
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN</set>
@@ -252,6 +459,50 @@
         </rules>
     </append>
 
+    <element name = "Tonfa" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_TONFA">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
+        <description>
+            <p>Tonfa are martial melee weapons consisting of a wooden or metallic baton with a perpendicular handle. They deal 1d6 bludgeoning damage on a hit, count as monk weapons, and have the Light and Parry properties.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">1</set>
+            <set name = "weight" lb = "2">2 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "damage" type = "bludgeoning">1d6</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficiency (Tonfa)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Tonfa)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_TONFA">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
+		</rules>
+	</element>
+    <append id = "ID_WOTC_PHB_CLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
+        </rules>
+    </append>
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
+        </rules>
+    </append>
+
     <element name = "Adaptable" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE">
         <description>
             <p>This weapon can be used with differing techniques, allowing it to deal different types of damage. A second damage type appears with the damage, when a creature makes a weapon attack with this weapon, it can choose to deal the weapon’s alternative damage type.</p>
@@ -265,6 +516,18 @@
     </element>
     <element name = "Adaptable (Slashing)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE_SLASHING">
         <compendium display = "false"/>
+    </element>
+
+    <element name = "Attached" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ATTACHED">
+        <description>
+            <p>You can’t be disarmed of this weapon, but donning or doffing the weapon takes an action. You can use a hand equipped with this weapon to hold items, but can’t attack with the weapon while doing so. Additionally, you have disadvantage on attack rolls using other weapons held in a hand equipped with this weapon and on Sleight of Hand checks using the hand that is equipped with this weapon.</p>
+        </description>
+    </element>
+
+    <element name = "Parry" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_PARRY">
+        <description>
+            <p>This weapon has been designed to help you parry blows. While wielding this weapon in your offhand, you can use your reaction when you are hit by a melee attack to gain a +2 bonus to AC against the triggering attack, potentially causing it to miss.</p>
+        </description>
     </element>
 
     <element name = "Scourge" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
