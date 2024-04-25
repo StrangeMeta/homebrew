@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Bender class from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
         </update>
     </info>
@@ -284,7 +284,7 @@
         <description>
             <p>The spells associated with air have been added to your spell list.</p>
         </description>
-        <sheet display = "true">
+        <sheet alt = "Air (Thunder)" display = "true">
             <description>Air affinity: {{affinity:air}}, spells from this spell list are cast {{affinity:air:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
@@ -353,7 +353,7 @@
         <description>
             <p>The spells associated with earth have been added to your spell list.</p>
         </description>
-        <sheet display = "true">
+        <sheet alt = "Earth (Acid, Poison)" display = "true">
             <description>Earth affinity: {{affinity:earth}}, spells from this spell list are cast {{affinity:earth:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
@@ -422,7 +422,7 @@
         <description>
             <p>The spells associated with fire have been added to your spell list.</p>
         </description>
-        <sheet display = "true">
+        <sheet alt = "Fire (Fire, Lightning)" display = "true">
             <description>Fire affinity: {{affinity:fire}}, spells from this spell list are cast {{affinity:fire:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">
@@ -491,7 +491,7 @@
         <description>
             <p>The spells associated with water have been added to your spell list.</p>
         </description>
-        <sheet display = "true">
+        <sheet alt = "Water (Cold)" display = "true">
             <description>Water affinity: {{affinity:water}}, spells from this spell list are cast {{affinity:water:spellslot}} level(s) higher than the spell slot expended.</description>
         </sheet>
         <spellcasting name = "Bender" extend = "true">

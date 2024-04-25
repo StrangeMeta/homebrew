@@ -1,0 +1,149 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Disciple of Fortification, Bender subclass from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.2">
+            <file name = "bender-fortification.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-fortification.xml"/>
+        </update>
+    </info>
+
+    <!-- Disciple of Fortification -->
+    <element name = "Disciple of Fortification" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_DISCIPLE_OF_FORTIFICATION">
+        <supports>Bender Discipline</supports>
+        <description>
+            <p>A bubble of temperate calm amongst a raging wildfire, a wedge of unmoving rock within a landslide, a shield of ice against fist-sized hailstones; you are a bulwark against the forces of nature, bending them to protect yourself and your allies. You understand that your role is not to crush and slaughter, but to preserve those around you that you may triumph together.</p>
+            <p class = "indent">As a Disciple of Fortification, you may have taken a vow of pacifism yet still yearn for a life of danger and adventure. Perhaps you worked as a bodyguard, valuing the life of another more than your own. Maybe you found employment in a mine, saving colleagues from death by rock and explosives. Or it could be that your self preservation instincts are so well-honed that you cannot help but avoid catastrophe. Either way, the elements shield and fortify you from hurt and harm.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_BONUS_FORTIFICATION_SPELLS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_DEFENSIVE_PROFICIENCIES"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_SHIELD"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_REDIRECT_ELEMENTS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_ELEMENTAL_REINFORCEMENT"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK"/>
+        </description>
+        <sheet display = "false">
+            <description>As a Disciple of Fortification, you may have taken a vow of pacifism yet still yearn for a life of danger and adventure.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_BONUS_FORTIFICATION_SPELLS" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_DEFENSIVE_PROFICIENCIES" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_SHIELD" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_REDIRECT_ELEMENTS" level = "7"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_ELEMENTAL_REINFORCEMENT" level = "15"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK" level = "20"/>
+        </rules>
+    </element>
+    <element name = "Bonus Fortification Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_BONUS_FORTIFICATION_SPELLS">
+        <description>
+            <p>The following spells are added to your bender spell list. They always take the form of an element associated with your Elemental Affinity. For example, a shield may appear as ice (water affinity) or rock (earth affinity).</p>
+            <table class = "ferocity-spells">
+                <thead>
+                    <tr><td class = "col-5">Bender Level</td><td class = "col-10 left">Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>shield</td></tr>
+                <tr><td>5th</td><td>shielding word</td></tr>
+                <tr><td>9th</td><td>protection from energy*</td></tr>
+                <tr><td>13th</td><td>otiluke's resilient sphere</td></tr>
+                <tr><td>17th</td><td>endure</td></tr>
+            </table>
+            <p>*Must be a damage type for which you have affinity</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_SHIELD" spellcasting = "Bender" level = "3" prepared = "false"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_SHIELDING_WORD" spellcasting = "Bender" level = "3" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting = "Bender" level = "3" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting = "Bender" level = "3" prepared = "false"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_ENDURE" spellcasting = "Bender" level = "3" prepared = "false"/>
+        </rules>
+    </element>
+    <element name = "Defensive Proficiencies" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_DEFENSIVE_PROFICIENCIES">
+        <description>
+            <p>You gain proficiency with medium armour, heavy armour, and shields.</p>
+            <p class = "indent">In addition, you can use a shield as a spellcasting focus for your bender spells.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can use a shield as a spellcasting focus for your bender spells.</description>
+        </sheet>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD"/>
+        </rules>
+    </element>
+    <element name = "Primordial Shield" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_SHIELD">
+        <description>
+            <p>You learn to create a shield of primordial energy. As a bonus action on your turn, you can create this shield, granting you or a willing creature within 30 feet of you 1d6 temporary hit points. These temporary hit points last until you use this feature again or the target finishes a long rest.</p>
+            <p class = "indent">The number of temporary hit points increases to 1d10 at 6th level, 2d6 at 10th level, and 2d10 at 14th level.</p>
+        </description>
+        <sheet display = "true">
+            <description>As a bonus action on your turn, you can create this shield, granting you or a willing creature within 30 feet of you {{primordial shield:hp}} temporary hit points. These temporary hit points last until you use this feature again or the target finishes a long rest.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "primordial shield:hp" value = "1d6"/>
+            <stat inline = "true" name = "primordial shield:hp" value = "1d10" level = "6"/>
+            <stat inline = "true" name = "primordial shield:hp" value = "2d6" level = "10"/>
+            <stat inline = "true" name = "primordial shield:hp" value = "2d10" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Redirect Elements" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_REDIRECT_ELEMENTS">
+        <description>
+            <p>When a creature you can see within 30 feet of you (including yourself) would take damage of a type associated with your Elemental Affinity, you can use your reaction to reduce that damage. The damage is reduced by 2d6 for each time you have chosen affinity with that element. If this reduces the damage to 0, you can make a ranged spell attack, redirecting the energy at a target within 30 feet of the original target. The attack deals damage equal to the total damage reduction you rolled. The size of these dice increase to a d8 at 11th level, a d10 at 15th level, and a d20 at 20th level.</p>
+        </description>
+        <sheet display = "true">
+            <description>When a creature you can see within 30 feet of you (including yourself) would take damage of a type associated with your Elemental Affinity, you can use your reaction to reduce that damage. The damage is reduced by 2d{{redirect elements:dice}} for each time you have chosen affinity with that element. If this reduces the damage to 0, you can make a ranged spell attack, redirecting the energy at a target within 30 feet of the original target. The attack deals damage equal to the total damage reduction you rolled.</description>
+        </sheet>
+        <rules>
+            <stat name = "redirect elements:dice" value = "6" bonus = "base"/>
+            <stat name = "redirect elements:dice" value = "8" bonus = "base" level = "11"/>
+            <stat name = "redirect elements:dice" value = "10" bonus = "base"  level = "15"/>
+            <stat name = "redirect elements:dice" value = "20" bonus = "base"  level = "20"/>
+        </rules>
+    </element>
+    <element name = "Elemental Reinforcement" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_ELEMENTAL_REINFORCEMENT">
+        <description>
+            <p>When you are in your Primordial Form or Primordial Avatar state and expend a spell slot to cast a bender spell of 1st level or higher, you can choose one creature you can see within 30 feet of you (including yourself) to gain temporary hit points equal to three times the level of spell slot expended.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you are in your Primordial Form or Primordial Avatar state and expend a spell slot to cast a bender spell of 1st level or higher, you can choose one creature you can see within 30 feet of you (including yourself) to gain temporary hit points equal to three times the level of spell slot expended.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Bulwark" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK">
+        <description>
+            <p>When you roll initiative and aren’t surprised, you can use your reaction to cast a spell associated with your Elemental Affinity, as shown in the table below, without expending a spell slot. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+            <table class = "primordial-bulwark-spells">
+                <thead>
+                    <tr><td class = "col-5">Bender Level</td><td class = "col-10 left">Spells</td></tr>
+                </thead>
+                <tr><td>Air</td><td>wind wall</td></tr>
+                <tr><td>Earth</td><td>wall of stone</td></tr>
+                <tr><td>Fire</td><td>wall of fire</td></tr>
+                <tr><td>Water</td><td>white water wall</td></tr>
+            </table>
+        </description>
+        <sheet display = "true" usage = "1/Long Rest">
+            <description>When you roll initiative and aren’t surprised, you can use your reaction to cast one of the spells below, without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_AIR" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_EARTH" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_FIRE" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_WATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
+        </rules>
+    </element>
+    <element name = "Wind Wall" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_AIR">
+        <compendium display = "false"/>
+        <sheet display = "true"/>
+    </element>
+    <element name = "Wall of Stone" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_EARTH">
+        <compendium display = "false"/>
+        <sheet display = "true"/>
+    </element>
+    <element name = "Wall of Fire" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_FIRE">
+        <compendium display = "false"/>
+        <sheet display = "true"/>
+    </element>
+    <element name = "White Water Wall" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FORTIFICATION_PRIMORDIAL_BULWARK_WATER">
+        <compendium display = "false"/>
+        <sheet display = "true"/>
+    </element>
+</elements>
