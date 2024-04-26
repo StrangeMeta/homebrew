@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.4">
+        <update version = "0.0.5">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
@@ -502,6 +502,47 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
         </rules>
     </append>
+    
+    <element name = "Twinblade" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_TWINBLADE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_TWINBLADE</supports>
+        <description>
+            <p>Twinblades are martial melee weapons; double-bladed polearms that rely on the user’s dexterity to keep them in constant motion. They have the finesse and two-handed properties, and deal 2d4 slashing damage on a hit. They also have the Special: Whirl property.</p>
+            <div element = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TWINBLADE"/>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">50</set>
+            <set name = "weight" lb = "5">5 lb.</set>
+            <set name = "slot">twohand</set>
+            <set name = "damage" type = "slashing">2d4</set>
+            <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE</set>
+        </setters>
+    </element>
+    <element name = "Special (Twinblade)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_TWINBLADE">
+        <compendium display = "false"/>
+        <description>
+            <p class = "indent"><strong>Special: Whirl. </strong>When you are wielding the twinblade in two hands, you can use a bonus action to attempt to whirl the weapon. To whirl, make a DC 10 Dexterity check, adding your proficiency bonus if you are proficient with twinblades. On a success, you gain a +1 bonus to your AC until the start of your next turn, the whirling blades acting as a barrier against attacks. On a result of 15 or higher, you gain a +2 bonus, instead. On a failure, you deal slashing damage to yourself equal to your proficiency bonus and gain no bonus to your AC from the whirl this turn.</p>
+        </description>
+    </element>
+    <element name = "Weapon Proficency (Twinblade)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_TWINBLADE</supports>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Twinblade)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_TWINBLADE">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Melee</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE" />
+		</rules>
+	</element>
 
     <element name = "Adaptable" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE">
         <description>

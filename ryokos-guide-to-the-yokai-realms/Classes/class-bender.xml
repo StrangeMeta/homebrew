@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Bender class from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.3">
+        <update version = "0.0.4">
             <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
         </update>
     </info>
@@ -92,7 +92,7 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
             <!-- <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_STARKNIVES"/> -->
-            <!-- <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWIN_BLADES"/> -->
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWIN_BLADES"/>
             <select type = "Proficiency" name = "Artisan Tool/Musical Intrument, Bender" supports = "(Artisan tools||Musical Instrument)" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
 
             <grant type = "Proficiency" id = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
@@ -841,4 +841,296 @@
             <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or an attack roll, you can force the creature to reroll the d20 and use the lower roll (no action required). After you do so, you can’t do so again until the start of your next turn. You are under the effects of the true seeing spell.</description>
         </sheet>
     </element>
+
+    <append id = "ID_PHB_SPELL_COLOR_SPRAY">
+        <supports>Air, Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FOG_CLOUD">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_JUMP">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_LONGSTRIDER">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_THUNDERWAVE">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_UNSEEN_SERVANT">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_BLUR">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_ENHANCE_ABILITY">
+        <supports>Air, Earth, Fire, Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GUST_OF_WIND">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_LEVITATE">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MIRROR_IMAGE">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MISTY_STEP">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SHATTER">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SILENCE">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CALL_LIGHTNING">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_ELEMENTAL_WEAPON">
+        <supports>Air, Earth, Fire, Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FLY">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GASEOUS_FORM">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HASTE">
+        <supports>Air, Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_WIND_WALL">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CONJURE_MINOR_ELEMENTAL">
+        <supports>Air, Earth, Fire, Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_DIMENSION_DOOR">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HALLUCINATORY_TERRAIN">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CONJURE_ELEMENTAL">
+        <supports>Air, Earth, Fire, Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MISLEAD">
+        <supports>Air</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_PLANAR_BINDING">
+        <supports>Air, Earth, Fire, Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_ACID_SPLASH">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_POISON_SPRAY">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_RESISTANCE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SHILLELAGH">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_ENTANGLE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FALSE_LIFE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_TENSERS_FLOATING_DISK">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GOODBERRY">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GREASE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SHIELD">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MELFS_ACID_ARROW">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_BARKSKIN">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_PROTECTION_FROM_POISON">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SPIKE_GROWTH">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MELD_INTO_STONE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_STONE_SHAPE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_STONESKIN">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_PASSWALL">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_WALL_OF_STONE">
+        <supports>Earth</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_DANCING_LIGHTS">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FIRE_BOLT">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_LIGHT">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MINOR_ILLUSION">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SHOCKING_GRASP">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_BURNING_HANDS">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FAERIE_FIRE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HELLISH_REBUKE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HEROISM">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SILENT_IMAGE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CONTINUAL_FLAME">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FLAME_BLADE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FLAMING_SPHERE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HEAT_METAL">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_INVISIBILITY">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SCORCHING_RAY">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_DAYLIGHT">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FIREBALL">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_LIGHTNING_BOLT">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_MAJOR_IMAGE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GREATER_INVISIBILITY">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_WALL_OF_FIRE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_FLAME_STRIKE">
+        <supports>Fire</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GUIDANCE">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_RAY_OF_FROST">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_COMMAND">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CREATE_OR_DESTROY_WATER">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CALM_EMOTIONS">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HOLD_PERSON">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SUGGESTION">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CLAIRVOYANCE">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HYPNOTIC_PATTERN">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SLEET_STORM">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SLOW">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_WATER_BREATHING">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_WATER_WALK">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_COMPULSION">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CONTROL_WATER">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_DIVINATION">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_ICE_STORM">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_COMMUNE">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_CONE_OF_COLD">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_DOMINATE_PERSON">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_GEAS">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_HOLD_MONSTER">
+        <supports>Water</supports>
+    </append>
+    <append id = "ID_PHB_SPELL_SCRYING">
+        <supports>Water</supports>
+    </append>
 </elements>

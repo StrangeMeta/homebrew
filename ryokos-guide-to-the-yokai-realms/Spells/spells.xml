@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Spells/spells.xml"/>
         </update>
     </info>
@@ -592,8 +592,8 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Iminad's Umigiri" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_IMINADAS_UMIGIRI">
-        <supports>Air, Bard, Cleric, Warlock, Wizard</supports>
+    <element name = "Iminada's Umigiri" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_IMINADAS_UMIGIRI">
+        <supports>Air, Bard, Cleric, Warlock, Water, Wizard</supports>
         <description>
             <p>You create a 60-foot cube of swirling, green fog centred on a point within range that lasts for the duration. The fog heavily obscures the area, spreads around corners, is unaffected by wind, and thrums with illusions.</p>
             <p class = "indent">A creature that starts its turn in the area or enters the area for the first time on a turn must make an Intelligence saving throw. On a failure, the creature takes 5d8 psychic damage and becomes frightened of the illusions, which surround it. On a success, a creature takes half as much psychic damage and isn’t frightened by the illusions. A creature that makes an attack against these illusions (AC equals your spell save DC) and hits can repeat the saving throw, ending the frightened condition on itself on a success and automatically succeeding on saves against the spell for the duration.</p>
