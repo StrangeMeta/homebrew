@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Bender class from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.5">
+        <update version = "0.0.6">
             <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
         </update>
     </info>
@@ -176,7 +176,8 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "intelligence:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
-            <stat name = "bender:spellcasting:modifier" value = "intelligence:modifier"/>
+            <stat name = "bender:spellcasting:modifier" value = "1" bonus = "base"/>
+            <stat name = "bender:spellcasting:modifier" value = "intelligence:modifier" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
@@ -211,7 +212,8 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "wisdom:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
-            <stat name = "bender:spellcasting:modifier" value = "wisdom:modifier"/>
+            <stat name = "bender:spellcasting:modifier" value = "1" bonus = "base"/>
+            <stat name = "bender:spellcasting:modifier" value = "wisdom:modifier" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
@@ -246,7 +248,8 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "charisma:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
-            <stat name = "bender:spellcasting:modifier" value = "charisma:modifier"/>
+            <stat name = "bender:spellcasting:modifier" value = "1" bonus = "base"/>
+            <stat name = "bender:spellcasting:modifier" value = "charisma:modifier" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "14"/>
@@ -269,7 +272,7 @@
             </ul>
         </description>
         <sheet display = "true">
-            <description>If an element you have attuned has an affinity of 2 or greater, spells you cast from that spell list are cast one level higher than the spell slot you expended. This effect stacks; if you choose to gain affinity with the same element four times, your spells from that element’s list are cast three levels higher than the spell slot you expend. You have found attunement with the following elements:</description>
+            <description>If an element you have attuned has an affinity greater than 2, spells you cast from that spell list are cast one level higher than the spell slot you expended. This effect stacks; if you gain affinity with an element four times, your spells from that element’s list are cast three levels above the spell slot you expend. You have attunement with the following elements:</description>
         </sheet>
         <rules>
             <select type = "Class Feature" name = "Elemental Affinity (1)" supports = "Elements"/>
@@ -565,7 +568,7 @@
             <p class = "indent">Any magic items that confer a bonus to the attack and damage rolls of your unarmed strikes confer the same bonus to your elemental strikes.</p>
         </description>
         <sheet display = "true">
-            <description>When you take the Attack action, you can make melee or ranged spell attacks called elemental strikes as one or more of your attacks. The strike deals damage of a type with which you have affinity (your choice when you make the attack). A melee elemental strike has a reach of 10 feet and deals damage equal to {{elemental strikes:dice}}d6 plus your bender spellcasting ability modifier on a hit. A ranged elemental strike has a range of 60 feet and deals damage equal to {{elemental strikes:dice}}d4 plus your bender spellcasting ability modifier on a hit. Any magic items that confer a bonus to the attack and damage rolls of your unarmed strikes confer the same bonus to your elemental strikes.</description>
+            <description>When you take the Attack action, you can make melee or ranged spell attacks as one or more of your attacks. The strikes deal damage of a type with which you have affinity (your choice when you make the attack). A melee elemental strike has Reach and deals {{elemental strikes:dice}}d6 plus your bender spellcasting ability modifier damage. A strike has a range of 60 feet and deals {{elemental strikes:dice}}d4 plus your bender spellcasting ability modifier damage. Any magic items that confer a bonus to the attack and damage rolls of your unarmed strikes confer the bonus to your elemental strikes.</description>
         </sheet>
         <rules>
             <stat name = "elemental strikes:dice" value = "1"/>
@@ -579,7 +582,7 @@
             <p>Your strikes manifest elemental energy, which you can unleash at the peak of your combination. After you take the Attack action on your turn, you can make one Elemental Strike attack as a bonus action that turn. You do not add your ability modifier to the damage from this attack.</p>
         </description>
         <sheet>
-            <description>After you take the Attack action on your turn, you can make one Elemental Strike attack as a bonus action that turn. You do not add your ability modifier to the damage from this attack.</description>
+            <description>After taking the Attack action on your turn, you can make an Elemental Strike attack as a bonus action that turn. You don't add your ability modifier to the damage.</description>
         </sheet>
     </element>
     <element name = "Bender Discipline" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_BENDER_DISCIPLINE">
@@ -611,7 +614,7 @@
             <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
         <sheet>
-            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+            <description>You can attack twice, instead of once, when you take the Attack action on your turn.</description>
         </sheet>
         <rules>
             <stat name = "extra attack:count" value = "2" bonus = "extra attack"/>
@@ -630,8 +633,8 @@
             <p class = "indent">Starting at 17th level, while in your primordial form, you can cast spells of 2nd level or lower without expending a spell slot.</p>
         </description>
         <sheet display = "true" usage = "1/Long Rest">
-            <description level = "11">As a bonus action, you embody aspects of a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 1st-level spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</description>
-            <description level = "17">As a bonus action, you embody aspects of a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 2nd-level or lower spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</description>
+            <description level = "11">As a bonus action, you embody a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 1st-level spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</description>
+            <description level = "17">As a bonus action, you embody a chosen element. Choose one of the elements with which you have affinity. For 1 minute, you can cast 2nd-level or lower spells associated with that element without expending a spell slot. In addition, you gain a benefit based on that element:</description>
         </sheet>
         <rules>
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_AIR" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR"/>
@@ -673,7 +676,7 @@
     <element name = "Primordial Form: Water" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_FORM_WATER">
         <compendium display = "false"/>
         <sheet alt = "Water" usage = "{{primordial form:fluid}}">
-            <description>Fluid: You gain a pool of vitality equal to five times your bender level. At the end of each of your turns for the duration, you can cause up to three creatures of your choice within 10 feet of you to regain 5 hit points (no action required), expending an equal amount of vitality from your pool to do so.</description>
+            <description>Fluid: You gain a pool of vitality. At the end of each of your turns for the duration, you can cause up to three creatures of your choice within 10 feet of you to regain 5 hit points, expending an equal amount of vitality from your pool to do so.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR">
@@ -721,7 +724,7 @@
             </table>
         </description>
         <sheet display = "true" usage = "1/Long Rest">
-            <description>As an action, you become a primordial incarnation of your mortal form. You gain 50 temporary hit points as well as benefits based on your Elemental Affinities, which last for 10 minutes.</description>
+            <description>As an action, you become a primordial incarnation of yourself. You gain 50 temporary hit points and benefits based on your Elemental Affinities, which last for 10 minutes.</description>
         </sheet>
         <rules>
             <grant type = "Class Feature" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR1" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR, !ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR2"/>
@@ -760,13 +763,13 @@
     <element name = "Primordial Avatar: Air3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR3">
         <compendium display = "false"/>
         <sheet alt = "Air Benefits">
-            <description>Your speed increases by 15 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions. Once on each of your turns, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated.</description>
+            <description>Your speed increases by 15 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions. Once on your turn, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Air4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_AIR4">
         <compendium display = "false"/>
         <sheet alt = "Air Benefits">
-            <description>Your speed increases by 30 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions. Once on each of your turns, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated. You are under the effects of the freedom of movement spell.</description>
+            <description>Your speed increases by 30 ft. You gain a flying speed of 60 feet. You are immune to thunder damage and the grappled and restrained conditions. Once on your turn, you can cast the misty step spell without expending a spell slot (no action required). You can’t do so while incapacitated. You are under the effects of the freedom of movement spell.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Earth1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH1">
@@ -778,67 +781,67 @@
     <element name = "Primordial Avatar: Earth2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH2">
         <compendium display = "false"/>
         <sheet alt = "Earth Benefits">
-            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone.</description>
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and succeed on saving throws made to avoid being moved against your will or knocked prone.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Earth3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH3">
         <compendium display = "false"/>
         <sheet alt = "Earth Benefits">
-            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone. You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</description>
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and succeed on saving throws made to avoid being moved against your will or knocked prone. You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Earth4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_EARTH4">
         <compendium display = "false"/>
         <sheet alt = "Earth Benefits">
-            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and automatically succeed on saving throws made to avoid being moved against your will or knocked prone. You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the skin of steel spell.</description>
+            <description>Your AC can’t be lower than 14 plus your bender spellcasting ability modifier. You are immune to acid damage and succeed on saving throws made to avoid being moved against your will or knocked prone. You can cast the shield spell without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the skin of steel spell.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Fire1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE1">
         <compendium display = "false"/>
         <sheet alt = "Fire Benefits">
-            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit).</description>
+            <description>The first time you hit a target with an attack on your turn, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit).</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Fire2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE2">
         <compendium display = "false"/>
         <sheet alt = "Fire Benefits">
-            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage.</description>
+            <description>The first time you hit a target with an attack on your turn, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Fire3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE3">
         <compendium display = "false"/>
         <sheet alt = "Fire Benefits">
-            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage. You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</description>
+            <description>The first time you hit a target with an attack on your turn, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage. You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Fire4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_FIRE4">
         <compendium display = "false"/>
         <sheet alt = "Fire Benefits">
-            <description>The first time you hit a target with an attack on each of your turns, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage. You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or expending your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the fire shield spell (warm shield only).</description>
+            <description>The first time you hit a target with an attack on your turn, you deal an extra 2d6 fire or lightning damage to it (your choice when you gain this benefit). You are immune to fire damage. You can cast the hellish rebuke spell at 2nd-level without expending a spell slot or your reaction. You can’t do so while incapacitated. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the fire shield spell (warm shield only).</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Water1" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER1">
         <compendium display = "false"/>
         <sheet alt = "Water Benefits">
-            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required).</description>
+            <description>You gain a swimming speed of 60 feet. Once on your turn, you can take the Help action targeting a creature you can see within 30 feet of you.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Water2" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER2">
         <compendium display = "false"/>
         <sheet alt = "Water Benefits">
-            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage.</description>
+            <description>You gain a swimming speed of 60 feet. Once on your turn, you can take the Help action targeting a creature you can see within 30 feet of you. You are immune to cold damage.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Water3" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER3">
         <compendium display = "false"/>
         <sheet alt = "Water Benefits">
-            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or an attack roll, you can force the creature to reroll the d20 and use the lower roll (no action required). After you do so, you can’t do so again until the start of your next turn.</description>
+            <description>You gain a swimming speed of 60 feet. Once on your turn, you can take the Help action targeting a creature you can see within 30 feet of you. You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or attack roll, you can force the creature to reroll the d20 and use the lower roll. After you do so, you can’t do so again until the start of your next turn.</description>
         </sheet>
     </element>
     <element name = "Primordial Avatar: Water4" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_PRIMORDIAL_AVATAR_WATER4">
         <compendium display = "false"/>
         <sheet alt = "Water Benefits">
-            <description>You gain a swimming speed of 60 feet. Once on each of your turns, you can take the Help action targeting any creature you can see within 30 feet of you (no action required). You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or an attack roll, you can force the creature to reroll the d20 and use the lower roll (no action required). After you do so, you can’t do so again until the start of your next turn. You are under the effects of the true seeing spell.</description>
+            <description>You gain a swimming speed of 60 feet. Once on your turn, you can take the Help action targeting a creature you can see within 30 feet of you. You are immune to cold damage. When a creature you can see within 30 feet of you succeeds on a saving throw or attack roll, you can force the creature to reroll the d20 and use the lower roll. After you do so, you can’t do so again until the start of your next turn. You are under the effects of the true seeing spell.</description>
         </sheet>
     </element>
 

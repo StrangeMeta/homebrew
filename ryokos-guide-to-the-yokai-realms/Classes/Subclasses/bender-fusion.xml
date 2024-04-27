@@ -1,0 +1,144 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Disciple of Fusion, Bender subclass from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.2">
+            <file name = "bender-fusion.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-fusion.xml"/>
+        </update>
+    </info>
+
+    <!-- Disciple of Fortification -->
+    <element name = "Disciple of Fusion" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_DISCIPLE_OF_FUSION">
+        <supports>Bender Discipline</supports>
+        <description>
+            <p>The elements are pure: solid earth, liquid water, gaseous air, and fire—energy incarnate. However, the borders between these elements are where things get interesting. Water and earth can produce calamitous mudslides capable of decimating an army. When wind whips up sand, a dust storm can leave even the hardiest explorers lost and disoriented. And, in the calm of a bathhouse, the confluence of fire and water can bring about calming steam that cleanses the body and soothes the soul.</p>
+            <p class = "indent">A bender of the Disciple of Fusion lives on these elemental extremities, pushing the borders, always with an eye on the primordial forces that they have not yet mastered. Your connection to every element runs so deeply that it is almost second nature to blend them together. You may have smelt ore with astounding alacrity, be a sculptor whose ability to shape ice rivalled that of the finest enkoh architects, or perhaps you work as a thief, creating clouds of smoke to blind guards and make good your escape. You are the unexpected solution that changes the paradigm of any problem.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_BONUS_CANTRIPS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_BONUS_SPELLS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_INTERELEMENTAL_CASTING"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_UNLEASHED_ELEMENTS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_AVATAR_OF_ELEMENTS"/>
+        </description>
+        <sheet display = "false">
+            <description>A bender of the Disciple of Fusion lives on elemental extremities, pushing the borders, always with an eye on the primordial forces that they have not yet mastered.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_BONUS_CANTRIPS" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_BONUS_SPELLS" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_INTERELEMENTAL_CASTING" level = "7"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_UNLEASHED_ELEMENTS" level = "15"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_AVATAR_OF_ELEMENTS" level = "20"/>
+        </rules>
+    </element>
+    <element name = "Bonus Cantrips" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_BONUS_CANTRIPS">
+        <description>
+            <p>Your connection with all elements allows you to mould them in their most basic form. You learn two additional bender cantrips of your choice, which can be from any elemental affinity list, and don’t count towards the number of cantrips you know.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Spell" name = "Bonus Cantrips (Fusion)" supports = "(Air||Earth||Fire||Water), 0" spellcasting = "Bender" number = "2"/>
+        </rules>
+    </element>
+    <element name = "Bonus Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_BONUS_SPELLS">
+        <description>
+            <p>As your connection with the primordial forces deepens, you learn to manipulate even the elements with which you are less familiar. You learn one 1st-level bender spell from any elemental affinity list; you always have that spell prepared and it doesn’t count against the number of spells you can prepare each day. When you reach 5th, 9th, 13th, and 17th level in this class, you learn one 2nd-, 3rd-, 4th-, and 5th-level bender spell in this way.</p>
+            <p class = "indent">If you don’t have affinity with the element from which a spell is chosen, the spell is cast as if you had 1 affinity with that element.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Spell" name = "Bonus Spells (1st Level)" supports = "(Air||Earth||Fire||Water), 1" spellcasting = "Bender"/>
+            <select type = "Spell" name = "Bonus Spells (2st Level)" supports = "(Air||Earth||Fire||Water), 2" spellcasting = "Bender" level = "5"/>
+            <select type = "Spell" name = "Bonus Spells (3st Level)" supports = "(Air||Earth||Fire||Water), 3" spellcasting = "Bender" level = "9"/>
+            <select type = "Spell" name = "Bonus Spells (4st Level)" supports = "(Air||Earth||Fire||Water), 4" spellcasting = "Bender" level = "13"/>
+            <select type = "Spell" name = "Bonus Spells (5st Level)" supports = "(Air||Earth||Fire||Water), 5" spellcasting = "Bender" level = "17"/>
+        </rules>
+    </element>
+    <element name = "Fusionist Spellcasting" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING">
+        <description>
+            <p>When you expend a spell slot of 1st level or higher to cast a spell from your bender spell repertoire, you can augment it with another element, creating an additional effect in a sphere centred on the target of your spell or, if the spell affects an area, the centre of the affected area. You choose the size of the sphere, which can have a maximum radius in feet equal to five times the level of the spell slot expended. The effect depends on the element list from which the spell was drawn, and the element with which you choose to combine it. Any saving throws are against your bender spell save DC.</p>
+            <p class = "indent">You can use this feature a number of times equal to your bender spellcasting ability modifier (minimum of once), and regain all expended uses when you finish a short or long rest.</p>
+            <ul>
+                <li><strong>Air &amp; Earth: Dust. </strong>Dust explodes in the sphere. Each creature in the area must succeed on a Constitution saving throw or be blinded until the end of your next turn.</li>
+                <li><strong>Air &amp; Fire: Smoke. </strong>Cloying smoke fills the sphere until the end of your next turn. For the duration, the area is heavily obscured, creatures in the area can speak only falteringly, and any creature in the area that tries to cast a spell with a verbal component must succeed on a Constitution saving throw or fail to cast the spell wasting the spellcasting action (but not the spell slot).</li>
+                <li><strong>Air &amp; Water: Ice. </strong>All surfaces in the sphere become covered with a layer of slick ice, turning the area into difficult terrain, until the end of your next turn. When the ice appears, each creature standing in the area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.</li>
+                <li><strong>Earth &amp; Fire: Lava. </strong>Speckles of molten rock explode in the sphere. Each creature in the area must succeed on a Dexterity saving throw or take 1d6 fire damage per level of spell slot expended.</li>
+                <li><strong>Earth &amp; Water: Mud. </strong>A torrent of sticky mud erupts in the sphere. The area becomes difficult terrain until cleaned, and each creature in the sphere has its speed reduced by 15 feet. A creature can use its action to clean the mud off of itself or another affected creature, removing the speed reduction. A creature can clear a 5-foot-square area of difficult terrain as an action.</li>
+                <li><strong>Fire &amp; Water: Steam. </strong>Steam blooms in the sphere until the end of your next turn. For the duration, the area is heavily obscured and a creature that ends its turn in the sphere takes 1d4 fire damage per level of the spell slot expended.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "{{bender:spellcasting:modifier}}/Short Rest">
+            <description>When you expend a spell slot of 1st level or higher to cast a bender spell, you can augment it with another element, creating an additional effect in a sphere centred on the target of your spell or, if the spell affects an area, the centre of the spell's area. You choose the size of the sphere, up to five times the level of the spell slot expended. The effect depends on the element list from which the spell was drawn, and the element with which you choose to combine it. Any saving throws are against your bender spell save DC.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIREARTH" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIRFIRE" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIRWATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_AIR, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_EARTHFIRE" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_EARTHWATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_FIREWATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
+        </rules>
+    </element>
+    <element name = "Air, Earth" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIREARTH">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Air &amp; Earth">
+            <description>Dust explodes in a sphere. Each creature in the area must succeed on a Constitution saving throw or be blinded until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Air, Fire" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIRFIRE">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Air &amp; Fire">
+            <description>Cloying smoke fills a sphere until the end of your next turn. The area is heavily obscured, creatures in the area can speak only falteringly, and any creature in the area that tries to cast a spell with a verbal component must succeed on a Constitution saving throw or fail to cast the spell wasting the action (but not the spell slot).</description>
+        </sheet>
+    </element>
+    <element name = "Air, Water" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIRWATER">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Air &amp; Water">
+            <description>All surfaces in the sphere become covered with a layer of ice, turning the area into difficult terrain, until the end of your next turn. Each creature standing, entering, or ending their turn in the area, must succeed on a Dexterity saving throw or fall prone.</description>
+        </sheet>
+    </element>
+    <element name = "Earth, Fire" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_EARTHFIRE">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Earth &amp; Fire">
+            <description>Molten rocks explode in a sphere. Each creature in the area must succeed on a Dexterity saving throw or take 1d6 fire damage per level of spell slot expended.</description>
+        </sheet>
+    </element>
+    <element name = "Earth, Water" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_EARTHWATER">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Earth &amp; Water">
+            <description>A torrent of sticky mud erupts in a sphere. The area becomes difficult terrain until cleaned, and each creature in the sphere has its speed reduced by 15 feet. A creature can use its action to clean the mud off of itself or another affected creature, removing the speed reduction. A creature can clear a 5-foot-square area of difficult terrain as an action.</description>
+        </sheet>
+    </element>
+    <element name = "Fire, Water" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_FIREWATER">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Fire &amp; Water">
+            <description>Steam blooms in a sphere until the end of your next turn. The area is heavily obscured and a creature ending its turn in the sphere takes 1d4 fire damage per level of the spell slot expended.</description>
+        </sheet>
+    </element>
+    <element name = "Interelemental Casting" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_INTERELEMENTAL_CASTING">
+        <description>
+            <p>When you use a spell to deal damage of a type associated with an elemental affinity, you can change the damage type to one associated with one of your Elemental Affinities. In addition, when a creature you can see casts a spell that deals damage of a type associated with any elemental affinity, you can use your reaction to make a spellcasting ability check. The DC for the check equals 10 plus the spell’s level (cantrips are DC 10). On a success, you change the damage type to one associated with one of your Elemental Affinities.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you use a spell to deal damage of a type associated with an elemental affinity, you can change the damage type to one associated with one of your Elemental Affinities. In addition, when a creature you can see casts a spell that deals damage of a type associated with any elemental affinity, you can use your reaction to make a spellcasting ability check. The DC equals 10 plus the spell’s level (cantrips are DC 10). On a success, you change the damage type to one associated with one of your Elemental Affinities.</description>
+        </sheet>
+    </element>
+    <element name = "Unleashed Elements" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_UNLEASHED_ELEMENTS">
+        <description>
+            <p>On your turn, when you are in your Primordial Form or Primordial Avatar state and use your action to cast a bender spell using a spell slot, you can cast a bender cantrip with a casting time of one action as a bonus action that turn.</p>
+        </description>
+        <sheet display = "true">
+            <description>On your turn, when you use a spell slot to cast a spell as an action in your Primordial Form or Primordial Avatar state , you can cast a bender cantrip with a casting time of one action as a bonus action that turn.</description>
+        </sheet>
+    </element>
+    <element name = "Avatar of Elements" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_AVATAR_OF_ELEMENTS">
+        <description>
+            <p>You gain two additional Elemental Affinities of your choice, for a total of six affinities. You can have no more than four affinities for any one element.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <select type = "Class Feature" name = "Avatar of Elements" supports = "Elements" number = "2"/>
+        </rules>
+    </element>
+</elements>
