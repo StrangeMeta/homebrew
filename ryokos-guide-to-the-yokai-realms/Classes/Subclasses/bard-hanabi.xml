@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>College of Hanabi, Bard subclass from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "bard-hanabi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bard-hanabi.xml"/>
         </update>
     </info>
@@ -192,16 +192,4 @@
             <description>As a bonus action, you can light this pyrotechnic, which propels you through the air. Until the end of your next turn, you gain a flying speed equal to 30 plus ten times your proficiency bonus. Your movement does not provoke opportunity attacks for the duration.</description>
         </sheet>
     </element>
-
-    <element name = "Weapon Proficiency (Magitech Firearms)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS">
-        <sheet alt = "Magitech Firearms"/>
-        <rules>
-            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_TESSEN"/>
-        </rules>
-    </element>
-    <append id = "ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
-        <rules>
-            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS"/>
-        </rules>
-    </append>
 </elements>

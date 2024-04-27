@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.5">
+        <update version = "0.0.6">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
@@ -25,6 +25,7 @@
     <element name = "Weapon Proficency (Chakram)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <sheet alt = "Chakram"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -69,6 +70,7 @@
     <element name = "Weapon Proficency (Claw)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW">
         <compendium display = "false"/>
         <supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ATTACHED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <sheet alt = "Claw"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
         <rules>
@@ -111,6 +113,7 @@
     <element name = "Weapon Proficency (Kusarigama)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
+        <sheet alt = "Kusarigama"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -155,6 +158,7 @@
     <element name = "Weapon Proficency (Meteor Hammer)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
+        <sheet alt = "Meteor Hammer"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -207,6 +211,7 @@
     <element name = "Weapon Proficency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
+        <sheet alt = "Nunchaku"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -245,6 +250,7 @@
             <set name = "cost" currency = "gp">150</set>
             <set name = "weight" lb = "25">25 lb.</set>
             <set name = "slot">twohand</set>
+            <set name = "range">150/600</set>
             <set name = "damage" type = "bludgeoning">2d10</set>
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU</set>
         </setters>
@@ -258,6 +264,7 @@
     <element name = "Weapon Proficency (Odzutsu)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_ODZUTSU</supports>
+        <sheet alt = "Odzutsu"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
         <rules>
@@ -292,6 +299,7 @@
     <element name = "Weapon Proficency (Rope Dart)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
+        <sheet alt = "Rope Darts"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -336,6 +344,7 @@
     <element name = "Weapon Proficency (Sai)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
+        <sheet alt = "Sai"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -381,6 +390,7 @@
     <element name = "Weapon Proficency (Shruiken)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <sheet alt = "Shruiken"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
         <rules>
@@ -432,6 +442,7 @@
     <element name = "Weapon Proficiency (Tessen)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <sheet alt = "Tessen"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -476,6 +487,7 @@
     <element name = "Weapon Proficiency (Tonfa)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
+        <sheet alt = "Tonfa"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -527,6 +539,7 @@
     <element name = "Weapon Proficency (Twinblade)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_TWINBLADE</supports>
+        <sheet alt = "Twinblade"/>
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -543,6 +556,206 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE" />
 		</rules>
 	</element>
+
+    <!-- Magitech Firearms -->
+    <element name = "Weapon Proficiency (Magitech Firearms)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS">
+        <sheet alt = "Magitech Firearms"/>
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE"/>
+        </rules>
+    </element>
+    <append id = "ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS"/>
+        </rules>
+    </append>
+    
+    <element name = "Blunderbuss" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_BLUNDERBUSS">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Blunderbuss are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">50</set>
+            <set name = "weight" lb = "25">5 lb.</set>
+            <set name = "slot">twohand</set>
+            <set name = "range">20/60</set>
+            <set name = "damage" type = "piercing">3d4</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Blunderbuss)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt = "Blunderbuss"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Blunderbuss)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_BLUNDERBUSS">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS" />
+		</rules>
+	</element>
+    
+    <element name = "Musket" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_MUSKET">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Muskets are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">100</set>
+            <set name = "weight" lb = "25">10 lb.</set>
+            <set name = "slot">twohand</set>
+            <set name = "range">80/240</set>
+            <set name = "damage" type = "piercing">1d10</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Musket)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt = "Musket"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Musket)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_MUSKET">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET" />
+		</rules>
+	</element>
+    
+    <element name = "Pistol" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_PISTOL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+        <description>
+            <p>Pistols are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">200</set>
+            <set name = "weight" lb = "25">2 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">40/120</set>
+            <set name = "damage" type = "piercing">1d8</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Pistol)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+        <sheet alt = "Pistol"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Pistol)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_PISTOL">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL"/>
+		</rules>
+	</element>
+    
+    <element name = "Revolver" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_REVOLVER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+        <description>
+            <p>Revolvers are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">750</set>
+            <set name = "weight" lb = "25">2 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">60/240</set>
+            <set name = "damage" type = "piercing">1d10</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Revolver)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+        <sheet alt = "Revolver"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Revolver)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_REVOLVER">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER"/>
+		</rules>
+	</element>
+    
+    <element name = "Rifle" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_RIFLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Rifles are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">1000</set>
+            <set name = "weight" lb = "25">8 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">120/480</set>
+            <set name = "damage" type = "piercing">1d12</set>
+            <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficency (Rifle)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt = "Rifle"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE"/>
+        </rules>
+    </append>
+    <element name = "Kensei Weapon (Rifle)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_KENSEI_WEAPON_RIFLE">
+		<compendium display = "false" />
+		<supports>Kensei Weapon, Ranged</supports>
+        <description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+        </description>
+		<rules>
+			<grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE"/>
+		</rules>
+    </element>
+    <!-- End of magitech fierarms -->
+
+    <!-- Weapon Properties -->
 
     <element name = "Adaptable" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_ADAPTABLE">
         <description>
@@ -564,12 +777,30 @@
             <p>You can’t be disarmed of this weapon, but donning or doffing the weapon takes an action. You can use a hand equipped with this weapon to hold items, but can’t attack with the weapon while doing so. Additionally, you have disadvantage on attack rolls using other weapons held in a hand equipped with this weapon and on Sleight of Hand checks using the hand that is equipped with this weapon.</p>
         </description>
     </element>
+    
+	<element name="Loud" type="Weapon Property" source="Internal" id="ID_RGTTYR_WEAPON_PROPERTY_LOUD">
+		<description>
+			<p>The sound of the weapon (typically a firearm) discharging alerts all hearing creatures within a number of feet as specified by the number in parentheses after the loud property. This range is doubled in echoey locations, such as cave systems, and where sound travels faster, such as underwater.</p>
+		</description>
+	</element>
+	<element name="Loud (500)" type="Weapon Property" source="Internal" id="ID_RGTTYR_WEAPON_PROPERTY_LOUD_500">
+        <compendium display = "false"/>
+	</element>
+	<element name="Loud (1000)" type="Weapon Property" source="Internal" id="ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000">
+        <compendium display = "false"/>
+	</element>
 
     <element name = "Parry" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_PARRY">
         <description>
             <p>This weapon has been designed to help you parry blows. While wielding this weapon in your offhand, you can use your reaction when you are hit by a melee attack to gain a +2 bonus to AC against the triggering attack, potentially causing it to miss.</p>
         </description>
     </element>
+    
+	<element name="Reload (1 shot)" type="Weapon Property" source="Internal" id="ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
 
     <element name = "Scourge" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_SCOURGE">
         <description>
@@ -595,6 +826,11 @@
         <compendium display = "false"/>
     </element>
     <element name = "Thrown Versatility (d12)" type = "Weapon Property" source = "Ryoko's Guide to the Yokai Realms" id = "ID_INTERNAL_WEAPON_PROPERTY_THROWN_VERSATILE_D12">
+        <compendium display = "false"/>
+    </element>
+
+    <!-- Weapon Categories -->
+    <element name = "Magitech Firearm" type = "Weapon Category" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM">
         <compendium display = "false"/>
     </element>
 </elements>
