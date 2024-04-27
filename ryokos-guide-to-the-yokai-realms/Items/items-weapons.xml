@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.6">
+        <update version = "0.0.7">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
@@ -575,7 +575,7 @@
     </append>
     
     <element name = "Blunderbuss" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_BLUNDERBUSS">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <description>
             <p>Blunderbuss are magitech firearms.</p>
         </description>
@@ -611,7 +611,7 @@
 	</element>
     
     <element name = "Musket" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_MUSKET">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <description>
             <p>Muskets are magitech firearms.</p>
         </description>
@@ -647,7 +647,7 @@
 	</element>
     
     <element name = "Pistol" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_PISTOL">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
         <description>
             <p>Pistols are magitech firearms.</p>
         </description>
@@ -683,7 +683,7 @@
 	</element>
     
     <element name = "Revolver" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_REVOLVER">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
         <description>
             <p>Revolvers are magitech firearms.</p>
         </description>
@@ -719,7 +719,7 @@
 	</element>
     
     <element name = "Rifle" type = "Weapon" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_RIFLE">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <description>
             <p>Rifles are magitech firearms.</p>
         </description>
