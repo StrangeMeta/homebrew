@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Bender class from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.4">
+        <update version = "0.0.5">
             <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
         </update>
     </info>
@@ -92,7 +92,7 @@
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
             <!-- <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_STARKNIVES"/> -->
-            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWIN_BLADES"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE"/>
             <select type = "Proficiency" name = "Artisan Tool/Musical Intrument, Bender" supports = "(Artisan tools||Musical Instrument)" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
 
             <grant type = "Proficiency" id = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements = "!ID_RGTTYR_MULTICLASS_BENDER"/>
