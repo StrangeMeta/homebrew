@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.7">
+        <update version = "0.0.8">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
@@ -22,7 +22,7 @@
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Chakram)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
+    <element name = "Weapon Proficiency (Chakram)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
         <sheet alt = "Chakram"/>
@@ -67,7 +67,7 @@
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Claw)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW">
+    <element name = "Weapon Proficiency (Claw)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW">
         <compendium display = "false"/>
         <supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_ATTACHED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
         <sheet alt = "Claw"/>
@@ -110,7 +110,7 @@
             <p class = "indent"><strong>Special: Counterweight. </strong>While wielding a kusarigama with two hands, you can use a bonus action to attack with its counterweight. This attack has a reach of 10 feet and deals 1d4 bludgeoning damage on a hit. You don’t add your ability modifier to the damage of this attack, unless that modifier is negative.</p>
         </description>
     </element>
-    <element name = "Weapon Proficency (Kusarigama)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA">
+    <element name = "Weapon Proficiency (Kusarigama)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_KUSARIGAMA</supports>
         <sheet alt = "Kusarigama"/>
@@ -155,7 +155,7 @@
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Meteor Hammer)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER">
+    <element name = "Weapon Proficiency (Meteor Hammer)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
         <sheet alt = "Meteor Hammer"/>
@@ -208,7 +208,7 @@
             <p class = "indent"><strong>Special: Flourish. </strong>When you are wielding the nunchaku in two hands and take the Attack action on your turn, you can attempt to flourish with the weapon immediately before you make your first attack. To flourish, make a DC 13 Dexterity check, adding your proficiency bonus if you are proficient with nunchaku. On a success, you gain a +2 bonus to the first attack roll you make this turn. On a failure, you deal bludgeoning damage to yourself equal to your proficiency bonus and gain no bonus from your flourishes this turn.</p>
         </description>
     </element>
-    <element name = "Weapon Proficency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU">
+    <element name = "Weapon Proficiency (Nunchaku)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_NUNCHAKU</supports>
         <sheet alt = "Nunchaku"/>
@@ -261,7 +261,7 @@
             <p class = "indent"><strong>Special: Long Reload. </strong>After an attack is made using this weapon, it must be reloaded. Due to the weight and size of this weapon and its ammunition, reloading the weapon takes two actions, which don’t need to be taken consecutively.</p>
         </description>
     </element>
-    <element name = "Weapon Proficency (Odzutsu)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU">
+    <element name = "Weapon Proficiency (Odzutsu)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ODZUTSU">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_RGTTYR_WEAPON_PROPERTY_SPECIAL_ODZUTSU</supports>
         <sheet alt = "Odzutsu"/>
@@ -296,7 +296,7 @@
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Rope Dart)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART">
+    <element name = "Weapon Proficiency (Rope Dart)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SCOURGE</supports>
         <sheet alt = "Rope Darts"/>
@@ -341,7 +341,7 @@
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Sai)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI">
+    <element name = "Weapon Proficiency (Sai)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_PARRY</supports>
         <sheet alt = "Sai"/>
@@ -387,7 +387,7 @@
             <set name = "proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Shruiken)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN">
+    <element name = "Weapon Proficiency (Shruiken)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
         <sheet alt = "Shruiken"/>
@@ -536,10 +536,10 @@
             <p class = "indent"><strong>Special: Whirl. </strong>When you are wielding the twinblade in two hands, you can use a bonus action to attempt to whirl the weapon. To whirl, make a DC 10 Dexterity check, adding your proficiency bonus if you are proficient with twinblades. On a success, you gain a +1 bonus to your AC until the start of your next turn, the whirling blades acting as a barrier against attacks. On a result of 15 or higher, you gain a +2 bonus, instead. On a failure, you deal slashing damage to yourself equal to your proficiency bonus and gain no bonus to your AC from the whirl this turn.</p>
         </description>
     </element>
-    <element name = "Weapon Proficency (Twinblade)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE">
+    <element name = "Weapon Proficiency (Twinblade)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_TWINBLADE</supports>
-        <sheet alt = "Twinblade"/>
+        <sheet alt = "Twinblade" />
     </element>
     <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
         <rules>
@@ -589,7 +589,7 @@
             <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Blunderbuss)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS">
+    <element name = "Weapon Proficiency (Blunderbuss)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <sheet alt = "Blunderbuss"/>
@@ -625,7 +625,7 @@
             <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Musket)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET">
+    <element name = "Weapon Proficiency (Musket)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_1000, ID_RGTTYR_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <sheet alt = "Musket"/>
@@ -661,7 +661,7 @@
             <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Pistol)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL">
+    <element name = "Weapon Proficiency (Pistol)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
         <sheet alt = "Pistol"/>
@@ -697,7 +697,7 @@
             <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Revolver)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER">
+    <element name = "Weapon Proficiency (Revolver)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
         <sheet alt = "Revolver"/>
@@ -733,7 +733,7 @@
             <set name = "proficiency">ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE</set>
         </setters>
     </element>
-    <element name = "Weapon Proficency (Rifle)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE">
+    <element name = "Weapon Proficiency (Rifle)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE">
         <compendium display = "false"/>
         <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_RGTTYR_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
         <sheet alt = "Rifle"/>
