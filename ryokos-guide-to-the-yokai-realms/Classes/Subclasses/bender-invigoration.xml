@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Disciple of Invigoration, Bender subclass from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.2">
+        <update version = "0.0.1">
             <file name = "bender-invigoration.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-invigorationn.xml"/>
         </update>
     </info>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Bender class from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.6">
+        <update version = "0.0.7">
             <file name = "class-bender.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/class-bender.xml"/>
         </update>
     </info>
