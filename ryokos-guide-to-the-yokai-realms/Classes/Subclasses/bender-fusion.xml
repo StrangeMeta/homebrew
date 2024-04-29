@@ -68,7 +68,7 @@
                 <li><strong>Fire &amp; Water: Steam. </strong>Steam blooms in the sphere until the end of your next turn. For the duration, the area is heavily obscured and a creature that ends its turn in the sphere takes 1d4 fire damage per level of the spell slot expended.</li>
             </ul>
         </description>
-        <sheet display = "true" usage = "{{bender:spellcasting:modifier}}/Short Rest">
+        <sheet display = "true" usage = "{{fusionist spellcasting:count}}/Short Rest">
             <description>When you expend a spell slot of 1st level or higher to cast a bender spell, you can augment it with another element, creating an additional effect in a sphere centred on the target of your spell or, if the spell affects an area, the centre of the spell's area. You choose the size of the sphere, up to five times the level of the spell slot expended. The effect depends on the element list from which the spell was drawn, and the element with which you choose to combine it. Any saving throws are against your bender spell save DC.</description>
         </sheet>
         <rules>
@@ -78,6 +78,9 @@
             <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_EARTHFIRE" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE"/>
             <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_EARTHWATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_EARTH, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
             <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_FIREWATER" requirements = "ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_FIRE, ID_RGTTYR_CLASS_FEATURE_BENDER_ELEMENTAL_AFFINITY_WATER"/>
+
+            <stat name = "fusionist spellcasting:count" value = "1" bonus = "base"/>
+            <stat name = "fusionist spellcasting:count" value = "bender:spellcasting:modifer" bonus = "base"/>
         </rules>
     </element>
     <element name = "Air, Earth" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_FUSION_FUSIONIST_SPELLCASTING_AIREARTH">

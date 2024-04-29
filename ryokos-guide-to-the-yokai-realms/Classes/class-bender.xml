@@ -176,7 +176,6 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "intelligence:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
-            <stat name = "bender:spellcasting:modifier" value = "1" bonus = "base"/>
             <stat name = "bender:spellcasting:modifier" value = "intelligence:modifier" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
@@ -212,7 +211,6 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "wisdom:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
-            <stat name = "bender:spellcasting:modifier" value = "1" bonus = "base"/>
             <stat name = "bender:spellcasting:modifier" value = "wisdom:modifier" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>
@@ -248,7 +246,6 @@
             <stat name = "bender:spellcasting:slots:5" value = "1" level = "19"/>
             <stat name = "bender:spellcasting:prepare" value = "charisma:modifier"/>
             <stat name = "bender:spellcasting:prepare" value = "level:bender:half"/>
-            <stat name = "bender:spellcasting:modifier" value = "1" bonus = "base"/>
             <stat name = "bender:spellcasting:modifier" value = "charisma:modifier" bonus = "base"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "2" spellcasting = "Bender"/>
             <select type = "Spell" name = "Cantrip, Bender" supports = "$(spellcasting:list), 0" number = "1" spellcasting = "Bender" level = "10"/>

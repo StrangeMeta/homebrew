@@ -1,0 +1,147 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Disciple of Invigoration, Bender subclass from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.2">
+            <file name = "bender-invigoration.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-invigorationn.xml"/>
+        </update>
+    </info>
+
+    <!-- Disciple of Fortification -->
+    <element name = "Disciple of Invigoration" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_DISCIPLE_OF_INVIGORATION">
+        <supports>Bender Discipline</supports>
+        <description>
+            <p>A rock suddenly lowers, dropping an ally a crucial inch and turning a critical hit into a glancing blow. A precise gust of wind accelerates an arrow over a foe’s shield, striking them in the eye. A burst of flame temporarily blinds an opponent, causing their battleaxe to swing wide. Where others shield and strike, Disciples of Invigoration prefer a more subtle approach, bolstering an ally from within or manipulating a foe’s attacks with alacritous and shrewd bursts of elemental energy.</p>
+            <p class = "indent">Why did you choose this path? Did you always have a helpful disposition? Were you an aide de camp in a large army? A wizard’s apprentice that wandered into an elemental experiment? Whatever your choice, you are the favourable wind that stops a friend falling, the slick rock that foils a foe’s footing, and the inner flame that turns the tide of battle.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_BONUS_INVIGORATION_SPELLS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_INNER_VIGOR"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_PRIMORDIAL_PULSE"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_DISTRACTING_ONSLAUGHT"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_PRIMORDIAL_INVIGORATION"/>
+        </description>
+        <sheet display = "false">
+            <description>Disciples of Invigoration prefer a more subtle approach, bolstering an ally from within or manipulating a foe’s attacks.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_BONUS_INVIGORATION_SPELLS" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_INNER_VIGOR" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_PRIMORDIAL_PULSE" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_DISTRACTING_ONSLAUGHT" level = "7"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT" level = "15"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_PRIMORDIAL_INVIGORATION" level = "20"/>
+        </rules>
+    </element>
+    <element name = "Bonus Invigoration Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_BONUS_INVIGORATION_SPELLS">
+        <description>
+            <p>The following spells are added to your bender spell list. They always take the form of an element associated with your Elemental Affinity. For example, a blessing may manifest as fortuitous gusts of wind (air affinity) or illuminating sparks (fire affinity).</p>
+             <table class = "invigoration-spells">
+                <thead>
+                    <tr><td class = "col-5">Bender Level</td><td class = "col-10 left">Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>bless</td></tr>
+                <tr><td>5th</td><td>inner flame</td></tr>
+                <tr><td>9th</td><td>haste</td></tr>
+                <tr><td>13th</td><td>freedom of movement</td></tr>
+                <tr><td>17th</td><td>greater restoration</td></tr>
+            </table>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_BLESS" spellcasting = "Bender" level = "3" prepared = "false"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_INNER_FLAME" spellcasting = "Bender" level = "5" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_HASTE" spellcasting = "Bender" level = "9" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting = "Bender" level = "13" prepared = "false"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_GREATER_RESTORATION" spellcasting = "Bender" level = "17" prepared = "false"/>
+        </rules>
+    </element>
+    <element name = "Inner Vigor" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_INNER_VIGOR">
+        <description>
+            <p>Your connection to the elements invigorates your body. Your hit point maximum increases by an amount equal to your bender level and you can add your bender spellcasting ability modifier to checks you make to maintain your concentration.</p>
+        </description>
+        <sheet display = "true">
+            <description>You can add {{bender:spellcasting:modifier}} to checks you make to maintain your concentration.</description>
+        </sheet>
+        <rules>
+            <stat name = "hp" value = "level:bender"/>
+        </rules>
+    </element>
+    <element name = "Primordial Pulse" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_PRIMORDIAL_PULSE">
+        <description>
+            <p>With shrewd timing, you imbue an ally with invigorating energy. When a willing creature you can see within 30 feet of you fails a saving throw or misses an attack roll, you can use your reaction to give it a rejuvenating boost. It immediately rerolls the saving throw or attack roll, with an additional bonus equal to your bender spellcasting ability modifier, and it must use the new result, potentially turning a failed save into a success or a missed attack into a hit. If this rerolled attack hits, it deals damage of a type associated with one of your Elemental Affinities (your choice when you take the reaction) equal to your bender spellcasting ability.</p>
+            <p class = "indent">You can use this feature a number of times equal to your bender spellcasting ability modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet display = "true" usage = "{{primordial pulse:count}}/Long Rest">
+            <description>With shrewd timing, you imbue an ally with invigorating energy. When a willing creature you can see within 30 feet of you fails a saving throw or misses an attack roll, you can use your reaction to give it a rejuvenating boost. It immediately rerolls the saving throw or attack roll, with an additional bonus equal to {{bender:spellcasting:modifier}}, and it must use the new result, potentially turning a failed save into a success or a missed attack into a hit. If this rerolled attack hits, it deals damage of a type associated with one of your Elemental Affinities (your choice when you take the reaction) equal to {{bender:spellcasting:modifier}}. modifier</description>
+        </sheet>
+        <rules>
+            <stat name = "primordial pulse:count" value = "1" bonus = "base"/>
+            <stat name = "primordial pulse:count" value = "bender:spellcasting:modifier" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Distracting Onslaught" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_DISTRACTING_ONSLAUGHT">
+        <description>
+            <p>Once on your turn, when you deal damage to a creature using a damage type associated with your Elemental Affinity, you can cause the elements to manifest in a distracting array: fire may burst into dazzling lights, water may foam into obscuring spray, and wind or earth may whip up into a cloud. The next time the target makes an attack roll or saving throw before the end of its next turn, it must roll a d8 and subtract that from the result.</p>
+        </description>
+        <sheet display = "true" usage = "{{distracting onslaught:count}}/Long Rest">
+            <description>Once on your turn, when you deal damage to a creature using a damage type associated with your Elemental Affinity, you can cause the elements to manifest in a distracting array: fire may burst into dazzling lights, water may foam into obscuring spray, and wind or earth may whip up into a cloud. The next time the target makes an attack roll or saving throw before the end of its next turn, it must roll a d8 and subtract that from the result.</description>
+        </sheet>
+        <rules>
+            <stat name = "distracting onslaught:count" value = "1" bonus = "base"/>
+            <stat name = "distracting onslaught:count" value = "bender:spellcasting:modifier" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Elemental Enhancement" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT">
+        <description>
+            <p>Once per turn, when you are in your Primordial Form or Primordial Avatar state and cast a bender spell with a spell slot of 1st level or higher which targets an ally, you can enhance that spell (no action required). Choose one of the following options:</p>
+            <ul>
+                <li>You end one of the following conditions on the creature (your choice): blinded, charmed, deafened, frightened, poisoned, or stunned.</li>
+                <li>The creature can add a d6 to the next attack roll or saving throw it makes before the end of its next turn.</li>
+                <li>The creature can use its reaction to make one weapon attack.</li>
+                <li>The creature can use its reaction to move up to half its speed without provoking opportunity attacks.</li>
+            </ul>
+            <p>If the spell targets more than one ally, you choose which ally gains the benefit.</p>
+        </description>
+        <sheet display = "true">
+            <description>Once per turn, when you are in your Primordial Form or Primordial Avatar state and cast a bender spell with a spell slot of 1st level or higher which targets an ally, you can enhance that spell (no action required). If the spell targets more than one ally, you choose which ally gains the benefit. Choose one of the following options:</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_CLEANSE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_BONUS"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_ATTACK"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_MOVE"/>
+        </rules>
+    </element>
+    <element name = "Elemental Enhancement (cleanse)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_CLEANSE">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Cleanse">
+            <description>You end one of the following conditions on the creature (your choice): blinded, charmed, deafened, frightened, poisoned, or stunned.</description>
+        </sheet>
+    </element>
+    <element name = "Elemental Enhancement (bonus)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_BONUS">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Bonus">
+            <description>The creature can add a d6 to the next attack roll or saving throw it makes before the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Elemental Enhancement (attack)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_ATTACK">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Attack">
+            <description>The creature can use its reaction to make one weapon attack.</description>
+        </sheet>
+    </element>
+    <element name = "Elemental Enhancement (Move)" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_ELEMENTAL_ENHANCEMENT_MOVE">
+        <compendium display = "false"/>
+        <sheet display = "true" alt = "Move">
+            <description>The creature can use its reaction to move up to half its speed without provoking opportunity attacks.</description>
+        </sheet>
+    </element>
+    <element name = "Primordial Invigoration" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_DISCIPLE_OF_INVIGORATION_PRIMORDIAL_INVIGORATION">
+        <description>
+            <p>When you enter your Primordial Avatar state, you can grant up to five willing creatures within 30 feet of you one of your Level 1 Affinity benefits listed in an appropriate Primordial Avatar Benefit table. You choose a single effect to grant all the creatures, which lasts until your Primordial Avatar state ends.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you enter your Primordial Avatar state, you can grant up to five willing creatures within 30 feet of you one of your Level 1 Affinity benefits listed in an appropriate Primordial Avatar Benefit table. You choose a single effect to grant all the creatures, which lasts until your Primordial Avatar state ends.</description>
+        </sheet>
+    </element>
+</elements>
