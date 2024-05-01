@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Creatures of the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "creatures-of-the-yokai-realms.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Creatures/creatures-of-the-yokai-realms.xml"/>
         </update>
     </info>
@@ -63,7 +63,6 @@
                 <li><strong><em>Goad.</em></strong> When a creature the aspect can see misses an attack roll or fails an ability check or saving throw, the aspect hurls a magically infused insult at that creature. The target must succeed on a DC 18 Wisdom saving throw or use its reaction to move its speed toward the aspect. If a creature moves within 5 feet of the aspect in this way, it can make one melee weapon attack against the aspect as a part of its reaction.</li>
                 <p></p>
                 <li><strong><em>Spell Swallow.</em></strong> When a creature the aspect can see within 120 feet of it casts a spell, the aspect attempts to duplicate that magic for itself. The creature must make a DC 18 Charisma saving throw. On a failure, the spell is cast as usual, but the aspect also casts that same spell as a part of this reaction.</li>
-                <p></p>
             </ul>
 		</description>
 	</element>
@@ -102,6 +101,268 @@
                 <p></p>
                 <li><strong><em>Your Sole Is Mine.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one creature that the bakezōri is attached to. Hit: 11 (2d8 + 2) piercing damage.</li>
 			</ul>
+		</description>
+	</element>
+	<element name = "Betobeto-san" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ASPECT_OF_BETOBETO_SAN">
+		<description>
+            <p>Among the ranks of city-dwelling yokai, the mischievous betobeto-san is one of paradoxical reputation—simultaneously infamous for inspiring fear in the hearts of those who encounter it, yet well-loved by locals as a playful, prankster spirit. Most of the time, the betobeto-san is invisible, but should one choose to reveal itself, onlookers are greeted with the sight of a round, ball-like creature with a grinning maw and two small legs. It is known to enjoy wearing sandals, with the tell-tale echo of invisible feet pitter-pattering over cobbled stone a sure indication that the betobeto-san is near.</p>
+            <p class = "indent"><strong>One Step at a Time. </strong>The betobeto-san is nocturnal, emerging from its hidden nest to roam the empty streets after most citizens have gone to sleep. Every city has stragglers, transients, and hooligans who walk the town at night, making perfect prey for the knavish yokai. The betobeto-san  follows closely behind its quarry, its footsteps echoing into the darkness, but when its victim turns to look, they find themselves to be seemingly alone. Isolated in the darkness and haunted by echoing footsteps, victims grow increasingly fearful—a fear that the betobeto-san is eager to exacerbate; fear is its prize.</p>
+            <p class = "indent"><strong>Scary Sustenance. </strong>Betobeto-san sustain themselves on a diet of fear, but unless the impish yokai wishes it, their prey is not truly harmed in this process. In fact, their ability to devour fright has become revered by civilians and adventurers alike, with some attempting to tame and train betobeto-san to aid in soothing the emotions of those suffering from extreme stress and nightmares. However, in communities where fear is an ever-present spectre, perhaps under the reign of a cruel tyrant or in times of famine and war, these small yokai become corrupted by the persistent atmosphere of dread. Such betobeto-san grow huge as they feast aggressively and without caution, devouring a portion of their victims’ souls in the process. These betobeto-sama are cruel and dangerous, their mere presence perpetuating the dread that birthed them within desperate, haunted communities.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Small Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 13 (natural armour)</li>
+				<li><strong>Hit Points</strong> 19 (3d6 + 9)</li>
+				<li><strong>Speed</strong> 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>12 (+1)</td><td>12 (+1)</td><td>16 (+3)</td><td>9 (-1)</td><td>13 (+1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Condition Immunities</strong> frightened</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 11</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1/2 (100 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Surprise!</em></strong> If the betobeto-san is invisible when it rolls initiative, it can choose to turn visible. If it does so, each creature within 10 feet of the betobeto-san that can see it must succeed on a DC 13 Wisdom saving throw or become frightened of it for 1 minute. A creature can repeat this save at the end of each of its turns, ending the effect on itself on a success.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Slam.</em></strong> Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</li>
+                <p></p>
+				<li><strong><em>Devour Fear.</em></strong> Melee Weapon Attack: +3 to hit, reach 5 ft., one frightened creature. Hit: 9 (2d8) piercing damage. When a frightened creature is damaged by this attack, it gains immunity to the frightened condition for the next hour as the betobeto-san devours its terror.</li>
+                <p></p>
+				<li><strong><em>Sneak.</em></strong> The betobeto-san magically turns invisible until the end of its next turn or until immediately after it makes an attack.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Jump Scare.</em></strong> The betobeto-san attempts to frighten one creature it can see within 30 feet of it. That creature must succeed on a DC13 Wisdom saving throw or be frightened of the betobeto-san for 1 minute. A creature can repeat this save at the end of its turn, ending the effect on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the betobeto-san’s Jump Scare for the next 24 hours.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Betobeto-sama" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ASPECT_OF_BETOBETO_SAMA">
+		<description>
+			<p style = "margin-bottom:-5px"><em>Huge Fey (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 13 (natural armour)</li>
+				<li><strong>Hit Points</strong> 200 (16d12 + 96)</li>
+				<li><strong>Speed</strong> 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +4</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>26 (+8)</td><td>9 (-1)</td><td>22 (+6)</td><td>9 (-1)</td><td>13 (+1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Str +12, Wis +5</li>
+				<li><strong>Damage Resistances</strong> cold, necrotic; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> exhaustion, frightened</li>
+				<li><strong>Senses</strong> blindsight 30ft., darkvision 60ft., passive Perception 19</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 9 (5,000 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Surprise!</em></strong> If the betobeto-sama is invisible when it rolls initiative, it can choose to turn visible. If it does so, each creature within 60 feet of the betobeto-sama that can see it must succeed on a DC 18 Wisdom saving throw or become frightened for for 1 minute. A creature can repeat this save at the end of each of its turns, ending the effect on itself on a success.</li>
+                <p></p>
+				<li><strong><em>True Terror.</em></strong> A creature frightened by the betobeto-sama has disadvantage on Intelligence and Wisdom saving throws and on saving throws made to maintain concentration. </li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The betobeto-sama makes two attacks with any combination of Betobeto-sama Slam and Feast of Fear.</li>
+                <p></p>
+				<li><strong><em>Betobeto-sama Slam.</em></strong> Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage. If the target is a creature that isn’t frightened, it must succeed on a DC 18 Wisdom saving throw or become frightened of the betobeto-sama for 1 minute. If the target is a frightened creature, it must succeed on a DC 18 Wisdom saving throw or become stunned until it is no longer frightened. A creature can repeat this save at the end of each of its turns, ending the effect on a success.</li>
+                <p></p>
+				<li><strong><em>Feast of Fear.</em></strong> Melee Weapon Attack: +12 to hit, reach 10 ft., one stunned and frightened creature. Hit: 26 (4d8 + 8) piercing damage, and the target’s Charisma score is reduced by 1d4. The target dies if this reduces its Charisma to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Betobeto-sama Sneak.</em></strong> The betobeto-sama magically turns invisible until the end of its next turn or until immediately after it makes an attack.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Dodomeki" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_DODOMEKI">
+		<description>
+            <p>Greed incarnate, the dodomeki are covetous, fiendish yokai infatuated with wealth and thievery. They take a distorted, humanoid form, with flesh covered in twitching, bulging eyes as black as a starless night. Their arms are grotesquely extended, their hair grows long and dark, and their grasping claws are vicious and swift.</p>
+            <p class = "indent"><strong>Deadly Treasure Hunters. </strong>Dodomeki stalk those who radiate the stench of affluence, which dodomeki detect as a sickly, sweet aroma. Cloaked by invisibility and aided by a supernatural stealth, they brazenly pick the pockets of nobles in broad daylight, retreating before their theft is detected. Should a wealthy merchant or courier with an expensive cargo be caught alone, a dodomeki will reveal itself, reveling in cruel slaughter before meticulously stripping the corpse of all valuable possessions.</p>
+            <p class = "indent"><strong>Insatiable Avarice. </strong>Devourers of treasure, dodomeki do not keep hordes as dragons do. Their hunger for wealth is insatiable, but although they typically target gold, a dodomeki can covet and consume any object that inspires avarice in others. Because they target only those bearing riches, some impoverished communities view their existence as divine retribution for those who wield financial dominion over others.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fiend (Yokai), Neutral Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14 (natural armour)</li>
+				<li><strong>Hit Points</strong> 102 (12d8 + 48)</li>
+				<li><strong>Speed</strong> 40ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>16 (+3)</td><td>18 (+4)</td><td>11 (+0)</td><td>14 (+2)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Perception +8, Sleight of Hand +9, Stealth +9</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 18</li>
+				<li><strong>Languages</strong> Abyssal, Common</li>
+				<li><strong>Challenge</strong> 5 (1,800 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Wealthsense.</em></strong> The dodomeki can sense the direction of any valuable objects within 100 feet of it, including behind total cover, as a saccharine aroma. The greater the greed an object inspires in others, the more potent the stench.</li>
+                <p></p>
+				<li><strong><em>Grasping Thief.</em></strong> The first time the dodomeki hits a creature with its Wrenching Claw attack on its turn, it steals coins that the creature is carrying worth a total value in gold pieces equal to ten times the slashing damage dealt.</li>
+                <p></p>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The dodomeki makes two Wrenching Claw attacks.</li>
+                <p></p>
+				<li><strong><em>Wrenching Claw.</em></strong> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) slashing damage plus 5 (1d10) psychic damage.</li>
+                <p></p>
+				<li><strong><em>Revel in Gold.</em></strong> The dodomeki magically feasts on any treasure it is carrying, causing it to disintegrate into motes of golden light. The dodomeki gains 1 temporary hit point for every 10 gold pieces worth of objects it devours in this way, up to a maximum of 25 temporary hit points.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Thieves' Blessing.</em></strong> The dodomeki magically turns invisible for 1 minute or until it attacks or its concentration ends (as if concentrating on a spell). Any equipment the dodomeki wears or carries is invisible with it.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Dorotabo" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_DOROTABO">
+		<description>
+            <p>A band of inquisitive boys crawl under hedgerows and over fences beyond a long-abandoned track road leading out of town, ignoring the flaking, painted warning signs plastered over along the road. As they heedlessly traipse across an abandoned rice field of mud and wilted plants, the earth suddenly shifts beneath them. In horror, the trespassers stand transfixed as a humanoid figure rises from the muck, coated in soil and withered vines, its three fingers pointing accusingly at the intruders. Only upon coming face to face with the slouching, decrepit form of the dorotabō do the interlopers realise the folly of insatiable curiosity.</p>
+            <p class = "indent"><strong>Product of Hardwork. </strong>Akin to the onryō, dorotabō are vengeful spirits borne of the intense anguish of the dead. Unlike onryō however, who were warriors in life, dorotabō were once common farmers. When a field is desecrated by damage or neglect after the passing of its caretaker, the spirit of the one who once toiled so dutifully there becomes corrupted with anger and malice, transforming into a dorotabō, now cursed to haunt the land they once loved.</p>
+            <p class = "indent"><strong>Tied to the Land. </strong>Dorotabō are intimately tied to their land; they are unwilling—and unable—to step foot outside of its borders. Within their territory, they are able to manipulate the earth itself, conjuring decay-ridden plants to entangle trespassers and bury them among the other foolish dead. They are grim guardians, and their domination is absolute across their tiny kingdom, for who can know the land better than the farmer it once belonged to?</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Undead (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 15 (natural armour)</li>
+				<li><strong>Hit Points</strong> 82 (11d8 + 33)</li>
+				<li><strong>Speed</strong> 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>11 (+0)</td><td>17 (+3)</td><td>9 (-1)</td><td>16 (+3)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Nature +5</li>
+				<li><strong>Damage Resistances</strong> cold, necrotic; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> exhaustion, frightened, poisoned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 13</li>
+				<li><strong>Languages</strong> the languages it knew in life</li>
+				<li><strong>Challenge</strong> 5 (1,800 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>One With the Land.</em></strong> The dorotabō ignores difficult terrain caused by magical and nonmagical plants, mud, swamps, or other natural phenomena.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The dorotabō makes three attacks with any combination of Three-Fingered Claw and Wrathful Scythe.</li>
+                <p></p>
+				<li><strong><em>Three-Fingered Claw.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (3d4 + 3) slashing damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned for 1 minute.</li>
+                <p></p>
+				<li><strong><em>Wrathful Scythe.</em></strong> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) slashing damage, and the area within 10 feet of the dorotabō becomes difficult terrain as sickly, grasping plants manifest beneath the arc of the scythe. These plants wither and fade 10 minutes after appearing.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Vengeful Earth (3/Day).</em></strong> Up to three creatures standing on an area of earth within 60 feet of the dorotabō that it can see are besieged by mouldering vines that burst from the ground at their feet. Each creature must make a DC 14 Strength saving throw or be restrained for 1 minute. A restrained creature can use its action to make a DC 14 Strength (Athletics) check, ending the effect on itself on a success. A creature can also attack the vines to destroy them, which have an AC of 12, 10 hit points, immunity to necrotic damage, and vulnerability to fire damage.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Ebi'Ishi" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_EBIISHI">
+		<description>
+            <h5>Ebizo</h5>
+            <p>Far beneath roiling ocean waves, in pitch darkness and numbing cold, only the hardiest and most tenacious life forms endure. The Ebizo, a society of dangerous crustacean yokai, are notorious for their raids on coastal towns and the plundering of ships foolhardy enough to stray into their ocean territory. According to legend, in aeons past, they were once isetsu who threw off the shackles of divine imperative, forsaking their post on land and stepping willingly into the ocean’s embrace. There, beneath the crushing pressure of ten-thousand fathoms, their shells and hearts hardened in the deep, endless dark. If the tales of their origin hold true, the irony is not lost on the isetsu; these ancient cousins, who abandoned their roles as guardians of the shoreline, have become monstrous yokai, chief among its greatest threats.</p>
+            <p class = "indent"><strong>Current Affairs. </strong>Despite their clunky, encumbered appearance, none can navigate riptides and ride currents quite like the Ebizo—reading and sensing the flow of the water with a precision reminiscent of a hawk gliding on an updraft. While uncontested combatants in water, they are still formidable and ferocious on land, carrying the power and tenacity of the ocean wherever they tread.</p>
+            <p class = "indent"><strong>Society. </strong>Contrary to the stories told by landfolk, to whom the Ebizo are naught but bloodthirsty pirates and conquerors, Ebizo society is rich and complex. The primary yokai of the clan are ebi’ishi, kanibozu, and zuwai, each with distinct talents and cultural importance. Although much of Ebizo society is crafted around oceanic conquest and battles with landfolk, they also engage in festivals, art, religion, and industry. Ebizo are intelligent and articulate, capable of reason and compromise, and, while undoubtedly deadly and aggressive, aren’t devoid of kindness and mercy.</p>
+            <p></p>
+            <h4>Ebi'Ishi</h4>
+            <p>The bulk of the Ebizo clan’s warriors are ebi’ishi—hardy lobster yokai with natural carapaces as durable as lacquered armour. Their roles range from city guards to infantry soldiers, while elder ebi’ishi serve as elite juggernauts tasked with the defence of zuwai. With experience comes strength and wisdom, an adage that rings particularly true among the ebi’ishi, for they never cease growing. Over time, their shells and claws become increasingly thick and mighty, with elders bearing carapaces so dense they deflect weapons with the ease of waves breaking on rock. However, as their weight and strength increase, their mobility suffers. The ultimate fate of an ebi’ishi is for their carapace to grow so heavy that it crushes the flesh within. To collapse under the weight of one’s shell is seen as an honourable death for an otherwise unconquerable warrior of the Ebizo clan.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fiend (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 120 (16d8 + 48)</li>
+				<li><strong>Speed</strong> 30ft., swim 60ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>16 (+3)</td><td>16 (+3)</td><td>9 (-1)</td><td>10 (+0)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +6</li>
+				<li><strong>Damage Resistances</strong> cold, poison</li>
+				<li><strong>Senses</strong> blindsight 10ft., darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> Aquan, Common</li>
+				<li><strong>Challenge</strong> 4 (1,100 XP)</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The ebi’ishi makes two attacks with any combination of Claw and Spear</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage. Instead of dealing damage, the ebi’ishi can grapple the target (escape DC 16). Either way, if the target is a creature, it must succeed on a DC 14 Strength saving throw or drop whatever it’s holding.</li>
+                <p></p>
+				<li><strong><em>Spear.</em></strong> Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Ink Spray (Recharge 4-6).</em></strong> The ebi’ishi hurls a glob of ink at one creature it can see within 20 feet of itself. The target must succeed on a DC 13 Constitution saving throw or be blinded until the end of its next turn. While underwater, the ebi’ishi instead expels an ink cloud in a 10-foot radius. The cloud spreads around corners and heavily obscures the area. Each creature other than the ebi’ishi that ends its turn there must make a DC 13 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the ink cloud, which otherwise disappears at the end of the ebi’ishi’s next turn.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Ebi'Ishi Elder" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_EBIISHI_ELDER">
+		<description>
+            <h5>Ebizo</h5>
+            <p>Far beneath roiling ocean waves, in pitch darkness and numbing cold, only the hardiest and most tenacious life forms endure. The Ebizo, a society of dangerous crustacean yokai, are notorious for their raids on coastal towns and the plundering of ships foolhardy enough to stray into their ocean territory. According to legend, in aeons past, they were once isetsu who threw off the shackles of divine imperative, forsaking their post on land and stepping willingly into the ocean’s embrace. There, beneath the crushing pressure of ten-thousand fathoms, their shells and hearts hardened in the deep, endless dark. If the tales of their origin hold true, the irony is not lost on the isetsu; these ancient cousins, who abandoned their roles as guardians of the shoreline, have become monstrous yokai, chief among its greatest threats.</p>
+            <p class = "indent"><strong>Current Affairs. </strong>Despite their clunky, encumbered appearance, none can navigate riptides and ride currents quite like the Ebizo—reading and sensing the flow of the water with a precision reminiscent of a hawk gliding on an updraft. While uncontested combatants in water, they are still formidable and ferocious on land, carrying the power and tenacity of the ocean wherever they tread.</p>
+            <p class = "indent"><strong>Society. </strong>Contrary to the stories told by landfolk, to whom the Ebizo are naught but bloodthirsty pirates and conquerors, Ebizo society is rich and complex. The primary yokai of the clan are ebi’ishi, kanibozu, and zuwai, each with distinct talents and cultural importance. Although much of Ebizo society is crafted around oceanic conquest and battles with landfolk, they also engage in festivals, art, religion, and industry. Ebizo are intelligent and articulate, capable of reason and compromise, and, while undoubtedly deadly and aggressive, aren’t devoid of kindness and mercy.</p>
+            <p></p>
+            <h4>Ebi'Ishi</h4>
+            <p>The bulk of the Ebizo clan’s warriors are ebi’ishi—hardy lobster yokai with natural carapaces as durable as lacquered armour. Their roles range from city guards to infantry soldiers, while elder ebi’ishi serve as elite juggernauts tasked with the defence of zuwai. With experience comes strength and wisdom, an adage that rings particularly true among the ebi’ishi, for they never cease growing. Over time, their shells and claws become increasingly thick and mighty, with elders bearing carapaces so dense they deflect weapons with the ease of waves breaking on rock. However, as their weight and strength increase, their mobility suffers. The ultimate fate of an ebi’ishi is for their carapace to grow so heavy that it crushes the flesh within. To collapse under the weight of one’s shell is seen as an honourable death for an otherwise unconquerable warrior of the Ebizo clan.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fiend (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 22 (natural armour)</li>
+				<li><strong>Hit Points</strong> 152 (16d10 + 64)</li>
+				<li><strong>Speed</strong> 10ft., swim 60ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>22 (+6)</td><td>7 (-2)</td><td>19 (+4)</td><td>9 (-1)</td><td>14 (+2)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +9</li>
+				<li><strong>Damage Resistances</strong> cold, poison; bludgeoning, piercing, and slashing damage from nonmagical attacks</li>
+				<li><strong>Senses</strong> blindsight 10ft., darkvision 60ft., passive Perception 12</li>
+				<li><strong>Languages</strong> Aquan, Common</li>
+				<li><strong>Challenge</strong> 8 (3,900 XP)</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The ebi’ishi elder makes two attacks with any combination of Claw and Spear</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 19 (2d12 + 6) piercing damage. Instead of dealing damage, the ebi’ishi elder can grapple the target (escape DC 19). Either way, if the target is a creature, it must succeed on a DC 17 Strength saving throw or drop whatever it’s holding.</li>
+                <p></p>
+				<li><strong><em>Spear.</em></strong> Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 9 (1d6 + 6) piercing damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Ink Spray (Recharge 3-6).</em></strong> The ebi’ishi elder hurls a glob of ink at one creature it can see within 60 feet of itself. The target must succeed on a DC 15 Constitution saving throw or be blinded until the end of its next turn. While underwater, the ebi’ishi instead expels an ink cloud in a 30-foot radius. The cloud spreads around corners and heavily obscures the area. Each creature other than the ebi’ishi elder that ends its turn there must make a DC 15 Constitution saving throw, taking 27 (5d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the ink cloud, which otherwise disappears at the end of the ebi’ishi elder’s next turn.</li>
+            </ul>
 		</description>
 	</element>
 </elements>
