@@ -1,0 +1,107 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Creatures of the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "creatures-of-the-yokai-realms.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Creatures/creatures-of-the-yokai-realms.xml"/>
+        </update>
+    </info>
+
+    <!-- Creatures of the Yokai Realms -->
+	<element name = "Aspect of Ashura" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ASPECT_OF_ASHURA">
+		<description>
+            <p>A favoured subject among poets and thespians across the realms is the tale of Ashura: the three-faced, six-armed demon god of destruction cast down from the heavens by the deities he offended. While the legend of Ashura might end there, his legacy and demonic power endure. Stories shared in hushed, fireside whispers tell of mighty Fiends that befoul the land—creatures echoing the form and power of the defeated demon god. On a path fueled by zealous passion and hate-driven vengeance, they cleave down everything in their way. The original Ashura may be gone, but the aspects of Ashura carry his legacy into the mortal world.</p>
+            <p class = "indent"><strong>Fragment of Fury. </strong>Aeons ago, upon his defeat, Ashura was broken and scattered to different parts of the world, his power contained and fragmented. Over the centuries, however, like the creeping rust that shatters iron chains, time has weakened these seals, and aspects of Ashura have manifested across the realms. While a mere echo of the true Ashura, these creatures are deadly and cunning, inheriting fearsome magic, deadly battle prowess, and a burning wrath.</p>
+            <p class = "indent"><strong>Blood and Lust. </strong>Similar to the original Ashura, the aspects are creatures whose body and mind are set ablaze by the most intense emotions one could feel. Happiness is experienced as nothing less than dizzying ecstasy, anger as nothing less than blinding rage. When met in battle, there is no hope of mercy, surrender, or compromise, and only death can stop them.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fiend (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 157 (15d10 + 75)</li>
+				<li><strong>Speed</strong> 50ft.</li>
+				<li><strong>Proficiency Bonus</strong> +5</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>24 (+7)</td><td>20 (+5)</td><td>20 (+5)</td><td>18 (+4)</td><td>9 (-1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Dex +10, Wis +4, Cha +5</li>
+				<li><strong>Skills</strong> Arcana +7, Athletics +17, Perception +9</li>
+				<li><strong>Damage Resistances</strong> cold, fire; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, paralyzed, poisoned, stunned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 19</li>
+				<li><strong>Languages</strong> Abyssal, Common, telepathy 120ft.</li>
+				<li><strong>Challenge</strong> 13 (10,000 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Critical Wound.</em></strong> When the aspect hits a creature with six or more attack rolls on a single turn, that creature’s hit point maximum is reduced by 11 (1d8 + 7). This reduction can’t be undone by any means short of a wish spell.</li>
+                <p></p>
+				<li><strong><em>Reckless.</em></strong> At the start of its turn, the aspect can gain advantage on all melee weapon attack rolls until the start of its next turn, but attack rolls against it have advantage until then.</li>
+                <p></p>
+				<li><strong><em>Three Heads.</em></strong> The aspect can take up to three reactions per round, but only one per turn. It can’t use the same reaction option more than once each round.</li>
+                <p></p>
+				<li><strong><em>Legendary Resistance (3/Day).</em></strong> If the aspect fails a saving throw, it can choose to succeed instead.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The aspect makes six Longsword attacks.</li>
+                <p></p>
+				<li><strong><em>Bite.</em></strong> Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (1d6 + 7) piercing damage.</li>
+                <p></p>
+				<li><strong><em>Longsword.</em></strong> Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 11 (1d8 + 7) slashing damage.</li>
+                <p></p>
+				<li><strong><em>Ashura's Grasp.</em></strong> The aspect lets loose a burst of grasping conjuration magic, forcing one creature it can see within 300 feet of it to make a DC 18 Charisma saving throw. On a failed save, the target takes 65 (10d12) force damage and is teleported to an unoccupied space the aspect can see within 20 feet of the aspect. On a successful save, the target takes half as much damage and isn’t teleported.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Nip.</em></strong> When a creature ends its turn within 5 feet of the aspect, the aspect makes one Bite attack against that creature.</li>
+                <p></p>
+                <li><strong><em>Goad.</em></strong> When a creature the aspect can see misses an attack roll or fails an ability check or saving throw, the aspect hurls a magically infused insult at that creature. The target must succeed on a DC 18 Wisdom saving throw or use its reaction to move its speed toward the aspect. If a creature moves within 5 feet of the aspect in this way, it can make one melee weapon attack against the aspect as a part of its reaction.</li>
+                <p></p>
+                <li><strong><em>Spell Swallow.</em></strong> When a creature the aspect can see within 120 feet of it casts a spell, the aspect attempts to duplicate that magic for itself. The creature must make a DC 18 Charisma saving throw. On a failure, the spell is cast as usual, but the aspect also casts that same spell as a part of this reaction.</li>
+                <p></p>
+            </ul>
+		</description>
+	</element>
+	<element name = "Bakezori" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_BAKEZORI">
+		<description>
+            <p>A crowd erupts in cheers as a group of students dash by on a track, each desperately sprinting forward, hellbent on outrunning the rest. As they round the final turn, a girl wearing a pair of shoddy-looking sandals pulls ahead, moving with a nimbleness and speed that onlookers could swear she did not previously possess. Later, in secret, after taking home a gleaming trophy, the girl removes her footwear and thanks them quietly, extending a handful of straw. A single eye opens up on each sandal, and a pair of bakezōri reveal themselves, grinning with delight as they take a meal from their human friend.</p>
+            <p class = "indent"><strong>Preferential Possession. </strong>As a subspecies of tsukumogami—spirits that like to possess inanimate objects—thebakezōri are unusual in that they exclusively seek out footwear to inhabit. Like most tsukumogami, they are most attracted to objects that have gone through an interesting life of their own; it is common for a pair of bakezōri to settle themselves in frayed, damaged sandals. As with all sentient creatures, however, they are known to have idiosyncrasies and preferences and can be convinced to possess a new, shiny piece of footwear at the behest of a friendly adventurer.</p>
+            <p class = "indent"><strong>Urban Yokai. </strong>Bakezōri are among the most common yokai for average Humanoids to encounter and are viewed as pests rather than outright threats. They tend to gravitate toward larger communities due to their possession preferences but prefer to remain hidden from the eyes of strangers, indistinguishable from a ruined sandal while resting by the side of the road.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Tiny Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 7 (2d4 + 2)</li>
+				<li><strong>Speed</strong> 40ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>8 (-1)</td><td>14 (+2)</td><td>12 (+1)</td><td>7 (-2)</td><td>10 (+0)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Perception +2</li>
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 12</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1/4 (50 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Bakezoomies.</em></strong> While a willing bakezōri is worn by a creature with feet, that creature’s walking speed is increased by 15 feet.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Flip-Flop Chomp.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a creature with feet, it must make a DC 12 Dexterity saving throw. On a failed save, the bakezōri attaches itself to the creature’s foot. The bakezōri can detach itself by spending 5 feet of its movement. While attached to a creature in this way, the bakezōri has advantage on attack rolls against the creature, moves with the creature, can’t attack other creatures, and the creature’s speed is reduced by 15 feet. The creature can use an action to make a DC 11 Strength check, removing the bakezōri on a success, where it lands prone in an unoccupied space within 5 feet of the creature.</li>
+                <p></p>
+                <li><strong><em>Your Sole Is Mine.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one creature that the bakezōri is attached to. Hit: 11 (2d8 + 2) piercing damage.</li>
+			</ul>
+		</description>
+	</element>
+</elements>

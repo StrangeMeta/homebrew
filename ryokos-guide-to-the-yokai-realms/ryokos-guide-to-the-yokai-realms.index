@@ -55,9 +55,10 @@
 		<!-- <file name = "magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Items/magic-items.xml"/> -->
 
 		<!-- misc -->
+		<file name = "creatures-of-the-yokai-realms.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Creatures/creatures-of-the-yokai-realms.xml"/>
 		<file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats.xml"/>
 		<file name = "feats-racial.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats-racial.xml"/>
-		<file name = "spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Spells/spells.xml"/>
 		<file name = "optional-features.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Optional%20Features/optional-features.xml"/>
+		<file name = "spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Spells/spells.xml"/>
 	</files>
 </index>
