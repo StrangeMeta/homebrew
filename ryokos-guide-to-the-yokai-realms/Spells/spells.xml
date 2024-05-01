@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Spells/spells.xml"/>
         </update>
     </info>
