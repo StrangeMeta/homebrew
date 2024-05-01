@@ -1,0 +1,124 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<info>
+        <name>Circle of the Yokai, Druid subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version = "0.0.1">
+			<file name = "druid-yokai.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/druid-yokai.xml"/>
+		</update>
+	</info>
+
+	<element name = "Circle of the Yokai" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_CIRCLE_OF_THE_YOKAI">
+        <supports>Druid Circle</supports>
+        <description>
+            <p class = "flavour">I have flown as a ryume, sung as a nue, and danced as a whirling kamaitachi, and yet the yokai remain every bit as unknowable and enigmatic as the day our bond was formed. They are beyond understanding. Relinquish your instinct to harness their strength and influence their actions; theirs is not a power you can dominate, it is only a power you can share.</p>
+            <p>Druids belonging to the Circle of the Yokai seek a connection to nature beyond the physical, aligning themselves with the mysterious yokai spirits that embody and inhabit the natural world. This connection allows such druids to assume yokai forms, becoming entities of nature while retaining their own mind and voice. Moreover, such druids can encourage roaming yokai spirits to settle in plants, flames, pebbles, and streams, turning these facets of nature into grasping weeds, furious wildfires, stalwart bastions of rock, or living wyrms of water.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_CIRCLE_SPELLS"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_YOKAI_WILD_SHAPE"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_EMPOWERED_TRANSFORMATION"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_BECKON_OF_THE_YOKAI"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_YOKAI_FORTIFICATION"/>
+        </description>
+        <sheet display = "false">
+            <description>Druids belonging to the Circle of the Yokai seek a connection to nature beyond the physical.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_CIRCLE_SPELLS" level = "2"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_YOKAI_WILD_SHAPE" level = "2"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_EMPOWERED_TRANSFORMATION" level = "6"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_BECKON_OF_THE_YOKAI" level = "10"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_YOKAI_FORTIFICATION" level = "14"/>
+        </rules>
+    </element>
+    <element name = "Circle Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_CIRCLE_SPELLS">
+        <description>
+            <p>You have formed a bond with the yokai, mysterious spirits that populate the land. Your connection to the yokai grants you access to some spells when you reach certain levels in this class, as shown on the Circle of the Yokai Spells table.</p>
+            <p class = "indent">Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+            <h5>Circle of the Yokai Spells</h5>
+            <table class = "yokai-spells">
+                <thead>
+                    <tr><td class = "col-5">Druid Level</td><td class = "col-10 left">Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>find familiar, unseen servant</td></tr>
+                <tr><td>3rd</td><td>earthen uppercut, invisibility</td></tr>
+                <tr><td>5th</td><td>haste, water wyrm</td></tr>
+                <tr><td>7th</td><td>compulsion, lion's roar</td></tr>
+                <tr><td>9th</td><td>dominate person, eruption</td></tr>
+                <tr><td>10th</td><td>awaken</td></tr>
+            </table>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_FIND_FAMILIAR" spellcasting = "Druid" prepared = "true" level = "2"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_UNSEEN_SERVANT" spellcasting = "Druid" prepared = "true" level = "2"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_EARTHEN_UPPERCUT" spellcasting = "Druid" prepared = "true" level = "3"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_INVISIBILITY" spellcasting = "Druid" prepared = "true" level = "3"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_HASTE" spellcasting = "Druid" prepared = "true" level = "5"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_WATER_WYRM" spellcasting = "Druid" prepared = "true" level = "5"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_COMPULSION" spellcasting = "Druid" prepared = "true" level = "7"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_LIONS_ROAR" spellcasting = "Druid" prepared = "true" level = "7"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_DOMINATE_PERSON" spellcasting = "Druid" prepared = "true" level = "9"/>
+            <grant type = "Spell" id = "ID_RGTTYR_SPELL_ERUPTION" spellcasting = "Druid" prepared = "true" level = "9"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_AWAKEN" spellcasting = "Druid" prepared = "true" level = "10"/>
+        </rules>
+    </element>
+    <element name = "Yokai Wild Shape" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_YOKAI_WILD_SHAPE">
+        <description>
+            <p>Your circle’s connection to the realms allows you to assume more powerful, yokai forms. In addition to the usual Beasts, you can use your Wild Shape feature to transform into any Celestial, Fey, or Fiend yokai of a CR up to the value in the Circle of the Yokai Wild Shapes table for your druid level.</p>
+            <h5>Circle of the Yokai Wild Shapes</h5>
+            <table class = "yokai-wild-shape">
+                <thead>
+                    <tr><td class = "col-5">Druid Level</td><td class = "col-10 left">Max. CR</td></tr>
+                </thead>
+                <tr><td>2</td><td>1/2</td></tr>
+                <tr><td>4</td><td>1</td></tr>
+                <tr><td>8</td><td>2</td></tr>
+                <tr><td>12</td><td>3</td></tr>
+                <tr><td>16</td><td>4</td></tr>
+                <tr><td>20</td><td>5</td></tr>
+            </table>
+            <p class = "indent">In addition, while in any form using your Wild Shape, you retain more of your druidic power, granting the following benefits:</p>
+            <ul>
+                <li>You can speak as normal.</li>
+                <li>You have advantage on Constitution saving throws to maintain concentration on a spell.</li>
+                <li>You can cast spells present in the Circle of the Yokai Spells table or in your Wild Shape form’s stat block without material or somatic components.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>Your circle’s connection to the realms allows you to assume more powerful, yokai forms. In addition to the usual Beasts, you can use your Wild Shape feature to transform into any Celestial, Fey, or Fiend yokai of a CR up to {{yokai wild-shape:cr}}. In addition, while in any form using your Wild Shape, you retain more of your druidic power, granting the following benefits: You can speak as normal. You have advantage on Constitution saving throws to maintain concentration on a spell. You can cast spells present in the Circle of the Yokai Spells table or in your Wild Shape form’s stat block without material or somatic components.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "yokai wild-shape:cr" value = "1\2" bonus = "base"/>
+            <stat name = "yokai wild-shape:cr" value = "1" bonus = "base" level = "4"/>
+            <stat name = "yokai wild-shape:cr" value = "2" bonus = "base" level = "8"/>
+            <stat name = "yokai wild-shape:cr" value = "3" bonus = "base" level = "12"/>
+            <stat name = "yokai wild-shape:cr" value = "4" bonus = "base" level = "16"/>
+            <stat name = "yokai wild-shape:cr" value = "5" bonus = "base" level = "20"/>
+        </rules>
+    </element>
+    <element name = "Empowered Transformation" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_EMPOWERED_TRANSFORMATION">
+        <description>
+            <p>Your connection to the yokai allows you to channel their power when you draw upon your druidic spellcasting. Immediately after you cast a spell of 1st level or higher, you can use your Wild Shape feature as a reaction. Once you use this reaction, you can’t do so again until you finish a short or long rest.</p>
+            <p class = "indent">In addition, while you are concentrating on a spell and transformed by your Wild Shape, your weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet display = "true" usage = "1/Short Rest">
+            <description>Your connection to the yokai allows you to channel their power when you draw upon your druidic spellcasting. Immediately after you cast a spell of 1st level or higher, you can use your Wild Shape feature as a reaction. In addition, while you are concentrating on a spell and transformed by your Wild Shape, your weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name = "Beckon of the Yokai" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_BECKON_OF_THE_YOKAI">
+        <description>
+            <p>You have the power to call upon the Fey yokai that inhabit living things. You can cast the awaken spell as an action without using a spell slot or material components. When you cast the spell in this way, the effect lasts for the next 10 minutes, after which time the magic ends and the target returns to normal. Once you do so, you must finish a long rest before you can cast it in this way again.</p>
+        </description>
+        <sheet display = "true" usage = "1/Long Rest">
+            <description>You have the power to call upon the Fey yokai that inhabit living things. You can cast the awaken spell as an action without using a spell slot or material components. When you cast the spell in this way, the effect lasts for the next 10 minutes, after which time the magic ends and the target returns to normal.</description>
+        </sheet>
+    </element>
+    <element name = "Yokai Fortification" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_CIRCLE_OF_THE_YOKAI_YOKAI_FORTIFICATION">
+        <description>
+            <p>Your yokai forms overflow with magic, fortifying your connection to the spirit realm. If you drop to 0 hit points while transformed into a yokai with your Wild Shape, you can use your reaction to instantly use Wild Shape again (expending a use as normal), and any remaining damage carries over to your new form. Once you use this reaction, you can’t do so again until you finish a short or long rest.</p>
+            <p class = "indent">In addition, while transformed by your Wild Shape, if you use an action to cast a spell, you can use your bonus action on that turn to make one attack.</p>
+        </description>
+        <sheet display = "true" usage = "1/short Rest">
+            <description>Your yokai forms overflow with magic, fortifying your connection to the spirit realm. If you drop to 0 hit points while transformed into a yokai with your Wild Shape, you can use your reaction to instantly use Wild Shape again (expending a use as normal), and any remaining damage carries over to your new form. In addition, while transformed by your Wild Shape, if you use an action to cast a spell, you can use your bonus action on that turn to make one attack.</description>
+        </sheet>
+    </element>
+</elements>

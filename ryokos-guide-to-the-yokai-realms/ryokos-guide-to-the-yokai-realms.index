@@ -35,7 +35,7 @@
 		<file name = "bender-fusion.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-fusion.xml"/>
 		<file name = "bender-invigoration.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-invigoration.xml"/>
 		<file name = "cleric-shrine-warden.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/cleric-shrine-warden.xml"/>
-		<!-- <file name = "druid-yokai.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/druid-yokai.xml"/> -->
+		<file name = "druid-yokai.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/druid-yokai.xml"/>
 		<!-- <file name = "fighter-skeletal-blade.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/fighter-skeletal-blade.xml"/> -->
 		<!-- <file name = "monk-eight-gates.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/monk-eight-gates.xml"/> -->
 		<!-- <file name = "paladin-yojimbo.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/paladin-yojimbo.xml"/> -->

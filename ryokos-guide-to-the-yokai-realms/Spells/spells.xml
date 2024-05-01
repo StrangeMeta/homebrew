@@ -678,7 +678,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Lion's Roar" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_LIONS_AURA">
+    <element name = "Lion's Roar" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_LIONS_ROAR">
         <supports>Druid, Fire, Ranger, Sorcerer, Wizard</supports>
         <description>
             <p>You conjure a roaring lion’s head made of writhing flame that moves with you, wielding it like an extension of your body for the duration. When you conjure the lion and as a bonus action on your subsequent turns, you can cause one of the following effects with it.</p>
