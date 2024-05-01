@@ -4,7 +4,7 @@
 		<name>Ryoko's Guide to the Yokai Realms</name>
 		<description>Content from the Ryoko's Guide to the Yokai Realms book by Loot Tavern.</description>
 		<author>Loot Tavern</author>
-		<update version = "0.0.12">
+		<update version = "0.0.13">
 			<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/ryokos-guide-to-the-yokai-realms.index"/>
 		</update>
 	</info>
@@ -34,7 +34,7 @@
 		<file name = "bender-fortification.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-fortification.xml"/>
 		<file name = "bender-fusion.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-fusion.xml"/>
 		<file name = "bender-invigoration.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/bender-invigoration.xml"/>
-		<!-- <file name = "cleric-shrine-warden.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/cleric-shrine-warden.xml"/> -->
+		<file name = "cleric-shrine-warden.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/cleric-shrine-warden.xml"/>
 		<!-- <file name = "druid-yokai.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/druid-yokai.xml"/> -->
 		<!-- <file name = "fighter-skeletal-blade.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/fighter-skeletal-blade.xml"/> -->
 		<!-- <file name = "monk-eight-gates.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/monk-eight-gates.xml"/> -->

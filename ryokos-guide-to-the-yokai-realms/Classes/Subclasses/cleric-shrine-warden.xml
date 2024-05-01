@@ -1,0 +1,147 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<info>
+        <name>Shrine Warden Domain, Cleric subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version = "0.0.1">
+			<file name = "cleric-shrine-warden.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/cleric-shrine-warden.xml"/>
+		</update>
+	</info>
+
+	<element name = "Shrine Warden Domain" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_SHRINE_WARDEN_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+            <p class = "flavour">Let’s face the fading sun, in safety and comfort, and remember what matters.</p>
+			<p>Across the realms and beyond exist countless deities and spirits, each with their own motivations, power, and temperament, and each with their own devoted followers. Shrine Warden clerics celebrate and honour the deities they follow through the creation and preservation of hallowed sites in their honour—consecrated ground where the misty division between spiritual and physical melts away to nothing. To such clerics, power can be drawn from almost any kaiju, spirit, deity, or pantheon they worship. For the Shrine Warden, the act of devotion itself is magical, and the erection of a shrine a beacon of hope to those in need, and of terror to those who mean it harm.</p>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_BONUS_PROFICIENCIES"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CHANNEL_DIVINITY_HALLOWED_GROUND"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_SHRINE_GUARDIAN"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_DIVINE_STRIKE"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_EMPOWERED_CONSECRATION"/>
+		</description>
+		<sheet display = "false">
+			<description>For the Shrine Warden, the act of devotion itself is magical.</description>
+		</sheet>
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_BONUS_PROFICIENCIES" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CHANNEL_DIVINITY_HALLOWED_GROUND" level = "2"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_SHRINE_GUARDIAN" level = "6"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_DIVINE_STRIKE" level = "8"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_EMPOWERED_CONSECRATION" level = "17"/>
+		</rules>
+	</element>
+	<element name = "Bonus Proficiencies" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with martial weapons and heavy armour.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+			<grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+		</rules>
+	</element>
+	<element name = "Consecration" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION">
+		<description>
+			<p>As a bonus action, you can imbue a point on the ground that you can see within 60 feet of yourself with divine magic. A small, spectral shrine appears at that location and radiates magic in a 15-foot-radius aura. When you use this feature, choose a Blessing or Curse from the options below, and then choose a number of creatures up to 1 + your Wisdom modifier (minimum of up to one creature) to be affected by the shrine’s magic.</p>
+            <ul>
+                <li><strong>Blessing of Fortune. </strong>An affected creature in the aura can add 1d4 to an attack roll, ability check, or saving throw it makes. It then can’t gain this benefit again until the start of its next turn.</li>
+                <li><strong>Blessing of Power. </strong>When an affected creature in the aura hits a target with an attack roll, it can deal an extra 1d6 radiant damage to that target. It then can’t gain this benefit again until the start of its next turn. This damage increases to 2d6 when you reach 10th level in this class.</li>
+                <li><strong>Blessing of Hope. </strong>An affected creature in the aura is immune to the frightened condition, and it gains 1d4 temporary hit points when it ends its turn there.</li>
+                <li><strong>Curse of the Void. </strong>The shrine’s aura is obscured by opaque darkness for affected creatures.</li>
+                <li><strong>Curse of Pain. </strong>An affected creature takes 1d8 necrotic damage when it enters the aura for the first time on its turn or its turn there starts its turn in the aura. This damage increases to 2d8 when you reach 11th level in this class.</li>
+                <li><strong>Curse of Panic. </strong>An affected creature that attempts to enter the aura for the first time on its turn or starts its turn there must succeed on a Wisdom saving throw or become frightened of the shrine until the start of its next turn.</li>
+            </ul>
+            <p class = "indent">The shrine lasts for 1 minute. Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+		<sheet display = "true" usage = "1/Short Rest">
+            <description>As a bonus action, you can imbue a point on the ground that you can see within 60 feet of yourself with divine magic. A small, spectral shrine appears at that location and radiates magic in a 15-foot-radius aura. When you use this feature, choose a Blessing or Curse from the options below, and then choose a number of creatures up to {{consecration:creatures}} to be affected by the shrine’s magic.</description>
+            <description level = "17">As a bonus action, you can imbue a point on the ground that you can see within 60 feet of yourself with divine magic. A small, spectral shrine appears at that location and radiates magic in a 30-foot-radius aura. When you use this feature, choose three Blessings or Curses from the options below, and then choose a number of creatures up to {{consecration:creatures}} to be affected by the shrine’s magic.</description>
+        </sheet>
+		<rules>
+            <stat name = "consecration:creatures" value = "1" bonus = "base"/>
+            <stat name = "consecration:creatures" value = "wisdom:modifier" bonus = "base"/>
+            
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_FORTUNE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_POWER"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_HOPE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_VOID"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_PAIN"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_PANIC"/>
+		</rules>
+	</element>
+    <element name = "Blessing of Fortune" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_FORTUNE">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>An affected creature in the aura can add 1d4 to an attack roll, ability check, or saving throw it makes. It then can’t gain this benefit again until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Blessing of Power" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_POWER">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>When an affected creature in the aura hits a target with an attack roll, it can deal an extra 1d6 radiant damage to that target. It then can’t gain this benefit again until the start of its next turn.</description>
+            <description level = "10">When an affected creature in the aura hits a target with an attack roll, it can deal an extra 2d6 radiant damage to that target. It then can’t gain this benefit again until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Blessing of Hope" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_HOPE">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>An affected creature in the aura is immune to the frightened condition, and it gains 1d4 temporary hit points when it ends its turn there.</description>
+        </sheet>
+    </element>
+    <element name = "Curse of the Void" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_VOID">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>The shrine’s aura is obscured by opaque darkness for affected creatures.</description>
+        </sheet>
+    </element>
+    <element name = "Curse of Pain" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_PAIN">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>An affected creature takes 1d8 necrotic damage when it enters the aura for the first time on its turn or its turn there starts its turn in the aura.</description>
+            <description level = "11">An affected creature takes 2d8 necrotic damage when it enters the aura for the first time on its turn or its turn there starts its turn in the aura.</description>
+        </sheet>
+    </element>
+    <element name = "Curse of Panic" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CONSECRATION_PANIC">
+        <compendium display = "false"/>
+        <sheet display = "true">
+            <description>An affected creature that attempts to enter the aura for the first time on its turn or starts its turn there must succeed on a Wisdom saving throw or become frightened of the shrine until the start of its next turn.</description>
+        </sheet>
+    </element>
+	<element name = "Channel Divinity: Hallowed Ground" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_CHANNEL_DIVINITY_HALLOWED_GROUND">
+		<description>
+			<p>You can use your Channel Divinity to attempt to expel a creature from an area, or trap it there. As a bonus action, you present your holy symbol and choose one creature you can see within 60 feet of you. That creature must succeed on a Charisma saving throw or suffer one of the following effects of your choice:</p>
+            <ul>
+                <li>The creature is pushed up to 30 feet away from you.</li>
+                <li>The creature’s speed is reduced to 0 feet until the end of its next turn.</li>
+            </ul>
+        </description>
+		<sheet display = "true" alt = "Hallowed Ground" usage = "Channel Divinity">
+            <description>As a bonus action, you present your holy symbol and choose one creature you can see within 60 feet of you. That creature must succeed on a Charisma saving throw or suffer one of the following effects of your choice: The creature is pushed up to 30 feet away from you. The creature’s speed is reduced to 0 feet until the end of its next turn.</description>
+        </sheet>
+	</element>
+	<element name = "Shrine Guardian" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_SHRINE_GUARDIAN">
+		<description>
+			<p>When you create a shrine with your Consecration feature, you also summon a Tiny Fey (yokai) spirit to act as its guardian. This shrine guardian is immune to all damage and conditions and can fly. As a bonus action on your turn, you can command it to move the shrine up to 20 feet in any direction.</p>
+            <p class = "indent">The shrine guardian can also help or hinder nearby creatures. When a creature in the shrine’s aura makes an attack roll, ability check, or saving throw, you can use your reaction to command the shrine guardian to intervene, rolling 1d4 and applying it as a bonus or penalty (your choice) to the creature’s roll. You can use this feature a number of times equal to your Wisdom modifier, regaining all expended uses upon finishing a long rest.</p>
+        </description>
+		<sheet display = "true" usage = "{{wisdom:modifier}}/Long Rest">
+            <description>When you create a shrine with your Consecration feature, you also summon a Tiny Fey (yokai) spirit to act as its guardian. This shrine guardian is immune to all damage and conditions and can fly. As a bonus action on your turn, you can command it to move the shrine up to 20 feet in any direction. The shrine guardian can also help or hinder nearby creatures. When a creature in the shrine’s aura makes an attack roll, ability check, or saving throw, you can use your reaction to command the shrine guardian to intervene, rolling 1d4 and applying it as a bonus or penalty (your choice) to the creature’s roll.</description>
+        </sheet>
+	</element>
+	<element name = "Divine Strike" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_DIVINE_STRIKE">
+		<description>
+			<p>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+		<sheet display = "true">
+            <description>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</description>
+            <description level = "14">You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 radiant damage to the target.</description>
+        </sheet>
+	</element>
+	<element name = "Empowered Consecration" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHRINE_WARDEN_DOMAIN_EMPOWERED_CONSECRATION">
+		<description>
+			<p>When you use your Consecration feature, the radius of the shrine’s aura increases to 30 feet. In addition, you can choose three Blessing or Curse options to affect creatures you designate with this feature, rather than just one.</p>
+        </description>
+		<sheet display = "false"/>
+	</element>
+</elements>
