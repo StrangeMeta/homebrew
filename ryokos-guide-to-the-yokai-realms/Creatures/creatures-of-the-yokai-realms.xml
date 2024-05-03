@@ -365,4 +365,769 @@
             </ul>
 		</description>
 	</element>
+	<element name = "Kanibozu" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KANIBOZU">
+		<description>
+            <p>The kanibozu are esteemed nobles that form the backbone of the Ebizo society, often acting as teachers, seers, historians, healers, and spies. These yokai have a particular affinity for illusion magic, with many legends told of kanibozu infiltrating isetsu outlooks disguised as roaming mercenaries or masquerading as priests within monasteries, dutifully playing their roles for decades before being caught. In their true form, every kanibozu carries a lantern—a focus through which they channel their magic and an immutable symbol of authority and status. In the haunting darkness and crushing depths of the ocean, the distant, eerie light of a kanibozu is a bolstering force of hope for the Ebizo and a stern warning to its enemies.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fiend (Yokai), Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 18 (natural armour)</li>
+				<li><strong>Hit Points</strong> 95 (10d8 + 50)</li>
+				<li><strong>Speed</strong> 30ft., swim 40ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>17 (+3)</td><td>11 (+0)</td><td>20 (+5)</td><td>14 (+2)</td><td>10 (+0)</td><td>18 (+4)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Deception +7, Stealth +3</li>
+				<li><strong>Damage Resistances</strong> cold, poison; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> Aquan, Common</li>
+				<li><strong>Challenge</strong> 5 (1,800 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Lantern Bearer.</em></strong> The kanibozu carries a lantern that sheds bright light in a 10-foot radius and dim light for an additional 10 feet. It can extinguish or light the lantern as a bonus action. Creatures of the kanibozu’s choice within the lantern’s light gain a 1d4 bonus to attack and damage rolls (included in the kanibozu’s attacks).</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Staff.</em></strong> Melee Weapon Attack: +6 plus 1d4 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 1d4 + 3) bludgeoning damage.</li>
+                <p></p>
+				<li><strong><em>Stinging Ray.</em></strong> Ranged Spell Attack: +7 plus 1d4 to hit, range 120 ft., one target. Hit: 22 (3d10 + 1d4 + 3) radiant damage.</li>
+                <p></p>
+				<li><strong><em>Illusory Form.</em></strong> The kanibozu casts the disguise self spell, using Charisma as the spellcasting ability (spell save DC 15).</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Inversion Illusion.</em></strong> The kanibozu attempts to craft an illusion in the mind of a creature it can see within 60 feet of it. The target must make a DC 15 Wisdom saving throw. On a failed save, the area within 20 feet of the kanibozu’s lantern becomes obscured by pitch darkness for that creature, regardless of other illumination. The creature can repeat the saving throw at the end of its turn, ending the effect on a success.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Zuwai" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ZUWAI">
+		<description>
+            <p>The Ebizo believe that all things belong to the ocean, and the ocean belongs to the zuwai. Matriarchs among the Ebizo, these deep-sea elementalists tower over the rest of the clan, both in stature and magical prowess. Among their kin, zuwai act as chieftains and battlefield commanders, masterminding the flow of combat from afar and rarely engaging personally. However, should the need arise, zuwai are fearsome warriors innately equipped with lethal magic. Their grace in battle is unmatched; the zuwai’s many limbs move with spectacular synchronicity as they channel the element of water through precise movements—an uncanny union of delicate motion and crushing tidal force. In many ways, zuwai are the ocean’s erratic temperament incarnate, at one moment beautiful in tranquillity, the next terrifying in tempestuous rage.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fiend (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 19 (natural armour)</li>
+				<li><strong>Hit Points</strong> 178 (17d10 + 85)</li>
+				<li><strong>Speed</strong> 40ft., swim 60ft.</li>
+				<li><strong>Proficiency Bonus</strong> +4</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>20 (+5)</td><td>20 (+5)</td><td>18 (+4)</td><td>11 (+0)</td><td>18 (+4)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Con +9, Wis +4</li>
+				<li><strong>Skills</strong> Acrobatics +9, Persuasion +8, Stealth +9</li>
+				<li><strong>Damage Resistances</strong> cold, poison; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, paralyzed, poisoned, stunned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> Aquan, Common</li>
+				<li><strong>Challenge</strong> 10 (5,900 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Magical Carapace (3/Day).</em></strong> When the zuwai fails a saving throw, it can choose to succeed instead. If it does so, a layer of its carapace shatters and sheds, and it has a -1 penalty to AC until it finishes a long rest.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The zuwai makes two attacks with any combination of Claw and Tidal Surge.</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5) piercing damage, plus 13 (3d8) cold damage.</li>
+                <p></p>
+				<li><strong><em>Tidal Surge.</em></strong> Ranged Spell Attack: +8 to hit, range 120 ft., one target. Hit: 28 (8d6) bludgeoning damage, and if the target is a creature, the zuwai can move that creature up to 30 feet in a direction of its choice.</li>
+                <p></p>
+				<li><strong><em>Tidal Grasp (Recharge 6).</em></strong> The zuwai conjures three tendrils of undulating water that attempt to ensnare up to three Large or smaller creatures within 60 feet of it. Each target must succeed on a DC 16 Dexterity saving throw or be restrained for 1 minute. While restrained in this way, a creature is also drowning—it cannot breathe, speak, or perform the verbal components of spells. The target, or a creature within 5 feet of it, can use an action to attempt a DC 16 Strength saving throw, ending the effect on it on a success.</li>
+                <p></p>
+                <li><strong><em>Water Wyrm (1/Day).</em></strong> The zuwai casts the water wyrm spell (at 4th level), using Charisma as the spellcasting ability (spell save DC 16, +8 to hit with spell attacks).</li>
+			</ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Drowning Shield.</em></strong> When a creature within 60 feet of the zuwai makes an attack roll, the zuwai can conjure a bubble of water around itself. It gains a +5 bonus to AC until the start of its next turn. If the zuwai is hit with an attack roll while this shield is in place, the bubble bursts, and all other creatures within 15 feet it must succeed on a DC 16 Strength saving throw or take 22 (4d10) bludgeoning damage and be knocked prone.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Hone Karakasa" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_HONE_KARAKASA">
+		<description>
+            <p>Cavorting with the roaring wind and singing with every crash of thunder, a bundle of torn red cloth held together by a wooden frame dances through a darkened sky. It is a hone karakasa, joyous and unfettered by the rain and gale of a driving tempest. Resembling a torn-up umbrella with its bamboo skeleton exposed, this large and unusual tsukumogami is a sight that sends civilians scarpering indoors—but not to protect themselves from the hone karakasa itself. On days such as these, where the flying yokai is glimpsed in a distant sky, it acts as the harbinger of an oncoming storm. As such, the hone karakasa’s appearance is a useful sign to many Humanoids, albeit rarely a welcome one.</p>
+            <p class = "indent"><strong>A Bone to Pick. </strong>Tsukumogami are known to be a class of mischievous, playful yokai; sometimes troublesome, sometimes helpful, but rarely ever outright hostile; the exception is the hone karakasa. An elder tsukumogami whose great lifespan allows it to grow larger and stronger than its younger counterparts, this oversized umbrella is far more aggressive and belligerent than others of its kind. It subsists on a diet almost exclusively consisting of small animals, hunting under the cover of mighty storms, seizing prey spooked from their nests by flashes of lightning and rumbles of thunder. As opportunists, hone karakasa have been known to steal food from Humanoids as well, and eagerly strike up fights with whoever the wind brings them before.</p>
+            <p class = "indent"><strong>Leader of the Flock. </strong>Because of their age, aggression, and relative strength, whenever tsukumogami gather, a hone karakasa often emerges as the leader of the band. They often fly at the head of a yokai parade, dancing high and free in a proud and beautiful display—their papery wings spread wide, inspiring awe in the gaggle of smaller tsukumogami stumbling in their wake.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14</li>
+				<li><strong>Hit Points</strong> 30 (4d8 + 8)</li>
+				<li><strong>Speed</strong> 1ft., fly 40ft..</li>
+				<li><strong>Proficiency Bonus</strong> +5</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>13 (+1)</td><td>18 (+4)</td><td>16 (+3)</td><td>7 (-2)</td><td>12 (+1)</td><td>15 (+2)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Acrobatics +6, Stealth +6</li>
+				<li><strong>Damage Resistances</strong> cold, lightning, thunder</li>
+				<li><strong>Senses</strong> darkvision 30ft., passive Perception 11</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 2 (450 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Flyby.</em></strong> The hone karakasa doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</li>
+                <p></p>
+				<li><strong><em>Storm Guardian.</em></strong> The hone karakasa can impart a flying speed equal to its own to any creature it is grappling. Such a creature also has resistance to cold, lightning, and thunder damage. The hone karakasa can only grapple one creature in this way at a time.</li>
+                <p></p>
+				<li><strong><em>Windrider.</em></strong> While the hone karakasa is outside in stormy weather conditions, it’s flying speed is doubled.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The hone karakasa makes two Slam attacks.</li>
+                <p></p>
+				<li><strong><em>Slam.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Gusting Winds (Recharge 4-6).</em></strong> The hone karakasa emits a mighty rush of wind in a line that is 30 feet long and 10 feet wide, which blasts in a direction of its choice. Each creature in that line must succeed on a DC 12 Strength saving throw or be pushed 15 feet away from the hone karakasa. The blast of wind disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Jorogumo" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_JOROGUMO">
+		<description>
+            <p>Of all the fiendish yokai that prowl the land, few can match the cunning and ingenuity of the jorogumo: a shapeshifting spider-demon with a humanoid head and torso grotesquely perched atop the abdomen of a giant spider. Horror stories tell of quaint, luxurious roadside inns that seem to pop up out of nowhere, beckoning merchants and travellers alike with the promise of full bellies, soft sheets, and a charming host. Those foolish enough to be ensnared by these promises never return—stolen from their beds, wrapped up in sweet-scented silk, and dragged below the earth to the jorogumo’s lair. Here they are left, desperate and struggling, surrounded by the corpses of others caught by the demon yokai, their muffled screams meritless as they lie trapped in a dark, webbed tomb. Particularly sadistic jorogumo visit their prey, singing soft tales of lost love and fallen heroes, holding them in a tender caress, and revelling in the thrill of their victims’ absolute terror before devouring them utterly.</p>
+            <p class = "indent"><strong>Living Form. </strong>The jorogumo’s most subtle art is that of shapeshifting, capable of assuming the form of a Humanoid and integrating among its prey. Some jorogumo spend years in plain sight, mimicking the lives and habits of ordinary townsfolk, accruing a kill count in the hundreds over decades of careful slaughter. To some jorogumo, this sickly Humanoid pantomime is as satisfying as the kill itself.</p>
+            <p class = "indent"><strong>Empty Shell. </strong>The magic of the jorogumo’s form extends beyond mere shapeshifting. They must shed regularly as they grow, and this discarded shell of flesh and webbing holds magic of its own. It is a husk—a mindless, predatory shadow of the true jorogumo. While it possesses no malice, it is still extremely dangerous; jorogumo husks are driven only by a relentless, aching need to be whole once more. They burn with a yearning to consume—to wrap around another as a cocoon of flesh. Victims of jorogumo husks are consumed, enveloped by the ghastly undead and suspended within it. The husk and its slaughtered victim then undergo a metamorphosis, and a new jorogumo is born, able to shapeshift into the likeness of the creature the husk devoured.</p>
+            <p class = "indent"><strong>Spider Arts. </strong>Jorogumo are consummate artists, exhibiting mastery across various crafts, including carpentry, artifice, song, and dance. Their performances are nothing short of sirenical, drawing in all manner of beings who stand in awe at their beauty and talent, blissfully unaware of the horror that awaits them just below the floorboards of the stage.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fiend (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 16 (natural armour)</li>
+				<li><strong>Hit Points</strong> 170 (20d10 + 60)</li>
+				<li><strong>Speed</strong> 40ft., climb 40ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>16 (+3)</td><td>16 (+3)</td><td>14 (+2)</td><td>12 (+1)</td><td>20 (+5)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Dex +6, Cha +8</li>
+				<li><strong>Skills</strong> Acrobatics +6, Deception +8, Performance +8, Persuasion +8, Stealth +6</li>
+				<li><strong>Damage Resistances</strong> necrotic</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, frightened, poisoned</li>
+				<li><strong>Senses</strong> darkvision 60ft., tremorsense 30ft., passive Perception 11</li>
+				<li><strong>Languages</strong> Abyssal, Common, Sylvan</li>
+				<li><strong>Challenge</strong> 7 (2,900 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Spider Climb.</em></strong> The jorogumo can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+                <p></p>
+				<li><strong><em>Web Walker.</em></strong> While in contact with a web, the jorogumo knows the exact location of any other creature in contact with the same web. The jorogumo also ignores movement restrictions caused by webbing.</li>
+                <p></p>
+				<li><strong><em>Magic Resistance.</em></strong> The jorogumo has advantage on saving throws against spells and other magical effects.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The jorogumo uses its Charm. It then makes two Venom Shot attacks. It can replace one attack with a use of Webweaver.</li>
+                <p></p>
+				<li><strong><em>Venom Shot.</em></strong> Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 20 (3d10 + 4) poison damage.</li>
+                <p></p>
+				<li><strong><em>Charm.</em></strong> The jorogumo targets one Humanoid it can see within 30 feet of it. If the target can see the jorogumo, the target must succeed on a DC 16 Wisdom saving throw or be charmed for the next 24 hours. The charmed target regards the jorogumo as a delicate innocent to be loved and protected. Although the target isn’t under the jorogumo’s control, it takes the jorogumo’s requests or actions in the most favourable way it can. The first time on a turn the target takes damage, it can repeat this saving throw, ending the effect on a success.</li>
+                <p></p>
+				<li><strong><em>Webweaver.</em></strong> The jorogumo casts the web spell, requiring no spell components, without requiring concentration, and using Charisma as the spellcasting ability (spell save DC 16).</li>
+                <p></p>
+                <li><strong><em>Venom Channeler (Recharge 5-6).</em></strong> The jorogumo channels a potent poison through its webbing. Each creature within 120 feet of the jorogumo that is in contact with the same web as it must make a DC 16 Constitution saving throw. On a failed save, a creature takes 36 (8d8) poison damage and suffers one random condition chosen from the following options until the end of its next turn. On a successful save, the creature takes half as much damage and doesn’t suffer a condition.</li>
+                <ol>
+                    <li>Blinded</li>
+                    <li>Frightened</li>
+                    <li>Poisoned</li>
+                    <li>Restrained</li>
+                </ol>
+                <p></p>
+                <li><strong><em>Shapeshifter.</em></strong> The jorogumo magically polymorphs into a Small or Medium Humanoid. Its statistics and capabilities, other than its size, remain the same. It reverts to its true form if it makes a Venom Shot attack, uses its Webweaver or Venom Channeler actions, or dies.</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Jorogumo Husk" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_JOROGUMO_HUSK">
+		<description>
+            <p>Of all the fiendish yokai that prowl the land, few can match the cunning and ingenuity of the jorogumo: a shapeshifting spider-demon with a humanoid head and torso grotesquely perched atop the abdomen of a giant spider. Horror stories tell of quaint, luxurious roadside inns that seem to pop up out of nowhere, beckoning merchants and travellers alike with the promise of full bellies, soft sheets, and a charming host. Those foolish enough to be ensnared by these promises never return—stolen from their beds, wrapped up in sweet-scented silk, and dragged below the earth to the jorogumo’s lair. Here they are left, desperate and struggling, surrounded by the corpses of others caught by the demon yokai, their muffled screams meritless as they lie trapped in a dark, webbed tomb. Particularly sadistic jorogumo visit their prey, singing soft tales of lost love and fallen heroes, holding them in a tender caress, and revelling in the thrill of their victims’ absolute terror before devouring them utterly.</p>
+            <p class = "indent"><strong>Living Form. </strong>The jorogumo’s most subtle art is that of shapeshifting, capable of assuming the form of a Humanoid and integrating among its prey. Some jorogumo spend years in plain sight, mimicking the lives and habits of ordinary townsfolk, accruing a kill count in the hundreds over decades of careful slaughter. To some jorogumo, this sickly Humanoid pantomime is as satisfying as the kill itself.</p>
+            <p class = "indent"><strong>Empty Shell. </strong>The magic of the jorogumo’s form extends beyond mere shapeshifting. They must shed regularly as they grow, and this discarded shell of flesh and webbing holds magic of its own. It is a husk—a mindless, predatory shadow of the true jorogumo. While it possesses no malice, it is still extremely dangerous; jorogumo husks are driven only by a relentless, aching need to be whole once more. They burn with a yearning to consume—to wrap around another as a cocoon of flesh. Victims of jorogumo husks are consumed, enveloped by the ghastly undead and suspended within it. The husk and its slaughtered victim then undergo a metamorphosis, and a new jorogumo is born, able to shapeshift into the likeness of the creature the husk devoured.</p>
+            <p class = "indent"><strong>Spider Arts. </strong>Jorogumo are consummate artists, exhibiting mastery across various crafts, including carpentry, artifice, song, and dance. Their performances are nothing short of sirenical, drawing in all manner of beings who stand in awe at their beauty and talent, blissfully unaware of the horror that awaits them just below the floorboards of the stage.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Undead (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 15 (natural armour)</li>
+				<li><strong>Hit Points</strong> 68 (8d10 + 24)</li>
+				<li><strong>Speed</strong> 30ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>16 (+3)</td><td>16 (+3)</td><td>1 (-5)</td><td>10 (+0)</td><td>1 (-5)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Stealth +5</li>
+				<li><strong>Damage Resistances</strong> cold, necrotic</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, poisoned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 2 (450 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Aching Emptiness.</em></strong> When the husk kills a Humanoid with its Devour attack, the Humanoid’s corpse is left suspended and encased with webbing inside the husk’s carapace. Over the next 24 hours, the two fuse together, and the husk is reborn as a jorogumo that can take the appearance of the Humanoid it killed with its Shapeshifter action.</li>
+                <p></p>
+				<li><strong><em>Spider Climb.</em></strong> The husk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+                <p></p>
+				<li><strong><em>Web Walker.</em></strong> While in contact with a web, the husk knows the exact location of any other creature in contact with the same web. The husk also ignores movement restrictions caused by webbing.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The husk makes two attacks with any combination of Bite and Web.</li>
+                <p></p>
+				<li><strong><em>Bite.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</li>
+                <p></p>
+				<li><strong><em>Web.</em></strong> Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</li>
+                <p></p>
+				<li><strong><em>Devour.</em></strong> . Melee Weapon Attack: +5 to hit, reach 5 ft., one restrained creature. Hit: 28 (8d6) necrotic damage, and the target is grappled (escape DC 13).</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Kamaitachi" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KAMAITACHI">
+		<description>
+            <p>The skittering click-clack of bladed forelimbs across a courtyard’s stone paving is the telltale indicator of a kamaitachi nearby. As nimble and flighty as mountain winds, these weasel-like yokai dart from shadow to shadow, kicking up whirling eddies of dust and leaves in their wake.</p>
+            <p class = "indent"><strong>Deadly Scavenger. </strong>Kamaitachi prefer to scavenge food, sneaking close to settlements and pilfering what they can under the cover of darkness. If forced to hunt, they tend to ambush prey, striking swiftly for a surgical, clean kill. Though aggressive and dangerous in battle, kamaitachi are not malicious and rarely strike without reason or provocation.</p>
+            <p class = "indent"><strong>Reactive Power. </strong>The kamaitachi’s most unusual power is its ability to harness the strength of those it fights. When threatened by a powerful predator, the yokai becomes a devastating flurry of blades, intimidating the foe with its lacerating performance before dashing away as a whirlwind of fur and strikes. The greater the threat, the more deadly the kamaitachi becomes; even the boldest adventurers and mightiest monsters treat kamaitachi with respect.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Small Fey (Yokai), Chaotic Neitral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14 (natural armour)</li>
+				<li><strong>Hit Points</strong> 22 (4d6 + 8)</li>
+				<li><strong>Speed</strong> 40ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>5 (-3)</td><td>15 (+2)</td><td>14 (+2)</td><td>7 (-2)</td><td>13 (+1)</td><td>16 (+3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Acrobatics +4, Stealth +6</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 11</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Frenzy.</em></strong> After the kamaitachi makes its second attack roll on a turn, it has advantage on attack rolls until the end of the turn.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The kamaitachi makes a number of Sickle Claw attacks equal to the proficiency bonus of the first creature it attacks on its turn (minimum of two).</li>
+                <p></p>
+				<li><strong><em>Sickle Claw.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage plus 3 (1d6) slashing damage for each other attack the kamaitachi has made this turn.</li>
+                <p></p>
+				<li><strong><em>Dust Devil.</em></strong> The kamaitachi conjures a small vortex of wind, dust, and leaves around itself. Until the start of its next turn, it levitates 4 inches above the ground. While floating in this way, it can move normally, it ignores difficult terrain, and its movement doesn’t provoke opportunity attacks.</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Kappa" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KAPPA">
+		<description>
+            <p>A fisherman cautiously drops to his haunches by a sodden riverbank and lays down a curious offering with a shaking hand. It is a bag of fresh cucumbers, each scrubbed and polished to perfection. Moments later, a scaly, webbed hand breaks the surface of the water, and a kappa hauls itself from the depths, its head covered by a smattering of river weeds. It opens the bag and examines the goods carefully. Satisfied, the kappa slings the bag over its back and leaps back into the water, returning with a basket of freshly caught fish for the fisherman moments later. Their trade completed, both fisherman and kappa go their separate ways, each with dinner in hand and a smile on their face.</p>
+            <p class = "indent"><strong>Candid Friend, Dangerous Foe. </strong>The kappa are wellknown as honorable and trustworthy yokai; they will return a bow to even the most hated adversary before battle and will never willingly break a promise. That said, they are ruthless and dangerous if threatened or insulted. Grasping hands and uncanny strength make the kappa fearsome grapplers, often overpowering prey on land before dragging them into the waters to drown. Defeat at the hands of an angered kappa leads to a clawing, desperate, and painful death.</p>
+            <p class = "indent"><strong>Crying Over Spilled Water. </strong>Every kappa has a bowl-like indentation on their heads that must be filled with water at all times. Should this water ever dry up or spill, the kappa weakens. To prevent evaporation, most kappa keep their heads covered with water weeds while on land. Should a cunning foe knock a kappa over or trick them into straying too far from a water source, they can gain the upper hand in a battle with the unfortunate yokai.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Small Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14 (natural armour)</li>
+				<li><strong>Hit Points</strong> 58 (9d8 + 18)</li>
+				<li><strong>Speed</strong> 30ft., swim 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>16 (+3)</td><td>14 (+2)</td><td>10 (+0)</td><td>16 (+3)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +5</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 13</li>
+				<li><strong>Languages</strong> Common, Sylvan</li>
+				<li><strong>Challenge</strong> 2 (450 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Amphibious.</em></strong> The kappa can breathe air and water.</li>
+                <p></p>
+				<li><strong><em>Honourable Combatant.</em></strong> If a creature bows to the kappa immediately after rolling initiative, the kappa will bow in return. Both creatures take a -5 penalty to their initiative roll.</li>
+                <p></p>
+				<li><strong><em>Seasoned Wrangler.</em></strong> The kappa’s speed isn’t reduced while dragging a creature it is grappling.</li>
+                <p></p>
+				<li><strong><em>Water Bowl.</em></strong> The kappa takes 4 (1d8) necrotic damage when it is knocked prone, or at the start of its turn if it is upside down. This trait doesn’t trigger while the kappa is underwater.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The kappa makes two Rough-and-Tumble attacks.</li>
+                <p></p>
+				<li><strong><em>Rough-and-Tumble.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, plus 2 (1d4) bludgeoning damage if the target is grappled by the kappa.</li>
+                <p></p>
+				<li><strong><em>Death Roll.</em></strong> The kappa rolls and thrashes a creature it is grappling that is submerged in water. The creature must make a DC 13 Strength saving throw, taking 21 (6d6) bludgeoning damage on a failed save, or half as much damage on a successful save. Creatures without a swimming speed make this save with disadvantage.</li>
+                <p></p>
+				<li><strong><em>Water Magic.</em></strong> The kappa casts the water whip spell, using Wisdom as the spellcasting modifier (save DC 13, +5 to hit with spell attacks). It can use the water in its head as the source of water from which the whip emerges.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Rugged Grapple (Recharge 5-6).</em></strong> The kappa attempts to grapple one creature within 5 feet of it. The kappa has advantage on its ability check.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Kappa Tideweaver" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KAPPA_TIDEWEAVER">
+		<description>
+            <p>A fisherman cautiously drops to his haunches by a sodden riverbank and lays down a curious offering with a shaking hand. It is a bag of fresh cucumbers, each scrubbed and polished to perfection. Moments later, a scaly, webbed hand breaks the surface of the water, and a kappa hauls itself from the depths, its head covered by a smattering of river weeds. It opens the bag and examines the goods carefully. Satisfied, the kappa slings the bag over its back and leaps back into the water, returning with a basket of freshly caught fish for the fisherman moments later. Their trade completed, both fisherman and kappa go their separate ways, each with dinner in hand and a smile on their face.</p>
+            <p class = "indent"><strong>Candid Friend, Dangerous Foe. </strong>The kappa are wellknown as honorable and trustworthy yokai; they will return a bow to even the most hated adversary before battle and will never willingly break a promise. That said, they are ruthless and dangerous if threatened or insulted. Grasping hands and uncanny strength make the kappa fearsome grapplers, often overpowering prey on land before dragging them into the waters to drown. Defeat at the hands of an angered kappa leads to a clawing, desperate, and painful death.</p>
+            <p class = "indent"><strong>Crying Over Spilled Water. </strong>Every kappa has a bowl-like indentation on their heads that must be filled with water at all times. Should this water ever dry up or spill, the kappa weakens. To prevent evaporation, most kappa keep their heads covered with water weeds while on land. Should a cunning foe knock a kappa over or trick them into straying too far from a water source, they can gain the upper hand in a battle with the unfortunate yokai.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fey (Yokai), Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 15 (natural armour)</li>
+				<li><strong>Hit Points</strong> 117 (18d8 + 36)</li>
+				<li><strong>Speed</strong> 30ft., swim 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>16 (+3)</td><td>14 (+2)</td><td>10 (+0)</td><td>16 (+3)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Arcana +6, Athletics +5</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 13</li>
+				<li><strong>Languages</strong> Common, Sylvan</li>
+				<li><strong>Challenge</strong> 4 (450 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Amphibious.</em></strong> The kappa can breathe air and water.</li>
+                <p></p>
+				<li><strong><em>Honourable Combatant.</em></strong> If a creature bows to the kappa immediately after rolling initiative, the kappa will bow in return. Both creatures take a -5 penalty to their initiative roll.</li>
+                <p></p>
+				<li><strong><em>Water Bowl.</em></strong> The kappa takes 4 (1d8) necrotic damage when it is knocked prone, or at the start of its turn if it is upside down. This trait doesn’t trigger while the kappa is underwater.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Rough-and-Tumble.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, or 10 (2d6 + 3) bludgeoning damage if the target is grappled by the kappa or restrained by its water wyrm.</li>
+                <p></p>
+				<li><strong><em>Death Roll.</em></strong> The kappa rolls and thrashes a creature it is grappling that is submerged in water. The creature must make a DC 13 Strength saving throw, taking 21 (6d6) bludgeoning damage on a failed save, or half as much damage on a successful one. If the creature doesn’t have a swimming speed, it has disadvantage on this saving throw.</li>
+                <p></p>
+				<li><strong><em>Tideweaver (1/Day).</em></strong> The kappa casts the water wyrm spell (save DC 14, +6 to hit with spell attacks). The kappa has advantage on Constitution saving throws to maintain its concentration on the spell.</li>
+                <p></p>
+                <li><strong><em>Water Bubble.</em></strong> The kappa conjures a bubble of living water. The bubble wraps moves with the kappa, enveloping it and any creature the kappa grapples. Creatures enveloped by the water bubble have a +2 bonus to AC. If a creature enveloped by the water bubble cannot breathe in water, it also cannot speak, cannot perform the verbal components of spells, and has disadvantage on attack rolls and ability checks. The bubble lasts for 1 minute, or until the kappa falls unconscious.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Rugged Grapple (Recharge 5-6).</em></strong> The kappa attempts to grapple one creature within 5 feet of it. The kappa has advantage on its ability check.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Kasha" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KASHA">
+		<description>
+            <p class = "flavour">They’re cruel, malevolent, and gleefully evil... So, pretty much your standard cat. —Ryoko</p>
+            <p>Under the falling rain, a solemn funeral procession winds through a weary town. Two priests lead the parade, each bearing a pair of ceremonial cymbals. Each heavy step forward is met with a gentle knell—the ancient, ritual pulse of clashing bronze to ward off any evil spirit who might disrupt the tragic vigil. At such an event, no yokai is more feared than the ruthless kasha, a flaming feline monster with a penchant for stealing and devouring the dead. Unbeknownst to the grieving procession, in the deep shadows cast by a slowly fading sun, a steady hiss of steam whispers. It is the sound of rainwater boiling on contact with flame, as a ravenous yokai stalks its next meal.</p>
+            <p class = "indent"><strong>Hell's Harvester. </strong>. Of all the yokai known, there are few reviled like the kasha. Their preferred source of food is carrion, but unlike other scavengers that happily feast on rotting flesh, kasha prefer their meals fresh—and Humanoid. More grotesque still, kasha have a sadistic love for dead things, often taking fresh corpses back to their lairs to skin, carve, and preserve.</p>
+            <p class = "indent"><strong>Flaming Cart. </strong> While more than willing to stay patient and cunning while hunting, when threatened, a kasha’s body becomes wreathed in flames. Once discovered, it acts with extreme aggression—terrifying its victims with its flaming form and dashing around the battlefield. Such is their agility in this state that they are often likened to a flaming wagon barreling down a desolate track, unimpeded and at full speed.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fiend (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12 (natural armour)</li>
+				<li><strong>Hit Points</strong> 30 (4d8 + 12)</li>
+				<li><strong>Speed</strong> 40ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>17 (+3)</td><td>12 (+1)</td><td>16 (+3)</td><td>10 (+0)</td><td>9 (-1)</td><td>16 (+3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Intimidation +5, Stealth +3</li>
+				<li><strong>Damage Immunities</strong> fire</li>
+				<li><strong>Senses</strong> darkvision 120ft., passive Perception 9</li>
+				<li><strong>Languages</strong> Infernal</li>
+				<li><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Flaming Feline.</em></strong> The first time on a turn that a creature touches the kasha or hits it with a melee attack while within 5 feet of it, that creature takes 2 (1d4) fire damage.</li>
+                <p></p>
+				<li><strong><em>Steam Eruption.</em></strong> The first time on a turn the kasha comes into contact with a body of water, or a gallon of water is splashed on it, the flames on its body are extinguished and burst into a cloud of steam. The kasha takes 3 (1d6) cold damage, it loses its Flaming Feline trait, and the steam creates a 10-foot-radius sphere of white vapour centred on the kasha’s space, heavily obscuring the area. These changes last until the end of its next turn, at which time its body becomes wreathed in flames again.</li>
+            </ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The kasha makes one Bite attack and one Claws attack.</li>
+                <p></p>
+				<li><strong><em>Bite.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</li>
+                <p></p>
+				<li><strong><em>Claws.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.</li>
+                <p></p>
+				<li><strong><em>Twin-Tail Slam.</em></strong> Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Fiery Dread (Recharge 6).</em></strong> The kasha erupts in flames. Each creature within 30 feet of the kasha that can see it must succeed on a DC 13 Wisdom saving throw or be frightened of the kasha for 1 minute, or until its flames are extinguished. A creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the kasha’s Fiery Dread for the next 24 hours.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Stone Komainu" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_STONE_KOMAINU">
+		<description>
+            <p>With the agility of a hunting hound and the ferocious maw of a lion, these stone-skinned yokai are the dormant guardians of shrines and holy places. If a long-abandoned temple hasn’t yet been plundered of its treasure, these ever-vigilant protectors are the likely explanation; should a would-be thief defile a site guarded by komainu, the petrified statues spring to life, their spectral manes igniting with a rumble that rings deep into the ancient stones of the temple. Screams of pain usually follow.</p>
+            <p class = "indent"><strong>Artisanal Guardians. </strong>In the folktales of many races, komainu have simply “always been”—where a shrine exists, komainu are there to guard it. Some tales, shared among only the most ancient communities, tell of foreboding yokai spirits, attracted to areas of intense devotion, finding a home in these painstakingly carved statues. Channelling the magic of the yokai soul they house, these stoic Fey elicit a variety of magical effects based on the material from which they are crafted. Though typically made of stone or jade, legend tells of mighty komainu cast from precious metals like adamantine and gold who keep watch over treasure beyond imagination.</p>
+            <p class = "indent"><strong>The Beginning and the End. </strong>Komainu are commonly found in pairs, with each creature’s maw displaying one of two syllables: “Un” or “Ah”. These sounds represent the beginning and end of all things, respectively. Komainu displaying a snarling, closed-mouthed “Un” might manifest powers of healing, growth, and light, while those showing a roaring, open-mouthed “Ah” can unleash devastating waves of necrotic energy or banish interlopers to a distant plane of existence.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fey (Yokai), Lawful Good</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 16 (natural armour)</li>
+				<li><strong>Hit Points</strong> 30 (4d8 + 12)</li>
+				<li><strong>Speed</strong> 40ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>17 (+3)</td><td>15 (+2)</td><td>17 (+3)</td><td>7 (-2)</td><td>15 (+2)</td><td>13 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +5, Acrobatics +4, Stealth +6</li>
+				<li><strong>Damage Resistances</strong> necrotic, poison</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, petrified</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 12</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 2 (450 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Radiant Mane.</em></strong> Any creature grappling the komainu takes 5 (2d4) radiant damage at the start of its turn, and the komainu’s weapon attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</li>
+                <p></p>
+				<li><strong><em>Statue Form.</em></strong> While the komainu’s Radiant Mane is not active (see Fortification of Stone) and it remains motionless, it is indistinguishable from an ordinary statue.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The komainu makes one Claw attack and one Divine Mace attack.</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.</li>
+                <p></p>
+				<li><strong><em>Divine Mace.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 3 (1d6) radiant damage.</li>
+                <p></p>
+				<li><strong><em>Beginning and End.</em></strong> The komainu switches between its “Un” and “Ah” forms.</li>
+                <p></p>
+				<li><strong><em>Manifestation (Recharge 6).</em></strong> The komainu manifests one of the following effects.</li>
+                <p></p>
+				<li><strong><em>Duskbringer (Ah Form Only).</em></strong> The komainu exhales withering energy in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) necrotic damage on a failed save, or half as much damage on a successful one.</li>
+                <p></p>
+				<li><strong><em>Shrineward (Un Form Only).</em></strong> The komainu conjures a nonmagical wall of stone at a point it chooses with 60 feet of it, composed of three contiguous 10-foot-by-10-foot panels. If the wall cuts through a creature’s space when it appears, the creature must succeed on a DC 13 Dexterity saving throw or take 9 (2d8) bludgeoning damage and be knocked prone in the nearest unoccupied space of the komainu’s choice. Each panel has AC 15 and 30 hit points. A panel crumbles to dust if it is reduced to 0 hit points or after 1 minute.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Fortification of Stone.</em></strong> The komainu’s spirit retreats back into its body. It loses its Radiant Mane trait, can’t use or recharge its Manifestation action, has its speed reduced by 10 feet, and gains resistance to bludgeoning, slashing, and piercing damage. This effect lasts until the komainu ends it as a bonus action, reigniting its Radiant Mane.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Jade Komainu" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_JADE_KOMAINU">
+		<description>
+            <p>With the agility of a hunting hound and the ferocious maw of a lion, these stone-skinned yokai are the dormant guardians of shrines and holy places. If a long-abandoned temple hasn’t yet been plundered of its treasure, these ever-vigilant protectors are the likely explanation; should a would-be thief defile a site guarded by komainu, the petrified statues spring to life, their spectral manes igniting with a rumble that rings deep into the ancient stones of the temple. Screams of pain usually follow.</p>
+            <p class = "indent"><strong>Artisanal Guardians. </strong>In the folktales of many races, komainu have simply “always been”—where a shrine exists, komainu are there to guard it. Some tales, shared among only the most ancient communities, tell of foreboding yokai spirits, attracted to areas of intense devotion, finding a home in these painstakingly carved statues. Channelling the magic of the yokai soul they house, these stoic Fey elicit a variety of magical effects based on the material from which they are crafted. Though typically made of stone or jade, legend tells of mighty komainu cast from precious metals like adamantine and gold who keep watch over treasure beyond imagination.</p>
+            <p class = "indent"><strong>The Beginning and the End. </strong>Komainu are commonly found in pairs, with each creature’s maw displaying one of two syllables: “Un” or “Ah”. These sounds represent the beginning and end of all things, respectively. Komainu displaying a snarling, closed-mouthed “Un” might manifest powers of healing, growth, and light, while those showing a roaring, open-mouthed “Ah” can unleash devastating waves of necrotic energy or banish interlopers to a distant plane of existence.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fey (Yokai), Lawful Good</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 16 (natural armour)</li>
+				<li><strong>Hit Points</strong> 52 (5d10 + 25)</li>
+				<li><strong>Speed</strong> 40ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>15 (+2)</td><td>20 (+5)</td><td>7 (-2)</td><td>17 (+3)</td><td>13 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +6, Acrobatics +4, Stealth +6</li>
+				<li><strong>Damage Resistances</strong> necrotic, poisonn; bludgeoning, piercing, and slashing from nonmagical attacks</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, petrified</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 12</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 4 (1,100 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Radiant Mane.</em></strong> Any creature grappling the komainu takes 11 (2d10) radiant damage at the start of its turn, and the komainu’s weapon attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</li>
+                <p></p>
+				<li><strong><em>Statue Form.</em></strong> While the komainu’s Radiant Mane is not active (see Fortification of Gemstone) and it remains motionless, it is indistinguishable from an ordinary statue.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The komainu makes one Claw attack, one Bite attack, and one Divine Orb attack.</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) slashing damage.</li>
+                <p></p>
+                <li><strong><em>Bite.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage.</li>
+                <p></p>
+				<li><strong><em>Divine Orb.</em></strong> Ranged Weapon Attack: +6 to hit, range 120 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage plus 3 (1d6) radiant damage.</li>
+                <p></p>
+				<li><strong><em>Beginning and End.</em></strong> The komainu switches between its “Un” and “Ah” forms.</li>
+                <p></p>
+				<li><strong><em>Manifestation (Recharge 6).</em></strong> The komainu manifests one of the following effects.</li>
+                <p></p>
+				<li><strong><em>Dawnbringer (Ah Form Only).</em></strong> The komainu exhales brilliant, radiant energy in a 30-foot cone. Each creature of the komainu’s choice in that area gains 18 (4d8) temporary hit points.</li>
+                <p></p>
+				<li><strong><em>Banishment (Un Form Only).</em></strong> The komainu exhales astral energy in a 30-foot cone. Roll 12d6; the total is how many hit points of creatures this spell can affect. Creatures in the area are affected in ascending order of their current hit points. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. An affected creature is teleported to a random location 1d6 miles away. If a creature can’t be teleported, it is sent to a harmless demiplane; while there, the target is incapacitated.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Fortification of Gemstone.</em></strong> The komainu’s spirit retreats back into its body. It loses its Radiant Mane trait, can’t use or recharge its Manifestation action, has its speed reduced by 10 feet, gains resistance to all damage dealt by spells, and has advantage on saving throws against spells and other magical effects. This effect lasts until the komainu ends it as a bonus action, reigniting its mane.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Korori" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_KORORI">
+		<description>
+            <p>There exists a yokai whose deadliness is deceptive, whose appearance does not reflect the devastation it leaves in its tread. Long-limbed and tiger-striped, the korōri is a docile-looking creature most commonly found hiding inside tunnels and caves, scuttling away frantically at signs of danger. Despite its cowardice and unassuming presence, however, the korōri is deadly, producing a vicious poison that will lay an entire village to waste if allowed to settle.</p>
+            <p class = "indent"><strong>Patient Predator. </strong>The korōri hunts by finding a secluded hiding place and lying in wait, curling up into a ball while opening stripe-like vents across its body. From these vents, a lethal, poisonous fume seeps into the area around it. The poison is odourless, almost impossible to detect until the sickness sets in. Some say the korōri reeks of death and decay, but this is inaccurate. The odour of rot that follows its arrival is the stench of living creatures around the korōri that fall prey to its deadly miasma. Only after it detects the scent of rotting flesh does the korōri emerge from its hiding place to feed.</p>
+            <p class = "indent"><strong>Bringer of Illness. </strong>There is nary a creature more widely feared than this innocuous yokai. While kaiju can destroy cities in mere minutes, there is no Monstrosity, Fiend, or Fey that can lay waste to a populace in such a subtle and silent manner as the korōri. Its poison twists the mind and senses, inciting harrowing hallucinations and excruciating anguish before death, sparing none, even creatures typically immune to venoms and toxicants. The korōri is considered a harbinger of pestilence, a demon of plague and ruin, and a herald of death and rot by cultures from all corners of the realm. A single korōri footprint found on the outskirts of a town is grounds enough for the whole settlement to evacuate immediately.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fiend (Yokai), Unaligned</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 152 (16d10 + 64)</li>
+				<li><strong>Speed</strong> 40ft., climb 20ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>20 (+5)</td><td>19 (+4)</td><td>9 (-1)</td><td>14 (+2)</td><td>5 (-3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Stealth +8</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> poisoned</li>
+				<li><strong>Senses</strong> darkvision 60ft.</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 8 (3,900 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Hallucinogenic Poison.</em></strong> A creature poisoned by the korōri must make a DC 15 Wisdom saving throw at the start of each of its turns. On a failed save, it becomes frightened of all other creatures until the start of its next turn and must use its action that turn to make one attack against the closest creature it can see within 30 feet of it, believing it to be a terrifying foe. If no creature is visible within 30 feet, it falls prone.</li>
+                <p></p>
+				<li><strong><em>Harrowing Stench.</em></strong> A creature that starts its turn within 20 feet of the korōri takes 9 (2d8) poison damage. Creatures within 20 feet of the korōri have disadvantage on saving throws to avoid or end the poisoned condition.</li>
+                <p></p>
+				<li><strong><em>Magical Toxin.</em></strong> Korōri’s attacks and effects that deal poison damage ignore poison resistance.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The korōri makes two attacks with any combination of Bite and Venom Shot.</li>
+                <p></p>
+				<li><strong><em>Bite.</em></strong> Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the poisoned condition on a success.</li>
+                <p></p>
+				<li><strong><em>Venom Shot.</em></strong> Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 10 (3d6) poison damage, and the target must succeed on a DC 15 Constitution saving throw or fall prone and be poisoned for 1 minute. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the poisoned condition on a success.</li>
+                <p></p>
+				<li><strong><em>Pestilent Burst.</em></strong> The korōri releases a sickening burst of poison. Each creature within 30 feet of the korōri must make a DC 15 Constitution saving throw, taking 42 (12d6) poison damage and becoming poisoned for 1 minute on a failed save, or taking half as much damage and not becoming poisoned on a successful one. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the poisoned condition on a success.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Narigama" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_NARIGAMA">
+		<description>
+            <p>Tsukumogami, the feeble, mischievous spirits that find homes possessing worn out objects, are a common sight across the realms, and usually regarded as irritating at best. However, there is one exception—the narigama, a benevolent tsukumogami known for inhabiting well-used and well-loved iron kettles. Appearing as a fuzzy quadrupedal creature with a kettle as its head, the whimsical appearance and character of the narigama, its docile nature, and its valuable ability to predict the future, has endeared it to many folk across the realms.</p>
+            <p class = "indent"><strong>Spilling the Tea. </strong>Despite a humble appearance, narigama are exceptionally sensitive to their environments and are able to sense minor changes in temperature and air pressure, detect nearly indistinguishable vibrations, and identify distant noises even the keenest Humanoids would be unable to detect. Priests and sailors often teach their narigama pets to make various clicks and whistles to signal information without speech. As a result, they can be trained to reliably predict almost anything, from coming storms to volcanic eruptions, from animal migrations to bandit incursions.</p>
+            <p class = "indent"><strong>Boiling Hot. </strong>Narigama living in shrines, shipyards, and boats often lead a carefree, spoiled life—their caretakers offering them everything they desire in return for their predictions of the future. However, like most yokai, these fuzzy critters can still pose a threat if they feel threatened. If pressed, a narigama will raise its hackles, give a loud, ear-piercing whistle, and spew a stream of boiling water at its assailant from its kettle head.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Small Fey (Yokai), Lawful Good</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14 (natural armour)</li>
+				<li><strong>Hit Points</strong> 27 (5d6 + 10)</li>
+				<li><strong>Speed</strong> 20ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>7 (-2)</td><td>15 (+2)</td><td>15 (+2)</td><td>9 (-1)</td><td>20 (+5)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Insight +9, Perception +9</li>
+				<li><strong>Senses</strong> blindsight 60ft., tremorsense 120ft., passive Perception 19</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Saw It Coming.</em></strong> At the start of its turn, the narigama can focus on one creature it can see if the narigama isn’t incapacitated, analysing every nigh-imperceptible movement and behaviour. Until the start of its next turn, the narigama has advantage on attack rolls against the target, and the target has disadvantage on attack rolls against the narigama.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Scald.</em></strong> Ranged Weapon Attack: +4 to hit, range 30/90 ft., one target. Hit: 9 (2d6 + 2) fire damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Screaching Whistle.</em></strong> When a creature the narigama is focused on takes an action that forces one or more creatures to make a saving throw, the narigama can let loose a piercing whistle of warning. Any of those creatures that are within 60 feet of the narigama who can hear it make that saving throw with advantage.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Nueko" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_NUEKO">
+		<description>
+            <p>An eerie, whistling call, like that of a white thrush, is a warning that man, beast, and yokai alike have long learned to fear. It is the call of the nue, a chimeric yokai with the skull of a monkey, the body of a tiger, and a tail that morphs into a venomous serpent. Rumoured to be the first true yokai, it is an ancient sovereign of beasts and an omen of disaster and dread. Sowing chaos wherever it roams, the nue’s ferocity and unpredictable magic represent the last remnant of a forgotten, untamed world.</p>
+            <p class = "indent"><strong>Nue's Curse. </strong>The nue is notorious for its disaster field—a chaotic, magical aura that inflicts misfortune upon all within its proximity. This power is intertwined with the nue’s mythology, with many stories reciting how its appearance coincided with great tragedy and cataclysm. Some folktales speak of the nue’s curse targeting specific individuals, rendering great warriors and emperors alike helplessly sick for nights on end until either they or the nue are killed.</p>
+            <p class = "indent"><strong>Nueko. </strong>Nue have litters of three to five young every century, and the birth of these young, called nueko, are significant spiritual moments. While carrying neuko, mother nue are dangerously aggressive and powerful, their disaster fields growing so potent that they disrupt the weather, generating thick, black clouds that plunge acres of land into perpetual darkness and misfortune. Nueko are highly valued by spellcasters, their gentler nature, charming appearance, and innate intelligence making them prized familiars. Unlike the nue, who’s chimeric body serves a singular, lethal purpose, a neuko’s head and tail are independent, often play-fighting with one another and competing for food. Only after a nueko grows into a nue across the first decade of its life do its simian head and serpent tail synchronise into a single mind.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Tiny Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 18 (4d4 + 8)</li>
+				<li><strong>Speed</strong> 30ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>7 (-2)</td><td>14 (+2)</td><td>15 (+2)</td><td>7 (-2)</td><td>16 (+3)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Stealth +4</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> poisoned</li>
+				<li><strong>Senses</strong> darkvision 30ft., passive Perception 13</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1/2 (100 XP)</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Bite.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 2 (1d4) poison damage.</li>
+                <p></p>
+				<li><strong><em>Tail.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and if the target is a creature, it must succeed on a DC 12 Constitution saving throw or be poisoned until the end of its next turn.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Growl (Recharge 6).</em></strong> The nueko growls affectionately. Creatures within 10 feet of it must succeed on a DC 13 Wisdom saving throw or be charmed for 1 minute.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Nue" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_NUE">
+		<description>
+            <p>An eerie, whistling call, like that of a white thrush, is a warning that man, beast, and yokai alike have long learned to fear. It is the call of the nue, a chimeric yokai with the skull of a monkey, the body of a tiger, and a tail that morphs into a venomous serpent. Rumoured to be the first true yokai, it is an ancient sovereign of beasts and an omen of disaster and dread. Sowing chaos wherever it roams, the nue’s ferocity and unpredictable magic represent the last remnant of a forgotten, untamed world.</p>
+            <p class = "indent"><strong>Nue's Curse. </strong>The nue is notorious for its disaster field—a chaotic, magical aura that inflicts misfortune upon all within its proximity. This power is intertwined with the nue’s mythology, with many stories reciting how its appearance coincided with great tragedy and cataclysm. Some folktales speak of the nue’s curse targeting specific individuals, rendering great warriors and emperors alike helplessly sick for nights on end until either they or the nue are killed.</p>
+            <p class = "indent"><strong>Nueko. </strong>Nue have litters of three to five young every century, and the birth of these young, called nueko, are significant spiritual moments. While carrying neuko, mother nue are dangerously aggressive and powerful, their disaster fields growing so potent that they disrupt the weather, generating thick, black clouds that plunge acres of land into perpetual darkness and misfortune. Nueko are highly valued by spellcasters, their gentler nature, charming appearance, and innate intelligence making them prized familiars. Unlike the nue, who’s chimeric body serves a singular, lethal purpose, a neuko’s head and tail are independent, often play-fighting with one another and competing for food. Only after a nueko grows into a nue across the first decade of its life do its simian head and serpent tail synchronise into a single mind.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 51 (6d10 + 18)</li>
+				<li><strong>Speed</strong> 40ft., climb 40ft., fly 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>19 (+4)</td><td>18 (+4)</td><td>17 (+3)</td><td>7 (-2)</td><td>16 (+3)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Perception +7, Stealth +6</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> poisoned</li>
+				<li><strong>Senses</strong> darkvision 120ft., passive Perception 17</li>
+				<li><strong>Languages</strong> telepathy 120ft. (Beasts only)</li>
+				<li><strong>Challenge</strong> 4 (1,100 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Disaster Field.</em></strong> Other creatures within 10 feet of the nue must roll a d6 and subtract the number rolled from their ability checks and saving throws.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The nue makes one Bite attack, one Claw attack, and one Tail attack.</li>
+                <p></p>
+                <li><strong><em>Bite.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 3 (1d6) poison damage. If the nue’s attack roll exceeds the target’s AC by 5 or more, the target is also poisoned until the end of its next turn.</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</li>
+                <p></p>
+                <li><strong><em>Tail.</em></strong> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage. If the target is poisoned, it takes an extra 16 (3d10) poison damage.</li>
+                <p></p>
+                <li><strong><em>Beast Sovereign.</em></strong> The nue casts command, requiring no spell components and using Wisdom as the spellcasting ability (save DC 13). It must target a Beast, issuing the command telepathically.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Whistling Howl (Recharge 6).</em></strong> The nue lets out a howl. Each friendly creature within 30 feet of it that can hear the howl gains advantage on saving throws against the frightened condition for 1 minute. Each other creature within 30 feet of it that can hear the howl must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+            </ul>
+		</description>
+	</element>
+
+
+	<element name = "Aspect of Ashura" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ASPECT_OF_ASHURA">
+		<description>
+            <p>A favoured subject among poets and thespians across the realms is the tale of Ashura: the three-faced, six-armed demon god of destruction cast down from the heavens by the deities he offended. While the legend of Ashura might end there, his legacy and demonic power endure. Stories shared in hushed, fireside whispers tell of mighty Fiends that befoul the land—creatures echoing the form and power of the defeated demon god. On a path fueled by zealous passion and hate-driven vengeance, they cleave down everything in their way. The original Ashura may be gone, but the aspects of Ashura carry his legacy into the mortal world.</p>
+            <p class = "indent"><strong>Fragment of Fury. </strong>Aeons ago, upon his defeat, Ashura was broken and scattered to different parts of the world, his power contained and fragmented. Over the centuries, however, like the creeping rust that shatters iron chains, time has weakened these seals, and aspects of Ashura have manifested across the realms. While a mere echo of the true Ashura, these creatures are deadly and cunning, inheriting fearsome magic, deadly battle prowess, and a burning wrath.</p>
+            <p class = "indent"><strong>Blood and Lust. </strong>Similar to the original Ashura, the aspects are creatures whose body and mind are set ablaze by the most intense emotions one could feel. Happiness is experienced as nothing less than dizzying ecstasy, anger as nothing less than blinding rage. When met in battle, there is no hope of mercy, surrender, or compromise, and only death can stop them.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fiend (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 157 (15d10 + 75)</li>
+				<li><strong>Speed</strong> 50ft.</li>
+				<li><strong>Proficiency Bonus</strong> +5</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>24 (+7)</td><td>20 (+5)</td><td>20 (+5)</td><td>18 (+4)</td><td>9 (-1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Dex +10, Wis +4, Cha +5</li>
+				<li><strong>Skills</strong> Arcana +7, Athletics +17, Perception +9</li>
+				<li><strong>Damage Resistances</strong> cold, fire; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, paralyzed, poisoned, stunned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 19</li>
+				<li><strong>Languages</strong> Abyssal, Common, telepathy 120ft.</li>
+				<li><strong>Challenge</strong> 13 (10,000 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Critical Wound.</em></strong> When the aspect hits a creature with six or more attack rolls on a single turn, that creature’s hit point maximum is reduced by 11 (1d8 + 7). This reduction can’t be undone by any means short of a wish spell.</li>
+                <p></p>
+				<li><strong><em>Reckless.</em></strong> At the start of its turn, the aspect can gain advantage on all melee weapon attack rolls until the start of its next turn, but attack rolls against it have advantage until then.</li>
+                <p></p>
+				<li><strong><em>Three Heads.</em></strong> The aspect can take up to three reactions per round, but only one per turn. It can’t use the same reaction option more than once each round.</li>
+                <p></p>
+				<li><strong><em>Legendary Resistance (3/Day).</em></strong> If the aspect fails a saving throw, it can choose to succeed instead.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The aspect makes six Longsword attacks.</li>
+                <p></p>
+				<li><strong><em>Bite.</em></strong> Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (1d6 + 7) piercing damage.</li>
+                <p></p>
+				<li><strong><em>Longsword.</em></strong> Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 11 (1d8 + 7) slashing damage.</li>
+                <p></p>
+				<li><strong><em>Ashura's Grasp.</em></strong> The aspect lets loose a burst of grasping conjuration magic, forcing one creature it can see within 300 feet of it to make a DC 18 Charisma saving throw. On a failed save, the target takes 65 (10d12) force damage and is teleported to an unoccupied space the aspect can see within 20 feet of the aspect. On a successful save, the target takes half as much damage and isn’t teleported.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Nip.</em></strong> When a creature ends its turn within 5 feet of the aspect, the aspect makes one Bite attack against that creature.</li>
+                <p></p>
+                <li><strong><em>Goad.</em></strong> When a creature the aspect can see misses an attack roll or fails an ability check or saving throw, the aspect hurls a magically infused insult at that creature. The target must succeed on a DC 18 Wisdom saving throw or use its reaction to move its speed toward the aspect. If a creature moves within 5 feet of the aspect in this way, it can make one melee weapon attack against the aspect as a part of its reaction.</li>
+                <p></p>
+                <li><strong><em>Spell Swallow.</em></strong> When a creature the aspect can see within 120 feet of it casts a spell, the aspect attempts to duplicate that magic for itself. The creature must make a DC 18 Charisma saving throw. On a failure, the spell is cast as usual, but the aspect also casts that same spell as a part of this reaction.</li>
+            </ul>
+		</description>
+	</element>
 </elements>
