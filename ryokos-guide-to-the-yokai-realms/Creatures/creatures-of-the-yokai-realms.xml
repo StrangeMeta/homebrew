@@ -611,7 +611,7 @@
             <p class = "indent"><strong>Deadly Scavenger. </strong>Kamaitachi prefer to scavenge food, sneaking close to settlements and pilfering what they can under the cover of darkness. If forced to hunt, they tend to ambush prey, striking swiftly for a surgical, clean kill. Though aggressive and dangerous in battle, kamaitachi are not malicious and rarely strike without reason or provocation.</p>
             <p class = "indent"><strong>Reactive Power. </strong>The kamaitachi’s most unusual power is its ability to harness the strength of those it fights. When threatened by a powerful predator, the yokai becomes a devastating flurry of blades, intimidating the foe with its lacerating performance before dashing away as a whirlwind of fur and strikes. The greater the threat, the more deadly the kamaitachi becomes; even the boldest adventurers and mightiest monsters treat kamaitachi with respect.</p>
             <p></p>
-			<p style = "margin-bottom:-5px"><em>Small Fey (Yokai), Chaotic Neitral</em></p>
+			<p style = "margin-bottom:-5px"><em>Small Fey (Yokai), Chaotic Neutral</em></p>
 			<h4 style = "margin-top:5px" />
 			<ul class = "unstyled">
 				<li><strong>Armor Class</strong> 14 (natural armour)</li>
@@ -1067,6 +1067,144 @@
             <h4 style = "margin-top:10px">Bonus Actions</h4>
             <ul class = "unstyled">
                 <li><strong><em>Whistling Howl (Recharge 6).</em></strong> The nue lets out a howl. Each friendly creature within 30 feet of it that can hear the howl gains advantage on saving throws against the frightened condition for 1 minute. Each other creature within 30 feet of it that can hear the howl must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Ancient Nue" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ANCIENT_NUE">
+		<description>
+            <p>An eerie, whistling call, like that of a white thrush, is a warning that man, beast, and yokai alike have long learned to fear. It is the call of the nue, a chimeric yokai with the skull of a monkey, the body of a tiger, and a tail that morphs into a venomous serpent. Rumoured to be the first true yokai, it is an ancient sovereign of beasts and an omen of disaster and dread. Sowing chaos wherever it roams, the nue’s ferocity and unpredictable magic represent the last remnant of a forgotten, untamed world.</p>
+            <p class = "indent"><strong>Nue's Curse. </strong>The nue is notorious for its disaster field—a chaotic, magical aura that inflicts misfortune upon all within its proximity. This power is intertwined with the nue’s mythology, with many stories reciting how its appearance coincided with great tragedy and cataclysm. Some folktales speak of the nue’s curse targeting specific individuals, rendering great warriors and emperors alike helplessly sick for nights on end until either they or the nue are killed.</p>
+            <p class = "indent"><strong>Nueko. </strong>Nue have litters of three to five young every century, and the birth of these young, called nueko, are significant spiritual moments. While carrying neuko, mother nue are dangerously aggressive and powerful, their disaster fields growing so potent that they disrupt the weather, generating thick, black clouds that plunge acres of land into perpetual darkness and misfortune. Nueko are highly valued by spellcasters, their gentler nature, charming appearance, and innate intelligence making them prized familiars. Unlike the nue, who’s chimeric body serves a singular, lethal purpose, a neuko’s head and tail are independent, often play-fighting with one another and competing for food. Only after a nueko grows into a nue across the first decade of its life do its simian head and serpent tail synchronise into a single mind.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 18 (natural armour)</li>
+				<li><strong>Hit Points</strong> 189 (18d10 + 90)</li>
+				<li><strong>Speed</strong> 60ft., climb 60ft., fly 40ft.</li>
+				<li><strong>Proficiency Bonus</strong> +4</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>22 (+6)</td><td>20 (+5)</td><td>21 (+5)</td><td>7 (-2)</td><td>16 (+3)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Perception +11, Stealth +9</li>
+                <li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from nonmagical attacks</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> poisoned</li>
+				<li><strong>Senses</strong> darkvision 120ft., passive Perception 21</li>
+				<li><strong>Languages</strong> telepathy 120ft. (Beasts only)</li>
+				<li><strong>Challenge</strong> 10 (5,900 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Disaster Field.</em></strong> Other creatures within 10 feet of the nue must roll a d10 and subtract the number rolled from their ability checks and saving throws.</li>
+                <p></p>
+                <li><strong><em>Nue's Curse.</em></strong> A creature hit by three of the nue’s attacks in on turn must make a DC 15 Charisma saving throw. On a failed save, the target is cursed—its creature type becomes Beast, its Intelligence and Charisma scores fall to 5 if they weren’t already lower, and it can’t cast spells or speak. The creature can still identify friends and foes, attack, and use magic items. This curse lasts until the creature finishes a short or long rest, or until the nue choses to lift the curse (no action required) or dies.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The nue makes one Bite attack, one Claw attack, and one Tail attack. It can replace one of these attacks with a use of Beast Sovereign.</li>
+                <p></p>
+                <li><strong><em>Bite.</em></strong> Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) piercing damage plus 7 (2d6) poison damage. If the nue’s attack roll exceeds the target’s AC by 5 or more, the target is also poisoned until the end of its next turn.</li>
+                <p></p>
+				<li><strong><em>Claw.</em></strong> Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) slashing damage.</li>
+                <p></p>
+                <li><strong><em>Tail.</em></strong> Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 11 (2d4 + 6) piercing damage. If the target is poisoned, it takes an extra 33 (6d10) poison damage.</li>
+                <p></p>
+                <li><strong><em>Beast Sovereign (3/Day).</em></strong> The nue issues a telepathic command to up to three Beasts it can see within 60 feet of itself. Each target must succeed on a DC 15 Wisdom saving throw or be forced to use its action on its next turn to attack one creature of the nue’s choice.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Whistling Howl (Recharge 5-6).</em></strong> The nue lets out a howl. Each friendly creature within 60 feet of it that can hear the howl gains advantage on saving throws against the frightened condition for 1 minute. Each other creature within 60 feet of it that can hear the howl must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature that fails this saving throw by 5 or more and is frightened is also paralyzed until the start of its next turn. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Omukade Spawn" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_OMUKADE_SPAWN">
+		<description>
+            <p>In the depths of a green dragon’s lair, a group of adventurers stands paralysed in awe. Before them, the broken corpse of their draconic quarry lies lifeless, its rib cage crushed, its neck broken, and its body surrounded by mysterious, translucent eggs. As if in answer to their bewilderment, a chilling hiss reverberates from the darkness of the cavern. Chitinous scale by colossal, chitinous scale, an ōmukade unfurls its segmented, obsidian form, rising up over the tarnished metal trinkets of the late dragon’s horde. It looms over the trespassers with mandibles bared—mandibles stained green with the crimson ichor of a butchered dragon.</p>
+            <p class = "indent"><strong>Eater of Dragons. </strong>Many myths and folktales speak of dragons as apex predators: fearless masters of their domain, unmatched by any. These myths and folktales are wrong. The ōmukade are mighty, insectoid yokai who not only hold power comparable to dragons but harbour an insatiable desire to feast on draconic flesh. It is rumoured that the ōmukade were created by gods to balance the ego of dragonkind: a nightmare to remind them of their fragile mortality. Although their origin is shrouded in myth, the hatred of dragons is real and innate to all ōmukade—adults relentlessly seek draconic creatures to devour, laying eggs in a defeated dragon’s nest for their spawn to devour its wyrmlings.</p>
+            <p class = "indent"><strong>Anti-Draconic Measures. </strong>An ōmukade’s prowess against dragons doesn’t stem from sheer audacity and strength; its very body is designed to withstand and thrive in the face of everything a dragon can unleash. With chitinous armour able to absorb elemental energy and a mighty, constricting body to grapple prey and prevent flight, the ōmukade isan arsenal of anti-dragon attributes, putting even the mostrenowned dragon slayers to shame.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 16 (natural armour)</li>
+				<li><strong>Hit Points</strong> 58 (9d8 + 18)</li>
+				<li><strong>Speed</strong> 30ft., climb 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>17 (+3)</td><td>16 (+3)</td><td>14 (+2)</td><td>5 (-3)</td><td>10 (+0)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Dex +5, Con +4</li>
+				<li><strong>Damage Resistances</strong> acid, cold, fire, lightning, thunder</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 3 (700 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Reactive Growth.</em></strong> When the ōmukade spawn takes acid, cold, fire, lightning, or thunder damage, its size increases by one category if there is room (to a maximum of Huge). Each time this occurs, its weight is multiplied by eight, the reach of its Raptorial Stab attack increases by 5 feet, and its weapon attacks deal an extra 1d8 damage. This trait then can’t trigger again until the start of the ōmukade spawn’s next turn. When the ōmukade spawn finishes a long rest, it returns to its normal size and these benefits end.</li>
+                <p></p>
+				<li><strong><em>Crusher.</em></strong> A creature that starts its turn grappled by the ōmukade spawn takes 3 bludgeoning damage.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The ōmukade spawn makes two Raptorial Stab attacks.</li>
+                <p></p>
+				<li><strong><em>Raptorial Stab.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</li>
+                <p></p>
+				<li><strong><em>Constrict.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one creature smaller than the ōmukade spawn. Hit: 14 (2d10 + 3) bludgeoning damage and the target is grappled (escape DC 13) if the ōmukade isn’t already constricting a creature. The target is restrained until this grapple ends.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Omukade" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_OMUKADE">
+		<description>
+            <p>In the depths of a green dragon’s lair, a group of adventurers stands paralysed in awe. Before them, the broken corpse of their draconic quarry lies lifeless, its rib cage crushed, its neck broken, and its body surrounded by mysterious, translucent eggs. As if in answer to their bewilderment, a chilling hiss reverberates from the darkness of the cavern. Chitinous scale by colossal, chitinous scale, an ōmukade unfurls its segmented, obsidian form, rising up over the tarnished metal trinkets of the late dragon’s horde. It looms over the trespassers with mandibles bared—mandibles stained green with the crimson ichor of a butchered dragon.</p>
+            <p class = "indent"><strong>Eater of Dragons. </strong>Many myths and folktales speak of dragons as apex predators: fearless masters of their domain, unmatched by any. These myths and folktales are wrong. The ōmukade are mighty, insectoid yokai who not only hold power comparable to dragons but harbour an insatiable desire to feast on draconic flesh. It is rumoured that the ōmukade were created by gods to balance the ego of dragonkind: a nightmare to remind them of their fragile mortality. Although their origin is shrouded in myth, the hatred of dragons is real and innate to all ōmukade—adults relentlessly seek draconic creatures to devour, laying eggs in a defeated dragon’s nest for their spawn to devour its wyrmlings.</p>
+            <p class = "indent"><strong>Anti-Draconic Measures. </strong>An ōmukade’s prowess against dragons doesn’t stem from sheer audacity and strength; its very body is designed to withstand and thrive in the face of everything a dragon can unleash. With chitinous armour able to absorb elemental energy and a mighty, constricting body to grapple prey and prevent flight, the ōmukade isan arsenal of anti-dragon attributes, putting even the mostrenowned dragon slayers to shame.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Huge Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 21 (natural armour)</li>
+				<li><strong>Hit Points</strong> 187 (15d12 + 90)</li>
+				<li><strong>Speed</strong> 50ft., burrow 30ft., climb 50ft.</li>
+				<li><strong>Proficiency Bonus</strong> +5</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>24 (+7)</td><td>18 (+4)</td><td>22 (+6)</td><td>5 (-3)</td><td>10 (+0)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Dex +9, Con +11</li>
+				<li><strong>Damage Resistances</strong> acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks</li>
+				<li><strong>Senses</strong> darkvision 120ft., tremorsense 60ft., passive Perception 10</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 15 (13,000 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Reactive Growth.</em></strong> When the ōmukade takes acid, cold, fire, lightning, or thunder damage, its size increases by one category if there is room (to a maximum of Gargantuan). Each time this occurs, its weight is multiplied by eight, the reach of its Raptorial Stab attack increases by 5 feet, and its weapon attacks deal an extra 1d8 damage. This trait then can’t trigger again until the start of the ōmukade’s next turn. When the ōmukade finishes a long rest, it returns to its normal size and these benefits end.</li>
+                <p></p>
+				<li><strong><em>Crusher.</em></strong> . A creature that starts its turn grappled by the ōmukade takes 15 bludgeoning damage.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The ōmukade makes one Bite or Swallow attack and two Raptorial Stab attacks.</li>
+                <p></p>
+                <li><strong><em>Bite.</em></strong> Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage. If the target is a creature smaller than the ōmukade, it is grappled (escape DC 20). Until this grapple ends, the target is restrained and the ōmukade can’t use its Bite attack on another target.</li>
+                <p></p>
+				<li><strong><em>Constrict.</em></strong> Melee Weapon Attack: +12 to hit, reach 5 ft., one creature smaller than the ōmukade. Hit: 62 (10d10 + 7) bludgeoning damage and the target is grappled (escape DC 20). The target is also restrained until this grapple ends.</li>
+                <p></p>
+				<li><strong><em>Raptorial Stab.</em></strong> Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 20 (3d8 + 7) piercing damage.</li>
+                <p></p>
+                <li><strong><em>Swallow.</em></strong> Melee Weapon Attack: +12 to hit, reach 10 ft., one creature two or more sizes smaller than it that is grappled by the ōmukade. Hit: 25 (4d8 + 7) piercing damage. The creature is also swallowed, and the grapple ends. The swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the ōmukade, and it takes 28 (8d6) acid damage at the start of each of the ōmukade’s turns.</li>
+                <li class = "indent">If the ōmukade takes 30 damage or more on a single turn from a creature inside it, the ōmukade must succeed on a DC 26 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of it. If the ōmukade dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.</li>
             </ul>
 		</description>
 	</element>
