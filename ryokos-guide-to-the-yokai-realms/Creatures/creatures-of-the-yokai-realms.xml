@@ -1208,6 +1208,517 @@
             </ul>
 		</description>
 	</element>
+	<element name = "Onryo" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ONRYO">
+		<description>
+            <p>In the forsaken aftermath of a bloodied battlefield, a band of thieves ventures forth under cover of darkness, their aim fixed upon the arms and armour they can pluck from the rotting flesh of the recent dead. Their greed-fuelled euphoria fades abruptly, however, as a solitary silhouette emerges from the ruins, its shambling gait resonating with the steady clash of rusted steel. An onryō, awakened from its sepulcher, its hollow sockets burning with an otherworldly light, raises a blade to punish the fools who dare trespass upon its resting place.</p>
+            <p class = "indent"><strong>Fueled by Vengeance. </strong>When a strong-willed individual dies an untimely death with hatred lingering in their heart, they find a vicious calling beyond death as an onryō: a fearsome Undead warrior hellbent on vengeance. Some claim that only by appeasing their thirst for revenge can an onryō find solace. Nevertheless, many onryō arise from large conflicts, devoid of a singular focus upon which to exact their retribution and calm their raging spirit. As a result, most onryō still haunt the place of their demise, weapons drawn, standing over the rotting corpses they left behind, ready to add another to the pile.</p>
+            <p class = "indent"><strong>Warrior Scorned. </strong>. Despite their decrepit appearance, onryō retain the combat abilities they had in life—only more powerful, unfettered by the weaknesses of a mortal body. Knowing no pain, fear, or notion of surrender, a bloodthirsty onryō is an unrelenting force driven to endless battle by the fury that binds them beyond the grave.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Undead (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 16 (breastplate)</li>
+				<li><strong>Hit Points</strong> 44 (8d8 + 8)</li>
+				<li><strong>Speed</strong> 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>17 (+3)</td><td>16 (+3)</td><td>13 (+1)</td><td>9 (-1)</td><td>9 (-1)</td><td>16 (+3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Con +3, Cha +5</li>
+				<li><strong>Skills</strong> Stealth +5</li>
+				<li><strong>Damage Resistances</strong> acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> cold, necrotic, poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</li>
+				<li><strong>Senses</strong> darkvision 120ft., passive Perception 9</li>
+				<li><strong>Languages</strong> the languages it knew in life</li>
+				<li><strong>Challenge</strong> 3 (700 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Incorporeal Movement.</em></strong> The onryō can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</li>
+                <p></p>
+				<li><strong><em>Wrathful Undead.</em></strong> If the onryō takes damage that would reduce it to 0 hit points, it is reduced to 1 hit point instead. This trait doesn’t activate if the onryō has taken radiant damage since the start of its last turn. In addition, while the onryō has 1 hit point, a creature within 5 feet of it that damages it takes 2 (1d4) necrotic damage.</li>
+                <p></p>
+				<li><strong><em>Appeasement.</em></strong> At the start of the onryō’s turn, if it has 1 hit point and no non-Undead creature has attacked it since the start of its last turn, its soul calms. The onryō dissipates into motes of emerald light and vanishes from this world, its rusted armour falling to the ground, empty.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The onryō makes two attacks with any combination of Spirit Blade and Spirit Bow.</li>
+                <p></p>
+				<li><strong><em>Spirit Blade.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) necrotic damage. If the target isn’t an Undead, it must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A frightened creature can repeat this save at the end of each of its turns, ending the effect on a success.</li>
+                <p></p>
+				<li><strong><em>Spirit Bow.</em></strong> Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) necrotic damage.</li>
+                <p></p>
+				<li><strong><em>Soul Wrench (Recharge 6).</em></strong> The onryō lets loose a hateful blast of necrotic magic, attempting to rend the soul of a vulnerable creature. One frightened creature the onryō can see within 15 feet of it must succeed on a DC 13 Charisma saving throw or be reduced to 1 hit point.</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Mounted Onryo" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_MOUNTED_ONRYO">
+		<description>
+            <p>In the forsaken aftermath of a bloodied battlefield, a band of thieves ventures forth under cover of darkness, their aim fixed upon the arms and armour they can pluck from the rotting flesh of the recent dead. Their greed-fuelled euphoria fades abruptly, however, as a solitary silhouette emerges from the ruins, its shambling gait resonating with the steady clash of rusted steel. An onryō, awakened from its sepulcher, its hollow sockets burning with an otherworldly light, raises a blade to punish the fools who dare trespass upon its resting place.</p>
+            <p class = "indent"><strong>Fueled by Vengeance. </strong>When a strong-willed individual dies an untimely death with hatred lingering in their heart, they find a vicious calling beyond death as an onryō: a fearsome Undead warrior hellbent on vengeance. Some claim that only by appeasing their thirst for revenge can an onryō find solace. Nevertheless, many onryō arise from large conflicts, devoid of a singular focus upon which to exact their retribution and calm their raging spirit. As a result, most onryō still haunt the place of their demise, weapons drawn, standing over the rotting corpses they left behind, ready to add another to the pile.</p>
+            <p class = "indent"><strong>Warrior Scorned. </strong>. Despite their decrepit appearance, onryō retain the combat abilities they had in life—only more powerful, unfettered by the weaknesses of a mortal body. Knowing no pain, fear, or notion of surrender, a bloodthirsty onryō is an unrelenting force driven to endless battle by the fury that binds them beyond the grave.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Undead (Yokai), Lawful Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 16 (breastplate)</li>
+				<li><strong>Hit Points</strong> 78 (12d10 + 12)</li>
+				<li><strong>Speed</strong> 60ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>20 (+5)</td><td>16 (+3)</td><td>13 (+1)</td><td>9 (-1)</td><td>9 (-1)</td><td>16 (+3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Con +4, Cha +6</li>
+				<li><strong>Skills</strong> Stealth +6</li>
+				<li><strong>Damage Resistances</strong> acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> cold, necrotic, poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</li>
+				<li><strong>Senses</strong> darkvision 120ft., passive Perception 9</li>
+				<li><strong>Languages</strong> the languages it knew in life</li>
+				<li><strong>Challenge</strong> 5 (1,800 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Incorporeal Movement.</em></strong> The onryō can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</li>
+                <p></p>
+				<li><strong><em>Wrathful Undead.</em></strong> If the onryō takes damage that would reduce it to 0 hit points, it is reduced to 1 hit point instead. This trait doesn’t activate if the onryō has taken radiant damage since the start of its last turn. In addition, while the onryō has 1 hit point, a creature within 5 feet of it that damages it takes 2 (1d4) necrotic damage.</li>
+                <p></p>
+				<li><strong><em>Appeasement.</em></strong> At the start of the onryō’s turn, if it has 1 hit point and no non-Undead creature has attacked it since the start of its last turn, its soul calms. The onryō dissipates into motes of emerald light and vanishes from this world, its rusted armour falling to the ground, empty.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The onryō makes two attacks with any combination of Spirit Blade and Spirit Bow.</li>
+                <p></p>
+				<li><strong><em>Spirit Blade.</em></strong> Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) necrotic damage. If the target isn’t an Undead, it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat this save at the end of each of its turns, ending the effect on a success.</li>
+                <p></p>
+				<li><strong><em>Spirit Bow.</em></strong> Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) necrotic damage.</li>
+                <p></p>
+				<li><strong><em>Soul Wrench (Recharge 5-6).</em></strong> The onryō lets loose a hateful blast of necrotic magic, attempting to rend the soul of a vulnerable creature. One frightened creature the onryō can see within 15 feet of it must succeed on a DC 14 Charisma saving throw or be reduced to 1 hit point.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Ghastly Charge.</em></strong> The onryō moves up to 60 feet in a straight line without provoking opportunity attacks. Each creature it passes through in this way must succeed on a DC 14 Constitution saving throw or take 11 (2d10) cold damage.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Ryume" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_RYUME">
+		<description>
+            <p>Adorning the walls of monasteries, alongside fearsome depictions of gods and mighty heroes, are renderings of gentle equine creatures known as ryume. These celestial white dragon-horses, rumoured cousins of the legendary kirin, are often depicted soaring through the heavens, trailing dancing motes of light.</p>
+            <p class = "indent"><strong>Gifted Guardians. </strong>It is said that the ryume were the last of the great gifts imparted to the material world by the gods. They bore weary travellers and refugees on their backs, galloping over ocean and cloud to a land free from the ravages of war and kaiju. There they remained as distant protectors, untamed and proud, ensuring the wellbeing and tranquillity of those they saved.</p>
+            <p class = "indent"><strong>Peaceful Wanderers. </strong> Now, having outlived their mortal charges, the ryume wander the land, their elegant hooves careful never to trample even the smallest of innocent creatures. A feeling of peace, the touch of a gentle summer sun, and a voice as sweet as the ringing of silver bells accompany the breathtaking sight of this wandering yokai.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Celestial (Yokai), Lawful Good</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14 (natural armour)</li>
+				<li><strong>Hit Points</strong> 68 (8d10 + 24)</li>
+				<li><strong>Speed</strong> 40ft., fly 40ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>18 (+4)</td><td>16 (+3)</td><td>12 (+1)</td><td>16 (+3)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Perception +5</li>
+				<li><strong>Condition Immunities</strong> charmed, frightened</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 15</li>
+				<li><strong>Languages</strong> Celestial, Common, telepathy 30ft.</li>
+				<li><strong>Challenge</strong> 3 (700 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Blessed Steed.</em></strong> A creature mounted on a willing ryume gains a +1 bonus to AC and can add 1d4 to the first attack roll, ability check, or saving throw it makes on each turn.</li>
+                <p></p>
+				<li><strong><em>Merciful Enchantment.</em></strong> When the ryume would reduce a creature to 0 hit points with its Hooves or Divine Bolt attack, it can choose to reduce that creature to 1 hit point instead. If the ryume does so, that creature falls unconscious for 1 minute, or until another creature uses an action to shake it awake.</li>
+                <p></p>
+				<li><strong><em>Trampling Charge.</em></strong> When the ryume moves at least 20 feet straight toward a target and then hits it with its Hooves attack on the same turn, the target takes an extra 4 (1d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or fall prone.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The ryume makes two attacks with any combination of Hooves and Divine Bolt.</li>
+                <p></p>
+				<li><strong><em>Hooves.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.</li>
+                <p></p>
+				<li><strong><em>Divine Bolt.</em></strong> Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 8 (1d10 + 3) radiant damage, and if the target is a creature, the ryume gains temporary hit points equal to half the radiant damage dealt.</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Ryuto" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_RYUTO">
+		<description>
+            <p>Under a cold drizzle of rain, beneath the tender first rays of a silent, spring morning, pinpricks of coloured flame ignite one by one. They materialise over the mossy stones, unbound to fuel or form, buoyed gently on a delicate breeze. As the moments pass, the light sprites grow in number and vitality, dancing around one another and up into the sky. The rainfall intensifies, but the flames burn untroubled as they coalesce into the shape of the mighty behemoth that was once honoured at this shrine. A single, fiery being, formed of hundreds of tiny flame-like bodies, soars and spirals in the morning light, an homage to a long-forgotten kaiju whose power lingers in the sacred soil long after its rampage has ended.</p>
+            <p class = "indent"><strong>Presence of Power. </strong>Where kaiju can be found, so too can ryuto—a phenomenon observed across realms, from mountain shrine to vast ocean. These mysterious fire spirits congregate in places where a kaiju’s power can be felt. When many ryuto assemble in one place, they coalesce like droplets of water into a spectacular swarm of fire—a flaming form that mimics that of the kaiju who’s strength drew them there.</p>
+            <p class = "indent"><strong>Signs of Appeasement. </strong>Ryuto are often seen as an emotional mirror to kaiju, and are thus watched closely by villagers and adventurers alike. A serene night illuminated by their playful dance signifies tranquillity, while their agitated and erratic flight foretells impending catastrophe. Time and again, a well-known proverb rings true: “When the kaiju’s wrath is kept at bay, the ryuto will come to play.”.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Tiny Elemental (Yokai), Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 2 (1d4)</li>
+				<li><strong>Speed</strong> 0ft., fly 5ft. (hover)</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>3 (-4)</td><td>14 (+2)</td><td>10 (+0)</td><td>3 (-4)</td><td>13 (+1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+            	<li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> fire</li>
+				<li><strong>Condition Immunities</strong> exhaustion, grappled, prone, restrained</li>
+				<li><strong>Senses</strong> blindsight 30ft., passive Perception 11</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 0 (10 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Coalesce.</em></strong> When one hundred or more ryuto are gathered within a 50 foot cube, they immediately coalesce into a ryuto swarm.</li>
+                <p></p>
+				<li><strong><em>Glow.</em></strong> The ryuto sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Touch.</em></strong> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2 (1d4) fire damage.</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Ryuto (Dragon Swarm)" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_RYUTO_DRAGON_SWARM">
+		<description>
+            <p>Under a cold drizzle of rain, beneath the tender first rays of a silent, spring morning, pinpricks of coloured flame ignite one by one. They materialise over the mossy stones, unbound to fuel or form, buoyed gently on a delicate breeze. As the moments pass, the light sprites grow in number and vitality, dancing around one another and up into the sky. The rainfall intensifies, but the flames burn untroubled as they coalesce into the shape of the mighty behemoth that was once honoured at this shrine. A single, fiery being, formed of hundreds of tiny flame-like bodies, soars and spirals in the morning light, an homage to a long-forgotten kaiju whose power lingers in the sacred soil long after its rampage has ended.</p>
+            <p class = "indent"><strong>Presence of Power. </strong>Where kaiju can be found, so too can ryuto—a phenomenon observed across realms, from mountain shrine to vast ocean. These mysterious fire spirits congregate in places where a kaiju’s power can be felt. When many ryuto assemble in one place, they coalesce like droplets of water into a spectacular swarm of fire—a flaming form that mimics that of the kaiju who’s strength drew them there.</p>
+            <p class = "indent"><strong>Signs of Appeasement. </strong>Ryuto are often seen as an emotional mirror to kaiju, and are thus watched closely by villagers and adventurers alike. A serene night illuminated by their playful dance signifies tranquillity, while their agitated and erratic flight foretells impending catastrophe. Time and again, a well-known proverb rings true: “When the kaiju’s wrath is kept at bay, the ryuto will come to play.”.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Large Swarm of Tiny Elementals (Yokai), Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14</li>
+				<li><strong>Hit Points</strong> 57 (6d10 + 24)</li>
+				<li><strong>Speed</strong> 0ft., fly 30ft. (hover)</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>13 (+1)</td><td>18 (+4)</td><td>18 (+4)</td><td>3 (-4)</td><td>13 (+1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class = "unstyled">
+            	<li><strong>Damage Resistances</strong> cold; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> fire</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, grappled, paralysed, petrified, prone, restrained, stunned</li>
+				<li><strong>Senses</strong> blindsight 30ft., passive Perception 11</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 2 (450 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Flaming Glow.</em></strong> The swarm sheds bright light in a 60-foot radius and dim light for an additional 30 feet.</li>
+                <p></p>
+				<li><strong><em>Sparking.</em></strong> When the swarm has fewer than half of its hit points, its size is reduced to Medium, and its Fire Breath deals only 10 (3d6) fire damage. When the ryuto swarm has 10 or fewer hit points, its size is reduced to Small, and its Fire Breath deals only 7 (2d6) fire damage.</li>
+                <p></p>
+                <li><strong><em>Swarm. </em></strong> The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny ryuto. The swarm can’t regain hit points or gain temporary hit points.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Touch.</em></strong> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) fire damage.</li>
+                <p></p>
+                <li><strong><em>Fire Breath (Recharge 5-6). </em></strong> The swarm exhales a burning torrent of flame in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.</li>
+			</ul>
+		</description>
+	</element>
+	<element name = "Swarm of Tsukumogami" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_SWARM_OF_TSUKUMOGAMI">
+		<description>
+            <p>For many, pristine palaces of gleaming stone and resplendent glory are nothing compared to the charming, ramshackle homes of ordinary townsfolk. Each house has its unique quirks and charm, stacked side-by-side along winding city streets, brimming with life and character. Some yokai feel the same, seeking homes not in ornate statues or mighty trees, but in everyday, tattered objects—a perfect, cosy resting place. The lesser, playful yokai spirits who occupy such objects are the tsukumogami.</p>
+            <p class = "indent"><strong>A Playful Gang. </strong>Tsukumogami often gather for adventures of mischief and exploration. Under the cloak of twilight, a stray sandal, a crooked umbrella, and a shattered lantern might join forces for a night on the town. Despite being individually feeble spirits, the havock a swarm of possessed objects can cause while rampaging through a town is not to be underestimated. They enjoy “dancing” with humans, a terrifying experience for their unfortunate partner caught in a maelstrom of excitable footwear and umbrellas. Usually a victim is able to escape relatively unscathed, but those who cannot find themselves lifted bodily into the air and flown about town, the yokai confusing their passenger’s terrified shrieks for howls of delight. Generally, these victims are unceremoniously deposited atop a strangers roof when the swarm grows weary of them. Tsukumogami rarely attack other creatures unprovoked, but they are dangerous if threatened or frightened, and are best avoided if spotted at night.</p>
+            <p class = "indent"><strong>Hyakki Yahyro Harbinger. </strong>Swarms of tsukumogami are often seen in the days preceding the parade of one thousand demons—the infamous Hyakki Yagyo. This ancient, annual tradition is one that requires extensive preparation, and Humanoids know well to heed the excitable behaviour of tsukumogami as a warning of mightier spirits coming. During the parade, tsukumogami enjoy possessing instruments and forming large, musical swarms at the head of the pack. Their ruckus is legendary; tsukumogami are famously as enthusiastic as they are incompetent when it comes to creating music.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Swarm of Tiny Fey (Yokai), Chaotic Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14</li>
+				<li><strong>Hit Points</strong> 33 (6d8 + 6)</li>
+				<li><strong>Speed</strong> 30ft., fly 20ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>18 (+4)</td><td>12 (+1)</td><td>5 (-3)</td><td>12 (+1)</td><td>16 (+3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +4, Intimidation +5, Stealth +6</li>
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Condition Immunities</strong> charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 11</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Joyrider.</em></strong> The swarm’s speed isn’t reduced while dragging a creature it is grappling.</li>
+                <p></p>
+				<li><strong><em>Swarm.</em></strong> The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny tsukumogami. The swarm can’t regain hit points or gain temporary hit points.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Bombardment.</em></strong> Melee Weapon Attack: +6 to hit, reach 0 ft., one target in the swarm’s space. Hit: 9 (2d4 + 4) bludgeoning damage plus 4 (1d8) psychic damage.</li>
+                <p></p>
+				<li><strong><em>Spook.</em></strong> One creature occupying the swarm’s space must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Abduction.</em></strong> The swarm attempts to grapple one creature sharing its space. If the swarm has at least half of its hit points, it has advantage on its Strength (Athletics) check.</li>
+            </ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Mischievous Tactics.</em></strong> When a creature within 5 feet of the swarm misses it with an attack roll, the swarm can knock the creature prone.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Taki Reio" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_TAKI_REIO">
+		<description>
+            <p>A hulking, tusked demigod with vibrant blue skin strides through a flooding village. Unfazed by the tumultuous current and driving torrential rain, it seizes person and livestock alike, lifts them above the water, and bears them to safety atop its mighty shoulders. Even as the storm rages, the creature works tirelessly to save any being trapped by the rising water. With the village in desperate peril and its inhabitants resigned to their fate, a taki reiō has come to answer the prayers and pleas of those in need.</p>
+            <p class = "indent"><strong>Immovable Force. </strong>Often depicted in folktales and tapestries as standing motionless under a crushing waterfall, a taki reiō is as resolute as stone and indomitable as the river that splits the mountain in two. In battle, they are direct  and brutal, a stalwart combination of physical strength and water magic. Taki reiō are unwavering in their ideals and goals, and once moved to action, are as sure to accomplish their task as rain is to fall.</p>
+            <p class = "indent"><strong>Fragment of the Divine. </strong>There are multiple taki reiō across the world, and all share one origin. An ancient guardian deity, unshakable in his crusade against evil, fragmented himself and spread across the land. Each fragment took refuge under the waterfalls the god once held sacred, becoming taki reiō. With sword in hand, each immovable giant stands vigilant under their waterfall, awaiting any sign of evil they must rise to vanquish.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Huge Celestial Fiend (Yokai), Lawful Good</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 162 (13d12 + 78)</li>
+				<li><strong>Speed</strong> 50ft., swim 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +5</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>27 (+8)</td><td>14 (+2)</td><td>22 (+6)</td><td>12 (+1)</td><td>16 (+3)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Saving Throws</strong> Dex +7, Wis +8, Cha +6</li>
+				<li><strong>Skills</strong> Athletics +18, Perception +8</li>
+				<li><strong>Damage Resistances</strong> necrotic, radiant; bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> cold, poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, paralyzed, poisoned, stunned</li>
+				<li><strong>Senses</strong> darkvision 30ft., passive Perception 18</li>
+				<li><strong>Languages</strong> Celestial, Common, Sylvan</li>
+				<li><strong>Challenge</strong> 13 (10,000 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Brawler.</em></strong> The taki reiō is proficient with improvised weapons and can use a Medium or smaller creature it is grappling as an improvised weapon.</li>
+                <p></p>
+				<li><strong><em>Crushing Force.</em></strong> When the taki reiō hits a creature with three or more Grasp or Greatsword attacks on a single turn, the creature’s size is halved in all dimensions, and its weight is reduced to one-eighth of its current weight. This reduction decreases its size by one category—from Medium to Small, for example. The target also has disadvantage on Strength checks and Strength saving throws, and its weapons also shrink to match its new size. While its weapons are reduced, the target’s attacks with them deal 1d4 less damage (this can’t reduce the damage below 1). These changes last until the target finishes a short or long rest. If this trait would reduce a target’s size below Tiny, that creature dies instead, its body vanishing into nothingness, and it can’t be resurrected by any means short of the wish spell.</li>
+                <p></p>
+				<li><strong><em>Giant. </em></strong> The taki reiō can wield melee weapons with the Two-handed property in only one hand, and it ignores nonmagical difficult terrain.</li>
+                <p></p>
+				<li><strong><em>Legendary Resistance (3/Day).</em></strong> If the taki reiō fails a saving throw, it can choose to succeed instead.</li>
+                <p></p>
+                <li><strong><em>Magic Resistance. </em></strong> The taki reiō has advantage on saving throws against spells and other magical effects.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The taki reiō makes three attacks with any combination of Bludgeon, Grasp, and Greatsword.</li>
+                <p></p>
+				<li><strong><em>Bludgeon (Must be Grappling a Medium or Smaller Creature).</em></strong> Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 15 (2d6 + 8) bludgeoning damage, and the creature it is grappling takes the same damage.</li>
+                <p></p>
+				<li><strong><em>Grasp.</em></strong> Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 11 (1d6 + 8) bludgeoning damage, and if the taki reiō isn’t grappling a creature, the target must succeed on a DC 21 Strength or Dexterity saving throw (target’s choice) or be grappled (escape DC 21).</li>
+                <p></p>
+				<li><strong><em>Greatsword.</em></strong> Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</li>
+                <p></p>
+                <li><strong><em>Waterfall (Recharge 4-6). </em></strong> The taki reiō conjures a crushing cascade of water that falls in a 30-foot-tall cylinder with a 10-foot radius at a point it can see within 120 feet of itself. Each creature in the area must make a DC 19 Strength saving throw, taking 28 (8d6) bludgeoning damage and falling prone on a failed save, or taking half as much damage and not falling prone on a successful one.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Vengeance.</em></strong> When a creature within 15 feet of the taki reiō hits it with an attack roll, the taki reiō can make one Greatsword attack against that creature.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Ushi-Oni" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_USHI_ONI">
+		<description>
+            <p>Out amongst the rocky crags of the coast, hidden beneath the gnarled fangs of sea-blasted cliffs are a species of yokai feared for their aggression and cunning—ox-headed, spider-bodied demons: the ushi-oni. Well known to fisherman, pirates, and coastal communities, these savage yokai haunt the nightmares of any who live beside the waves.</p>
+            <p class = "indent"><strong>Macabre Mimicry. </strong>Despite their hulking, monstrous appearance, the ushi-oni is a creeping, stealthy hunter; its thick, rugged exoskeleton is perfectly coloured and textured to match its craggy home. Once coiled over, it is indistinguishable from a coastal boulder. They are also uncanny vocal mimics. Despite lacking the capacity to replicate the precise, delicate articulations needed for speech, ushi-oni are able to recreate the cries and wails of Humanoid adults and infants, hoping to lure foolhardy rescuers to them as an easy meal.</p>
+            <p class = "indent"><strong>Artificial Anchor. </strong>Beyond their talents in mimicry and camouflage, ushi-oni also exude a unique poison that seeps through the salty sea air, devastating nearby creatures. The poison itself isn’t directly fatal, but is a subtle and cruel paralysing agent that burrows into a victim’s body and saps its strength. A creature exposed to the poison will eventually fall, rooted in place by the overbearing, strangling weight of its own body—easy pickings for the savage yokai.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Huge Fiend (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 34 (4d12 + 8)</li>
+				<li><strong>Speed</strong> 30ft., climb 20ft., swim 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>19 (+4)</td><td>14 (+2)</td><td>14 (+2)</td><td>6 (-2)</td><td>11 (+0)</td><td>9 (-1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +6, Stealth +6</li>
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> poisoned</li>
+				<li><strong>Senses</strong> passive Perception 10</li>
+				<li><strong>Languages</strong> none (see Waling Mimicry)</li>
+				<li><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Poison of Aching Weight.</em></strong> When a creature ends its turn within 10 feet of the ushi-oni, the creature must succeed on a DC 12 Strength saving throw or have its Strength score reduced by 1d4. The target is stunned if this effect reduces its Strength to 0. The reduction lasts until the ushi-oni dies or the target finishes a short or long rest.</li>
+                <p></p>
+				<li><strong><em>Wailing Mimicry.</em></strong> The ushi-oni can replicate the distressed cries and wails of Humanoids. A creature that hears these sounds can tell they are imitations only with a successful DC 12 Wisdom (Insight) check.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Horn.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) piercing damage. If the target is a creature, it must also succeed on a DC 12 Strength saving throw or fall prone.</li>
+                <p></p>
+				<li><strong><em>Raptorial Slash.</em></strong> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Coil.</em></strong> The ushi-oni withdraws its legs and head beneath its hulking, stoney body. It gains a +5 bonus to its AC, has advantage on Constitution saving throws, and is indistinguishable from a large stone. While coiled in this way, the ushi-oni’s speed falls to 0 and cannot increase, it has disadvantage on Dexterity saving throws, and it cannot take any actions, other than using an action to uncoil itself.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Wanyudo" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_WANYUDO">
+		<description>
+            <p>Age-old stories tell that when the soul of a sinner flees after death, fearful of an afterlife of retribution and divine punishment, a fearsome yokai spirit is born to hunt them down. Echoing clacks of a speeding wheel on a dirt track, regular and thunderous as a racing heartbeat, reverberate through the night as the wanyudo hunts. Appearing as a wheel wreathed in hellfire, with a grimacing face at its centre, wanyudo are among the most ghastly yokai known—a bizarre and terrifying creature of incredible speed and demonic appetite.</p>
+            <p class = "indent"><strong>Wheel of Misfortune. </strong>Wanyudo have no need for physical sustenance; they replenish their frenzied energy by feasting on souls, snatching them from freshly killed Humanoids. They prefer to use their speed to scavenge kills from other creatures, but will hunt for victims themselves if necessary. They bolt over the long, winding tracks of the countryside, sprinting hell-for-leather in pursuit of solitary prey. Once a target is found, they strike swiftly and dart off, avoiding counter attacks as they steadily batter hapless victims to death in blitzing runs of flame.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fiend (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 15</li>
+				<li><strong>Hit Points</strong> 52 (8d8 + 16)</li>
+				<li><strong>Speed</strong> 60ft.</li>
+				<li><strong>Proficiency Bonus</strong> +5</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>20 (+5)</td><td>14 (+2)</td><td>9 (-1)</td><td>12 (+1)</td><td>16 (+3)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Athletics +8</li>
+				<li><strong>Damage Resistances</strong> fire</li>
+				<li><strong>Condition Immunities</strong> exhaustion, frightened</li>
+				<li><strong>Senses</strong> darkvision 120ft., passive Perception 11</li>
+				<li><strong>Languages</strong> Infernal</li>
+				<li><strong>Challenge</strong> 3 (700 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Battering Ram.</em></strong>  If the wanyudo moves at least 10 feet straight toward a target and then immediately hits it with a Slam attack, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must make a contested Strength (Athletics) check against the wanyudo, the loser of which falls prone.</li>
+                <p></p>
+				<li><strong><em>It's Wheely Fast.</em></strong> The wanyudo doesn’t provoke opportunity attacks when it moves out of an enemy’s reach.</li>
+                <p></p>
+				<li><strong><em>Ready to Roll.</em></strong> The wanyudo can stand up from prone using 5 feet of movement.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Slam.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Reactions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Hyper Dash.</em></strong> The wanyudo takes the Dash action, but falls prone at the end of its turn.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Yuki No Ko" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_YUKI_NO_KO">
+		<description>
+            <p>Amidst the howling winds of a deadly blizzard, a humanoid figure strides atop the snow, their steps as light and graceful as a leaf resting on water. Their skin and hair glisten with white, crackling frost. The landscape is marked with statues of once-living creatures—flash-frozen, encased, and preserved forever in ice, and yet the individual strides onward, unbothered by the climate or death that surrounds them. To the yuki no ko, the biting, icy chill is a gentle caress; what cold can bother a being who houses a piece of winter itself within?</p>
+            <p class = "indent"><strong>Frostbitten Legacy. </strong>The name yuki no ko refers not to one individual, but to a group of Elemental specialists who chose to isolate themselves in the coldest corners of the realm to hone their craft. They follow a path passed down to them by an ancient yuki onna, imbuing their ancestors with a shred of the snow yokai’s essence—the gift to endure and manipulate ice and snow. Whatever ties to kin or culture their forebears may once have had has long since been chiselled away by centuries of cold and darkness. With hearts icy to the tribulations of others and potent magic at their command, the once Humanoid yuki no ko are now winter yokai themselves.</p>
+            <p class = "indent"><strong>Snow Spirit's Legacy. </strong>Although the gift of the yuki onna is great—the yuki no ko are impervious to the extreme climate of permafrost—it comes at heavy price; anything above freezing temperature is nigh unbearable for them, with prolonged exposure to heat lethally dangerous. As a result, these Elemental warriors are seldom found beyond the mountain peaks and tundras they call home, making them a rare sight reserved for the boldest explorers or most isolated enkoh villagers. It is said that their very presence will bring about a blizzard, but in reality, yuki no ko are the ones chasing the snowstorm.</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Elemental (Yokai), Neutral</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14</li>
+				<li><strong>Hit Points</strong> 51 (6d8 + 24)</li>
+				<li><strong>Speed</strong> 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>18 (+4)</td><td>18 (+4)</td><td>10 (+0)</td><td>14 (+2)</td><td>18 (+4)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Stealth +6</li>
+				<li><strong>Damage Immunities</strong> cold, poison</li>
+				<li><strong>Condition Immunities</strong> exhaustion, poisoned</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 12</li>
+				<li><strong>Languages</strong> Common, Primordial</li>
+				<li><strong>Challenge</strong> 2 (4500 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Ice Lancer.</em></strong> The yuki no ko’s attacks ignore temporary hit points granted to a creature by the yuki no ko’s Armour of Ice action, striking the target’s hit points directly.</li>
+                <p></p>
+				<li><strong><em>Ice Walk.</em></strong> The yuki no ko can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra movement.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The yuki no ko makes two attacks with any combination of Glacial Slash and Ice Flash.</li>
+                <p></p>
+				<li><strong><em>Glacial Slash.</em></strong> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 3 (1d6) cold damage.</li>
+                <p></p>
+				<li><strong><em>Ice Flash.</em></strong> Ranged Spell Attack: +6 to hit, range 120 ft., one target. Hit: 9 (1d10 + 4) cold damage.</li>
+                <p></p>
+				<li><strong><em>Invoke Blizzard (Recharge 5-6).</em></strong> The yuki no ko magically conjures a frigid tempest around itself. Each creature within 30 feet of the yuki no ko must make a DC 14 Constitution saving throw, taking 13 (3d8) cold damage on a failed save, or half as much damage on a successful one. If a creature fails this save by 5 or more, it also gains 1 level of exhaustion.</li>
+                <p></p>
+                <li><strong><em>Armour of Ice.</em></strong> The yuki no ko forms freezing, icy armour around a creature it can see within 60 feet of itself. The creature can make a DC 14 Dexterity saving throw, avoiding being encased in the armour on a success. When armoured in ice, a creature gains 13 (3d8) temporary hit points and takes 13 (3d8) cold damage at the start of each of its turns. This cold damage ignores temporary hit points, damaging the target’s hit points directly. The armour is destroyed when these temporary hit points are depleted or the Yuki no Ko dies. A creature immune to cold damage bearing this armour also has a +1 bonus to its AC and saving throws.</li>
+            </ul>
+		</description>
+	</element>
+	<element name = "Yuki Onna Wraith" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_YUKI_ONNA_WRAITH">
+		<description>
+            <p>Well-travelled merchants and world-weary adventurers tell of a sinister spirit that makes its home amidst the freezing winds and eternal white of the mountain tops—a ghostly apparition that moves with unearthly grace, their silent steps leaving no imprint on the snow-covered land. While accounts of the encounter vary depending on the speaker, all share the common themes of dread and the chilling grasp of ice that saps all strength and hope. Even a whisper of the name yuki onna causes the breath behind the words to rise like white steam on a winter’s morning, and the mere mention of this creature is sufficient to send shivers down the spine of even the most battle-hardened warrior.</p>
+            <p class = "indent"><strong>Snow-fallen Influence. </strong>Once upon a time, the yuki onna was far less malevolent—a winter yokai that drifted peacefully across isolated, beautiful lands of velvet snow. They shared secrets with Humanoids who sought knowledge, and they protected enkoh and other creatures that found homes in their desolate lands. But alas, when a catastrophic event now lost to time brought an icy and painful death to the many innocent souls that shared their frigid home, the restless spirits of the frozen dead became intertwined with the snow yokai’s being. The horror and pain transformed the yuki onna, giving birth to a ghastly yokai wraith that wanders the land as a harbinger of ice-cold death and anguish.</p>
+            <p class = "indent"><strong>Cold Vengeance. </strong>After becoming infused with the restless souls of those who found an untimely, freezing demise, the yuki onna’s desires changed to reflect those of the dead. No longer concerned with merely watching over their domain, the wraith is now obsessed with seeking out any source of warmth and destroying it. All must give way to the cold and the dark. If the souls it carries were deprived of all warmth in their wretched death, why should others be allowed to have it?</p>
+            <p></p>
+			<p style = "margin-bottom:-5px"><em>Medium Fiend (Yokai), Chaotic Evil</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 14</li>
+				<li><strong>Hit Points</strong> 104 (16d8 + 32)</li>
+				<li><strong>Speed</strong> 30ft.</li>
+				<li><strong>Proficiency Bonus</strong> +3</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>15 (+2)</td><td>18 (+4)</td><td>14 (+2)</td><td>7 (-2)</td><td>18 (+4)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Perception +7</li>
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, and slashing from non-magical attacks</li>
+				<li><strong>Damage Immunities</strong> cold</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened</li>
+				<li><strong>Senses</strong> darkvision 60ft., passive Perception 17</li>
+				<li><strong>Languages</strong> Common, Primordial</li>
+				<li><strong>Challenge</strong> 8 (3,900 XP)</li>
+			</ul>
+			<h4 style = "margin-top:5px; margin-bottom:10px" />
+			<ul class = "unstyled">
+				<li><strong><em>Ice Lancer.</em></strong> The yuki onna’s attacks ignore temporary hit points granted to a creature by the yuki onna’s Ice Prison trait, striking at the target’s hit points directly.</li>
+                <p></p>
+				<li><strong><em>Ice Prison.</em></strong> When the yuki onna deals cold damage to a creature, that creature gains temporary hit points equal to the cold damage dealt, as foul magic encases the target in a layer of ice. While a creature has these temporary hit points, its speed is reduced by 10 feet, it has vulnerability to fire damage, and it can’t gain temporary hit points by any means other than this trait. Temporary hit points from this trait add together, and a creature can’t refuse to gain temporary hit points from this trait. If a creature has temporary hit points equal to or greater than half its hit point maximum from this feature, it is incapacitated and restrained as it becomes fully encased in ice. Creatures incapacitated in this way gain 1 point of exhaustion at the start of each of their turns.</li>
+                <p></p>
+				<li><strong><em>Ice Walk.</em></strong> The yuki onna can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra movement.</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The yuki onna makes two attacks with any combination of Necrotic Slash and Icy Wind.</li>
+                <p></p>
+				<li><strong><em>Necrotic Slash.</em></strong> Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) necrotic damage plus 10 (3d6) cold damage.</li>
+                <p></p>
+				<li><strong><em>Icy Wind.</em></strong> Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (2d12 + 4) cold damage, and if the target is a creature, it must succeed on a DC 15 Constitution saving throw or have disadvantage on attack rolls until the end of its next turn.</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Haunting Wail (1/Day).</em></strong> The yuki onna lets loose a haunting, echoing wail. Each other creature within 30 feet of it that can hear it must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature frightened in this way has vulnerability to cold damage. A creature can repeat this save at the end of each of its turns, ending the effect on itself on a success.</li>
+            </ul>
+		</description>
+	</element>
 
 
 	<element name = "Aspect of Ashura" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_ASPECT_OF_ASHURA">
