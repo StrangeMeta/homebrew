@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Circle of the Yokai, Druid subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version = "0.0.1">
+		<update version = "0.0.2">
 			<file name = "druid-yokai.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/druid-yokai.xml"/>
 		</update>
 	</info>
@@ -117,7 +117,7 @@
             <p>Your yokai forms overflow with magic, fortifying your connection to the spirit realm. If you drop to 0 hit points while transformed into a yokai with your Wild Shape, you can use your reaction to instantly use Wild Shape again (expending a use as normal), and any remaining damage carries over to your new form. Once you use this reaction, you can’t do so again until you finish a short or long rest.</p>
             <p class = "indent">In addition, while transformed by your Wild Shape, if you use an action to cast a spell, you can use your bonus action on that turn to make one attack.</p>
         </description>
-        <sheet display = "true" usage = "1/short Rest">
+        <sheet display = "true" usage = "1/Short Rest">
             <description>Your yokai forms overflow with magic, fortifying your connection to the spirit realm. If you drop to 0 hit points while transformed into a yokai with your Wild Shape, you can use your reaction to instantly use Wild Shape again (expending a use as normal), and any remaining damage carries over to your new form. In addition, while transformed by your Wild Shape, if you use an action to cast a spell, you can use your bonus action on that turn to make one attack.</description>
         </sheet>
     </element>

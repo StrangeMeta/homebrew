@@ -1,0 +1,121 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<info>
+        <name>Skeletal Blade, Fighter subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version = "0.0.1">
+			<file name = "fighter-skeletal-blade.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/fighter-skeletal-blade.xml"/>
+		</update>
+	</info>
+
+	<element name = "Skeletal Blade" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_SKELETAL_BLADE">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p class = "flavour">“I saw one once in battle, a kaleidoscope of blinding white and crimson red. His body shifted on a whim, one moment a shield, then claws, then sprawling, skeletal wings. A one-man onslaught; a living weapon.”</p>
+            <p class = "right">Ryoko's Diary</p>
+            <p>Folklore tells of a caste of downtrodden serfs, forbidden to carry weapons, gifted the power to wield their own skeletons as lethal instruments of battle by a sympathetic yokai. With carapaces of dense bone and vicious, osseous claws bursting from their flesh, the serfs overthrew their masters, winning freedom and a bloodsoaked notoriety. Today, practitioners of this devastating technique are known as skeletal blades. Often finding work as mercenaries, bodyguards, and spies, they charge into battle clad in an ever-adapting armour of gleaming skeletal white.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_MALLEABLE_PHYSIQUE"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_SKELETAL_FORM"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_OSSEOUS_PRODIGY"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_SKELETAL_KNIGHT"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_ONE_WITH_NOTHING"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_LIVING_WEAPON"/>
+        </description>
+        <sheet display = "false">
+            <description>With carapaces of dense bone and vicious, osseous claws bursting from their flesh.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_MALLEABLE_PHYSIQUE" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_SKELETAL_FORM" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_OSSEOUS_PRODIGY" level = "7"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_SKELETAL_KNIGHT" level = "10"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_ONE_WITH_NOTHING" level = "15"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_LIVING_WEAPON" level = "18"/>
+        </rules>
+    </element>
+    <element name = "Malleable Physique" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_MALLEABLE_PHYSIQUE">
+        <description>
+            <p>You have the power to manipulate your skeleton, shifting your proportions, height, and appearance. As an action, you can alter your form, becoming up to 1 foot taller or shorter and changing your facial features by altering the shape of your skull.</p>
+            <p class = "indent">You must remain in a form that has the same basic arrangement of limbs, and you can’t change the colour of your eyes, hair, or skin. Otherwise, the extent of the transformation is up to you.</p>
+            <p class = "indent">To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check (DC equals 8 + your Constitution modifier + your proficiency bonus).</p>
+            <p class = "indent">This transformation persists until you use your action to end it or until you begin a long rest. You can use this feature a number of times equal to your Constitution modifier (minimum of once), regaining all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet display = "true" usage = "{{malleable physique:usage}}/Long Rest">
+            <description>You have the power to manipulate your skeleton, shifting your proportions, height, and appearance. As an action, you can alter your form, becoming up to 1 foot taller or shorter and changing your facial features by altering the shape of your skull. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check (DC equals {{malleable physique:dc}}). This transformation persists until you use your action to end it or until you begin a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name = "malleable physique:usage" value = "1" bonus = "base"/>
+            <stat name = "malleable physique:usage" value = "constitution:modifier" bonus = "base"/>
+
+            <stat name = "malleable physique:dc" value = "8"/>
+            <stat name = "malleable physique:dc" value = "proficiency"/>
+            <stat name = "malleable physique:dc" value = "constitution:modifier"/>
+        </rules>
+    </element>
+    <element name = "Skeletal Form" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_SKELETAL_FORM">
+        <description>
+            <p>The control you wield over your own skeleton allows you to harness it as a weapon. As a bonus action, you can extrude your bones through your flesh to form armour, entering a Skeletal Form for 1 minute. You can end this form early as a bonus action, returning to normal.</p>
+            <p class = "indent">Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+            <p class = "indent">While in your Skeletal Form, you gain a +1 bonus to AC and one other benefit of your choice from the list below.</p>
+            <ul>
+                <li>Your reach increases by 5 feet.</li>
+                <li>Your unarmed strikes are considered magical and deal piercing damage equal to 1d8 plus your Strength modifier instead of the bludgeoning damage usual for an unarmed strike.</li>
+                <li>Your walking speed increases by 10 feet.</li>
+                <li>You gain a climbing speed equal to your walking speed.</li>
+                <li>You gain temporary hit points equal to your Constitution modifier at the start of each of your turns (minimum of 1).</li>
+            </ul>
+            <p class = "indent">As a bonus action while in your Skeletal Form, you can change your skeleton again, exchanging your current benefit for a new one.</p>
+            <p class = "indent">The bonus to your AC increases when you reach certain levels in this class: to +2 at 10th level and to +3 at 15th level.</p>
+        </description>
+        <sheet display = "true" usage = "1/Short Rest">
+            <description>The control you wield over your own skeleton allows you to harness it as a weapon. As a bonus action, you can extrude your bones through your flesh to form armour, entering a Skeletal Form for 1 minute. You can end this form early as a bonus action, returning to normal. While in your Skeletal Form, you gain a +{{skeletal form:ac}} bonus to AC and one other benefit of your choice from the list below (as a bonus action while in your Skeletal Form, you can change your skeleton again, exchanging your current benefit for a new one). Your reach increases by 5 feet. Your unarmed strikes are considered magical and deal piercing damage equal to 1d8 plus your Strength modifier instead of the bludgeoning damage usual for an unarmed strike. Your walking speed increases by 10 feet. You gain a climbing speed equal to your walking speed. You gain temporary hit points equal to {{skeletal form:hp}} at the start of each of your turns.</description>
+        </sheet>
+        <rules>
+            <stat name = "skeletal form:ac" value = "1"/>
+            <stat name = "skeletal form:ac" value = "1" level = "10"/>
+            <stat name = "skeletal form:ac" value = "1" level = "15"/>
+
+            <stat name = "skeletal form:hp" value = "1" bonus = "base"/>
+            <stat name = "skeletal form:hp" value = "constitution modifier" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Osseous Prodigy" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_OSSEOUS_PRODIGY">
+        <description>
+            <p>You have learned to reduce the fortifications of your external skeletal armour to enhance yourself in other ways. When you enter your Skeletal Form or use your bonus action to exchange a benefit, you can reduce the bonus to AC granted by that feature (to a minimum of +0) to gain a number of additional benefits listed in your Skeletal Form feature for the duration of your transformation equal to the AC bonus you sacrificed.</p>
+            <p class = "indent">Once you use this feature, you can’t do so again until you enter your Skeletal Form again.</p>
+        </description>
+        <sheet display = "true" usage = "1/Skeletal Form">
+            <description>You have learned to reduce the fortifications of your external skeletal armour to enhance yourself in other ways. When you enter your Skeletal Form or use your bonus action to exchange a benefit, you can reduce the bonus to AC granted by that feature (to a minimum of +0) to gain a number of additional benefits listed in your Skeletal Form feature for the duration of your transformation equal to the AC bonus you sacrificed.</description>
+        </sheet>
+    </element>
+    <element name = "Skeletal Knight" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_SKELETAL_KNIGHT">
+        <description>
+            <p>Your mastery of your skeleton allows you to focus it into more powerful forms. When you enter your Skeletal Form, you can choose one of the following additional benefits:</p>
+            <ul>
+                <li>You sprout skeletal wings and gain the ability to magically fly. You gain a flying speed equal to your walking speed, and you can hover.</li>
+                <li>You gain resistance to cold, lightning, necrotic, and poison damage.</li>
+                <li>When you hit with a melee attack, the attack deals an extra 1d8 necrotic damage.</li>
+                <li>When a creature starts its turn grappled by you, it takes 2d12 piercing damage.</li>
+            </ul>
+        </description>
+        <sheet display = "true">
+            <description>Your mastery of your skeleton allows you to focus it into more powerful forms. When you enter your Skeletal Form, you can choose one of the following additional benefits: You sprout skeletal wings and gain the ability to magically fly. You gain a flying speed equal to your walking speed, and you can hover. You gain resistance to cold, lightning, necrotic, and poison damage. When you hit with a melee attack, the attack deals an extra 1d8 necrotic damage. When a creature starts its turn grappled by you, it takes 2d12 piercing damage.</description>
+        </sheet>
+    </element>
+    <element name = "One With Nothing" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_ONE_WITH_NOTHING">
+        <description>
+            <p>Your skeleton is empowered with regenerative magic. If you are reduced to 0 hit points while in your Skeletal Form, your transformation ends, and you are reduced to 1 hit point instead.</p>
+            <p class = "indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet display = "true" usage = "1/Long Rest">
+            <description>Your skeleton is empowered with regenerative magic. If you are reduced to 0 hit points while in your Skeletal Form, your transformation ends, and you are reduced to 1 hit point instead.</description>
+        </sheet>
+    </element>
+    <element name = "Living Weapon" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_LIVING_WEAPON">
+        <description>
+            <p>When you enter your Skeletal Form, you gain two additional benefits for the duration of your transformation, which can be chosen from either the Skeletal Form or Skeletal Knight features.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you enter your Skeletal Form, you gain two additional benefits for the duration of your transformation, which can be chosen from either the Skeletal Form or Skeletal Knight features.</description>
+        </sheet>
+    </element>
+</elements>
