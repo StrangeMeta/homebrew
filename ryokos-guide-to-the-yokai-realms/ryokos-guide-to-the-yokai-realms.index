@@ -4,7 +4,7 @@
 		<name>Ryoko's Guide to the Yokai Realms</name>
 		<description>Content from the Ryoko's Guide to the Yokai Realms book by Loot Tavern.</description>
 		<author>Loot Tavern</author>
-		<update version = "0.0.14">
+		<update version = "0.0.15">
 			<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/ryokos-guide-to-the-yokai-realms.index"/>
 		</update>
 	</info>
