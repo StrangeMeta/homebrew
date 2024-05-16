@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Way of the Eight Gates, Monk subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version = "0.0.2">
+		<update version = "0.0.3">
 			<file name = "monk-eight-gates.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/monk-eight-gates.xml"/>
 		</update>
 	</info>
@@ -120,7 +120,7 @@
             <description>The Gate of Mind represents a monk’s consciousness expanding beyond their physical form. You can cast the telepathic bond spell, requiring no components.</description>
         </sheet>
     </element>
-    <element name = "Gate of Infinity" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_INFINITY">
+    <element name = "Gate of Infinity" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_INFINITY">
         <description>
             <p>You have reached total harmony within yourself. Your gates align and converge with your ki, opening the final gate: the Gate of Infinity.</p>
             <p class = "indent">As an action, you can spend 8 ki points to transcend to a state of apotheosis. You gain the following benefits for 1 minute:</p>
