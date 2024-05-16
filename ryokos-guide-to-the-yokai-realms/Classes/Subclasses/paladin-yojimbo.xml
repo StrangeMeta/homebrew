@@ -1,8 +1,8 @@
 <?xml version  =  "1.0" encoding  =  "utf-8"?>
 <elements>
 	<info>
-        <name>Oath of the Yojimbo, Monk subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version  =  "0.0.1">
+        <name>Oath of the Yojimbo, Paladin subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version  =  "0.0.2">
 			<file name  =  "paladin-yojimbo.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/paladin-yojimbo.xml"/>
 		</update>
 	</info>
