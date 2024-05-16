@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Skeletal Blade, Fighter subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version = "0.0.2">
+		<update version = "0.0.3">
 			<file name = "fighter-skeletal-blade.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/fighter-skeletal-blade.xml"/>
 		</update>
 	</info>
@@ -67,7 +67,11 @@
             <p class = "indent">The bonus to your AC increases when you reach certain levels in this class: to +2 at 10th level and to +3 at 15th level.</p>
         </description>
         <sheet display = "true" usage = "1/Short Rest">
-            <description>The control you wield over your own skeleton allows you to harness it as a weapon. As a bonus action, you can extrude your bones through your flesh to form armour, entering a Skeletal Form for 1 minute. You can end this form early as a bonus action, returning to normal. While in your Skeletal Form, you gain a +{{skeletal form:ac}} bonus to AC and one other benefit of your choice from the list below (as a bonus action while in your Skeletal Form, you can change your skeleton again, exchanging your current benefit for a new one). Your reach increases by 5 feet. Your unarmed strikes are considered magical and deal piercing damage equal to 1d8 plus your Strength modifier instead of the bludgeoning damage usual for an unarmed strike. Your walking speed increases by 10 feet. You gain a climbing speed equal to your walking speed. You gain temporary hit points equal to {{skeletal form:hp}} at the start of each of your turns.</description>
+            <description>The control you wield over your own skeleton allows you to harness it as a weapon. As a bonus action, you can extrude your bones through your flesh to form armour, entering a Skeletal Form for 1 minute. You can end this form early as a bonus action, returning to normal. While in your Skeletal Form, you gain a +{{skeletal form:ac}} bonus to AC and one other benefit of your choice from the list below (as a bonus action while in your Skeletal Form, you can change your skeleton again, exchanging your current benefit for a new one).
+            Your reach increases by 5 feet.
+            Your unarmed strikes are considered magical and deal piercing damage equal to 1d8 plus your Strength modifier instead of the bludgeoning damage usual for an unarmed strike.
+            Your walking speed increases by 10 feet. You gain a climbing speed equal to your walking speed.
+            You gain temporary hit points equal to {{skeletal form:hp}} at the start of each of your turns.</description>
         </sheet>
         <rules>
             <stat name = "skeletal form:ac" value = "1"/>
@@ -98,7 +102,11 @@
             </ul>
         </description>
         <sheet display = "true">
-            <description>Your mastery of your skeleton allows you to focus it into more powerful forms. When you enter your Skeletal Form, you can choose one of the following additional benefits: You sprout skeletal wings and gain the ability to magically fly. You gain a flying speed equal to your walking speed, and you can hover. You gain resistance to cold, lightning, necrotic, and poison damage. When you hit with a melee attack, the attack deals an extra 1d8 necrotic damage. When a creature starts its turn grappled by you, it takes 2d12 piercing damage.</description>
+            <description>Your mastery of your skeleton allows you to focus it into more powerful forms. When you enter your Skeletal Form, you can choose one of the following additional benefits:
+            You sprout skeletal wings and gain the ability to magically fly. You gain a flying speed equal to your walking speed, and you can hover.
+            You gain resistance to cold, lightning, necrotic, and poison damage.
+            When you hit with a melee attack, the attack deals an extra 1d8 necrotic damage.
+            When a creature starts its turn grappled by you, it takes 2d12 piercing damage.</description>
         </sheet>
     </element>
     <element name = "One With Nothing" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_ONE_WITH_NOTHING">
