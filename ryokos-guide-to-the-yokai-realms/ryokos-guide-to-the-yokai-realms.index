@@ -4,7 +4,7 @@
 		<name>Ryoko's Guide to the Yokai Realms</name>
 		<description>Content from the Ryoko's Guide to the Yokai Realms book by Loot Tavern.</description>
 		<author>Loot Tavern</author>
-		<update version = "0.0.16">
+		<update version = "0.0.17">
 			<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/ryokos-guide-to-the-yokai-realms.index"/>
 		</update>
 	</info>
@@ -38,7 +38,7 @@
 		<file name = "druid-yokai.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/druid-yokai.xml"/>
 		<file name = "fighter-skeletal-blade.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/fighter-skeletal-blade.xml"/>
 		<file name = "monk-eight-gates.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/monk-eight-gates.xml"/>
-		<!-- <file name = "paladin-yojimbo.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/paladin-yojimbo.xml"/> -->
+		<file name = "paladin-yojimbo.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/paladin-yojimbo.xml"/>
 		<!-- <file name = "ranger-ronin.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/ranger-ronin.xml"/> -->
 		<!-- <file name = "rogue-tamaya.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/rogue-tamaya.xml"/> -->
 		<!-- <file name = "sorcerer-spirit-caller.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/sorcerer-spirit-caller.xml"/> -->
