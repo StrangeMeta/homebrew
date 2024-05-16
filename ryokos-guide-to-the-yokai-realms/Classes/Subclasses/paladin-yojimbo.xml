@@ -1,0 +1,136 @@
+<?xml version  =  "1.0" encoding  =  "utf-8"?>
+<elements>
+	<info>
+        <name>Oath of the Yojimbo, Monk subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version  =  "0.0.1">
+			<file name  =  "paladin-yojimbo.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/paladin-yojimbo.xml"/>
+		</update>
+	</info>
+
+	<element name = "Oath of the Yojimbo" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_PALADIN_OATH_OF_THE_YOJIMBO">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p class  =  "flavour">“I don’t know the end to my story, but I can promise that you’ll live to see it."</p>
+            <p>Yojimbo are sworn to protect those to whom they dedicate their service, be it an individual, a group, or an entire nation. Though Yojimbo typically pledge their allegiance to a charge and accompany them until death, a defenceless soul might find the raking claws of a dodomeki halted inches from their face by the serendipitous intervention of a wandering Yojimbo paladin. These roaming saviours traverse the realms on an unrelenting quest to shield those who can’t protect themselves. Despite being in high demand—unshakeable loyalty is a coveted virtue—Yojimbo rarely pledge themselves to the wealthy or powerful. It’s said that a true Yojimbo has the value of ten sellswords in battle, and ten-thousand sellswords in spirit.</p>
+            <h5 class  =  "caption">TENETS OF THE YOJIMBO</h5>
+            <p>The tenets of the Oath of the Yojimbo are unflinchingly resolute. They do not change or vary, no matter who a paladin pledges to protect.</p>
+			<p class = "indent"><b><i>Protection.</i></b> Be a shield to those who lack a shield of their own. Be the weapon that meets the blade of those who would slaughter the weaponless.</p>
+			<p class = "indent"><b><i>Strength.</i></b> Grow strong, for the sake of those who cannot. To shelter the vulnerable, one must have the power to hold back the storm.</p>
+			<p class = "indent"><b><i>Inspiration.</i></b> Nurture the weak. Do not merely preserve the vulnerable; raise them up to be strong, so they might in turn protect others.</p>
+			<p class = "indent"><b><i>Self-Sacrifice.</i></b> Wager everything for the safety of those who cannot fight. Nothing less is acceptable in the defence against tyranny.</p>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_OATH_SPELLS" />
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY" />
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_AURA_OF_SANCTUARY" />
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_TRUE_GUARDIAN" />
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_ULTIMATE_PROTECTOR" />
+		</description>
+		<sheet display = "false">
+			<description>Yojimbo are sworn to protect those to whom they dedicate their service.</description>
+		</sheet>
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_OATH_SPELLS" level = "3" />
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY" level = "3" />
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_AURA_OF_SANCTUARY" level = "7" />
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_TRUE_GUARDIAN" level = "15" />
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_ULTIMATE_PROTECTOR" level = "20" />
+		</rules>
+	</element>
+
+	<element name = "Oath Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed in the Oath of the Yojimbo Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+			<h5 class = "caption">OATH OF THE YOJIMBO SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>heroism, sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>warding bond, skin of stone</em></td></tr>
+				<tr><td>9th</td><td><em>spirit guardians, switcheroo</em></td></tr>
+				<tr><td>13th</td><td><em>death ward, skin of steel</em></td></tr>
+				<tr><td>17th</td><td><em>Bakuryo's blessed blizzard, wall of force</em></td></tr>
+			</table>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<grant type = "Spell" id = "ID_PHB_SPELL_HEROISM" level = "3" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_PHB_SPELL_SANCTUARY" level = "3" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_PHB_SPELL_WARDING_BOND" level = "5" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE_BIOMANCY" level = "5" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_PHB_SPELL_SPIRIT_GUARDIANS" level = "9" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SWITCHEROO" level = "9" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_PHB_SPELL_DEATH_WARD" level = "13" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL_BIOMANCY" level = "13" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_RGTTYR_SPELL_BAKURYOS_BLESSES_BLIZZARD" level = "17" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_PHB_SPELL_WALL_OF_FORCE" level = "17" spellcasting = "Paladin" prepared = "true" />
+		</rules>
+	</element>
+	<element name = "Channel Divinity" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class = "indent"><b><i>Holy Ward.</i></b> You can use your Channel Divinity to perform a 1-minute divine ritual of protection, dedicating yourself to the service of a willing creature that stays within 30 feet of you during the entire ritual. The target becomes your ward for the next 24 hours, until you use this feature again, or until it dies. For the duration, your ward is immune to the frightened condition while you are conscious and within 60 feet of it. In addition, when your ward hits an enemy you can see with a weapon attack while within 60 feet of you, you can use a reaction and expend one spell slot to cause the attack to deal extra radiant damage to the target. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8.</p>
+			<p class = "indent"><b><i>Guardian's Intervention.</i></b> As a reaction, you can use your Channel Divinity to reduce the damage dealt by an attack to a creature you can see within 30 feet of you. When you do so, the damage the creature takes is reduced by a number of d10s equal to half your paladin level. If this feature reduces that damage to 0, the creature you protected can immediately use its reaction to make one weapon attack against the creature that attacked it.</p>
+		</description>
+		<sheet display = "false" />
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY_HOLY_WARD" />
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY_GUARDIANS_INTERVENTION" />
+		</rules>
+	</element>
+	<element name = "Channel Divinity: Holy Ward" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY_HOLY_WARD">
+		<description>
+			<p>You can use your Channel Divinity to perform a 1-minute divine ritual of protection, dedicating yourself to the service of a willing creature that stays within 30 feet of you during the entire ritual. The target becomes your ward for the next 24 hours, until you use this feature again, or until it dies. For the duration, your ward is immune to the frightened condition while you are conscious and within 60 feet of it. In addition, when your ward hits an enemy you can see with a weapon attack while within 60 feet of you, you can use a reaction and expend one spell slot to cause the attack to deal extra radiant damage to the target. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8.</p>
+		</description>
+		<sheet alt = "Holy Ward" action = "Action" usage = "Channel Divinity">
+			<description>You can perform a 1-minute divine ritual of protection, dedicating yourself to the service of a willing creature that stays within 30 feet of you during the entire ritual. The target becomes your ward for the next 24 hours, until you use this feature again, or until it dies. For the duration, your ward is immune to the frightened condition while you are conscious and within 60 feet of it. In addition, when your ward hits an enemy you can see with a weapon attack while within 60 feet of you, you can use a reaction and expend one spell slot to cause the attack to deal extra radiant damage to the target. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8.</description>
+		</sheet>
+	</element>
+	<element name = "Channel Divinity: Guardian's Intervention" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_CHANNEL_DIVINITY_GUARDIANS_INTERVENTION">
+		<description>
+			<p>As a reaction, you can use your Channel Divinity to reduce the damage dealt by an attack to a creature you can see within 30 feet of you. When you do so, the damage the creature takes is reduced by a number of d10s equal to half your paladin level. If this feature reduces that damage to 0, the creature you protected can immediately use its reaction to make one weapon attack against the creature that attacked it.</p>
+		</description>
+		<sheet alt = "Guardian's Intervention" action = "Action" usage = "Channel Divinity">
+			<description>As a reaction, you can reduce the damage dealt by an attack to a creature you can see within 30 feet of you. When you do so, the damage the creature takes is reduced by {{level:paladin:half}}d10. If this feature reduces that damage to 0, the creature you protected can immediately use its reaction to make one weapon attack against the creature that attacked it.</description>
+		</sheet>
+	</element>
+	<element name = "Aura of Sanctuary" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_AURA_OF_SANCTUARY">
+		<description>
+			<p>Your divine power flows out from you. When an ally within 10 feet of you becomes the target of a melee attack, you can use your reaction to move up to your speed towards the attacker. If you end your movement within 5 feet of the attacker, you force it to target you with the attack instead.</p>
+			<p class = "indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When an ally within {{aura of sanctuary:range}} feet of you becomes the target of a melee attack, you can use your reaction to move up to your speed towards the attacker. If you end your movement within 5 feet of the attacker, you force it to target you with the attack instead.</description>
+		</sheet>
+		<rules>
+			<stat name = "aura of sanctuary:range" value = "10" bonus = "base"/>
+			<stat name = "aura of sanctuary:range" value = "30" level = "18" bonus = "base"/>
+		</rules>
+	</element>
+	<element name = "True Guardian" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_TRUE_GUARDIAN">
+		<description>
+			<p>You are a master at providing aid in battle. You can take the Help action or use your Lay on Hands feature as a bonus action. In addition, when you take the Help action, the creature you helped can add your Charisma modifier to the next attack roll or ability check it makes within the next minute.</p>
+		</description>
+		<sheet>
+			<description>You can take the Help action or use your Lay on Hands feature as a bonus action. In addition, when you take the Help action, the creature you helped can add {{charisma:modifier}} to the next attack roll or ability check it makes within the next minute.</description>
+		</sheet>
+	</element>
+	<element name = "Ultimate Protector" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_OATH_OF_THE_YOJIMBO_ULTIMATE_PROTECTOR">
+		<description>
+			<p>You can harness extraordinary defensive power to protect those around you. As an action, you become an avatar of protection, gaining the following benefits for 1 minute or until you are incapacitated:</p>
+			<ul>
+                <li>Creatures of your choice other than yourself that are within 10 feet of you have a +3 bonus to AC.</li>
+                <li>If the creature you have designated as your ward with your Holy Ward feature falls to 0 hit points while within 60 feet of you, you can use your reaction to cause it to fall to 1 hit point instead.</li>
+                <li>Your melee weapon attacks deal an extra 2d8 radiant damage while your ward is within 60 feet of you.</li>
+                <li>You can use your Guardian’s Intervention feature without expending a use of your Channel Divinity.</li>
+            </ul>
+            <p class = "indent">Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+		</description>
+		<sheet usage = "1/Long Rest, or a 5th level spell slot" action = "Action">
+			<description>You can harness extraordinary defensive power to protect those around you. As an action, you become an avatar of protection, gaining the following benefits for 1 minute or until you are incapacitated:
+            Creatures of your choice other than yourself that are within 10 feet of you have a +3 bonus to AC.
+            If the creature you have designated as your ward with your Holy Ward feature falls to 0 hit points while within 60 feet of you, you can use your reaction to cause it to fall to 1 hit point instead.
+            Your melee weapon attacks deal an extra 2d8 radiant damage while your ward is within 60 feet of you.
+            You can use your Guardian’s Intervention feature without expending a use of your Channel Divinity.</description>
+		</sheet>
+	</element>
+</elements>
