@@ -1,0 +1,138 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<info>
+        <name>Way of the Eight Gates, Monk subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version = "0.0.1">
+			<file name = "monk-eight-gates.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/monk-eight-gates.xml"/>
+		</update>
+	</info>
+
+	<element name = "Way of the Eight Gates" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_WAY_OF_THE_EIGHT_GATES">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p class = "flavour">Your mistake was confusing my tranquillity for pacifism. The difference between the two is a painful lesson indeed.</p>
+            <p>Monks of this order strive for meaning and perfection through mastery of the Eight Gates, internal loci of spiralling energy through which ki is channelled. By way of personal contemplation and intense training, each gate can be opened in turn, and once brought into harmony, allow for a stronger channel of ki and the ability to push one’s body beyond mortal limitation. Those who follow the Way of the Eight Gates might be hermits, retreating from the chaos of the wider world and to a place of contemplative isolation. Others may be wanderers, embracing and celebrating all experiences, believing this is to be the path to internal harmony. In any case, monks who walk this path shirk organised religious and spiritual practices, preferring to carve their own path of potential, freedom, and growth.</p>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_EARTH"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_WATER"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_AIR"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_FLAME"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_PRESENCE"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_SPIRIT"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_MIND"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_INFINITY"/>
+        </description>
+        <sheet display = "false">
+            <description>Monks of this order strive for meaning and perfection through mastery of the Eight Gates.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_EARTH" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_WATER" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_AIR" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_FLAME" level = "6"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_PRESENCE" level = "6"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_SPIRIT" level = "11"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_MIND" level = "11"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_INFINITY" level = "17"/>
+        </rules>
+    </element>
+    <element name = "Gate of Earth" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_EARTH">
+        <description>
+            <p>The Gate of Earth reflects a being’s strong physical and spiritual foundation. Your ki grounds your centre, fortifying your body. When you use your Patient Defense or Step of the Wind, you gain temporary hit points equal to your proficiency bonus + your Wisdom modifier (minimum of 1).</p>
+        </description>
+        <sheet display = "true">
+            <description>The Gate of Earth reflects a being’s strong physical and spiritual foundation. Your ki grounds your centre, fortifying your body. When you use your Patient Defense or Step of the Wind, you gain temporary hit points equal to {{gate:earth:hp}}.</description>
+        </sheet>
+        <rules>
+            <stat name = "gate:earth:hp" value = "proficiency"/>
+            <stat name = "gate:earth:hp" value = "gate:earth:hp:modifier"/>
+
+            <stat name = "gate:earth:hp:modifier" value = "1" bonus = "base"/>
+            <stat name = "gate:earth:hp:modifier" value = "wisdom:modifier" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Gate of Water" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_WATER">
+        <description>
+            <p>The Gate of Water reflects a being’s natural ebb and flow of ki through the open gates. You have an additional number of ki points equal to your Wisdom modifier (minimum of 1).</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <stat name = "ki:points" value = "gate:water:ki points"/>
+
+            <stat name = "gate:water:ki points" value = "1" bonus = "base"/>
+            <stat name = "gate:water:ki points" value = "wisdom:modifier" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Gate of Air" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_AIR">
+        <description>
+            <p>The Gate of Air reflects a being’s connection to the external world and all living things therein. You gain proficiency in the Animal Handling and Insight skills.</p>
+        </description>
+        <sheet display = "false"/>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_INSIGHT"/>
+        </rules>
+    </element>
+    <element name = "Gate of Flame" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_FLAME">
+        <description>
+            <p>The Gate of Flame reflects a monk’s blistering power and speed, an internal pool of coiling, frenetic energy. When you use your Flurry of Blows, you can make one additional unarmed strike as a part of that same bonus action. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet display = "true" usage = "{{proficiency}}/Long Rest">
+            <description>The Gate of Flame reflects a monk’s blistering power and speed, an internal pool of coiling, frenetic energy. When you use your Flurry of Blows, you can make one additional unarmed strike as a part of that same bonus action.</description>
+        </sheet>
+    </element>
+    <element name = "Gate of Presence" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_PRESENCE">
+        <description>
+            <p>The Gate of Presence reflects a being’s voice, social wellness, and confidence. Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</p>
+        </description>
+        <sheet display = "true">
+            <description>The Gate of Presence reflects a being’s voice, social wellness, and confidence. Whenever you make a Charisma check, you gain a +{{gate:presence:modifier}} bonus to the check.</description>
+        </sheet>
+        <rules>
+            <stat name = "gate:presence:modifier" value = "1" bonus = "base"/>
+            <stat name = "gate:presence:modifier" value = "wisdom:modifier" bonus = "base"/>
+            
+			<stat name = "deception:misc" value = "gate:presence:modifier"/>
+			<stat name = "intimidation:misc" value = "gate:presence:modifier"/>
+			<stat name = "performance:misc" value = "gate:presence:modifier"/>
+			<stat name = "persuasion:misc" value = "gate:presence:modifier"/>
+        </rules>
+    </element>
+    <element name = "Gate of Spirit" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_SPIRIT">
+        <description>
+            <p>The Gate of Spirit represents a being’s ki flowing beyond their physical form; you have the power to share your ki with those around you. As a bonus action, you can touch one willing creature and expend 2 ki points. That creature gains temporary hit points equal to your proficiency bonus + your Wisdom modifier (minimum of 1), and it can immediately use its reaction to make a single weapon attack, take the Dodge action, or move up to its speed without provoking opportunity attacks.</p>
+        </description>
+        <sheet display = "true">
+            <description>The Gate of Spirit represents a being’s ki flowing beyond their physical form; you have the power to share your ki with those around you. As a bonus action, you can touch one willing creature and expend 2 ki points. That creature gains temporary hit points equal to {{gate:spirit:thp}}, and it can immediately use its reaction to make a single weapon attack, take the Dodge action, or move up to its speed without provoking opportunity attacks.</description>
+        </sheet>
+        <rules>
+            <stat name = "gate:spirit:thp:wis" value = "1" bonus = "base"/>
+            <stat name = "gate:spirit:thp:wis" value = "wisdom:modifier" bonus = "base"/>
+            
+            <stat name = "gate:spirit:thp" value = "proficiency"/>
+            <stat name = "gate:spirit:thp" value = "gate:spirit:thp:wis"/>
+        </rules>
+    </element>
+    <element name = "Gate of Mind" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_MIND">
+        <description>
+            <p>The Gate of Mind represents a monk’s consciousness expanding beyond their physical form. You can cast the telepathic bond spell, requiring no components. Once you cast the spell with this feature, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet display = "true" usage = "1/Long Rest">
+            <description>The Gate of Mind represents a monk’s consciousness expanding beyond their physical form. You can cast the telepathic bond spell, requiring no components.</description>
+        </sheet>
+    </element>
+    <element name = "Gate of Infinity" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_WAY_OF_THE_EIGHT_GATES_GATE_OF_INFINITY">
+        <description>
+            <p>You have reached total harmony within yourself. Your gates align and converge with your ki, opening the final gate: the Gate of Infinity.</p>
+            <p class = "indent">As an action, you can spend 8 ki points to transcend to a state of apotheosis. You gain the following benefits for 1 minute:</p>
+            <ul>
+                <li>Your walking speed increases by 20 feet.</li>
+                <li>You have a +2 bonus to AC.</li>
+                <li>When you take the Attack action, you can make one additional unarmed strike as a part of that action.</li>
+                <li>You can add your Wisdom modifier to your attack and damage rolls.</li>
+            </ul>
+        </description>
+        <sheet display = "true" usage = "8 Ki Points">
+            <description>As an action, you can spend 8 ki points to transcend to a state of apotheosis. You gain the following benefits for 1 minute: Your walking speed increases by 20 feet. You have a +2 bonus to AC.When you take the Attack action, you can make one additional unarmed strike as a part of that action. You can add your Wisdom modifier to your attack and damage rolls.</description>
+        </sheet>
+    </element>
+</elements>

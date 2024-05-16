@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Skeletal Blade, Fighter subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version = "0.0.1">
+		<update version = "0.0.2">
 			<file name = "fighter-skeletal-blade.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/fighter-skeletal-blade.xml"/>
 		</update>
 	</info>
@@ -75,7 +75,7 @@
             <stat name = "skeletal form:ac" value = "1" level = "15"/>
 
             <stat name = "skeletal form:hp" value = "1" bonus = "base"/>
-            <stat name = "skeletal form:hp" value = "constitution modifier" bonus = "base"/>
+            <stat name = "skeletal form:hp" value = "constitution:modifier" bonus = "base"/>
         </rules>
     </element>
     <element name = "Osseous Prodigy" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SKELETAL_BLADE_OSSEOUS_PRODIGY">
