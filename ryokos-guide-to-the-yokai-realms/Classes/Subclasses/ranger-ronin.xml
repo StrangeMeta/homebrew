@@ -1,0 +1,117 @@
+<?xml version  =  "1.0" encoding  =  "utf-8"?>
+<elements>
+	<info>
+        <name>Ronin, Ranger subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version  =  "0.0.1">
+			<file name  =  "ranger-ronin.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/ranger-ronin.xml"/>
+		</update>
+	</info>
+
+	<element name = "Ronin" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_RANGER_RONIN">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p class  =  "flavour">A flash of steel, like a conductor’s baton guiding a symphony of slaughter, heralds a helix of death and magic. A blur whips from tree to rock to shadow; corpses fall in its wake.</p>
+            <p>The Ronin are masterless, wandering warriors, beholden to no code but their own. No two are the same, each with their own tale that led them down the warrior’s path. They are masters of many weapons, striking with blade and arrow in a spectacle of blinding speed and accuracy. Some Ronin use their power to protect the vulnerable—vigilantes doing what they see as right, no matter the cost. Others pursue their own ends, unfettered by the consequences of their actions. Ronin are dangerous combatants, hardened survivors, and above all things, free.</p>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_SLASH_DRAW"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_WANDERING_MAGIC"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_MASTERLESS"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_CLEAVING_PARRY"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_MULTI_WEAPON_MASTERY"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_RELENTLESS_ONLSAUGHT"/>
+		</description>
+		<sheet display = "false">
+			<description>The Ronin are masterless, wandering warriors, beholden to no code but their own.</description>
+		</sheet>
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_SLASH_DRAW" level = "3"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_WANDERING_MAGIC" level = "3"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_MASTERLESS" level = "3"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_CLEAVING_PARRY" level = "7"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_MULTI_WEAPON_MASTERY" level = "11"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_RELENTLESS_ONLSAUGHT" level = "15"/>
+		</rules>
+	</element>
+
+	<element name = "Slash Draw" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_SLASH_DRAW">
+		<description>
+			<p>You have mastered the art of striking with sudden, explosive power at any moment. The first time each turn that you hit a creature with a melee weapon attack using a weapon you drew that turn, the attack deals an extra 1d6 damage of that weapon’s type. This extra damage increases to 1d8 when you reach 11th level in this class.</p>
+            <p class = "indent">In addition, twice per turn, you can draw or stow one weapon, provided you aren’t incapacitated (no action required).</p>
+		</description>
+		<sheet display = "true">
+            <description>You have mastered the art of striking with sudden, explosive power at any moment. The first time each turn that you hit a creature with a melee weapon attack using a weapon you drew that turn, the attack deals an extra 1d{{slash draw:die}} damage of that weapon’s type.
+            In addition, twice per turn, you can draw or stow one weapon, provided you aren’t incapacitated (no action required).</description>
+        </sheet>
+		<rules>
+            <stat name = "slash draw:die" value = "6" bonus = "base"/>
+            <stat name = "slash draw:die" value = "8" bonus = "base" level = "11"/>
+		</rules>
+	</element>
+	<element name = "Wandering Magic" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_WANDERING_MAGIC">
+		<description>
+			<p>You learn an additional spell when you reach certain levels in this class, as shown in the Wandering Magic Spells table. Each spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+            <h5 class = "caption">Wandering Magic Spells</h5>
+            <table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>expeditious retreat</em></td></tr>
+				<tr><td>5th</td><td><em>blur</em></td></tr>
+				<tr><td>9th</td><td><em>remove curse</em></td></tr>
+				<tr><td>13th</td><td><em>death ward</em></td></tr>
+				<tr><td>17th</td><td><em>legend lore</em></td></tr>
+			</table>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+			<grant type = "Spell" id = "ID_PHB_SPELL_EXPEDITIOUS_RETREAT" level="3" spellcasting = "Ranger"/>
+			<grant type = "Spell" id = "ID_PHB_SPELL_BLUR" level = "5" spellcasting = "Ranger"/>
+			<grant type = "Spell" id = "ID_PHB_SPELL_REMOVE_CURSE" level = "9" spellcasting = "Ranger"/>
+			<grant type = "Spell" id = "ID_PHB_SPELL_DEATH_WARD" level = "13" spellcasting = "Ranger"/>
+			<grant type = "Spell" id = "ID_PHB_SPELL_LEGEND_LORE" level = "17" spellcasting = "Ranger"/>
+		</rules>
+	</element>
+	<element name = "Masterless" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_MASTERLESS">
+		<description>
+			<p>You are a solitary warrior, shackled by no code or authority beyond your own. Whenever you make a saving throw to avoid or end the charmed condition on yourself, roll a d6 and add the number rolled to the saving throw.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a saving throw to avoid or end the charmed condition on yourself, roll a d6 and add the number rolled to the saving throw.</description>
+		</sheet>
+	</element>
+	<element name = "Cleaving Parry" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_CLEAVING_PARRY">
+		<description>
+			<p>When a creature makes a weapon attack against you while you have a stowed melee weapon and a free hand, you can use your reaction to attempt to parry that blow, drawing your stowed weapon as you do so. Your AC increases by an amount equal to your Dexterity or Strength modifier (your choice) against that attack, and you gain temporary hit points equal to your proficiency bonus + your Wisdom modifier (minimum of 1). After the attack hits or misses, you can then stow that weapon as a part of this reaction.</p>
+		</description>
+		<sheet display = "true">
+			<description>When a creature makes a weapon attack against you while you have a stowed melee weapon and a free hand, you can use your reaction to attempt to parry that blow, drawing your stowed weapon as you do so. Your AC increases by {{cleaving parry:ac}} against that attack, and you gain {{cleaving parry:thp}} temporary hit points. After the attack hits or misses, you can then stow that weapon as a part of this reaction.</description>
+		</sheet>
+        <rules>
+            <stat name = "cleaving parry:ac" value = "strength:modifier" bonus = "base"/>
+            <stat name = "cleaving parry:ac" value = "dexterity:modifier" bonus = "base"/>
+
+            <stat name = "cleaving parry:thp:modifier" value = "1" bonus = "base"/>
+            <stat name = "cleaving parry:thp:modifier" value = "wisdom:modifier" bonus = "base"/>
+
+            <stat name = "cleaving parry:thp" value = "proficiency"/>
+            <stat name = "cleaving parry:thp" value = "cleaving parry:thp:modifier"/>
+        </rules>
+	</element>
+	<element name = "Multi-Weapon Mastery" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_MULTI_WEAPON_MASTERY">
+		<description>
+			<p>You have advantage on the first melee weapon attack you make each turn, as well as advantage on the first ranged weapon attack you make each turn.</p>
+            <p class = "indent">In addition, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</p>
+		</description>
+		<sheet display = "true">
+			<description>You have advantage on the first melee weapon attack you make each turn, as well as advantage on the first ranged weapon attack you make each turn.
+            In addition, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</description>
+		</sheet>
+	</element>
+    <element name = "Relentless Onlsaught" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_RONIN_RELENTLESS_ONLSAUGHT">
+        <description>
+            <p>The speed and ferocity of your onslaught is legendary. When you take the Attack action, each time you score a critical hit or reduce a creature to 0 hit points as part of that action, you can make one additional weapon attack. You can make up to three additional attacks with this feature per turn.</p>
+        </description>
+        <sheet display = "true">
+            <description>When you take the Attack action, each time you score a critical hit or reduce a creature to 0 hit points as part of that action, you can make one additional weapon attack. You can make up to three additional attacks with this feature per turn.</description>
+        </sheet>
+    </element>
+</elements>
