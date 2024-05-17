@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Feats from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.1.2">
+        <update version = "0.1.3">
             <file name = "feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/feats.xml"/>
         </update>
     </info>
@@ -210,7 +210,7 @@
             <select type = "Feat Feature" name = "Cantrip Combatant" supports = "Cantrip Combatant"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Strength" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_STRENGTH">
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_STRENGTH">
         <compendium display = "false"/>
         <supports>Cantrip Combatant</supports>
         <description>
@@ -221,7 +221,7 @@
             <stat name = "strength" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Dexterity" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_DEXTERITY">
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_DEXTERITY">
         <compendium display = "false"/>
         <supports>Cantrip Combatant</supports>
         <description>
@@ -232,7 +232,7 @@
             <stat name = "dexterity" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Constitution" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_CONSTITUTION">
+    <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_CONSTITUTION">
         <compendium display = "false"/>
         <supports>Cantrip Combatant</supports>
         <description>
@@ -243,7 +243,7 @@
             <stat name = "constitution" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Intelligence" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_INTELLIGENCE">
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_INTELLIGENCE">
         <compendium display = "false"/>
         <supports>Cantrip Combatant</supports>
         <description>
@@ -254,7 +254,7 @@
             <stat name = "intelligence" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Wisdom" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_WISDOM">
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_WISDOM">
         <compendium display = "false"/>
         <supports>Cantrip Combatant</supports>
         <description>
@@ -265,7 +265,7 @@
             <stat name = "wisdom" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Charisma" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_CHARISMA">
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_CANTRIP_COMBATANT_CHARISMA">
         <compendium display = "false"/>
         <supports>Cantrip Combatant</supports>
         <description>
@@ -293,7 +293,7 @@
             <select type = "Feat Feature" name = "Combo Striker" supports = "Combo Striker"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Strength" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_STRENGTH">
+    <element name = "Strength" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_STRENGTH">
         <compendium display = "false"/>
         <supports>Combo Striker</supports>
         <description>
@@ -304,7 +304,7 @@
             <stat name = "strength" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Dexterity" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_DEXTERITY">
+    <element name = "Dexterity" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_DEXTERITY">
         <compendium display = "false"/>
         <supports>Combo Striker</supports>
         <description>
@@ -315,7 +315,7 @@
             <stat name = "dexterity" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Constitution" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_CONSTITUTION">
+    <element name = "Constitution" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_CONSTITUTION">
         <compendium display = "false"/>
         <supports>Combo Striker</supports>
         <description>
@@ -326,7 +326,7 @@
             <stat name = "constitution" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Intelligence" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_INTELLIGENCE">
+    <element name = "Intelligence" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_INTELLIGENCE">
         <compendium display = "false"/>
         <supports>Combo Striker</supports>
         <description>
@@ -337,7 +337,7 @@
             <stat name = "intelligence" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Wisdom" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_WISDOM">
+    <element name = "Wisdom" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_WISDOM">
         <compendium display = "false"/>
         <supports>Combo Striker</supports>
         <description>
@@ -348,7 +348,7 @@
             <stat name = "wisdom" value = "1"/>
         </rules>
     </element>
-    <element type = "Feat Feature" name = "Charisma" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_CHARISMA">
+    <element name = "Charisma" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGGTYR_FEAT_COMBO_STRIKER_CHARISMA">
     <compendium display = "false"/>
         <supports>Combo Striker</supports>
         <description>
@@ -1551,7 +1551,7 @@
         </rules>
     </element>
     
-    <element name  =  "Multidisciplinary" type  =  "Feat" source  =  "Ryoko's Guide to the Yokai Realms" id  =  "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
+    <element name = "Multidisciplinary" type = "Feat" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_MULTIDISCIPLINARY">
 		<prerequisite>You are a multiclass character</prerequisite>
 		<requirements>ID_INTERNAL_GRANT_MULTICLASS</requirements>
 		<description>
@@ -1561,22 +1561,23 @@
 				<li>Choose one saving throw proficiency that the class you have multiclassed into normally provides at 1st level, for which you don’t already have proficiency, and that you haven’t chosen with this benefit before. You can add half your proficiency bonus to saving throws you make of that type.</li>
 		    </ul>
 		</description>
-		<sheet alt  =  "Multidisciplinary Feat"/>
+		<sheet alt = "Multidisciplinary Feat"/>
 		<rules>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Artificer)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_ERLW_MULTICLASS_ARTIFICER|ID_WOTC_TCOE_MULTICLASS_ARTIFICER"/>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Barbarian)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_BARBARIAN"/>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Bard)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_BARD"/>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Cleric)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Druid)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Fighter)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<select type  =  "Feat Feature" name  =  "Proficiencies or Saving Throw (Monk)" supports  =  "Multidisciplinary" requirements  =  "ID_WOTC_PHB_MULTICLASS_MONK"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Artificer)" supports = "Multidisciplinary" requirements = "ID_WOTC_ERLW_MULTICLASS_ARTIFICER|ID_WOTC_TCOE_MULTICLASS_ARTIFICER"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Barbarian)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_BARBARIAN"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Bard)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_BARD"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Bender)" supports = "Multidisciplinary" requirements = "ID_RGTTYR_MULTICLASS_BENDER"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Cleric)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_CLERIC"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Druid)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_DRUID"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Fighter)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Monk)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_MONK"/>
 			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Paladin)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_PALADIN"/>
 			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Ranger)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_RANGER"/>
 			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Rogue)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_ROGUE"/>
 			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Sorcerer)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Tamer)" supports = "Multidisciplinary" requirements = "ID_RGTTYR_MULTICLASS_TAMER"/>
 			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Warlock)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
 			<select type = "Feat Feature" name = "Proficiencies or Saving Throw (Wizard)" supports = "Multidisciplinary" requirements = "ID_WOTC_PHB_MULTICLASS_WIZARD"/>
-			<!-- insert Tamer multiclass related select here -->
 		</rules>
     </element>	
 	<element name = "Skill/Tool, Multidisciplinary" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_SKILLTOOL_MULTIDISCIPLINARY">
@@ -1689,6 +1690,18 @@
 		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
 		</rules>
 	</element>
+	<element name = "Bender multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_BENDER_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_RGTTYR_MULTICLASS_BENDER</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Bender.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF"/>
+		</rules>
+	</element>
 	<element name = "Cleric multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_CLERIC_MULTICLASS">
 		<supports>Chosen Multiclass</supports>
 		<requirements>ID_WOTC_PHB_MULTICLASS_CLERIC</requirements>
@@ -1785,6 +1798,18 @@
 		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
 		</rules>
 	</element>
+	<element name = "Tamer multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_TAMER_MULTICLASS">
+		<supports>Chosen Multiclass</supports>
+		<requirements>ID_RGTTYR_MULTICLASS_TAMER</requirements>
+		<compendium display = "false" />
+		<description>
+			<p>You have multiclassed into Tamer.</p>
+		</description>
+		<sheet display = "false"/>
+		<rules>
+		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_HALF|ID_PROFICIENCY_SAVINGTHROW_CHARISMA_HALF"/>
+		</rules>
+	</element>
 	<element name = "Warlock multiclass" type = "Feat Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_FEAT_FEATURE_WARLOCK_MULTICLASS">
 		<supports>Chosen Multiclass</supports>
 		<requirements>ID_WOTC_PHB_MULTICLASS_WARLOCK</requirements>
@@ -1809,7 +1834,7 @@
 		    <select type = "Proficiency" name = "Saving Throw, Multidisciplinary" supports = "ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_HALF|ID_PROFICIENCY_SAVINGTHROW_WISDOM_HALF"/>
 		</rules>
 	</element>
-	<!-- these are needed since you add only half proficiency bonus-->
+	<!-- These are needed since you add only half proficiency bonus-->
 	<element name = "Saving Throw Half Proficiency (Strength)" type = "Proficiency" source = "Player’s Handbook" id = "ID_PROFICIENCY_SAVINGTHROW_STRENGTH_HALF">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
 		<rules>
