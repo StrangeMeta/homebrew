@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tengu</name>
-        <update version = "0.0.5">
+        <update version = "0.0.6">
             <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
         </update>
     </info>
@@ -24,6 +24,7 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Dexterity score increases by 2.<br/>
                 <span class = "feature">Age. </span>Tengu reach maturity at around 16 years of age, and go on to live for up to 400 years.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms and two legs.<br/>
                 <span class = "feature">Size. </span>You are Medium. Tengu are typically a little larger than humans, standing between 6 and 7 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>

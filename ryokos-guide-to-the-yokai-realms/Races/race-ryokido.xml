@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Ryokido</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "race-ryokido.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-ryokido.xml"/>
         </update>
     </info>
@@ -25,6 +25,7 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Strength, Wisdom, and Charisma scores each increase by 1.<br/>
                 <span class = "feature">Age. </span>Ryōkido grow extremely slowly. They are considered young until they reach the age of 80, and go on to live for up to 600 years.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms, two legs, and a tail.<br/>
                 <span class = "feature">Size. </span>You are Medium.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
