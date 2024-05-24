@@ -2,17 +2,21 @@
 <elements>
     <info>
         <name>Kitsune</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-kitsune.xml"/>
         </update>
     </info>
 
     <element name = "Kitsune" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_KITSUNE">
         <description>
-            <p class = "flavour">“Ryoko: Any account of the power or grace of kitsune I might write would be grotesquely selfindulgent, so I have requested Bombuku comment on my people in my place.”</p>
-            <p class = "flavour">"Bombuku: Yeah, they're chill."</p>
-            <p class = "flavour">-Ryoko &amp; Bombuku</p>
+            <p class = "flavour">Any account of the power or grace of kitsune I might write would be grotesquely self-indulgent, so I have requested Bombuku comment on my people in my place.</p>
+            <p class = "flavour">-Ryoko</p>
+            <p class = "flavour">Yeah, they're chill.</p>
+            <p class = "flavour">-Bombuku</p>
             <p>With cautious, padded steps and charcoal nose raised to the air, a kitsune slinks through a twilight forest, indistinguishable from a common fox. The kitsune’s powers of transformation are legendary, being able to assume a fox’s form in a fashion similar to a druid’s mastery of wild shape. Even in their humanoid body, kitsune retain the tail, ears, and clawed feet of their canine cousins, along with a fox’s nimble gait and inquisitive mind. As comfortable in humanoid form as they are as a fox, it is only for the love of interacting with other folk that so many kitsune live their lives almost entirely in their true, bipedal shape, finding it easier to integrate into communities and explore the world in this way.</p>
+
+            <h4>Visual Linguists</h4>
+            <p>Kitsune communication incorporates nonverbal cues innate to beasts and other beings of the natural world. A swish of the tail or a tilt of the head carries great significance; a subtle gesture can be the difference between playful jibe and deadly threat. Kitsune grow an additional tail for each century they live, and so they complain more and more frequently of the blundering unsophistication of purely verbal languages; each swirling tail adds a subtle layer of meaning, granting elders the power to express that which is inexpressible to those limited by the spoken word.</p>
 
             <h4>Revered Travellers</h4>
             <p>Long lives, innate curiosity, and a restless drive to understand others lead ancient kitsune to be revered for their wisdom and knowledge. Many act as wandering counsellors and justicars, drawing on a millennium of experience to right the wrongs of the world according to their own perspective. Others focus on a particular branch of research, gaining and spreading knowledge as they travel, or plying their trade as merchants. Such kitsune are able to observe the ebb and flow of supply and demand across generations, wielding their experience and long lives as tools in the acquisition of incredible wealth.</p>
@@ -22,14 +26,15 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Charisma score increases by 2, and your Dexterity increases by 1.<br/>
                 <span class = "feature">Age. </span>Kitsune mature at the same rate as humans, reaching adulthood at around 20. They can go on to live up to a millennium.<br/>
-                <span class = "feature">Size. </span>You are Medium. Fully grown kitsune stand between 5-6 feet tall.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms, two legs, and between one and nine tails.<br/>
+                <span class = "feature">Size. </span>You are Medium. Fully grown kitsune stand between 5 and 7 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 35 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
-                <span class = "feature">Ascendant Form. </span>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 minute or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Charisma (Persuasion) checks, Wisdom (Perception) checks, and initiative rolls. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
+                <span class = "feature">Ascendant Form. </span>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
                 <span class = "feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.<br/>
-                <span class = "feature">Fox's Wedding. </span>You know the druidcraft and produce flame cantrips. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).<br/>
-                <span class = "feature">Kitsune Guile. </span>You have proficiency in the Deception and Stealth skills.<br/>
-                <span class = "feature">Language of Motion. </span>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 30 feet of you that can see you and speaks Kitsune can understand this message.<br/>
+                <span class = "feature">Fox's Wedding. </span>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Intelligence, Wisdom, or Charisma is you spellcasting ability for these spells (choose when you select this race).<br/>
+                <span class = "feature">Kitsune Guile. </span>You have proficiency in one of the following skills of your choice: Deception, Persuasion, or Stealth.<br/>
+                <span class = "feature">Language of Motion. </span>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 60 feet of you that can see you and speaks Kitsune can understand this message.<br/>
                 <span class = "feature">Shapeshifter. </span>As an action, you can transform into the shape of a fox. When you do, your clothing and equipment meld into your form, and you gain no benefits from them while transformed. You determine the specifics of your appearance in fox form, including your colouration and size (choosing from Tiny or Small when you transform). All your other game statistics remain the same. You can’t cast spells that require material or somatic components while in this form, but you can still concentrate on spells and speak as normal. You remain in this form until you use an action to revert to your true form or you die.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common, Kitsune, and one other language that you and your GM agree is appropriate for your character.<br/>
             </p>
@@ -60,22 +65,20 @@
 
     <element name = "Ascendant Form" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_ASCENDANT_FORM">
         <description>
-            <p>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 minute or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Charisma (Persuasion) checks, Wisdom (Perception) checks, and initiative rolls. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+            <p>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. Once you use this trait, you can’t do so again until you finish a long rest.</p>
         </description>
         <sheet usage = "1/Long Rest">
-            <description>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 minute or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Charisma (Persuasion) checks, Wisdom (Perception) checks, and initiative rolls. Once you use this trait, you can’t do so again until you finish a long rest.</description>
+            <description>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks.</description>
         </sheet>
     </element>
     <element name = "Fox's Wedding" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING">
         <description>
-            <p>You know the druidcraft and produce flame cantrips.</p>
+            <p>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Intelligence, Wisdom, or Charisma is you spellcasting ability for these spells (choose when you select this race).</p>
         </description>
         <sheet>
-            <description>You know the druidcraft and produce flame cantrips.</description>
+            <description>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest.</description>
         </sheet>
         <rules>
-            <grant type = "Spell" id = "ID_PHB_SPELL_DRUIDCRAFT"/>
-            <grant type = "Spell" id = "ID_PHB_SPELL_PRODUCE_FLAME"/>
             <select type = "Racial Trait" supports = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING_WISDOM|ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING_CHARISMA"/>
         </rules>
     </element>
@@ -110,24 +113,21 @@
 
     <element name = "Kitsune's Guile" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_KITSUNES_GUILE">
         <description>
-            <p>You have proficiency in the Deception and Stealth skills.</p>
+            <p>You have proficiency in one of the following skills of your choice: Deception, Persuasion, or Stealth.</p>
         </description>
         <sheet>
-            <description>You have proficiency in the Deception and Stealth skills.</description>
+            <description>You have proficiency in one of the following skills of your choice: Deception, Persuasion, or Stealth.</description>
         </sheet>
         <rules>
-			<grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type = "Proficiency" name = "Customized Skill Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_STEALTH" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type = "Proficiency" name = "Customized Skill Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <select type = "Proficiency" name = "Skill Proficiency (Kitsune's Guile)" supports = "ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH"/>
         </rules>
     </element>
     <element name = "Language of Motion" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_LANGUAGE_OF_MOTION">
         <description>
-            <p>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 30 feet of you that can see you and speaks Kitsune can understand this message.</p>
+            <p>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 60 feet of you that can see you and speaks Kitsune can understand this message.</p>
         </description>
         <sheet>
-            <description>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 30 feet of you that can see you and speaks Kitsune can understand this message.</description>
+            <description>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 60 feet of you that can see you and speaks Kitsune can understand this message.</description>
         </sheet>
     </element>
     <element name = "Shapeshifter" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_SHAPESHIFTER">

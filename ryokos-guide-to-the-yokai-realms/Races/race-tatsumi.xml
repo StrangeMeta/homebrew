@@ -1,0 +1,312 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Tatsumi</name>
+        <update version = "0.0.1">
+            <file name = "race-tatsumi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tatsumi.xml"/>
+        </update>
+    </info>
+
+    <element name = "Tatsumi" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_TATSUMI">
+        <description>
+            <p>Along the lowland, nutrient-rich lakes and bubbling freshwater streams that branch throughout the Yokai Realms, the twin peoples of the tatsumi make home. With a meticulously charted history that stretches across aeons, the tatsumi’s ancestors are said to be the seed from which all dragons and dragon-folk sprung forth into the world. A hardy, bipedal, industrious folk, they are renowned for their colourful, moon-blessed scales and powerful builds.</p>
+
+            <h4>Twin Chapters</h4>
+            <p>Whereas some races display obvious sexual dimorphism—females being larger, males being more colourful—what separates the two categories of tatsumi is experience. All tatsumi are born as nishikin, aquatic fish-folk with an appearance not dissimilar to the revered koi. After a moment of life-changing significance—for example, a great tragedy, achieving a lifelong goal, or a moment of epiphany—that tatsumi undergoes an overnight transformation. Much as a koi fish becomes a koi dragon when the latter leaves this world, a ryujin emerges from this metamorphosis. A physically and physiologically different creature stands in the nishikin’s place, with the features and magic of their draconic ancestors fully realised.</p>
+
+            <h4>Half-Remembered History</h4>
+            <p>The difference between the two morphs of tatsumi is most poignant in matters of tradition and record-keeping. Nishikin keep detailed records of their own peoples, including ryujin who live with them. However, of the ryujin who leave, little is known.</p>
+            <p class = "indent">Curious wanderers, ryujin have no cities, libraries, palaces, or temples; those who leave tatsumi communities seek to forge their own destinies. A pair of ryujin may travel together for a time, form a close connection, and raise a family of nishikin children, but they typically part ways once the young are old enough to set out on their own adventure. A servant to their whims and the hands of fate, the story of no two ryujin is the same.</p>
+
+            <h4>TATSUMI TRAITS</h4>
+            <p>As a tatsumi, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Dexterity, Constitution, and Wisdom scores each increase by 1.<br/>
+                <span class = "feature">Age. </span>Tatsumi mature rapidly, reaching adulthood by the age of 14. They go on to live for about two centuries.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms, two legs, and a tail.<br/>
+                <span class = "feature">Size. </span>You are Medium. Tatsumi stand between 5 and 7 feet tall.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.<br/>
+                <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
+                <span class = "feature">Amphibious</span>You can breath in both air and water.<br/>
+                <span class = "feature">Koi Dragon Colour. </span>Each tatsumi is born with its own unique colouration. In tatsumi folktales, one’s primary colouration holds special significance. Your primary colouration also impacts your Slumbering Dragon trait as a nishikin, and your Heartening Breath and Innate Magic traits as a ryujin, based on the table below.<br/>
+                <table>
+                    <thread>
+                        <tr><td class = "col-10">Colour</td><td class = "col-10">Ability Score</td><td class = "col-10">Associated Class</td></tr>
+                    </thread>
+                    <tr><td>Red</td><td>Strength</td><td>Sorcerer</td></tr>
+                    <tr><td>Gold</td><td>Dexterity</td><td>Druid</td></tr>
+                    <tr><td>Black</td><td>Constitution</td><td>Warlock</td></tr>
+                    <tr><td>Silver</td><td>Intelligence</td><td>Wizard</td></tr>
+                    <tr><td>White</td><td>Wisdom</td><td>Cleric</td></tr>
+                    <tr><td>Blue</td><td>Charisma</td><td>Bard</td></tr>
+                </table>
+                <span class = "feature">Subrace. </span>The two main morphs of tatsumi found in the Yokai Realms are nishikin and ryujin. All ryujin were once nishikin, so they are more like stages of development than true subraces. Choose one of these subraces.<br/>
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and Aquan.<br/>
+                
+                <span class = "feature">Nishikin Colour. </span>Each nishikin is born with its own unique colouration. In nishikin folktales, one’s primary colouration holds special significance. Your primary colouration also impacts your Slumbering Dragon trait and is associated with a specific ability score.<br/>
+            </p>
+            <div element = "ID_RGTTYR_RACE_VARIANT_TATSUMI_NISHIKIN"/>
+            <div element = "ID_RGTTYR_RACE_VARIANT_TATSUMI_RYUJIN"/>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "dexterity" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "constitution" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Tatsumi)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
+            <stat name = "innate speed" value = "30" bonus = "base"/>
+            <stat name = "speed:swim" value = "speed" bonus = "base"/>
+
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_AMPHIBIOUS"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR"/>
+            
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type = "language" id = "ID_MM_LANGUAGE_AQUAN" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+
+            <select type = "Race Variant" name = "Tatsumi Variant" supports = "Tatsumi"/>
+        </rules>
+    </element>
+
+    <element name = "Amphibious" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_AMPHIBIOUS">
+        <description>
+            <p>You can breathe in both air and water.</p>
+        </description>
+        <sheet>
+            <description>You can breathe in both air and water.</description>
+        </sheet>
+    </element>
+    <element name = "Koi Dragon Colour" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR">
+        <description>
+            <p>Each tatsumi is born with its own unique colouration. In tatsumi folktales, one’s primary colouration holds special significance. Your primary colouration also impacts your Slumbering Dragon trait as a nishikin, and your Heartening Breath and Innate Magic traits as a ryujin, based on the table below.</p>
+        </description>
+        <table>
+                    <thread>
+                        <tr><td class = "col-10">Colour</td><td class = "col-10">Ability Score</td><td class = "col-10">Associated Class</td></tr>
+                    </thread>
+                    <tr><td>Red</td><td>Strength</td><td>Sorcerer</td></tr>
+                    <tr><td>Gold</td><td>Dexterity</td><td>Druid</td></tr>
+                    <tr><td>Black</td><td>Constitution</td><td>Warlock</td></tr>
+                    <tr><td>Silver</td><td>Intelligence</td><td>Wizard</td></tr>
+                    <tr><td>White</td><td>Wisdom</td><td>Cleric</td></tr>
+                    <tr><td>Blue</td><td>Charisma</td><td>Bard</td></tr>
+                </table>
+        <sheet>
+            <description>Each tatsumi is born with its own unique colouration. In tatsumi folktales, one’s primary colouration holds special significance. Your primary colouration also impacts your Slumbering Dragon trait as a nishikin, and your Heartening Breath and Innate Magic traits as a ryujin.</description>
+        </sheet>
+        <rules>
+            <select type = "Racial Trait" supports = "Koi Dragon Colouring"/>
+        </rules>
+    </element>
+    <!-- Colouring options for Koi Dragon Colouring -->
+    <element name = "Red" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_RED">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>Your primary colouring is red, your associated ability score is strength, and your associated class is Sorcerer.</p>
+        </description>
+        <sheet>
+            <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "tatsumi-colour" value = "Red"/>
+            <stat inline = "true" name = "tatsumi-colour:ability" value = "Strength"/>
+            <stat inline = "true" name = "tatsumi-colour:class" value = "Sorcerer"/>
+        </rules>
+    </element>
+    <element name = "Gold" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_GOLD">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>Your primary colouring is gold, your associated ability score is dexterity, and your associated class is Druid.</p>
+        </description>
+        <sheet>
+            <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "tatsumi-colour" value = "Gold"/>
+            <stat inline = "true" name = "tatsumi-colour:ability" value = "Dexterity"/>
+            <stat inline = "true" name = "tatsumi-colour:class" value = "Druid"/>
+        </rules>
+    </element>
+    <element name = "Black" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_BLACK">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>Your primary colouring is black, your associated ability score is constitution, and your associated class is Warlock.</p>
+        </description>
+        <sheet>
+            <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "tatsumi-colour" value = "Black"/>
+            <stat inline = "true" name = "tatsumi-colour:ability" value = "Constitution"/>
+            <stat inline = "true" name = "tatsumi-colour:class" value = "Warlock"/>
+        </rules>
+    </element>
+    <element name = "Silver" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_SILVER">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>Your primary colouring is siilver, your associated ability score is intelligence, and your associated class is Wizard.</p>
+        </description>
+        <sheet>
+            <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "tatsumi-colour" value = "Silver"/>
+            <stat inline = "true" name = "tatsumi-colour:ability" value = "Intelligence"/>
+            <stat inline = "true" name = "tatsumi-colour:class" value = "Wizard"/>
+        </rules>
+    </element>
+    <element name = "White" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_WHITE">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>Your primary colouring is white, your associated ability score is wisdom, and your associated class is Cleric.</p>
+        </description>
+        <sheet>
+            <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "tatsumi-colour" value = "White"/>
+            <stat inline = "true" name = "tatsumi-colour:ability" value = "Wisdom"/>
+            <stat inline = "true" name = "tatsumi-colour:class" value = "Cleric"/>
+        </rules>
+    </element>
+    <element name = "Blue" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_BLUE">
+        <supports>Koi Dragon Colouring</supports>
+        <compendium display = "false"/>
+        <description>
+            <p>Your primary colouring is blue, your associated ability score is charisma, and your associated class is Bard.</p>
+        </description>
+        <sheet>
+            <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
+        </sheet>
+        <rules>
+            <stat inline = "true" name = "tatsumi-colour" value = "Blue"/>
+            <stat inline = "true" name = "tatsumi-colour:ability" value = "Charisma"/>
+            <stat inline = "true" name = "tatsumi-colour:class" value = "Bard"/>
+        </rules>
+    </element>
+    <!-- Subraces for Tatsumi -->
+    <element name = "Nishikin" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_TATSUMI_NISHIKIN">
+        <supports>Tatsumi</supports>
+        <description>
+            <p>All nishikin possess a roiling heart of warmth and power within. Usually, this inner strength acts invisibly, a well of energy that drives a nishikin onwards with incredible longevity and vitality. In moments of great endeavour, however, the slumbering dragon awakens and briefly manifests as a tangible ally and guide. On rare occasions, nishikin who undergo transformative experiences of great euphoria or tragedy can even metamorphose into an actual dragon: a ryujin. This transformation is not a certainty; many nishikin never metamorphose, but for those that do, it is accompanied by a change in perspective and mindset—an evolution of outlook as well as form.</p>
+            <p class = "indent"><strong>Restless Ambition. </strong>The diligence of the nishikin is legendary, their history overflowing with tales of explorers, hunters, crafters, and teachers who dedicated their lives to their pursuits. Nishikin hurl themselves into new experiences, dangers, and passions with alarming fervour, rarely entertaining more than one pursuit at a time and focusing solely on its mastery before moving on. The life of a nishikin is often an exhausting one, an endless trail of passion and dedication. From birth until death, nishikin struggle to tolerate rest or relaxation for any length of time.</p>
+            
+            <h4>NISHIKIN TRAITS</h4>
+            <p>All nishikin have the following traits in common:</p>
+            <p>
+                <span class = "feature">Moonblessed. </span>While bathed in moonlight, you can use a bonus action to spend a number of your Hit Dice equal to your proficiency bonus. Roll those dice and add your Constitution modifier; you regain hit points equal to the total. If this healing restores your hit points to maximum, any surplus healing is gained as temporary hit points. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
+                <span class = "feature">Powerful Build. </span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
+                <span class = "feature">Slippery. </span>You have advantage on ability checks or saving throws made to avoid or end the grappled condition on yourself.<br/>
+                <span class = "feature">Slumbering Dragon. </span>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using the ability associated with your primary colouration, you can use your reaction to add 1d4 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.<br/>
+                <span class = "feature">Draconic Metamorphosis. </span>When you reach 7th level, or when you undergo a significant moment of personal achievement or loss (at the GM’s discretion), you can choose to metamorphose into a ryujin. Your level, class, and other game statistics remain the same, aside from your race. You replace your racial traits from this race with those of the ryujin, and your ryujin colour is the same as your nishikin primary colouration. This transformation is one-way and can’t be reversed by any means short of a wish spell.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_MOONBLESSED"/>
+            <grant type = "Grants" id = "ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_SLIPPERY"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_SLUMBERING_DRAGON"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_DRACONIC_METAMORPHOSIS"/>
+        </rules>
+    </element>
+    <element name = "Moonblessed" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_MOONBLESSED">
+        <description>
+            <p>While bathed in moonlight, you can use a bonus action to spend a number of your Hit Dice equal to your proficiency bonus. Roll those dice and add your Constitution modifier; you regain hit points equal to the total. If this healing restores your hit points to maximum, any surplus healing is gained as temporary hit points. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage = "1/Long Rest">
+            <description>While bathed in moonlight, you can use a bonus action to spend a number of your Hit Dice equal to your proficiency bonus. Roll those dice and add your Constitution modifier; you regain hit points equal to the total. If this healing restores your hit points to maximum, any surplus healing is gained as temporary hit points. Once you use this trait, you can’t do so again until you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name = "Slippery" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_SLIPPERY">
+        <description>
+            <p>You have advantage on ability checks or saving throws made to avoid or end the grappled condition on yourself.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on ability checks or saving throws made to avoid or end the grappled condition on yourself.</description>
+        </sheet>
+    </element>
+    <element name = "Slumbering Dragon" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_SLUMBERING_DRAGON">
+        <description>
+            <p>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using your {{nishikin-colour:ability}} modifier, you can use your reaction to add 1d4 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Short Rest">
+            <description>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using your {{nishikin-colour:ability}}, you can use your reaction to add 1d4 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name = "Draconic Metamorphosis" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_DRACONIC_METAMORPHOSIS">
+        <description>
+            <p>When you reach 7th level, or when you undergo a significant moment of personal achievement or loss (at the GM’s discretion), you can choose to metamorphose into a ryujin. Your level, class, and other game statistics remain the same, aside from your race. You replace your racial traits from this race with those of the ryujin, and your ryujin colour is the same as your nishikin primary colouration. This transformation is one-way and can’t be reversed by any means short of a wish spell.</p>
+        </description>
+        <sheet display = "false"/>
+    </element>
+
+    <element name = "Ryujin" type = "Race Variant" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_VARIANT_TATSUMI_RYUJIN">
+        <supports>Tatsumi</supports>
+        <description>
+            <p>Ryujin are closely related to nishikin, having transformed from the aquatic fish-folk into a new, draconic form. Although such a metamorphosis is seen as transcendent and incredible by many outside races, ryujin are not revered or elevated above their nishikin family in their own society; in instances where they live together, they live harmoniously.</p>
+            <p class = "indent"><strong>Body Altered, Mind Transformed. </strong>The life of a ryujin is often shaped by a search for new meanings, perspectives, and opportunity. For many, this means a path of joyful travel and exploration, but for others, it may mean the start of a family, or adopting a position of counsel among their nishikin kinsfolk. Ryujin are widely noted as being significantly more relaxed than their nishikin counterparts, willing to pause and watch the world go by, unburdened by the nishikin’ ceaseless pursuit of growth and change.</p>
+            
+            <h4>RYUJIN TRAITS</h4>
+            <p>As a ryujin, you have the following traits:</p>
+            <p>
+                <span class = "feature">Cloudstep. </span>As a bonus action, you can conjure a small cloud under your feet. You gain a fly speed equal to your walking speed for the next 10 minutes. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
+                <span class = "feature">Heartening Breath. </span>You can use your action to exhale a warming, spiralling burst of magical energy in a 30-foot cone. You and a number of creatures of your choice in that area up to your proficiency bonus can add 1d4 to attack rolls and to ability checks and saving throws that use the ability associated with your primary colouration for 1 minute, or until you lose concentration (as if concentrating on a spell). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+                <span class = "feature">Innate Magic. </span>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.<br/>
+                <span class = "feature">Sunblessed. </span>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the frightened, paralysed, or stunned condition on yourself, or against being put to sleep.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_CLOUDSTEP"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_CLOUDSTEP"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_INNATE_MAGIC"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_SUNBLESSED"/>
+        </rules>
+    </element>        
+    <element name = "Cloudstep" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_CLOUDSTEP">
+        <description>
+            <p>As a bonus action, you can conjure a small cloud under your feet. You gain a fly speed equal to your walking speed for the next 10 minutes, but moving through the air in this way counts as difficult terrain. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage = "1/Long Rest">
+            <description>As a bonus action, you can conjure a small cloud under your feet. You gain a fly speed equal to your walking speed for the next 10 minutes, but moving through the air in this way counts as difficult terrain. Once you use this trait, you can’t do so again until you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name = "Heartening Breath" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_CLOUDSTEP">
+        <description>
+            <p>You can use your action to exhale a warming, spiralling burst of magical energy in a 30-foot cone. You and a number of creatures of your choice in that area up to your proficiency bonus can add 1d4 to attack rolls and to ability checks and saving throws that use their {{tatsumi-colour:ability}} for 1 minute, or until you lose concentration (as if concentrating on a spell). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage = "{{proficiency}}/Long Rest">
+            <description>You can use your action to exhale a warming, spiralling burst of magical energy in a 30-foot cone. You and a number of creatures of your choice in that area up to your proficiency bonus can add 1d4 to attack rolls and to ability checks and saving throws that use their {{tatsumi-colour:ability}} for 1 minute, or until you lose concentration (as if concentrating on a spell).</description>
+        </sheet>
+    </element>
+    <element name = "Innate Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_INNATE_MAGIC">
+        <description>
+            <p>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</p>
+        </description>
+        <sheet>
+            <description>You learn one cantrip from the {{tatsumi-colour:class}} spell list. Your spellcasting ability for this cantrip is {{tatsumi-colour:ability}}.</description>
+        </sheet>
+        <rules>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Sorcerer)" requirements = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_RED"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Druid)" requirements = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_GOLD"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Warlock)" requirements = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_BLACK"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Wizard)" requirements = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_SILVER"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Cleric)" requirements = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_WHITE"/>
+            <select type = "Spell" name = "Cantrip, Innate Magic" supports = "0, (Bard)" requirements = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_KOI_DRAGON_COLOUR_BLUE"/>
+        </rules>
+    </element>    
+    <element name = "Sunblessed" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_RYUJIN_SUNBLESSED">
+        <description>
+            <p>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</p>
+        </description>
+        <sheet>
+            <description>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</description>
+        </sheet>
+    </element>
+</elements>

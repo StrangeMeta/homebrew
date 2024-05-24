@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Isetsu</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-isetsu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-isetsu.xml"/>
         </update>
     </info>
@@ -23,6 +23,7 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Strength score increases by 2, and your Constitution increases by 1.<br/>
                 <span class = "feature">Age. </span>Isetsu grow swiftly, reaching adulthood in less than a decade, and they go on to live for up to a century.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms, two legs, and four vestigial appendages.<br/>
                 <span class = "feature">Size. </span>You are Medium. Isetsu stand taller than most Humanoids, averaging around 7 feet in height.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
@@ -30,7 +31,7 @@
                 <span class = "feature">Crustacean Physiology. </span>Your antennae aid you in keeping watch, and your natural bulk and size serve you well in contests of strength. You gain proficiency in the Athletics and Perception skills.<br/>
                 <span class = "feature">Claws. </span>You have claws that you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Starting at 5th level, when you hit a creature with an unarmed strike on your turn, you can immediately use a bonus action to attempt to grapple it.<br/>
                 <span class = "feature">Darkvision. </span>Accustomed to the deep blackness of the ocean floor, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.<br/>
-                <span class = "feature">Favoured Warrior. </span>Be it sheer dumb luck, the result of intense training, or the fruition of a divine blessing, you have an uncanny ability to find fortune in combat. If you miss an attack roll, or fail an ability check or saving throw, you can reroll the attack roll, check, or save with advantage. You can use this trait a number of times equal to half your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+                <span class = "feature">Fortune Favoured </span>Be it sheer dumb luck, the result of intense training, or the fruition of a divine blessing, you have an uncanny ability to find fortune in combat. If you miss an attack roll, or fail an ability check or saving throw, you can reroll the attack roll, check, or save with advantage. You can use this trait a number of times equal to half your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
                 <span class = "feature">Natural Armour. </span>Your shell acts as a natural source of protection. When you aren’t wearing armour, your base AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.<br/>
                 <span class = "feature">Waterborne. </span>You can breathe in both air and water. Additionally, being underwater doesn’t impose disadvantage on your weapon attack rolls.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
@@ -50,7 +51,7 @@
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_CRUSTACEAN_PHYSIOLOGY"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_CLAWS"/>
             <grant type = "Vision" id = "ID_VISION_DARKVISION"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_FAVOURED_WARRIOR"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_FORTUNE_FAVOURED"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_NATURAL_ARMOUR"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_WATERBORNE"/>
 
@@ -90,7 +91,7 @@
             <description>You have claws that you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Starting at 5th level, when you hit a creature with an unarmed strike on your turn, you can immediately use a bonus action to attempt to grapple it.</description>
         </sheet>
     </element>
-    <element name = "Favoured Warrior" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_FAVOURED_WARRIOR">
+    <element name = "Fortune Favoured" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ISETSU_FORTUNE_FAVOURED">
         <description>
             <p>Be it sheer dumb luck, the result of intense training, or the fruition of a divine blessing, you have an uncanny ability to find fortune in combat. If you miss an attack roll, or fail an ability check or saving throw, you can reroll the attack roll, check, or save with advantage. You can use this trait a number of times equal to half your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
         </description>

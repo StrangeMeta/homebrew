@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Hanamori</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-hanamori.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-hanamori.xml"/>
         </update>
     </info>
@@ -23,7 +23,8 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Charisma score increases by 2, and your Wisdom increases by 1.<br/>
                 <span class = "feature">Age. </span>Hanamori reach adulthood at the same rate as humans and go on to live for up to 60 years.<br/>
-                <span class = "feature">Size. </span>Hanamori vary in size—you can be Medium or Small. You choose the size when you select this race.<br/>
+                <span class = "feature">Anatomy. </span>You hvae two arms and two legs.<br/>
+                <span class = "feature">Size. </span>Hanamori vary in size from as small as 3 feet to as tall as 7 feet. You are Medium or Small; you choose the size when you select this race.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Plant.<br/>
                 <span class = "feature">Essence Capture. </span>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:<br/>
@@ -33,7 +34,7 @@
                     <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
                     <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
                 </ul>
-                <p class = "indent">This effect lasts for 1 hour, after which time you return to normal. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+                <p class = "indent">This effect lasts until you finish a short or long rest, after which time you return to normal. Once you use this trait, you can’t do so again until you finish a long rest.</p>
                 <span class = "feature">Fiery Countenance. </span>You have advantage on saving throws you make to avoid or end the frightened or stunned condition on yourself.<br/>
                 <span class = "feature">Gaze of Death. </span>You gain proficiency in your choice of one of the following skills: Intimidation, Medicine, Nature, or Survival.<br/>
                 <span class = "feature">Rugged. </span>Your tough, lignified exterior is a natural barrier to cuts and abrasions. When you aren’t wearing armour, your AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.<br/>
@@ -70,16 +71,16 @@
                     <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
                     <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
                 </ul>
+                <p>This effect lasts until you finish a short or long rest, after which time you return to normal. Once you use this trait, you can’t do so again until you finish a long rest.</p>
             </description>
         <sheet usage = "1/Long Rest">
-            <description>
-                <p>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:</p>
-                <ul>
-                    <li>You replace your Strength, Dexterity, Intelligence, Wisdom, or Charisma ability score with the same ability score of the creature that died.</li>
-                    <li>You gain one special sense of your choice, except truesight, that the creature possessed, out to the same range.</li>
-                    <li>You gain resistance to one damage type of your choice to which the creature had resistance or immunity.</li>
-                    <li>You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.</li>
-                </ul>
+            <description>You have the power to magically capture fragments of a creature’s power when it dies in your proximity. As a reaction when a creature with a CR equal to or lower than your level dies within 10 feet of you, you can capture a fragment of its essence. You gain one of the following effects of your choice:
+            You replace your Strength, Dexterity, Intelligence, Wisdom, or Charisma ability score with the same ability score of the creature that died.
+            You gain one special sense of your choice, except truesight, that the creature possessed, out to the same range.
+            You gain resistance to one damage type of your choice to which the creature had resistance or immunity.
+            You gain immunity to one condition of your choice, except exhaustion, to which the creature had immunity.
+            
+            This effect lasts until you finish a short or long rest, after which time you return to normal. Once you use this trait, you can’t do so again until you finish a long rest.
             </description>
         </sheet>
     </element>

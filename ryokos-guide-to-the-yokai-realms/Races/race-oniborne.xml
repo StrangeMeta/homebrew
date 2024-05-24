@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Oniborne</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-oniborne.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-oniborne.xml"/>
         </update>
     </info>
@@ -13,7 +13,7 @@
             <p class = "flavour">I hesitated, turning to Yaboku, who met my eyes with a smile.</p>
             <p class = "flavour">“I’m not allowed through this door,” he chuckled, “But I can make my own.” His hand curled into a fist and, with a single blow, the tavern wall burst open, the sign falling to the mud at his feet.</p>
             <p class = "flavour">-Ryoko's Diary</p>
-            <p>Oniborne (OH-nee-bawn) are descendants of yokai, vessels of impetuous, simmering power that manifests across generations. Saturated in magic, oniborne innately command primal, supernatural forces. In moments of high emotion, instinctive spellcasting is common. An oniborne’s retort may physically scold the body of a foe, flesh might reknit under their palms in moments of compassion, or they may physically shrink when gripped with terror.</p>
+            <p>Oniborne are descendants of yokai, vessels of impetuous, simmering power that manifests across generations. Saturated in magic, oniborne innately command primal, supernatural forces. In moments of high emotion, instinctive spellcasting is common. An oniborne’s retort may physically scold the body of a foe, flesh might reknit under their palms in moments of compassion, or they may physically shrink when gripped with terror.</p>
 
             <h4>Children of Darkness</h4>
             <p>The life of an oniborne is one plagued by fear and suspicion. Being descendants of the oni, grotesque and dangerous yokai, many other humanoids view oniborne as savage, ugly, violent, and cruel—more akin to demons than their fey ancestors. These are ancient stereotypes, passed from parent to child in bedtime tales of terror. All oniborne, be they virtuous or villainous, suffer under this crude prejudice.</p>
@@ -26,6 +26,7 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Constitution score increases by 2.<br/>
                 <span class = "feature">Age. </span>Oniborne reach maturity at around 21 years of age and have long lives, often living up to 400 years.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms and two legs.<br/>
                 <span class = "feature">Size. </span>You are Medium. An oniborne stands between 5 and 7 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
@@ -95,15 +96,13 @@
     </element>
     <element name = "Magical Scavenger" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_MAGICAL_SCAVENGER">
         <description>
-            <p>You gain proficiency with one type of artisan’s tools of your choice. In addition, you can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</p>
+            <p>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</p>
             <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
         </description>
         <sheet>
-            <description>You can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon. When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</description>
+            <description>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.
+            When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</description>
         </sheet>
-        <rules>
-            <select type = "Proficiency" name = "Oniborne (Magical Scavenger)" supports = "Artisan tools"/>
-        </rules>
     </element>
     <element name = "Weeping Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC">
         <description>
@@ -166,17 +165,17 @@
             <stat name = "strength" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_COMPASSIONATE_HEART"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_CRUNCHING_MAW"/>
-            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_GREAT_DECEIVER"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_GIFT_OF_EMPATHY"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_SAVAGE_BITE"/>
         </rules>
     </element>
 
     <element name = "Compassionate Heart" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_COMPASSIONATE_HEART">
         <description>
-            <p>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+            <p>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. You can take the Help action as a bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. In addition, when you take the Help action, you can expend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into its body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier (minimum 1 temporary hit point).</p>
         </description>
-        <sheet usage = "{{proficiency}}/Long Rest">
-            <description>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+        <sheet usage = "Help: {{proficiency}}/Long Rest, Empower: Hit Dice">
+            <description>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. You can take the Help action as a bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. In addition, when you take the Help action, you can expend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into its body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier (minimum 1 temporary hit point).</description>
         </sheet>
     </element>
     <element name = "Crunching Maw" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_CRUNCHING_MAW">
@@ -187,13 +186,15 @@
             <description>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
         </sheet>
     </element>
-    <element name = "Great Deceiver" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_GREAT_DECEIVER">
+    <element name = "Gift of Empathy" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_BLUE_GIFT_OF_EMPATHY">
         <description>
-            <p>You have proficiency in the Deception skill.</p>
+            <p>You have proficiency in the Insight and Persuasion skills.</p>
         </description>
         <sheet display = "false"/>
         <rules>
-            <grant type = "proficiency" id = "ID_PROFICIENCY_SKILL_DECEPTION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_INSIGHT" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_SKILL_PERSUASION" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
             <select type = "Proficiency" supports = "Skill" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
         </rules>
     </element>

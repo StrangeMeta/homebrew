@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Fuyohren</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-fuyohren.xml"/>
         </update>
     </info>
@@ -23,6 +23,7 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Dexterity score increases by 2, and your Wisdom increases by 1.<br/>
                 <span class = "feature">Age. </span>Young fuyohren are raised on the water until they reach adolescence and learn to walk upright. They reach adulthood at around 18 years old and have been known to live to 150.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms and two legs.<br/>
                 <span class = "feature">Size. </span>You are Medium. Grown fuyohren can reach 6 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 35 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Plant.<br/>
@@ -35,6 +36,7 @@
                     <li>The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.</li>
                     <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
                 </ul>
+                <p class = "indent">The water remains potent for the next 24 hours, after which time it returns to normal. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
                 <span class = "feature">Nature Warden. </span>You gain proficiency in your choice of one of the following skills: Acrobatics, Animal Handling, Nature, Survival, or Performance.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
             </p>
@@ -85,16 +87,16 @@
                     <li>The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.</li>
                     <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
                 </ul>
+                <p class = "indent">The water remains potent for the next 24 hours, after which time it returns to normal. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
             </description>
         <sheet usage = "{{proficiency}}/Long Rest">
-            <description>
-                <p>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:</p>
-                <ul>
-                    <li>The water gains the magical properties of holy water.</li>
-                    <li>The water becomes a simple antidote that ends the poisoned condition when drunk by one creature.</li>
-                    <li>The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.</li>
-                    <li>The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.</li>
-                </ul>
+            <description>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:
+                The water gains the magical properties of holy water.
+                The water becomes a simple antidote that ends the poisoned condition when drunk by one creature.
+                The water is imbued with vitality. Drinking the vial is enough liquid to hydrate a Large or smaller creature for 24 hours.
+                The water bubbles with healing magic. A creature who ingests the vial of water regains 1d4 hit points.
+                
+                The water remains potent for the next 24 hours, after which time it returns to normal.
             </description>
         </sheet>
     </element>

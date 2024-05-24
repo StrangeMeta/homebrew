@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Enkoh</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-enkoh.xml"/>
         </update>
     </info>
@@ -25,6 +25,7 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Intelligence score increases by 2.<br/>
                 <span class = "feature">Age. </span>An enkoh reaches maturity at 15 years of age and can live up to 80 years.<br/>
+                <span class = "feature">Anatomy. </span>You have two arms, two legs, and a tail.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
                 <span class = "feature">Thick Fur. </span>You have resistance to cold damage.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
