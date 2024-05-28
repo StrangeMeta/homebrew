@@ -2555,7 +2555,7 @@
 		</sheet>
 	</element>
 
-	<!-- 5th level Betobeto-Kun Variants -->
+	<!-- 5th level Kawappa Variants -->
 	<element name = "Kawawappa" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_SPIRIT_BONDED_KAWAWAPPA_UNDERWATER_COMBATANT">
 		<compendium display = "false"/>
 		<supports>Spirit Bonded Kawawappa</supports>
