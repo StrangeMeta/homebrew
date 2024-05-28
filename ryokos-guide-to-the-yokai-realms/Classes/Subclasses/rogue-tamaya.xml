@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Tamaya, Rogue subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version  =  "0.0.1">
+		<update version  =  "0.0.2">
 			<file name  =  "rogue-tamaya.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/rogue-tamaya.xml"/>
 		</update>
 	</info>
@@ -74,6 +74,37 @@
             <stat name = "hanabi_points" value = "level:rogue"/>
 		</rules>        
 	</element>
+	<element name = "Initiative Shift" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_TAMAYA_INITIATIVE_SHIFT">
+		<description>
+			<p>You are adept at using sound, light, and smoke to get the drop on your enemies. As a bonus action, or as a reaction when a creature rolls initiative, you can throw out a disorienting barrage of flashbangs and smoke at a point within 60 feet of you. Creatures of your choice within a 20-foot-radius sphere centered on that point make a Wisdom saving throw against your spellbomb save DC. On a failed save, a creature takes a -10 penalty to that initiative roll, or the next initiative roll it makes within the next minute. The creature’s current initiative does not change. On a successful save, the creature takes a -5 penalty instead.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, or as a reaction when a creature rolls initiative, you can throw out a disorienting barrage of flashbangs and smoke at a point within 60 feet of you. Creatures of your choice within a 20-foot-radius sphere centered on that point make a Wisdom saving throw against your spellbomb save DC. On a failed save, a creature takes a -10 penalty to that initiative roll, or the next initiative roll it makes within the next minute. The creature’s current initiative does not change. On a successful save, the creature takes a -5 penalty instead.</description>
+		</sheet>
+	</element>
+	<element name = "Spellbomb Adept" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_TAMAYA_SPELLBOMB_ADEPT">
+		<description>
+			<p>Through extensive exposure to the raw, volatile components of spellbombs, you are inured to their worst effects. You are immune to damage from your own spellbombs and automatically succeed on saving throws to resist their effects.</p>
+            <p class = "indent">In addition, you can use an action to detonate a spellbomb that you created that is within 1,000 feet of you.</p>
+		</description>
+		<sheet display = "true">
+			<description>You are immune to damage from your own spellbombs and automatically succeed on saving throws to resist their effects.</description>
+		</sheet>
+	</element>
+	<element name = "Hanabi Primer" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_TAMAYA_HANABI_PRIMER">
+		<description>
+			<p>As an action, you can expend 3 hanabi points to set and conceal a special explosive spellbomb either upon a surface (such as a table, a section of floor, or a wall) or within an object that can be closed (such as a book or a chest). The spellbomb is nearly invisible and requires a successful Intelligence (Investigation) check (DC equals 8 + your proficiency bonus + your Dexterity modifier) to be found. You decide what triggers the bomb to detonate when you create it. Typical triggers include touching or standing on the bomb, removing an object covering it, approaching within a certain distance of the bomb, or manipulating the object that holds the bomb.</p>
+            <p class = "indent">You can further refine the trigger so the bomb detonates only under certain circumstances or according to physical characteristics (such as height or weight), creature type or kind (for example, the bomb could be set to detonate in the presence of Aberrations or drow), or alignment. You can designate a number of creatures equal to your proficiency bonus to not trigger the bomb under these circumstances when you set it.</p>
+            <p class = "indent">When triggered, the spellbomb detonates with deafening force in a 20-foot-radius sphere. The sphere spreads around corners. Each creature in the sphere must make a Dexterity saving throw against your spellbomb save DC. A creature takes 6d6 thunder damage and 6d6 acid, fire, lightning, or poison damage (your choice when you set the spellbomb) on a failed save, or half as much damage on a successful one.</p>
+            <p class = "indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet display = "true" usage = "1/Long Rest">
+			<description>As an action, you can expend 3 hanabi points to set and conceal a special explosive spellbomb either upon a surface (such as a table, a section of floor, or a wall) or within an object that can be closed (such as a book or a chest). The spellbomb is nearly invisible and requires a successful Intelligence (Investigation) check (DC equals 8 + your proficiency bonus + your Dexterity modifier) to be found. You decide what triggers the bomb to detonate when you create it. Typical triggers include touching or standing on the bomb, removing an object covering it, approaching within a certain distance of the bomb, or manipulating the object that holds the bomb.
+            You can further refine the trigger so the bomb detonates only under certain circumstances or according to physical characteristics (such as height or weight), creature type or kind (for example, the bomb could be set to detonate in the presence of Aberrations or drow), or alignment. You can designate a number of creatures equal to your proficiency bonus to not trigger the bomb under these circumstances when you set it.
+            When triggered, the spellbomb detonates with deafening force in a 20-foot-radius sphere. The sphere spreads around corners. Each creature in the sphere must make a Dexterity saving throw against your spellbomb save DC. A creature takes 6d6 thunder damage and 6d6 acid, fire, lightning, or poison damage (your choice when you set the spellbomb) on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+    
     <element name = "Spellbomb (Prestidigitation)" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_SPELLBOMB_PRESTIDIGITATION">
         <description>
             <p>A spellbomb, within which a <em>Prestidigitation</em> spell is contained. Costs 0 Hanabi Points.</p>
@@ -230,34 +261,4 @@
             <set name = "stackable">true</set>
         </setters>
     </element>
-	<element name = "Initiative Shift" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_TAMAYA_INITIATIVE_SHIFT">
-		<description>
-			<p>You are adept at using sound, light, and smoke to get the drop on your enemies. As a bonus action, or as a reaction when a creature rolls initiative, you can throw out a disorienting barrage of flashbangs and smoke at a point within 60 feet of you. Creatures of your choice within a 20-foot-radius sphere centered on that point make a Wisdom saving throw against your spellbomb save DC. On a failed save, a creature takes a -10 penalty to that initiative roll, or the next initiative roll it makes within the next minute. The creature’s current initiative does not change. On a successful save, the creature takes a -5 penalty instead.</p>
-		</description>
-		<sheet>
-			<description>As a bonus action, or as a reaction when a creature rolls initiative, you can throw out a disorienting barrage of flashbangs and smoke at a point within 60 feet of you. Creatures of your choice within a 20-foot-radius sphere centered on that point make a Wisdom saving throw against your spellbomb save DC. On a failed save, a creature takes a -10 penalty to that initiative roll, or the next initiative roll it makes within the next minute. The creature’s current initiative does not change. On a successful save, the creature takes a -5 penalty instead.</description>
-		</sheet>
-	</element>
-	<element name = "Spellbomb Adept" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_TAMAYA_SPELLBOMB_ADEPT">
-		<description>
-			<p>Through extensive exposure to the raw, volatile components of spellbombs, you are inured to their worst effects. You are immune to damage from your own spellbombs and automatically succeed on saving throws to resist their effects.</p>
-            <p class = "indent">In addition, you can use an action to detonate a spellbomb that you created that is within 1,000 feet of you.</p>
-		</description>
-		<sheet display = "true">
-			<description>You are immune to damage from your own spellbombs and automatically succeed on saving throws to resist their effects.</description>
-		</sheet>
-	</element>
-	<element name = "Hanabi Primer" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_TAMAYA_HANABI_PRIMER">
-		<description>
-			<p>As an action, you can expend 3 hanabi points to set and conceal a special explosive spellbomb either upon a surface (such as a table, a section of floor, or a wall) or within an object that can be closed (such as a book or a chest). The spellbomb is nearly invisible and requires a successful Intelligence (Investigation) check (DC equals 8 + your proficiency bonus + your Dexterity modifier) to be found. You decide what triggers the bomb to detonate when you create it. Typical triggers include touching or standing on the bomb, removing an object covering it, approaching within a certain distance of the bomb, or manipulating the object that holds the bomb.</p>
-            <p class = "indent">You can further refine the trigger so the bomb detonates only under certain circumstances or according to physical characteristics (such as height or weight), creature type or kind (for example, the bomb could be set to detonate in the presence of Aberrations or drow), or alignment. You can designate a number of creatures equal to your proficiency bonus to not trigger the bomb under these circumstances when you set it.</p>
-            <p class = "indent">When triggered, the spellbomb detonates with deafening force in a 20-foot-radius sphere. The sphere spreads around corners. Each creature in the sphere must make a Dexterity saving throw against your spellbomb save DC. A creature takes 6d6 thunder damage and 6d6 acid, fire, lightning, or poison damage (your choice when you set the spellbomb) on a failed save, or half as much damage on a successful one.</p>
-            <p class = "indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
-		</description>
-		<sheet display = "true" usage = "1/Long Rest">
-			<description>As an action, you can expend 3 hanabi points to set and conceal a special explosive spellbomb either upon a surface (such as a table, a section of floor, or a wall) or within an object that can be closed (such as a book or a chest). The spellbomb is nearly invisible and requires a successful Intelligence (Investigation) check (DC equals 8 + your proficiency bonus + your Dexterity modifier) to be found. You decide what triggers the bomb to detonate when you create it. Typical triggers include touching or standing on the bomb, removing an object covering it, approaching within a certain distance of the bomb, or manipulating the object that holds the bomb.
-            You can further refine the trigger so the bomb detonates only under certain circumstances or according to physical characteristics (such as height or weight), creature type or kind (for example, the bomb could be set to detonate in the presence of Aberrations or drow), or alignment. You can designate a number of creatures equal to your proficiency bonus to not trigger the bomb under these circumstances when you set it.
-            When triggered, the spellbomb detonates with deafening force in a 20-foot-radius sphere. The sphere spreads around corners. Each creature in the sphere must make a Dexterity saving throw against your spellbomb save DC. A creature takes 6d6 thunder damage and 6d6 acid, fire, lightning, or poison damage (your choice when you set the spellbomb) on a failed save, or half as much damage on a successful one.</description>
-		</sheet>
-	</element>
 </elements>
