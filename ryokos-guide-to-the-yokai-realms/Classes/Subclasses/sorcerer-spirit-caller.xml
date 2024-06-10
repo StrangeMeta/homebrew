@@ -1,0 +1,348 @@
+<?xml version  =  "1.0" encoding  =  "utf-8"?>
+<elements>
+	<info>
+        <name>Spirit Caller, Sorcerer subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version  =  "0.0.1">
+			<file name  =  "sorcerer-spirit-caller.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/sorcerer-spirit-caller.xml"/>
+		</update>
+	</info>
+
+	<element name = "Spirit Caller" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_SORCERER_SPIRIT_CALLER">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p class  =  "flavour">Do you ever wonder what you’re worth? How strong you really are, deep down? What if others could glimpse your soul? Would they cower at your strength? They cower at mine.</p>
+            <p>Legends tell that a Spirit Caller is born when the soul of a yokai and humanoid meet in the misty void that holds minds waiting to be given life. Spirit Callers are able to manifest their willpower and vitality as a spectral being, a wraith-like spirit that emerges from their body to strike at their enemies. The bond between Caller and spirit is visceral; in response to its Caller’s fury, a spirit might detonate a blast of necrotic energy, magnify its size, or hone its senses. A Spirit Caller is the epitome of self-reliance and personal strength, their soul and willpower manifested as a being of its own.</p>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_CALLER_SPELLS"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_CONDUIT_OF_THE_SOUL"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_SYNCHRONICITY"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_EMPOWERMENT"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_DURABLE_CONNECTION"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_FINAL_FORM_MANIFESTATION"/>
+		</description>
+		<sheet display = "false">
+			<description>Legends tell that a Spirit Caller is born when the soul of a yokai and humanoid meet in the misty void that holds minds waiting to be given life.</description>
+		</sheet>
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_CALLER_SPELLS" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_CONDUIT_OF_THE_SOUL" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_SYNCHRONICITY" level = "6"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_EMPOWERMENT" level = "6"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_DURABLE_CONNECTION" level = "14"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_FINAL_FORM_MANIFESTATION" level = "18"/>
+		</rules>
+	</element>
+
+	<element name = "Spirit Caller Spells" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_CALLER_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Spirit Caller Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+            <p class = "indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an illusion or a conjuration spell from the sorcerer, warlock, or wizard spell list.</p>
+            <h5 class="caption">Spirit Caller Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>command, mage armor, minor illusion</em></td></tr>
+				<tr><td>3rd</td><td><em>aid, mirror image</em></td></tr>
+				<tr><td>5th</td><td><em>plant growth, phantom steed</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, guardian of faith</em></td></tr>
+				<tr><td>9th</td><td><em>reincarnate, seeming</em></td></tr>
+				<tr><td>17th</td><td><em>astral projection</em></td></tr>
+			</table>
+		</description>
+		<sheet display = "true">
+            <description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an illusion or a conjuration spell from the sorcerer, warlock, or wizard spell list.</description>
+        </sheet>
+		<rules>
+            <select type = "Spell" name = "1st Additional Spell (Spirit Caller Spells)" supports = "1,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Command" level = "1" default = "ID_PHB_SPELL_COMMAND" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "2nd Additional Spell (Spirit Caller Spells)" supports = "1,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Mage Armor" level = "1" default = "ID_PHB_SPELL_MAGE_ARMOR" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "3rd Additional Spell (Spirit Caller Spells)" supports = "0,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)" level = "1" default = "ID_PHB_SPELL_MINOR_ILLUSION" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "4th Additional Spell (Spirit Caller Spells)" supports = "2,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Aid" level = "3" default = "ID_PHB_SPELL_AID" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "5th Additional Spell (Spirit Caller Spells)" supports = "2,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)" level = "3" default = "ID_PHB_SPELL_MIRROR_IMAGE" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "6th Additional Spell (Spirit Caller Spells)" supports = "3,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Plant Growth" level = "5" default = "ID_PHB_SPELL_PLANT_GROWTH" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "7th Additional Spell (Spirit Caller Spells)" supports = "3,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)" level = "5" default = "ID_PHB_SPELL_PHANTOM_STEED" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "8th Additional Spell (Spirit Caller Spells)" supports = "4,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Banishment" level = "7" default = "ID_PHB_SPELL_BANISHMENT" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "9th Additional Spell (Spirit Caller Spells)" supports = "4,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Guardian of Faith" level = "7" default = "ID_PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "10th Additional Spell (Spirit Caller Spells)" supports = "5,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Reincarnate" level = "9" default = "ID_PHB_SPELL_REINCARNATE" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "11th Additional Spell (Spirit Caller Spells)" supports = "5,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)" level = "9" default = "ID_PHB_SPELL_SEEMING" spellcasting = "Sorcerer" allowReplace = "false"/>
+			<select type = "Spell" name = "12th Additional Spell (Spirit Caller Spells)" supports = "9,(Illusion||Conjuration),(Sorcerer||Warlock||Wizard)||Astral Projection" level = "17" default = "ID_PHB_SPELL_ASTRAL_PROJECTION" spellcasting = "Sorcerer" allowReplace = "false"/>
+		</rules>
+	</element>
+	<element name = "Conduit of the Soul" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_CONDUIT_OF_THE_SOUL">
+		<description>
+			<p>You can use an action to manifest your spirit, which appears in an unoccupied space within 30 feet of you. It uses the Manifested Spirit stat block, which uses your proficiency bonus (PB) in several places. You decide the appearance your manifested spirit takes. For example, your spirit might appear as a shadowy clone of you, a vicious dragon, or a mighty, sword-wielding specter that crackles with fiery energy. No matter the form your spirit takes, its statistics remain the same.</p>
+            <p class = "indent">While manifested, your spirit shares your initiative count, but it takes its turn immediately after yours. As a bonus action, you can command it to take the Attack action on its next turn; otherwise, it takes the Dodge or Help action (your choice). Your spirit remains manifested for 10 minutes, until it is reduced to 0 hit points, or until you lose your concentration, as if concentrating on a spell. After this time, your spirit retreats back into you and disappears.</p>
+            <p class = "indent">You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+            <div class = "reference">
+                <div element = "ID_RGTTYR_INFORMATION_MANIFESTED_SPIRIT"/>
+            </div>
+		</description>
+		<sheet display = "true" usage = "2/Short Rest">
+            <description>You can use an action to manifest your spirit, which appears in an unoccupied space within 30 feet of you. It uses the Manifested Spirit stat block, which uses your proficiency bonus (PB) in several places. You decide the appearance your manifested spirit takes. For example, your spirit might appear as a shadowy clone of you, a vicious dragon, or a mighty, sword-wielding specter that crackles with fiery energy. No matter the form your spirit takes, its statistics remain the same.
+            While manifested, your spirit shares your initiative count, but it takes its turn immediately after yours. As a bonus action, you can command it to take the Attack action on its next turn; otherwise, it takes the Dodge or Help action (your choice). Your spirit remains manifested for 10 minutes, until it is reduced to 0 hit points, or until you lose your concentration, as if concentrating on a spell. After this time, your spirit retreats back into you and disappears.</description>
+        </sheet>
+        <rules>
+            <select type = "Companion" name = "Manifested Spirit" supports = "Manifested Spirit"/>
+        </rules>
+	</element>
+	<element name = "Spirit Synchronicity" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_SYNCHRONICITY">
+		<description>
+			<p>When you use a Metamagic option on a spell with a range other than self, you can cause the spell to originate from your manifested spirit, instead of you, if your manifested spirit is within 120 feet of you.</p>
+		</description>
+		<sheet display = "true">
+			<description>When you use a Metamagic option on a spell with a range other than self, you can cause the spell to originate from your manifested spirit, instead of you, if your manifested spirit is within 120 feet of you.</description>
+		</sheet>
+	</element>
+	<element name = "Spirit Empowerment" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_EMPOWERMENT">
+		<description>
+			<p>When you manifest your spirit using your Conduit of the Soul feature, you can expend any number of sorcery points. When you do, choose one boon from the following list for each point you expend. Your manifested spirit gains these boons until it disappears. You can’t select the same boon more than once at the same time, unless stated otherwise.</p>
+			<table>
+				<thead>
+					<tr><td>Spirit Boon</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>Resistance</td><td>Your spirit gains resistance to one damage type of your choice. You can select this boon up to a number of times equal to your proficiency bonus.</td></tr>
+				<tr><td>Extended Stay</td><td>The maximum amount of time your spirit can remain manifested increases by 10 minutes. You can select this boon up to a number of times equal to your proficiency bonus.</td></tr>
+				<tr><td>Enlarge</td><td>Your spirit’s size increases by one category. Its reach increases by 5 feet, and its melee weapon attacks deal an extra 1d8 damage of the attack’s type on a hit.</td></tr>
+				<tr><td>Teleporter</td><td>Your spirit can use its bonus action to teleport up to 30 feet to an unoccupied space it can see.</td></tr>
+				<tr><td>Frenzy</td><td>Your spirit has advantage on all melee attack rolls, but attack rolls made against it have advantage.</td></tr>
+				<tr><td>Detonator</td><td>When your spirit is reduced to 0 hit points, each creature of your choice within 20 feet of it must succeed on a Dexterity saving throw against your sorcerer spell save DC or take necrotic damage equal to 2d10 + your sorcerer level.</td></tr>
+				<tr><td>Of One Mind</td><td>You can use a bonus action to see through your spirit’s eyes and hear what it hears until the start of your next turn. During this time, you are deaf and blind with regard to your own senses.</td></tr>
+				<tr><td>Devil's Sight</td><td>Your spirit can see in dim light and darkness, both magical and nonmagical, to a distance of 120 feet.</td></tr>
+				<tr><td>Enhanced Agility</td><td>Your spirit’s speed is doubled.</td></tr>
+				<tr><td>Battlefield Squire</td><td>After your spirit takes the Help action, it can use a bonus action on that turn to take the Disengage or Dodge action.</td></tr>
+			</table>
+		</description>
+		<sheet display = "true">
+			<description>When you manifest your spirit using your Conduit of the Soul feature, you can expend any number of sorcery points. When you do, choose one boon from the following list for each point you expend. Your manifested spirit gains these boons until it disappears. You can’t select the same boon more than once at the same time, unless stated otherwise.
+			RESISTANCE: Your spirit gains resistance to one damage type of your choice. You can select this boon up to a number of times equal to your proficiency bonus.
+			EXTENDED STAY: The maximum amount of time your spirit can remain manifested increases by 10 minutes. You can select this boon up to a number of times equal to your proficiency bonus.
+			ENLARGE: Your spirit’s size increases by one category. Its reach increases by 5 feet, and its melee weapon attacks deal an extra 1d8 damage of the attack’s type on a hit.
+			TELEPORTER: Your spirit can use its bonus action to teleport up to 30 feet to an unoccupied space it can see.
+			FRENZY: Your spirit has advantage on all melee attack rolls, but attack rolls made against it have advantage.
+			DETONATOR: When your spirit is reduced to 0 hit points, each creature of your choice within 20 feet of it must succeed on a Dexterity saving throw against your sorcerer spell save DC or take necrotic damage equal to 2d10 + your sorcerer level.
+			OF ONE MIND: You can use a bonus action to see through your spirit’s eyes and hear what it hears until the start of your next turn. During this time, you are deaf and blind with regard to your own senses.
+			DEVIL'S SIGHT: Your spirit can see in dim light and darkness, both magical and nonmagical, to a distance of 120 feet.
+			ENHANCED AGILITY: Your spirit’s speed is doubled.
+			BATTLEFIELD SQUIRE: After your spirit takes the Help action, it can use a bonus action on that turn to take the Disengage or Dodge action.</description>
+		
+			<description level = "18">When you manifest your spirit using your Conduit of the Soul feature, you can expend any number of sorcery points. When you do, choose one boon from the following list for each point you expend. Your manifested spirit gains these boons until it disappears. You can’t select the same boon more than once at the same time, unless stated otherwise.
+			RESISTANCE: Your spirit gains resistance to one damage type of your choice. You can select this boon up to a number of times equal to your proficiency bonus.
+			EXTENDED STAY: The maximum amount of time your spirit can remain manifested increases by 10 minutes. You can select this boon up to a number of times equal to your proficiency bonus.
+			ENLARGE: Your spirit’s size increases by one category. Its reach increases by 5 feet, and its melee weapon attacks deal an extra 1d8 damage of the attack’s type on a hit. You can select this boon up to a number of times equal to half your proficiency bonus.
+			TELEPORTER: Your spirit can use its bonus action to teleport up to 30 feet to an unoccupied space it can see.
+			FRENZY: Your spirit has advantage on all melee attack rolls, but attack rolls made against it have advantage.
+			DETONATOR: When your spirit is reduced to 0 hit points, each creature of your choice within 20 feet of it must succeed on a Dexterity saving throw against your sorcerer spell save DC or take necrotic damage equal to 2d10 + your sorcerer level.
+			OF ONE MIND: You can use a bonus action to see through your spirit’s eyes and hear what it hears until the start of your next turn. During this time, you are deaf and blind with regard to your own senses.
+			DEVIL'S SIGHT: Your spirit can see in dim light and darkness, both magical and nonmagical, to a distance of 120 feet.
+			ENHANCED AGILITY: Your spirit’s speed is doubled.
+			BATTLEFIELD SQUIRE: After your spirit takes the Help action, it can use a bonus action on that turn to take the Disengage or Dodge action.</description>
+		</sheet>
+	</element>
+	<element name = "Durable Connection" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_DURABLE_CONNECTION">
+		<description>
+			<p>You have advantage on Constitution saving throws made to maintain concentration on your manifested spirit and on conjuration spells.</p>
+			<p class = "indent">In addition, you share any damage resistances that your manifested spirit has.</p>
+		</description>
+		<sheet display = "true">
+			<description>You have advantage on Constitution saving throws made to maintain concentration on your manifested spirit and on conjuration spells.
+			In addition, you share any damage resistances that your manifested spirit has.</description>
+		</sheet>
+	</element>
+	<element name = "Final Form Manifestation" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_FINAL_FORM_MANIFESTATION">
+		<description>
+			<p>You no longer need to maintain your concentration on your manifested spirit. You can cause it to disappear at any time (no action required).</p>
+			<p class = "indent">In addition, you can now select the Enlarge boon with your Spirit Empowerment feature a number of times equal to half your proficiency bonus.</p>
+		</description>
+		<sheet display = "true">
+			<description>You no longer need to maintain your concentration on your manifested spirit. You can cause it to disappear at any time (no action required).</description>
+		</sheet>
+	</element>
+
+    <element name = "Manifested Spirit (Small)" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_MANIFESTED_SPIRIT_SPIRIT_SMALL">
+		<supports>Manifested Spirit</supports>
+		<requirements>ID_RGTTYR_ARCHETYPE_SORCERER_SPIRIT_CALLER</requirements>
+		<description>
+			<p>Proficiency Bonus (PB)<br/> equals your proficiency bonus</p>
+		</description>
+		<setters>
+			<set name = "size">Small</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">shares your alignment</set>
+			<set name = "ac">13 + PB (natural armor)</set>
+			<set name = "hp">5 + five times your sorcerer level</set>
+			<set name = "speed">30 ft., fly 20 ft. (hover)</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">16</set>
+			<set name = "constitution">16</set>
+			<set name = "intelligence">9</set>
+			<set name = "wisdom">15</set>
+			<set name = "charisma">12</set>
+            <set name = "skills">Intimidation + 1 plus PB, Perception + 2 plus PB, Stealth + 3 plus PB</set>
+			<set name = "senses">darkvision 60 ft., passive Perception 12 plus PB</set>
+			<set name = "languages">understands the languages you speak</set>
+			<set name = "challenge">equal to your proficiency bonus</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_MULTIATTACK, ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_SPIRIT_GRASP, ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_SPIRIT_REND, ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_DETECT</set>
+        </setters>
+		<rules>
+			<stat name = "companion:proficiency" value = "proficiency" bonus = "base"/>
+			<stat name = "companion:proficiency" value = "-2" bonus = "base companion PB removal"/>
+
+			<stat name = "companion:ac" value = "13" bonus = "base"/>
+
+			<stat name = "companion:ac" value = "proficiency"/>
+
+			<stat name = "companion:hp:max" value = "5" bonus = "base"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:speed:fly" value = "20" bonus = "base"/>
+
+			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
+			<stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+    <element name = "Manifested Spirit (Tiny)" type = "Companion" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_MANIFESTED_SPIRIT_SPIRIT_TINY">
+		<supports>Manifested Spirit</supports>
+		<requirements>ID_RGTTYR_ARCHETYPE_SORCERER_SPIRIT_CALLER</requirements>
+		<description>
+			<p>Proficiency Bonus (PB)<br/> equals your proficiency bonus</p>
+		</description>
+		<setters>
+			<set name = "size">Tiny</set>
+			<set name = "type">Fey</set>
+			<set name = "alignment">shares your alignment</set>
+			<set name = "ac">13 + PB (natural armor)</set>
+			<set name = "hp">5 + five times your sorcerer level</set>
+			<set name = "speed">30 ft., fly 20 ft. (hover)</set>
+			<set name = "strength">14</set>
+			<set name = "dexterity">16</set>
+			<set name = "constitution">16</set>
+			<set name = "intelligence">9</set>
+			<set name = "wisdom">15</set>
+			<set name = "charisma">12</set>
+            <set name = "skills">Intimidation + 1 plus PB, Perception + 2 plus PB, Stealth + 3 plus PB</set>
+			<set name = "senses">darkvision 60 ft., passive Perception 12 plus PB</set>
+			<set name = "languages">understands the languages you speak</set>
+			<set name = "challenge">equal to your proficiency bonus</set>
+			<set name = "actions">ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_MULTIATTACK, ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_SPIRIT_GRASP, ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_SPIRIT_REND, ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_DETECT</set>
+        </setters>
+		<rules>
+			<stat name = "companion:proficiency" value = "proficiency" bonus = "base"/>
+			<stat name = "companion:proficiency" value = "-2" bonus = "base companion PB removal"/>
+
+			<stat name = "companion:ac" value = "13" bonus = "base"/>
+
+			<stat name = "companion:ac" value = "proficiency"/>
+
+			<stat name = "companion:hp:max" value = "5" bonus = "base"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+			<stat name = "companion:hp:max" value = "level:sorcerer"/>
+
+			<stat name = "companion:speed" value = "30" bonus = "base"/>
+			<stat name = "companion:speed:fly" value = "20" bonus = "base"/>
+
+			<stat name = "companion:intimidation:proficiency" value = "companion:proficiency" bonus = "base"/>
+			<stat name = "companion:perception:proficiency" value = "companion:proficiency" bonus = "base"/>
+			<stat name = "companion:stealth:proficiency" value = "companion:proficiency" bonus = "base"/>
+		</rules>
+	</element>
+
+	<element name = "Multiattack" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_MULTIATTACK">
+		<description>
+			<p>The spirit makes a number of attacks equal to half your proficiency bonus (rounded down).</p>
+		</description>
+		<sheet display = "true">
+			<description>The spirit makes a number of attacks equal to half your proficiency bonus (rounded down).</description>
+		</sheet>
+	</element>
+	<element name = "Spirit Grasp" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_SPIRIT_GRASP">
+		<description>
+			<p><i>Melee Spell Attack</i>: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + PB necrotic or radiant damage (your choice).</p>
+		</description>
+		<sheet display = "true">
+			<description>Melee Spell Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + PB necrotic or radiant damage (your choice).</description>
+		</sheet>
+	</element>
+	<element name = "Spirit Rend" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_SPIRIT_REND">
+		<description>
+			<p><i>Ranged Spell Attack</i>: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + PB necrotic or radiant damage (your choice).</p>
+		</description>
+		<sheet display = "true">
+			<description>Melee Spell Attack: your spell attack modifier to hit, reach 60 ft., one target. Hit: 1d6 + PB necrotic or radiant damage (your choice).</description>
+		</sheet>
+	</element>
+	<element name = "Detect" type = "Companion Action" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_COMPANION_ACTION_MANIFESTED_SPIRIT_DETECT">
+		<description>
+			<p>The spirit makes a Wisdom (Perception) check.</p>
+		</description>
+		<sheet display = "true">
+			<description>As a bonus action, the spirit makes a Wisdom (Perception) check.</description>
+		</sheet>
+	</element>
+    
+	<element name = "Manifested Spirit" type = "Information" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_INFORMATION_MANIFESTED_SPIRIT">
+		<description>
+			<p style = "margin-bottom:-5px"><em>Small or Tiny Fey, shares your alignment</em></p>
+			<h4 style = "margin-top:5px" />
+			<ul class = "unstyled">
+				<li><strong>Armor Class</strong> 13 + PB (natural armour)</li>
+				<li><strong>Hit Points</strong> 5 + five times your sorcerer level</li>
+				<li><strong>Speed</strong> 30ft., fly 20ft.</li>
+				<li><strong>Proficiency Bonus</strong> equal to your proficiency bonus</li>
+			</ul>
+			<table style = "text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>16 (+3)</td><td>16 (+3)</td><td>9 (-1)</td><td>15 (+2)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class = "unstyled">
+				<li><strong>Skills</strong> Intimidation +1 plus PB, Perception +2 plus PB, Stealth +3 plus PB</li>
+				<li><strong>Senses</strong> darkvision 30 ft., passive Perception 12 plus PB</li>
+				<li><strong>Languages</strong> understands the languages you speak</li>
+				<li><strong>Challenge</strong> equal to your proficiency bonus</li>
+			</ul>
+			<h4 style = "margin-top:10px">Actions</h4>
+			<ul class = "unstyled">
+				<li><strong><em>Multiattack.</em></strong> The spirit makes a number of attacks equal to half your proficiency bonus (rounded down).</li>
+                <p></p>
+				<li><strong><em>Spirit Grasp.</em></strong> Melee Spell Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + PB necrotic or radiant damage (your choice).</li>
+                <p></p>
+				<li><strong><em>Spirit Rend.</em></strong> Ranged Spell Attack: your spell attack modifier to hit, range 60 ft., one target. Hit: 1d6 + PB necrotic or radiant damage (your choice).</li>
+			</ul>
+            <h4 style = "margin-top:10px">Bonus Actions</h4>
+            <ul class = "unstyled">
+                <li><strong><em>Detect.</em></strong> The spirit makes a Wisdom (Perception) check.</li>
+            </ul>
+		</description>
+	</element>
+	<append id = "ID_PHB_SPELL_COMMAND">
+		<supports>Command</supports>
+	</append>
+    <append id = "ID_PHB_SPELL_MAGE_ARMOR">
+        <supports>Mage Armor</supports>
+    </append>
+	<append id = "ID_PHB_SPELL_AID">
+		<supports>Aid</supports>
+	</append>
+	<append id = "ID_PHB_SPELL_PLANT_GROWTH">
+		<supports>Plant Growth</supports>
+	</append>
+    <append id = "ID_PHB_SPELL_BANISHMENT">
+        <supports>Banishment</supports>
+    </append>
+	<append id = "ID_PHB_SPELL_GUARDIAN_OF_FAITH">
+		<supports>Guardian of Faith</supports>
+	</append>
+	<append id = "ID_PHB_SPELL_REINCARNATE">
+		<supports>Reincarnate</supports>
+	</append>
+	<append id = "ID_PHB_SPELL_ASTRAL_PROJECTION">
+		<supports>Astral Projection</supports>
+	</append>
+</elements>
