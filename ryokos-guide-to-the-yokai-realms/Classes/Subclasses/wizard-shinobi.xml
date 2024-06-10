@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Shinobi, Wizard subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version  =  "0.0.1">
+		<update version  =  "0.0.2">
 			<file name  =  "wizard-shinobi.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/wizard-shinobi.xml"/>
 		</update>
 	</info>
@@ -140,7 +140,7 @@
             <description>Immediately after your attack hits, you expend 10 feet of movement to teleport to an area of dim light or darkness you can see within 30 feet of you.</description>
         </sheet>
     </element>
-	<element name = "Advanced Ninjutsu" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU">
+	<element name = "Advanced Ninjutsu" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU">
 		<description>
 			<p>Your command of shadow magic further enhances your lethal capabilities. You can now also choose from the following options when you use your Ninjutsu feature, but only if you empower your attack with a spell slot of 3rd level or higher:</p>
             <ul>

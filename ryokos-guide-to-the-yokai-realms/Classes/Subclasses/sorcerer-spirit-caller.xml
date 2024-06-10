@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Spirit Caller, Sorcerer subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version  =  "0.0.1">
+		<update version  =  "0.0.2">
 			<file name  =  "sorcerer-spirit-caller.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/sorcerer-spirit-caller.xml"/>
 		</update>
 	</info>
@@ -92,7 +92,7 @@
 			<description>When you use a Metamagic option on a spell with a range other than self, you can cause the spell to originate from your manifested spirit, instead of you, if your manifested spirit is within 120 feet of you.</description>
 		</sheet>
 	</element>
-	<element name = "Spirit Empowerment" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_EMPOWERMENT">
+	<element name = "Spirit Empowerment" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SPIRIT_CALLER_SPIRIT_EMPOWERMENT">
 		<description>
 			<p>When you manifest your spirit using your Conduit of the Soul feature, you can expend any number of sorcery points. When you do, choose one boon from the following list for each point you expend. Your manifested spirit gains these boons until it disappears. You can’t select the same boon more than once at the same time, unless stated otherwise.</p>
 			<table>

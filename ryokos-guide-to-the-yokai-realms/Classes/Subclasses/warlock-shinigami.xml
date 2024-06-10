@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>The Shinigami, Warlock patron from Ryoko's Guide to the Yokai Realms</name>
-		<update version  =  "0.0.1">
+		<update version  =  "0.0.2">
 			<file name  =  "warlock-shinigami.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/warlock-shinigami.xml"/>
 		</update>
 	</info>
@@ -143,7 +143,7 @@
 			<description>Your bond to the Shinigami grants you a piercing insight into the lifespan of others and reveals the best way to cut it short. As a bonus action, you can focus your attention on one creature you can see within 60 feet of you. You become aware of one of its damage vulnerabilities (if any) and its damage resistances or damage immunities (if any).</description>
 		</sheet>
 	</element>
-	<element name = "Gift of the Psychopomp" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GIFT_OF_THE_PSYCHOPOMP">
+	<element name = "Gift of the Psychopomp" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GIFT_OF_THE_PSYCHOPOMP">
 		<description>
 			<p>While you are puppeteering a target using your Grim Puppeteer feature, you can make any spell you cast that targets only you also target your puppet.</p>
 		</description>
