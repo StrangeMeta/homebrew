@@ -578,7 +578,7 @@
         <description>
             <p>Your strikes manifest elemental energy, which you can unleash at the peak of your combination. After you take the Attack action on your turn, you can make one Elemental Strike attack as a bonus action that turn. You do not add your ability modifier to the damage from this attack.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>After taking the Attack action on your turn, you can make an Elemental Strike attack as a bonus action that turn. You don't add your ability modifier to the damage.</description>
         </sheet>
     </element>
@@ -610,7 +610,7 @@
         <description>
             <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can attack twice, instead of once, when you take the Attack action on your turn.</description>
         </sheet>
         <rules>

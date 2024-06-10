@@ -72,7 +72,7 @@
         <description>
             <p>You can breathe in both air and water.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can breathe in both air and water.</description>
         </sheet>
     </element>
@@ -91,7 +91,7 @@
                     <tr><td>White</td><td>Wisdom</td><td>Cleric</td></tr>
                     <tr><td>Blue</td><td>Charisma</td><td>Bard</td></tr>
                 </table>
-        <sheet>
+        <sheet display = "true">
             <description>Each tatsumi is born with its own unique colouration. In tatsumi folktales, one’s primary colouration holds special significance. Your primary colouration also impacts your Slumbering Dragon trait as a nishikin, and your Heartening Breath and Innate Magic traits as a ryujin.</description>
         </sheet>
         <rules>
@@ -105,7 +105,7 @@
         <description>
             <p>Your primary colouring is red, your associated ability score is strength, and your associated class is Sorcerer.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
         </sheet>
         <rules>
@@ -120,7 +120,7 @@
         <description>
             <p>Your primary colouring is gold, your associated ability score is dexterity, and your associated class is Druid.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
         </sheet>
         <rules>
@@ -135,7 +135,7 @@
         <description>
             <p>Your primary colouring is black, your associated ability score is constitution, and your associated class is Warlock.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
         </sheet>
         <rules>
@@ -150,7 +150,7 @@
         <description>
             <p>Your primary colouring is siilver, your associated ability score is intelligence, and your associated class is Wizard.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
         </sheet>
         <rules>
@@ -165,7 +165,7 @@
         <description>
             <p>Your primary colouring is white, your associated ability score is wisdom, and your associated class is Cleric.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
         </sheet>
         <rules>
@@ -180,7 +180,7 @@
         <description>
             <p>Your primary colouring is blue, your associated ability score is charisma, and your associated class is Bard.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your primary colouring is {{tatsumi-colour}}, your associated ability score is {{tatsumi-colour:ability}}, and your associated class is {{tatsumi-colour:class}}.</description>
         </sheet>
         <rules>
@@ -227,7 +227,7 @@
         <description>
             <p>You have advantage on ability checks or saving throws made to avoid or end the grappled condition on yourself.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have advantage on ability checks or saving throws made to avoid or end the grappled condition on yourself.</description>
         </sheet>
     </element>
@@ -289,7 +289,7 @@
         <description>
             <p>You learn one cantrip of your choice from the spell list of the class associated with your primary colouration. Your spellcasting ability for this cantrip is the ability associated with your primary colouration.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You learn one cantrip from the {{tatsumi-colour:class}} spell list. Your spellcasting ability for this cantrip is {{tatsumi-colour:ability}}.</description>
         </sheet>
         <rules>
@@ -305,7 +305,7 @@
         <description>
             <p>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>While in sunlight, a warm, bubbling vitality thrums through you, giving you advantage on saving throws you make to avoid or end the frightened, paralysed, or stunned condition on yourself, or against being put to sleep.</description>
         </sheet>
     </element>

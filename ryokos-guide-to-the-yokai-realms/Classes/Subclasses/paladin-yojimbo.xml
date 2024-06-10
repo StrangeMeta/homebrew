@@ -98,7 +98,7 @@
 			<p>Your divine power flows out from you. When an ally within 10 feet of you becomes the target of a melee attack, you can use your reaction to move up to your speed towards the attacker. If you end your movement within 5 feet of the attacker, you force it to target you with the attack instead.</p>
 			<p class = "indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>When an ally within {{aura of sanctuary:range}} feet of you becomes the target of a melee attack, you can use your reaction to move up to your speed towards the attacker. If you end your movement within 5 feet of the attacker, you force it to target you with the attack instead.</description>
 		</sheet>
 		<rules>
@@ -110,7 +110,7 @@
 		<description>
 			<p>You are a master at providing aid in battle. You can take the Help action or use your Lay on Hands feature as a bonus action. In addition, when you take the Help action, the creature you helped can add your Charisma modifier to the next attack roll or ability check it makes within the next minute.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>You can take the Help action or use your Lay on Hands feature as a bonus action. In addition, when you take the Help action, the creature you helped can add {{charisma:modifier}} to the next attack roll or ability check it makes within the next minute.</description>
 		</sheet>
 	</element>

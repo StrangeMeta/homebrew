@@ -33,7 +33,7 @@
 		<description>
 			<p>You learn the <i>prestidigitation</i> cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use <i>prestidigitation</i> in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>You can use prestidigitation to create illusions that duplicate the effects of stage magic. When you use prestidigitation in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.</description>
 		</sheet>
 		<rules>
@@ -46,7 +46,7 @@
 		<description>
 			<p>When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal to your proficiency bonus. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal to {{proficiency}}. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.</description>
 		</sheet>
 	</element>

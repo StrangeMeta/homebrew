@@ -86,7 +86,7 @@
         <description>
             <p>You are proficient with one kind of artisan’s tools of your choice. When you make a Crafting check using this tool, you can add 1d4 to the result of the check.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You are proficient with one kind of artisan’s tools of your choice. When you make a Crafting check using this tool, you can add 1d4 to the result of the check.</description>
         </sheet>
         <rules>
@@ -122,7 +122,7 @@
         <description>
             <p>You learn the prestidigitation and thaumaturgy cantrips. In addition, you can cast them without components while you are in dim light or darkness. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You learn the prestidigitation and thaumaturgy cantrips. In addition, you can cast them without components while you are in dim light or darkness.</description>
         </sheet>
         <rules>
@@ -136,7 +136,7 @@
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Intelligence is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -145,7 +145,7 @@
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Wisdom is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -154,7 +154,7 @@
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Charisma is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -195,7 +195,7 @@
         <description>
             <p>You have resistance to psychic damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have resistance to psychic damage.</description>
         </sheet>
         <rules>
@@ -206,7 +206,7 @@
         <description>
             <p>You gain proficiency in the Deception and Stealth skills.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You gain proficiency in the Deception and Stealth skills.</description>
         </sheet>
         <rules>
@@ -229,7 +229,7 @@
         <description>
             <p>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn.</description>
         </sheet>
     </element>

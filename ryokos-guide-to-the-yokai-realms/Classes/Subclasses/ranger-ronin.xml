@@ -74,7 +74,7 @@
 		<description>
 			<p>You are a solitary warrior, shackled by no code or authority beyond your own. Whenever you make a saving throw to avoid or end the charmed condition on yourself, roll a d6 and add the number rolled to the saving throw.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>Whenever you make a saving throw to avoid or end the charmed condition on yourself, roll a d6 and add the number rolled to the saving throw.</description>
 		</sheet>
 	</element>

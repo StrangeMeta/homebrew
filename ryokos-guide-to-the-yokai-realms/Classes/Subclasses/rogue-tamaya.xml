@@ -78,7 +78,7 @@
 		<description>
 			<p>You are adept at using sound, light, and smoke to get the drop on your enemies. As a bonus action, or as a reaction when a creature rolls initiative, you can throw out a disorienting barrage of flashbangs and smoke at a point within 60 feet of you. Creatures of your choice within a 20-foot-radius sphere centered on that point make a Wisdom saving throw against your spellbomb save DC. On a failed save, a creature takes a -10 penalty to that initiative roll, or the next initiative roll it makes within the next minute. The creature’s current initiative does not change. On a successful save, the creature takes a -5 penalty instead.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>As a bonus action, or as a reaction when a creature rolls initiative, you can throw out a disorienting barrage of flashbangs and smoke at a point within 60 feet of you. Creatures of your choice within a 20-foot-radius sphere centered on that point make a Wisdom saving throw against your spellbomb save DC. On a failed save, a creature takes a -10 penalty to that initiative roll, or the next initiative roll it makes within the next minute. The creature’s current initiative does not change. On a successful save, the creature takes a -5 penalty instead.</description>
 		</sheet>
 	</element>

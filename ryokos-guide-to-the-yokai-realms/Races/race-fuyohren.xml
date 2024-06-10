@@ -66,7 +66,7 @@
         <description>
             <p>You have advantage on saving throws you make to avoid or end the restrained, paralysed, or petrified condition on yourself.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have advantage on saving throws you make to avoid or end the restrained, paralysed, or petrified condition on yourself.</description>
         </sheet>
     </element>
@@ -74,7 +74,7 @@
         <description>
             <p>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</description>
         </sheet>
     </element>
@@ -104,7 +104,7 @@
         <description>
             <p>You gain proficiency in your choice of one of the following skills: Acrobatics, Animal Handling, Nature, Survival, or Performance.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</description>
         </sheet>
         <rules>

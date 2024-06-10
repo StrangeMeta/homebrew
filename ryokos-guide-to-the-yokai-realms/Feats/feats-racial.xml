@@ -336,7 +336,7 @@
         <description>
             <p>If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
         </sheet>
     </element>
@@ -345,7 +345,7 @@
         <description>
             <p>The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.</description>
         </sheet>
     </element>
@@ -354,7 +354,7 @@
         <description>
             <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d4 + 3) bludgeoning damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d4 + 3) bludgeoning damage.</description>
         </sheet>
     </element>
@@ -396,7 +396,7 @@
         <description>
             <p>While out of water, the octopus can hold its breath for 1 hour.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>While out of water, the octopus can hold its breath for 1 hour.</description>
         </sheet>
     </element>
@@ -405,7 +405,7 @@
         <description>
             <p>The octopus has advantage on Dexterity (Stealth) checks made while underwater.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The octopus has advantage on Dexterity (Stealth) checks made while underwater.</description>
         </sheet>
     </element>
@@ -414,7 +414,7 @@
         <description>
             <p>The octopus can breathe only underwater.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The octopus can breathe only underwater.</description>
         </sheet>
     </element>
@@ -423,7 +423,7 @@
         <description>
             <p>Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.</description>
         </sheet>
     </element>
@@ -432,7 +432,7 @@
         <description>
             <p>A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</description>
         </sheet>
     </element>
@@ -469,7 +469,7 @@
         <description>
             <p>If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</description>
         </sheet>
     </element>
@@ -478,7 +478,7 @@
         <description>
             <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: (2d6 + 4) bludgeoning damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: (2d6 + 4) bludgeoning damage.</description>
         </sheet>
     </element>
@@ -518,7 +518,7 @@
         <description>
             <p>The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
         </sheet>
     </element>
@@ -527,7 +527,7 @@
         <description>
             <p>The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated.</description>
         </sheet>
     </element>
@@ -536,7 +536,7 @@
         <description>
             <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
         </sheet>
     </element>
@@ -577,7 +577,7 @@
         <description>
             <p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
         </sheet>
     </element>
@@ -586,7 +586,7 @@
         <description>
             <p>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</description>
         </sheet>
     </element>
@@ -595,7 +595,7 @@
         <description>
             <p>The spider ignores movement restrictions caused by webbing.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The spider ignores movement restrictions caused by webbing.</description>
         </sheet>
     </element>
@@ -604,7 +604,7 @@
         <description>
             <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: (1d8 + 3) piercing damage plus (2d8)poison damage. The target must make a DC 11 Constitution saving throw, taking the poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: (1d8 + 3) piercing damage plus (2d8)poison damage. The target must make a DC 11 Constitution saving throw, taking the poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</description>
         </sheet>
     </element>
@@ -613,7 +613,7 @@
         <description>
             <p>Ranged Weapon Attack: +5 to hit, reach 30/60 ft., one creature. The target is restrained by webbing As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Ranged Weapon Attack: +5 to hit, reach 30/60 ft., one creature. The target is restrained by webbing As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
         </sheet>
     </element>
@@ -651,7 +651,7 @@
         <description>
             <p>The toad can breathe air and water.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The toad can breathe air and water.</description>
         </sheet>
     </element>
@@ -660,7 +660,7 @@
         <description>
             <p>The toad's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The toad's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start.</description>
         </sheet>
     </element>
@@ -669,7 +669,7 @@
         <description>
             <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d10 + 2) piercing damage plus (1d10)poison damage. The target is grappled (escape dc 13) Until this grapple ends, the target is restrained, and the toad can't bite another target.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d10 + 2) piercing damage plus (1d10)poison damage. The target is grappled (escape dc 13) Until this grapple ends, the target is restrained, and the toad can't bite another target.</description>
         </sheet>
     </element>
@@ -679,7 +679,7 @@
             <p>The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.</p>
             <p>If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d10 + 2) piercing damage plus (1d10)poison damage. The target is grappled (escape dc 13) Until this grapple ends, the target is restrained, and the toad can't bite another target.</description>
             <description>If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</description>
         </sheet>
@@ -698,7 +698,7 @@
             </ul>
             <p class = "indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this feat (choose when you select this feat).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You know the Water Whip cantrip. You can cast the riptide and water breathing spells without expending a spell slot. Once you cast riptide or water breathing with this feat, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</description>
         </sheet>
         <rules>
@@ -843,7 +843,7 @@
         <description>
             <p>Your Dexterity score increases by 1, to a maximum of 20. In addition, your speed increases by 5 feet, and you can use a bonus action to prepare yourself to move in a dextrous flourish. When you do, the next attack roll made against you before the start of your next turn has disadvantage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your speed increases by 5 feet, and you can use a bonus action to prepare yourself to move in a dextrous flourish. When you do, the next attack roll made against you before the start of your next turn has disadvantage.</description>
         </sheet>
         <rules>
@@ -870,7 +870,7 @@
         <description>
             <p>Your Wisdom score increases by 1, to a maximum of 20. In addition, you have darkvision out to 30 feet, and you can take the Hide action as a bonus action while in dim light or darkness. If you already have darkvision, its range increases by 30 feet.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have darkvision out to 30 feet, and you can take the Hide action as a bonus action while in dim light or darkness. If you already have darkvision, its range increases by 30 feet.</description>
         </sheet>
         <rules>
@@ -903,7 +903,7 @@
         <description>
             <p>The yokai magic that flows through your veins lets you draw on a wider pool of magic than is typical to most hanataka. You learn two cantrips of your choice from the druid or sorcerer spell list. You can cast them without components while in dim light or darkness. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>The yokai magic that flows through your veins lets you draw on a wider pool of magic than is typical to most hanataka. You learn two cantrips of your choice from the druid or sorcerer spell list. You can cast them without components while in dim light or darkness.</description>
         </sheet>
         <rules>

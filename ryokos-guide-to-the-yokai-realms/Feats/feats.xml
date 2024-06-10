@@ -52,7 +52,7 @@
                 <li>You have a climbing speed equal to your walking speed. In addition, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free, and you ignore difficult terrain caused by webbing.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have a climbing speed equal to your walking speed. In addition, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free, and you ignore difficult terrain caused by webbing.</description>
         </sheet>
         <rules>
@@ -71,7 +71,7 @@
                 <li>As a bonus action, you can harden your body to stone. Until the start of your next turn, you gain a +2 bonus to AC and Constitution saving throws while you aren’t wearing heavy armour, and you have disadvantage on Dexterity saving throws. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As an action, you can ignite a glowing mane of radiant energy around your neck, which lasts until you dismiss it as a bonus action or you fall unconscious. While your mane is ignited, you shed dim light in a 10-foot radius, and a creature you are grappling takes 2d4 radiant damage at the start of its turn. As a bonus action, you can harden your body to stone. Until the start of your next turn, you gain a +2 bonus to AC and Constitution saving throws while you aren’t wearing heavy armour, and you have disadvantage on Dexterity saving throws. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
         </sheet>
     </element>
@@ -84,7 +84,7 @@
                 <li>As a bonus action, you can grant yourself a flying speed equal to your walking speed until the end of your turn. You fall if you end your turn in the air with nothing holding you aloft. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>At the start of your turn, you can roll a d6. If the result on the die is even, you gain a bonus to the next attack roll, ability check, or saving throw you make before the end of this turn. If the result is odd, you take the result on the die as poison damage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest. As a bonus action, you can grant yourself a flying speed equal to your walking speed until the end of your turn. You fall if you end your turn in the air with nothing holding you aloft. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
         </sheet>
     </element>
@@ -203,7 +203,7 @@
                 <li>When you use an action to cast a cantrip that includes a weapon attack, you can make one weapon attack as a bonus action on that turn.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>When you use an action to cast a cantrip that includes a weapon attack, you can make one weapon attack as a bonus action on that turn.</description>
         </sheet>
         <rules>
@@ -286,7 +286,7 @@
                 <li>When you initiate a combo attack, one willing creature of your choice that you can see can collaborate in that combo without preventing them from collaborating in another combo attack before they finish a long rest.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>When you initiate a combo attack, one willing creature of your choice that you can see can collaborate in that combo without preventing them from collaborating in another combo attack before they finish a long rest. You can initiate or collaborate in a combo attack*, even if you have already initiated or collaborated in one since your last long rest. Once you use this benefit, you can’t use it again until you finish a long rest.</description>
         </sheet>
         <rules>
@@ -364,7 +364,7 @@
             <p>Not implemented yet.</p>
             <p>Your fervent commitment to combat training puts your weapon mastery on par with the most dedicated of specialists. You can calculate your martial level as equal to your character level, no matter your class.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your martial level is calculated as equal to your character level, no matter your class</description>
         </sheet>
     </element>
@@ -377,7 +377,7 @@
                 <li>Once on each of your turns when you make a ranged weapon attack using a weapon that has both the Light and Thrown properties, and you don’t have disadvantage on the attack roll, you can choose to throw two weapons with a single flick of the wrist. If you do, make a separate attack roll with disadvantage for each weapon. These attacks can be against different targets.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Once on each of your turns when you make a ranged weapon attack using a weapon that has both the Light and Thrown properties, and you don’t have disadvantage on the attack roll, you can choose to throw two weapons with a single flick of the wrist. If you do, make a separate attack roll with disadvantage for each weapon. These attacks can be against different targets.</description>
         </sheet>
         <rules>
@@ -423,7 +423,7 @@
         <description>
             <p>You can choose to have your unarmed strikes deal 1d8 + your strength modifier acid damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>
                 <p>You may choose to have your unarmed strikes deal 1d8 + str modifier of the chosen damage.</p>
             </description>
@@ -435,7 +435,7 @@
         <description>
             <p>You can choose to have your unarmed strikes deal 1d8 + your strength modifier cold damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>
                 <p>You may choose to have your unarmed strikes deal 1d8 + str modifier of the chosen damage.</p>
             </description>
@@ -447,7 +447,7 @@
         <description>
             <p>You can choose to have your unarmed strikes deal 1d8 + your strength modifier fire damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>
                 <p>You may choose to have your unarmed strikes deal 1d8 + str modifier of the chosen damage.</p>
             </description>
@@ -459,7 +459,7 @@
         <description>
             <p>You can choose to have your unarmed strikes deal 1d8 + your strength modifier lightning damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>
                 <p>You may choose to have your unarmed strikes deal 1d8 + str modifier of the chosen damage.</p>
             </description>
@@ -471,7 +471,7 @@
         <description>
             <p>You can choose to have your unarmed strikes deal 1d8 + your strength modifier poison damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>
                 <p>You may choose to have your unarmed strikes deal 1d8 + str modifier of the chosen damage.</p>
             </description>
@@ -483,7 +483,7 @@
         <description>
             <p>You can choose to have your unarmed strikes deal 1d8 + your strength modifier thunder damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>
                 <p>You may choose to have your unarmed strikes deal 1d8 + str modifier of the chosen damage.</p>
             </description>
@@ -511,7 +511,7 @@
         <description>
             <p>You learn one cantrip and one 1st-level spell from the Air spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you may do so again. You can also cast the spell using any spell slots you have. Your spellcasting ability modifier is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You learn one cantrip and one 1st-level spell from the Air spell list.</description>
         </sheet>
         <rules>
@@ -527,7 +527,7 @@
         <description>
             <p>You learn one cantrip and one 1st-level spell from the Earth spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you may do so again. You can also cast the spell using any spell slots you have. Your spellcasting ability modifier is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You learn one cantrip and one 1st-level spell from the Earth spell list.</description>
         </sheet>
         <rules>
@@ -543,7 +543,7 @@
         <description>
             <p>You learn one cantrip and one 1st-level spell from the Fire spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you may do so again. You can also cast the spell using any spell slots you have. Your spellcasting ability modifier is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You learn one cantrip and one 1st-level spell from the Fire spell list.</description>
         </sheet>
         <rules>
@@ -559,7 +559,7 @@
         <description>
             <p>You learn one cantrip and one 1st-level spell from the Water spell list. You can cast the 1st-level spell without a spell slot, and you must finish a long rest before you may do so again. You can also cast the spell using any spell slots you have. Your spellcasting ability modifier is Intelligence, Wisdom, or Charisma (choose when you select this feat).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You learn one cantrip and one 1st-level spell from the Water spell list.</description>
         </sheet>
         <rules>
@@ -575,7 +575,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -586,7 +586,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -597,7 +597,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -608,7 +608,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Intelligence for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -618,7 +618,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -629,7 +629,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -640,7 +640,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -651,7 +651,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Wisdom.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Wisdom for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -661,7 +661,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -672,7 +672,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -683,7 +683,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -694,7 +694,7 @@
         <description>
             <p>You can cast this feat's spells without a spell slot once per long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Charisma.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your spellcasting ability is Charisma for your Elemental Initiate spells.</description>
         </sheet>
     </element>
@@ -704,7 +704,7 @@
         <description>
             <p>As a reaction, you gain resistance to thunder damage until the start of your next turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As a reaction, you gain resistance to Thunder damage until the start of your next turn.</description>
         </sheet>
     </element>
@@ -714,7 +714,7 @@
         <description>
             <p>As a reaction, you gain resistance to acid damage until the start of your next turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As a reaction, you gain resistance to Acid damage until the start of your next turn.</description>
         </sheet>
     </element>
@@ -724,7 +724,7 @@
         <description>
             <p>As a reaction, you gain resistance to poison damage until the start of your next turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As a reaction, you gain resistance to Poison damage until the start of your next turn.</description>
         </sheet>
     </element>
@@ -734,7 +734,7 @@
         <description>
             <p>As a reaction, you gain resistance to fire damage until the start of your next turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As a reaction, you gain resistance to Fire damage until the start of your next turn.</description>
         </sheet>
     </element>
@@ -744,7 +744,7 @@
         <description>
             <p>As a reaction, you gain resistance to lightning damage until the start of your next turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As a reaction, you gain resistance to Lightning damage until the start of your next turn.</description>
         </sheet>
     </element>
@@ -754,7 +754,7 @@
         <description>
             <p>As a reaction, you gain resistance to cold damage until the start of your next turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As a reaction, you gain resistance to Cold damage until the start of your next turn.</description>
         </sheet>
     </element>
@@ -1130,7 +1130,7 @@
             <p class = "indent"><br/><br/><i>Note: This feat will allow you to select expertise in any skill that you have proficiency in, not just the ones you chose within your class. Unfortunately, I was not able to get this to work without haing to edit the original classes or having to come back to add to this feat if any new classes were available, so I have chosen to leave it like this. Please only select from the appropriate proficiencies that you should be able to pick from.</i></p>
             <p class = "indent"><i>I'm sorry that I couldn't get this to work, but if you think you have a way to get it to work feel free to send me an email or message me through Discord (I'm in both the Aurora and Aurora Legacy servers) and I'll see if I can implement it. Email: strangemeta0@gmail.com, Discord: Strange_Meta</i></p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can treat a d20 roll of 9 or lower as a 10 Whenever you make a saving throw for the ability you chose.</description>
         </sheet>
         <rules>
@@ -1367,7 +1367,7 @@
                 <li>Immediately after a creature you can see that is at least one size larger than you hits or misses you with a melee attack roll, you can use your reaction to make a weapon attack against that creature.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Mounting a creature costs you only 5 feet of movement, rather than half your speed. You can brace* yourself by spending only 5 feet of movement, instead of half your speed. You have advantage on ability checks to identify vulnerable areas. You ignore the difficult terrain caused by moving on a creature more than two sizes larger than you. Immediately after a creature you can see that is at least one size larger than you hits or misses you with a melee attack roll, you can use your reaction to make a weapon attack against that creature.</description>
         </sheet>
     </element>
@@ -1383,7 +1383,7 @@
                 <li>The target is pulled 5 feet towards you. If that leaves it within your reach, it’s grappled by you if you have a free hand.</li>
             </ul>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have mastered the use of the kusarigama, learning additional techniques to trip and harass your foes. You add your ability modifier to the attack roll made with a kusarigama’s counterweight. In addition, when you make this attack against a Medium or smaller target, you can choose to deal no damage. If you do, the target makes a Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice), contested by your attack roll. If it fails the contest, choose one of the following effects: The target is disarmed of one object it is holding of your choice, which is pulled towards you and falls at your feet. The target is knocked prone. The target is pulled 5 feet towards you. If that leaves it within your reach, it’s grappled by you if you have a free hand.</description>
         </sheet>
     </element>
@@ -1878,7 +1878,7 @@
         <description>
             <p>Your virtuosity with nunchaku allows you to strike with incredible speed. When you take the Attack action and attack with a nunchaku, you can use a bonus action to make one additional nunchaku attack. This attack uses the same ability modifier as the primary attack and the weapon’s damage die for this attack is a d4.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your virtuosity with nunchaku allows you to strike with incredible speed. When you take the Attack action and attack with a nunchaku, you can use a bonus action to make one additional nunchaku attack. This attack uses the same ability modifier as the primary attack and the weapon’s damage die for this attack is a d4.</description>
         </sheet>
     </element>
@@ -1938,7 +1938,7 @@
         <description>
             <p>You have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have practised extensively with magical prostheses, training your mind and body to wield their magic as naturally as you breathe. You can attune to one magical prosthesis without counting against the number of magic items to which you can attune.</description>
         </sheet>
     </element>
@@ -2060,7 +2060,7 @@
 		<description>
 			<p>The bancho-gama can breathe air and water.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The bancho-gama can breathe air and water.</description>
 		</sheet>
 	</element>
@@ -2069,7 +2069,7 @@
 		<description>
 			<p>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</description>
 		</sheet>
 	</element>
@@ -2078,7 +2078,7 @@
 		<description>
 			<p>The bancho-gama can’t take the Help action.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The bancho-gama can’t take the Help action.</description>
 		</sheet>
 	</element>
@@ -2087,7 +2087,7 @@
 		<description>
 			<p>The bancho-gama’s size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice).</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The bancho-gama’s size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice).</description>
 		</sheet>
 	</element>
@@ -2096,7 +2096,7 @@
 		<description>
 			<p>Melee or Ranged Weapon Attack: +4 to hit, reach 5ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>Melee or Ranged Weapon Attack: +4 to hit, reach 5ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</description>
 		</sheet>
 	</element>
@@ -2141,7 +2141,7 @@
 		<description>
 			<p>The bancho-gama learns techniques to sneak up on its enemies. It gains proficiency in the Stealth skill, as well as climbing and swimming speeds equal to its walking speed.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The bancho-gama learns techniques to sneak up on its enemies. It gains proficiency in the Stealth skill, as well as climbing and swimming speeds equal to its walking speed.</description>
 		</sheet>
 	</element>
@@ -2181,7 +2181,7 @@
 		<description>
 			<p>As a bonus action, the bancho-gama can extend its tongue, affix it to a point on a surface within 30 feet of itself, and move to that point. The bancho-gama’s tongue detaches after it moves, and it falls if it’s not standing on a surface capable of supporting it.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>As a bonus action, the bancho-gama can extend its tongue, affix it to a point on a surface within 30 feet of itself, and move to that point. The bancho-gama’s tongue detaches after it moves, and it falls if it’s not standing on a surface capable of supporting it.</description>
 		</sheet>
 	</element>
@@ -2294,7 +2294,7 @@
 		<description>
             <p>The betobeto-kun can't take the ready action.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The betobeto-kun can't take the ready action.</description>
 		</sheet>
 	</element>
@@ -2304,7 +2304,7 @@
             <p>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw.</p>
 			<p class = "indent">In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 2d6 temporary hit points, which last for 1 minute. When the betobeto-kun’s tamer reaches 5th level, these temporary hit points increase to 3d6.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw. &#13;
 			In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 2d6 temporary hit points, which last for 1 minute.</description>
 		</sheet>
@@ -2314,7 +2314,7 @@
 		<description>
 			<p>The betobeto-kun attempts to scare a creature within 5 feet of it by making a sudden movement and a loud noise. The creature must succeed on a DC 12 Wisdom saving throw or take 4 (1d8) psychic damage. If the creature rolls a 1 on the saving throw and fails it, it’s also frightened of the betobeto-kun until the end of the betobeto-kun’s next turn.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The betobeto-kun attempts to scare a creature within 5 feet of it by making a sudden movement and a loud noise. The creature must succeed on a DC 12 Wisdom saving throw or take 4 (1d8) psychic damage. If the creature rolls a 1 on the saving throw and fails it, it’s also frightened of the betobeto-kun until the end of the betobeto-kun’s next turn.</description>
 		</sheet>
 	</element>
@@ -2326,7 +2326,7 @@
             <p>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw.</p>
 			<p class = "indent">In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 2d6 temporary hit points, which last for 1 minute. When the betobeto-kun’s tamer reaches 5th level, these temporary hit points increase to 3d6.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>If the betobeto-kun is hidden from a creature when it uses its Frighten action on it, the creature has disadvantage on the saving throw. &#13;
 			In addition, when a creature becomes frightened by the betobeto-kun, the betobeto-kun gains 3d6 temporary hit points, which last for 1 minute.</description>
 		</sheet>
@@ -2369,7 +2369,7 @@
 		<description>
             <p>While in dim light or darkness and not wearing any armour, the betobeto-kun gains a +2 bonus to AC.</p>
         </description>
-		<sheet>
+		<sheet display = "true">
 			<description>While in dim light or darkness and not wearing any armour, the betobeto-kun gains a +2 bonus to AC.</description>
 		</sheet>
     </element>
@@ -2411,7 +2411,7 @@
 		<description>
             <p>While in dim light or darkness, the betobeto-kun can take the Hide action as a bonus action.</p>
         </description>
-		<sheet>
+		<sheet display = "true">
 			<description>While in dim light or darkness, the betobeto-kun can take the Hide action as a bonus action.</description>
 		</sheet>
     </element>
@@ -2523,7 +2523,7 @@
 		<description>
             <p>The kawawappa can breathe air and water.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The kawawappa can breathe air and water.</description>
 		</sheet>
 	</element>
@@ -2532,7 +2532,7 @@
 		<description>
             <p>When the kawawappa is knocked prone, it must succeed on a DC 11 Dexterity saving throw or spill some of the water it keeps in its head, which disorients the kawawappa and gives it disadvantage on the next attack roll it makes before the end of its next turn.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>When the kawawappa is knocked prone, it must succeed on a DC 11 Dexterity saving throw or spill some of the water it keeps in its head, which disorients the kawawappa and gives it disadvantage on the next attack roll it makes before the end of its next turn.</description>
 		</sheet>
 	</element>
@@ -2541,7 +2541,7 @@
 		<description>
             <p>The kawawappa gains proficiency in its tamer’s choice of one weapon, one skill, and one type of artisan’s tools.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>The kawawappa gains proficiency in its tamer’s choice of one weapon, one skill, and one type of artisan’s tools.</description>
 		</sheet>
 	</element>
@@ -2550,7 +2550,7 @@
 		<description>
 			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</description>
 		</sheet>
 	</element>
@@ -2595,7 +2595,7 @@
                 <li>It can take the Dash or Disengage action as a bonus action.</li>
             </ul>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>While underwater, the kawawappa gain the following benefits: It has advantage on ability checks made to grapple creatures or to avoid or escape being grappled. It can take the Dash or Disengage action as a bonus action.</description>
 		</sheet>
     </element>
@@ -2635,7 +2635,7 @@
 		<description>
 			<p>As an action, the kawawappa can withdraw into its shell. Until it emerges, it gains a +2 bonus to AC and other creatures can’t benefit from advantage on attack rolls against it. While in its shell, the kawawappa is prone, its speed is reduced to 0 feet and can’t increase, it has disadvantage on Dexterity saving throws, and it can’t take actions or reactions other than a bonus action to emerge from its shell.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>As an action, the kawawappa can withdraw into its shell. Until it emerges, it gains a +2 bonus to AC and other creatures can’t benefit from advantage on attack rolls against it. While in its shell, the kawawappa is prone, its speed is reduced to 0 feet and can’t increase, it has disadvantage on Dexterity saving throws, and it can’t take actions or reactions other than a bonus action to emerge from its shell.</description>
 		</sheet>
     </element>

@@ -64,13 +64,13 @@
     </element>
     <element name = "The Acsendant Dragon" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ASCENDANT_DRAGON1">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>While raging, you can use an action to let loose a devastating blast of radiant energy from your mouth. Each creature in a 15-foot cone must succeed on a Dexterity saving throw (DC equal to 8 + your Strength modifier + your proficiency bonus), taking a number of d6s radiant damage equal to your proficiency bonus on a failed save, or half as much damage on a successful one.</description>
         </sheet>
     </element>
     <element name = "The Acsendant Dragon" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ASCENDANT_DRAGON2">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>While raging, you can use an action to let loose a devastating blast of radiant energy from your mouth. Each creature in a 15-foot cone must succeed on a Dexterity saving throw (DC equal to 8 + your Strength modifier + your proficiency bonus), taking a number of d6s radiant damage equal to your proficiency bonus on a failed save, or half as much damage on a successful one. While raging, you and any objects you are wearing or carrying assume a pseudo-liquid form. In this form, you have resistance to fire damage, you are immune to the grappled and restrained conditions, you gain a swimming speed of 60 feet, you can move through other creatures’ spaces and through gaps as small as 1 inch wide without squeezing (but you can’t stop there), and you gain the benefits of half cover while submerged in water.</description>
         </sheet>
     </element>
@@ -91,13 +91,13 @@
     </element>
     <element name = "The Eternal Leviathan" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ETERNAL_LEVIATHAN1">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>When you enter your rage, or as a bonus action while raging, you can bellow an echoing cry. Each creature of your choice within 10 feet of you must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or have disadvantage on attack rolls against any target other than you until the start of your next turn.</description>
         </sheet>
     </element>
     <element name = "The Eternal Leviathan" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ETERNAL_LEVIATHAN2">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>When you enter your rage, or as a bonus action while raging, you can bellow an echoing cry. Each creature of your choice within 10 feet of you must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or have disadvantage on attack rolls against any target other than you until the start of your next turn. While raging, you adopt a translucent, ghastly form. In this form, you have resistance to cold and necrotic damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. If you are inside an object when your rage ends, you are shunted to the nearest unoccupied space and take 5 force damage for every 5 feet travelled.</description>
         </sheet>
     </element>
@@ -118,13 +118,13 @@
     </element>
     <element name = "The Titan Earth" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_TITAN_EARTH1">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>You can use your Constitution modifier in place of your Strength modifier for the attack and damage rolls of your unarmed strikes and weapon attacks. These strikes are still considered Strength-based attack rolls for the purposes of your other barbarian features.</description>
         </sheet>
     </element>
     <element name = "The Titan Earth" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_TITAN_EARTH2">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>You can use your Constitution modifier in place of your Strength modifier for the attack and damage rolls of your unarmed strikes and weapon attacks. These strikes are still considered Strength-based attack rolls for the purposes of your other barbarian features. While using your Kaiju Force feature, you and everything you are wearing and carrying grows still further. Provided there is room, your size increases by one category, from Large to Huge, for example. While in this form, your reach increases by 5 feet, and your weapon attacks deal an extra 1d4 damage on a hit.</description>
         </sheet>
     </element>
@@ -145,13 +145,13 @@
     </element>
     <element name = "The Armoured Kabuto" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO1">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>While raging, if you move at least 15 feet straight towards a target and then immediately hit it with a weapon attack, the target takes an extra 9 (2d8) bludgeoning damage from the attack.</description>
         </sheet>
     </element>
     <element name = "The Armoured Kabuto" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_ARMOURED_KABUTO2">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>While raging, if you move at least 15 feet straight towards a target and then immediately hit it with a weapon attack, the target takes an extra 9 (2d8) bludgeoning damage from the attack. While raging, you sprout large, insectoid wings. You have a flying speed equal to your walking speed, and your movement doesn’t provoke opportunity attacks.</description>
         </sheet>
     </element>
@@ -172,13 +172,13 @@
     </element>
     <element name = "The Infinite Tempest" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST1">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>The first time each turn while raging that you hit a target with a melee attack roll, you deal 3 (1d6) lightning damage to each creature of your choice within 10 feet of the target as lightning spirals out from the point of impact.</description>
         </sheet>
     </element>
     <element name = "The Infinite Tempest" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_PATH_OF_THE_KAIJU_ASPECT_OF_THE_KAIJU_INFINITE_TEMPEST2">
         <compendium display = "false"/>
-        <sheet>
+        <sheet display = "true">
             <description>The first time each turn while raging that you hit a target with a melee attack roll, you deal 3 (1d6) lightning damage to each creature of your choice within 10 feet of the target as lightning spirals out from the point of impact. While raging, you crackle with lighting and your blows land with booming claps of thunder. In this form, you have resistance to lightning and thunder damage, and you can use a bonus action to move in a straight line up to 30 feet, passing through other creatures without provoking opportunity attacks. Each creature you pass through in this way must succeed on a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or take 1d8 lightning damage.</description>
         </sheet>
     </element>

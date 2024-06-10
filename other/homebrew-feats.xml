@@ -19,7 +19,7 @@
 				<li>Your hours of experience with a sling allow you to fire stones with greater force than most. Your damage for a sling increases to 2d4. Additionally, slings have their normal and long ranged doubled.</li>
 			</ul>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>When using a sling, you gain +1 to attack rolls with that weapon.
 			Your hours of experience with a sling allow you to fire stones with greater force than most. Your damage for a sling increases to 2d4. Additionally, slings have their normal and long ranged doubled.</description>
 		</sheet>
@@ -36,7 +36,7 @@
 			<p>As a bonus action, if you have access to the extra attack feature, you may make an additional attack with your off-hand weapon for every additional attack you would be able to make with your attack action.</p>
 			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
 		</description>
-		<sheet>
+		<sheet display = "true">
 			<description>If you have access to the extra attack feature, you may make an additional attack for each attack you could make with your attack action. When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
 		</sheet>
 	</element>

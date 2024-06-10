@@ -53,7 +53,7 @@
         <description>
             <p>You have resistance to cold damage.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have resistance to cold damage.</description>
         </sheet>
         <rules>
@@ -99,7 +99,7 @@
         <description>
             <p>With ingredients worth at least 1 sp, you can prepare a meal for a number of Medium or smaller creatures equal to 2 + your proficiency bonus over the course of a short or long rest. A creature who eats the meal at the end of the rest regains one spent Hit Die and gains temporary hit points equal to 1d6 + your proficiency bonus.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>With ingredients worth at least 1 sp, you can prepare a meal for a number of Medium or smaller creatures equal to 2 + your proficiency bonus over the course of a short or long rest. A creature who eats the meal at the end of the rest regains one spent Hit Die and gains temporary hit points equal to 1d6 + your proficiency bonus.</description>
         </sheet>
     </element>
@@ -135,7 +135,7 @@
         <description>
             <p>You have advantage on ability checks to tame or influence beasts.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have advantage on ability checks to tame or influence beasts.</description>
         </sheet>
     </element>
@@ -143,7 +143,7 @@
         <description>
             <p>You gain proficiency in your choice of two of the following skills: Acrobatics, Animal Handling, Nature, Performance, or Survival.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You gain proficiency in your choice of two of the following skills: Acrobatics, Animal Handling, Nature, Performance, or Survival.</description>
         </sheet>
         <rules>
@@ -172,7 +172,7 @@
         <description>
             <p>You can calculate your jump distance using your Dexterity. When you do, your long jump covers a number of feet equal to your Dexterity score with or without a running start, and your high jump equals 3 + your Dexterity modifier (minimum of 0 feet) with or without a running start. Either way, each foot you clear on the jump costs a foot of movement.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can calculate your jump distance using your Dexterity. When you do, your long jump covers a number of feet equal to your Dexterity score with or without a running start, and your high jump equals 3 + your Dexterity modifier (minimum of 0 feet) with or without a running start. Either way, each foot you clear on the jump costs a foot of movement.</description>
         </sheet>
     </element>
@@ -180,7 +180,7 @@
         <description>
             <p>Your tail can support your weight and balance. When you make an ability check or saving throw to avoid being forcibly moved, you can use your reaction to curl your tail around an object within 5 feet of you that is attached to the ground or another sturdy surface. If you do so, you have advantage on that check or save.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your tail can support your weight and balance. When you make an ability check or saving throw to avoid being forcibly moved, you can use your reaction to curl your tail around an object within 5 feet of you that is attached to the ground or another sturdy surface. If you do so, you have advantage on that check or save.</description>
         </sheet>
     </element>

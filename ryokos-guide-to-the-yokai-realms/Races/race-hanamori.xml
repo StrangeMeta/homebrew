@@ -88,7 +88,7 @@
         <description>
             <p>You have advantage on saving throws you make to avoid or end the frightened or stunned condition on yourself.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have advantage on saving throws you make to avoid or end the frightened or stunned condition on yourself.</description>
         </sheet>
     </element>
@@ -96,7 +96,7 @@
         <description>
             <p>You gain proficiency in your choice of one of the following skills: Intimidation, Medicine, Nature, or Survival.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You gain proficiency in your choice of one of the following skills: Intimidation, Medicine, Nature, or Survival.</description>
         </sheet>
         <rules>
@@ -121,7 +121,7 @@
         <description>
             <p>Your tough, lignified exterior is a natural barrier to cuts and abrasions. When you aren’t wearing armour, your AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Your tough, lignified exterior is a natural barrier to cuts and abrasions. When you aren’t wearing armour, your AC is 12 + your Constitution modifier. You can use your natural armour to determine your AC if the armour you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armour.</description>
         </sheet>
         <rules>

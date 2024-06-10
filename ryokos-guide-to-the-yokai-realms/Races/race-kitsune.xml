@@ -75,7 +75,7 @@
         <description>
             <p>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Intelligence, Wisdom, or Charisma is you spellcasting ability for these spells (choose when you select this race).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest.</description>
         </sheet>
         <rules>
@@ -88,7 +88,7 @@
         <description>
             <p>You know the druidcraft and produce flame cantrips. Intelligence is your spellcasting ability for these spells.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Intelligence is your spellcasting ability for these spells.</description>
         </sheet>
     </element>
@@ -97,7 +97,7 @@
         <description>
             <p>You know the druidcraft and produce flame cantrips. Wisdom is your spellcasting ability for these spells.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Wisdom is your spellcasting ability for these spells.</description>
         </sheet>
     </element>
@@ -106,7 +106,7 @@
         <description>
             <p>You know the druidcraft and produce flame cantrips. Charisma is your spellcasting ability for these spells.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Charisma is your spellcasting ability for these spells.</description>
         </sheet>
     </element>
@@ -115,7 +115,7 @@
         <description>
             <p>You have proficiency in one of the following skills of your choice: Deception, Persuasion, or Stealth.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have proficiency in one of the following skills of your choice: Deception, Persuasion, or Stealth.</description>
         </sheet>
         <rules>
@@ -126,7 +126,7 @@
         <description>
             <p>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 60 feet of you that can see you and speaks Kitsune can understand this message.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can articulate ideas through motion, as well as speech. If you spend 1 minute moving your tails and ears, you can communicate a simple message, which can be contrary to any words you may be speaking aloud. This communication is undetectable to any creature that doesn’t speak Kitsune. A creature within 60 feet of you that can see you and speaks Kitsune can understand this message.</description>
         </sheet>
     </element>
@@ -134,7 +134,7 @@
         <description>
             <p>As an action, you can transform into the shape of a fox. When you do, your clothing and equipment meld into your form, and you gain no benefits from them while transformed. You determine the specifics of your appearance in fox form, including your colouration and size (choosing from Tiny or Small when you transform). All your other game statistics remain the same. You can’t cast spells that require material or somatic components while in this form, but you can still concentrate on spells and speak as normal. You remain in this form until you use an action to revert to your true form or you die.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>As an action, you can transform into the shape of a fox. When you do, your clothing and equipment meld into your form, and you gain no benefits from them while transformed. You determine the specifics of your appearance in fox form, including your colouration and size (choosing from Tiny or Small when you transform). All your other game statistics remain the same. You can’t cast spells that require material or somatic components while in this form, but you can still concentrate on spells and speak as normal. You remain in this form until you use an action to revert to your true form or you die.</description>
         </sheet>
     </element>

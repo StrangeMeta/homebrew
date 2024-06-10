@@ -99,7 +99,7 @@
             <p>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</p>
             <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.
             When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</description>
         </sheet>
@@ -123,7 +123,7 @@
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Intelligence is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -132,7 +132,7 @@
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Wisdom is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -141,7 +141,7 @@
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Charisma is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -182,7 +182,7 @@
         <description>
             <p>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
         </sheet>
     </element>
@@ -246,7 +246,7 @@
         <description>
             <p>You know the thaumaturgy cantrip. Starting at 3rd level, you can cast hellish rebuke with this trait. Starting at 5th level, you can also cast enlarge/reduce with this trait. Once you cast hellish rebuke or enlarge/reduce with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You know the thaumaturgy cantrip. Starting at 3rd level, you can cast hellish rebuke with this trait. Starting at 5th level, you can also cast enlarge/reduce with this trait. Once you cast hellish rebuke or enlarge/reduce with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</description>
         </sheet>
         <rules>
@@ -261,7 +261,7 @@
         <description>
             <p>Intelligence is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Intelligence is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -270,7 +270,7 @@
         <description>
             <p>Wisdom is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Wisdom is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>
@@ -279,7 +279,7 @@
         <description>
             <p>Charisma is your spellcasting modifier for this ability.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>Charisma is your spellcasting modifier for this ability.</description>
         </sheet>
     </element>

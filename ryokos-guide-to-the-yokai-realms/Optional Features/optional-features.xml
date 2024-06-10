@@ -16,7 +16,7 @@
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             <p class = "indent">When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description level = "7">When you reach 7th level in this class, the fury of your attacks can knock a foe to the ground. When you take the Attack action and make an attack roll against a creature with advantage, if both of the d20 rolls would hit the target, you can force the target to make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, you can choose to knock the target prone or push it up to 5 feet away from you. Creatures more than one size larger than you automatically succeed on this saving throw. You can use this feature once per turn.</description>
         </sheet>
         <rules>
@@ -48,7 +48,7 @@
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
@@ -71,7 +71,7 @@
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             <p class = "indent">When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description level = "7">When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</description>
         </sheet>
         <rules>
@@ -103,7 +103,7 @@
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
@@ -126,7 +126,7 @@
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks you can make increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
             <p class = "indent">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description level = "7">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
         </sheet>
         <rules>
@@ -159,7 +159,7 @@
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             <p class = "indent">The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
 			<description level = "5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
 			<description level = "11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
 			<description level = "20">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
@@ -186,7 +186,7 @@
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             <p class = "indent">When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description level = "7">When you reach 7th level in this class, you learn to capture your enemy’s ki as you strike, transferring its life force to revitalise your own. At the end of your turn, you gain temporary hit points equal to thrice the number of weapon attacks you made that hit a non-Construct creature that turn.</description>
         </sheet>
         <rules>
@@ -218,7 +218,7 @@
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
@@ -241,7 +241,7 @@
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             <p class = "indent">When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description level = "7">When you reach 7th level in this class, your zealous righteousness can inspire or demoralise others. When you take the Attack action and hit with two attacks, you can use a bonus action to utter a battlecry, targeting one ally or enemy within 30 feet of you. If the target is a foe that can see or hear you, it must succeed on a Wisdom saving throw against your paladin spell save DC or be frightened of you until the end of your next turn. If the target is an ally, the frightened condition ends on it. You can use this feature once per turn.</description>
         </sheet>
         <rules>
@@ -273,7 +273,7 @@
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
@@ -296,7 +296,7 @@
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             <p class = "indent">When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description level = "7">When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</description>
         </sheet>
         <rules>
@@ -328,7 +328,7 @@
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
-        <sheet>
+        <sheet display = "true">
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
