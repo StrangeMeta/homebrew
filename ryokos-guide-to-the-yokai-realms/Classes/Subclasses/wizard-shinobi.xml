@@ -1,0 +1,196 @@
+<?xml version  =  "1.0" encoding  =  "utf-8"?>
+<elements>
+	<info>
+        <name>Shinobi, Wizard subclass from Ryoko's Guide to the Yokai Realms</name>
+		<update version  =  "0.0.1">
+			<file name  =  "wizard-shinobi.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/wizard-shinobi.xml"/>
+		</update>
+	</info>
+
+	<element name = "Shinobi" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_WIZARD_SHINOBI">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p class  =  "flavour">As children, we learned that magic was loud, exciting, and dangerous. It meant jets of flame and dazzling light—distinct from the mundane blade or arrow. But the Shinobi are different, harnessing a subtle magic in synchronicity with deadly swordplay. I’ve come to realise that the most terrifying spell isn’t one that leaves a smoking crater, it’s the magic nobody can ever be sure was cast, accompanied by a vortex of steel.</p>
+            <p>Masters of illusion, guerilla warfare, and martial combat, Shinobi wizards are elusive tricksters and deadly warriors, striking in a furious onslaught of magic, weaponry, and acrobatics. They adopt a philosophy which unifies martial skill with spellcasting, empowering their blows with devastating magical enhancements before vanishing into darkness. A Shinobi’s unique abilities make them the ultimate artisans of espionage and infiltration, wielding deception, secrecy, and explosive aggression as lethal tools in their arsenal.</p>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHINOBI_TRAINING"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_SAVANT"/>
+		</description>
+		<sheet display = "false">
+			<description>Masters of illusion, guerilla warfare, and martial combat.</description>
+		</sheet>
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHINOBI_TRAINING" level = "2"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER" level = "2"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU" level = "6"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU" level = "10"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_SAVANT" level = "14"/>
+		</rules>
+	</element>
+
+	<element name = "Shinobi Training" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHINOBI_TRAINING">
+		<description>
+			<p>You gain proficiency with light armour, hand crossbows, thrown weapons, and finesse weapons, and you can use a weapon you are proficient with as your spellcasting focus. Additionally, you are considered a member of a half-martial class for the purposes of weapon masteries. Finally, you gain darkvision out to 60 feet, or if you already have darkvision, its range is increased by 30 feet.</p>
+		</description>
+		<sheet display = "false"/>
+        <rules>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_THROWN"/>
+            <grant type = "Proficiency" id = "ID_RGTTYR_PROFICIENCY_WEAPON_FINESSE"/>
+
+            <grant type = "Vision" id = "ID_VISION_LESSER_DARKVISION"/>
+            <stat name = "darkvision:range" value = "30" bonus = "base"/>
+            <stat name = "darkvision:range" value = "30" bonus = "shinobi training"/>
+        </rules>
+	</element>
+	<element name = "Shadow Striker" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER">
+		<description>
+			<p>You have learned the art of synchronising spellcasting and weaponry. When you take the Attack action on your turn and make a weapon attack roll, you can expend one spell slot. That attack roll is made with advantage, and the attack deals an extra 1d6 damage per level of the spell slot you expended on a hit. After you use this feature, you can use a bonus action that turn to perform one of the following techniques:</p>
+            <ul>
+                <li><strong>Cloud of Shadow. </strong>You create a small cloud of magical darkness, heavily obscuring the space you are currently occupying. This darkness lasts for 1 minute, and it ends early if you are knocked unconscious or if your turn ends and you haven’t made a weapon attack since your last turn. Alternatively, on each of your turns, you can use your action to maintain it. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</li>
+                <li><strong>Extrasensory. </strong>You momentarily enhance your senses with magic, making a quick Wisdom (Perception) check to spot a hidden creature or object or Wisdom (Insight) check to assess your enemy’s condition. You gain a bonus to the check equal to your Intelligence modifier (minimum of +1).</li>
+                <li><strong>Shadow Ward. </strong>Choose one damage type other than force or radiant. You gain resistance to that damage type until the start of your next turn.</li>
+            </ul>
+        </description>
+		<sheet display = "true">
+            <description>You have learned the art of synchronising spellcasting and weaponry. When you take the Attack action on your turn and make a weapon attack roll, you can expend one spell slot. That attack roll is made with advantage, and the attack deals an extra 1d6 damage per level of the spell slot you expended on a hit. After you use this feature, you can use a bonus action that turn to perform one of the following techniques:</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER_CLOUD_OF_SHADOW"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER_EXTRASENSORY"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER_SHADOW_WARD"/>
+        </rules>
+	</element>
+    <element name = "Cloud of Shadow" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER_CLOUD_OF_SHADOW">
+        <compendium display = "false"/>
+        <description>
+            <p>You create a small cloud of magical darkness, heavily obscuring the space you are currently occupying. This darkness lasts for 1 minute, and it ends early if you are knocked unconscious or if your turn ends and you haven’t made a weapon attack since your last turn. Alternatively, on each of your turns, you can use your action to maintain it. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</p>
+        </description>
+        <sheet display = "true">
+            <description>You create a small cloud of magical darkness, heavily obscuring the space you are currently occupying. This darkness lasts for 1 minute, and it ends early if you are knocked unconscious or if your turn ends and you haven’t made a weapon attack since your last turn. Alternatively, on each of your turns, you can use your action to maintain it. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</description>
+        </sheet>
+    </element>
+    <element name = "Extrasensory" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER_EXTRASENSORY">
+        <compendium display = "false"/>
+        <description>
+            <p>You momentarily enhance your senses with magic, making a quick Wisdom (Perception) check to spot a hidden creature or object or Wisdom (Insight) check to assess your enemy’s condition. You gain a bonus to the check equal to your Intelligence modifier (minimum of +1).</p>
+        </description>
+        <sheet display = "true">
+            <description>You momentarily enhance your senses with magic, making a quick Wisdom (Perception) check to spot a hidden creature or object or Wisdom (Insight) check to assess your enemy’s condition. You gain a bonus to the check equal to {{shadow striker:extrasensory bonus}}.</description>
+        </sheet>
+        <rules>
+            <stat name = "shadow striker:extrasensory bonus" value = "1" bonus = "base"/>
+            <stat name = "shadow striker:extrasensory bonus" value = "intelligence:modifier" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Shadow Ward" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_STRIKER_SHADOW_WARD">
+        <compendium display = "false"/>
+        <description>
+            <p>Choose one damage type other than force or radiant. You gain resistance to that damage type until the start of your next turn.</p>
+        </description>
+        <sheet display = "true">
+            <description>Choose one damage type other than force or radiant. You gain resistance to that damage type until the start of your next turn.</description>
+        </sheet>
+    </element>
+	<element name = "Ninjutsu" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU">
+		<description>
+			<p>Your mastery of spell-infused weapon fighting allows you to further enhance your strikes with magical properties. Once on each of your turns, when you use your Shadow Striker feature, you can also infuse that attack with one of the following benefits:</p>
+            <ul>
+                <li><strong>Enervating Touch. </strong>The sting of your blow magically saps the target’s strength. On a hit, the target must succeed on a Constitution saving throw against your wizard spell save DC or take an extra 3d6 poison damage and be poisoned until the start of your next turn.</li>
+                <li><strong>Phantasmal Blow. </strong>You synchronise your strike with a terrifying, phantasmal illusion. On a hit, the target must succeed on a Wisdom saving throw against your wizard spell save DC or be frightened of you until the start of your next turn.</li>
+                <li><strong>Shadow Vanishing. </strong>Immediately after your attack hits, you expend 10 feet of movement to teleport to an area of dim light or darkness you can see within 30 feet of you.</li>
+            </ul>
+		</description>
+		<sheet display = "true">
+			<description>Your mastery of spell-infused weapon fighting allows you to further enhance your strikes with magical properties. Once on each of your turns, when you use your Shadow Striker feature, you can also infuse that attack with one of the following benefits:</description>
+		</sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU_ENERVATING_TOUCH"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU_PHANTASMAL_BLOW"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU_SHADOW_VANISHING"/>
+        </rules>
+	</element>
+    <element name = "Enervating Touch" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU_ENERVATING_TOUCH">
+        <compendium display = "false"/>
+        <description>
+            <p>The sting of your blow magically saps the target’s strength. On a hit, the target must succeed on a Constitution saving throw against your wizard spell save DC or take an extra 3d6 poison damage and be poisoned until the start of your next turn.</p>
+        </description>
+        <sheet display = "true">
+            <description>The sting of your blow magically saps the target’s strength. On a hit, the target must succeed on a Constitution saving throw against your wizard spell save DC or take an extra 3d6 poison damage and be poisoned until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Phantasmal Blow" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU_PHANTASMAL_BLOW">
+        <compendium display = "false"/>
+        <description>
+            <p>You synchronise your strike with a terrifying, phantasmal illusion. On a hit, the target must succeed on a Wisdom saving throw against your wizard spell save DC or be frightened of you until the start of your next turn.</p>
+        </description>
+        <sheet display = "true">
+            <description>You synchronise your strike with a terrifying, phantasmal illusion. On a hit, the target must succeed on a Wisdom saving throw against your wizard spell save DC or be frightened of you until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Shadow Vanishing" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_NINJUTSU_SHADOW_VANISHING">
+        <compendium display = "false"/>
+        <description>
+            <p>Immediately after your attack hits, you expend 10 feet of movement to teleport to an area of dim light or darkness you can see within 30 feet of you.</p>
+        </description>
+        <sheet display = "true">
+            <description>Immediately after your attack hits, you expend 10 feet of movement to teleport to an area of dim light or darkness you can see within 30 feet of you.</description>
+        </sheet>
+    </element>
+	<element name = "Advanced Ninjutsu" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU">
+		<description>
+			<p>Your command of shadow magic further enhances your lethal capabilities. You can now also choose from the following options when you use your Ninjutsu feature, but only if you empower your attack with a spell slot of 3rd level or higher:</p>
+            <ul>
+                <li><strong>Duplicitous Strikes. </strong>You move in a blur, sprouting magical illusory images in the mind of your target. After your attack hits or misses, the target takes 2d6 psychic damage and it sees illusory duplicates of you until the end of its next turn. Whenever it targets you with an attack, it must roll a d4. On a 1-3, it targets a duplicate instead and the attack misses.</li>
+                <li><strong>Rapid Strikes. </strong>You magically strike with blistering speed. Immediately after your attack hits or misses, you can make another weapon attack.</li>
+                <li><strong>Vanish. </strong>Immediately after your attack hits or misses, you magically turn invisible until the end of your next turn. While invisible in this way, if you cast a spell, you can cast it without any verbal or somatic components.</li>
+            </ul>
+		</description>
+		<sheet display = "true">
+			<description>Your command of shadow magic further enhances your lethal capabilities. You can now also choose from the following options when you use your Ninjutsu feature, but only if you empower your attack with a spell slot of 3rd level or higher:</description>
+		</sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU_DUPLICITOUS_STRIKE"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU_RAPID_STRIKES"/>
+            <grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU_VANISH"/>
+        </rules>
+	</element>
+    <element name = "Duplicitous Strike" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU_DUPLICITOUS_STRIKE">
+        <compendium display = "false"/>
+        <description>
+            <p>You move in a blur, sprouting magical illusory images in the mind of your target. After your attack hits or misses, the target takes 2d6 psychic damage and it sees illusory duplicates of you until the end of its next turn. Whenever it targets you with an attack, it must roll a d4. On a 1-3, it targets a duplicate instead and the attack misses.</p>
+        </description>
+        <sheet display = "true">
+            <description>You move in a blur, sprouting magical illusory images in the mind of your target. After your attack hits or misses, the target takes 2d6 psychic damage and it sees illusory duplicates of you until the end of its next turn. Whenever it targets you with an attack, it must roll a d4. On a 1-3, it targets a duplicate instead and the attack misses.</description>
+        </sheet>
+    </element>
+    <element name = "Rapid Strikes" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU_RAPID_STRIKES">
+        <compendium display = "false"/>
+        <description>
+            <p>You magically strike with blistering speed. Immediately after your attack hits or misses, you can make another weapon attack.</p>
+        </description>
+        <sheet display = "true">
+            <description>You magically strike with blistering speed. Immediately after your attack hits or misses, you can make another weapon attack.</description>
+        </sheet>
+    </element>
+    <element name = "Vanish" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_ADVANCED_NINJUTSU_VANISH">
+        <compendium display = "false"/>
+        <description>
+            <p>Immediately after your attack hits or misses, you magically turn invisible until the end of your next turn. While invisible in this way, if you cast a spell, you can cast it without any verbal or somatic components.</p>
+        </description>
+        <sheet display = "true">
+            <description>Immediately after your attack hits or misses, you magically turn invisible until the end of your next turn. While invisible in this way, if you cast a spell, you can cast it without any verbal or somatic components.</description>
+        </sheet>
+    </element>
+	<element name = "Shadow Savant" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINOBU_SHADOW_SAVANT">
+		<description>
+			<p>The shadows are your eager servants. Magical darkness doesn’t impede your darkvision. In addition, when another creature you can see moves into an area of heavy obscurement you have created or starts its turn there, you can force it to make a Strength saving throw against your wizard spell save DC (no action required). On a failure, the creature is restrained until the start of its next turn. A creature can be forced to make this saving throw no more than once per turn.</p>
+		</description>
+		<sheet display = "true">
+			<description>Magical darkness doesn’t impede your darkvision. In addition, when another creature you can see moves into an area of heavy obscurement you have created or starts its turn there, you can force it to make a Strength saving throw against your wizard spell save DC (no action required). On a failure, the creature is restrained until the start of its next turn. A creature can be forced to make this saving throw no more than once per turn.</description>
+		</sheet>
+	</element>
+</elements>

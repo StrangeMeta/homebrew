@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Weapons from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.8">
+        <update version = "0.0.9">
             <file name = "items-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items-weapons.xml"/>
         </update>
     </info>
@@ -832,5 +832,46 @@
     <!-- Weapon Categories -->
     <element name = "Magitech Firearm" type = "Weapon Category" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_WEAPON_CATEGORY_MAGITECH_FIREARM">
         <compendium display = "false"/>
+    </element>
+    
+    <element name = "Weapon Proficiency (Finesse Weapons)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_FINESSE">
+        <sheet alt = "Finesse Weapons"/>
+        <rules>
+            <!-- Player's Handbook Weapons -->
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_DART"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP"/>
+
+            <!-- Ryoko's Guide to the Yokai Realms Weapons -->
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE"/>
+        </rules>
+    </element>
+    <element name = "Weapon Proficiency (Thrown Weapons)" type = "Proficiency" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_PROFICIENCY_WEAPON_THROWN">
+        <sheet alt = "Thrown Weapons"/>
+        <rules>
+            <!-- Player's Handbook Weapons -->
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_DART"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NET"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT"/>
+
+            <!-- Ryoko's Guide to the Yokai Realms Weapons -->
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
+            <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
+        </rules>
     </element>
 </elements>
