@@ -1,0 +1,180 @@
+<?xml version  =  "1.0" encoding  =  "utf-8"?>
+<elements>
+	<info>
+        <name>The Shinigami, Warlock patron from Ryoko's Guide to the Yokai Realms</name>
+		<update version  =  "0.0.1">
+			<file name  =  "warlock-shinigami.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/warlock-shinigami.xml"/>
+		</update>
+	</info>
+
+	<element name = "The Shinigami" type = "Archetype" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_WARLOCK_SHINIGAMI">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p class  =  "flavour">“You’ll fight until your last breath, and beyond.”</p>
+            <p>You have entered into a pact with a shinigami, a fearsome spirit of the netherworld, with powers of death and possession. Shinigami themselves are beings of variable character, some playing active roles in the lives of their emissaries, others inscrutable and shrouded in mystery. All, however, serve a singular, ultimate purpose: to perpetuate death. Those who wield a shinigami’s power spin magic of shadow and authority, puppeteering objects, creatures, servants, and thralls. Such magic is as vicious and precise as it is hated and feared; even those with noble intent who enter into a shinigami’s pact become equal in terror to the evil they seek to vanquish.</p>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_EXPANDED_SPELL_LIST"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GRIM_PUPPETEER"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_SHINIGAMI_VISION"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GIFT_OF_THE_PSYCHOPOMP"/>
+			<div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_SHINIGAMI_DOMINATION"/>
+            <div element = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_MASTER_OF_DEATH"/>
+		</description>
+		<sheet display = "false">
+			<description>You have entered into a pact with a shinigami, a fearsome spirit of the netherworld, with powers of death and possession.</description>
+		</sheet>
+		<rules>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_EXPANDED_SPELL_LIST" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GRIM_PUPPETEER" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_SHINIGAMI_VISION" level = "1"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GIFT_OF_THE_PSYCHOPOMP" level = "6"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_SHINIGAMI_DOMINATION" level = "10"/>
+			<grant type = "Archetype Feature" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_MASTER_OF_DEATH" level = "14"/>
+		</rules>
+	</element>
+
+	<element name = "Expanded Spell List" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Shinigami lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+            <h5 class="caption">Shinigami Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>command, sleep</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, see future death</em></td></tr>
+				<tr><td>3rd</td><td><em>hypnotic pattern, speak with dead</em></td></tr>
+				<tr><td>4th</td><td><em>death ward, greater invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>animate objects, dominate person</em></td></tr>
+			</table>
+		</description>
+		<sheet display = "false"/>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_SLEEP</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_RGTTYR_SPELL_SEE_FUTURE_DEATH</extend>
+			<extend>ID_PHB_SPELL_HYPNOTIC_PATTERN</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_PHB_SPELL_DEATH_WARD</extend>
+			<extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_ANIMATE_OBJECTS</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+		</spellcasting>
+	</element>
+	<element name = "Grim Puppeteer" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GRIM_PUPPETEER">
+		<description>
+			<p>As an action, you can take control of a corpse or unconscious creature you can see within 60 feet of you for 1 minute or until you lose concentration (as if concentrating on a spell). The target must be Large or smaller and of a CR equal to or less than your warlock level (or the CR it had in life if it’s a corpse). The size of target you can control with this feature increases to Huge at 6th level and Gargantuan at 14th level.</p>
+            <p class = "indent">While you control a target in this way, it uses its own stat block with the following changes:</p>
+            <ul>
+                <li>It’s treated as an Undead creature if it’s a corpse.</li>
+                <li>It can’t gain hit points or recover from the unconscious condition.</li>
+                <li>It’s immune to the charmed and frightened conditions.</li>
+                <li>It gains temporary hit points equal to your Charisma modifier plus five times your warlock level.</li>
+                <li>It can use your spellcasting modifier for its attack and damage rolls.</li>
+            </ul>
+            <p class = "indent">When its temporary hit points are depleted, your control of the target ends, and you can’t use this feature on that target again until you finish a long rest. If the target was unconscious, and it has more than 0 hit points, it immediately regains consciousness when your control over it ends.</p>
+            <p class = "indent">Your puppet takes its turn immediately after yours. It does nothing unless you use a bonus action on your turn to command it to take an action. That action can be one in its stat block (or in the stat block it had in life if it’s a corpse) or some other action.</p>
+            <p class = "indent"><strong>Limited Control. </strong>There are limitations to the scope of your influence over your puppet. While you are puppeting a target, it can’t cast spells and can’t use any reactions, any legendary actions, any lair actions, and any actions that create or summon additional creatures (such as a wraith’s Create Specter action).</p>
+            <p class = "indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can use it if you expend a spell slot from your Pact Magic when you take the action to activate it.</p>
+        </description>
+		<sheet display = "true" usage = "{{grim puppeteer:usage}}/Long Rest">
+            <description>As an action, you can take control of a corpse or unconscious creature you can see within 60 feet of you for 1 minute or until you lose concentration (as if concentrating on a spell). The target must be Large or smaller and of a CR equal to or less than your warlock level (or the CR it had in life if it’s a corpse).
+            While you control a target in this way, it uses its own stat block with the following changes:
+            It’s treated as an Undead creature if it’s a corpse.
+            It can’t gain hit points or recover from the unconscious condition.
+            It’s immune to the charmed and frightened conditions.
+            It gains {{grim puppeteer:temp hp}} temporary hit points.
+            It can use your spellcasting modifier for its attack and damage rolls.
+            
+            When its temporary hit points are depleted, your control of the target ends, and you can’t use this feature on that target again until you finish a long rest. If the target was unconscious, and it has more than 0 hit points, it immediately regains consciousness when your control over it ends.
+            Your puppet takes its turn immediately after yours. It does nothing unless you use a bonus action on your turn to command it to take an action. That action can be one in its stat block (or in the stat block it had in life if it’s a corpse) or some other action.
+            There are limitations to the scope of your influence over your puppet. While you are puppeting a target, it can’t cast spells and can’t use any reactions, any legendary actions, any lair actions, and any actions that create or summon additional creatures (such as a wraith’s Create Specter action).</description>
+            <description level = "6">As an action, you can take control of a corpse or unconscious creature you can see within 60 feet of you for 1 minute or until you lose concentration (as if concentrating on a spell). The target must be Huge or smaller and of a CR equal to or less than your warlock level (or the CR it had in life if it’s a corpse).
+            While you control a target in this way, it uses its own stat block with the following changes:
+            It’s treated as an Undead creature if it’s a corpse.
+            It can’t gain hit points or recover from the unconscious condition.
+            It’s immune to the charmed and frightened conditions.
+            It gains {{grim puppeteer:temp hp}} temporary hit points.
+            It can use your spellcasting modifier for its attack and damage rolls.
+            
+            When its temporary hit points are depleted, your control of the target ends, and you can’t use this feature on that target again until you finish a long rest. If the target was unconscious, and it has more than 0 hit points, it immediately regains consciousness when your control over it ends.
+            Your puppet takes its turn immediately after yours. It does nothing unless you use a bonus action on your turn to command it to take an action. That action can be one in its stat block (or in the stat block it had in life if it’s a corpse) or some other action.
+            There are limitations to the scope of your influence over your puppet. While you are puppeting a target, it can’t cast spells and can’t use any reactions, any legendary actions, any lair actions, and any actions that create or summon additional creatures (such as a wraith’s Create Specter action).</description>
+            <description level = "10">As an action, you can take control of a corpse or unconscious creature you can see within 60 feet of you for 1 hour or until you lose concentration (as if concentrating on a spell). The target must be Huge or smaller and of a CR equal to or less than your warlock level (or the CR it had in life if it’s a corpse).
+            While you control a target in this way, it uses its own stat block with the following changes:
+            It’s treated as an Undead creature if it’s a corpse.
+            It can’t gain hit points or recover from the unconscious condition.
+            It’s immune to the charmed and frightened conditions.
+            It gains {{grim puppeteer:temp hp}} temporary hit points.
+            It can use your spellcasting modifier for its attack and damage rolls.
+            
+            When its temporary hit points are depleted, your control of the target ends, and you can’t use this feature on that target again until you finish a long rest. If the target was unconscious, and it has more than 0 hit points, it immediately regains consciousness when your control over it ends.
+            Your puppet takes its turn immediately after yours. It does nothing unless you use a bonus action on your turn to command it to take an action. That action can be one in its stat block (or in the stat block it had in life if it’s a corpse) or some other action.
+            There are limitations to the scope of your influence over your puppet. While you are puppeting a target, it can’t cast spells and can’t use any reactions, any legendary actions, any lair actions, and any actions that create or summon additional creatures (such as a wraith’s Create Specter action).</description>
+            <description level = "14">As an action, you can take control of a corpse or unconscious creature you can see within 60 feet of you for 1 hour or until you lose concentration (as if concentrating on a spell). The target must be Gargantuan or smaller and of a CR equal to or less than your warlock level (or the CR it had in life if it’s a corpse).
+            While you control a target in this way, it uses its own stat block with the following changes:
+            It’s treated as an Undead creature if it’s a corpse.
+            It can’t gain hit points or recover from the unconscious condition.
+            It’s immune to the charmed and frightened conditions.
+            It gains {{grim puppeteer:temp hp}} temporary hit points.
+            It can use your spellcasting modifier for its attack and damage rolls.
+            
+            When its temporary hit points are depleted, your control of the target ends, and you can’t use this feature on that target again until you finish a long rest. If the target was unconscious, and it has more than 0 hit points, it immediately regains consciousness when your control over it ends.
+            Your puppet takes its turn immediately after yours. It does nothing unless you use a bonus action on your turn to command it to take an action. That action can be one in its stat block (or in the stat block it had in life if it’s a corpse) or some other action.
+            There are limitations to the scope of your influence over your puppet. While you are puppeting a target, it can’t cast spells and can’t use any reactions, any legendary actions, any lair actions, and any actions that create or summon additional creatures (such as a wraith’s Create Specter action).</description>
+        </sheet>
+        <rules>
+            <stat name = "grim puppeteer:usage" value = "1" bonus = "base"/>
+            <stat name = "grim puppeteer:usage" value = "charisma:modifier" bonus = "base"/>
+
+            <stat name = "grim puppeteer:temp hp" value = "charisma:modifier"/>
+            <stat name = "grim puppeteer:temp hp" value = "level:warlock"/>
+            <stat name = "grim puppeteer:temp hp" value = "level:warlock"/>
+            <stat name = "grim puppeteer:temp hp" value = "level:warlock"/>
+            <stat name = "grim puppeteer:temp hp" value = "level:warlock"/>
+            <stat name = "grim puppeteer:temp hp" value = "level:warlock"/>
+        </rules>
+	</element>
+	<element name = "Shinigami Vision" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_SHINIGAMI_VISION">
+		<description>
+			<p>Your bond to the Shinigami grants you a piercing insight into the lifespan of others and reveals the best way to cut it short. As a bonus action, you can focus your attention on one creature you can see within 60 feet of you. You become aware of one of its damage vulnerabilities (if any) and its damage resistances or damage immunities (if any).</p>
+		</description>
+		<sheet display = "true">
+			<description>Your bond to the Shinigami grants you a piercing insight into the lifespan of others and reveals the best way to cut it short. As a bonus action, you can focus your attention on one creature you can see within 60 feet of you. You become aware of one of its damage vulnerabilities (if any) and its damage resistances or damage immunities (if any).</description>
+		</sheet>
+	</element>
+	<element name = "Gift of the Psychopomp" type = "Archetype Feature" source = "Ryoko's Gudie to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_GIFT_OF_THE_PSYCHOPOMP">
+		<description>
+			<p>While you are puppeteering a target using your Grim Puppeteer feature, you can make any spell you cast that targets only you also target your puppet.</p>
+		</description>
+		<sheet display = "true">
+			<description>While you are puppeteering a target using your Grim Puppeteer feature, you can make any spell you cast that targets only you also target your puppet.</description>
+		</sheet>
+	</element>
+	<element name = "Shinigami Domination" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_SHINIGAMI_DOMINATION">
+		<description>
+			<p>You have developed the power of precise and meticulous control over your puppets. While a target is under the effect of your Grim Puppeteer feature, you can see through its eyes, hear what it hears, and speak through it using its own voice. You can now puppeteer a creature for up to 1 hour or until you lose your concentration.</p>
+			<p class = "indent">A creature interacting with the puppet can use an action to make a Wisdom (Insight) check against your warlock spell save DC, identifying something awry on a success.</p>
+            <p class = "indent">Additionally, creatures you puppeteer have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren’t silvered.</p>
+		</description>
+		<sheet display = "true">
+			<description>You have developed the power of precise and meticulous control over your puppets. While a target is under the effect of your Grim Puppeteer feature, you can see through its eyes, hear what it hears, and speak through it using its own voice.
+			In addition, you share any damage resistances that your manifested spirit has.
+            A creature interacting with the puppet can use an action to make a Wisdom (Insight) check against your warlock spell save DC, identifying something awry on a success.
+            Additionally, creatures you puppeteer have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren’t silvered.</description>
+		</sheet>
+	</element>
+	<element name = "Master of Death" type = "Archetype Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ARCHETYPE_FEATURE_SHINIGAMI_MASTER_OF_DEATH">
+		<description>
+			<p>When you are reduced to 0 hit points, you don’t fall unconscious. Instead, your spirit is thrown from your physical form, and you are able to continue to fight, puppeteering your own body as a disembodied spirit of death.</p>
+			<p class = "indent">While puppeteering your own body in this way, your game statistics and capabilities remain the same, you can’t puppeteer another creature, you automatically succeed on all death saving throws, and you gain temporary hit points equal to your Charisma modifier plus five times your warlock level. Your spirit returns to your body immediately if you regain at least 1 hit point.</p>
+            <p class = "indent">You can’t fall unconscious until your temporary hit points are depleted, at which time your spirit returns to your body and this feature ends.</p>
+            <p class = "indent">Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet display = "true" usage = "1/Short Rest">
+			<description>When you are reduced to 0 hit points, you don’t fall unconscious. Instead, your spirit is thrown from your physical form, and you are able to continue to fight, puppeteering your own body as a disembodied spirit of death.
+            While puppeteering your own body in this way, your game statistics and capabilities remain the same, you can’t puppeteer another creature, you automatically succeed on all death saving throws, and you gain {{grim puppeteer:temp hp}} temporary hit points. Your spirit returns to your body immediately if you regain at least 1 hit point.
+            You can’t fall unconscious until your temporary hit points are depleted, at which time your spirit returns to your body and this feature ends.</description>
+		</sheet>
+	</element>
+</elements>
