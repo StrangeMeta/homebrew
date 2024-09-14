@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Kitsune</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-kitsune.xml"/>
         </update>
     </info>
@@ -79,6 +79,8 @@
             <description>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest.</description>
         </sheet>
         <rules>
+            <grant type = "Spell" id = "ID_PHB_SPELL_DRUIDCRAFT"/>
+            <grant type = "Spell" id = "ID_PHB_SPELL_PRODUCE_FLAME"/>
             <select type = "Racial Trait" supports = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING_INTELLIGENCE|ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING_WISDOM|ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING_CHARISMA"/>
         </rules>
     </element>
