@@ -1,0 +1,182 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>The Lux</name>
+        <update version = "0.0.1">
+            <file name = "kass-race-lux.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-race-lux.xml"/>
+        </update>
+    </info>
+
+    <element name = "Lux" type = "Race" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_LUX">
+        <description>
+            <p class = "flavour">“That's when I saw it. Tall as an oak, wiry like willow, leaning on a stave of shifting stone."</p>
+
+            <h4>From Nature Wrought</h4>
+            <p>The Lux are a new race to come to The Vale. None can say when they began to appear, not least The Lux themselves. They are tentatively accepted in many settlements, but always met with suspicion and fear.</p>
+            <p class = "indent">The Lux embody a material originating from the natural world. Most are formed of living wood, but others may coalesce from fallen leaves, be rough-hewn from stone or even compose themselves from mud and wetland plants. These bodies - while often lacking in the way of physical resistance - are easily repaired and augmenting their forms with new materials from whatever location they find themselves. A Lux at play may create new 'hair' for themselves from braided reeds, or carve flowing patterns into the oak-bark of their forearms. In many cases, they appear fascinated with the idea of antlers, attaching those of deer carcasses to their heasds, or using delicate branches in their place. The only common feature between all Lux is their three eyes, two of which are used for vision. A Lux's third eye is rarely opened, and contains powerful magic within.</p>
+
+            <h4>To Nature Returning</h4>
+            <p>Upon death, The Lux return to inanimacy. The materials from which their bodies are composed return to a non-magical state, as whatever fleeting energies empowered their sentience merge once more into the world of the spirits. This process is often peaceful, regardless of the nature of their death, and many Lux lack real fear for their mortal forms, beyond the end to their time as living things. This casual attitude towards oblivio  sets them apart from other races, as they often struggle to comprehend the true finality of endings that others experience.</p>
+
+            <h4>Curiosity in the Meantime</h4>
+            <p>Whilst they may live, many Lux wish to experience the world. They are naturally suited to long periods of travel, and enjoy drinking in the culture and colours of a new place from a distance. This leads them to have an often trickter-esque place in the folklore of other races, as they rarelt interact without being approached, and prefer the carefree company of curious children to the often suspicious and fearful world of adults.</p>
+
+            <h4>ENKOH TRAITS</h4>
+            <p>As a Lux, you have the following traits:</p>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Dexterity score increases by 2.<br/>
+                <span class = "feature">Age. </span>The Lux are created fully mature, and live until their purpose is carried out, or they are killed. On average, they live 250 years.<br/>
+                <span class = "feature">Size. </span>You are Medium.<br/>
+                <span class = "faeture">Speed. </span>Your walking speed is 25 ft.<br/>
+                <span class = "feature">Creature Type. </span>You are Fey.<br/>
+                <span class = "feature">Aboreal Gliding. </span>You gain a 30ft fly speed. You cannot fly further than 5ft off the ground. Your flying is silent when done under tree cover.<br/>
+
+                <span class = "feature">Languages. </span>You can speak, read, and write Common and Druidic.<br/>
+                <span class = "feature">Subrace. </span>There are three primary variants among the enkoh: solarian, moon-touched, and abyssal. Choose one of these subraces.<br/>
+            </p>
+            <div element = "ID_ATLOS_RACE_VARIANT_LUX_SOLARIAN"/>
+            <div element = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED"/>
+            <div element = "ID_ATLOS_RACE_VARIANT_LUX_ABYSSAL"/>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "dexterity" value = "2" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type = "Ability Score Improvement" name = "Ablity Score Improvement Option (Lux)" supports = "Custom Ability Score Improvement Option" requirements = "ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name = "innate speed" value = "25" bonus = "base"/>
+            <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
+
+            <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type = "Language" id = "ID_LANGUAGE_DRUIDIC" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+
+            <grant type = "Racial Trait" id = "ID_ATLOS_RACE_LUX_ABOREAL_GLIDING"/>
+            <select type = "Race Variant" name = "Lux Variant" supports = "Lux"/>
+        </rules>
+    </element>
+
+    <element name = "Aboreal Gliding" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_LUX_ABOREAL_GLIDING">
+        <description>
+            <p>You gain a 30ft fly speed. You cannot fly further than 5ft off the ground. Your flying is silent when done under tree cover.</p>
+        </description>
+        <sheet display = "true">
+            <description>You have a 30ft fly speed which is silent while under tree cover. You can only go 5ft above the ground.</description>
+        </sheet>
+        <rules>
+            <stat name = "innate speed:fly" value = "30" bonus = "base"/>
+        </rules>
+    </element>
+
+    <!-- Subraces -->
+    <element name = "Solarion" type = "Race Variant" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_SOLARIAN">
+        <supports>Lux</supports>
+        <description>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Wisdom score increases by 1.<br/>
+                <span class = "feature">Spirit Eye. </span>Your third eye contains the light of a sun-dappled grove. Once per day you may cast bright golden light from your eye for up to 1 minute as an action. This light is cast in a 20ft cone originating from your Spirit Eye, and any Hidden or Invisible creatures that start their turrn within this area must make a Stealth check with a DC equal to 8 + your Wisdom modifier + your proficiency bonus, or else be revealed for the duration that they remain in sight of your Spirit Eye.<br/>
+                <span class = "feature">Warped Perceptions. </span>You may automatically succeed when taking the Hide action to hide amongst the material from which you are primarily composed. A Lux grown from wood may blend perfectly into the textures of a tree, for example.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            
+            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_SPIRIT_EYE"/>
+            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_WARPED_PERCEPTION"/>
+        </rules>
+    </element>
+
+    <element name = "Spirit Eye" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_SPIRIT_EYE">
+        <description>
+            <p>Your third eye contains the light of a sun-dappled grove. Once per day you may cast bright golden light from your eye for up to 1 minute as an action. This light is cast in a 20ft cone originating from your Spirit Eye, and any Hidden or Invisible creatures that start their turrn within this area must make a Stealth check with a DC equal to 8 + your Wisdom modifier + your proficiency bonus, or else be revealed for the duration that they remain in sight of your Spirit Eye.</p>
+        </description>
+        <sheet usage = "1/Day">
+            <description>You may cast bright golden light from your eye for up to 1 minute as an action. This light is cast in a 20ft cone originating from your Spirit Eye, and any Hidden or Invisible creatures that start their turrn within this area must make a Stealth check with a DC equal to {{lux:solarian:spirit eye}}, or else be revealed for the duration that they remain in sight of your Spirit Eye.</description>
+        </sheet>
+        <rules>
+            <stat name = "lux:solarian:spirit eye" value = "8" bonus = "base"/>
+            <stat name = "lux:solarian:spirit eye" value = "wisdom:modifer"/>
+            <stat name = "lux:solarian:spirit eye" value = "proficiency"/>
+        </rules>
+    </element>
+    <element name = "Warped Perception" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_WARPED_PERCEPTION">
+        <description>
+            <p>You may automatically succeed when taking the Hide action to hide amongst the material from which you are primarily composed. A Lux grown from wood may blend perfectly into the textures of a tree, for example.</p>
+        </description>
+        <sheet display = "true">
+            <description>You may automatically succeed when taking the Hide action to hide amongst the material from which you are primarily composed.</description>
+        </sheet>
+    </element>
+
+    <element name = "Moon-Touched" type = "Race Variant" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED">
+        <supports>Lux</supports>
+        <description>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Intelligence score increases by 1.<br/>
+                <span class = "feature">Umbral Eye. </span>Your third eye is as dark as night, and flecked with brilliant white like the stars. Once per day, you may spew blackest shadow in a 20 foot cone originating from within your Umbral Eye for up to 1 minute as an Action. Creature other than you that start their turn within this area that do not have Darkvision are Blinded until the end of their next turn. Creatures that have Darkvision must make an Intelligence saving throw with a DC equal to 8 + your Intelligence modifer + your proficiency bonus and are Blinded until the of their next turn if they fail.<br/>
+                <span class = "feature">Darkvision. </span>You can see in dim light within 30 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern most colour in darkness, only shades of green and brown.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "intelligence" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+
+            <grant type = "Vision" id = "ID_VISION_DARKVISION"/>
+
+            <grant type = "Racial Trait" id = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED_UMBRAL_EYE"/>
+        </rules>
+    </element>
+
+    <element name = "Umbral Eye" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED_UMBRAL_EYE">
+        <description>
+            <p>Your third eye is as dark as night, and flecked with brilliant white like the stars. Once per day, you may spew blackest shadow in a 20 foot cone originating from within your Umbral Eye for up to 1 minute as an Action. Creature other than you that start their turn within this area that do not have Darkvision are Blinded until the end of their next turn. Creatures that have Darkvision must make an Intelligence saving throw with a DC equal to 8 + your Intelligence modifer + your proficiency bonus and are Blinded until the of their next turn if they fail.</p>
+        </description>
+        <sheet usage = "1/Day">
+            <description>You may spew blackest shadow in a 20 foot cone originating from within your Umbral Eye for up to 1 minute as an Action. Creature other than you that start their turn within this area that don't have Darkvision are Blinded until the end of their next turn. Creatures that have Darkvision must make an Intelligence saving throw with a DC equal to {{lux:moon-touched:umbral eye}} and are Blinded until the of their next turn if they fail.</description>
+        </sheet>
+        <rules>
+            <stat name = "lux:moon-touched:umbral eye" value = "8" bonus = "base"/>
+            <stat name = "lux:moon-touched:umbral eye" value = "intelligence:modifier"/>
+            <stat name = "lux:moon-touched:umbral eye" value = "proficiency"/>
+        </rules>
+    </element>
+
+    <element name = "Abyssal" type = "Race Variant" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_ABYSSAL">
+        <supports>Lux</supports>
+        <description>
+            <p>
+                <span class = "feature">Ability Score Increase. </span>Your Constitution score increases by 1.<br/>
+                <span class = "feature">Elder Eye. </span>Your third eye is milky and unseeing. Once per day you may pulse chromatic traceries in a 20 foot cone originating from your Elder Eye for up to 1 minute as an action.Creatures other than you that start their turn within this area concentrating on a spell must make a Constitution saving throw with a DC equal to 8 + your constitution modifer + your proficiency bonus or lose their concentration on their spell.<br/>
+                <span class = "feature">Spellsight. </span>You gain the ability to cast the spell Detect Magic once per day without expending a spellslot.<br/>
+            </p>
+        </description>
+        <sheet display = "true"/>
+        <rules>
+            <stat name = "constitution" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            
+            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_ELDER_EYE"/>
+            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_SPELLSIGHT"/>
+        </rules>
+    </element>
+
+    <element name = "Elder Eye" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_ELDER_EYE">
+        <description>
+            <p>Your third eye is milky and unseeing. Once per day you may pulse chromatic traceries in a 20 foot cone originating from your Elder Eye for up to 1 minute as an action.Creatures other than you that start their turn within this area concentrating on a spell must make a Constitution saving throw with a DC equal to 8 + your constitution modifer + your proficiency bonus or lose their concentration on their spell.</p>
+        </description>
+        <sheet usage = "1/Day">
+            <description>You may pulse chromatic traceries in a 20 foot cone originating from your Elder Eye for up to 1 minute as an action.Creatures other than you that start their turn within this area concentrating on a spell must make a Constitution saving throw with a DC equal to {{lux:abyssal:elder eye}} or lose their concentration on their spell.</description>
+        </sheet>
+        <rules>
+            <stat name = "lux:abyssal:elder eye" value = "8" bonus = "base"/>
+            <stat name = "lux:abyssal:elder eye" value = "consitution:modifer"/>
+            <stat name = "lux:abyssal:elder eye" value = "proficiency"/>
+        </rules>
+    </element>
+    <element name = "Spellsight" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_SPELLSIGHT">
+        <description>
+            <p>You gain the ability to cast the spell Detect Magic once per day without expending a spellslot.</p>
+            <div element = "ID_PHB_SPELL_DETECT_MAGIC"/>
+        </description>
+        <sheet usage = "1/Day">
+            <description>You gain the ability to cast the spell Detect Magic without expending a spellslot.</description>
+        </sheet>
+    </element>
+</elements>
