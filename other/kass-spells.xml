@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Kass spells</name>
+        <update version = "0.0.1">
+            <file name = "kass-spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-spells.xml"/>
+        </update>
+    </info>
+
+    <element name = "Steal Bones!" type = "Spell" source = "A Thin Line of Sight" id = "ID_ATLOS_SPELL_STEAL_BONES">
+        <supports>Bard, Sorcerer, Wizard</supports>
+        <description>
+            <span class = "feature">Verbal Component. </span>"I'm Going To Steal Your Bones!"<br/>
+            <span class = "feature">Somatic Component. </span>"pointing at the target"<br/>
+            <br/>
+            <p>You have declared that you are going to teal the bones of someone you cam see within range and that you know the name of. You must make a wisdom saving throw against your spell save DC to determine your true conviction towards stealing that bones of your foe.</p>
+            <p>You must really truly want this. If the target has done something to seriously harm you in the past, as confirmed by the DM, you get advantage on the roll. The target must have bones with which to steal.</p>
+            <p>On a successful save, the target's bones are teleported from their body to a container that is big enough to hold all of the bones which is within 20 feet of the caster.</p>
+            <p>For ease of use, the box's size should match their size category (Ex. Small is 3ft x 3ft, medium is 6ft x 6ft, etc.. Ultimately it will be decided by the DM if the box is big enough).</p>
+            <p>The victim, if undisturbed, survives for 3d29 seconds as a pile of flesh and loose organs. If touched at all, the victim dies instantly.</p>
+            <p>Due to the nature of the spell, their bones are now legally forfeit, on a cosmic level, and will be recognized as such by even the divine and the leaders of any planes of existence.</p>
+            <p>The victim cannot be revived, unless a new set of bones are donated to them in full and they are brought back through a wish spell. Alternatively, they could try legal action. Until then, the caster now has a spare set of bones.</p>
+            <p>On a failed saving throw, the caster's bones are forfeit to the void. Their death is instant and they will be forgotten and their deeds unsung because their will was not strong enought.</p>
+        </description>
+        <setters>
+            <set name = "level">9</set>
+            <set name = "school">Conjuration</set>
+            <set name = "time">1 action</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">600 ft.</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "verbalComponent">"I'm Going To Steal Your Bones!"</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "somaticComponent">pointing at the target</set>
+            <set name = "hasMaterialComponent">true</set>
+            <set name = "materialComponent">a box large enough to fit the bones</set>
+        </setters>
+    </element>
+</elements>
