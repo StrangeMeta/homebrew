@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.3">
+        <update version = "0.0.4">
             <file name = "spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Spells/spells.xml"/>
         </update>
     </info>
@@ -354,8 +354,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Endoleech" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ENDOLEECH_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_ENDOLEECH_EVOCATION</requirements>
+    <element name = "Endoleech" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ENDOLEECH">
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You touch a creature, absorbing the energy from its body and bolstering your metabolism. Make a melee spell attack against a creature you can reach. On a hit, the target takes 5d6 cold damage and can’t take reactions until the end of its next turn. In addition, until the end of its next turn, its speed is reduced by 15 feet and your speed is increased by 15 feet.</p>
@@ -364,29 +363,7 @@
         <setters>
             <set name = "keywords">cold</set>
             <set name = "level">2</set>
-            <set name = "school">Biomancy</set>
-            <set name = "time">1 action</set>
-            <set name = "duration">Instantaneous</set>
-            <set name = "range">Touch</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">true</set>
-            <set name = "materialComponent">a toenail lost to frostbite</set>
-            <set name = "isConcentration">false</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "Endoleech" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_ENDOLEECH_EVOCATION">
-        <requirements>!ID_RGTTYR_SPELL_ENDOLEECH_BIOMANCY</requirements>
-        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
-        <description>
-            <p>You touch a creature, absorbing the energy from its body and bolstering your metabolism. Make a melee spell attack against a creature you can reach. On a hit, the target takes 5d6 cold damage and can’t take reactions until the end of its next turn. In addition, until the end of its next turn, its speed is reduced by 15 feet and your speed is increased by 15 feet.</p>
-            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
-        </description>
-        <setters>
-            <set name = "keywords">cold</set>
-            <set name = "level">2</set>
-            <set name = "school">Evocation</set>
+            <set name = "school">Evocation (Biomancy)</set>
             <set name = "time">1 action</set>
             <set name = "duration">Instantaneous</set>
             <set name = "range">Touch</set>
@@ -463,8 +440,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Feverskin" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_FEVERSKIN_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_FEVERSKIN_EVOCATION</requirements>
+    <element name = "Feverskin" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_FEVERSKIN">
         <supports>Cleric, Druid, Fire, Sorcerer, Tamer, Warlock, Wizard</supports>
         <description>
             <p>You eat a chilli pepper, your metabolism increases, and your skin begins to burn to the touch. Make a melee spell attack against a creature within your reach. On a hit, the target takes 6d6 fire damage. Until the spell ends, you can use an action on each of your subsequent turns to make this attack again.</p>
@@ -474,30 +450,7 @@
         <setters>
             <set name = "keywords">fire</set>
             <set name = "level">5</set>
-            <set name = "school">Biomancy</set>
-            <set name = "time">1 action</set>
-            <set name = "duration">Concentration, up to 1 minute</set>
-            <set name = "range">Self</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">true</set>
-            <set name = "materialComponent">a red hot chilli pepper, which the spell consumes</set>
-            <set name = "isConcentration">true</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "Feverskin" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_FEVERSKIN_EVOCATION">
-        <requirements>!ID_RGTTYR_SPELL_FEVERSKIN_BIOMANCY</requirements>
-        <supports>Cleric, Druid, Fire, Sorcerer, Tamer, Warlock, Wizard</supports>
-        <description>
-            <p>You eat a chilli pepper, your metabolism increases, and your skin begins to burn to the touch. Make a melee spell attack against a creature within your reach. On a hit, the target takes 6d6 fire damage. Until the spell ends, you can use an action on each of your subsequent turns to make this attack again.</p>
-            <p class = "indent">For the duration, your walking speed increases by 15 feet, and you gain 2d6 temporary hit points at the start of each of your turns.</p>
-            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th.</p>
-        </description>
-        <setters>
-            <set name = "keywords">fire</set>
-            <set name = "level">5</set>
-            <set name = "school">Evocation</set>
+            <set name = "school">Evocation (Biomancy)</set>
             <set name = "time">1 action</set>
             <set name = "duration">Concentration, up to 1 minute</set>
             <set name = "range">Self</set>
@@ -771,8 +724,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION</requirements>
+    <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE">
         <supports>Bard, Cleric, Druid, Earth, Paladin, Range, Tamer</supports>
         <description>
             <p>You touch a willing creature, causing blue-green veins of adamantine to thread through its skin, making it tougher than steel and as flexible as silk. For the duration, the target’s AC can’t be less than 20, regardless of what kind of armour it’s wearing (shields confer their AC bonus as normal) and it has resistance to acid, bludgeoning, piercing, and slashing damage.</p>
@@ -781,7 +733,7 @@
         <setters>
             <set name = "keywords"/>
             <set name = "level">5</set>
-            <set name = "school">Biomancy</set>
+            <set name = "school">Transmutation (Biomancy)</set>
             <set name = "time">1 action</set>
             <set name = "duration">Concentration, up to 1 hour</set>
             <set name = "range">Touch</set>
@@ -793,30 +745,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Nomi's Adamantine Carapace" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_TRANSMUTATION">
-        <requirements>!ID_RGTTYR_SPELL_NOMIS_ADAMANTINE_CARAPACE_BIOMANCY</requirements>
-        <supports>Bard, Cleric, Druid, Earth, Paladin, Range, Tamer</supports>
-        <description>
-            <p>You touch a willing creature, causing blue-green veins of adamantine to thread through its skin, making it tougher than steel and as flexible as silk. For the duration, the target’s AC can’t be less than 20, regardless of what kind of armour it’s wearing (shields confer their AC bonus as normal) and it has resistance to acid, bludgeoning, piercing, and slashing damage.</p>
-            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the minimum AC increases by 1 for each slot level above 5th.</p>
-        </description>
-        <setters>
-            <set name = "keywords"/>
-            <set name = "level">5</set>
-            <set name = "school">Transmutation</set>
-            <set name = "time">1 action</set>
-            <set name = "duration">Concentration, up to 1 hour</set>
-            <set name = "range">Touch</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">true</set>
-            <set name = "materialComponent">a hunk of adamantine worth at least 300 gp</set>
-            <set name = "isConcentration">true</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION</requirements>
+    <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES">
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
@@ -825,29 +754,7 @@
         <setters>
             <set name = "keywords">psychic</set>
             <set name = "level">0</set>
-            <set name = "school">Biomancy</set>
-            <set name = "time">1 action</set>
-            <set name = "duration">Instantaneous</set>
-            <set name = "range">60 feet</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">false</set>
-            <set name = "materialComponent"/>
-            <set name = "isConcentration">false</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "Pins and Needles" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_PINS_AND_NEEDLES_EVOCATION">
-        <requirements>!ID_RGTTYR_SPELL_PINS_AND_NEEDLES_BIOMANCY</requirements>
-        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
-        <description>
-            <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
-            <p class = "indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-        </description>
-        <setters>
-            <set name = "keywords">psychic</set>
-            <set name = "level">0</set>
-            <set name = "school">Evocation</set>
+            <set name = "school">Evocation (Biomancy)</set>
             <set name = "time">1 action</set>
             <set name = "duration">Instantaneous</set>
             <set name = "range">60 feet</set>
@@ -1048,8 +955,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Skin of Steel" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STEEL_TRANSMUTATION</requirements>
+    <element name = "Skin of Steel" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL">
         <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
         <description>
             <p>You reinforce a willing creature’s skin with the tenacity and strength of steel. For the spell’s duration, the target’s AC can’t be lower than 19, regardless of what armour it’s wearing (shields confer their bonus to AC as normal), and, at the start of each of the target’s turns, it gains 3d6 temporary hit points.</p>
@@ -1058,7 +964,7 @@
         <setters>
             <set name = "keywords"/>
             <set name = "level">4</set>
-            <set name = "school">Biomancy</set>
+            <set name = "school">Transmutation (Biomancy)</set>
             <set name = "time">1 minute</set>
             <set name = "duration">10 minutes</set>
             <set name = "range">Touch</set>
@@ -1070,30 +976,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "Skin of Steel" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL_TRANSMUTATION">
-        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STEEL_BIOMANCY</requirements>
-        <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
-        <description>
-            <p>You reinforce a willing creature’s skin with the tenacity and strength of steel. For the spell’s duration, the target’s AC can’t be lower than 19, regardless of what armour it’s wearing (shields confer their bonus to AC as normal), and, at the start of each of the target’s turns, it gains 3d6 temporary hit points.</p>
-            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 5th level or higher, the temporary hit points increase by 1d6 for each slot level above 4th.</p>
-        </description>
-        <setters>
-            <set name = "keywords"/>
-            <set name = "level">4</set>
-            <set name = "school">Transmutation</set>
-            <set name = "time">1 minute</set>
-            <set name = "duration">10 minutes</set>
-            <set name = "range">Touch</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">true</set>
-            <set name = "materialComponent">a steel figurine</set>
-            <set name = "isConcentration">false</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "Skin of Stone" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STONE_TRANSMUTATION</requirements>
+    <element name = "Skin of Stone" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE">
         <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
         <description>
             <p>At your touch, the skin of a willing creature hardens with stone-like fortification. Its speed is reduced by 5 feet and, when you cast this spell and at the start of each of the target’s turns, it gains temporary hit points equal to 1d4 plus your spellcasting modifier. When the spell ends, the target loses any remaining temporary hit points granted by this spell.</p>
@@ -1102,29 +985,7 @@
         <setters>
             <set name = "keywords"/>
             <set name = "level">2</set>
-            <set name = "school">Biomancy</set>
-            <set name = "time">1 minute</set>
-            <set name = "duration">1 minute</set>
-            <set name = "range">Touch</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">true</set>
-            <set name = "materialComponent">a carved stone figurine</set>
-            <set name = "isConcentration">false</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "Skin of Stone" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE_TRANSMUTATION">
-        <requirements>!ID_RGTTYR_SPELL_SKIN_OF_STONE_BIOMANCY</requirements>
-        <supports>Druid, Earth, Ranger, Sorcerer, Tamer, Wizard</supports>
-        <description>
-            <p>At your touch, the skin of a willing creature hardens with stone-like fortification. Its speed is reduced by 5 feet and, when you cast this spell and at the start of each of the target’s turns, it gains temporary hit points equal to 1d4 plus your spellcasting modifier. When the spell ends, the target loses any remaining temporary hit points granted by this spell.</p>
-            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
-        </description>
-        <setters>
-            <set name = "keywords"/>
-            <set name = "level">2</set>
-            <set name = "school">Transmutation</set>
+            <set name = "school">Transmutation (Biomancy)</set>
             <set name = "time">1 minute</set>
             <set name = "duration">1 minute</set>
             <set name = "range">Touch</set>
@@ -1316,8 +1177,7 @@
             <set name = "isRitual">false</set>
         </setters>
     </element>
-    <element name = "The Bends" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_THE_BENDS_BIOMANCY">
-        <requirements>!ID_RGTTYR_SPELL_THE_BENDS_TRANSMUTATION</requirements>
+    <element name = "The Bends" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_THE_BENDS">
         <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
         <description>
             <p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw. On a failed save, the target takes 5d8 poison damage and is poisoned for 1 minute. On a successful save, the targettakes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to d10s.</p>
@@ -1327,30 +1187,7 @@
         <setters>
             <set name = "keywords">poison</set>
             <set name = "level">3</set>
-            <set name = "school">Biomancy</set>
-            <set name = "time">1 action</set>
-            <set name = "duration">Instantaneous</set>
-            <set name = "range">90 feet</set>
-            <set name = "hasVerbalComponent">true</set>
-            <set name = "hasSomaticComponent">true</set>
-            <set name = "hasMaterialComponent">false</set>
-            <set name = "materialComponent"/>
-            <set name = "isConcentration">false</set>
-            <set name = "isRitual">false</set>
-        </setters>
-    </element>
-    <element name = "The Bends" type = "Spell" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_SPELL_THE_BENDS_TRANSMUTATION">
-        <requirements>!ID_RGTTYR_SPELL_THE_BENDS_BIOMANCY</requirements>
-        <supports>Druid, Sorcerer, Warlock, Water, Wizard</supports>
-        <description>
-            <p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw. On a failed save, the target takes 5d8 poison damage and is poisoned for 1 minute. On a successful save, the targettakes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to d10s.</p>
-            <p class = "indent">The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
-            <p class = "indent"><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
-        </description>
-        <setters>
-            <set name = "keywords">poison</set>
-            <set name = "level">3</set>
-            <set name = "school">Transmutation</set>
+            <set name = "school">Transmutation (Biomancy)</set>
             <set name = "time">1 action</set>
             <set name = "duration">Instantaneous</set>
             <set name = "range">90 feet</set>
