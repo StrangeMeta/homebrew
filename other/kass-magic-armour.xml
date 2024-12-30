@@ -1,0 +1,87 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Kass Magic Armour</name>
+        <update version = "0.0.1">
+            <file name = "kass-magic-armour.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-magic-armour.xml"/>
+        </update>
+    </info>
+	
+	<element name = "Litheweave Armour" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_LITHEWEAVE_ARMOUR">
+		<description>
+			<p>A character has a +2 bonus to Dexterity Saving Throws while wearing this armor.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Armor</set>
+			<set name = "cost" currency = "gp">-</set>
+			<set name = "slot">body</set>
+			<set name = "type" addition = "light, medium, or heavy">Armor</set>
+			<set name = "attunement">false</set>
+			<set name = "rarity">Uncommon</set>
+			<set name = "armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+            <stat name = "dexterity:save:misc" value = "2"/>
+		</rules>
+	</element>
+	<element name = "Litheweave Armour, +1" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_LITHEWEAVE_ARMOUR_1">
+		<description>
+			<p>A character has a +2 bonus to Dexterity Saving Throws while wearing this armor. You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Armor</set>
+			<set name = "cost" currency = "gp">-</set>
+			<set name = "slot">body</set>
+			<set name = "type" addition = "light, medium, or heavy">Armor</set>
+			<set name = "attunement">false</set>
+			<set name = "rarity">Very Rare</set>
+            <set name = "enhancement">1</set>
+			<set name = "armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name = "armour">{{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+            <stat name = "dexterity:save:misc" value = "2"/>
+            <stat name = "ac:armored:enhancement" value = "1" bonus = "enhancement"/>
+		</rules>
+	</element>
+	<element name = "Litheweave Armour, +2" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_LITHEWEAVE_ARMOUR_2">
+		<description>
+			<p>A character has a +2 bonus to Dexterity Saving Throws while wearing this armor. You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Armor</set>
+			<set name = "cost" currency = "gp">-</set>
+			<set name = "slot">body</set>
+			<set name = "type" addition = "light, medium, or heavy">Armor</set>
+			<set name = "attunement">false</set>
+			<set name = "rarity">Legendary</set>
+            <set name = "enhancement">2</set>
+			<set name = "armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name = "armour">{{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+            <stat name = "dexterity:save:misc" value = "2"/>
+            <stat name = "ac:armored:enhancement" value = "2" bonus = "enhancement"/>
+		</rules>
+	</element>
+	<element name = "Litheweave Armour, +3" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_LITHEWEAVE_ARMOUR_3">
+		<description>
+			<p>A character has a +2 bonus to Dexterity Saving Throws while wearing this armor. You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.</p>
+		</description>
+		<setters>
+			<set name = "category">Magic Armor</set>
+			<set name = "cost" currency = "gp">-</set>
+			<set name = "slot">body</set>
+			<set name = "type" addition = "light, medium, or heavy">Armor</set>
+			<set name = "attunement">false</set>
+			<set name = "rarity">Legendary</set>
+            <set name = "enhancement">3</set>
+			<set name = "armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name = "armour">{{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+            <stat name = "dexterity:save:misc" value = "2"/>
+            <stat name = "ac:armored:enhancement" value = "3" bonus = "enhancement"/>
+		</rules>
+	</element>
+</elements>

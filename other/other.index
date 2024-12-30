@@ -4,7 +4,7 @@
 		<name>Other</name>
 		<description>Unorganised homebrew content.</description>
 		<author>Strange_Meta and others.</author>
-		<update version = "0.0.5">
+		<update version = "0.0.6">
 			<file name = "other.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/other.index" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 		<file name = "homebrew-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-weapons.xml" />
 		<file name = "homebrew-wild-metals.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-wild-metals.xml" />
 		<file name = "kass-feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-feats.xml" />
+		<file name = "kass-magic-armour.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-magic-armour.xml"/>
 		<file name = "kass-magic-weapons.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-magic-weapons.xml" />
 		<file name = "kass-race-lux.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-race-lux.xml" />
 		<file name = "kass-spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-spells.xml" />
