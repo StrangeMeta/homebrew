@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<file name = "fighter-wild-battlemage" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/refs/heads/main/other/fighter-wild-battlemage.xml"/>
+		<file name = "fighter-wild-battlemage.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/refs/heads/main/other/fighter-wild-battlemage.xml"/>
 		<file name = "homebrew-armour.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-armour.xml" />
 		<file name = "homebrew-feats.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-feats.xml" />
 		<file name = "homebrew-magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-magic-items.xml" />
