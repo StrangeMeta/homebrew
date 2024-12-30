@@ -2,8 +2,8 @@
 <elements>
 	<info>
         <name>Wild Battlemage, Fighter subclass by CurlyFries</name>
-		<update version = "0.0.1">
-			<file name = "fighter-wild-battlemage.xml" url = ""/>
+		<update version = "0.0.2">
+			<file name = "fighter-wild-battlemage.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/refs/heads/main/other/fighter-wild-battlemage.xml"/>
 		</update>
 	</info>
 
