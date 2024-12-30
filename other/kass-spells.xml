@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Kass spells</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "kass-spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-spells.xml"/>
         </update>
     </info>
@@ -36,4 +36,26 @@
             <set name = "materialComponent">a box large enough to fit the bones</set>
         </setters>
     </element>
+    <element name = "Propagate Entropy" type = "Spell" source = "D&amp;D Beyond" id = "ID_DDB_SPELL_PROPAGATE_ENTROPY">
+    <supports>Warlock</supports>
+        <description>
+            <p>You partially unmake a spell as it hits you, causing magical feedback to leap through the Weave to the caster. the creature targeting you must make a saving throw of their spellcasting ability or 1d4 damage of a type of your choice. If you roll a 4 on the initial dice, roll an additional 1d4 damage.</p>
+            <p class = "indent"><strong>Cantrip Upgrade: </strong>The damage increases by 1d4 when you reach level 5 (2d4) 11 (3d4) 17 (4d4). Each initially rolled dice can trigger a second dice.</p>
+        </description>
+        <setters>
+            <set name = "level">0</set>
+            <set name = "school">Evocation</set>
+            <set name = "time">1 reaction, which you take when a spellcaster successfully targets you with a damaging magical effect.</set>
+            <set name = "duration">Instantaneous</set>
+            <set name = "range">Sight</set>
+            <set name = "hasVerbalComponent">true</set>
+            <set name = "hasSomaticComponent">true</set>
+            <set name = "hasMaterialComponent">false</set>
+        </setters>
+    </element>
+    <append id = "ID_WOTC_PHB_ARCHETYPE_WILD_MAGIC">
+        <spellcasting name = "Sorcerer" extend = "true">
+            <extend>ID_DDB_SPELL_PROPAGATE_ENTROPY</extend>
+        </spellcasting>
+    </append>
 </elements>
