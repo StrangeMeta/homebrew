@@ -1,0 +1,119 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+	<info>
+        <name>Wild Battlemage, Fighter subclass by CurlyFries</name>
+		<update version = "0.0.1">
+			<file name = "fighter-wild-battlemage.xml" url = ""/>
+		</update>
+	</info>
+
+	<element name = "Wild Battlemage" type = "Archetype" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_WILD_BATTLEMAGE">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Many magical societies employ bladesingers or eldritch knights as their frontline champions, but such societies leak magic into the land and rivers like a contagion, and it is not uncommon for children to be born in such places with minor sorcerous abilities that do not require such dedicated study.</p>
+            <p>Whether natural born or created through experimentation, a wild battlemage has learned to harness a wellspring of chaotic magic within themselves unleashing it upon the battlefield in a variety of dazzling and confusing effects.</p>
+            <table class = "class-features">
+                <thead>
+                    <tr><td class = "col-5">Fighter Level</td><td class = "col-10">Wild Battlemage Feature</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>Wild Surge, Unstable Anomaly</td></tr>
+                <tr><td>7th</td><td>Arcane Shroud</td></tr>
+                <tr><td>10th</td><td>Mana Sheathe</td></tr>
+                <tr><td>15th</td><td>Eldrith Geyser</td></tr>
+                <tr><td>18th</td><td>Font of Power</td></tr>
+            </table>
+            <div element = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_WILD_SURGE"/>
+            <div element = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_UNSTABLE_ANOMALY"/>
+            <div element = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_ARCANE_SHROUD"/>
+            <div element = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_MANA_SHEATHE"/>
+            <div element = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_ELDRITCH_GEYSER"/>
+            <div element = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_FONT_OF_POWER"/>
+		</description>
+        <sheet display = "false">
+            <description>A chaotic wellspring of magic unleashed on the battlefield in a storm of blades and magic.</description>
+        </sheet>
+        <rules>
+            <grant type = "Archetype Feature" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_WILD_SURGE" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_UNSTABLE_ANOMALY" level = "3"/>
+            <grant type = "Archetype Feature" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_ARCANE_SHROUD" level = "7"/>
+            <grant type = "Archetype Feature" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_MANA_SHEATHE" level = "10"/>
+            <grant type = "Archetype Feature" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_ELDRITCH_GEYSER" level = "15"/>
+            <grant type = "Archetype Feature" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_FONT_OF_POWER" level = "18"/>
+        </rules>
+	</element>
+    
+    <element name = "Wild Surge" type = "Archetype Feature" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_WILD_SURGE">7
+        <p><em>3rd-Level Wild Battlemage feature</em></p>
+        <description>
+            <p>You can channel surges of wild magic when you push your body beyond its limits. When you Action Surge, you may immediately roll on the Wild Surge table below, triggering its resulting effect.</p>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Surge Effect</td></tr>
+                </thead>
+                <tr><td>1</td><td>Choose a creature within 30 feet of you. That creature’s movement is doubled untill the end of its next turn.</td></tr>
+                <tr><td>2</td><td>You gain a number of temporary hit points equal to 1d10 + your fighter level.</td></tr>
+                <tr><td>3</td><td>You immediately turn invisible. The invisibility ends at the start of your next turn, or when you attack or cast a spell.</td></tr>
+                <tr><td>4</td><td>Until the end of your next turn, whenever you hit a creature with a weapon attack, you may push it 5 feet away from you.</td></tr>
+                <tr><td>5</td><td>Choose a creature within 30 feet of you. That creature may immediately use its reaction to take the Dash or Dodge actions, or to make a single weapon attack.</td></tr>
+                <tr><td>6</td><td>Until the end of your next turn, you may spend your movement to teleport up to your speed, instead of moving normally.</td></tr>
+                <tr><td>7</td><td>Until the end of your next turn, your melee attacks gain an additional 5 feet of reach. For the same duration, the short ranges of your ranged attacks increase by 20 feet, and their long ranges increase by 60 feet.</td></tr>
+                <tr><td>8</td><td>Until the end of your next turn, your weapon attacks deal an additional 1d8 damage. Roll a d6 now to determine the damage type: 1: the weapon's usual damage type, 2: acid, 3: cold, 4: fire, 5: lightning, 6: thunder.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You can channel surges of wild magic when you push your body beyond its limits. When you Action Surge, you may immediately roll on the Wild Surge table, triggering its resulting effect.</description>
+        </sheet>
+    </element>
+    <element name = "Unstable Anomaly" type = "Archetype Feature" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_UNSTABLE_ANOMALY">
+        <p><em>3rd-Level Wild Battlemage feature</em></p>
+        <description>
+            <p>You know the <em>chaos bolt</em> spell, which you may cast at 1st level without expending a spell slot; Constitution is your spellcasting ability for this spell. You can cast the spell in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You may also cast <em>chaos bolt</em> normally using any spell slots you may possess.</p>
+            <p class = "indent">When you gain the <em>Extra Attack</em> feature, you may cast <em>chaos bolt</em> using this trait with a casting time of one attack, instead of one action. You may still only cast one spell per turn as normal.</p>
+        </description>
+        <sheet usage = "{{unstable anomaly:usage}}/Long Rest">
+            <description>You know the chaos bolt spell, which you may cast at 1st level without expending a spell slot; Constitution is your spellcasting ability for this spell. You can cast the spell in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You may also cast chaos bolt normally using any spell slots you may possess.
+            When you gain the Extra Attack feature, you may cast chaos bolt using this trait with a casting time of one attack, instead of one action. You may still only cast one spell per turn as normal.</description>
+            <description level = "15">You know the chaos bolt spell, which you may cast at 2nd level without expending a spell slot; Constitution is your spellcasting ability for this spell. You can cast the spell in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You may also cast chaos bolt normally using any spell slots you may possess.
+            When you gain the Extra Attack feature, you may cast chaos bolt using this trait with a casting time of one attack, instead of one action. You may still only cast one spell per turn as normal.</description>
+        </sheet>
+        <rules>
+            <stat name = "unstable anomaly:usage" value = "proficiency" bonus = "base"/>
+        </rules>
+    </element>
+    <element name = "Arcane Shroud" type = "Archetype Feature" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_ARCANE_SHROUD">
+        <p><em>7th-Level Wild Battlemage feature</em></p>
+        <description>
+            <p>You gain resistance to the damage dealt by spells and other magical effects. When you Action Surge, you may choose to forego rolling on the Wild Surge table, and instead become immune to the damage dealt by spells and other magical effects until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to the damage dealt by spells and other magical effects. When you Action Surge, you may choose to forego rolling on the Wild Surge table, and instead become immune to the damage dealt by spells and other magical effects until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Mana Sheathe" type = "Archetype Feature" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_MANA_SHEATHE">
+        <p><em>10th-Level Wild Battlemage feature</em></p>
+        <description>
+            <p>Magic fuels you and makes you deadlier, even if it's trying to kill you. Whenever you Action Surge or take damage from a spell or other magical effect, you gain a +1 bonus to the attack and damage rolls of your next weapon attack and <em>chaos bolt</em> until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description>Magic fuels you and makes you deadlier, even if it's trying to kill you. Whenever you Action Surge or take damage from a spell or other magical effect, you gain a +1 bonus to the attack and damage rolls of your next weapon attack and chaos bolt until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name = "Eldritch Geyser" type = "Archetype Feature" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_ELDRITCH_GEYSER">
+        <p><em>15th-Level Wild Battlemage feature</em></p>
+        <description>
+            <p>You practically explode with chaotic magic, When cast <em>chaos bolt</em> using your Unstable Anomaly feature, it is now cast at 2nd level. Additionally, you are no longer limited to casting one spell per turn, so long as any spells after the first are <em>chaos bolt</em>.</p>
+        </description>
+        <sheet>
+            <description>You are no longer limited to casting one spell per turn, so long as any spells after the first are chaos bolt.</description>
+        </sheet>
+    </element>
+    <element name = "Font of Power" type = "Archetype Feature" source = "GMBinder" id = "ID_GMBINDER_ARCHETYPE_FEATURE_WILD_BATTLEMAGE_FONT_OF_POWER">
+        <p><em>18th-Level Wild Battlemage feature</em></p>
+        <description>
+            <p>You are a living well of unstable arcana. When you roll on the Wild Surge table, you may roll twice, and trigger the effects of both results. If you roll doubles, you may choose any other effect from the list to be triggered as the second surge.</p>
+        </description>
+        <sheet>
+            <description>When you roll on the Wild Surge table, you may roll twice, and trigger the effects of both results. If you roll doubles, you may choose any other effect from the list to be triggered as the second surge.</description>
+        </sheet>
+    </element>
+</elements>
