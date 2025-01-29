@@ -33,7 +33,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name="Stave of Rejuvenation" type="Magic Item" source="A Thin Line of Light" id="ID_HOMEBREW_ATLOL_MAGIC_ITEM_ELDRITCH_STAFF">
+	<element name="Stave of Rejuvenation" type="Magic Item" source="A Thin Line of Light" id="ID_HOMEBREW_ATLOL_MAGIC_ITEM_STAVE_OF_REJUVENATION">
 		<description>
 			<p class="indent">When you cast a levelled spell, an ally within 30ft of you gains temporary hitpoints equal to the level of the spell cast. These temporary hitpoints stack with ones from this feature and last for 1 hour.</p>
 			<p>This staff can be wielded as a magic quarterstaff.</p>
@@ -47,6 +47,20 @@
 			<set name="type">Staff</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Buckler of Silent Sorrows" type="Magic Item" source="A Thin Line of Light" id="ID_HOMEBREW_ATLOL_MAGIC_ITEM_BUCKLER_OF_SILENT_SORROWS">
+		<description>
+			<p>This buckler is fashioned from a wood and bears the emblem of The Abbey of Silent Sorrows at its centre.</p>
+			<p class="indent">As a Bonus Action, when you make a two-handed weapon attack using your Action, you may make a weapon attack with the buckler dealing 1d8 + your strength modifier bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Shield">Armor</set>
+			<set name="enhancement">-1</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 		</setters>
 	</element>
 </elements>
