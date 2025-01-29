@@ -63,7 +63,7 @@
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 		</setters>
 		<rules>
-			<stat name="ac:misc" value="-1"/>
+			<stat name="ac:shield" value="-1"/>
 		</rules>
 	</element>
 </elements>
