@@ -2,12 +2,12 @@
 <elements>
     <info>
         <name>Homebrew Magic Items</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "homebrew-magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-magic-items.xml"/>
         </update>
     </info>
 	
-	<element name = "Phoenician Glider" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_MAGIC_ITEM_PHOENICIAN_GLIDER">
+	<element name = "Phoenician Glider" type = "Magic Item" source = "The Rising Veil" id = "ID_HOMEBREW_TRV_MAGIC_ITEM_PHOENICIAN_GLIDER">
 		<description>
 			<p>This wood and canvas glider transforms into a phoenix when thrown. It will travel 1d20+5 to the nearest 5 feat. Any creature in its path must make a Dexterity saving throw(DC: 10 + PB) or take 1d10+Con damage. Or half damage on a failed save. If the roll to throw is 1, the glider breaks on impact and must be repaired using 10GP of Canvas and wood.</p>
 		</description>
@@ -18,59 +18,35 @@
 			<set name = "slot">misc</set>
 		</setters>
 	</element>
-	<element name = "Royal Canesword" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_ROYAL_CANESWORD">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+	<element name="Bracers of Ursine Resilience" type="Magic Item" source="A Thin Line of Light" id="ID_HOMEBREW_ATLOL_MAGIC_ITEM_BRACERS_OF_URSINE_RESILIENCE">
 		<description>
-			<p>Royal Canesword
-
-This canesword was presented to his Majesty High Arcohn Leidathus The 3rd over 150 years before Zephiri fell to the Omma. It was a gift from the northern Trade Federation in recognition of Zephiri's continuing favourable trade terms with them.</p>
-
-<p>When attuned to this item you may as a bonus channel the noble power of those who have born the sword before. A number of times equal to your proficiency bonus per long rest you may summon a past wielder who enters initiative until the end of your next turn.</p>
+			<p>While wearing these bracers, on your turn you may use a Bonus Action to regain hit points equal to 1d10 + your constitution modifier once per Short Rest.</p>
 		</description>
 		<setters>
-			<set name = "category">Magic Weapons</set>
-			<set name = "type" addition = "rapier">Weapon</set>
-			<set name = "rarity">Uncommon</set>
-			<set name = "attunement">true</set>
-			<set name = "weapon">Rapier</set>
-			<set name = "name-format">Royal Canesword</set>
-			<set name = "slot">onehand</set>
-			<set name = "damage" type = "slashing">1d8</set>
+			<set name="keywords">armor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">arms</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name = "Frost-Bitten Longsword" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_FROST_BITTTEN_LONGSWORD">
+	<element name="Stave of Rejuvenation" type="Magic Item" source="A Thin Line of Light" id="ID_HOMEBREW_ATLOL_MAGIC_ITEM_ELDRITCH_STAFF">
 		<description>
-			<p>Frost-Bitten Longsword
-
-This longsword steams continuously as it rapidly cools the air around its mirror-polished blade. When you hit an attack with this weapon, you deal 1d4 Cold Damage in addition to your usual damage. This increases to 1d8 on a Critical Hit.</p>
+			<p class="indent">When you cast a levelled spell, an ally within 30ft of you gains temporary hitpoints equal to the level of the spell cast. These temporary hitpoints stack with ones from this feature and last for 1 hour.</p>
+			<p>This staff can be wielded as a magic quarterstaff.</p>
 		</description>
 		<setters>
-			<set name = "category">Magic Weapons</set>
-			<set name = "type" addition = "longsword">Weapon</set>
-			<set name = "rarity">Uncommon</set>
-			<set name = "attunement">false</set>
-			<set name = "weapon">Longsword</set>
-			<set name = "name-format">Frost-Bitten Longsword</set>
-			<set name = "slot">onehand</set>
-			<set name = "damage" type = "slashing">1d8</set>
-			<set name = "versatile">1d10</set>
-		</setters>
-	</element>
-	<element name = "Blink Kunai" type = "Magic Item" source = "Homebrew" id = "ID_HOMEBREW_BLINK_KUNAI">
-		<description>
-			<p>Blink Kunai
-
-This throwing knife comes in sets of five, and seems to have edges so sharply honed that it is unclear where they end and the surrounding air begins. Each knife deals damage as a thrown dagger, and contains one charge (1/long rest), which can be expended as a bonus action to teleport the wielder to its location. This teleportation is limited to a range of 90ft, and must target a knife in direct line of sight.</p>
-		</description>
-		<setters>
-			<set name = "category">Magic Weapons</set>
-			<set name = "type" addition = "dagger">Weapon</set>
-			<set name = "rarity">Uncommon</set>
-			<set name = "attunement">false</set>
-			<set name = "weapon">Dagger</set>
-			<set name = "name-format">Blink Kunai</set>
-			<set name = "slot">onehand</set>
-			<set name = "damage" type = "piercing">1d4</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 </elements>
