@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Homebrew Magic Items</name>
-        <update version = "0.0.4">
+        <update version = "0.0.5">
             <file name = "homebrew-magic-items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-magic-items.xml"/>
         </update>
     </info>
