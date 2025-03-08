@@ -66,4 +66,20 @@
 			<stat name="ac:shield" value="-1"/>
 		</rules>
 	</element>
+	<element name="Staff of Nature's Fury" type="Magic Item" source="Homebrew" id="ID_HOMWBREW_ATLOL_MAGIC_ITEM_STAFF_MONSTER">
+		<description>
+			<p>This staff has 10 charges. While holding it, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC: beast bond (1 charge), or crusader's mantle (3 charges). You can also use an action to cast the poison spray cantrip from the staff without using any charges.</p>
+			<p class="indent">The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff makes a tremendous clattering noise, then vanishes forever.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a druid, or beastmaster ranger">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
 </elements>
