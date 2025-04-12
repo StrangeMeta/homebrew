@@ -2,12 +2,12 @@
 <elements>
     <info>
         <name>The Lux</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "kass-race-lux.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-race-lux.xml"/>
         </update>
     </info>
 
-    <element name = "Lux" type = "Race" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_LUX">
+    <element name = "Lux" type = "Race" source = "A Thin Line of Light" id = "ID_ATLOL_RACE_LUX">
         <description>
             <p class = "flavour">“That's when I saw it. Tall as an oak, wiry like willow, leaning on a stave of shifting stone."</p>
 
@@ -27,16 +27,16 @@
                 <span class = "feature">Ability Score Increase. </span>Your Dexterity score increases by 2.<br/>
                 <span class = "feature">Age. </span>The Lux are created fully mature, and live until their purpose is carried out, or they are killed. On average, they live 250 years.<br/>
                 <span class = "feature">Size. </span>You are Medium.<br/>
-                <span class = "faeture">Speed. </span>Your walking speed is 25 ft.<br/>
+                <span class = "feature">Speed. </span>Your walking speed is 25 ft.<br/>
                 <span class = "feature">Creature Type. </span>You are Fey.<br/>
                 <span class = "feature">Aboreal Gliding. </span>You gain a 30ft fly speed. You cannot fly further than 5ft off the ground. Your flying is silent when done under tree cover.<br/>
 
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and Druidic.<br/>
                 <span class = "feature">Subrace. </span>There are three primary variants among the enkoh: solarian, moon-touched, and abyssal. Choose one of these subraces.<br/>
             </p>
-            <div element = "ID_ATLOS_RACE_VARIANT_LUX_SOLARIAN"/>
-            <div element = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED"/>
-            <div element = "ID_ATLOS_RACE_VARIANT_LUX_ABYSSAL"/>
+            <div element = "ID_ATLOL_RACE_VARIANT_LUX_SOLARIAN"/>
+            <div element = "ID_ATLOL_RACE_VARIANT_LUX_MOON_TOUCHED"/>
+            <div element = "ID_ATLOL_RACE_VARIANT_LUX_ABYSSAL"/>
         </description>
         <sheet display = "true"/>
         <rules>
@@ -48,12 +48,12 @@
             <grant type = "Language" id = "ID_LANGUAGE_COMMON" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <grant type = "Language" id = "ID_LANGUAGE_DRUIDIC" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
 
-            <grant type = "Racial Trait" id = "ID_ATLOS_RACE_LUX_ABOREAL_GLIDING"/>
+            <grant type = "Racial Trait" id = "ID_ATLOL_RACE_LUX_ABOREAL_GLIDING"/>
             <select type = "Race Variant" name = "Lux Variant" supports = "Lux"/>
         </rules>
     </element>
 
-    <element name = "Aboreal Gliding" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_LUX_ABOREAL_GLIDING">
+    <element name = "Aboreal Gliding" type = "Racial Trait" source = "A Thin Line of Light" id = "ID_ATLOL_RACE_LUX_ABOREAL_GLIDING">
         <description>
             <p>You gain a 30ft fly speed. You cannot fly further than 5ft off the ground. Your flying is silent when done under tree cover.</p>
         </description>
@@ -66,7 +66,7 @@
     </element>
 
     <!-- Subraces -->
-    <element name = "Solarion" type = "Race Variant" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_SOLARIAN">
+    <element name = "Solarion" type = "Race Variant" source = "A Thin Line of Light" id = "ID_ATLOL_RACE_VARIANT_LUX_SOLARIAN">
         <supports>Lux</supports>
         <description>
             <p>
@@ -79,12 +79,12 @@
         <rules>
             <stat name = "wisdom" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             
-            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_SPIRIT_EYE"/>
-            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_WARPED_PERCEPTION"/>
+            <grant type = "Racial Trait" id = "ID_ATLOL_RACIAL_TRAIT_LUX_SOLARIAN_SPIRIT_EYE"/>
+            <grant type = "Racial Trait" id = "ID_ATLOL_RACIAL_TRAIT_LUX_SOLARIAN_WARPED_PERCEPTION"/>
         </rules>
     </element>
 
-    <element name = "Spirit Eye" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_SPIRIT_EYE">
+    <element name = "Spirit Eye" type = "Racial Trait" source = "A Thin Line of Light" id = "ID_ATLOL_RACIAL_TRAIT_LUX_SOLARIAN_SPIRIT_EYE">
         <description>
             <p>Your third eye contains the light of a sun-dappled grove. Once per day you may cast bright golden light from your eye for up to 1 minute as an action. This light is cast in a 20ft cone originating from your Spirit Eye, and any Hidden or Invisible creatures that start their turrn within this area must make a Stealth check with a DC equal to 8 + your Wisdom modifier + your proficiency bonus, or else be revealed for the duration that they remain in sight of your Spirit Eye.</p>
         </description>
@@ -97,7 +97,7 @@
             <stat name = "lux:solarian:spirit eye" value = "proficiency"/>
         </rules>
     </element>
-    <element name = "Warped Perception" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_SOLARIAN_WARPED_PERCEPTION">
+    <element name = "Warped Perception" type = "Racial Trait" source = "A Thin Line of Light" id = "ID_ATLOL_RACIAL_TRAIT_LUX_SOLARIAN_WARPED_PERCEPTION">
         <description>
             <p>You may automatically succeed when taking the Hide action to hide amongst the material from which you are primarily composed. A Lux grown from wood may blend perfectly into the textures of a tree, for example.</p>
         </description>
@@ -106,7 +106,7 @@
         </sheet>
     </element>
 
-    <element name = "Moon-Touched" type = "Race Variant" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED">
+    <element name = "Moon-Touched" type = "Race Variant" source = "A Thin Line of Light" id = "ID_ATLOL_RACE_VARIANT_LUX_MOON_TOUCHED">
         <supports>Lux</supports>
         <description>
             <p>
@@ -121,11 +121,11 @@
 
             <grant type = "Vision" id = "ID_VISION_DARKVISION"/>
 
-            <grant type = "Racial Trait" id = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED_UMBRAL_EYE"/>
+            <grant type = "Racial Trait" id = "ID_ATLOL_RACE_VARIANT_LUX_MOON_TOUCHED_UMBRAL_EYE"/>
         </rules>
     </element>
 
-    <element name = "Umbral Eye" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_MOON_TOUCHED_UMBRAL_EYE">
+    <element name = "Umbral Eye" type = "Racial Trait" source = "A Thin Line of Light" id = "ID_ATLOL_RACE_VARIANT_LUX_MOON_TOUCHED_UMBRAL_EYE">
         <description>
             <p>Your third eye is as dark as night, and flecked with brilliant white like the stars. Once per day, you may spew blackest shadow in a 20 foot cone originating from within your Umbral Eye for up to 1 minute as an Action. Creature other than you that start their turn within this area that do not have Darkvision are Blinded until the end of their next turn. Creatures that have Darkvision must make an Intelligence saving throw with a DC equal to 8 + your Intelligence modifer + your proficiency bonus and are Blinded until the of their next turn if they fail.</p>
         </description>
@@ -139,7 +139,7 @@
         </rules>
     </element>
 
-    <element name = "Abyssal" type = "Race Variant" source = "A Thin Line of Sight" id = "ID_ATLOS_RACE_VARIANT_LUX_ABYSSAL">
+    <element name = "Abyssal" type = "Race Variant" source = "A Thin Line of Light" id = "ID_ATLOL_RACE_VARIANT_LUX_ABYSSAL">
         <supports>Lux</supports>
         <description>
             <p>
@@ -152,12 +152,12 @@
         <rules>
             <stat name = "constitution" value = "1" requirements = "!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             
-            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_ELDER_EYE"/>
-            <grant type = "Racial Trait" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_SPELLSIGHT"/>
+            <grant type = "Racial Trait" id = "ID_ATLOL_RACIAL_TRAIT_LUX_ABYSSAL_ELDER_EYE"/>
+            <grant type = "Racial Trait" id = "ID_ATLOL_RACIAL_TRAIT_LUX_ABYSSAL_SPELLSIGHT"/>
         </rules>
     </element>
 
-    <element name = "Elder Eye" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_ELDER_EYE">
+    <element name = "Elder Eye" type = "Racial Trait" source = "A Thin Line of Light" id = "ID_ATLOL_RACIAL_TRAIT_LUX_ABYSSAL_ELDER_EYE">
         <description>
             <p>Your third eye is milky and unseeing. Once per day you may pulse chromatic traceries in a 20 foot cone originating from your Elder Eye for up to 1 minute as an action.Creatures other than you that start their turn within this area concentrating on a spell must make a Constitution saving throw with a DC equal to 8 + your constitution modifer + your proficiency bonus or lose their concentration on their spell.</p>
         </description>
@@ -170,7 +170,7 @@
             <stat name = "lux:abyssal:elder eye" value = "proficiency"/>
         </rules>
     </element>
-    <element name = "Spellsight" type = "Racial Trait" source = "A Thin Line of Sight" id = "ID_ATLOS_RACIAL_TRAIT_LUX_ABYSSAL_SPELLSIGHT">
+    <element name = "Spellsight" type = "Racial Trait" source = "A Thin Line of Light" id = "ID_ATLOL_RACIAL_TRAIT_LUX_ABYSSAL_SPELLSIGHT">
         <description>
             <p>You gain the ability to cast the spell Detect Magic once per day without expending a spellslot.</p>
             <div element = "ID_PHB_SPELL_DETECT_MAGIC"/>

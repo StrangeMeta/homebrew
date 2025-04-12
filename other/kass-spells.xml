@@ -2,12 +2,12 @@
 <elements>
     <info>
         <name>Kass spells</name>
-        <update version = "0.0.2">
+        <update version = "0.0.3">
             <file name = "kass-spells.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/kass-spells.xml"/>
         </update>
     </info>
 
-    <element name = "Steal Bones!" type = "Spell" source = "A Thin Line of Sight" id = "ID_ATLOS_SPELL_STEAL_BONES">
+    <element name = "Steal Bones!" type = "Spell" source = "A Thin Line of Light" id = "ID_ATLOS_SPELL_STEAL_BONES">
         <supports>Bard, Sorcerer, Wizard</supports>
         <description>
             <span class = "feature">Verbal Component. </span>"I'm Going To Steal Your Bones!"<br/>
