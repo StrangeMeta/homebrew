@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Items from Ryoko's Guide to the Yokai Realms</name>
-        <update version = "0.0.1">
+        <update version = "0.0.2">
             <file name = "items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items.xml"/>
         </update>
     </info>
@@ -29,7 +29,7 @@
             <set name = "weight" lb = "0.25">1/4 lb.</set>
             <set name = "stackable">true</set>
         </setters>
-    <element>
+    </element>
 
     <element name = "Hookshot (30 feet)" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_HOOKSHOT">
         <description>
