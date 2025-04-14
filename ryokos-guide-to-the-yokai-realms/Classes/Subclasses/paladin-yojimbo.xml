@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Oath of the Yojimbo, Paladin subclass from Ryoko's Guide to the Yokai Realms</name>
-		<update version  =  "0.0.2">
+		<update version  =  "0.0.3">
 			<file name  =  "paladin-yojimbo.xml" url  =  "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Classes/Subclasses/paladin-yojimbo.xml"/>
 		</update>
 	</info>
@@ -56,11 +56,11 @@
 			<grant type = "Spell" id = "ID_PHB_SPELL_HEROISM" level = "3" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_PHB_SPELL_SANCTUARY" level = "3" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_PHB_SPELL_WARDING_BOND" level = "5" spellcasting = "Paladin" prepared = "true" />
-			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE_BIOMANCY" level = "5" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SKIN_OF_STONE" level = "5" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_PHB_SPELL_SPIRIT_GUARDIANS" level = "9" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SWITCHEROO" level = "9" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_PHB_SPELL_DEATH_WARD" level = "13" spellcasting = "Paladin" prepared = "true" />
-			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL_BIOMANCY" level = "13" spellcasting = "Paladin" prepared = "true" />
+			<grant type = "Spell" id = "ID_RGTTYR_SPELL_SKIN_OF_STEEL" level = "13" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_RGTTYR_SPELL_BAKURYOS_BLESSES_BLIZZARD" level = "17" spellcasting = "Paladin" prepared = "true" />
 			<grant type = "Spell" id = "ID_PHB_SPELL_WALL_OF_FORCE" level = "17" spellcasting = "Paladin" prepared = "true" />
 		</rules>

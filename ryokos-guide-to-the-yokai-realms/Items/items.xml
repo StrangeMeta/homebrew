@@ -1,0 +1,83 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Items from Ryoko's Guide to the Yokai Realms</name>
+        <update version = "0.0.1">
+            <file name = "items.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Feats/items.xml"/>
+        </update>
+    </info>
+
+    <element name = "Fire Charge" type = "Item" source = "ID_RGTTYR_ITEM_FIRE_CHARGE">
+        <description>
+            <p>Fire charges are small pyrotechnic devices containing pellets or shrapnel, designed to be attached to a polearm. Over the course of 1 minute, you can attach a fire charge to the tip of a glaive, halberd, pike, quarterstaff, or spear. A weapon with a fire charge attached is called a firelance. While holding a firelance, you can use a bonus action to ignite the fuse on the fire charge, which detonates and is destroyed the next time you make an attack with the firelance before the end of your current turn. Hit or miss, the target of the attack must make a DC 13 Dexterity saving throw, taking 1d10 fire damage plus 1d10 piercing damage on a failed save, or half as much damage on a successful one. If you make no attacks with the firelance after lighting the fuse, the fire charge detonates harmlessly at the end of your turn and is destroyed.</p>
+        </description>
+        <setters>
+            <set name = "category">Explosives</set>
+            <set name = "cost" currency = "gp">5</set>
+            <set name = "weight" lb = "2">2 lb.</set>
+            <set name = "stackable">true</set>
+        </setters>
+    </element>
+
+    <element name = "Firecracker" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_FIRECRACKER">
+        <description>
+            <p>As an action, you can light this strip of small explosive devices and throw it at a point within 30 feet of you. The explosives detonate harmlessly, but create a large amount of noise. Creatures who decide to investigate the noise have disadvantage on Perception checks until they stop investigating the firecrackers.</p>
+        </description>
+        <setters>
+            <set name = "category">Explosives</set>
+            <set name = "cost" currency = "gp">1</set>
+            <set name = "weight" lb = "0.25">1/4 lb.</set>
+            <set name = "stackable">true</set>
+        </setters>
+    <element>
+
+    <element name = "Hookshot (30 feet)" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_HOOKSHOT">
+        <description>
+            <p>This handheld, crossbow-like device can fire a grappling hook attached to a length of rope. While holding this device, you can use a bonus action, or a reaction when you’re falling, to shoot the hook at a fixed surface within 30 feet of you. The hook then attaches to that surface until a bonus action is used to reel it back in or the rope is destroyed. The rope is an object with AC 10 and 10 hit points.</p>
+            <p class = "indent">Alternatively, you can fire the hook at another creature at least two sizes larger than you, making an attack roll with the hookshot. You’re considered proficient with the attack, which uses your Strength or Dexterity modifier for the attack roll. On a hit, it deals no damage, but the hook attaches to the target. A creature within 5 feet of the hook can use an action to forcefully detach the hook with a successful DC 10 Strength or Dexterity check.</p>
+            <p class = "indent">While the hook is attached, you have advantage on ability checks made to move along the rope, such as to climb a vertical surface, swim against a current, or walk against a strong wind, and you can’t move or be moved more than the hookshot’s range away from the point to which the hook is attached. If you’re falling, you stop falling and become suspended from the surface the hook is attached to.</p>
+        </description>
+        <setters>
+            <set name = "category">Gear</set>
+            <set name = "cost" currency = "gp">50</set>
+            <set name = "weight" lb = "5">5 lb.</set>
+            <set name = "slot">onehand</set>
+        </setters>
+    </element>
+
+    <element name = "Odzutsu Shot" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_ODZUTSU_SHOT">
+        <description>
+            <p>These fist-sized spheres of solid iron are ammunition for the ōdzutsu. Each is 1 to 2 inches in diameter and weighs 1/5 pounds.</p>
+        </description>
+        <setters>
+            <set name = "category">Ammunition</set>
+            <set name = "cost" currency = "sp">5</set>
+            <set name = "weight" lb = "0.2">1/5 lb.</set>
+            <set name = "type">Ammunition</set>
+            <set name = "stackable">true</set>
+        </setters>
+    </element>
+
+    <element name = "Parachute" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_PARACHUTE">
+        <description>
+            <p>A parachute is usually folded into a specialised backpack, or a dedicated compartment in an adventuring backpack. As a reaction when you fall from a height of 100 feet or higher while wearing such a backpack, you can deploy the parachute to slow your rate of descent to 60 feet per round. If you land while the parachute is deployed, you take no falling damage.</p>
+            <p class = "indent">Once the parachute has been deployed, it can be refolded over the course of 10 minutes, or cut loose as an action. A creature that drags a deployed parachute behind it as it moves has its speed halved.</p>
+        </description>
+        <setters>
+            <set name = "category">Gear</set>
+            <set name = "cost" currency = "gp">50</set>
+            <set name = "weight" lb = "15">15 lb.</set>
+        </setters>
+    </element>
+
+    <element name = "Smokebomb" type = "Item" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_ITEM_SMOKEBOMB">
+        <description>
+            <p>As an action, you throw one of these small, spherical pellets to create a 5-foot radius cloud of smoke centred on a point within 30 feet of you. The area of the smoke is heavily obscured and lasts until the end of your next turn or until dispersed by a moderate wind (at least 10 miles per hour).</p>
+        </description>
+        <setters>
+            <set name = "category">Gear</set>
+            <set name = "cost" currency = "gp">5</set>
+            <set name = "weight" lb = "0.2">1/5 lb.</set>
+        </setters>
+    </element>
+</elements>
