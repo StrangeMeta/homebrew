@@ -79,6 +79,5 @@
         <rules>
             <select type = "Feat" name = "Feat (Hanabi Engineer)" supports = "ID_RGTTYR_FEAT_PROSTHESIS_ADEPT|ID_RGTTYR_FEAT_PROSTHESIS_FIGHTING"/>
         </rules>
-        <sheet alt = "Elemental Adept"/>
     </element>
 </elements>
