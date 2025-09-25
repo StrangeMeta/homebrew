@@ -82,4 +82,18 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
+	<element name = "Crab King's Claw" type = "Magic Item" source = "Fool's Gold" id = "ID_HOMEBREW_FG_CRAB_KINGS_CLAW">
+		<description>
+			<p>While wearing this large crab claw on your arm, you can use it to make unarmed strikes, which you can deal 2d8 piercing damage. These unarmed strikes are considered magical and you gain a +2 bonus to attack and damage rolls made using them. Additionally, you have advantage on rolls made to grapple or maintaining your hold on a creature you are grappling.</p>
+			<p></p>
+			<p class = "indent">You can use the claw to cast the <i>Dominate Beast</i> spell, targeting an aquatic beast (DC 16), or the <i>Water Breathing</i> spell. You can cast each spell once per day and must finish a long rest before casting the same spell again.</p>
+		</description>
+		<setters>
+			<set name = "category">Wondrous Items</set>
+			<set name = "type">Wondrous Item</set>
+			<set name = "slot">arms</set>
+			<set name = "attunement">true</set>
+			<set name = "rarity">Very Rare</set>
+		</setters>
+	</element>
 </elements>

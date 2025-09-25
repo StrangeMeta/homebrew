@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<elements>
+    <info>
+        <name>Homebrew Character Options</name>
+        <update version = "0.0.1">
+            <file name = "homebrew-character-options.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/other/homebrew-character-options.xml"/>
+        </update>
+    </info>
+	
+	<element name="Additional Attunement Slot" type="Item" source="Homebrew" id="ID_HOMEBREW_ATTUNEMENT_SLOT_+1">
+		<description>
+			<p>Increases the number of attunement slots by 1.</p>
+		</description>
+		<setters>
+			<set name = "category">Additional Feature</set>
+			<set name = "slot">misc</set>
+		</setters>
+		<rules>
+			<stat name = "attunement:max" value = "1"/>
+		</rules>
+	</element>
+</elements>
