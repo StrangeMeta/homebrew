@@ -42,12 +42,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM"/>
         </rules>
@@ -130,12 +130,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA"/>
         </rules>
@@ -175,12 +175,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_METEOR_HAMMER"/>
         </rules>
@@ -228,12 +228,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_KUSARIGAMA" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHAKU"/>
         </rules>
@@ -316,12 +316,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_ROPE_DART"/>
         </rules>
@@ -361,12 +361,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SAI"/>
         </rules>
@@ -407,12 +407,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN" />
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_SHRUIKEN"/>
         </rules>
@@ -459,12 +459,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TESSEN"/>
         </rules>
@@ -504,12 +504,12 @@
 			<grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
 		</rules>
 	</element>
-    <append id = "ID_WOTC_PHB_CLASS_MONK">
+    <append id = "ID_WOTC_PHB_CLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
         </rules>
     </append>
-    <append id = "ID_WOTC_PHB_MULTICLASS_MONK">
+    <append id = "ID_WOTC_PHB_MULTICLASS_MONK" requirements = "ID_LT_SOURCE_RYOKOS_GUIDE_TO_THE_YOKAI_REALMS">
         <rules>
             <grant type = "Proficiency" id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_TONFA"/>
         </rules>
