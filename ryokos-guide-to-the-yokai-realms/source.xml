@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/source.xml" />
 		</update>
 	</info>
@@ -28,4 +28,15 @@
 			<set name="release">20250404</set>
 		</setters>
 	</element>
+
+    <!-- Character option to allow disabling of certain elements when not using this source. E.g. Additional weapon proficiencies being added to classes. -->
+    <element name="RGTTYR Character" type="Option" source="Ryoko's Guide to the Yokai Realms" id="ID_RGTTY_OPTION_RGTTYR_CHARACTER">
+        <description>
+            <p>Disable to remove additional options that are added to base files such as weapon proficiencies to the monk class.</p>
+        </description>
+        <setters>
+            <set name = "short">Adds to Ryoko's Guide specific changes to base files.</set>
+            <set name = "default">true</set>
+        </setters>
+    </element>
 </elements>
