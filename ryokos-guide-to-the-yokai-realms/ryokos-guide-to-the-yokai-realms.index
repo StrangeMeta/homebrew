@@ -4,11 +4,14 @@
 		<name>Ryoko's Guide to the Yokai Realms</name>
 		<description>Content from the Ryoko's Guide to the Yokai Realms book by Loot Tavern.</description>
 		<author>Loot Tavern</author>
-		<update version = "0.0.24">
+		<update version = "0.0.25">
 			<file name = "ryokos-guide-to-the-yokai-realms.index" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/ryokos-guide-to-the-yokai-realms.index"/>
 		</update>
 	</info>
 	<files>
+
+		<file name = "source.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/refs/heads/main/ryokos-guide-to-the-yokai-realms/source.xml"/>
+
 		<!-- races -->
 		<file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-enkoh.xml"/>
 		<file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-fuyohren.xml"/>
