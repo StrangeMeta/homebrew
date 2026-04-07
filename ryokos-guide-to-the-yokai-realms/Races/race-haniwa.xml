@@ -2,14 +2,15 @@
 <elements>
     <info>
         <name>Haniwa</name>
-        <update version = "0.0.3">
+        <update version = "0.1.0">
             <file name = "race-haniwa.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-haniwa.xml"/>
         </update>
     </info>
 
     <element name = "Haniwa" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_HANIWA">
         <description>
-            <p class = "flavour">“I am the decider! I am the dying breath of the lost world. I will not forsake the traditions of old.”</p>
+            <p class = "flavour">“I am the decider! I am the dying breath of the lost world. I will not forsake the traditions of old.” — Paxau</p>
+
             <p>Hewn from clay as sentient guardians for the tombs of ancient rulers, haniwa were vessels created to bear the souls of loyal warriors, their spirits housed within undying clay bodies to act as vigilant sentries to hallowed ground. As the centuries waned, the haniwa spirits were thought to have passed from the world, leaving their clay shells behind, empty vessels standing in the cool darkness of forgotten tombs. However, the magic of the haniwa endured. Thought to be long dormant, over the last century, the haniwa began to reawaken, emerging into a new world, displaced by millenia from their origin.</p>
 
             <h4>Finding Purpose</h4>
