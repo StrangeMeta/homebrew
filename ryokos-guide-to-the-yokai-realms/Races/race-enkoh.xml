@@ -2,15 +2,13 @@
 <elements>
     <info>
         <name>Enkoh</name>
-        <update version = "0.0.2">
+        <update version = "0.1.0">
             <file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-enkoh.xml"/>
         </update>
     </info>
 
     <element name = "Enkoh" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ENKOH">
         <description>
-            <p class = "flavour">“There’s magic in this world that goes beyond flashes, bangs, and jets of flame. An earthy magic of food, structure, and fellowship. It’s the magic of a thousand mundane hands raising a city from velvet snow. A magic woven by walking into the cruellest, biting blizzard and welcoming it as your home. These people understand that magic. The mightest yokai and grandest kaiju might be able to survive here, for a time, but only the enkoh can thrive.”</p>
-            <p class = "flavour">-Ryoko</p>
             <p>Beneath snow-capped peaks, where white drifts bury the chaos of rocks and streams, the formidable enkoh make cities of ice and snow. Well-adapted to colder climes, these thick-furred simian folk blend an innate skill for survival with a piercing intelligence, making homes in inhospitable environments.</p>
 
             <h4>Community and Craftsmanship</h4>
@@ -71,6 +69,7 @@
                 <span class = "feature">Size. </span>You are Medium. Hulking enkoh are broadly built and can vary substantially in height, from as short as 5 feet all the way up to 7 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.<br/>
                 <span class = "feature">Chest Beating. </span>As a bonus action, you can pound your fists to your chest, causing a surge of adrenaline and valour. Until the start of your next turn, you have resistance to bludgeoning, piercing, and slashing damage, and you have advantage on Intimidation checks. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+                <span class = "feature">Ice Craft. </span>You gain proficiency with one of the following artisan’s tools: carpenter’s tools, glassblower’s tools, jeweller’s tools, mason’s tools, potter’s tools, or smith’s tools. You have advantage on ability checks you make to use these tools to shape ice.<br/>
                 <span class = "feature">Natural Cooks. </span>With ingredients worth at least 1 sp, you can prepare a meal for a number of Medium or smaller creatures equal to 2 + your proficiency bonus over the course of a short or long rest. A creature who eats the meal at the end of the rest regains one spent Hit Die and gains temporary hit points equal to 1d6 + your proficiency bonus.<br/>
                 <span class = "feature">Powerful Build. </span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
             </p>
@@ -82,6 +81,7 @@
             <stat name = "speed:climb" value = "speed" bonus = "base"/>
             
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_HULKING_CHEST_BEATING"/>
+            <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_HULKING_ICE_CRAFT"/>
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_HULKING_NATURAL_COOKS"/>
             <grant type = "Grants" id = "ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER"/>
         </rules>
@@ -94,6 +94,17 @@
         <sheet usage = "{{proficiency}}/Long Rest">
             <description>As a bonus action, you can pound your fists to your chest, causing a surge of adrenaline and valour. Until the start of your next turn, you have resistance to bludgeoning, piercing, and slashing damage, and you have advantage on Intimidation checks. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
         </sheet>
+    </element>
+    <element name = "Ice Craft" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_HULKING_ICE_CRAFT">
+        <description>
+            <p>You gain proficiency with one of the following artisan’s tools: carpenter’s tools, glassblower’s tools, jeweller’s tools, mason’s tools, potter’s tools, or smith’s tools. You have advantage on ability checks you make to use these tools to shape ice.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on ability check to shape ice using carpenter’s tools, glassblower’s tools, jeweller’s tools, mason’s tools, potter’s tools, or smith’s tools.</description>
+        </sheet>
+        <rules>
+            <select type = "Proficiency" name = "Artisan Tool Proficiency (Ice Craft)" supports = "ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS"/>
+        </rules>
     </element>
     <element name = "Natural Cooks" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_HULKING_NATURAL_COOKS">
         <description>
@@ -114,7 +125,7 @@
                 <span class = "feature">Speed. </span>Your walking speed is 35 feet, and you have a climbing speed equal to your walking speed. In addition, climbing on a creature larger than you doesn't count as difficult terrain for you.<br/>
                 <span class = "feature">Beast Wardens. </span>You have advantage on ability checks to tame or influence beasts.<br/>
                 <span class = "feature">Skillful. </span>You gain proficiency in your choice of two of the following skills: Acrobatics, Animal Handling, Nature, Performance, or Survival.<br/>
-                <span class = "feature">Springing Leap. </span>You can calculate your jump distance using your Dexterity. When you do, your long jump covers a number of feet equal to your Dexterity score with or without a running start, and your high jump equals 3 + your Dexterity modifier (minimum of 0 feet) with or without a running start. Either way, each foot you clear on the jump costs a foot of movement.<br/>
+                <span class = "feature">Springing Leap. </span>Your tail adds an incredible spring to your leaps. You can add your Dexterity score to the maximum distance you can cover with a long jump, and you can add your Dexterity modifier to the maximum height you can reach with a high jump. In addition, you can jump your maximum distance with or without a running start. As usual, each foot you jump costs 1 foot of movement.<br/>
                 <span class = "feature">Sturdy Tail. </span>Your tail can support your weight and balance. When you make an ability check or saving throw to avoid being forcibly moved, you can use your reaction to curl your tail around an object within 5 feet of you that is attached to the ground or another sturdy surface. If you do so, you have advantage on that check or save.<br/>
             </p>
         </description>
@@ -170,10 +181,10 @@
     <!-- End of Skills for Skillful -->
     <element name = "Springing Leap" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_SPRINGTAIL_SPRINGING_LEAP">
         <description>
-            <p>You can calculate your jump distance using your Dexterity. When you do, your long jump covers a number of feet equal to your Dexterity score with or without a running start, and your high jump equals 3 + your Dexterity modifier (minimum of 0 feet) with or without a running start. Either way, each foot you clear on the jump costs a foot of movement.</p>
+            <p>Your tail adds an incredible spring to your leaps. You can add your Dexterity score to the maximum distance you can cover with a long jump, and you can add your Dexterity modifier to the maximum height you can reach with a high jump. In addition, you can jump your maximum distance with or without a running start. As usual, each foot you jump costs 1 foot of movement.</p>
         </description>
         <sheet display = "true">
-            <description>You can calculate your jump distance using your Dexterity. When you do, your long jump covers a number of feet equal to your Dexterity score with or without a running start, and your high jump equals 3 + your Dexterity modifier (minimum of 0 feet) with or without a running start. Either way, each foot you clear on the jump costs a foot of movement.</description>
+            <description>Your tail adds an incredible spring to your leaps. You can add your Dexterity score to the maximum distance you can cover with a long jump, and you can add your Dexterity modifier to the maximum height you can reach with a high jump. In addition, you can jump your maximum distance with or without a running start. As usual, each foot you jump costs 1 foot of movement.</description>
         </sheet>
     </element>
     <element name = "Sturdy Tail" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ENKOH_SPRINGTAIL_STURDY_TAIL">
