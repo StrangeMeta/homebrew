@@ -4,7 +4,7 @@
 		<name>Optional Features</name>
 		<description>Optional Class Features introduced in Ryoko's Guide to the Yokai Realms</description>
 		<author>Loot Tavern</author>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="optional-features.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/OptionalFeatures/optional-features.xml"/>
 		</update>
 	</info>
@@ -69,10 +69,11 @@
             <p><i>5th-Level Bender Feature</i></p>
             <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
-            <p class = "indent">When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</p>
+            <p class = "indent">When you reach 7th level in this class, your movements allow you to imbue magic in the elements you bend. When you take the Attack action, you can cast one cantrip in the bender spell list that you know in place of one of your attacks. This cantrip must have a casting time of one action, and it is cast at its lowest level.</p>
+            <p class = "indent">For example, if you are an 11th-level bender and use this feature to replace an attack with a casting of fire bolt, the cantrip deals 1d10 damage (instead of 3d10).</p>
         </description>
         <sheet display = "true">
-            <description level = "7">When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</description>
+            <description level = "7">When you reach 7th level in this class, your movements allow you to imbue magic in the elements you bend. When you take the Attack action, you can cast one cantrip in the bender spell list that you know in place of one of your attacks. This cantrip must have a casting time of one action, and it is cast at its lowest level.</description>
         </sheet>
         <rules>
             <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_BENDER_EXTRA_ATTACK" requirements = "[level:bender:5]"/>
@@ -113,10 +114,11 @@
     <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_BENDER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
         <compendium display = "false"/>
         <description>
-            <p>When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</p>
+            <p>When you reach 7th level in this class, your movements allow you to imbue magic in the elements you bend. When you take the Attack action, you can cast one cantrip in the bender spell list that you know in place of one of your attacks. This cantrip must have a casting time of one action, and it is cast at its lowest level.</p>
+            <p class = "indent">For example, if you are an 11th-level bender and use this feature to replace an attack with a casting of fire bolt, the cantrip deals 1d10 damage (instead of 3d10).</p>
         </description>
         <sheet display = "false">
-            <description>When you reach 7th level in this class, your conjuration of the elements dazzles and confuses your foes. After you hit a creature with a melee attack as part of the Attack action on your turn, that creature can’t make opportunity attacks against you until the end of your turn.</description>
+            <description>When you reach 7th level in this class, your movements allow you to imbue magic in the elements you bend. When you take the Attack action, you can cast one cantrip in the bender spell list that you know in place of one of your attacks. This cantrip must have a casting time of one action, and it is cast at its lowest level.</description>
         </sheet>
     </element>
     <element name = "Improved Extra Attack: Fighter" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK">
@@ -124,10 +126,10 @@
             <p><i>5th-Level Fighter Feature</i></p>
             <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks you can make increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
-            <p class = "indent">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
+            <p class = "indent">When you reach 7th level in this class, you build momentum with each swing you take. When you take the Attack action and make an attack roll against a creature, you can give yourself a +1 bonus to all subsequent attack rolls you make against that creature this turn, up to a maximum of +4.</p>
         </description>
         <sheet display = "true">
-            <description level = "7">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
+            <description level = "7">When you reach 7th level in this class, you build momentum with each swing you take. When you take the Attack action and make an attack roll against a creature, you can give yourself a +1 bonus to all subsequent attack rolls you make against that creature this turn, up to a maximum of +4.</description>
         </sheet>
         <rules>
             <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_EXTRA_ATTACK" requirements = "[level:fighter:5]"/>
@@ -173,10 +175,10 @@
     <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_FIGHTER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
         <compendium display = "false"/>
         <description>
-            <p>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
+            <p>When you reach 7th level in this class, you build momentum with each swing you take. When you take the Attack action and make an attack roll against a creature, you can give yourself a +1 bonus to all subsequent attack rolls you make against that creature this turn, up to a maximum of +4.</p>
         </description>
         <sheet display = "false">
-            <description>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
+            <description>When you reach 7th level in this class, you build momentum with each swing you take. When you take the Attack action and make an attack roll against a creature, you can give yourself a +1 bonus to all subsequent attack rolls you make against that creature this turn, up to a maximum of +4.</description>
         </sheet>
     </element>
     <element name = "Improved Extra Attack: Monk" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_MONK_IMPROVED_EXTRA_ATTACK">
@@ -294,10 +296,10 @@
             <p><i>5th-Level Ranger Feature</i></p>
             <p>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.</p>
             <p class = "indent">You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
-            <p class = "indent">When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</p>
+            <p class = "indent">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
         </description>
         <sheet display = "true">
-            <description level = "7">When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</description>
+            <description level = "7">When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
         </sheet>
         <rules>
             <grant type = "Class Feature" id = "ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_EXTRA_ATTACK" requirements = "[level:ranger:5]"/>
@@ -338,10 +340,10 @@
     <element name = "Unique Attack" type = "Class Feature" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_CLASS_FEATURE_RANGER_IMPROVED_EXTRA_ATTACK_UNIQUE_ATTACK">
         <compendium display = "false"/>
         <description>
-            <p>When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</p>
+            <p>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</p>
         </description>
         <sheet display = "false">
-            <description>When you reach 7th level in this class, your keen focus lets you ignore distractions in the heat of battle. When you take the Attack action and make an attack roll against a creature, you can give yourself a +2 bonus to all subsequent attack rolls you make against that creature this turn. This feature can trigger up to twice per turn (+4 bonus maximum).</description>
+            <description>When you reach 7th level in this class, the skill and precision of your attacks create and expose weaknesses in your foe’s guard. When you take the Attack action and hit a creature with an attack roll, the next attack roll you make against the target before the end of your next turn is made with advantage. You can use this feature once per turn.</description>
         </sheet>
     </element>
 </elements>
