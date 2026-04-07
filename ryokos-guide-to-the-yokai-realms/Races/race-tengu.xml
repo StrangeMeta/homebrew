@@ -2,14 +2,15 @@
 <elements>
     <info>
         <name>Tengu</name>
-        <update version = "0.0.6">
+        <update version = "0.1.0">
             <file name = "race-tengu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tengu.xml"/>
         </update>
     </info>
 
     <element name = "Tengu" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_TENGU">
         <description>
-            <p class = "flavour">She stood before me as a paradox, both of and beyond this world, terrifying and elegant, wise as a kitsune elder and puckish as a fuyohren child. I felt my tails quiver, my legs shake, my breath catch, and my heart overflow with relief. For now, I was safe. If the tengu mean you harm, you’re dead long before they can be seen.</p>
+            <p class = "flavour">"She stood before me as a paradox, both of and beyond this world, terrifying and elegant, wise as a kitsune elder and puckish as a fuyohren child. I felt my tails quiver, my legs shake, my breath catch, and my heart overflow with relief. For now, I was safe. If the tengu mean you harm, you’re dead long before they can be seen." — Ryoko's Diary</p>
+
             <p>In the sprawling forests that clothe the land from frosty mountainside to fertile shore, verdant life is cultivated and protected by a race of aloof guardians: the tengu.</p>
             <p class = "indent">Mischievous, prideful, and territorial, tengu are a race of long-lived yokai. They make their home in the treetops, nimbly navigating precarious pathways as noiselessly as a shadow passes along the forest floor. Although typically reclusive, younger tengu have a sparkling curiosity toward the outside world, taking earnest interest in those who visit their domain. To all who trespass, however, a subtle threat is ever present. Harm not the forest, lest the wrath of the tengu fall like a crushing oak.</p>
 
@@ -17,7 +18,7 @@
             <p>As yokai, tengu are innately magical. Their natural powers lean towards trickery and illusion, allowing them to strike both the mind and body in a dazzling battery of lethal force. To many tengu, swordplay is a way of life—both a meditative practice and a form of self-defence. The resolute tengu swordmaster, a crackling visage of shadowy magic and slashing steel, is one found throughout the folklore and legends of many other peoples.</p>
 
             <h4>The Tengu Code</h4>
-            <p>Ryōkido have a long, living history, borne on a stream of shared memory and experience. They find great value in family and community, raising pups as a village, and viewing those they surround themselves with as extensions of themselves. To the ryōkido, every friend is family, every family a village, every village a legion. When moved to action, a single ryōkido walks as an army.</p>
+            <p>Tengu draw upon an ancient legacy of proud tradition and discipline. Funerals, births, and tournaments are all governed by a strict cultural code, a way of life passed down from generation to generation. Tengu weddings are among the most spectacular sights in the realms, transforming entire forests into beautiful, shimmering forums of magic and light. Each moment of such a ceremony is dictated by long standing traditions brimming with significance, and every tengu is raised to understand the value of such rituals, embracing the unbroken line of wisdom that stretches to time immemorial.</p>
 
             <h4>TENGU TRAITS</h4>
             <p>As a tengu, you have the following traits:</p>
@@ -30,6 +31,7 @@
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
                 <span class = "feature">Lethal Masters. </span>You have proficiency with one simple or martial weapon of your choice.<br/>
                 <span class = "feature">Languages. </span>You can speak, read, and write Common and one other language that you and your GM agree is appropriate for your character.<br/>
+                <span class = "feature">Subrace. </span>There are two primary tengu variations: the hanataka and the karasu. Choose one of these subraces.<br/>
             </p>
                 <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_HANATAKA"/>
                 <div element = "ID_RGTTYR_RACE_VARIANT_TENGU_KARASU"/>
@@ -177,7 +179,7 @@
                 <span class = "feature">Fortified Mind. </span>You have resistance to psychic damage.<br/>
                 <span class = "feature">Prankster. </span>You gain proficiency in the Deception and Stealth skills.<br/>
                 <span class = "feature">Psychic Battery. </span>When you take the Attack action on your turn, you can replace one of your attacks with a dizzying psychic assault against a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or suffer the effects of the confusion spell until the end of its next turn. Once you use this trait, you can’t do so again until you finish a short or long rest.<br/>
-                <span class = "feature">Skyrider. </span>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall.<br/>
+                <span class = "feature">Skyrider. </span>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn.<br/>
             </p>
             <div element = "ID_PHB_SPELL_CONFUSION"/>
         </description>
@@ -227,10 +229,10 @@
     </element>
     <element name = "Skyrider" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TENGU_KARASU_SKYRIDER">
         <description>
-            <p>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn.</p>
+            <p>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn. While gliding in this way, you can fall no more than 100 vertical feet on a turn.</p>
         </description>
         <sheet display = "true">
-            <description>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn.</description>
+            <description>When you fall at least 10 feet and aren’t incapacitated, you can use your reaction to extend your vestigial, feathered wings to glide. You take no damage from that fall, and you can move horizontally 2 feet for every 1 foot you fall. While gliding in this way, you can fall no more than 100 vertical feet on a turn. While gliding in this way, you can fall no more than 100 vertical feet on a turn.</description>
         </sheet>
     </element>
 </elements>
