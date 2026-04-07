@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Oniborne</name>
-        <update version = "0.0.2">
+        <update version = "0.1.0">
             <file name = "race-oniborne.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-oniborne.xml"/>
         </update>
     </info>
@@ -12,7 +12,8 @@
             <p class = "flavour">On an exterior wall, above a dingy tavern door, rotten from rain and time, a sign was plastered: “NO ONI”.</p>
             <p class = "flavour">I hesitated, turning to Yaboku, who met my eyes with a smile.</p>
             <p class = "flavour">“I’m not allowed through this door,” he chuckled, “But I can make my own.” His hand curled into a fist and, with a single blow, the tavern wall burst open, the sign falling to the mud at his feet.</p>
-            <p class = "flavour">-Ryoko's Diary</p>
+            <p class = "flavour">— Ryoko's Diary</p>
+
             <p>Oniborne are descendants of yokai, vessels of impetuous, simmering power that manifests across generations. Saturated in magic, oniborne innately command primal, supernatural forces. In moments of high emotion, instinctive spellcasting is common. An oniborne’s retort may physically scold the body of a foe, flesh might reknit under their palms in moments of compassion, or they may physically shrink when gripped with terror.</p>
 
             <h4>Children of Darkness</h4>
@@ -66,12 +67,11 @@
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Wisdom score increases by 1.<br/>
                 <span class = "feature">Daunting Stature. </span>You have proficiency in the Intimidation skill.<br/>
-                <span class = "feature">Magical Scavenger. </span>You gain proficiency with one type of artisan’s tools of your choice. In addition, you can use an action to scavenge a weapon from the body of an enemy you have slain (at the GM’s discretion), such as a club or sword that you hew from its bones. That object becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.<br/>
+                <span class = "feature">Magical Scavenger. </span>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes any melee or Thrown weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.<br/>
             </p>
             <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
             <p>
-                <span class = "feature">Weeping Magic. </span>You know the prestidigitation cantrip.<br/>
-                <p>Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+                <span class = "feature">Weeping Magic. </span>You know the prestidigitation cantrip. Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).<br/>
             </p>
             <p class = "indent">Tears form at the corner of your eyes when you cast a spell using this trait.</p>
         </description>
@@ -96,18 +96,18 @@
     </element>
     <element name = "Magical Scavenger" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_MAGICAL_SCAVENGER">
         <description>
-            <p>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</p>
+            <p>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes any melee or Thrown weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</p>
             <p class = "indent">When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</p>
         </description>
         <sheet display = "true">
-            <description>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes a magic weapon that gives you a +1 bonus to attack and damage rolls you make with it. This bonus increases to +2 at 9th level and +3 at 17th level. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.
-            When you imbue a scavenged weapon with magic in this way, any other weapons you created with this feature become nonmagical.</description>
+            <description>Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes any melee or Thrown weapon that gives you a +1 bonus to attack and damage rolls you make with it. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</description>
+            <description level = "9">Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes any melee or Thrown weapon that gives you a +2 bonus to attack and damage rolls you make with it. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</description>
+            <description level = "17">Over the course of 1 minute, or as part of a Harvesting check, you can harvest one hard piece of a corpse’s anatomy, fashioning it into a magic weapon. That weapon becomes any melee or Thrown weapon that gives you a +3 bonus to attack and damage rolls you make with it. The weapon is only magical for you, and in anyone else’s hands it functions as a normal, nonmagical weapon.</description>
         </sheet>
     </element>
     <element name = "Weeping Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_ONIBORNE_RED_WEEPING_MAGIC">
         <description>
-            <p>You know the prestidigitation cantrip.</p>
-            <p>Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+            <p>You know the prestidigitation cantrip. Starting at 3rd level, you can cast cure wounds with this trait. Starting at 5th level, you can also cast enhance ability with this trait. Once you cast cure wounds or enhance ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
             <p class = "indent">Tears form at the corner of your eyes when you cast a spell using this trait.</p>
         </description>
         <sheet display = "false"/>
@@ -154,9 +154,9 @@
 
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Strength score increases by 1.<br/>
-                <span class = "feature">Compassionate Heart. </span>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. When you take the Help action, you can spend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into their body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+                <span class = "feature">Compassionate Heart. </span>The aid of a blue oniborne is an act of great selflessness imbued with powerful magic. You can take the Help action as a bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. In addition, when you take the Help action, you can expend one of your Hit Dice to empower an ally within 5 feet of you, channelling your magic into its body. That creature gains temporary hit points equal to one roll of that die plus your Constitution modifier (minimum 1 temporary hit point).<br/>
                 <span class = "feature">Crunching Maw. </span>You have vicious teeth and a strong jaw that you can use to make unarmed strikes. When you hit with it, the strike deals piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br/>
-                <span class = "feature">Great Deceiver. </span>You have proficiency in the Deception skill.<br/>
+                <span class = "feature">Gift of Empathy. </span>You have proficiency in the Insight and Persuasion skills.<br/>
                 <span class = "feature">Savage Bite. </span>As a reaction when you take damage from a creature within 5 feet of you, you can magically enlarge your jaw and lash out with a vicious bite. Make an unarmed strike using your Crunching Maw against that creature. This attack scores a critical hit on a roll of 18-20 on the d20. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
             </p>
         </description>
