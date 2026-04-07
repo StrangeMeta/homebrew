@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tatsumi</name>
-        <update version = "0.0.1">
+        <update version = "0.1.0">
             <file name = "race-tatsumi.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-tatsumi.xml"/>
         </update>
     </info>
@@ -202,7 +202,7 @@
                 <span class = "feature">Moonblessed. </span>While bathed in moonlight, you can use a bonus action to spend a number of your Hit Dice equal to your proficiency bonus. Roll those dice and add your Constitution modifier; you regain hit points equal to the total. If this healing restores your hit points to maximum, any surplus healing is gained as temporary hit points. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
                 <span class = "feature">Powerful Build. </span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
                 <span class = "feature">Slippery. </span>You have advantage on ability checks or saving throws made to avoid or end the grappled condition on yourself.<br/>
-                <span class = "feature">Slumbering Dragon. </span>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using the ability associated with your primary colouration, you can use your reaction to add 1d4 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.<br/>
+                <span class = "feature">Slumbering Dragon. </span>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using the ability associated with your primary colouration, you can use your reaction to add 1d6 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.<br/>
                 <span class = "feature">Draconic Metamorphosis. </span>When you reach 7th level, or when you undergo a significant moment of personal achievement or loss (at the GM’s discretion), you can choose to metamorphose into a ryujin. Your level, class, and other game statistics remain the same, aside from your race. You replace your racial traits from this race with those of the ryujin, and your ryujin colour is the same as your nishikin primary colouration. This transformation is one-way and can’t be reversed by any means short of a wish spell.<br/>
             </p>
         </description>
@@ -233,10 +233,10 @@
     </element>
     <element name = "Slumbering Dragon" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_SLUMBERING_DRAGON">
         <description>
-            <p>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using your {{nishikin-colour:ability}} modifier, you can use your reaction to add 1d4 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</p>
+            <p>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using your {{nishikin-colour:ability}} modifier, you can use your reaction to add 1d6 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</p>
         </description>
         <sheet usage = "{{proficiency}}/Short Rest">
-            <description>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using your {{nishikin-colour:ability}}, you can use your reaction to add 1d4 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
+            <description>You can draw upon the bubbling energy you carry within to empower yourself. When you make an attack roll, ability check, or saving throw using your {{nishikin-colour:ability}}, you can use your reaction to add 1d6 to the roll. You can use this reaction after rolling the d20, but must decide before the outcome is determined. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</description>
         </sheet>
     </element>
     <element name = "Draconic Metamorphosis" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_TATSUMI_NISHIKIN_DRACONIC_METAMORPHOSIS">
