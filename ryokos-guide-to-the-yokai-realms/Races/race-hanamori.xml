@@ -2,14 +2,15 @@
 <elements>
     <info>
         <name>Hanamori</name>
-        <update version = "0.0.2">
+        <update version = "0.1.0">
             <file name = "race-hanamori.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-hanamori.xml"/>
         </update>
     </info>
 
     <element name = "Hanamori" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_HANAMORI">
         <description>
-            <p class = "flavour">I was told the hanamori were born from the molten slag of a bleeding mountain, life bursting forth from the cruellest environment imaginable. Others say they bloomed from the first corpses cut down in war, or emerged fully formed from the silent, chill void. There are one hundred stories of how they came to be, but no matter which you choose to believe, in every tale one theme runs true: the hanamori are life born from death.</p>
+            <p class = "flavour">"I was told the hanamori were born from the molten slag of a bleeding mountain, life bursting forth from the cruellest environment imaginable. Others say they bloomed from the first corpses cut down in war, or emerged fully formed from the silent, chill void. There are one hundred stories of how they came to be, but no matter which you choose to believe, in every tale one theme runs true: the hanamori are life born from death." — Ryoko</p>
+
             <p>With gaunt faces, charcoal skin, and coarse crimson petals, hanamori are a race of sentient plants believed by many to be harbingers of death. This reputation is not wholly unfounded, for hanamori are physiologically sympathetic; their bodies reverberate in harmony with the fleeting spirit of creatures that die in their presence, taking on traits of the deceased for a short time. The slaughter of a mighty beast is felt by its hunters as a surge of physical strength, and the passing of a sage as a transcendent moment of heightened wisdom. As a result, hanamori have a complex relationship with death; to die in their presence is to pass a glimpse of oneself to another, for a short time.</p>
 
             <h4>Reactive Physiology</h4>
