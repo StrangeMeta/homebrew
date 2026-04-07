@@ -2,17 +2,16 @@
 <elements>
     <info>
         <name>Kitsune</name>
-        <update version = "0.0.3">
+        <update version = "0.1.0">
             <file name = "race-kitsune.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-kitsune.xml"/>
         </update>
     </info>
 
     <element name = "Kitsune" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_KITSUNE">
         <description>
-            <p class = "flavour">Any account of the power or grace of kitsune I might write would be grotesquely self-indulgent, so I have requested Bombuku comment on my people in my place.</p>
-            <p class = "flavour">-Ryoko</p>
-            <p class = "flavour">Yeah, they're chill.</p>
-            <p class = "flavour">-Bombuku</p>
+            <p class = "flavour">"Any account of the power or grace of kitsune I might write would be grotesquely self-indulgent, so I have requested Bombuku comment on my people in my place." — Ryoko</p>
+            <p class = "flavour">"Yeah, they're chill." — Bombuku</p>
+
             <p>With cautious, padded steps and charcoal nose raised to the air, a kitsune slinks through a twilight forest, indistinguishable from a common fox. The kitsune’s powers of transformation are legendary, being able to assume a fox’s form in a fashion similar to a druid’s mastery of wild shape. Even in their humanoid body, kitsune retain the tail, ears, and clawed feet of their canine cousins, along with a fox’s nimble gait and inquisitive mind. As comfortable in humanoid form as they are as a fox, it is only for the love of interacting with other folk that so many kitsune live their lives almost entirely in their true, bipedal shape, finding it easier to integrate into communities and explore the world in this way.</p>
 
             <h4>Visual Linguists</h4>
@@ -29,8 +28,8 @@
                 <span class = "feature">Anatomy. </span>You have two arms, two legs, and between one and nine tails.<br/>
                 <span class = "feature">Size. </span>You are Medium. Fully grown kitsune stand between 5 and 7 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 35 feet.<br/>
-                <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
-                <span class = "feature">Ascendant Form. </span>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
+                <span class = "feature">Creature Type. </span>You are a Fey.<br/>
+                <span class = "feature">Ascendant Form. </span>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. While in this form, when a creature within 10 feet of you misses an attack roll or fails a saving throw, you can use your reaction to add 1d4 to the result, potentially turning a miss into a hit or a failure into a success. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
                 <span class = "feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.<br/>
                 <span class = "feature">Fox's Wedding. </span>You know the druidcraft and produce flame cantrips. Once you reach 3rd level, you can cast the disguise self spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Intelligence, Wisdom, or Charisma is you spellcasting ability for these spells (choose when you select this race).<br/>
                 <span class = "feature">Kitsune Guile. </span>You have proficiency in one of the following skills of your choice: Deception, Persuasion, or Stealth.<br/>
@@ -47,7 +46,7 @@
             <grant type = "Size" id = "ID_SIZE_MEDIUM"/>
             <stat name = "innate speed" value = "35" bonus = "base"/>
 
-            <grant type = "Creature Type" id = "ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID"/>
+            <grant type = "Creature Type" id = "ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY"/>
 
             <grant type = "Racial Trait" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_ASCENDANT_FORM"/>
             <grant type = "Vision" id = "ID_VISION_DARKVISION"/>
@@ -65,10 +64,10 @@
 
     <element name = "Ascendant Form" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_ASCENDANT_FORM">
         <description>
-            <p>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+            <p>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. While in this form, when a creature within 10 feet of you misses an attack roll or fails a saving throw, you can use your reaction to add 1d4 to the result, potentially turning a miss into a hit or a failure into a success. Once you use this trait, you can’t do so again until you finish a long rest.</p>
         </description>
         <sheet usage = "1/Long Rest">
-            <description>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks.</description>
+            <description>You have the power to take on a magical, ascendant form. As an action, you can radiate bright, white light for 1 hour or until you end the effect as a bonus action. This light penetrates magical darkness, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Creatures of your choice in the light can add 1d4 to their Intimidation, Perception, and Persuasion ability checks. While in this form, when a creature within 10 feet of you misses an attack roll or fails a saving throw, you can use your reaction to add 1d4 to the result, potentially turning a miss into a hit or a failure into a success.</description>
         </sheet>
     </element>
     <element name = "Fox's Wedding" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_KITSUNE_FOXS_WEDDING">
