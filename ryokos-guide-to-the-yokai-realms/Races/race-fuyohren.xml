@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Fuyohren</name>
-        <update version = "0.0.3">
+        <update version = "0.1.0">
             <file name = "race-fuyohren.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-fuyohren.xml"/>
         </update>
     </info>
@@ -10,6 +10,7 @@
     <element name = "Fuyohren" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_FUYOHREN">
         <description>
             <p class = "flavour">Even in tales of triumph, her stories left me with an aching melancholy—a yearning for meadows, lakes, and young grass trembling in a spring breeze. That is what it means to be fuyohren.</p>
+            
             <p>Born and nurtured on gentle flowing rivers and tranquil ponds, the fuyohren are sentient, mobile plants innately harmonious with the natural world. Fuyohren societies nestle within ecosystems effortlessly, acting in synchronicity with the ebb and flow of the world around them. A society might exist on the same plot of land for millenia, yet remain undetectable to outsiders who pass through, with nary a tree uprooted or stone upturned to indicate the fuyohren’s presence.</p>
 
             <h4>Seasonal Divination</h4>
@@ -28,7 +29,7 @@
                 <span class = "feature">Speed. </span>Your walking speed is 35 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Plant.<br/>
                 <span class = "feature">Fluid Motion. </span>You have advantage on saving throws you make to avoid or end the restrained, paralysed, or petrified condition on yourself.<br/>
-                <span class = "feature">Graceful Step. </span>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.<br/>
+                <span class = "feature">Graceful Step. </span>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid. You do not sink into the surface if you end your movement on it.<br/>
                 <span class = "feature">Water Magic. </span>Through a 10 minute ritual, you can imbue a vial of ordinary water with magical properties. Choose one of the following effects:<br/>
                 <ul>
                     <li>The water gains the magical properties of holy water.</li>
