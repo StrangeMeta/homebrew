@@ -2,31 +2,32 @@
 <elements>
     <info>
         <name>Ryokido</name>
-        <update version = "0.0.3">
+        <update version = "0.1.0">
             <file name = "race-ryokido.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-ryokido.xml"/>
         </update>
     </info>
 
     <element name = "Ryokido" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_RYOKIDO">
         <description>
-            <p class = "flavour">I still remember the sight; a newborn ryōkido pup, cradled in her grandmother’s arms, her patterned shell gleaming in the first, nervous rays of dawn. The matriarch stared and stared at the life in her arms, telepathically reaching into a mind too young for higher thought or language. There were no words, just a tenderness that she poured from herself into the child. I felt it wash over the room, a mystical connection from elder to infant. No words, only a feeling, repeated over and over.</p>
-            <p class = "flavour">I understood what it meant. The feeling said, "You are loved".</p>
-            <p>Nestled deep within wizened, dry thorn forests, the most ancient settlements in the realm persist, unbroken by scouring winds, blistering sun, or the relentless march of time. Here live the ryōkido, colloquially known as “ryokidos”, a race of telepathic beings that call this inhospitable expanse home. All ryōkido share fierce claws and squat, feline faces, but every ryōkido shell is unique, as distinctive as a fingerprint. Each heavy carapace bears an identifying arrangement of colourful, textured patterns, with some hereditary markings idiosyncratic to one’s village and clan.</p>
+            <p class = "flavour">"I still remember the sight; a newborn ryokido pup, cradled in her grandmother’s arms, her patterned shell gleaming in the first, nervous rays of dawn. The matriarch stared and stared at the life in her arms, telepathically reaching into a mind too young for higher thought or language. There were no words, just a tenderness that she poured from herself into the child. I felt it wash over the room, a mystical connection from elder to infant. No words, only a feeling, repeated over and over.</p>
+            <p class = "flavour">I understood what it meant. The feeling said, 'You are loved'". — Ryoko's Diary</p>
+
+            <p>Nestled deep within wizened, dry thorn forests, the most ancient settlements in the realm persist, unbroken by scouring winds, blistering sun, or the relentless march of time. Here live the ryokido, colloquially known as “ryokidos”, a race of telepathic beings that call this inhospitable expanse home. All ryokido share fierce claws and squat, feline faces, but every ryokido shell is unique, as distinctive as a fingerprint. Each heavy carapace bears an identifying arrangement of colourful, textured patterns, with some hereditary markings idiosyncratic to one’s village and clan.</p>
 
             <h4>Telepathic Connection</h4>
-            <p>Ryōkido carry telepathic power and are capable of sharing thoughts and feelings from soul to soul. This ability to connect with other creatures fosters an incredible empathy in ryōkido; they are united through triumph, joy, and pain, and are troubled greatly by the suffering of others.</p>
-            <p class = "indent">Each ryōkido village has a miko, a female shaman who acts as a guardian of the clans’ collective memory. A dying ryōkido can telepathically surrender their mind in totality, pouring every memory, passion, and thought into the mind of another. The miko’s job is to receive this final gift: a lifetime of experience, perspective, and wisdom from the dying. In this way, knowledge is never lost, and the village is forever guided by the collective wisdom of those who came before them.</p>
+            <p>Ryokido carry telepathic power and are capable of sharing thoughts and feelings from soul to soul. This ability to connect with other creatures fosters an incredible empathy in ryokido; they are united through triumph, joy, and pain, and are troubled greatly by the suffering of others.</p>
+            <p class = "indent">Each ryokido village has a miko, a female shaman who acts as a guardian of the clans’ collective memory. A dying ryokido can telepathically surrender their mind in totality, pouring every memory, passion, and thought into the mind of another. The miko’s job is to receive this final gift: a lifetime of experience, perspective, and wisdom from the dying. In this way, knowledge is never lost, and the village is forever guided by the collective wisdom of those who came before them.</p>
 
             <h4>Ties of Family</h4>
-            <p>Ryōkido have a long, living history, borne on a stream of shared memory and experience. They find great value in family and community, raising pups as a village, and viewing those they surround themselves with as extensions of themselves. To the ryōkido, every friend is family, every family a village, every village a legion. When moved to action, a single ryōkido walks as an army.</p>
+            <p>Ryokido have a long, living history, borne on a stream of shared memory and experience. They find great value in family and community, raising pups as a village, and viewing those they surround themselves with as extensions of themselves. To the ryokido, every friend is family, every family a village, every village a legion. When moved to action, a single ryokido walks as an army.</p>
 
-            <h4>LION TURTLE TRAITS</h4>
-            <p>As a ryōkido, you have the following traits:</p>
+            <h4>RYOKIDO TRAITS</h4>
+            <p>As a ryokido, you have the following traits:</p>
             <p>
                 <span class = "feature">Ability Score Increase. </span>Your Strength, Wisdom, and Charisma scores each increase by 1.<br/>
-                <span class = "feature">Age. </span>Ryōkido grow extremely slowly. They are considered young until they reach the age of 80, and go on to live for up to 600 years.<br/>
+                <span class = "feature">Age. </span>Ryokido grow extremely slowly. They are considered young until they reach the age of 80, and go on to live for up to 600 years.<br/>
                 <span class = "feature">Anatomy. </span>You have two arms, two legs, and a tail.<br/>
-                <span class = "feature">Size. </span>You are Medium.<br/>
+                <span class = "feature">Size. </span>You are Medium. A ryokido stands between 5 and 7 feet tall.<br/>
                 <span class = "feature">Speed. </span>Your walking speed is 30 feet.<br/>
                 <span class = "feature">Creature Type. </span>You are a Humanoid.<br/>
                 <span class = "feature">Darkvision. </span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.<br/>
