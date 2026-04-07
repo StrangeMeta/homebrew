@@ -73,10 +73,10 @@
     </element>
     <element name = "Graceful Step" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_GRACEFUL_STEP">
         <description>
-            <p>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</p>
+            <p>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid. You do not sink into the surface if you end your movement on it.</p>
         </description>
         <sheet display = "true">
-            <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid.</description>
+            <description>You can move across any fluid surface such as water, mud, snow, or quicksand as if it were solid ground. However, you are not protected from the damaging effects of contact with dangerous liquids, like lava or acid. You do not sink into the surface if you end your movement on it.</description>
         </sheet>
     </element>
     <element name = "Water Magic" type = "Racial Trait" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACIAL_TRAIT_FUYOHREN_WATER_MAGIC">
