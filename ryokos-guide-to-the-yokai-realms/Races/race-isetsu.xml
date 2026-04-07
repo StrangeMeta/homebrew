@@ -2,14 +2,15 @@
 <elements>
     <info>
         <name>Isetsu</name>
-        <update version = "0.0.2">
+        <update version = "0.1.0">
             <file name = "race-isetsu.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-isetsu.xml"/>
         </update>
     </info>
 
     <element name = "Isetsu" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ISETSU">
         <description>
-            <p class = "flavour">Isetsu are warriors, but we do not live for war. We live for that which our battles defend</p>
+            <p class = "flavour">"Isetsu are warriors, but we do not live for war. We live for that which our battles defend." — Ryoko</p>
+            
             <p>Along stoney, shattered cliffs, blasted by howling wind and icy rain, the isetsu stand guard. A race of large, crustacean-like Humanoids, isetsu have made a home facing the ocean for millenia, thriving and hunting beneath the open waves, and resting on the shore. Although they do not swim as nimbly as nishikin or ryujin, the isetsu’s superior eyesight, towering bodies, and resolute carapace serve them well in the deep; they are the undisputed rulers of the cliffs and seabeds.</p>
 
             <h4>Shoreline Guardians</h4>
