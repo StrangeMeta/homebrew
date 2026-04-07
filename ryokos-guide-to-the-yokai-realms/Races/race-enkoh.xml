@@ -2,13 +2,15 @@
 <elements>
     <info>
         <name>Enkoh</name>
-        <update version = "0.1.0">
+        <update version = "0.1.1">
             <file name = "race-enkoh.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-enkoh.xml"/>
         </update>
     </info>
 
     <element name = "Enkoh" type = "Race" source = "Ryoko's Guide to the Yokai Realms" id = "ID_RGTTYR_RACE_ENKOH">
         <description>
+            <p class = "flavour">“There’s magic in this world that goes beyond flashes, bangs, and jets of flame. An earthy magic of food, structure, and fellowship. It’s the magic of a thousand mundane hands raising a city from velvet snow. A magic woven by walking into the cruellest, biting blizzard and welcoming it as your home. These people understand that magic. The mightiest yokai and grandest kaiju might be able to survive here, for a time, but only the enkoh can thrive.” — Ryoko</p>
+            
             <p>Beneath snow-capped peaks, where white drifts bury the chaos of rocks and streams, the formidable enkoh make cities of ice and snow. Well-adapted to colder climes, these thick-furred simian folk blend an innate skill for survival with a piercing intelligence, making homes in inhospitable environments.</p>
 
             <h4>Community and Craftsmanship</h4>
