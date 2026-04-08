@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Ryokido</name>
-        <update version = "0.1.0">
+        <update version = "0.1.1">
             <file name = "race-ryokido.xml" url = "https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Races/race-ryokido.xml"/>
         </update>
     </info>
@@ -111,9 +111,11 @@
             <description>When you fall, you can use a reaction to angle your body and cushion the impact through your shell. When you do, you can subtract up to 100 feet from the fall when calculating falling damage. Once you use this reaction, you can’t do so again until you finish a long rest, as your shell recovers from the impact.</description>
         </sheet>
         <rules>
-            <stat name = "ryokido:tough shell" value = "12" bonus = "base"/>
-            <stat name = "ryokido:tough shell" value = "constitution" bonus = "base"/>
-            <stat name = "ac:calculation" value = "ryokido:tough shell" bonus = "calculation" alt = "Tough Shell (Ryokido)"/>
+            <stat name = "ryokido:tough shell:base" value = "12"/>
+            <stat name = "ryokido:tough shell:constitution" value = "constitution:modifier"/>
+            <stat name = "ryokido:tough shell" value = "ryokido:tough shell:base"/>
+            <stat name = "ryokido:tough shell" value = "ryokido:tough shell:constitution"/>
+            <stat name = "ac:calculation" value = "ryokido:tough shell" equipped = "[armor:none]" bonus = "calculation" alt = "Tough Shell (Ryokido)"/>
         </rules>
     </element>
 </elements>
